@@ -1,0 +1,5 @@
+Model,Binomial,Lognormal
+~Year,494.73,339.56
+~Year + Region,490.24,343.16
+~ Year + Month,493.02,336.68
+~ Year + Month + Region,\textbf{486.55},\textbf{337.87}

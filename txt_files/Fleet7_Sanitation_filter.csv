@@ -1,0 +1,10 @@
+Filter,Description,City of Los Angeles,Los Angeles County,Orange County,City of San Diego,Total
+General,"Erroneous and missing data, harbors or Mexican waters","1,496","2,321","1,671","1,180","6,668"
+District-specific filters,Stations sampled $>$29 years or $<$305 ft,,"1,848",,,
+,Stations sampled $>$9 years,930,,,998,
+,Stations sampled $>$13 years,,,"1,558",,
+,Stations sampled $>$11 years,,,,,
+Station,Stations encountering scorpionfish $>$4\% of trawls,930,"1,848","1,500",998,
+Tow time and depth,Stations with tow times $>$4 minutes and $<$24 ft,921,,,,
+,Tow distance 100-599 m (target tow distance 400 m),,,"1,490",,
+Final data,,921,"1,848","1,490",998,"\textbf{5,257}"

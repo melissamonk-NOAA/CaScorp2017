@@ -1,0 +1,8 @@
+Filter,Description,Positive drifts,Total drifts
+Entire dataset,,,"108,171"
+General data filters,"CRFS-PR1 survey only, Southern California only (sub\_reg = 1), Hook and line gear only (geara = 'H'), Ocean only (Area\_X = 1 or 2)","3,802","43,956"
+Region,Remove trips from Santa Barbara,"3,757","42,956"
+Year,Remove 2004-2005; fishery closed majority of year,"3,094","33,770"
+Closed fishery,Remove remaining trips when fishery closed,"3,056","32,236"
+Rare and co-occurring species,Remove trips with yellowfin tuna and dolphinfish and species present in <1\% of all trips and in at least 5 years of data,"3,056","30,033"
+Stephens-MacCall,"Retain all positive trips, plus ""False Positives"" (trips predicted to be in California scorpionfish habitat, but with no California scorpionfish retained)","3,056","4,873"

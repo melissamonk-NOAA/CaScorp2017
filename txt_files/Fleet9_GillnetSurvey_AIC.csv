@@ -1,0 +1,5 @@
+Model,Binomial,Lognormal
+~Year + month + site + perp\_para + floats,1983.12,1008.62
+~Year + site + perp\_para  + floats,2000.281,1004.4
+ Year + month  + perp\_para + floats,2349.989,1264.8
+~Year  + site +  perp\_para,\textbf{2010.078},\textbf{1004.1}

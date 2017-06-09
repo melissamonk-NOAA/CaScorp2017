@@ -1,0 +1,5 @@
+Model,Binomial,Lognormal
+~Year,6182.366,8103.204
+~Year + County,5862.9,8003.9
+~Year + Wave,6091,8092.2
+~Year + County + Wave,\textbf{5792.29},\textbf{8000.45}

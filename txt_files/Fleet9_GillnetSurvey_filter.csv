@@ -1,0 +1,6 @@
+Filter,Description,Positive drifts,Total drifts
+Entire dataset,,325,"3,558"
+General data filters,Samples with  no net failures,269,"3,515"
+Net type,"Samples using a net type 1"", 1.5"" and 2"" mesh",269,"2,815"
+Sites,Sites frequently sampled,266,"2,170"
+Month,"Months sampled consistently (April, June, August, October)",259,"2,019"

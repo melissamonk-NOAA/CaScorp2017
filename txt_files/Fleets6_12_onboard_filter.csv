@@ -1,0 +1,9 @@
+Filter,Description,Positive drifts,Total drifts
+Initial SQL filtering,,"6,475","59,192"
+Habitat filter,"Remove drifts $>$1000 m of alpha hull buffer, remove ""reefs"" with $<$0 drifts or 5\% positives, or in CCA","6,365","30,987"
+Exclude 1999 and 2000,Management changes (depth and gear restrictions),"5,986","29,577"
+Depth,Remove upper and lower 1\% of data (retain 26-330ft),"5,921","29,002"
+Minutes Fished,Remove upper and lower 1\% of data (retain 4 - 155 minutes),"5,780","28,460"
+Observed Anglers,Remove upper and lower 1\% of data (retain 4 - 15 anglers),"5,679","27,946"
+Boats ,Include boats encountering scorpionfish in at least 3 years; at least 30 drifts and 10 with scorpionfish,"5,509","26,805"
+Second depth filter,Remove anything $>$100 m after looking at 20 m depth bins,"5,507","\textbf{26,733}"

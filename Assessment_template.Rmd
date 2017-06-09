@@ -1019,7 +1019,9 @@ assessment team. Not required in draft assessment undergoing review.
 ```{r, eval=TRUE, echo=FALSE, results='asis', message=FALSE}
    Comm_removal.table = xtable(Comm_removal, 
                     caption = c("Commercial removals (mt) from the commercial 
-                                fisheries, north and source of Florence, OR."),
+                                fisheries. Data sources are the the CDFG Fishery
+                                Bulletins (availabl from California Explores the Ocean)
+                                and the California Fisheries Information System (CFIS)"),
                     label="tab:Comm_catches")
    align(Comm_removal.table) =c('l','c', 
                             '>{\\centering}p{1in}',
@@ -1037,9 +1039,10 @@ assessment team. Not required in draft assessment undergoing review.
 
 
 
-
+\FloatBarrier
+\newpage
 <!-- ********************************************************************** --> 
-<!-- ***********Recreational Landings and discards TABLES****************** --> 
+<!-- ***********Recreational Landings and discards TABLE******************* --> 
 <!-- ********************************************************************** --> 
 <!-- Washington rec removal TABLES--> 
 ```{r, eval=TRUE, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
@@ -1067,20 +1070,575 @@ assessment team. Not required in draft assessment undergoing review.
 
 ```
 
-
+\FloatBarrier
 <!-- ********************************************************************** --> 
-<!-- ************Recreational PR dockside survey TABLES******************** --> 
+<!-- ***********Fleet 4 Recreational PR dockside survey TABLES************* --> 
 <!-- ********************************************************************** --> 
 
 
+```{r, eval=TRUE, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+      ##read in data for 3 tables
+        Fleet4_filter = read.csv("./txt_files/Fleet4_RecPR_dockside_filter.csv")
+        Fleet4_aic = read.csv("./txt_files/Fleet4_RecPR_dockside_aic.csv")
+        Fleet4_index = read.csv("./txt_files/Fleet4_RecPR_dockside_index.csv")
+        
+        colnames(Fleet4_filter) = c('Filter',
+                                    'Criteria',
+                                    'Sample size (no. positive trips)',
+                                    'Sample size (no. of trips)')
+        
+        colnames(Fleet4_aic) = c('Model',
+                                 'Binomial',
+                                 'Lognormal')
+        
+        colnames(Fleet4_index) = c('Year',
+                                   'Index',
+                                   'Log-scale SE')
+      
 
+```
+```{r, eval=TRUE, echo=FALSE, results='asis', message=FALSE}
+    #Fleet 4 filter
+         Fleet4_filter.table = xtable(Fleet4_filter,
+                              caption = c("Recreational private mode dockside data sample 
+                                          sizes at each data filtering step.  
+                                          The bold value indicates the final sample size 
+                                          used for delta-GLM analysis."),
+                              label='tab:Fleet4_RecPR_dockside_filter')
+        
+        align(Fleet4_filter.table) = c('l',
+                                  '>{\\raggedright}p{1.5in}',
+                                  '>{\\raggedright}p{2.6in}',
+                                  '>{\\raggedright}p{1in}',
+                                  '>{\\raggedright}p{1in}')          
+        
+        print(Fleet4_filter.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x})
+
+   #Fleet 4 aic
+         Fleet4_aic.table = xtable(Fleet4_aic,
+                              caption = c("AIC values for each model in the
+                                          recreational private mode dockside sample 
+                                          index."),
+                              label='tab:Fleet4_RecPR_dockside_aic')
+        
+        
+        print(Fleet4_aic.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x})
+
+   #Fleet 4 index
+         Fleet4_index.table = xtable(Fleet4_index,
+                              caption = c("The recreational private mode 
+                                            dockside sample index."),
+                              digits=4,
+                              label='tab:Fleet4_RecPR_dockside_index')
+        
+        
+        print(Fleet4_index.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x})
+```
+
+\FloatBarrier
 <!-- ********************************************************************** -->
-<!-- ************Recreational onboard observer index TABLES**************** -->
+<!-- ************Fleet 5 Recreational CPFV logbook index TABLES************ -->
+<!-- ********************************************************************** -->
+```{r, eval=TRUE, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+      ##read in data for 3 tables
+        Fleet5_filter = read.csv("./txt_files/Fleet5_RecPC_CPFVlogbook_filter.csv")
+        Fleet5_aic = read.csv("./txt_files/Fleet5_RecPC_CPFVlogbook_aic.csv")
+        Fleet5_index = read.csv("./txt_files/Fleet5_RecPC_CPFVlogbook_index.csv")
+        
+        colnames(Fleet5_filter) = c('Filter',
+                                    'Criteria',
+                                    'Sample size (no. of trips)')
+        
+        colnames(Fleet5_aic) = c('Model',
+                                 'Negative Binomial')
+        
+        colnames(Fleet5_index)= c('Year',
+                                  'Index',
+                                  'Log-scale SE')
+
+```
+```{r, eval=TRUE, echo=FALSE, results='asis', message=FALSE}
+    #Fleet 5 filter
+         Fleet5_filter.table = xtable(Fleet5_filter,
+                              caption = c("Recreational CPFV logbook sample 
+                                          sizes at each data filtering step.  
+                                          The bold value indicates the final sample size 
+                                          used for delta-GLM analysis."),
+                              label='tab:Fleet5_RecPC_CPFVlogbook_filter')
+        
+        align(Fleet5_filter.table) = c('l',
+                                  '>{\\raggedright}p{1.5in}',
+                                  '>{\\raggedright}p{3in}',
+                                  '>{\\raggedright}p{1in}')          
+        
+        print(Fleet5_filter.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x})
+
+   #Fleet 5 aic
+         Fleet5_aic.table = xtable(Fleet5_aic,
+                              caption = c("AIC values for each model in the
+                                          recreational CPFV logbook sample 
+                                          index."),
+                              label='tab:Fleet5_RecPC_CPFVlogbook_aic')
+        
+        
+        print(Fleet5_aic.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x})
+
+   #Fleet 5 index
+         Fleet5_index.table = xtable(Fleet5_index,
+                              digits=4,
+                              caption = c("The recreational CPFV  
+                                            logbook sample index."),
+                              label='tab:Fleet5_RecPC_CPFVlogbook_index')
+        
+        
+        print(Fleet5_index.table, 
+              include.rownames=FALSE,
+              caption.placement="top",
+              sanitize.text.function = function(x){x},
+              scalebox=.9)
+```
+
+
+\FloatBarrier
+<!-- ********************************************************************** -->
+<!-- *****Fleets 6 and 12 Recreational onboard observer index TABLES******* -->
 <!-- ********************************************************************** -->
 
 
+```{r, eval=TRUE, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+      ##read in data for 3 tables
+        Fleet6_filter = read.csv("./txt_files/Fleets6_12_onboard_filter.csv")
+        Fleet6_aic = read.csv("./txt_files/Fleet6_RecDD_onboard_aic.csv")
+        Fleet6_index = read.csv("./txt_files/Fleet6_RecDD_onboard_index.csv")
+        Fleet12_aic = read.csv("./txt_files/Fleet12_RecPC_onboard_aic.csv")
+        Fleet12_index = read.csv("./txt_files/Fleet12_RecPC_onboard_index.csv")
+        
+        colnames(Fleet6_filter) = c('Filter',
+                                    'Criteria',
+                                    'Sample size (no. positive trips)',
+                                    'Sample size (no. of trips)')
+        
+        colnames(Fleet6_aic) = c('Model',
+                                 'Binomial',
+                                 'Lognormal')
+        
+        colnames(Fleet6_index) = c('Year',
+                                   'Index',
+                                   'Log-scale SE')
+      
+        colnames(Fleet12_aic) = c('Model',
+                                 'Binomial',
+                                 'Lognormal')
+        
+        colnames(Fleet12_index) = c('Year',
+                                   'Index',
+                                   'Log-scale SE')
+
+```
+```{r, eval=TRUE, echo=FALSE, results='asis', message=FALSE}
+    #Fleet 6 and 12 filter
+         Fleet6_filter.table = xtable(Fleet6_filter,
+                              caption = c("Recreational onboard observer data sample 
+                                          sizes at each data filtering step.  
+                                          The bold value indicates the final sample size 
+                                          used for delta-GLM analysis.
+                                          The same sample data were used for the discard-only
+                                          index and the retained-only catch indices"),
+                              label='tab:Fleet6_RecDD_onboard_filter')
+        
+        align(Fleet6_filter.table) = c('l',
+                                  '>{\\raggedright}p{1.5in}',
+                                  '>{\\raggedright}p{2.6in}',
+                                  '>{\\raggedright}p{1in}',
+                                  '>{\\raggedright}p{1in}')          
+        
+        print(Fleet6_filter.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+             # tabular.environment="tabularx",
+              sanitize.text.function = function(x){x})
+
+   #Fleet 6 aic
+         Fleet6_aic.table = xtable(Fleet6_aic,
+                              caption = c("AIC values for each model in the
+                                          The recreational CPFV onboard 
+                                          observer discard-only catch 
+                                          index."),
+                              label='tab:Fleet6_RecDD_onboard_aic')
+        
+        
+        print(Fleet6_aic.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x})
+
+   #Fleet 6 index
+         Fleet6_index.table = xtable(Fleet6_index,
+                              caption = c("The recreational CPFV
+                                            onboard observer discard-only
+                                            catch sample index."),
+                              digits=4,
+                              label='tab:Fleet6_RecDD_onboard_index')
+        
+        
+        print(Fleet6_index.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x})
+        
+        
+  #Fleet 12 aic
+         Fleet12_aic.table = xtable(Fleet12_aic,
+                              caption = c("AIC values for each model in the
+                                          The recreational CPFV onboard 
+                                          observer retained-only catch 
+                                          index."),
+                              label='tab:Fleet12_RecPC_onboard_aic')
+        
+        
+        print(Fleet12_aic.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x})
+
+   #Fleet 12 index
+         Fleet12_index.table = xtable(Fleet12_index,
+                              caption = c("The recreational CPFV
+                                            onboard observer retained-only
+                                            catch sample index."),
+                              digits=4,
+                              label='tab:Fleet12_RecPC_onboard_index')
+        
+        
+        print(Fleet12_index.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              digits=4,
+              sanitize.text.function = function(x){x})
+```
 
 
+\FloatBarrier
+<!-- ********************************************************************** -->
+<!-- ***************Fleet 7 Sanitation index TABLES************************ -->
+<!-- ********************************************************************** -->
+```{r, eval=TRUE, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+      ##read in data for 3 tables
+        Fleet7_filter = read.csv("./txt_files/Fleet7_Sanitation_filter.csv")
+        Fleet7_aic = read.csv("./txt_files/Fleet7_Sanitation_aic.csv")
+        Fleet7_index = read.csv("./txt_files/Fleet7_Sanitation_index.csv")
+        
+        colnames(Fleet7_filter) = c('Filter',
+                                    'Criteria',
+                                    'City of LA',
+                                    'LA County',
+                                    'Orange County',
+                                    'City of San Diego',
+                                    'Total trawls')
+        
+        colnames(Fleet7_aic) = c('Model',
+                                 'Binomial',
+                                 'Lognormal')
+        
+        colnames(Fleet7_index) = c('Year',
+                                   'Index',
+                                   'Log-scale SE')
+      
+
+```
+```{r, eval=TRUE, echo=FALSE, results='asis', message=FALSE}
+    #Fleet 7 filter
+         Fleet7_filter.table = xtable(Fleet7_filter,
+                              caption = c("The trawl sample sizes for each
+                                          sanitation district at each data filtering step.  
+                                          The bold value indicates the final sample size 
+                                          used for delta-GLM analysis."),
+                              label='tab:Fleet7_Sanitation_filter')
+        
+        align(Fleet7_filter.table) = c('l',
+                                  '>{\\raggedright}p{.8in}',
+                                  '>{\\raggedright}p{2in}',
+                                  '>{\\raggedright}p{.6in}',
+                                  '>{\\raggedright}p{.6in}',
+                                  '>{\\raggedright}p{.6in}',
+                                  '>{\\raggedright}p{.8in}',
+                                  '>{\\raggedright}p{.6in}')          
+        
+        print(Fleet7_filter.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x})
+
+   #Fleet 7 aic
+         Fleet7_aic.table = xtable(Fleet7_aic,
+                              caption = c("AIC values for each model in the
+                                         sanitation districts trawl sample 
+                                          index."),
+                              label='tab:Fleet7_Sanitation_aic')
+        
+        
+        print(Fleet7_aic.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x})
+
+   #Fleet 7 index
+         Fleet7_index.table = xtable(Fleet7_index,
+                              caption = c("The sanitation districts 
+                                           trawl sample index."),
+                              digits=4,
+                              label='tab:Fleet7_Sanitation_index')
+        
+        
+        print(Fleet7_index.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x},
+              scalebox=.9)
+```
+
+\FloatBarrier
+<!-- ********************************************************************** -->
+<!-- **************Fleet 8 NWFSC trawl survey index TABLES***************** -->
+<!-- ********************************************************************** -->
+
+
+```{r, eval=TRUE, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+      ##read in data for 3 tables
+        Fleet8_filter = read.csv("./txt_files/Fleet8_NWFSCTrawl_filter.csv")
+        Fleet8_aic = read.csv("./txt_files/Fleet8_NWFSCTrawl_aic.csv")
+        Fleet8_index = read.csv("./txt_files/Fleet8_NWFSCTrawl_index.csv")
+        
+        colnames(Fleet8_filter) = c('Filter',
+                                    'Criteria',
+                                    'Sample size (no. positive trips)',
+                                    'Sample size (no. of trips)')
+        
+        colnames(Fleet8_aic) = c('Model',
+                                 'Binomial',
+                                 'Lognormal')
+        
+        colnames(Fleet8_index) = c('Year',
+                                   'Index',
+                                   'Log-scale SE')
+      
+
+```
+```{r, eval=TRUE, echo=FALSE, results='asis', message=FALSE}
+    #Fleet 8 filter
+         Fleet8_filter.table = xtable(Fleet8_filter,
+                              caption = c("NWFSC trawl survey sample 
+                                          sizes at each data filtering step.  
+                                          The bold value indicates the final sample size 
+                                          used for delta-GLM analysis."),
+                              label='tab:Fleet8_NWFSCTrawl_filter')
+        
+        align(Fleet8_filter.table) = c('l',
+                                  '>{\\raggedright}p{1.5in}',
+                                  '>{\\raggedright}p{2.6in}',
+                                  '>{\\raggedright}p{1in}',
+                                  '>{\\raggedright}p{1in}')          
+        
+        print(Fleet8_filter.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x})
+
+   #Fleet 8 aic
+         Fleet8_aic.table = xtable(Fleet8_aic,
+                              caption = c("AIC values for each model in the
+                                          NWFSC trawl survey sample 
+                                          index."),
+                              label='tab:Fleet8_NWFSCTrawl_aic')
+        
+        
+        print(Fleet8_aic.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x})
+
+   #Fleet 8 index
+         Fleet8_index.table = xtable(Fleet8_index,
+                              caption = c("The NWFSC trawl survey
+                                            index."),
+                              digits=4,
+                              label='tab:Fleet8_NWFSCTrawl_index')
+        
+        
+        print(Fleet8_index.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x})
+```
+
+
+\FloatBarrier
+<!-- ********************************************************************** -->
+<!-- ***************Fleet 9 Gillnet survey index TABLES******************** -->
+<!-- ********************************************************************** -->
+
+```{r, eval=TRUE, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+      ##read in data for 3 tables
+        Fleet9_filter = read.csv("./txt_files/Fleet9_GillnetSurvey_filter.csv")
+        Fleet9_aic = read.csv("./txt_files/Fleet9_GillnetSurvey_aic.csv")
+        Fleet9_index = read.csv("./txt_files/Fleet9_GillnetSurvey_index.csv")
+        
+        colnames(Fleet9_filter) = c('Filter',
+                                    'Criteria',
+                                    'Sample size (no. positive trips)',
+                                    'Sample size (no. of trips)')
+        
+        colnames(Fleet9_aic) = c('Model',
+                                 'Binomial',
+                                 'Lognormal')
+        
+        colnames(Fleet9_index) = c('Year',
+                                   'Index',
+                                   'Log-scale SE')
+      
+
+```
+```{r, eval=TRUE, echo=FALSE, results='asis', message=FALSE}
+    #Fleet 9 filter
+         Fleet9_filter.table = xtable(Fleet9_filter,
+                              caption = c("Recreational private mode dockside data sample 
+                                          sizes at each data filtering step.  
+                                          The bold value indicates the final sample size 
+                                          used for delta-GLM analysis."),
+                              label='tab:Fleet9_GillnetSurvey_filter')
+        
+        align(Fleet9_filter.table) = c('l',
+                                  '>{\\raggedright}p{1.5in}',
+                                  '>{\\raggedright}p{2.6in}',
+                                  '>{\\raggedright}p{1in}',
+                                  '>{\\raggedright}p{1in}')          
+        
+        print(Fleet9_filter.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x})
+
+   #Fleet 9 aic
+         Fleet9_aic.table = xtable(Fleet9_aic,
+                              caption = c("AIC values for each model in the
+                                          recreational private mode dockside sample 
+                                          index."),
+                              label='tab:Fleet9_GillnetSurvey_aic')
+        
+        
+        print(Fleet9_aic.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x})
+
+   #Fleet 9 index
+         Fleet9_index.table = xtable(Fleet9_index,
+                              caption = c("The recreational private mode 
+                                            dockside sample index."),
+                              digits=4,
+                              label='tab:Fleet9_GillnetSurvey_index')
+        
+        
+        print(Fleet9_index.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x})
+```
+\FloatBarrier
+<!-- ********************************************************************** -->
+<!-- ***************Fleet 11 Bight trawl survey index TABLES*************** -->
+<!-- ********************************************************************** -->
+
+```{r, eval=TRUE, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+      ##read in data for 3 tables
+        Fleet11_filter = read.csv("./txt_files/Fleet11_SCBSurvey_filter.csv")
+        Fleet11_aic = read.csv("./txt_files/Fleet11_SCBSurvey_aic.csv")
+        Fleet11_index = read.csv("./txt_files/Fleet11_SCBSurvey_index.csv")
+        
+        colnames(Fleet11_filter) = c('Filter',
+                                    'Criteria',
+                                    'Sample size (no. positive trips)',
+                                    'Sample size (no. of trips)')
+        
+        colnames(Fleet11_aic) = c('Model',
+                                 'Binomial',
+                                 'Lognormal')
+        
+        colnames(Fleet11_index) = c('Year',
+                                   'Index',
+                                   'Log-scale SE')
+      
+
+```
+```{r, eval=TRUE, echo=FALSE, results='asis', message=FALSE}
+    #Fleet 11 filter
+         Fleet11_filter.table = xtable(Fleet11_filter,
+                              caption = c("Recreational private mode dockside data sample 
+                                          sizes at each data filtering step.  
+                                          The bold value indicates the final sample size 
+                                          used for delta-GLM analysis."),
+                              label='tab:Fleet11_SCBSurvey_filter')
+        
+        align(Fleet11_filter.table) = c('l',
+                                  '>{\\raggedright}p{1.5in}',
+                                  '>{\\raggedright}p{2.6in}',
+                                  '>{\\raggedright}p{1in}',
+                                  '>{\\raggedright}p{1in}')          
+        
+        print(Fleet11_filter.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x})
+
+   #Fleet 11 aic
+         Fleet11_aic.table = xtable(Fleet11_aic,
+                              caption = c("AIC values for each model in the
+                                          recreational private mode dockside sample 
+                                          index."),
+                              label='tab:Fleet11_SCBSurvey_aic')
+        
+        
+        print(Fleet11_aic.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x})
+
+   #Fleet 11 index
+         Fleet11_index.table = xtable(Fleet11_index,
+                              caption = c("The recreational private mode 
+                                            dockside sample index."),
+                              digits=4,
+                              label='tab:Fleet11_SCBSurvey_index')
+        
+        
+        print(Fleet11_index.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x})
+```
+
+
+
+
+
+
+
+\FloatBarrier
 <!-- ********************************************************************** -->
 <!--  ************Fishery dependent biological sampling TABLES************* -->
 <!-- ********************************************************************** -->
@@ -1181,18 +1739,7 @@ assessment team. Not required in draft assessment undergoing review.
 
     # Add alignment  
     align(mod_params.table) = c('lrlrrcccl')
-        # Add alignment  
-     # align(mod_params.table) = c('l',
-    #                                 '>{\\raggedright}p{.4in}',
-    #                                 '>{\\raggedright}p{.8in}',
-    #                                 '>{\\centering}p{.3in}',
-    #                                 '>{\\centering}p{.3in}',
-    #                                 '>{\\centering}p{.4in}',
-    #                                 '>{\\centering}p{.4in}', 
-    #                                 '>{\\centering}p{.4in}',
-    #                                 '>{\\centering}p{.4in}',
-    #                                '>{\\centering}p{.5in}',
-    #                                 '>{\\centering}p{.5in}')  
+        
  
     # Add "continued on next page"" footnote   
     addtorow          <- list()
@@ -1224,11 +1771,10 @@ assessment team. Not required in draft assessment undergoing review.
 \newpage
 
 <!-- ***********Indices of abundance summary table************************* -->
+\begin{landscape}
 ```{r, results = 'asis'}
     Index_summary = read.csv('./txt_files/Index_summary.csv')
-      colnames(Index_summary) = c('Region',
-                                  'ID',
-                                  'Fleet',
+      colnames(Index_summary) = c('Fleet',
                                   'Years',	
                                   'Name',
                                   'Fishery ind.',
@@ -1245,14 +1791,12 @@ assessment team. Not required in draft assessment undergoing review.
                                  digits = 0)    
     # Add alignment  
       align(Index_summary.table) = c('l',
-                                     '>{\\centering}p{.4in}',
-                                     '>{\\centering}p{.3in}',
-                                     '>{\\centering}p{.3in}',
-                                     '>{\\centering}p{.3in}',
-                                     '>{\\centering}p{.6in}',
-                                     '>{\\centering}p{.5in}', 
-                                     '>{\\centering}p{.8in}',
-                                     '>{\\centering}p{.8in}',
+                                    '>{\\centering}p{.3in}',
+                                     '>{\\centering}p{1in}',
+                                     '>{\\centering}p{2.5in}',
+                                     '>{\\centering}p{.3in}', 
+                                     '>{\\centering}p{2in}',
+                                     '>{\\centering}p{1.2in}',
                                      '>{\\centering}p{.5in}')  
     
     # Print index summary table
@@ -1261,6 +1805,7 @@ assessment team. Not required in draft assessment undergoing review.
             caption.placement='top',
             sanitize.text.function = function(x){x})
 ```
+\end{landscape}
 <!-- ---------------------------------------------------------------------- -->
 
 \newpage
