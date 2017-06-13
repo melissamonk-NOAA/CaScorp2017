@@ -1,4 +1,4 @@
-#V3.30.03.07-opt
+#V3.30.04.02
 #C  generic forecast file
 # for all year entries except rebuilder; enter either: actual year, -999 for styr, 0 for endyr, neg number for rel. endyr
 1 # Benchmarks: 0=skip; 1=calc F_spr,F_btgt,F_msy 
@@ -34,7 +34,7 @@
 # Conditional input if relative F choice = 2
 # Fleet relative F:  rows are seasons, columns are fleets
 #_Fleet:  ComHL ComNet ComTrawl RecPR RecPC RecDD Sanitation NWFSCTrawl GillnetSurvey Impingement SCBSurvey RecPCOBR
-#  0 2.3528e-005 0.000849948 0.024726 0.972153 0.00224737 0 0 0 0 0 0
+#  0.0312655 4.89671e-005 0.00176894 0.120968 0.807713 0.038235 0 0 0 0 0 0
 # enter list of fleet number and max for fleets with max annual catch; terminate with fleet=-9999
 -9999 -1
 # enter list of area ID and max annual catch; terminate with area=-9999

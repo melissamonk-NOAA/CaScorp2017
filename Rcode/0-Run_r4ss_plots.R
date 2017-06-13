@@ -86,9 +86,9 @@ do.call(file.remove, list(list.files(file.path(output.dir, 'plots_mod3'),    ful
 do.call(file.remove, list(list.files(file.path(output.dir, 'plots_compare'), full.names=TRUE)))
 
 # Run r4ss for each model - **CHANGE DIRECTORY if necessary**
-               mod1 = SS_output(dir = file.path(input.dir,'Base_model1'), forecast=T, covar=T, ncol=1000)
-if(n_models>1){mod2 = SS_output(dir = file.path(input.dir,'Base_model2'), forecast=T, covar=T, ncol=1000)}
-if(n_models>2){mod3 = SS_output(dir = file.path(input.dir,'Base_model3'), forecast=T, covar=T, ncol=1000)}
+               mod1 = SS_output(dir = file.path(input.dir,'Base_model1'), forecast=F, covar=T, ncol=1000)
+#if(n_models>1){mod2 = SS_output(dir = file.path(input.dir,'Base_model2'), forecast=T, covar=T, ncol=1000)}
+#if(n_models>2){mod3 = SS_output(dir = file.path(input.dir,'Base_model3'), forecast=T, covar=T, ncol=1000)}
 
 # Save the workspace an image
 save.image('./r4ss/SS_output.RData')
@@ -100,8 +100,8 @@ save.image('./r4ss/SS_output.RData')
 
 # output directories
 out.dir.mod1 = file.path(output.dir,'plots_mod1')
-out.dir.mod2 = file.path(output.dir,'plots_mod2')
-out.dir.mod3 = file.path(output.dir,'plots_mod3')
+#out.dir.mod2 = file.path(output.dir,'plots_mod2')
+#out.dir.mod3 = file.path(output.dir,'plots_mod3')
 
 
 # Model 1
@@ -117,35 +117,35 @@ SS_plots(mod1,
          printfolder = '', 
          dir = out.dir.mod1)
 
-# Model2
-if(n_models > 1){
-  SS_plots(mod2,
-           png = TRUE,
-           html = FALSE,
-           datplot = TRUE,
-           uncertainty = TRUE,
-           maxrows = 6, 
-           maxcols = 6, 
-           maxrows2 = 4, 
-           maxcols2 = 4, 
-           printfolder = '', 
-           dir = out.dir.mod2)
-}
-
-# Model3
-if(n_models > 2){
-  SS_plots(mod3,
-           png = TRUE,
-           html = FALSE,
-           datplot = TRUE,
-           uncertainty = TRUE,
-           maxrows = 6, 
-           maxcols = 6, 
-           maxrows2 = 4, 
-           maxcols2 = 4, 
-           printfolder = '', 
-           dir = out.dir.mod3)
-}
+# # Model2
+# if(n_models > 1){
+#   SS_plots(mod2,
+#            png = TRUE,
+#            html = FALSE,
+#            datplot = TRUE,
+#            uncertainty = TRUE,
+#            maxrows = 6, 
+#            maxcols = 6, 
+#            maxrows2 = 4, 
+#            maxcols2 = 4, 
+#            printfolder = '', 
+#            dir = out.dir.mod2)
+# }
+# 
+# # Model3
+# if(n_models > 2){
+#   SS_plots(mod3,
+#            png = TRUE,
+#            html = FALSE,
+#            datplot = TRUE,
+#            uncertainty = TRUE,
+#            maxrows = 6, 
+#            maxcols = 6, 
+#            maxrows2 = 4, 
+#            maxcols2 = 4, 
+#            printfolder = '', 
+#            dir = out.dir.mod3)
+# }
 
 # -----------------------------------------------------------------------------
 
