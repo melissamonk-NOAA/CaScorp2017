@@ -1,0 +1,206 @@
+
+
+<!-- ***********HISTORY AND CURRENT ASSESSMENT***************************** -->
+##History Of Modeling Approaches Used For This Stock
+
+###Previous Assessments
+
+###2005 Assessment Recommendations
+Include: Response to STAR panel recommendations from the most recent previous 
+assessment.
+
+\begin{description}[style=unboxed]
+
+  \item[Recommendation 1: The sanitation surveys conducted to track the impact 
+  of sewage outfall provided a fishery independent index of abundance for 
+  scorpionfish. This data source should be more fully explored for other 
+  near-shore species of recreational or commercial interest. Methods should 
+  be developed to produce a more statistically rigorous index from the 
+  separate surveys.] \hfill \\
+
+   STAT response: Data from all sanitation districts in southern California 
+   were obtained for this assessment.  All of the data were pooled across
+   surveys to develop one index of abundance using the delta-GLM method
+
+\item[Recommendation 2: An age, growth and maturity study for scorpionfish is 
+needed.  Although there has been previous research on scorpionfish age and growth, 
+the available information is not appropriate for stock assessment modeling.] \hfill \\
+
+  STAT response: Age data are available from the NWFSC trawl survey from 2005-2016.
+  THere have been no additional studies on growth or maturity for California 
+  scorpionfish since the 2005 assessment.
+
+\item[Recommendation 3: Location information for the historic groundfish data 
+of all species is currently available, in hard copy form only, from the 
+California Department of Fish and Game. Putting this information into electronic 
+format would greatly improve the ability to assign catches of all species to 
+specific stocks on a trip-by-trip basis.] \hfill \\
+
+  STAT response: The location-sepciic catches referred to above have been
+  key-punched and are available in electornic form from the SWFSC, Santa Cruz.
+
+\item[Recommendation 4: The SS2 model should be modified to allow for projections 
+of user-specified recruitment at user defined values. It would be most helpful if 
+the default harvest policies were then recalculated automatically for these 
+user-specified recruitments.] \hfill \\
+
+  STAT response: The status of this within Stock Synthesis is unknown.
+  
+\end{description}
+
+
+
+
+<!-- ************************MODEL DESCRIPTION***************************** -->
+##Model Description
+
+
+###Transition To The Current Stock Assessment
+Include: Complete description of any new modeling approaches
+
+Below, we describe the most important changes made since the last full assessment 
+and explain rationale for each change.:
+
+1. Change No. 1. \emph{Rationale}: blah blah blah.
+
+2. Change No. 2.  \emph{Rationale}: blah blah blah.
+
+3. Change No. 3.  \emph{Rationale}:  Continue list as needed.
+
+
+
+###Definition of Fleets and Areas
+We generated data sources for each of the models.  Fleets by model include:
+
+
+**Model Region 1 or remove this line if only one model** 
+
+\emph{Commercial}: The commercial fleets include...   
+
+\emph{Recreational}: The recreational fleets include...
+
+\emph{Research}: Research derived-data include...
+
+
+
+###Summary of Data for Fleets and Areas
+
+
+
+###Modeling Software
+The STAT team used Stock Synthesis 3 version 3.30.0.4 by Dr. Richard Methot at 
+the NWFSC. This most recent version was used, since it included 
+improvements and corrections to older versions.  The r4SS package 
+(GitHub release number v1.27.0) was used to post-processing output data from Stock
+Synthesis. 
+
+###Data Weighting
+Citation for Francis method [@Francis2011]      
+Citation for Ianelli-McAllister harmonic mean method [@McAllister1997]
+
+
+
+###Priors
+Citation for Hamel prior on natural mortality [@Hamel2015]
+
+
+###General Model Specifications
+    
+Model data, control, starter, and forecast files can be found in Appendices A-D.
+
+
+###Estimated And Fixed Parameters
+A full list of all estimated and fixed parameters is provided in Tables....
+Estimated and fixed parameters tables currently read in from .csv file, 
+EXAMPLE: Table \ref{tab:Model1_params}
+
+
+##Model Selection and Evaluation
+###Key Assumptions and Structural Choices
+Include: Evidence of search for balance between model realism and parsimony.  
+Comparison of key model assumptions, include comparisons based on nested models 
+(e.g., asymptotic vs. domed selectivities, constant vs. time-varying selectivities).  
+
+
+
+###Alternate Models Considered
+Include: Summary of alternate model configurations that were tried but rejected.
+
+
+
+###Convergence
+Include: Randomization run results or other evidence of search for global 
+best estimates.    
+
+Convergence testing through use of dispersed starting values often requires 
+extreme values to actually explore new areas of the multivariate likelihood 
+surface. Jitter is a SS option that generates random starting values from a 
+normal distribution logistically transformed into each parameter's range 
+[@Methot2015]. Table \ref{tab:jitter} shows the results of running 100 jitters 
+for each pre-STAR base model....
+
+##Response To The Current STAR Panel Requests
+\begin{description}[style=unboxed]
+
+\item[Request No. 1: Add after STAR panel.] \hfill \\
+
+    \textbf{Rationale:} Add after STAR panel.  
+
+    \textbf{STAT Response:} Add after STAR panel.
+
+\item[Request No. 2: Add after STAR panel.] \hfill \\
+
+    \textbf{Rationale:} Add after STAR panel.
+
+    \textbf{STAT Response:} Add after STAR panel.
+
+\item[Request No. 3: Add after STAR panel.] \hfill \\
+
+    \textbf{Rationale:} Add after STAR panel.
+  
+    \textbf{STAT Response:} Add after STAR panel.
+
+\item[Request No. 4: Example of a request that may have a list:] \hfill \\
+\begin{itemize}
+\item \textbf{Item No. 1}
+\item \textbf{Item No. 2}
+\item \textbf{Item No. 3, etc.}
+\end{itemize}
+
+    \textbf{Rationale:} Add after STAR panel.
+
+    \textbf{STAT Response:} Continue requests as needed.
+
+
+\end{description}
+
+<!-- *********************MODEL 1 RESULTS********************************** -->
+##Model 1 
+###Model 1 Base Case Results
+
+Table \ref{tab:Model1_params}   
+
+
+
+### Model 1 Uncertainty and Sensitivity Analyses
+Table \ref{tab:Sensitivity_model1}
+
+
+
+### Model 1 Retrospective Analysis
+ 
+
+### Model 1 Likelihood Profiles
+
+
+###Model 1 Harvest Control Rules (CPS only)
+
+###Model 1 Reference Points (groundfish only)
+Intro sentence or two....(Table \ref{tab:Timeseries_mod1}). 
+
+Equilibrium yield at the proxy $F_{MSY}$ harvest rate corresponding to 
+$SPR_{50\%}$ is `r Ref_pts_mod1[15,2]` mt.  Table \ref{tab:Ref_pts_mod1} 
+shows the full suite of estimated reference points for the northern area model 
+and Figure \ref{fig:Yield_all} shows the equilibrium yield curve.
+
+

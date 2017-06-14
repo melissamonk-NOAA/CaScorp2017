@@ -1,0 +1,1178 @@
+<!-- ====================================================================== -->
+<!-- ****************************            ****************************** --> 
+<!-- ****************************BEGIN TABLES****************************** --> 
+<!-- ****************************             ***************************** --> 
+<!-- ======================================================================--> 
+
+#Tables
+
+<!-- ********************************************************************** --> 
+<!-- *********************Commercial landings TABLES*********************** --> 
+<!-- ********************************************************************** --> 
+```{r, eval=TRUE, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+     Comm_removal = read.csv("./txt_files/Comm_removals.csv")
+     colnames(Comm_removal) = c('Year',
+                                'Hook-and-line',
+                                'Trawl',
+                                'Gillnet',
+                                'Mexico',
+                                'Total U.S. Removals',
+                                'Source')
+```
+```{r, results='asis'}
+   Comm_removal.table = xtable(Comm_removal, 
+                    caption = c("Commercial removals (mt) from the commercial 
+                                fisheries. Data sources are the the CDFG Fishery
+                                Bulletins (availabl from California Explores the Ocean)
+                                and the California Fisheries Information System (CFIS)"),
+                    label="tab:CommCatches")
+   align(Comm_removal.table) =c('l','c', 
+                            '>{\\centering}p{1in}',
+                            '>{\\centering}p{.6in}',
+                            '>{\\centering}p{.6in}',
+                            '>{\\centering}p{.6in}',
+                            '>{\\centering}p{1in}',
+                            'l')  
+     print(Comm_removal.table,include.rownames=FALSE,      
+           caption.placement="top",align=TRUE,tabular.environment="longtable",
+                     sanitize.text.function = function(x){x}, floating=FALSE,
+                     add.to.row = list(pos = list(0),command = "\\hline \\endhead "))
+```
+
+
+
+
+\FloatBarrier
+\newpage
+<!-- ********************************************************************** --> 
+<!-- ***********Recreational Landings and discards TABLE******************* --> 
+<!-- ********************************************************************** --> 
+<!-- Washington rec removal TABLES--> 
+```{r, eval=TRUE, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+     Rec_removal = read.csv("./txt_files/Rec_removals.csv")
+     colnames(Rec_removal) = c('Year',
+                                  'Private',
+                                  'Party/charter',
+                                  'Dead Discard (all modes)',
+                                  'Total Removals')
+```
+```{r, results='asis'}
+   Rec_removal.table = xtable(Rec_removal, 
+                          caption = c("Recreational removals (mt) from the party/charter 
+                                        and private vessels. Removals from man-made and 
+                                        beach/bank modes were included in the private mode
+                                        removals. Dead discards include all modes. CDFW provided 
+                                        all data. Note: A discard mortality rate of 7% was applied 
+                                        to the dead discard removals."),
+                          label="tab:Rec_removal")
+    align(Rec_removal.table) = 'lccccc'
+  
+    print(Rec_removal.table,include.rownames=FALSE, 
+          caption.placement="top",tabular.environment="longtable",align=TRUE,     
+                    floating=FALSE, add.to.row = list(pos = list(0),command = "\\hline \\endhead "))
+
+```
+
+\FloatBarrier
+<!-- ********************************************************************** --> 
+<!-- ***********Fleet 4 Recreational PR dockside survey TABLES************* --> 
+<!-- ********************************************************************** --> 
+
+
+```{r, eval=TRUE, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+      ##read in data for 3 tables
+        Fleet4_filter = read.csv("./txt_files/Fleet4_RecPR_dockside_filter.csv")
+        Fleet4_aic = read.csv("./txt_files/Fleet4_RecPR_dockside_aic.csv")
+        Fleet4_index = read.csv("./txt_files/Fleet4_RecPR_dockside_index.csv")
+        
+        colnames(Fleet4_filter) = c('Filter',
+                                    'Criteria',
+                                    'Sample size (no. positive trips)',
+                                    'Sample size (no. of trips)')
+        
+        colnames(Fleet4_aic) = c('Model',
+                                 'Binomial',
+                                 'Lognormal')
+        
+        colnames(Fleet4_index) = c('Year',
+                                   'Index',
+                                   'Log-scale SE')
+      
+
+```
+```{r, results='asis'}
+    #Fleet 4 filter
+         Fleet4_filter.table = xtable(Fleet4_filter,
+                              caption = c("Recreational private mode dockside data sample 
+                                          sizes at each data filtering step.  
+                                          The bold value indicates the final sample size 
+                                          used for delta-GLM analysis."),
+                              label='tab:Fleet4_RecPR_dockside_filter')
+        
+        align(Fleet4_filter.table) = c('l',
+                                  '>{\\raggedright}p{1.5in}',
+                                  '>{\\raggedright}p{2.6in}',
+                                  '>{\\raggedright}p{1in}',
+                                  '>{\\raggedright}p{1in}')          
+        
+        print(Fleet4_filter.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x})
+
+   #Fleet 4 aic
+         Fleet4_aic.table = xtable(Fleet4_aic,
+                              caption = c("AIC values for each model in the
+                                          recreational private mode dockside sample 
+                                          index."),
+                              label='tab:Fleet4_RecPR_dockside_aic')
+        
+        
+        print(Fleet4_aic.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x})
+
+   #Fleet 4 index
+         Fleet4_index.table = xtable(Fleet4_index,
+                              caption = c("The recreational private mode 
+                                            dockside sample index."),
+                              digits=4,
+                              label='tab:Fleet4_RecPR_dockside_index')
+        
+        
+        print(Fleet4_index.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x})
+```
+
+\FloatBarrier
+<!-- ********************************************************************** -->
+<!-- ************Fleet 5 Recreational CPFV logbook index TABLES************ -->
+<!-- ********************************************************************** -->
+```{r, eval=TRUE, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+      ##read in data for 3 tables
+        Fleet5_filter = read.csv("./txt_files/Fleet5_RecPC_CPFVlogbook_filter.csv")
+        Fleet5_aic = read.csv("./txt_files/Fleet5_RecPC_CPFVlogbook_aic.csv")
+        Fleet5_index = read.csv("./txt_files/Fleet5_RecPC_CPFVlogbook_index.csv")
+        
+        colnames(Fleet5_filter) = c('Filter',
+                                    'Criteria',
+                                    'Sample size (no. of trips)')
+        
+        colnames(Fleet5_aic) = c('Model',
+                                 'Negative Binomial')
+        
+        colnames(Fleet5_index)= c('Year',
+                                  'Index',
+                                  'Log-scale SE')
+
+```
+```{r, results='asis'}
+    #Fleet 5 filter
+         Fleet5_filter.table = xtable(Fleet5_filter,
+                              caption = c("Recreational CPFV logbook sample 
+                                          sizes at each data filtering step.  
+                                          The bold value indicates the final sample size 
+                                          used for delta-GLM analysis."),
+                              label='tab:Fleet5_RecPC_CPFVlogbook_filter')
+        
+        align(Fleet5_filter.table) = c('l',
+                                  '>{\\raggedright}p{1.5in}',
+                                  '>{\\raggedright}p{3in}',
+                                  '>{\\raggedright}p{1in}')          
+        
+        print(Fleet5_filter.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x})
+
+   #Fleet 5 aic
+         Fleet5_aic.table = xtable(Fleet5_aic,
+                              caption = c("AIC values for each model in the
+                                          recreational CPFV logbook sample 
+                                          index."),
+                              label='tab:Fleet5_RecPC_CPFVlogbook_aic')
+        
+        
+        print(Fleet5_aic.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x})
+
+   #Fleet 5 index
+         Fleet5_index.table = xtable(Fleet5_index,
+                              digits=4,
+                              caption = c("The recreational CPFV  
+                                            logbook sample index."),
+                              label='tab:Fleet5_RecPC_CPFVlogbook_index')
+        
+        
+        print(Fleet5_index.table, 
+              include.rownames=FALSE,
+              caption.placement="top",
+              sanitize.text.function = function(x){x},
+              scalebox=.9)
+```
+
+
+\FloatBarrier
+<!-- ********************************************************************** -->
+<!-- *****Fleets 6 and 12 Recreational onboard observer index TABLES******* -->
+<!-- ********************************************************************** -->
+
+
+```{r, eval=TRUE, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+      ##read in data for 3 tables
+        Fleet6_filter = read.csv("./txt_files/Fleets6_12_onboard_filter.csv")
+        Fleet6_aic = read.csv("./txt_files/Fleet6_RecDD_onboard_aic.csv")
+        Fleet6_index = read.csv("./txt_files/Fleet6_RecDD_onboard_index.csv")
+        Fleet12_aic = read.csv("./txt_files/Fleet12_RecPC_onboard_aic.csv")
+        Fleet12_index = read.csv("./txt_files/Fleet12_RecPC_onboard_index.csv")
+        
+        colnames(Fleet6_filter) = c('Filter',
+                                    'Criteria',
+                                    'Sample size (no. positive trips)',
+                                    'Sample size (no. of trips)')
+        
+        colnames(Fleet6_aic) = c('Model',
+                                 'Binomial',
+                                 'Lognormal')
+        
+        colnames(Fleet6_index) = c('Year',
+                                   'Index',
+                                   'Log-scale SE')
+      
+        colnames(Fleet12_aic) = c('Model',
+                                 'Binomial',
+                                 'Lognormal')
+        
+        colnames(Fleet12_index) = c('Year',
+                                   'Index',
+                                   'Log-scale SE')
+
+```
+
+```{r, results='asis'}
+    #Fleet 6 and 12 filter
+         Fleet6_filter.table = xtable(Fleet6_filter,
+                              caption = c("Recreational onboard observer data sample 
+                                          sizes at each data filtering step.  
+                                          The bold value indicates the final sample size 
+                                          used for delta-GLM analysis.
+                                          The same sample data were used for the discard-only
+                                          index and the retained-only catch indices"),
+                              label='tab:Fleet6_RecDD_onboard_filter')
+        
+        align(Fleet6_filter.table) = c('l',
+                                  '>{\\raggedright}p{1.5in}',
+                                  '>{\\raggedright}p{2.6in}',
+                                  '>{\\raggedright}p{1in}',
+                                  '>{\\raggedright}p{1in}')          
+        
+        print(Fleet6_filter.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+             # tabular.environment="tabularx",
+              sanitize.text.function = function(x){x})
+
+   #Fleet 6 aic
+         Fleet6_aic.table = xtable(Fleet6_aic,
+                              caption = c("AIC values for each model in the
+                                          The recreational CPFV onboard 
+                                          observer discard-only catch 
+                                          index."),
+                              label='tab:Fleet6_RecDD_onboard_aic')
+        
+        
+        print(Fleet6_aic.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x})
+
+   #Fleet 6 index
+         Fleet6_index.table = xtable(Fleet6_index,
+                              caption = c("The recreational CPFV
+                                            onboard observer discard-only
+                                            catch sample index."),
+                              digits=4,
+                              label='tab:Fleet6_RecDD_onboard_index')
+        
+        
+        print(Fleet6_index.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x})
+        
+        
+  #Fleet 12 aic
+         Fleet12_aic.table = xtable(Fleet12_aic,
+                              caption = c("AIC values for each model in the
+                                          The recreational CPFV onboard 
+                                          observer retained-only catch 
+                                          index."),
+                              label='tab:Fleet12_RecPC_onboard_aic')
+        
+        
+        print(Fleet12_aic.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x})
+
+   #Fleet 12 index
+         Fleet12_index.table = xtable(Fleet12_index,
+                              caption = c("The recreational CPFV
+                                            onboard observer retained-only
+                                            catch sample index."),
+                              digits=4,
+                              label='tab:Fleet12_RecPC_onboard_index')
+        
+        
+        print(Fleet12_index.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              digits=4,
+              sanitize.text.function = function(x){x})
+```
+
+
+\FloatBarrier
+<!-- ********************************************************************** -->
+<!-- ***************Fleet 7 Sanitation index TABLES************************ -->
+<!-- ********************************************************************** -->
+```{r, eval=TRUE, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+      ##read in data for 3 tables
+        Fleet7_filter = read.csv("./txt_files/Fleet7_Sanitation_filter.csv")
+        Fleet7_aic = read.csv("./txt_files/Fleet7_Sanitation_aic.csv")
+        Fleet7_index = read.csv("./txt_files/Fleet7_Sanitation_index.csv")
+        
+        colnames(Fleet7_filter) = c('Filter',
+                                    'Criteria',
+                                    'City of LA',
+                                    'LA County',
+                                    'Orange County',
+                                    'City of San Diego',
+                                    'Total trawls')
+        
+        colnames(Fleet7_aic) = c('Model',
+                                 'Binomial',
+                                 'Lognormal')
+        
+        colnames(Fleet7_index) = c('Year',
+                                   'Index',
+                                   'Log-scale SE')
+      
+
+```
+
+```{r, results='asis'}
+    #Fleet 7 filter
+         Fleet7_filter.table = xtable(Fleet7_filter,
+                              caption = c("The trawl sample sizes for each
+                                          sanitation district at each data filtering step.  
+                                          The bold value indicates the final sample size 
+                                          used for delta-GLM analysis."),
+                              label='tab:Fleet7_Sanitation_filter')
+        
+        align(Fleet7_filter.table) = c('l',
+                                  '>{\\raggedright}p{.8in}',
+                                  '>{\\raggedright}p{2in}',
+                                  '>{\\raggedright}p{.6in}',
+                                  '>{\\raggedright}p{.6in}',
+                                  '>{\\raggedright}p{.6in}',
+                                  '>{\\raggedright}p{.8in}',
+                                  '>{\\raggedright}p{.6in}')          
+        
+        print(Fleet7_filter.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x})
+
+   #Fleet 7 aic
+         Fleet7_aic.table = xtable(Fleet7_aic,
+                              caption = c("AIC values for each model in the
+                                         sanitation districts trawl sample 
+                                          index."),
+                              label='tab:Fleet7_Sanitation_aic')
+        
+        
+        print(Fleet7_aic.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x})
+
+   #Fleet 7 index
+         Fleet7_index.table = xtable(Fleet7_index,
+                              caption = c("The sanitation districts 
+                                           trawl sample index."),
+                              digits=4,
+                              label='tab:Fleet7_Sanitation_index')
+        
+        
+        print(Fleet7_index.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x},
+              scalebox=.9)
+```
+
+\FloatBarrier
+<!-- ********************************************************************** -->
+<!-- **************Fleet 8 NWFSC trawl survey index TABLES***************** -->
+<!-- ********************************************************************** -->
+
+
+```{r, eval=TRUE, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+      ##read in data for 3 tables
+        Fleet8_catchdepth = read.csv("./txt_files/Fleet8_NWFSCTrawl_catchdepth.csv")
+        Fleet8_catchlat = read.csv("./txt_files/Fleet8_NWFSCTrawl_catchlat.csv")
+        Fleet8_summary = read.csv("./txt_files/Fleet8_NWFSCTrawl_summary.csv")
+        Fleet8_agesummary = read.csv("./txt_files/Fleet8_NWFSCTrawl_agesummary.csv")
+        Fleet8_agepercents = read.csv("./txt_files/Fleet8_NWFSCTrawl_agepercents.csv")
+        Fleet8_index = read.csv("./txt_files/Fleet8_NWFSCTrawl_index.csv")
+        
+        colnames(Fleet8_catchdepth) = c('Depth zone (m)',
+                                        'Total catch (kg)',
+                                        'Raw CPUE (kg/ha)')
+        
+        colnames(Fleet8_catchlat) = c('Latitude zone',
+                                      'Total catch (kg)',
+                                      'Raw CPUE (kg/ha)')
+        
+        colnames(Fleet8_summary) = c('Year',
+                                       'No. hauls',
+                                       'No. positive hauls',
+                                       'Percent positive hauls',
+                                       'Total catch (kg)',
+                                       'Raw CPUE (kg/ha)')
+          
+            
+        colnames(Fleet8_agesummary) = c('Year',
+                                        'No. aged',
+                                        'Mean age (year)',
+                                        'Mean length (cm)',
+                                        'No. aged',
+                                        'Mean age (year)',
+                                        'Mean length (cm)')
+        
+        colnames(Fleet8_agepercents) = c('Percentile',
+                                         'Female age at percentile',
+                                         'Male age at percentile')
+        
+        colnames(Fleet8_index) = c('Year',
+                                   'Index',
+                                   'Log-scale SE')
+      
+
+```
+
+```{r, results='asis'}
+    #Fleet 8 catch by depth
+        Fleet8_catchdepth.table = xtable(Fleet8_catchdepth,
+                              caption = c("Summaries of catch statistics of 
+                                          Califronia scorpionfish by depth zones 
+                                          from NWFSC trawl survey between 2003 and 2016."),
+                              label='tab:Fleet8_NWFSCTrawl_catchdepth')
+    
+        
+        print(Fleet8_catchdepth.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x})
+
+   #Fleet 8 catch by latitude
+         Fleet8_catchlat.table = xtable(Fleet8_catchlat,
+                              caption = c("Summaries of catch statistics of 
+                                          Calfironia scorpionfish by latitude zones 
+                                          from NWFSC trawl survey between 2003 and 2016."),
+                              label='tab:Fleet8_NWFSCTrawl_catchlat')
+        
+        
+        print(Fleet8_catchlat.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x})
+
+   
+```
+
+```{r, results='asis'}
+    #Fleet 8 CPUE summary
+         Fleet8_summary.table = xtable(Fleet8_summary,
+                              caption = c("Summaries of haul statistics of 
+                                          California scorpionfish from NWFSC 
+                                          trawl survey between 2003 and 2016."),
+                              label='tab:Fleet8_NWFSCTrawl_summary')
+        
+       align(Fleet8_summary.table) = c('l','l', rep('>{\\centering}p{.7in}', dim(Fleet8_summary)[2]-1))
+        
+        print(Fleet8_summary.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x})  
+        
+        
+  #Fleet 8 CPUE age summary
+        Fleet8_agesummary.table = xtable(Fleet8_agesummary,
+                              caption = c("Summary statistics of age data by
+                                          year and sex from NWFSC trawl survey 
+                                          between 2005 and 2016.  The last raw s
+                                          hows total numbers of fish aged by sex."),
+                              label='tab:Fleet8_NWFSCTrawl_agesummary')
+        
+        align(Fleet8_agesummary.table) = c('l','l', rep('>{\\centering}p{.7in}', dim(Fleet8_agesummary)[2]-1))
+         
+        print(Fleet8_agesummary.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x})       
+```
+
+```{r, results='asis'}       
+   #Fleet 8 CPUE age summary
+         Fleet8_agepercents.table = xtable(Fleet8_agepercents,
+                              caption = c("Ages at five percentiles by sex from 
+                                          NWFSC trawl survey between 2005 and 2016, 
+                                          indicating more older males in the population."),
+                              label='tab:Fleet8_NWFSCTrawl_agepercents')
+        
+        
+        print(Fleet8_agepercents.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x})        
+        
+        
+        
+      #Fleet 8 index
+         Fleet8_index.table = xtable(Fleet8_index,
+                              caption = c("The NWFSC trawl survey
+                                            index."),
+                              digits=4,
+                              label='tab:Fleet8_NWFSCTrawl_index')
+        
+        
+        print(Fleet8_index.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x})
+```
+
+
+\FloatBarrier
+<!-- ********************************************************************** -->
+<!-- ***************Fleet 9 Gillnet survey index TABLES******************** -->
+<!-- ********************************************************************** -->
+
+```{r, eval=TRUE, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+      ##read in data for 3 tables
+        Fleet9_filter = read.csv("./txt_files/Fleet9_GillnetSurvey_filter.csv")
+        Fleet9_aic = read.csv("./txt_files/Fleet9_GillnetSurvey_aic.csv")
+        Fleet9_index = read.csv("./txt_files/Fleet9_GillnetSurvey_index.csv")
+        
+        colnames(Fleet9_filter) = c('Filter',
+                                    'Criteria',
+                                    'Sample size (no. positive trips)',
+                                    'Sample size (no. of trips)')
+        
+        colnames(Fleet9_aic) = c('Model',
+                                 'Binomial',
+                                 'Lognormal')
+        
+        colnames(Fleet9_index) = c('Year',
+                                   'Index',
+                                   'Log-scale SE')
+      
+
+```
+
+```{r, results='asis'}
+    #Fleet 9 filter
+         Fleet9_filter.table = xtable(Fleet9_filter,
+                              caption = c("Recreational private mode dockside data sample 
+                                          sizes at each data filtering step.  
+                                          The bold value indicates the final sample size 
+                                          used for delta-GLM analysis."),
+                              label='tab:Fleet9_GillnetSurvey_filter')
+        
+        align(Fleet9_filter.table) = c('l',
+                                  '>{\\raggedright}p{1.5in}',
+                                  '>{\\raggedright}p{2.6in}',
+                                  '>{\\raggedright}p{1in}',
+                                  '>{\\raggedright}p{1in}')          
+        
+        print(Fleet9_filter.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x})
+
+   #Fleet 9 aic
+         Fleet9_aic.table = xtable(Fleet9_aic,
+                              caption = c("AIC values for each model in the
+                                          recreational private mode dockside sample 
+                                          index."),
+                              label='tab:Fleet9_GillnetSurvey_aic')
+        
+        
+        print(Fleet9_aic.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x})
+
+   #Fleet 9 index
+         Fleet9_index.table = xtable(Fleet9_index,
+                              caption = c("The recreational private mode 
+                                            dockside sample index."),
+                              digits=4,
+                              label='tab:Fleet9_GillnetSurvey_index')
+        
+        
+        print(Fleet9_index.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x})
+```
+\FloatBarrier
+<!-- ********************************************************************** -->
+<!-- ***************Fleet 11 Bight trawl survey index TABLES*************** -->
+<!-- ********************************************************************** -->
+
+```{r, eval=TRUE, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+      ##read in data for 3 tables
+        Fleet11_filter = read.csv("./txt_files/Fleet11_SCBSurvey_filter.csv")
+        Fleet11_aic = read.csv("./txt_files/Fleet11_SCBSurvey_aic.csv")
+        Fleet11_index = read.csv("./txt_files/Fleet11_SCBSurvey_index.csv")
+        
+        colnames(Fleet11_filter) = c('Filter',
+                                    'Criteria',
+                                    'Sample size (no. positive trips)',
+                                    'Sample size (no. of trips)')
+        
+        colnames(Fleet11_aic) = c('Model',
+                                 'Binomial',
+                                 'Lognormal')
+        
+        colnames(Fleet11_index) = c('Year',
+                                   'Index',
+                                   'Log-scale SE')
+      
+
+```
+
+```{r, results='asis'}
+    #Fleet 11 filter
+         Fleet11_filter.table = xtable(Fleet11_filter,
+                              caption = c("Recreational private mode dockside data sample 
+                                          sizes at each data filtering step.  
+                                          The bold value indicates the final sample size 
+                                          used for delta-GLM analysis."),
+                              label='tab:Fleet11_SCBSurvey_filter')
+        
+        align(Fleet11_filter.table) = c('l',
+                                  '>{\\raggedright}p{1.5in}',
+                                  '>{\\raggedright}p{2.6in}',
+                                  '>{\\raggedright}p{1in}',
+                                  '>{\\raggedright}p{1in}')          
+        
+        print(Fleet11_filter.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x})
+
+   #Fleet 11 aic
+         Fleet11_aic.table = xtable(Fleet11_aic,
+                              caption = c("AIC values for each model in the
+                                          recreational private mode dockside sample 
+                                          index."),
+                              label='tab:Fleet11_SCBSurvey_aic')
+        
+        
+        print(Fleet11_aic.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x})
+
+   #Fleet 11 index
+         Fleet11_index.table = xtable(Fleet11_index,
+                              caption = c("The recreational private mode 
+                                            dockside sample index."),
+                              digits=4,
+                              label='tab:Fleet11_SCBSurvey_index')
+        
+        
+        print(Fleet11_index.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x})
+```
+
+
+
+
+
+
+
+\FloatBarrier
+<!-- ********************************************************************** -->
+<!--  ************Fishery dependent biological sampling TABLES************* -->
+<!-- ********************************************************************** -->
+
+\FloatBarrier
+
+
+
+
+<!-- ====================================================================== --> 
+<!-- ******************START BIOLOGICAL DATA TABLES************************ --> 
+<!-- ====================================================================== --> 
+
+
+
+
+<!-- ********************************************************************** -->
+<!-- ***********************Weight-length TABLES*************************** --> 
+<!-- ********************************************************************** -->
+
+
+
+
+<!-- ********************************************************************** --> 
+<!-- ******************Maturity and Fecundity TABLES*********************** --> 
+<!-- ********************************************************************** --> 
+
+
+
+
+
+<!-- ********************************************************************** -->
+<!-- **********************Age Structure TABLES**************************** --> 
+<!-- ********************************************************************** -->
+
+
+
+
+
+
+\FloatBarrier
+
+<!-- ====================================================================== -->
+<!-- ********************BASE-CASE MODEL 1 TABLES************************** --> 
+<!-- **REPEAT THIS SECTION AND EDIT AS NEEDED IF YOU HAVE MULTIPLE MODELS** --> 
+<!-- ====================================================================== -->
+
+
+
+<!-- ***********MODEL 1 PARAMETERS***************************************** --> 
+\begin{landscape}
+```{r, results='asis'}
+       # If you use this for more than one model = change mod1 to mod2 or mod3
+    mod_params = mod1$parameters[-c(grep('Recr',mod1$parameters$Label),
+                                         grep('Impl',mod1$parameters$Label)),
+                                      (names(mod1$parameters) %in%
+                                         c("Num","Label","Value","Phase","Min",
+                                           "Max","Status","Parm_StDev",
+                                           "Pr_type","Prior","Pr_SD"))]  
+
+    # Combine bounds into one column
+    mod_params$Min = paste('(', mod_params$Min, ', ', mod_params$Max, ')', sep='')
+    
+    
+    # Combine prior info to one column
+    #mod_params$Pr_type = gsub('No_prior', 'None', mod_params$Pr_type)
+    mod_params$Pr_type = ifelse(mod_params$Pr_type == 'No_prior' , 'None',
+                                paste(mod_params$Pr_type,' (', mod_params$Prior, 
+                                      ', ', mod_params$Pr_SD, ')', sep = ''))
+    
+    # Remove the max, prior and prior sd columns
+    drops = c('Max', 'Prior', 'Pr_SD')
+    mod_params = mod_params[, !(names(mod_params) %in% drops)]
+    
+    # Add column names
+    colnames(mod_params) = c('No.',
+                             'Parameter',
+                             'Value',
+                             'Phase',
+                             'Bounds',
+                             'Status',
+                             'SD',
+                             'Prior (Exp.Val, SD) ')
+
+    # Model 1 model parameters
+    mod_params.table = xtable(mod_params, 
+                              caption=c(paste('List of parameters used in
+                                              the base model, including estimated 
+                                              values and standard deviations (SD), 
+                                              bounds (minimum and maximum), 
+                                              estimation phase (negative values indicate
+                                              not estimated), status (indicates if 
+                                              parameters are near bounds, and prior type
+                                              information (mean, SD).'
+                                              , sep='')), 
+                              label='tab:model_params',
+                              digits = c(0,0,0,3,0,3,0,3,0))  
+
+    # Add alignment  
+    align(mod_params.table) = c('lrlrrcccl')
+        
+ 
+    # Add "continued on next page"" footnote   
+    addtorow          <- list()
+    addtorow$pos      <- list()
+    addtorow$pos[[1]] <- c(0)
+    addtorow$command  <- c(paste("\\hline \n",
+                                 "\\endhead \n",
+                                 "\\hline \n",
+                                 "\\multicolumn{3}{l}",
+                                 "{\\footnotesize Continued on next page} \n",
+                                 "\\endfoot \n",
+                                 "\\endlastfoot \n",sep=""))
+
+
+
+    # Print Model 1 parameters
+    print(mod_params.table, 
+          include.rownames = FALSE,
+          caption.placement = 'top',
+          tabular.environment = 'longtable',
+          floating = FALSE,
+          add.to.row = addtorow)
+```
+\end{landscape}
+<!-- ---------------------------------------------------------------------- -->
+
+\FloatBarrier
+
+\newpage
+
+<!-- ***********Indices of abundance summary table************************* -->
+\begin{landscape}
+```{r, results = 'asis'}
+    Index_summary = read.csv('./txt_files/Index_summary.csv')
+      colnames(Index_summary) = c('Fleet',
+                                  'Years',	
+                                  'Name',
+                                  'Fishery ind.',
+                                  'Filtering',
+                                  'Method',	
+                                  'Endorsed')
+
+   # Index of abundance summary, create table   
+     Index_summary.table = xtable(Index_summary, 
+                                  caption = c('Summary of the biomass/abundance
+                                              time series used in the stock
+                                              assessment.'),
+                                 label = 'tab:Index_summary',
+                                 digits = 0)    
+    # Add alignment  
+      align(Index_summary.table) = c('l',
+                                    '>{\\centering}p{.3in}',
+                                     '>{\\centering}p{1in}',
+                                     '>{\\centering}p{2.5in}',
+                                     '>{\\centering}p{.3in}', 
+                                     '>{\\centering}p{2in}',
+                                     '>{\\centering}p{1.2in}',
+                                     '>{\\centering}p{.5in}')  
+    
+    # Print index summary table
+      print(Index_summary.table, 
+            include.rownames=FALSE, 
+            caption.placement='top',
+            sanitize.text.function = function(x){x})
+```
+\end{landscape}
+<!-- ---------------------------------------------------------------------- -->
+
+\newpage
+
+<!-- ***********JITTER TABLE*********************************************** --> 
+```{r, results = 'asis'}
+    # Replace values in file and read in - values for all models in 1 table  
+      jitter = read.csv('./txt_files/JitterTable.csv')  
+
+    # Create model 1 jitter table
+    jitter.table = xtable(jitter, 
+                          caption = c('Results from 100 jitters from each of 
+                                      the three models.'),
+                          label = 'tab:jitter')
+    
+    # Print jitter table (all models)    
+    print(jitter.table, 
+          include.rownames = FALSE, 
+          caption.placement = 'top')
+```
+<!-- ---------------------------------------------------------------------- -->
+
+\FloatBarrier
+
+\newpage
+<!-- ***********MODEL 1 SENSITIVITY TABLE(S)******************************* --> 
+```{r, results = 'asis'}
+    
+    # Read in/organize sensitivity file, change column names, caption
+    Sens_model1 = read.csv('./txt_files/Sensitivities_model1.csv')
+    colnames(Sens_model1) = c('Label', 
+                              'Base (Francis weights)', 
+                              'Harmonic mean weights',
+                              'Drop index', 
+                              'Drop ages', 
+                              'Down-weight lengths',
+                              'Free size Age0', 
+                              'Free CV Amin', 
+                              'External growth')
+
+    # Create sensitivities table
+    Sens_model1.table = xtable(Sens_model1, 
+                               caption = c('Sensitivity of the base model 
+                                          to dropping or down-weighting data 
+                                          sources and alternative assumptions 
+                                          about growth.'),
+                               label = 'tab:Sensitivity_model1', digits = 2)    
+  
+    # Add alignment - this uses centered aligment of .6 inches for all columns 2+,
+    # You can change this easily to have variable columns width after you know how many
+    # colunns your final table has
+    align(Sens_model1.table) = c('l','l', rep('>{\\centering}p{.6in}', dim(Sens_model1)[2]-1))
+                    #             '>{\\centering}p{.6in}',
+                    #             '>{\\centering}p{.5in}',
+                    #             '>{\\centering}p{.5in}',
+                    #             '>{\\centering}p{.6in}', 
+                    #             '>{\\centering}p{.5in}',
+                    #             '>{\\centering}p{.6in}',
+                    #             '>{\\centering}p{.6in}',
+                    #             '>{\\centering}p{.6in}')  
+
+    # Print model 1 sensitivity table
+    print(Sens_model1.table, 
+          include.rownames = FALSE,             
+          caption.placement = 'top',
+          floating.environment = 'sidewaystable',
+          scalebox = .9)
+
+```
+<!-- ---------------------------------------------------------------------- -->
+
+
+\newpage
+<!-- ***********MODEL 1 REFERENCE POINTS TIME SERIES TABLE***************** --> 
+```{r}
+   
+    
+    # Total biomass, extract and subset
+    Bio_all = mod1$sprseries[, c('Yr', 'Bio_all')]
+    Bio_allyrs = subset(Bio_all, Yr > (Dat_start_mod1 - 1) & Yr < (LastYR + 1))
+
+  
+  
+    # Spawning biomass, extract and subset, and turn into scientific notation
+    SpawningB = mod1$derived_quants[grep('SPB', mod1$derived_quants$Label), ]
+    SpawningB = SpawningB[c(-1, -2), ]
+    SpawningByrs = SpawningB[SpawningB$Label >= paste('SPB_', Dat_start_mod1, sep='') &  
+                             SpawningB$Label <= paste('SPB_', LastYR, sep=''), ] 
+        
+        SpawningB_units = ''
+        if(mean(SpawningByrs$Value) > 1000000){
+            SpawningB_units <- "million"
+            SpawningByrs$Value <- SpawningByrs$Value/1000000
+         }
+
+    
+    # Depletion, extract, rename and subset
+    Depl_years = as.data.frame(seq(Dat_start_mod1, LastYR, 1))
+    colnames(Depl_years) = 'Yr'
+    Depl_years$Depl = 0
+    Depletion = mod1$derived_quants[grep('Bratio', mod1$derived_quants$Label), ]
+    Depletionyrs = Depletion[Depletion$Label >= paste0('Bratio_', Dat_start_mod1) &  
+                             Depletion$Label <= paste0('Bratio_', LastYR), ]
+    
+    Depletionyrs$Yr = Depletionyrs$Label1 = substr(Depletionyrs$Label,
+                                                     (nchar(Depletionyrs$Label) + 1) - 4, 
+                                                      nchar(Depletionyrs$Label))
+   # Make sure depletion is numeric and merge ...
+   Depletionyrs$Yr = as.numeric(Depletionyrs$Yr)
+   Depleteyrs = merge(Depl_years, Depletionyrs, all.x=T, all.y=T, by.x='Yr', by.y='Yr')
+   Depleteyrs[is.na(Depleteyrs)] <- 0
+   Depleteyrs$total = Depleteyrs$Depl + Depleteyrs$Value
+    
+   # Recruits, extract and subset
+   Recruit = mod1$derived_quants[grep('Recr', mod1$derived_quants$Label), ]
+   Recruit = Recruit[c(-1, -2), ]
+   Recruityrs = Recruit[Recruit$Label >= paste('Recr_', Dat_start_mod1, sep='') &  
+                        Recruit$Label <= paste('Recr_', LastYR, sep=''), ]  
+    
+    
+   # Landings/total catch, extract and subset years
+   Landings = mod1$sprseries[ , c('Yr','Dead_Catch_B')]
+   Landingsyrs = subset(Landings, Yr > (Dat_start_mod1 - 1) & Yr < (LastYR + 1))
+    
+  
+    
+   # Relatvie exploitation rate, extract, subset and merge
+   Exploit = mod1$derived_quants[grep('F', mod1$derived_quants$Label), ]
+   Exploit = Exploit[c(-1, -2), ]
+   Exploityrs = Exploit[Exploit$Label >= paste('F_', Dat_start_mod1, sep = '') &  
+                        Exploit$Label <= paste('F_', LastYR, sep = ''), ]  
+   Exploityrs$Yr = Exploityrs$Label1 = substr(Exploityrs$Label, 
+                                               (nchar(Exploityrs$Label) + 1) - 4,
+                                                nchar(Exploityrs$Label))
+   Exploityrs$Yr = as.numeric(Exploityrs$Yr)
+   Exploited = merge(Depl_years, Exploityrs, all.x=T, all.y=T, by.x='Yr', by.y='Yr')
+   Exploited[is.na(Exploited)] <- 0
+   Exploited$total = Exploited$Depl + Exploited$Value
+    
+  # SPR, extract and subset years
+  SPR = mod1$sprseries[, c('Yr', 'SPR')]
+  SPRyrs = subset(SPR, Yr > (Dat_start_mod1 - 1) & Yr < (LastYR + 1))
+  
+  
+  # Bind all the columns together for the table
+  Timeseries = as.data.frame(cbind(seq(Dat_start_mod1, LastYR, 1), 
+                                       Bio_allyrs$Bio_all, 
+                                       SpawningByrs$Value,
+                                       Depleteyrs$total,
+                                       Recruityrs$Value, 
+                                       Landingsyrs$Dead_Catch_B, 
+                                       Exploited$total,
+                                       SPRyrs$SPR))
+
+ # Add colulmn names    
+ colnames(Timeseries)=c('Yr', 
+                        'Total biomass (mt)', 
+                        paste0('Spawning biomass', SpawningB_units, ' (mt)'),
+                        'Depletion', 
+                        'Age-0 recruits', 
+                        'Total catch (mt)',
+                        'Relative exploitation rate', 
+                        'SPR')
+ 
+ # Make year a factor so you don't have a decimal   
+ Timeseries$Yr = as.factor(Timeseries$Yr)
+    
+ # Remove 2015 values for last three columns since year isn't complete
+ Timeseries[nrow(Timeseries), c((ncol(Timeseries) - 2):ncol(Timeseries))] <- NA
+```
+
+```{r, results='asis'}
+    # Create the time series table
+    Timeseries.table = xtable(Timeseries, 
+                              caption = c('Time-series of population estimates 
+                                        from the base-case model.'),
+                              label='tab:Timeseries_mod1',
+                              digits = c(0,0,0,0,2,0,0,2,2))   
+
+    # Add alignment
+    align(Timeseries.table) = c('l',
+                                'c',
+                                '>{\\centering}p{.6in}',
+                                '>{\\centering}p{.6in}',
+                                '>{\\centering}p{.6in}',
+                                '>{\\centering}p{.6in}',
+                                '>{\\centering}p{.8in}',
+                                '>{\\centering}p{.8in}',
+                                'c')
+
+    # Print timeseries of population estimates table
+    print(Timeseries.table, 
+          include.rownames = FALSE, 
+          caption.placement = 'top',
+          tabular.environment = 'longtable', 
+          align=TRUE, 
+          floating = FALSE, 
+          add.to.row = list(pos = list(0), 
+          command = '\\hline \\endhead '))
+```
+<!-- ---------------------------------------------------------------------- -->
+
+\FloatBarrier
+
+<!-- ***********MODEL 1 HARVEST PROJECTIONS TABLE************************** --> 
+\newpage
+```{r, results = 'asis'}
+    # Pull OFL contribution and subset years
+    OFLcatch = mod1$derived_quants[grep('OFLCatch', mod1$derived_quants$Label), ]
+    OFLcatchyrs = OFLcatch[OFLcatch$Label >= paste('OFLCatch_', Project_firstyr, sep = '') &
+                           OFLcatch$Label <= paste('OFLCatch_', Project_lastyr, sep = ''), ]
+
+    # Pull forecasted landings and subset years
+    ForecastC = mod1$timeseries[, grepl('Yr|retain[(]B[)]', names(mod1$timeseries))]
+    ForecastC$total = rowSums(ForecastC[, -1])
+    ForecastCyrs = subset(ForecastC, Yr > (Project_firstyr - 1) & Yr < (Project_lastyr + 1))
+
+    # Pull Age 5+ biomass and subset years
+    Age5biomass = mod1$timeseries[, c('Yr', 'Bio_smry')]
+    Age5biomassyrs = subset(Age5biomass, Yr > (Project_firstyr - 1) & Yr < (Project_lastyr + 1))
+
+
+    # Pull spawning biomass and subset years
+    SpawningB = mod1$derived_quants[grep('SPB', mod1$derived_quants$Label), ]
+    SpawningB = SpawningB[c(-1, -2), ]
+    SpawningByrs = SpawningB[SpawningB$Label >= paste('SPB_', Project_firstyr, sep = '') &
+                             SpawningB$Label <= paste('SPB_', Project_lastyr, sep = ''), ]
+
+    # Pull depletion and subset years
+    Depletion = mod1$derived_quants[grep('Bratio', mod1$derived_quants$Label), ]
+    Depletion = Depletion[c(-1, -2), ]
+    Depletionyrs = Depletion[Depletion$Label >= paste('Bratio_', Project_firstyr, sep = '') &
+                             Depletion$Label <= paste('Bratio_', Project_lastyr, sep = ''), ]
+
+    # Combine the data for the forecast table
+    Forecast_mod1 = as.data.frame(cbind(seq(Project_firstyr, Project_lastyr, 1),
+                                        OFLcatchyrs$Value,
+                                        ForecastCyrs$total,
+                                        Age5biomassyrs$Bio_smry,
+                                        SpawningByrs$Value,
+                                        Depletionyrs$Value))
+    # Add column names
+    colnames(Forecast_mod1)=c('Yr',
+                           'OFL contriubtion (mt)',
+                           'ACL landings (mt)',
+                           'Age 5+ biomass (mt)',
+                           'Spawning Biomass (mt)',
+                           'Depletion')
+
+    # Make sure year is a factor, so you don't get decimals
+    Forecast_mod1$Yr = as.factor(Forecast_mod1$Yr)
+
+    # Create the forecast table
+    Forecast_mod1.table = xtable(Forecast_mod1,
+                              caption = c('Projection of potential
+                                        OFL, spawning biomass, and depletion for the
+                                        base case model.'),
+                              label = 'tab:Forecast_mod1', digits = 2)
+    # Add alignment
+    align(Forecast_mod1.table) = c('l',
+                                   'c',
+                                   '>{\\centering}p{1in}',
+                                   '>{\\centering}p{1in}',
+                                   '>{\\centering}p{1in}',
+                                   '>{\\centering}p{1in}',
+                                   '>{\\centering}p{1in}')
+
+    # Print model 1 forecast table
+    print(Forecast_mod1.table,
+          include.rownames = FALSE,
+          caption.placement = 'top')
+```
+<!-- ---------------------------------------------------------------------- -->
+\FloatBarrier
+
+
+<!-- ********************************************************************** -->
+<!-- ************************MODEL 2 TABLES******************************** --> 
+<!-- ********************************************************************** -->
+
+
+
+<!-- ********************************************************************** -->
+<!-- ************************MODEL 3 TABLES******************************** --> 
+<!-- ********************************************************************** -->
+
+
+
+<!-- ====================================================================== --> 
+<!-- *************************          *********************************** --> 
+<!-- *************************END TABLES*********************************** --> 
+<!-- *************************          *********************************** --> 
+<!-- ====================================================================== --> 
+
+
