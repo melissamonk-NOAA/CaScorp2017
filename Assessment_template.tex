@@ -1150,27 +1150,29 @@ three years before and three years after the lapse for all modes other
 than the PC mode. For the PC mode, estimates of numbers of fish were
 available from logbook data and average weight from the three years
 before and after this period were applied to provide estimates for the
-PC mode. Estimates of retained catch and discards were not available
-from the non-PC modes prior to 1980, thus the ratio of catch in the PC
-mode to the other modes for 1980 through 1985 was used to provide an
-estimate of catch in the other modes in the years 1932-1979. In the case
-of the PR mode, a linear ramp in the ratio adjustment between PC and PR
-modes was applied between 1979 and 1966 from 0.55 in 1980 to 0.10 in
-1965, reflecting the increase in the relative proportion of catch
-contributed by the PR mode with time as more individuals anglers
-purchased vessels, as recommended in the California Catch Reconstruction
-(Ralston et al. \protect\hyperlink{ref-Ralston2010}{2010}), and the
-ratio of 0.10 was assumed for all years prior. The ratio of PC estimates
-to the MM and BB modes was assumed to constant and the average between
-1980 and 1989 was applied from 1979 to 1932. Catch estimates from CPFV
-logbooks were not available during the World War II era from 1941 until
-1946 and catch was assumed to be zero for all modes during this period.
-Estimates for retained catch and discarded mortality for 1935 to 1928
-were estimated using a linear ramp from the value for 1936 to zero in
-1928 for the PC mode and ratios PC compared to other modes were used to
-proxy estimates for other modes based on the resulting ramped values for
-the PC mode. The final time series of retained and discarded landings is
-in Table \ref{tab:Rec_removal}.
+PC mode.
+
+Estimates of retained catch and discards were not available from the
+non-PC modes prior to 1980, thus the ratio of catch in the PC mode to
+the other modes for 1980 through 1985 was used to provide an estimate of
+catch in the other modes in the years 1932-1979. In the case of the PR
+mode, a linear ramp in the ratio adjustment between PC and PR modes was
+applied between 1979 and 1966 from 0.55 in 1980 to 0.10 in 1965,
+reflecting the increase in the relative proportion of catch contributed
+by the PR mode with time as more individuals anglers purchased vessels,
+as recommended in the California Catch Reconstruction (Ralston et al.
+\protect\hyperlink{ref-Ralston2010}{2010}), and the ratio of 0.10 was
+assumed for all years prior. The ratio of PC estimates to the MM and BB
+modes was assumed to constant and the average between 1980 and 1989 was
+applied from 1979 to 1932. Catch estimates from CPFV logbooks were not
+available during the World War II era from 1941 until 1946 and catch was
+assumed to be zero for all modes during this period. Estimates for
+retained catch and discarded mortality for 1935 to 1928 were estimated
+using a linear ramp from the value for 1936 to zero in 1928 for the PC
+mode and ratios PC compared to other modes were used to proxy estimates
+for other modes based on the resulting ramped values for the PC mode.
+The final time series of retained and discarded landings is in Table
+\ref{tab:Rec_removal}.
 
 \subsubsection{Fishery-dependent Abundance
 Indices}\label{fishery-dependent-abundance-indices}
@@ -1204,9 +1206,11 @@ filtered to trips fishing with hook-and-line gear in southern
 California. Trips with a primary fishing area of Mexico were also
 removed. The CRFS dockside private boat records with these broad filters
 include 44,128 trips of which 3,802 caught California scorpionfish
-(8.6\%).\\
+(8.6\%).
+
 The Stephens-MacCall approach was used to identify trips with a high
-probability of catching California scorpionfish. Prior to using the
+probability of catching California scorpionfish (Stephens and MacCall
+\protect\hyperlink{ref-Stephens2004}{2004}). Prior to using the
 Stephens-MacCall approach to select relevant trips a number of other
 filters were applied to the data to minimize variability in CPUE
 estimates. Over the course of the time series only 45 trips from Santa
@@ -1216,15 +1220,15 @@ trips from Santa Barbara and the same species were identified as
 indicators and counter-indicators. For the final model prior to
 Stephens-MacCall, trips from Santa Barbara were excluded, leaving 41,235
 trips, and 3,747 of those caught California scorpionfish (Table
-\ref{tab:Fleet4_filter}).
+\ref{tab:Fleet4_RecPR_dockside_filter}).
 
 Coefficients from the Stephens-MacCall analysis (a binomial GLM) are
 positive for species which co-occur with California scorpionfish, and
 negative for species that are not caught with California scorpionfish
-(Figure \ref{fig:Fleet4_SM}).Potentially informative species for the
-Stephens-MacCall analysis were limited to species caught in at least one
-percent of all trips and caught in at least five years. Some of these
-never occurred with California scorpionfish (strong
+(Figure \ref{fig:Fleet4_RecPR_dockside_SM}).Potentially informative
+species for the Stephens-MacCall analysis were limited to species caught
+in at least one percent of all trips and caught in at least five years.
+Some of these never occurred with California scorpionfish (strong
 `counter-indicators') and records with these species were removed from
 the data prior to estimation of the index. Strong counter-indicators for
 the CRFS private boat index included yellowfin tuna and dolphinfish.
@@ -1239,21 +1243,21 @@ fishery was closed and were removed from the analysis (Figure
 2006-2016 were also excluded from the index since this index relies on
 sampler-examined retained catch.
 
-CPUE was modeled using a delta-GLM approach, where the catch occurrence
-(binomial) component was modeled using a logit link function and the
-positive catch component was modeled after log-transformation of the
-response variable, according to a normal distribution with an identity
-link function. The units for CPUE are fish landed/anglers. A gamma
-distribution for the positive catch component was also explored, but
-model selection favored the lognormal model.
+Catch per unite effort was modeled using a delta-GLM approach, where the
+catch occurrence (binomial) component was modeled using a logit link
+function and the positive catch component was modeled after
+log-transformation of the response variable, according to a normal
+distribution with an identity link function. The units for CPUE are fish
+landed/anglers. A gamma distribution for the positive catch component
+was also explored, but model selection favored the lognormal model.
 
 Model selection procedures selected the covariates \emph{2-month wave}
 and \emph{county} as important for both the catch occurrence and
 positive catch component models for all data sets, along with the
 categorical year factor used for the index of abundance (Table
-\ref{tab:Fleet4aic}). The final index indicates a decrease in relative
-abundance from 2006 to 2010, at which point the index is relatively flat
-(Figure \ref{fig:index2_cpuefit_RecPR}).
+\ref{tab:Fleet4_RecPR_dockside_aic}). The final index indicates a
+decrease in relative abundance from 2006 to 2010, at which point the
+index is relatively flat (Figure \ref{fig:index5_logcpuefit_RecPR}).
 
 \textbf{CRFS Dockside Party/Charter Boat Index}
 
@@ -1279,24 +1283,25 @@ mis-reporting, e.g., trips reporting retained California scorpionfish in
 top 1\% of the data (\textgreater{}325 fish). Trips fishing outside of
 California scorpionfish habitat (reported as targeting pelagic species)
 or trips reporting a block with a minimum depth deeper than 140 m were
-also filtered out. Because California scorpionfish is not a primary
-target species, boats with fewer than 10 trips retaining California
-scorpionfish were removed from the analysis. Data were also filtered to
-only include catches reported from blocks South of Pt. Conception and
-north of the U.S.-Mexico border (Figure \ref{fig:boundary_map}, and
-blocks with at least 100 trips retaining California scorpionfish and a
-total of 500 trips. A full description of the data filters is in Table
+also filtered out.\\
+Because California scorpionfish is not a primary target species, boats
+with fewer than 10 trips retaining California scorpionfish were removed
+from the analysis. Data were also filtered to only include catches
+reported from blocks South of Pt. Conception and north of the
+U.S.-Mexico border (Figure \ref{fig:boundary_map}, and blocks with at
+least 100 trips retaining California scorpionfish and a total of 500
+trips. A full description of the data filters is in Table
 \ref{tab:Fleet5_RecPC_CPFVlogbook_filter}. A total of 432,868 trips were
 retained for the index of abundance, 202,937 of which caught California
 scorpionfish.
 
 Two different area factors were considered for the standardization,
-block and region. The 60 retained blocks were split into nearshore
-regions north and south of San Pedro and the northern and southern
-islands, for four regions. Both a delta model and a negative binomial
-model were considered for index standardization. However, due to the
-large number of records, the traditional jackknife routine to estimate
-uncertainty was not possible.
+block and region.\\
+The 60 retained blocks were split into nearshore regions north and south
+of San Pedro and the northern and southern islands, for four regions.
+Both a delta model and a negative binomial model were considered for
+index standardization. However, due to the large number of records, the
+traditional jackknife routine to estimate uncertainty was not possible.
 
 California scorpionfish were present in 47\% of all trips, which
 warrants the use of a negative binomial model. Factors considered were
@@ -1304,10 +1309,11 @@ warrants the use of a negative binomial model. Factors considered were
 model with blocks and was selected over a model with region by 39,180
 AIC. The final model includes \emph{year}, \emph{month}, and
 \emph{block} with a log link and effort as an offset (Table
-\ref{tab:Fleet5_RecPC_CPFVlogbook_aic}). The standardized index shows a
-cyclic pattern, with period of higher CPUE (late 1980's to early 1990's
-and late 1990s) and has shown a general downward trend since 2008
-(Figure \ref{fig:index2_cpuefit_RecPC}). An interesting note is the
+\ref{tab:Fleet5_RecPC_CPFVlogbook_aic}).\\
+The standardized index shows a cyclic pattern, with period of higher
+CPUE (late 1980's to early 1990's and late 1990s) and has shown a
+general downward trend since 2008 (Figure
+\ref{fig:index5_logcpuefit_RecPC}). An interesting note is the
 similarity in standardized CPUE between the CPFV logbook index and the
 CPFV dockside index (not used in the stock assessment model) from
 1992-1997 (for a Stephens-MacCall threshold of 0.1) (Figure
@@ -1324,8 +1330,8 @@ Observer Sampling Program is to collect data including charter boat
 fishing locations, catch and discard of observed fish by species, and
 lengths of discarded fish. The program samples the commercial passenger
 fishing vessel (CPFV), i.e., charter boat or for-hire fleet and collects
-drift-specific information at each fishing stop on an observed trip. At
-each fishing stop recorded information includes start and end times,
+drift-specific information at each fishing stop on an observed trip.\\
+At each fishing stop recorded information includes start and end times,
 start and end location (latitude/longitude), start and end depth, number
 of observed anglers (a subset of the total anglers), and the catch
 (retained and discarded) by species of the observed anglers.
@@ -1358,15 +1364,16 @@ delta-GLM modeling approach (Lo et al.
 \protect\hyperlink{ref-Lo1992}{1992}).
 
 The locations of positive encounters were mapped, using the drift
-starting locations. Regions of suitable habitat were defined by creating
-detailed hulls (similar to an alpha hull) with a 0.01 decimal degree
-buffer around a location or cluster of locations. Any portion of a
-region that intersected with land was removed. As an example of the
-buffers, a region with only one positive encounter has an ellipsoid area
-of 3.22km2. Each drift (both positive and zero-catch) was assigned to
-the region with which it intersected. Drifts that did not intersect with
-a region were considered structural zeroes, i.e., outside of the species
-habitat, and not used in analyses.
+starting locations.\\
+Regions of suitable habitat were defined by creating detailed hulls
+(similar to an alpha hull) with a 0.01 decimal degree buffer around a
+location or cluster of locations.\\
+Any portion of a region that intersected with land was removed. As an
+example of the buffers, a region with only one positive encounter has an
+ellipsoid area of 3.22km2. Each drift (both positive and zero-catch) was
+assigned to the region with which it intersected. Drifts that did not
+intersect with a region were considered structural zeroes, i.e., outside
+of the species habitat, and not used in analyses.
 
 \textbf{California CRFS Party/Charter Boat Index (Dockside)}
 
@@ -1401,7 +1408,7 @@ The method of Stephens and MacCall (2004) was used to identify trips
 with a high probability of catching California scorpionfish, based on
 the species composition of the catch in a given trip. Prior to applying
 the Stephens-MacCall filter, we identified potentially informative
-``predictor'' species, i.e., those with sufficient sample sizes and
+``predictor'' species , i.e., those with sufficient sample sizes and
 temporal coverage (at least 30 positive trips total, distributed across
 at least 10 years of the index) to inform the binomial model.
 Coefficients from the Stephens-MacCall analysis (a binomial GLM) are
@@ -1414,7 +1421,7 @@ Fishery Statistical Survey (MRFSS) were filtered using the
 Stephens-McCall method to identify trips with catch associated with
 California scorpionfish and the resulting trips analyzed in a delta-GLM
 including year and county to produce annual indices of abundance for the
-period 1980 through 1998. To eliminate trips targeting species caught
+period 1980 through 1998 . To eliminate trips targeting species caught
 near the surface for all or part of the trip where Calfornia
 scorpionfish do not occur, prior applying the Stephens-MacCall filter,
 trips with catch of bluefin tuna, yellowfin tuna, dorado, Pacific
@@ -1471,18 +1478,19 @@ false positive trips combined with the positive trips from the entire
 data set was evaluated for comparison.
 
 CPUE (number of fish per angler hour) was modelled using a
-``delta-GLM'''' model (Lo et al. 1992, Stefánsson 1996). Model selection
-using Akaike Information Criterion (AIC) and Bayesian Information
-Criteria (BIC) supported inclusion of year and region effects in both
-the binomial and lognormal components of the index for both the model
-with false positives from the 0.27 threshold and the 0.10 threshold. The
-addition of month effects (to allow for seasonal changes in CPUE) did
-not improve model fit. The lognormal model was employed as a result of
-the lower AIC values compared to the binomial model. The resulting index
-values for 1989 were anomalously high compared to other years. In
-addition, the less stringent filter of 0.10 resulted in a higher index
-value than 0.27, which was antithetical to the expectation that
-including trips with fewer positive trips would decrease the CPUE.
+``delta-GLM'''' model (Lo et al. \protect\hyperlink{ref-Lo1992}{1992},
+Stefánsson \protect\hyperlink{ref-Stefansson1996}{1996}). Model
+selection using Akaike Information Criterion (AIC) and Bayesian
+Information Criteria (BIC) supported inclusion of year and region
+effects in both the binomial and lognormal components of the index for
+both the model with false positives from the 0.27 threshold and the 0.10
+threshold. The addition of month effects (to allow for seasonal changes
+in CPUE) did not improve model fit. The lognormal model was employed as
+a result of the lower AIC values compared to the binomial model. The
+resulting index values for 1989 were anomalously high compared to other
+years. In addition, the less stringent filter of 0.10 resulted in a
+higher index value than 0.27, which was antithetical to the expectation
+that including trips with fewer positive trips would decrease the CPUE.
 Further examination of the number of California scorpionfish per trip by
 year showed a lower number of trips for this year than others and a
 lower proportion of low catch trips explaining why exclusion of low
@@ -1537,14 +1545,14 @@ stations (T0-T6,T10-T13) with long time series and 1,490 tows were
 retained for the analysis .
 
 City of Los Angeles (Hyperion) The City of Los Angeles Sanitation
-District provided trawl data from 1986-2016. Years with fewer than ten
-samples were removed from the analysis (1986, 1987, and 1992). Tow times
-were recorded starting in 1999, and assumed to be 10 minutes prior to
-1999. Stations sampled at least ten years were retained, which resulted
-in ten stations (A1, A3, C1, C3, C6, C9A, D1T, Z2, Z3, Z4; 921 hauls)
-for the analysis. Haul depth was missing for approximately half of the
-stations, and was imputed as the mean depth of of other tows at that
-station.
+District provided trawl data from 1986-2016.\\
+Years with fewer than ten samples were removed from the analysis (1986,
+1987, and 1992). Tow times were recorded starting in 1999, and assumed
+to be 10 minutes prior to 1999. Stations sampled at least ten years were
+retained, which resulted in ten stations (A1, A3, C1, C3, C6, C9A, D1T,
+Z2, Z3, Z4; 921 hauls) for the analysis. Haul depth was missing for
+approximately half of the stations, and was imputed as the mean depth of
+of other tows at that station.
 
 Los Angeles County (Palos Verdes) The Sanitation Districts of Los
 Angeles County provided trawl data from 1972-2016 with quarterly
@@ -1562,6 +1570,56 @@ analysis, resulting in 14 stations (SD1-SD14, SD17-21) and a total of
 
 \textbf{NWFSC Trawl Survey Index}
 
+The Northwest Fishery Science Center has conducted combined shelf and
+slope trawl surveys (hereafter referred as NWFSC trawl survey) since
+2003, based on a random-grid design from depths of 55 to 1280 meters.
+Additional details on this survey and design are available in the
+abundance and distribution reports by Keller et al.
+(\protect\hyperlink{ref-Keller2008}{2008}). Spatial locations of raw
+catch rates (in log scale) are shown in Figure X1.
+
+The proportions of positive catch haul and the raw catch rates of
+positive hauls by depth and latitude are shown in Figure
+\ref{fig:Fleet8_NWFSCtrawl_posdepth} and Figure
+\ref{fig:Fleet8_NWFSCtrawl_poslat}, respectively. These figures show
+that more scorpionfish were caught at shallow depth zones and in the
+southern latitude zones. Box plots of length summary data by depth and
+sex (Figure \ref{fig:Fleet8_NWFSCtrawl_lengthlat}) and by latitude and
+sex (Figure \ref{fig:Fleet8_NWFSCtrawl_lengthlat}) show no evidences of
+different spatial distributions (by depth and latitude) by length or by
+sex.\\
+The numbers of total hauls and percentages of positive catch hauls by
+depth and latitude zones are presented in Tables
+\ref{tab:Fleet8_NWFSCtrawl_catchdepth} and
+\ref{tab:Fleet8_NWFSCtrawl_catchlat}, respectively. Summaries of raw
+catch data by year are listed in Table
+\ref{tab:Fleet8_NWFSCtrawl_summary}. Overall, catches of scorpionfish by
+the survey were very low with less than 1mt fish caught during the
+entire 14 years of the survey. Bubble plots of length frequency
+distribution by year and sex are presented in Figure
+\ref{fig:Fleet8_NWFSCtrawl_lengthcomp}.
+
+Summaries of age data by year and sex are presented in Table
+\ref{tab:Fleet8_NWFSCtrawl_agesummary}.\\
+There were more males (n = 529) being aged than females (n = 340),
+presumably indicating that there are more males than females in the
+populations. The table also shows that mean ages and mean lengths for
+both sexes decreased in recent years.\\
+Table \ref{tab:Fleet8_NWFSCtrawl_agepercents} show five percentiles of
+fish aged by sex, indicating more older males in the population. All
+aged data from the survey were used as conditional age-at-length matrix
+in the assessment model.
+
+Total biomass estimates from the survey were analyzed using the VAST
+program (Thorson and Barnett \protect\hyperlink{ref-Thorson2017}{2017}).
+The Q-Q goodness of fit plot and time series of total biomass estimates
+are shown in Figures \ref{fig:Fleet8_NWFSCtrawl_QQ} and
+\ref{fig:index5_logcpuefit_NWFSCtrawl}, respectively. The Q-Q plots
+shows generally good of fits and the time series of biomass estimates
+indicates no significant trend with relatively large uncertainties from
+the survey. The final survey index and log standard error used in the
+assessment model are in Table \ref{tab:NWFSCtrawl_index}.
+
 \textbf{CSUN/VRG Gillnet Survey Index}
 
 The CSUN/VRG gillnet survey was conducted from 1995-2008. Sites along
@@ -1570,8 +1628,9 @@ the time series, as well as Catalina Island. Gillnet sets from within
 Marina Del Rey and Catalina Harbor were removed from the analysis.
 
 Gillnets were All gillnets were the same length with six-25' panels
-(150' in length). The majority of samples were collected using a net
-with 1``, 1.5'', 2" square mesh, each mesh was on 2 panels.
+(150' in length).\\
+The majority of samples were collected using a net with 1``, 1.5'', 2"
+square mesh, each mesh was on 2 panels.
 
 Perp/para was whether or not the net was set perpendicular or parallel
 to shore.
@@ -1595,10 +1654,11 @@ to 275 fm.
 
 \emph{California Cooperative Oceanic Fisheries Investigations (CalCOFI)
 Survey} Only 16 positive tows in the core area (lines 77-93) of
-California scorpionfish. The majority of the 335 positive tows occurred
-in Mexico, south of Punta Eugenia Baja California and are likely a
-combination of California scorpionfish and other \emph{Scorpaena}
-species. Prior to 1965, \emph{Scorpaena} samples were not speciated.
+California scorpionfish.\\
+The majority of the 335 positive tows occurred in Mexico, south of Punta
+Eugenia Baja California and are likely a combination of California
+scorpionfish and other \emph{Scorpaena} species. Prior to 1965,
+\emph{Scorpaena} samples were not speciated.
 
 \emph{Generating Station Impingement Surveys}
 
@@ -1657,10 +1717,10 @@ between standard length (SL) and total length (TL).
 Standard and total lengths of 163 California scorpionfish were available
 from a halibut trawl survey in southern California (Steve Wertz, CDFW).
 The conversion from SL to TL from these data was estimated at
-\(TL = 1.2225SL + 0.7773\). The conversion originating from the halibut
-trawl data was used in this assessment due to the fact that the original
-data from Love et al. (\protect\hyperlink{ref-Love1987}{1987}) are not
-available.
+\(TL = 1.2225SL + 0.7773\).\\
+The conversion originating from the halibut trawl data was used in this
+assessment due to the fact that the original data from Love et al.
+(\protect\hyperlink{ref-Love1987}{1987}) are not available.
 
 The majority of available length composition data were measured to total
 length, except for three of the sanitation district trawl surveys, the
@@ -1669,7 +1729,7 @@ the CSUN/VRG gillnet survey (gillnet survey). Maunder et al.
 (\protect\hyperlink{ref-Maunder2005}{2005}) converted all data to
 standard length due to clumping of data when length data are only
 available to the nearest centimeter. However, the same is true for the
-conversion from TL to SL when data are available to the nearest
+conversion from TL to SL when data a re available to the nearest
 centimeter. All length data for this assessment are in TL. The
 Sanitation District of Orange county and the VRG gillnet study measured
 SL to the nearest mm.
@@ -2190,7 +2250,7 @@ Year & Hook-and-line & Trawl & Gillnet & Mexico & Total U.S. Removals & Source \
   2016 & 2.32 & 0.13 & 0.00 & 0.00 & 2.45 & CFIS \\ 
    \hline
 \hline
-\label{tab:Comm_catches}
+\label{tab:CommCatches}
 \end{longtable}
 
 \FloatBarrier
@@ -2683,28 +2743,110 @@ Year & Index & Log-scale SE \\
 
 \begin{table}[ht]
 \centering
-\caption{NWFSC trawl survey sample 
-                                          sizes at each data filtering step.  
-                                          The bold value indicates the final sample size 
-                                          used for delta-GLM analysis.} 
-\label{tab:Fleet8_NWFSCTrawl_filter}
-\begin{tabular}{>{\raggedright}p{1.5in}>{\raggedright}p{2.6in}>{\raggedright}p{1in}>{\raggedright}p{1in}}
+\caption{Summaries of catch statistics of 
+                                          Califronia scorpionfish by depth zones 
+                                          from NWFSC trawl survey between 2003 and 2016.} 
+\label{tab:Fleet8_NWFSCTrawl_catchdepth}
+\begin{tabular}{rrr}
   \hline
-Filter & Criteria & Sample size (no. positive trips) & Sample size (no. of trips) \\ 
+Depth zone (m) & Total catch (kg) & Raw CPUE (kg/ha) \\ 
   \hline
-\hline
+62.50 & 304.80 & 1.71 \\ 
+  87.50 & 568.20 & 1.98 \\ 
+  112.50 & 34.10 & 0.22 \\ 
+  137.50 & 3.80 & 0.04 \\ 
+  162.50 & 46.90 & 0.41 \\ 
+  187.50 & 1.10 & 0.01 \\ 
+  212.50 & 0.40 & 0.00 \\ 
+   \hline
 \end{tabular}
 \end{table}\begin{table}[ht]
 \centering
-\caption{AIC values for each model in the
-                                          NWFSC trawl survey sample 
-                                          index.} 
-\label{tab:Fleet8_NWFSCTrawl_aic}
-\begin{tabular}{lll}
+\caption{Summaries of catch statistics of 
+                                          Calfironia scorpionfish by latitude zones 
+                                          from NWFSC trawl survey between 2003 and 2016.} 
+\label{tab:Fleet8_NWFSCTrawl_catchlat}
+\begin{tabular}{rrr}
   \hline
-Model & Binomial & Lognormal \\ 
+Latitude zone & Total catch (kg) & Raw CPUE (kg/ha) \\ 
   \hline
-\hline
+32.50 & 156.30 & 1.59 \\ 
+  33.00 & 274.90 & 2.60 \\ 
+  33.50 & 257.70 & 0.93 \\ 
+  34.00 & 270.10 & 0.73 \\ 
+  34.50 & 0.10 & 0.00 \\ 
+   \hline
+\end{tabular}
+\end{table}\begin{table}[ht]
+\centering
+\caption{Summaries of haul statistics of 
+                                          California scorpionfish from NWFSC 
+                                          trawl survey between 2003 and 2016.} 
+\label{tab:Fleet8_NWFSCTrawl_summary}
+\begin{tabular}{l>{\centering}p{.7in}>{\centering}p{.7in}>{\centering}p{.7in}>{\centering}p{.7in}>{\centering}p{.7in}}
+  \hline
+Year & No. hauls & No. positive hauls & Percent positive hauls & Total catch (kg) & Raw CPUE (kg/ha) \\ 
+  \hline
+2003 &  33 &   9 & 27.30 & 28.20 & 0.51 \\ 
+  2004 &  37 &  12 & 32.40 & 73.20 & 1.02 \\ 
+  2005 &  37 &   8 & 21.60 & 58.50 & 0.90 \\ 
+  2006 &  42 &  11 & 26.20 & 15.10 & 0.23 \\ 
+  2007 &  50 &  12 & 24.00 & 81.30 & 1.03 \\ 
+  2008 &  51 &  12 & 23.50 & 16.20 & 0.22 \\ 
+  2009 &  58 &  10 & 17.20 & 217.50 & 2.60 \\ 
+  2010 &  53 &  10 & 18.90 & 20.00 & 0.23 \\ 
+  2011 &  51 &  16 & 31.40 & 64.00 & 0.93 \\ 
+  2012 &  61 &   9 & 14.80 & 102.40 & 1.07 \\ 
+  2013 &  25 &   8 & 32.00 & 182.70 & 4.85 \\ 
+  2014 &  49 &   6 & 12.20 & 23.00 & 0.32 \\ 
+  2015 &  50 &  14 & 28.00 & 52.50 & 0.59 \\ 
+  2016 &  58 &  12 & 20.70 & 24.70 & 0.28 \\ 
+   \hline
+\end{tabular}
+\end{table}\begin{table}[ht]
+\centering
+\caption{Summary statistics of age data by
+                                          year and sex from NWFSC trawl survey 
+                                          between 2005 and 2016.  The last raw s
+                                          hows total numbers of fish aged by sex.} 
+\label{tab:Fleet8_NWFSCTrawl_agesummary}
+\begin{tabular}{l>{\centering}p{.7in}>{\centering}p{.7in}>{\centering}p{.7in}>{\centering}p{.7in}>{\centering}p{.7in}>{\centering}p{.7in}}
+  \hline
+Year & No. aged & Mean age (year) & Mean length (cm) & No. aged & Mean age (year) & Mean length (cm) \\ 
+  \hline
+2005 & 38 & 7.70 & 28.30 & 37 & 9.20 & 26.00 \\ 
+  2006 & 12 & 5.50 & 25.60 & 33 & 8.60 & 24.40 \\ 
+  2007 & 19 & 6.60 & 26.50 & 49 & 7.10 & 24.60 \\ 
+  2008 & 19 & 5.70 & 25.80 & 30 & 8.00 & 24.50 \\ 
+  2009 & 33 & 4.30 & 24.10 & 97 & 7.10 & 23.20 \\ 
+  2010 & 20 & 8.50 & 27.60 & 22 & 8.90 & 24.80 \\ 
+  2011 & 42 & 4.80 & 24.40 & 74 & 7.60 & 23.60 \\ 
+  2012 & 30 & 9.60 & 28.60 & 36 & 9.30 & 25.00 \\ 
+  2013 & 28 & 6.30 & 27.00 & 39 & 3.70 & 22.40 \\ 
+  2014 & 32 & 5.70 & 24.40 & 41 & 6.00 & 22.20 \\ 
+  2015 & 20 & 3.20 & 20.40 & 34 & 5.20 & 21.30 \\ 
+  2016 & 47 & 2.70 & 21.10 & 37 & 4.90 & 20.60 \\ 
+  \textbf{Sum} & \textbf{340} &  &  & \textbf{529} &  &  \\ 
+   \hline
+\end{tabular}
+\end{table}\begin{table}[ht]
+\centering
+\caption{Ages at five percentiles by sex from 
+                                          NWFSC trawl survey between 2005 and 2016, 
+                                          indicating more older males in the population.} 
+\label{tab:Fleet8_NWFSCTrawl_agepercents}
+\begin{tabular}{rrr}
+  \hline
+Percentile & Female age at percentile & Male age at percentile \\ 
+  \hline
+50.00 & 4.00 & 6.00 \\ 
+  90.00 & 12.00 & 14.20 \\ 
+  95.00 & 15.10 & 16.60 \\ 
+  97.50 & 19.00 & 19.00 \\ 
+  99.00 & 20.20 & 21.70 \\ 
+   &  &  \\ 
+   &  &  \\ 
+   \hline
 \end{tabular}
 \end{table}\begin{table}[ht]
 \centering
@@ -3243,11 +3385,33 @@ stratification. \label{fig:boundary_map}}
 
 \begin{figure}[htbp]
 \centering
+\includegraphics{Figures/Rec_regs.png}
+\caption{A summary of the monthly recreational regulations for
+California scorpionfish in southern Califoria. Open cells indicate no
+depth restriction, black cells indicate the fishery is closed, and cells
+with a number indicate the depth restriction in fathoms, e.g., 20 =
+retained catch allowed in less than 20 fathoms. *Fishery closed on
+November 15, 2014. \label{fig:recregs}}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics{Figures/Fleet4_RecPR_SMcoef.png}
+\caption{Species coefficients from the binomial GLM for presence/absence
+of California scorpionfish in the Marine Recreational Fisheries
+Statistics Survey (MRFSS) private mode dockside survey data set.
+Horizontal bars are 95\% confidence intervals.
+\label{fig:Fleet4_RecPR_dockside_SM}}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
 \includegraphics{r4ss/plots_mod1/index5_logcpuefit_RecPR.png}
-\caption{Fit to log index data on log scale for the CRFS private mode
-dockside survey. Lines indicate 95\% uncertainty interval around index
-values. Thicker lines indicate input uncertainty before addition of
-estimated additional uncertainty parameter. \label{fig:RecPR_indexfit}}
+\caption{Fit to log index data on log scale for the recreational CPFV
+logbook retained catches. Lines indicate 95\% uncertainty interval
+around index values. Thicker lines indicate input uncertainty before
+addition of estimated additional uncertainty parameter.
+\label{fig:index5_logcpuefit_RecPR}}
 \end{figure}
 
 \FloatBarrier
@@ -3259,7 +3423,7 @@ estimated additional uncertainty parameter. \label{fig:RecPR_indexfit}}
 logbook retained catches. Lines indicate 95\% uncertainty interval
 around index values. Thicker lines indicate input uncertainty before
 addition of estimated additional uncertainty parameter.
-\label{fig:RecPC_indexfit}}
+\label{fig:index5_logcpuefit_RecPC}}
 \end{figure}
 
 \FloatBarrier
@@ -3271,7 +3435,7 @@ addition of estimated additional uncertainty parameter.
 onboard oserver discarded catch index. Lines indicate 95\% uncertainty
 interval around index values. Thicker lines indicate input uncertainty
 before addition of estimated additional uncertainty parameter.
-\label{fig:RecDD_indexfit}}
+\label{fig:index5_logcpuefit_RecDD}}
 \end{figure}
 
 \begin{figure}[htbp]
@@ -3281,7 +3445,7 @@ before addition of estimated additional uncertainty parameter.
 onboard oserver retained catch index. Lines indicate 95\% uncertainty
 interval around index values. Thicker lines indicate input uncertainty
 before addition of estimated additional uncertainty parameter.
-\label{fig:RecPCOBR_indexfit}}
+\label{fig:index5_logcpuefit_RecPCOBR}}
 \end{figure}
 
 \FloatBarrier
@@ -3293,7 +3457,7 @@ before addition of estimated additional uncertainty parameter.
 onboard oserver discarded catch index. Lines indicate 95\% uncertainty
 interval around index values. Thicker lines indicate input uncertainty
 before addition of estimated additional uncertainty parameter.
-\label{fig:Sanitation_indexfit}}
+\label{fig:index5_logcpuefit_Sanitation}}
 \end{figure}
 
 \FloatBarrier
@@ -3305,7 +3469,7 @@ before addition of estimated additional uncertainty parameter.
 NWFSC trawl survey between 2003 and 2016. Depth contour lines of 200m
 and 600m and the CAC areas are shown. Note that sizes and colors of
 circles represent catch rate in log scales (Credit of Rebecca Miller,
-SWFSC). \label{fig:NWFSCtrawl_map}}
+SWFSC). \label{fig:Fleet8_NWFSCtrawl_map}}
 \end{figure}
 
 \begin{figure}[htbp]
@@ -3313,7 +3477,8 @@ SWFSC). \label{fig:NWFSCtrawl_map}}
 \includegraphics{Figures/NWFSCtrawl_posdepth.png}
 \caption{Plots of the proportion of positive tows (top panel) and the
 raw catch rates of positive tows (bottom panel) by depth zones (25 m
-interval) for NWFSC trawl survey. \label{fig:NWFSCtrawl_posdepth}}
+interval) for NWFSC trawl survey.
+\label{fig:Fleet8_NWFSCtrawl_posdepth}}
 \end{figure}
 
 \begin{figure}[htbp]
@@ -3321,21 +3486,22 @@ interval) for NWFSC trawl survey. \label{fig:NWFSCtrawl_posdepth}}
 \includegraphics{Figures/NWFSCtrawl_poslat.png}
 \caption{Plots of the proportion of positive tows (top panel) and the
 raw catch rates of positive tows (bottom panel) by latitude zones (0.5
-degree interval) for NWFSC trawl survey. \label{fig:NWFSCtrawl_poslat}}
+degree interval) for NWFSC trawl survey.
+\label{fig:Fleet8_NWFSCtrawl_poslat}}
 \end{figure}
 
 \begin{figure}[htbp]
 \centering
 \includegraphics{Figures/NWFSCtrawl_lengthdepth.png}
 \caption{Comparison box plots of raw length data from NWFSC trawl survey
-by depth zone and sex. \label{fig:NWFSCtrawl_lengthdepth}}
+by depth zone and sex. \label{fig:Fleet8_NWFSCtrawl_lengthdepth}}
 \end{figure}
 
 \begin{figure}[htbp]
 \centering
 \includegraphics{Figures/NWFSCtrawl_lengthlat.png}
 \caption{Comparison box plots of raw length data from NWFSC trawl survey
-by latitude zone and sex. \label{fig:NWFSCtrawl_lengthlat}}
+by latitude zone and sex. \label{fig:Fleet8_NWFSCtrawl_lengthlat}}
 \end{figure}
 
 \begin{figure}[htbp]
@@ -3343,7 +3509,7 @@ by latitude zone and sex. \label{fig:NWFSCtrawl_lengthlat}}
 \includegraphics{r4ss/plots_mod1/comp_lendat_bubflt8mkt0.png}
 \caption{Length frequency distributions of females (red) and male (blue)
 from the NWFSC trawl survey between 2003 and 2016.
-\label{fig:NWFSCtrawl_lengthcomp}}
+\label{fig:Fleet8_NWFSCtrawl_lengthcomp}}
 \end{figure}
 
 \begin{figure}[htbp]
@@ -3351,7 +3517,7 @@ from the NWFSC trawl survey between 2003 and 2016.
 \includegraphics{Figures/NWFSCtrawl_QQ.jpg}
 \caption{Q-Q plot used to validate the goodness of fit of the VAST
 analysis for the NWFSC trawl survey between 2003 and 2016.
-\label{fig:NWFSCtrawl_QQ}}
+\label{fig:Fleet8_NWFSCtrawl_QQ}}
 \end{figure}
 
 \begin{figure}[htbp]
@@ -3361,7 +3527,7 @@ analysis for the NWFSC trawl survey between 2003 and 2016.
 from the VAST analysis from 2003-2016. Lines indicate 95\% uncertainty
 interval around index values. Thicker lines indicate input uncertainty
 before addition of estimated additional uncertainty parameter.
-\label{fig:NWFSCtrawl_indexfit}}
+\label{fig:index5_logcpuefit_NWFSCtrawl}}
 \end{figure}
 
 \FloatBarrier
@@ -3373,7 +3539,7 @@ before addition of estimated additional uncertainty parameter.
 CSUN/VRG gillnet survey. Lines indicate 95\% uncertainty interval around
 index values. Thicker lines indicate input uncertainty before addition
 of estimated additional uncertainty parameter.
-\label{fig:GillnetSurvey_indexfit}}
+\label{fig:index5_logcpuefit_GillnetSurvey}}
 \end{figure}
 
 \FloatBarrier
@@ -3385,7 +3551,7 @@ of estimated additional uncertainty parameter.
 Southern California Bight trawl survey. Lines indicate 95\% uncertainty
 interval around index values. Thicker lines indicate input uncertainty
 before addition of estimated additional uncertainty parameter.
-\label{fig:SCBSurvey_indexfit}}
+\label{fig:index5_logcpuefit_SCBSurvey}}
 \end{figure}
 
 \FloatBarrier
@@ -3466,6 +3632,14 @@ California's commercial passenger fishing vessel (partyboat) fishery,
 Jordan, D. 1887. The fisheries of the Pacific Coast. \emph{In} The
 fisheries and fishery industris of the unistes states. \emph{Edited by}
 G. Goode. U.S. Commision of Fish; Fisheries, Section 3. pp. 591--630.
+
+\hypertarget{ref-Keller2008}{}
+Keller, A.A., Horness, B.H., Fruh, E.L., Simon, V.H., Tuttle, V.J.,
+Bosley, K.L., Buchanan, J.C., Kamikawa, D.J., and Wallace, J.R. 2008.
+The 2005 U.S. West Coast bottom trawl survey of groundfish resources off
+Washington, Oregon, and California: Estimates of distribution,
+abundance, and length composition. NOAA Technical Memorandum
+NMFS-NWFSC-93. U.S. Department of Commerce.
 
 \hypertarget{ref-Lo1992}{}
 Lo, N., Jacobson, L.D., and Squire, J.L. 1992. Indices of relative
@@ -3558,6 +3732,16 @@ California Department of Fish and Game Fish Bulletin (139): 109--142.
 Ralston, S., Pearson, D., Field, J., and Key, M. 2010. Documentation of
 California catch reconstruction project. NOAA-TM-NMFS-SWFSC-461.
 
+\hypertarget{ref-Stefansson1996}{}
+Stefánsson, G. 1996. Analysis of groundfish survey abundance data:
+combining the GLM and delta approaches. ICES Journal of Marine Science
+\textbf{53}: 577--588.
+
+\hypertarget{ref-Stephens2004}{}
+Stephens, A., and MacCall, A. 2004. A multispecies approach to
+subsetting logbook data for purposes of estimating CPUE. Fisheries
+Research \textbf{70}: 299--310.
+
 \hypertarget{ref-Taylor1963}{}
 Taylor, P. 1963. The venom and ecology of the California scorpionfish,
 Scorpaena guttata Girard. PhD Thesis, University of California San
@@ -3568,6 +3752,13 @@ Then, A., Hoenig, J., Hall, N., and Hewitt, D. 2015. Evaluating the
 predictive performance of empirical estimators of natural mortality rate
 using information on over 200 fish species. ICES Journal of Marine
 Science \textbf{72}: 82--92.
+
+\hypertarget{ref-Thorson2017}{}
+Thorson, J.T., and Barnett, L.A.K. 2017. Comparing estimates of
+abundance trends and distribution shifts using single- and multispecies
+models of fishes and biogenic habitat. ICES Journal of Marine Science
+\textbf{143}(5): 1311--1321. doi:
+\href{https://doi.org/10.1093/icesjms/fsw193}{10.1093/icesjms/fsw193}.
 
 \hypertarget{ref-Turner1969}{}
 Turner, C.H., Ebert, E.E., Given, and R. R. 1969. Man-made reef ecology.
