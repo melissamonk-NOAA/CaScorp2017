@@ -118,11 +118,11 @@
 <!-- *************Recreational onboard observer FIGURES******************** --> 
 <!-- ********************************************************************** -->
 
-![Fit to log index data on log scale for the recreational CPFV onboard oserver discarded catch index. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:index5_logcpuefit_RecDD}](r4ss/plots_mod1/index5_logcpuefit_RecDD.png)
+![Fit to log index data on log scale for the recreational CPFV onboard oserver discarded catch index. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:Fleet6_index5_logcpuefit_RecDD}](r4ss/plots_mod1/index5_logcpuefit_RecDD.png)
 
 
 
-![Fit to log index data on log scale for the recreational CPFV onboard oserver retained catch index. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:index5_logcpuefit_RecPCOBR}](r4ss/plots_mod1/index5_logcpuefit_RecPCOBR.png)
+![Fit to log index data on log scale for the recreational CPFV onboard oserver retained catch index. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:Fleet12_index5_logcpuefit_RecPCOBR}](r4ss/plots_mod1/index5_logcpuefit_RecPCOBR.png)
 
 \FloatBarrier
 <!-- ********************************************************************** -->
@@ -132,6 +132,11 @@
 ![Fit to log index data on log scale for the recreational CPFV onboard oserver discarded catch index. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:index5_logcpuefit_Sanitation}](r4ss/plots_mod1/index5_logcpuefit_Sanitation.png)
 
 
+![Boxplots of measured California scorpionfish from the sanitation district surveys by program and 25 m depth bins. \label{fig:Fleet7_Sanitation_lengthboxplots}](Figures/Fleet7_Sanitation_lengthboxplots.png)
+
+
+
+![Length frequency distributions from the sanitation disricts trawl surveys. \label{fig:Fleet7_comp_lendat_bubflt10mkt2}](r4ss/plots_mod1/comp_lendat_bubflt7mkt2_page2.png)
 
 
 \FloatBarrier
@@ -175,6 +180,16 @@
 <!-- ********************************************************************** -->
 
 ![Fit to log index data on log scale for the recreational Southern California Bight trawl survey. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:index5_logcpuefit_SCBSurvey}](r4ss/plots_mod1/index5_logcpuefit_SCBSurvey.png)
+
+
+<!-- ********************************************************************** -->
+<!-- *************Fleet 10 Impingement survey FIGURES********************** --> 
+<!-- ********************************************************************** -->
+
+![Length frequency distributions from the Impingement surveys. \label{fig:Fleet10_comp_lendat_bubflt10mkt2}](r4ss/plots_mod1/comp_lendat_bubflt10mkt2.png)
+
+
+
 
 
 \FloatBarrier

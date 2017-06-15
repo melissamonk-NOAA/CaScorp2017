@@ -432,12 +432,13 @@ and not used in analyses.
 Drift locations within the Cowcod Conservation Area (CCA) or in Mexican waters were also filtered
 out of the dataset.  The years 1999 and 2000 were removed from the index due to changes in 
 hook and gear regulations during those years.  California adopted a 3-hook and 1-line regulation 
-in 2000, which changed to 2-hooks and 1-line in 2001.  California scorpionfish is not a common
+in 2000, which changed to 2-hooks and 1-line in 2001. California scorpionfish is not a common
 target species for the CPFV fleet, but if often a fallback species, for trips targeting seabass
 or rockfish.  California scorpionfish are targeted more often in January and February when the 
 rockfish/cabezon/greenling complex is closed.  Boat identifiers were availalbe for all trips
 in the onboard observer database.  Approximately 1,000 drifts were filtered out after accounting
-for boats that were identified as not encountering scorpionfish.  A total of 26,733 
+for boats that were identified as not encountering scorpionfish (Table \ref{tab:Fleet6_RecDD_onboard_filter}.  
+A total of 26,733 
 drifts for the analysis were retained.  Of these, 5,507 encountered scorpionfish, with 3,249
 discarding California scorpionfish and 3,867 retaining California scorpionfish.
 
@@ -447,7 +448,11 @@ drift.
 
 _Onboard Obsever Discarded Catch Index_
 
+tab:Fleet6_RecDD_onboard_aic
 
+tab:Fleet6_RecDD_onboard_index
+
+fig:Fleet6_index5_logcpuefit_RecDD
 
 _Onboard Obsever Discarded Catch Length Composition_
 
@@ -458,7 +463,11 @@ _Onboard Obsever Discarded Catch Length Composition_
 _Onboard Obsever Retained Catch Index_
 
 
+tab:Fleet12_RecPC_onboard_aic
 
+tab:Fleet12_RecPC_onboard_index
+
+fig:Fleet12_index5_logcpuefit_RecPCOBR
 
 
 
@@ -515,6 +524,7 @@ in at least 15 years were retained for analysis, resulting in 14 stations (SD1-S
 and a total of 1,180 tows.   A ten minute tow time is assumed for all trawls.  
 
 
+fig:Fleet7_comp_lendat_bubflt10mkt2
 
 
 **NWFSC Trawl Survey Index**
@@ -577,30 +587,14 @@ Perp/para was whether or not the net was set perpendicular or parallel to shore.
 
 
 
-###Other data sources considered
 
-
-*California Cooperative Oceanic Fisheries Investigations (CalCOFI) Survey*
-UCSD Scripps Institution of Oceanography, CDFG, and the National Marine Fisheries Service 
-have carried out a plankton survey on a regular basis since 1951 [@Moser1993]. 
-Prior to 1965, \emph{Scorpaena} samples were not speciated.
-
-California scorpionfish larvae encounters from CalCOFI surveys were provided by 
-Noelle Bowlin (NMFS SWFSC).
-Only 16 positive bongo tows in the core area (lines 77-93) of California scorpionfish.
-The majority of the 335 positive bongo tows occurred in Mexico, south of Punta Eugenia 
-Baja California and are likely a combination of California scorpionfish and other
-\emph{Scorpaena} species. The California scorpionfish egg masses are encountered
-in the CalCOFI surveys, but because Californai scorpionfish is not a target species
-they are entered in the database as "unidentified eggs" (William Watson, NMFS SWFSC). 
-An index of abundance was not developed for the CalCOFI data due to the small
-sample sizes.
 
 
 *Generating Station Impingement Surveys*
 
 Data from the southern California generating station surveys were provided by 
-Eric Miller (xxx). The generating stations all draw in seawater through an intake system 
+Eric Miller (MBC Applied Environmental Sciences). The generating stations
+all draw in seawater through an intake system 
 for once-through cooling water.  There are five generating stations that conduct normal operation
 and heat treatment surveys with observations of California scorpionfish: 
 Scattergood Generating Station (SGS), El Segundo Generation
@@ -642,3 +636,23 @@ during the heat treatment.  The water flows vary widely among heat treatments, t
 summer when energy demands increase), and generating stations.  Therefore, the generating station impingement
 surveys were not used to develop indices of abundance.  However, length composition data from the impingement
 surveys were used.
+
+The length composition data from the impingement show a higher proportion of smaller (<10 cm) fish
+since 2012 (Figure \ref{fig:Fleet10_comp_lendat_bubflt10mkt2})
+
+
+*California Cooperative Oceanic Fisheries Investigations (CalCOFI) Survey*
+UCSD Scripps Institution of Oceanography, CDFG, and the National Marine Fisheries Service 
+have carried out a plankton survey on a regular basis since 1951 [@Moser1993]. 
+Prior to 1965, \emph{Scorpaena} samples were not speciated.
+
+California scorpionfish larvae encounters from CalCOFI surveys were provided by 
+Noelle Bowlin (NMFS SWFSC).
+Only 16 positive bongo tows in the core area (lines 77-93) of California scorpionfish.
+The majority of the 335 positive bongo tows occurred in Mexico, south of Punta Eugenia 
+Baja California and are likely a combination of California scorpionfish and other
+\emph{Scorpaena} species. The California scorpionfish egg masses are encountered
+in the CalCOFI surveys, but because Californai scorpionfish is not a target species
+they are entered in the database as "unidentified eggs" (William Watson, NMFS SWFSC). 
+An index of abundance was not developed for the CalCOFI data due to the small
+sample sizes.
