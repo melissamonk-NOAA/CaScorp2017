@@ -136,9 +136,9 @@ resulting ramped values for the PC mode.  The final time series of retained and
 discarded landings is in Table \ref{tab:Rec_removal}.
 
 
-###Fishery-dependent Abundance Indices
+###Fishery-dependent Data Sources
 
-**MRFSS Dockside Private Boat Index**
+**MRFSS Dockside Private Boat Survey**
 
 The CDFW provided the CRFS private boat dockside sampling fisheries data from 2004 
 to 2016.  The data went through several data quality checks to identify the best 
@@ -387,7 +387,7 @@ provides data from 1989 to 1992 omitted from the MRFSS data as a result of
 filtering out 1989 and a lapse of sampling from 1990-1992.
 
 
-**Onboard Observer Party/Charter Boat Index**
+**Onboard Observer Party/Charter Boat**
 
 California implemented a statewide Onboard Observer Sampling Program in 1999, and 
 began measuring discarded fish in 2003 [@Monk2014].  The goal of the Onboard Observer 
@@ -415,15 +415,51 @@ one using only the discarded catch and one using only the retained catch.  The i
 discarded catch is used as an index of abundance for the recreational discard fleet, 
 and the index derived from the retained catch is treated a survey in the assessment model.  
 
+The entire dataset was filtered as one, regardless of retained or discarded, due to the 
+fact that discarding can occur for a number of reasons, e.g., angler preference, size
+limit, bag limit, etc., and California scorpionfish are often retained and discarded on
+the same fishing drift. 
 
-Many 
 Prior to any analyses, drifts with erroneous or missing data were removed from the data 
-considered for the California scorpionfish index.  The locations of positive encounters were 
-mapped, using the drift starting locations.  Regions of suitable habitat were defined by creating 
-detailed hulls (similar to an alpha hull) with a 0.01 decimal degree buffer around a location or cluster of locations.  
+considered for the California scorpionfish index.  The locations of positive encounters
+(retained + dicarded) were mapped, using the drift starting locations.  Regions of 
+suitable habitat were defined by creating detailed hulls (similar to an alpha hull) 
+with a 0.01 decimal degree buffer around a location or cluster of locations.  
 Any portion of a region that intersected with land was removed.  Drifts that did not intersect 
 with one of these areas were considered structural zeroes, i.e., outside of the species habitat, 
 and not used in analyses.  
+
+Drift locations within the Cowcod Conservation Area (CCA) or in Mexican waters were also filtered
+out of the dataset.  The years 1999 and 2000 were removed from the index due to changes in 
+hook and gear regulations during those years.  California adopted a 3-hook and 1-line regulation 
+in 2000, which changed to 2-hooks and 1-line in 2001.  California scorpionfish is not a common
+target species for the CPFV fleet, but if often a fallback species, for trips targeting seabass
+or rockfish.  California scorpionfish are targeted more often in January and February when the 
+rockfish/cabezon/greenling complex is closed.  Boat identifiers were availalbe for all trips
+in the onboard observer database.  Approximately 1,000 drifts were filtered out after accounting
+for boats that were identified as not encountering scorpionfish.  A total of 26,733 
+drifts for the analysis were retained.  Of these, 5,507 encountered scorpionfish, with 3,249
+discarding California scorpionfish and 3,867 retaining California scorpionfish.
+
+The drift-level effort cannot be parsed out between the retained and discarded catch.  The effort
+represents the total angler hours fished by the subset of observed anglers for a particular
+drift.
+
+_Onboard Obsever Discarded Catch Index_
+
+
+
+_Onboard Obsever Discarded Catch Length Composition_
+
+
+
+
+
+_Onboard Obsever Retained Catch Index_
+
+
+
+
 
 
 
@@ -432,9 +468,9 @@ dataset were standardized using a delta modeling approach [@Lo1992].
 
 <!-- ************FISHERY-INDPENDENT DATA*********************************** -->
 
-###Fishery-Independent Abundance Indices
+###Fishery-Independent Data Sources
 
-**Sanitation Districts Trawl Survey Index**
+**Sanitation Districts Trawl Survey**
 
 Sanitation districts in southern California are required to conduct trawls as 
 part of their National Pollutant Discharge Elimination System (NPEDES) permits. 
@@ -444,7 +480,7 @@ no scorpionfish have been observed in either trawl survey.  The four other
 sanitation districts, Orange County, City of Los Angeles, Los Angeles County,
 and the City of San Diego all encounter California scorpionfish.
 
-Orange County
+_Orange County_
 Orange County Sanitation District provided trawl data from 1970-2015, and the 
 majority of sampling occurred in Quarter 1 and 3 (Jan-March and July-September).
 From 1970-1985 Quarter 2, sampling was based on a 10 minute tow time.  As of 1985 
@@ -456,7 +492,7 @@ were frequently sampled, but observed very few scorpionfish.  Eleven stations
  
  
  
-City of Los Angeles (Hyperion)
+_City of Los Angeles (Hyperion)_
 The City of Los Angeles Sanitation District provided trawl data from 1986-2016.  
 Years with fewer than ten samples were removed from the analysis (1986, 1987, and 1992).
 Tow times were recorded starting in 1999, and assumed to be 10 minutes prior to 1999.
@@ -465,7 +501,7 @@ Stations sampled at least ten years were retained, which resulted in ten station
 was missing for approximately half of the stations, and was imputed as the mean depth
 of of other tows at that station. 
  
-Los Angeles County (Palos Verdes)
+_Los Angeles County (Palos Verdes)_
 The Sanitation Districts of Los Angeles County provided trawl data from 1972-2016 with
 quarterly sampling.  Stations sampled in fewer than 10 years or at 305m where California
 scorpionfish were never observed were removed from the analysis.  Non-standard and 
@@ -473,10 +509,12 @@ special study trawls were also removed, e.g., night trawl study in 1987.  Hauls 
 based on a 10 minute tow time. Twelve stations (stations at 23m, 61m, and 137m for T0,T1,T4,T5)
 containing 1,848 tows were retained after initial filtering.
  
-City of San Diego 
+_City of San Diego_
 The City of San Diego Sanitation provided trawl data from 1985-2015.  Stations sampled 
 in at least 15 years were retained for analysis, resulting in 14 stations (SD1-SD14, SD17-21) 
 and a total of 1,180 tows.   A ten minute tow time is assumed for all trawls.  
+
+
 
 
 **NWFSC Trawl Survey Index**

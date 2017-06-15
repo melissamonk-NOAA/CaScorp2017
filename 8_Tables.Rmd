@@ -233,8 +233,8 @@
         
         colnames(Fleet6_filter) = c('Filter',
                                     'Criteria',
-                                    'Sample size (no. positive trips)',
-                                    'Sample size (no. of trips)')
+                                    'Sample size (no. positive drifts)',
+                                    'Sample size (no. of drifts)')
         
         colnames(Fleet6_aic) = c('Model',
                                  'Binomial',
@@ -517,16 +517,25 @@
         Fleet8_agesummary.table = xtable(Fleet8_agesummary,
                               caption = c("Summary statistics of age data by
                                           year and sex from NWFSC trawl survey 
-                                          between 2005 and 2016.  The last raw s
-                                          hows total numbers of fish aged by sex."),
+                                          between 2005 and 2016.  The last raw
+                                          shows total numbers of fish aged by sex."),
                               label='tab:Fleet8_NWFSCTrawl_agesummary')
         
         align(Fleet8_agesummary.table) = c('l','l', rep('>{\\centering}p{.7in}', dim(Fleet8_agesummary)[2]-1))
-         
-        print(Fleet8_agesummary.table, 
+       
+            addtorow <- list()
+            addtorow$pos <- list()
+            addtorow$pos[[1]] <- -1
+            addtorow$command <- c('&  \\multicolumn{3}{c}{Female} 
+                                   &  \\multicolumn{3}{c}{Male} \\\\\n')
+        
+          
+        print(Fleet8_agesummary.table,
+              add.to.row=addtorow,
               include.rownames=FALSE, 
               caption.placement="top",
-              sanitize.text.function = function(x){x})       
+              sanitize.text.function = function(x){x},
+              hline.after=c(-1,0,nrow(Fleet8_agesummary.table)))       
 ```
 
 ```{r, results='asis'}       

@@ -35,8 +35,7 @@ Include: Sample size information for length and age composition data by area,
 year, gear, market category, etc., including both the number of trips and 
 fish sampled.
 
-Length compositions were provided from the following sources, with 
-brief descriptions below:    
+Length compositions were provided from the following sources:
 
 \begin{itemize}[noitemsep,nolistsep,topsep=0pt]
   \item CDFW market category study (\emph{commercial dead fish},1996-2003)    
@@ -61,17 +60,21 @@ brief descriptions below:
  \item Southern California Bight trawl survey (\emph{research}, 1994,1998,2003,2008,2013) 
 \end{itemize}
 
+
+The length composition of all fisheries aggregated across time by fleet is in Figure
+\ref{fig:comp_lendat_aggregated_across_time}.  Descriptions and details of the length
+composition data are in the above section for each fleet or survey.
+
+
+
+
+
 *Recreational: California MRFSS And CRFS Length Composition Data*
 Individual fish lengths recorded by MRFSS (1980-2003) and CRFS (2004-2011) samplers were
 downloaded from the RecFIN website (www.recfin.org). CRFS data from 2012-2014 were
 obtained directly from CDFW.
 
 *Commercial: PacFIN*
-
-*Research: NWFSC shelf-slope survey*
-
-*Research: NWFSC slope survey*
-
 
 
 
