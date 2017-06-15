@@ -73,11 +73,17 @@
 <!-- ****************Fleet 4 Rec. PR Index FIGURES************************* -->
 <!-- ********************************************************************** --> 
 
-![A summary of the monthly recreational regulations for California scorpionfish in southern Califoria.  Open cells indicate no depth restriction, black cells indicate the fishery is closed, and cells with a number indicate the depth restriction in fathoms, e.g., 20 = retained catch allowed in less than 20 fathoms. *Fishery closed on November 15, 2014. \label{fig:recregs}](Figures/Rec_regs.png)
+![A summary of the monthly recreational regulations for California scorpionfish in southern Califoria.  cells with "open" indicate no depth restriction, black cells indicate the fishery is closed, and cells with a number indicate the depth restriction in fathoms, e.g., 20 = retained catch allowed in less than 20 fathoms. *Fishery closed on November 15, 2014. \label{fig:recregs}](Figures/Rec_regs.pdf)
 
 
 ![Species coefficients from the binomial GLM for presence/absence of California scorpionfish in the Marine Recreational Fisheries Statistics Survey (MRFSS) private mode dockside survey data set. Horizontal bars are 95% confidence intervals. \label{fig:Fleet4_RecPR_dockside_SM}](Figures/Fleet4_RecPR_SMcoef.png)
 
+
+
+![Boxplots of the raw log CPUE by year for each of the three factors considered in the deltaGLM model, county, month and year. \label{fig:Fleet4_RecPR_dockside_lograwCPUE}](Figures/Fleet4_RecPR_dockside_lograwCPUE.png)
+
+
+![Q-Q plot used to evaluate the fit of the lognmoral (positive encounters) of California scorpionfish from the Marine Recreational Fisheries Statistics Survey (MRFSS) private mode dockside survey data set. \label{fig:Fleet4_RecPR_dockside_QQ}](Figures/Fleet4_RecPR_dockside_QQ.png)
 
 ![Fit to log index data on log scale for the recreational CPFV logbook retained catches. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:index5_logcpuefit_RecPR}](r4ss/plots_mod1/index5_logcpuefit_RecPR.png)
 
@@ -248,9 +254,10 @@
 <!-- ********************************************************************** -->
 
 
+![Aging precision between two current age readers at the NWFSC.  \label{fig:Fleet8_NWFSCTrawl_ageerror}](Figures/Fleet8_NWFSCTrawl_ageerror.png)
 
 
-
+![True versus predicted age for two current age readers at the NWFSC from the ageing error software with unbiased reads and curivlinear standard deviation for both readers. \label{fig:Fleet8_NWFSCTrawl_ageerror2}](Figures/Fleet8_NWFSCTrawl_ageerror2.pdf)
 
 <!-- ====================================================================== -->
 <!-- ******************                           ************************* -->

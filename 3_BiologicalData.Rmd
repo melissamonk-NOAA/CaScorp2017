@@ -79,7 +79,8 @@ obtained directly from CDFW.
 
 \vspace{.5cm}
 **Age Structures**
-Age data were provided from the NWFSC trawl survey from 2005-2016.  
+Age data were provided from the NWFSC trawl survey from 2005-2016.
+All otoliths collected from the survey were aged
 
 Length-at-age was initially estimated external to the population dynamics models 
 using the von Bertalanffy growth curve [@vonB1938], $L_i = L_{\infty}e^{(-k[t-t_0])}$, 
@@ -90,6 +91,18 @@ increase in growth, $t_0$ is the intercept, and $L_{\infty}$ is the asymptotic l
 
 \vspace{.5cm}
 **Aging Precision And Bias**
+Uncertainty in ageing error was estimated using a collection of 200 California 
+scorpionfish otoliths with two age reads (\ref{fig:Fleet8_NWFSCTrawl_ageingerror}).  
+Age-composition data used in the model were all from the NWFSC trawl survey and 
+were from otoliths reads aged by the Cooperative Ageing Project (CAP) in Newport, 
+Oregon. All of the otolith reads were from Age Reader A, and double reads were read
+by Age Reader 2.  Ageing error was estimated using publicly available software [@Thorson2012].  
+The software setting for bias and standard deviation were the same for both 
+readers, unbiased and curvilinear increase in standard deviation with age, 
+respectively (Figure \ref{fig:Fleet8_NWFSCTrawl_ageingerror2}).  Two fish with 
+estimated age greater than 21 (plus group age) were exluded from the ageing error 
+estimation. The resulting estimate indicated a standard deviation in age readings 
+increasing from 0.001 years to a standard deviation of 1.79 years at age 22.
 
 
 
