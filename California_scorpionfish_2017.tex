@@ -1359,7 +1359,8 @@ outlined in Supplemental Materials (``Identifying Trips in RecFIN'').
 Since recreational fishing trips target a wide variety of species,
 standardization of the catch rates requires selecting trips that are
 likely to have fished in habitats containing California scorpionfish.
-The method of Stephens and MacCall (2004) was used to identify trips
+The method of Stephens and MacCall
+(\protect\hyperlink{ref-Stephens2004}{2004}) was used to identify trips
 with a high probability of catching California scorpionfish, based on
 the species composition of the catch in a given trip. Prior to applying
 the Stephens-MacCall filter, we identified potentially informative
@@ -1395,10 +1396,12 @@ California scorpionfish since it resides in the northern extent of their
 range and this is a transition zone between biogeographic provinces in
 which the presence of more northerly distributed species could adversely
 affect the ability of the Stephens-MacCall filtering method to identify
-co-occurring species.
+co-occurring species. Each of these filtering steps and the resulting
+number of trips remaining in the sampling frame are provided in Table
+\ref{tab:Fleet5_RecPC_dockside_filter}.
 
-Removal of the aforementioned trips resulted in a total of 3968 trips to
-which the Stephens-MacCall filtering method was applied. Species that
+Removal of the aforementioned trips resulted in a total of 3,968 trips
+to which the Stephens-MacCall filtering method was applied. Species that
 composed less than 5\% of the catch were excluded from analysis to
 prevent these uncommon species from affecting correlations identified
 using the algorithm. Chub mackerel, Pacific mackerel and barracuda were
@@ -1415,9 +1418,11 @@ was exerted in pursuit of a single target, the targeting of more than
 one target species can result in co-occurrence of species in the catch
 that do not truly co-occur in terms of habitat associations informative
 for an index of abundance, presenting a confounding influence in
-selecting trips using the methods employed.
+selecting trips using the methods employed. Thus the filtering is
+intended to remove those trips for which effort was targeted in deeper
+water than California scorpionfish commonly occur.
 
-Two levels of filtering were applied using the Stephens- MacCall Filter.
+Two levels of filtering were applied using the Stephens-MacCall Filter.
 The Stephens-MacCall filtering method identified the probability of
 occurrence (in this case 0.27) at which the rate of false positives and
 false negatives for the presence of California scorpionfish were equal
@@ -1433,8 +1438,9 @@ threshold inclusive of more trips including a higher proportion of the
 false positive trips combined with the positive trips from the entire
 data set was evaluated for comparison.
 
-CPUE (number of fish per angler hour) was modelled using a delta model
-(Lo et al. \protect\hyperlink{ref-Lo1992}{1992}, Stefánsson
+Catch per angler hour (CPUE; number of fish per angler hour) was
+modelled using a delta model (Lo et al.
+\protect\hyperlink{ref-Lo1992}{1992}, Stefánsson
 \protect\hyperlink{ref-Stefansson1996}{1996}). Model selection using
 Akaike Information Criterion (AIC) and Bayesian Information Criteria
 (BIC) supported inclusion of year and region effects in both the
@@ -1454,25 +1460,37 @@ value relative to other years. As a result of this anomalous result and
 the low sample size, trips from 1989 were excluded from analysis.
 
 The percentage of trips that caught California scorpionfish was 20.8\%
-(828/3968) prior to filtering with the Stephens-MacCall method, and
-71.0\% (828/1167) with the filter set to 0.27 and 26.7\% (828/3099) with
-the filter set to 0.10, filtered data set. Residual-based model
+(828/3,968) prior to filtering with the Stephens-MacCall method, and
+71.0\% (828/,1167) with the filter set to 0.27 and 26.7\% (828/3,099)
+with the filter set to 0.10, filtered data set. Residual-based model
 diagnostics for the positive component of the index suggest the data
 generally met the assumptions of the GLM (Figure
 \ref{fig:Fleet5_RecPC_docksideQQ}). The resulting index is highly
 variable for both thresholds, with consistent peaks in 1984 and 1998
-(Figure \ref{fig:Fleet5_RecPC_dockside_index_compare}).
+(Figure \ref{fig:Fleet5_RecPC_dockside_index_compare}). Application of
+the 0.27 threshold holds the potential of biasing the resulting index
+values high by excluding false positive trips while including positive
+trips with equivalent probability of encountering California
+scorpionfish. The 0.1 threshold removes a high proportion of trips with
+shelf rockfish species indicative of effort exerted in deeper depths
+than are commonly occupied by California scorpionfish, while retaining
+false positive trips with equivalent probabilities of capture to true
+positives. The AIC and values informing selection of the lognormal model
+including year and county effects is provided in Table
+\ref{tab:Fleet5_RecPC_dockside_aic}.
 
 The results of the models with each of the thresholds provided similar
-trends seen in Figure 4 along with the results from the CPFV logbook
-index. The trends differ from those resulting from the CPFV logbook
-index early in the time series, but both show an increase in the mid to
-late 1990s. The PC dockside index was excluded from further analysis in
-the model given that the PC logbook index represents the same sector of
-the fishery and presumably contains data from the some of the same
-trips, utilizes data for many thousands more trips, and provides data
-from 1989 to 1992 omitted from the MRFSS data as a result of filtering
-out 1989 and a lapse of sampling from 1990-1992.
+trends seen in Figure Figure
+\ref{fig:Fleet5_RecPC_dockside_index_compare} along with the results
+from the CPFV logbook index. The trends differ from those resulting from
+the CPFV logbook index early in the time series, but both show an
+increase in the mid to late 1990s. The PC dockside index was excluded
+from further analysis in the model given that the CPFV logbook index
+represents the same sector of the fishery and presumably contains data
+from the some of the same trips, utilizes data for many thousands more
+trips, and provides data from 1989 to 1992 omitted from the MRFSS data
+as a result of filtering out 1989 and a lapse of sampling from
+1990-1992.
 
 \textbf{Onboard Observer Party/Charter Boat}
 
@@ -1527,6 +1545,14 @@ that did not intersect with one of these areas were considered
 structural zeroes, i.e., outside of the species habitat, and not used in
 analyses.
 
+Five areas were retained based on sample sizes, 1) nearshore area from
+the U.S./Mexico border to Oceanside, 2) nearshore Oceanside to Newport
+Beach, 3) Newport Beach to Palos Verdes, 4) Palos Verdes to Point Magu,
+and 4) drifts from Santa Cruz Island, Santa Barbara and Anacapa Islands,
+Santa Catalina Island, and San Clemente Islands were combined. Drifts
+encountering California scorpionfish north of Point Magu were rare
+(\textless{}5\% positive encounters).
+
 Drift locations within the Cowcod Conservation Area (CCA) or in Mexican
 waters were also filtered out of the dataset. The years 1999 and 2000
 were removed from the index due to changes in hook and gear regulations
@@ -1539,36 +1565,65 @@ when the rockfish/cabezon/greenling complex is closed. Boat identifiers
 were availalbe for all trips in the onboard observer database.
 Approximately 1,000 drifts were filtered out after accounting for boats
 that were identified as not encountering scorpionfish (Table
-\ref{tab:Fleet6_RecDD_onboard_filter}.\\
-A total of 26,733 drifts for the analysis were retained. Of these, 5,507
-encountered scorpionfish, with 3,249 discarding California scorpionfish
-and 3,867 retaining California scorpionfish.
+\ref{tab:Fleet6_RecDD_onboard_filter}. A total of 26,733 drifts for the
+analysis were retained. Of these, 5,507 encountered scorpionfish, with
+3,249 discarding California scorpionfish and 3,867 retaining California
+scorpionfish.
 
 The drift-level effort cannot be parsed out between the retained and
 discarded catch. The effort represents the total angler hours fished by
-the subset of observed anglers for a particular drift.
+the subset of observed anglers for a particular drift, and is the same
+for both the discard-only and retained-only indices. Both of the indices
+derived from this dataset were standardized using a delta modeling
+approach (Lo et al. \protect\hyperlink{ref-Lo1992}{1992}).
 
 \emph{Onboard Obsever Discarded Catch Index}
 
-tab:Fleet6\_RecDD\_onboard\_aic
-
-tab:Fleet6\_RecDD\_onboard\_index
-
-fig:Fleet6\_index5\_logcpuefit\_RecDD
+Covariates considered in the full model included \emph{year},
+\emph{area} (5 levels), \emph{month} (12 levels), and \emph{20 m depth
+bins} (5 levels). All covariates were specified as categorical
+variables. A lognormal model for the positives was selected by AIC over
+a gamma model (delta-AIC of 482.28). Model selection for both the
+lognormal and binomial models retained all covariates (Table
+\ref{tab:Fleet6_RecDD_onboard_aic}). The Q-Q plot for the positive catch
+lognormal model looks reasonable (Figure \ref{fig:Fleet6_RecDD_QQ}). The
+final index shows a lower CPUE of the discards in 2001 and an increase
+from 2002-2005 when the California scorpionfish recreational fishery was
+restricted by depth or closed (Table
+\ref{tab:Fleet6_RecDD_onboard_index} and Figure
+\ref{fig:Fleet6_index5_logcpuefit_RecDD}). The relative CPUE of the
+discards decreases from 2006 to 2015.
 
 \emph{Onboard Obsever Discarded Catch Length Composition}
 
+The Onboard Obsever program only measures discarded fish, as of 2003.
+The retained catch is measured during the dockside (angler intercept)
+surveys, and cannot necessarily be matched to a trip with the discard
+lengths prior to 2012.
+
+The discard length composition reflects the California scorpionfish
+seasonal closures from 2002-2005. Anglers encountered and discarded fish
+greater than the size limit of 10 inches during these years. When the
+fishery is open, anglers are most often only discarded California
+scorpionfish that are smaller than the legal size. This also holds true
+for the lengh compoistion of discarded California scorpionfish in the
+1980s before there was a size limit.
+
 \emph{Onboard Obsever Retained Catch Index}
 
-tab:Fleet12\_RecPC\_onboard\_aic
-
-tab:Fleet12\_RecPC\_onboard\_index
-
-fig:Fleet12\_index5\_logcpuefit\_RecPCOBR
-
-Both of the indices derived from this dataset were standardized using a
-delta modeling approach (Lo et al.
-\protect\hyperlink{ref-Lo1992}{1992}).
+Covariates considered in the full model included \emph{year},
+\emph{area} (5 levels), \emph{month} (12 levels), and \emph{20 m depth
+bins} (5 levels). All covariates were specified as categorical
+variables. The final model includes A lognormal model was selected by
+AIC over a gamma model for the positives (delta-AIC of 534.9).Model
+selection for both the lognormal and binomial models retained all
+covariates (Table \ref{tab:Fleet12_RecPC_onboard_aic}). The Q-Q plot for
+the positive catch lognormal model looks reasonable (Figure
+\ref{fig:Fleet12_RecPCOBR_QQ}). The final index shows a lower CPUE of
+the retained catch from 2002 and 2003 (Table
+\ref{tab:Fleet12_RecPC_onboard_index} and Figure
+\ref{fig:Fleet12_index5_logcpuefit_RecPCOBR}). The relative CPUE of the
+retained catch shwos a decline from 2007-2015, and an increase in 2016.
 
 \subsubsection{Fishery-Independent Data
 Sources}\label{fishery-independent-data-sources}
@@ -2600,6 +2655,50 @@ Year & Index & Log-scale SE & NA & NA \\
 
 \begin{table}[ht]
 \centering
+\caption{Recreational CPFV dockside sample 
+                                          sizes at each data filtering step.  
+                                          The bold value indicates the final sample size 
+                                          used for delta-GLM analysis.} 
+\label{tab:Fleet5_RecPC_dockside_filter}
+\begin{tabular}{>{\raggedright}p{1.5in}>{\raggedright}p{3in}>{\raggedright}p{1in}}
+  \hline
+Filter & Criteria & Sample size (no. of trips) \\ 
+  \hline
+All southern CA data & No filter & 6295 \\ 
+  Offshore trips & Remove trips with catch of yellowfin tuna, bluefin tuna, albacore, chinook salmon, coho salmon, bigeye tuna and skipjack & 6180 \\ 
+  Species &  Remove trips with  catch of Pacific bonito & 4718 \\ 
+  County &  Remove trips from Santa Barbara County & 4338 \\ 
+  Effort & Remove trips with lower and upper 2.5\% of angler hours (< 2 or   >109.5). & 4117 \\ 
+  Second species filter & Remove trips with catch of yellowtail (\emph{Seriola lalandi}); remove chub/Pacific mackerel and barracuda as predictors & 3968 \\ 
+  Stephens-MacCall & Retained all trips with California scorpionfish as well as trips identified as false negatives and probability of encounter of 0.10 & 3176 \\ 
+  Year & Removed trips from 1989 due to anomalous results and low sample size  & \textbf{3,099} \\ 
+   \hline
+\end{tabular}
+\end{table}\begin{table}[ht]
+\centering
+\caption{AIC values for each model in the
+                                          recreational CPFV logbook sample 
+                                          index, including all positive trips 
+                                          and false positive trips selected 
+                                          with a Stephens-MacCall filter 
+                                          threshold encounter probability of 0.1.} 
+\label{tab:Fleet5_RecPC_dockside_aic}
+\begin{tabular}{lll}
+  \hline
+Model & Binomial & Lognormal \\ 
+  \hline
+Year &  & 2479.6 \\ 
+  Year + Month & 3123.2 & 2488.7 \\ 
+  Year + County & 3293.3 & \textbf{2436.3} \\ 
+  Year + Month + County & \textbf{3091.8} & 2444.6 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+\FloatBarrier
+
+\begin{table}[ht]
+\centering
 \caption{Recreational onboard observer data sample 
                                           sizes at each data filtering step.  
                                           The bold value indicates the final sample size 
@@ -3564,12 +3663,35 @@ addition of estimated additional uncertainty parameter.
 
 \begin{figure}[htbp]
 \centering
+\includegraphics{Figures/Fleet6_RecDD_QQ.png}
+\caption{Q-Q plot used to validate the goodness of fit of the lognormal
+model for the CPFV onboard observer discarded only catch.
+\label{fig:Fleet6_RecDD_QQ}}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
 \includegraphics{r4ss/plots_mod1/index5_logcpuefit_RecDD.png}
 \caption{Fit to log index data on log scale for the recreational CPFV
 onboard oserver discarded catch index. Lines indicate 95\% uncertainty
 interval around index values. Thicker lines indicate input uncertainty
 before addition of estimated additional uncertainty parameter.
 \label{fig:Fleet6_index5_logcpuefit_RecDD}}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics{r4ss/plots_mod1/comp_lendat_bubflt6mkt2.png}
+\caption{Length frequency distributions from the sanitation disricts
+trawl surveys. \label{fig:Fleet6_comp_lendat_bubflt6mkt2}}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics{Figures/Fleet12_RecPCOB_QQ.png}
+\caption{Q-Q plot used to validate the goodness of fit of the lognormal
+model for the CPFV onboard observer retained only catch.
+\label{fig:Fleet12_RecPCOBR_QQ}}
 \end{figure}
 
 \begin{figure}[htbp]

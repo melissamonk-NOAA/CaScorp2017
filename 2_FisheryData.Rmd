@@ -291,7 +291,7 @@ process, and is outlined in Supplemental Materials (“Identifying Trips in RecF
  
 Since recreational fishing trips target a wide variety of species, standardization
 of the catch rates requires selecting trips that are likely to have fished in habitats 
-containing California scorpionfish. The method of Stephens and MacCall (2004) was used
+containing California scorpionfish. The method of Stephens and MacCall [-@Stephens2004] was used
 to identify trips with a high probability of catching California scorpionfish, based 
 on the species composition of the catch in a given trip. Prior to applying the 
 Stephens-MacCall filter, we identified potentially informative “predictor” species
@@ -321,8 +321,11 @@ low number of positive samples for California scorpionfish since it resides in t
 northern extent of their range and this is a transition zone between biogeographic 
 provinces in which the presence of more northerly distributed species could adversely
 affect the ability of the Stephens-MacCall filtering method to identify co-occurring species.
- 
-Removal of the aforementioned trips resulted in a total of 3968 trips to which the 
+Each of these filtering steps and the resulting number of trips remaining in the sampling 
+frame are provided in Table \ref{tab:Fleet5_RecPC_dockside_filter}.
+
+
+Removal of the aforementioned trips resulted in a total of 3,968 trips to which the 
 Stephens-MacCall filtering method was applied.  Species that composed less than 5% 
 of the catch were excluded from analysis to prevent these uncommon species from 
 affecting correlations identified using the algorithm.  Chub mackerel, Pacific 
@@ -337,9 +340,10 @@ in identifying co-occurring or non-occurring species assuming all effort was exe
 in pursuit of a single target, the targeting of more than one target species can result
 in co-occurrence of species in the catch that do not truly co-occur in terms of habitat
 associations informative for an index of abundance, presenting a confounding influence 
-in selecting trips using the methods employed. 
+in selecting trips using the methods employed. Thus the filtering is intended to remove
+those trips for which effort was targeted in deeper water than California scorpionfish commonly occur.
  
-Two levels of filtering were applied using the Stephens- MacCall Filter.  The Stephens-MacCall
+Two levels of filtering were applied using the Stephens-MacCall Filter.  The Stephens-MacCall
 filtering method identified the probability of occurrence (in this case 0.27) at which 
 the rate of false positives and false negatives for the presence of California scorpionfish 
 were equal as a heuristic for selecting a threshold for trips in appropriate habitat to be
@@ -352,7 +356,7 @@ inclusion.   In addition, the false positives from a lower probability of occurr
 trips including a higher proportion of the false positive trips combined with the 
 positive trips from the entire data set was evaluated for comparison.   
  
-CPUE (number of fish per angler hour) was modelled using a delta model 
+Catch per angler hour (CPUE; number of fish per angler hour) was modelled using a delta model 
 [@Lo1992; @Stefansson1996]. Model selection using Akaike Information Criterion 
 (AIC) and Bayesian Information Criteria (BIC) supported inclusion of year and
 region effects in both the binomial and lognormal components of the index for both 
@@ -368,19 +372,28 @@ catch trips through application of the 0.27 threshold reduced the relative magni
 1989 index value relative to other years.  As a result of this anomalous result and the
 low sample size, trips from 1989 were excluded from analysis. 
  
-The percentage of trips that caught California scorpionfish was 20.8% (828/3968) prior
-to filtering with the Stephens-MacCall method, and 71.0% (828/1167) with the filter set 
-to 0.27 and 26.7% (828/3099) with the filter set to 0.10, filtered data set. 
+The percentage of trips that caught California scorpionfish was 20.8% (828/3,968) prior
+to filtering with the Stephens-MacCall method, and 71.0% (828/,1167) with the filter set 
+to 0.27 and 26.7% (828/3,099) with the filter set to 0.10, filtered data set. 
 Residual-based model diagnostics for the positive component of the index suggest
 the data generally met the assumptions of the GLM (Figure \ref{fig:Fleet5_RecPC_docksideQQ}). 
 The resulting index is highly variable for both thresholds,
-with consistent peaks in 1984 and 1998 (Figure \ref{fig:Fleet5_RecPC_dockside_index_compare}).
+with consistent peaks in 1984 and 1998 (Figure \ref{fig:Fleet5_RecPC_dockside_index_compare}). 
+Application of the 0.27 threshold holds the potential of biasing the resulting index values 
+high by excluding false positive trips while including positive trips with equivalent 
+probability of encountering California scorpionfish.  The 0.1 threshold removes a high
+proportion of trips with shelf rockfish species indicative of effort exerted in deeper 
+depths than are commonly occupied by California scorpionfish, while retaining false 
+positive trips with equivalent probabilities of capture to true positives.  The AIC 
+and values informing selection of the lognormal model including year and county 
+effects is provided in Table \ref{tab:Fleet5_RecPC_dockside_aic}.
  
 The results of the models with each of the thresholds provided similar trends 
-seen in Figure 4 along with the results from the CPFV logbook index.  The trends
+seen in Figure Figure \ref{fig:Fleet5_RecPC_dockside_index_compare} along 
+with the results from the CPFV logbook index.  The trends
 differ from those resulting from the CPFV logbook index early in the time series,
 but both show an increase in the mid to late 1990s.  The PC dockside index was
-excluded from further analysis in the model given that the PC logbook index 
+excluded from further analysis in the model given that the CPFV logbook index 
 represents the same sector of the fishery and presumably contains data from the
 some of the same trips, utilizes data for many thousands more trips, and 
 provides data from 1989 to 1992 omitted from the MRFSS data as a result of 
@@ -429,6 +442,12 @@ Any portion of a region that intersected with land was removed.  Drifts that did
 with one of these areas were considered structural zeroes, i.e., outside of the species habitat, 
 and not used in analyses.  
 
+Five areas were retained based on sample sizes, 1) nearshore area from the U.S./Mexico border to 
+Oceanside, 2) nearshore Oceanside to Newport Beach, 3) Newport Beach to Palos Verdes, 4) Palos
+Verdes to Point Magu, and 4) drifts from Santa Cruz Island, Santa Barbara and Anacapa Islands,
+Santa Catalina Island, and San Clemente Islands were combined.  Drifts encountering California
+scorpionfish north of Point Magu were rare (<5% positive encounters).
+
 Drift locations within the Cowcod Conservation Area (CCA) or in Mexican waters were also filtered
 out of the dataset.  The years 1999 and 2000 were removed from the index due to changes in 
 hook and gear regulations during those years.  California adopted a 3-hook and 1-line regulation 
@@ -436,44 +455,56 @@ in 2000, which changed to 2-hooks and 1-line in 2001. California scorpionfish is
 target species for the CPFV fleet, but if often a fallback species, for trips targeting seabass
 or rockfish.  California scorpionfish are targeted more often in January and February when the 
 rockfish/cabezon/greenling complex is closed.  Boat identifiers were availalbe for all trips
-in the onboard observer database.  Approximately 1,000 drifts were filtered out after accounting
-for boats that were identified as not encountering scorpionfish (Table \ref{tab:Fleet6_RecDD_onboard_filter}.  
-A total of 26,733 
-drifts for the analysis were retained.  Of these, 5,507 encountered scorpionfish, with 3,249
+in the onboard observer database.  Approximately 1,000 drifts were filtered out after 
+accounting for boats that were identified as not encountering scorpionfish 
+(Table \ref{tab:Fleet6_RecDD_onboard_filter}.  A total of 26,733 drifts for the analysis 
+were retained.  Of these, 5,507 encountered scorpionfish, with 3,249
 discarding California scorpionfish and 3,867 retaining California scorpionfish.
 
 The drift-level effort cannot be parsed out between the retained and discarded catch.  The effort
 represents the total angler hours fished by the subset of observed anglers for a particular
-drift.
+drift, and is the same for both the discard-only and retained-only indices. Both of the indices derived 
+from this dataset were standardized using a delta modeling approach [@Lo1992]. 
 
 _Onboard Obsever Discarded Catch Index_
 
-tab:Fleet6_RecDD_onboard_aic
-
-tab:Fleet6_RecDD_onboard_index
-
-fig:Fleet6_index5_logcpuefit_RecDD
+Covariates considered in the full model included *year*, *area* (5 levels), *month* (12 levels), 
+and *20 m depth bins* (5 levels). All covariates were specified as categorical variables.
+A lognormal model for the positives was selected by AIC over a gamma model (delta-AIC of 482.28).
+Model selection for both the lognormal and binomial models retained all covariates (Table 
+\ref{tab:Fleet6_RecDD_onboard_aic}).  The Q-Q plot for the positive catch lognormal model looks
+reasonable (Figure \ref{fig:Fleet6_RecDD_QQ}).  The final index shows a lower CPUE of the discards
+in 2001 and an increase from 2002-2005 when the California scorpionfish recreational fishery was
+restricted by depth or closed (Table \ref{tab:Fleet6_RecDD_onboard_index} and Figure
+\ref{fig:Fleet6_index5_logcpuefit_RecDD}).  The relative CPUE of the discards decreases from 
+2006 to 2015.
 
 _Onboard Obsever Discarded Catch Length Composition_
 
+The Onboard Obsever program only measures discarded fish, as of 2003.  The retained catch is measured
+during the dockside (angler intercept) surveys, and cannot necessarily be matched to a trip
+with the discard lengths prior to 2012.
 
-
+The discard length composition reflects the California scorpionfish seasonal closures 
+from 2002-2005. Anglers encountered and discarded fish greater than the size limit of
+10 inches during these years.  When the fishery is open, anglers are most often only
+discarded California scorpionfish that are smaller than the legal size.  This also 
+holds true for the lengh compoistion of discarded California scorpionfish in the 
+1980s before there was a size limit.
 
 
 _Onboard Obsever Retained Catch Index_
 
+Covariates considered in the full model included *year*, *area* (5 levels), *month* (12 levels), 
+and *20 m depth bins* (5 levels). All covariates were specified as categorical variables.
+The final model includes A lognormal model was selected by AIC over a gamma model for the positives
+(delta-AIC of 534.9).Model selection for both the lognormal and binomial models retained all covariates (Table 
+\ref{tab:Fleet12_RecPC_onboard_aic}).  The Q-Q plot for the positive catch lognormal model looks
+reasonable (Figure \ref{fig:Fleet12_RecPCOBR_QQ}).  The final index shows a lower CPUE of the retained catch
+from 2002 and 2003 (Table \ref{tab:Fleet12_RecPC_onboard_index} and Figure
+\ref{fig:Fleet12_index5_logcpuefit_RecPCOBR}).  The relative CPUE of the retained catch shwos a decline
+from 2007-2015, and an increase in 2016.
 
-tab:Fleet12_RecPC_onboard_aic
-
-tab:Fleet12_RecPC_onboard_index
-
-fig:Fleet12_index5_logcpuefit_RecPCOBR
-
-
-
-
- Both of the indices derived from this 
-dataset were standardized using a delta modeling approach [@Lo1992]. 
 
 <!-- ************FISHERY-INDPENDENT DATA*********************************** -->
 

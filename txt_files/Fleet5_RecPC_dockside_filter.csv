@@ -1,0 +1,9 @@
+Filter,Description,Trips
+All southern CA data,No filter,6295
+Offshore trips,"Remove trips with catch of yellowfin tuna, bluefin tuna, albacore, chinook salmon, coho salmon, bigeye tuna and skipjack",6180
+Species, Remove trips with  catch of Pacific bonito,4718
+County, Remove trips from Santa Barbara County,4338
+Effort,Remove trips with lower and upper 2.5\% of angler hours (< 2 or   >109.5).,4117
+Second species filter,Remove trips with catch of yellowtail (\emph{Seriola lalandi}); remove chub/Pacific mackerel and barracuda as predictors,3968
+Stephens-MacCall,Retained all trips with California scorpionfish as well as trips identified as false negatives and probability of encounter of 0.10,3176
+Year,Removed trips from 1989 due to anomalous results and low sample size ,"\textbf{3,099}"

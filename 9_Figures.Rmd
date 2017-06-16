@@ -118,7 +118,20 @@
 <!-- *************Recreational onboard observer FIGURES******************** --> 
 <!-- ********************************************************************** -->
 
+![Q-Q plot used to validate the goodness of fit of the lognormal model for the CPFV onboard observer discarded only catch. \label{fig:Fleet6_RecDD_QQ}](Figures/Fleet6_RecDD_QQ.png)
+
 ![Fit to log index data on log scale for the recreational CPFV onboard oserver discarded catch index. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:Fleet6_index5_logcpuefit_RecDD}](r4ss/plots_mod1/index5_logcpuefit_RecDD.png)
+
+
+
+![Length frequency distributions from the sanitation disricts trawl surveys. \label{fig:Fleet6_comp_lendat_bubflt6mkt2}](r4ss/plots_mod1/comp_lendat_bubflt6mkt2.png)
+
+
+![Q-Q plot used to validate the goodness of fit of the lognormal model for the CPFV onboard observer retained only catch. \label{fig:Fleet12_RecPCOBR_QQ}](Figures/Fleet12_RecPCOB_QQ.png)
+
+
+
+
 
 
 

@@ -216,6 +216,71 @@
               scalebox=.9)
 ```
 
+\FloatBarrier
+<!-- ********************************************************************** -->
+<!-- ************Fleet 5 Recreational PC dockside index TABLES************* -->
+<!-- ********************************************************************** -->
+```{r, eval=TRUE, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+      ##read in data for 3 tables
+        Fleet5a_filter = read.csv("./txt_files/Fleet5_RecPC_dockside_filter.csv")
+        Fleet5a_aic = read.csv("./txt_files/Fleet5_RecPC_dockside_aic.csv")
+       
+        
+        colnames(Fleet5a_filter) = c('Filter',
+                                    'Criteria',
+                                    'Sample size (no. of trips)')
+        
+        colnames(Fleet5a_aic) = c('Model',
+                                 'Binomial',
+                                 'Lognormal')
+        
+
+```
+```{r, results='asis'}
+    #Fleet 5a filter
+         Fleet5a_filter.table = xtable(Fleet5a_filter,
+                              caption = c("Recreational CPFV dockside sample 
+                                          sizes at each data filtering step.  
+                                          The bold value indicates the final sample size 
+                                          used for delta-GLM analysis."),
+                              label='tab:Fleet5_RecPC_dockside_filter')
+        
+        align(Fleet5a_filter.table) = c('l',
+                                  '>{\\raggedright}p{1.5in}',
+                                  '>{\\raggedright}p{3in}',
+                                  '>{\\raggedright}p{1in}')          
+        
+        print(Fleet5a_filter.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x})
+
+   #Fleet 5 aic
+         Fleet5a_aic.table = xtable(Fleet5a_aic,
+                              caption = c("AIC values for each model in the
+                                          recreational CPFV logbook sample 
+                                          index, including all positive trips 
+                                          and false positive trips selected 
+                                          with a Stephens-MacCall filter 
+                                          threshold encounter probability of 0.1."),
+                              label='tab:Fleet5_RecPC_dockside_aic')
+        
+        
+        print(Fleet5a_aic.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x})
+
+```
+
+
+
+
+
+
+
+
+
 
 \FloatBarrier
 <!-- ********************************************************************** -->
