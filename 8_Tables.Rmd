@@ -40,6 +40,59 @@
 ```
 
 
+```{r, eval=TRUE, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+## Length comp sample size tables
+    ComHL_length = read.csv('./txt_files/Fleet1_ComHL_lengthsamplesize.csv')
+   ComNet_length = read.csv('./txt_files/Fleet2_ComNet_lengthsamplesize.csv')
+   ComTrawl_length = read.csv('./txt_files/Fleet3_ComTrawl_lengthsamplesize.csv')
+     column_names = c('Year',
+                      'Fish',
+                      'Trips',
+                      'Sample size',
+                      'Mean length (cm)')
+     
+   colnames(ComHL_length) = column_names
+   colnames(ComNet_length) = column_names
+   colnames(ComTrawl_length) = column_names
+
+```
+
+```{r, results='asis'}
+    ComHL_length.table = xtable(ComHL_length,
+                                caption = c('The annual number of California scorpionfish 
+                                              sampled from the the commercial hook-and-line 
+                                            fleet for lengths.'),
+                                label='tab:ComHL_lengthsample')
+
+      print(ComHL_length.table,
+            include.rownames=FALSE,      
+            caption.placement="top")
+   ##gillnet   
+     ComNet_length.table = xtable(ComNet_length,
+                                caption = c('The annual number of California scorpionfish 
+                                              sampled from the the commercial gillnet 
+                                            fleet for lengths.'),
+                                label='tab:ComNet_lengthsample')
+
+      print(ComNet_length.table,
+            include.rownames=FALSE,      
+            caption.placement="top")
+      
+      
+    ##trawl
+      ComTrawl_length.table = xtable(ComTrawl_length,
+                                caption = c('The annual number of California scorpionfish 
+                                              sampled from the the commercial trawl 
+                                            fleet for lengths.'),
+                                label='tab:ComTrawl_lengthsample')
+
+      print(ComTrawl_length.table,
+            include.rownames=FALSE,      
+            caption.placement="top")
+
+
+```
+
 
 
 \FloatBarrier

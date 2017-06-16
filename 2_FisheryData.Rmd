@@ -67,6 +67,41 @@ with 151 fish measured from 2004-2015, and less than half a metric ton.  Given t
 discard mortality of only 7%, and the small total catches in the recent years, 
 discards from the commercial fleet are not considered in the assessment.
 
+###Fishery Length And Age Data
+Biological data from commercial fisheries that caught `r spp` were extracted from CalCOM 
+on March 7, 2017. Samples from the hook and line fishery were available from 1999 (1 trip) 
+and 2013-2015 (1 trip per year), and for 1999 (1 trip) and 2006 (2 trips) from the trawl fishery.
+A total of 87 fish were measured and length compositions were based on expanded catch-weighted
+landings.  The samples from 1999 for both fisheries were replaced by samples from the market
+category study described below.
+
+The CDFW conducted a market study from 1990-2004 in southern California [@Laughlin1998] to
+monitor and summarize local commercial catches.  The ports sampled included San Diego, 
+Santa Barbara/Ventura and Long Beach/San Pedro.  Very few of the samples from Santa 
+Barbara and San Diego (4 samples each from the hook-and-line and trawl fisheries 
+Santa Barbara, and 1 sample from the hook-and-line fishery in San Diego) reported 
+California scorpionfish, and are excluded from the length composition data.  
+Length composition for California scorpionfish are available from the Long Beach 
+samples for the hook-and-line (Table \ref{tab:ComHL_lengthsample}), gillnet 
+(Table \ref{tab:ComNet_lengthsample}), and trawl fisheries (Table \ref{tab:ComTrawl_lengthsample}). 
+Length samples from both groundfish (otter) trawls and single-rigged 
+shrimp trawls were available from the market study.  The average size of fish from the 
+otter trawls (26.5 cm) was smaller than from the shrimp trawl samples (28.1 cm).  Over 
+70% of California scorpionfish catch from the trawl sector was landed from single-rigged 
+shrimp trawls, which best represent the length composition ofthe trawl 
+fleet (CalCOM).
+
+
+The input sample sizes were calculated via the Stewart Method (Ian Stewart, personal communication, IPHC):
+
+\begin{centering}
+
+Input effN = $N_{\text{trips}} + 0.138 * N_{\text{fish}}$ if $N_{\text{fish}}/N_{\text{trips}}$ is $<$ 44
+
+Input effN = $7.06 * N_{\text{trips}}$ if $N_{\text{fish}}/N_{\text{trips}}$ is $\geq$ 44
+
+\end{centering}
+
 
 ###Sport Fishery Removals and Discards
 
@@ -135,10 +170,11 @@ compared to other modes were used to proxy estimates for other modes based on th
 resulting ramped values for the PC mode.  The final time series of retained and 
 discarded landings is in Table \ref{tab:Rec_removal}.
 
+Biological samples from the recreational fleets are desribed in the sections below.
 
 ###Fishery-dependent Data Sources
 
-**MRFSS Dockside Private Boat Survey**
+**CRFS Private Boat Dockside Intercept Survey**
 
 The CDFW provided the CRFS private boat dockside sampling fisheries data from 2004 
 to 2016.  The data went through several data quality checks to identify the best 
@@ -216,6 +252,15 @@ The Q-Q goodness of fit plot for the lognormal portion of the model shows
 a moderate fit to the data (Figure \ref{fig:Fleet4_RecPR_dockside_QQ}).
 final index indicates a decrease in relative abundance from 2006 to 2010, 
 at which point the index is relatively flat (Figure \ref{fig:index5_logcpuefit_RecPR}). 
+
+Biological samples from trips retaining California scorpionfish were collected during
+the dockside surveys.  Lengths of California scorpionfish from 1980-2016 for the private
+mode were provided by RecFIN (Ed Hibsch) on November 29, 2016. Length measurements from
+the private mode were provided directly from CDFW for the years 2004-2016 and represent
+the same samples.  TOAD
+
+
+
 
 
 **CRFS CPFV Logbook Index**
@@ -512,23 +557,27 @@ from 2007-2015, and an increase in 2016.
 
 **Sanitation Districts Trawl Survey**
 
-Sanitation districts in southern California are required to conduct trawls as 
+Sanitation districts in southern California are required to conduct trawls 
+to monitor the demersal fish community in the vacinity of the discharge sites 
 part of their National Pollutant Discharge Elimination System (NPEDES) permits. 
-All sanitation districts in southern California were contacted for data series. 
-The two northernmost districts Goleta and the City of Oxnard provided data, but 
-no scorpionfish have been observed in either trawl survey.  The four other 
+All sanitation districts in southern California were contacted for trawl data series. 
+The two northernmost districts, Goleta and the City of Oxnard, provided data, but 
+neither have observed California scorpionfish in their trawl surveys.  The four other 
 sanitation districts, Orange County, City of Los Angeles, Los Angeles County,
-and the City of San Diego all encounter California scorpionfish.
+and the City of San Diego all encounter California scorpionfish.  Trawl data from 
+these four sanitation districts were provided.
+
+Each sanitation district measures every fish encountered, 
 
 _Orange County_
-Orange County Sanitation District provided trawl data from 1970-2015, and the 
+Orange County Sanitation District provided trawl data from 1970-2015 () and the 
 majority of sampling occurred in Quarter 1 and 3 (Jan-March and July-September).
 From 1970-1985 Quarter 2, sampling was based on a 10 minute tow time.  As of 1985 
 Quarter 3 sampling was based upon a towed distance of 450m. Tow time was missing 
-for approximately half of the tows from 1985 Quarter 3 to present, and was imputed
+for approximately half of the tows from 1985 Quarter 3 to 2016, and was imputed
 based on the mean tow time of the sampling station. Two stations were removed that
-were frequently sampled, but observed very few scorpionfish.  Eleven stations 
-(T0-T6,T10-T13) with long time series and 1,490 tows were retained for the analysis .
+were frequently sampled, but observed very few scorpionfish (.  Eleven stations 
+(T0-T6,T10-T13) with long time series and 1,490 tows were retained the analyses.
  
  
  
