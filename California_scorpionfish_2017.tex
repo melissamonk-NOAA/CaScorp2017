@@ -507,18 +507,18 @@ Management performance table: Table \ref{tab:mnmgt_perform}
   \hline
 Year & OFL (mt; ABC prior to 2011) & ABC (mt) & ACL (mt; OY prior to 2011) & Estimated total catch (mt) \\ 
   \hline
-\textbf{2007} & - & - & - & - \\ 
-  \textbf{2008} & - & - & - & - \\ 
-  \textbf{2009} & - & - & - & - \\ 
-  \textbf{2010} & - & - & - & - \\ 
-  \textbf{2011} & - & - & - & - \\ 
-  \textbf{2012} & - & - & - & - \\ 
-  \textbf{2013} & - & - & - & - \\ 
-  \textbf{2014} & - & - & - & - \\ 
-  \textbf{2015} & - & - & - & - \\ 
-  \textbf{2016} & - & - & - & - \\ 
-  \textbf{2017} & - & - & - & - \\ 
-  \textbf{2018} & - & - & - & - \\ 
+\textbf{2007} & - & - & 175 & - \\ 
+  \textbf{2008} & - & - & 175 & - \\ 
+  \textbf{2009} & - & - & 175 & - \\ 
+  \textbf{2010} & - & - & 155 & - \\ 
+  \textbf{2011} & - & - & 135 & - \\ 
+  \textbf{2012} & - & - & 126 & - \\ 
+  \textbf{2013} & - & - & 120 & - \\ 
+  \textbf{2014} & - & - & 117 & - \\ 
+  \textbf{2015} & 119 & 114 & 114 & - \\ 
+  \textbf{2016} & - & - & 111 & - \\ 
+  \textbf{2017} & - & - & 150 (110) & - \\ 
+  \textbf{2018} & - & - & 150 (110) & - \\ 
    \hline
 \end{tabular}
 }
@@ -1319,9 +1319,16 @@ relatively flat (Figure \ref{fig:index5_logcpuefit_RecPR}).
 Biological samples from trips retaining California scorpionfish were
 collected during the dockside surveys. Lengths of California
 scorpionfish from 1980-2016 for the private mode were provided by RecFIN
-(Ed Hibsch) on November 29, 2016. Length measurements from the private
-mode were provided directly from CDFW for the years 2004-2016 and
-represent the same samples. TOAD
+by Edward Hibsch (PSMFC) on November 29, 2016. Length measurements from
+the private mode were provided directly from CDFW for the years
+2004-2016 Table \ref{tab:Fleet4_lengthsample}. The number of trips is
+the number of unique ID\_CODEs from RecFIN for 1980-2003. Starting in
+2004 with the CRFS program, the number of unique trips sampled in the
+private boat mode was recorded. The recreational private fleet tends to
+select larger fish than the recreational party/charter fleet, which is
+one reason the private and party/charter fleets were maintained as two
+separate fleets in the base model. No length data for discarded fish
+from the recreational private mode fleet are available.
 
 \textbf{CRFS CPFV Logbook Index}
 
@@ -1424,7 +1431,7 @@ Coefficients from the Stephens-MacCall analysis (a binomial GLM) are
 positive for species which co-occur with California scorpionfish, and
 negative for species that are not caught with California scorpionfish.
 
-Data for dockside sampling of 6295 commercial passenger fishing vessel
+Data for dockside sampling of 6,295 commercial passenger fishing vessel
 (CPFV) trips south of Point Conception by the Marine Recreational
 Fishery Statistical Survey (MRFSS) were filtered using the
 Stephens-McCall method to identify trips with catch associated with
@@ -1500,17 +1507,27 @@ Akaike Information Criterion (AIC) and Bayesian Information Criteria
 binomial and lognormal components of the index for both the model with
 false positives from the 0.27 threshold and the 0.10 threshold. The
 addition of month effects (to allow for seasonal changes in CPUE) did
-not improve model fit. The lognormal model was employed as a result of
-the lower AIC values compared to the binomial model. The resulting index
-values for 1989 were anomalously high compared to other years. In
-addition, the less stringent filter of 0.10 resulted in a higher
-relative index than the 0.27 threshold. Further examination of the
-number of California scorpionfish per trip by year showed a lower number
-of trips for this year than others and a lower proportion of low catch
-trips explaining why exclusion of low catch trips through application of
-the 0.27 threshold reduced the relative magnitude of the 1989 index
-value relative to other years. As a result of this anomalous result and
-the low sample size, trips from 1989 were excluded from analysis.
+not improve model fit in the lognormal model, but the full model
+including month, year and county was supported for the binomial model
+(Table 2). The difference in AIC values for the full model compared to
+the model with only year and county was greater for the binomial model
+(201.5) favoring the full modal compared to the small difference for the
+lognormal model favoring the model with only year and county (8.3). As a
+result, the full model including year, county and month effects was
+selected for further analysis.
+
+The resulting index values for 1989 were anomalously high compared to
+other years.\\
+In addition, the less stringent filter of 0.1 resulted in a higher index
+value than 0.27, which was antithetical to the expectation that
+including trips with fewer positive trips would decrease the CPUE.
+Further examination of the number of California scorpionfish per trip by
+year showed a lower number of trips for this year than others and a
+lower proportion of low catch trips explaining why exclusion of low
+catch trips through application of the 0.27 index reduced the relative
+magnitude of the 1989 index value relative to other years. As a result
+of this anomalous result and the low sample size, trips from 1989 were
+excluded from analysis.
 
 The percentage of trips that caught California scorpionfish was 20.8\%
 (828/3,968) prior to filtering with the Stephens-MacCall method, and
@@ -1528,9 +1545,11 @@ scorpionfish. The 0.1 threshold removes a high proportion of trips with
 shelf rockfish species indicative of effort exerted in deeper depths
 than are commonly occupied by California scorpionfish, while retaining
 false positive trips with equivalent probabilities of capture to true
-positives. The AIC and values informing selection of the lognormal model
-including year and county effects is provided in Table
-\ref{tab:Fleet5_RecPC_dockside_aic}.
+positives and thus was retained for further analysis.\\
+The resulting jackknifed mean index values, standard error, coefficient
+of variation and confidence intervals for the 0.1 threshold model,
+excluding 1989, with year, month and county effects are provided in
+Table \ref{tab:Fleet5_RecPC_dockside_aic}.
 
 The results of the models with each of the thresholds provided similar
 trends seen in Figure Figure
@@ -1544,6 +1563,41 @@ from the some of the same trips, utilizes data for many thousands more
 trips, and provides data from 1989 to 1992 omitted from the MRFSS data
 as a result of filtering out 1989 and a lapse of sampling from
 1990-1992.
+
+\emph{Party/Charter Dockside Length Measurements}
+
+The retained catch for the recreational party/charter mode has been
+measured during the dockside interviews since 1980, and also by two
+different onboard observer programs in southern California by Collins
+and Crooke ({\textbf{???}}) a combination of unpublished data and a
+study by Ally et al. (\protect\hyperlink{ref-Ally1991}{1991}) from
+1984-1989 (Table \ref{tab:Fleet5_lengthsample}). The length measurements
+from Collins and Crooke ({\textbf{???}}) are assumed to all be from
+retained fish.
+
+Length measurements for California scorpionfish from 1980-2016 were
+provided from RecFIN by Edward Hibsch (PSMFC) on November 29, 2016. The
+number of trips from 1980-2003 is the number of trips with observer
+catch of California scorpionfish as outlined in the Supplemental
+Material (``Identifying Trips in RecFIN''). However, the algorithm used
+to determine the number of trips has not been applied to RecFIN data
+past 2003. The number of trips for 2004 and 2005, was taken as the ratio
+of the number of interviews (ID\_CODE) in RecFIN to the number of known
+trips for years with complete data. The number of individual ID\_CODEs
+was reducd reduced by 38\% for 2004 and 2005, and gives reasonable
+sample sizes. From 2004-2016 the number of trips from which the samples
+were taken is known.
+
+From 1985-1987 Ally et al. (\protect\hyperlink{ref-Ally1991}{1991})
+conducted an onboard observer program in southern California, and
+measured both retained and discarded fish. Additional unpublished years
+(1984, 1988-1999) from this onboard observer sampling program were
+provided by CDFW (Paulo Serpa). From 1984-1989, the onboard observer
+program measured 11,892 retained California scorpionfish compared to the
+1,981 measurements in RecFIN. It is almost certain, but cannot be
+verified, that some of the lengths from the onboard observer program
+were input in RecFIN. Therefore, the onboard observer measurements from
+1984-1989 are used instead of those from RecFIN for these years.
 
 \textbf{Onboard Observer Party/Charter Boat}
 
@@ -1647,12 +1701,19 @@ restricted by depth or closed (Table
 \ref{fig:Fleet6_index5_logcpuefit_RecDD}). The relative CPUE of the
 discards decreases from 2006 to 2015.
 
-\emph{Onboard Obsever Discarded Catch Length Composition}
+\emph{Discarded Catch Length Composition}
 
-The Onboard Obsever program only measures discarded fish, as of 2003.
+As of 2003, Onboard Obsever program has taken length measurements for
+discarded fish.\\
 The retained catch is measured during the dockside (angler intercept)
 surveys, and cannot necessarily be matched to a trip with the discard
-lengths prior to 2012.
+lengths prior to 2012. Additional discarded length measurements were
+available from both CDFW unpublished data (1984, 1988-1989) and the Ally
+et al. (\protect\hyperlink{ref-Ally1991}{1991}) onboard observer program
+from 1985-1987. The sample sizes of measured discarded fish in the 1980s
+is small. The mean length of discarded fish is smaller than for years
+when the length restriction was in place (Table
+\ref{tab:Fleet6_lengthsample}).
 
 The discard length composition reflects the California scorpionfish
 seasonal closures from 2002-2005. Anglers encountered and discarded fish
@@ -1664,19 +1725,22 @@ for the lengh compoistion of discarded California scorpionfish in the
 
 \emph{Onboard Obsever Retained Catch Index}
 
-Covariates considered in the full model included \emph{year},
-\emph{area} (5 levels), \emph{month} (12 levels), and \emph{20 m depth
-bins} (5 levels). All covariates were specified as categorical
-variables. The final model includes A lognormal model was selected by
-AIC over a gamma model for the positives (delta-AIC of 534.9).Model
-selection for both the lognormal and binomial models retained all
-covariates (Table \ref{tab:Fleet12_RecPC_onboard_aic}). The Q-Q plot for
-the positive catch lognormal model looks reasonable (Figure
+The index fo relative abundance using the retained-only catch from the
+onboard observer program is a separate survey fleet in the base model
+and has no lenghts associated with it. Covariates considered in the full
+model included \emph{year}, \emph{area} (5 levels), \emph{month} (12
+levels), and \emph{20 m depth bins} (5 levels). All covariates were
+specified as categorical variables. The final model includes A lognormal
+model was selected by AIC over a gamma model for the positives
+(delta-AIC of 534.9).Model selection for both the lognormal and binomial
+models retained all covariates (Table
+\ref{tab:Fleet12_RecPC_onboard_aic}). The Q-Q plot for the positive
+catch lognormal model looks reasonable (Figure
 \ref{fig:Fleet12_RecPCOBR_QQ}). The final index shows a lower CPUE of
 the retained catch from 2002 and 2003 (Table
 \ref{tab:Fleet12_RecPC_onboard_index} and Figure
 \ref{fig:Fleet12_index5_logcpuefit_RecPCOBR}). The relative CPUE of the
-retained catch shwos a decline from 2007-2015, and an increase in 2016.
+retained catch shows a decline from 2007-2015, and an increase in 2016.
 
 \subsubsection{Fishery-Independent Data
 Sources}\label{fishery-independent-data-sources}
@@ -1772,7 +1836,10 @@ mean ages and mean lengths for both sexes decreased in recent years.
 Table \ref{tab:Fleet8_NWFSCTrawl_agepercents} show five percentiles of
 fish aged by sex, indicating more older males in the population. All
 aged data from the survey were used as conditional age-at-length matrix
-in the assessment model.
+in the assessment model. The mean age-at-length indicates males and
+females to have similar growth patterns until around age three, at which
+time, females are larger than males (Table
+\ref{tab:Fleet8_NWFSCTrawl_meanAatL}).
 
 Total biomass estimates from the survey were analyzed using the VAST
 program (Thorson and Barnett \protect\hyperlink{ref-Thorson2017}{2017}).
@@ -2675,6 +2742,56 @@ Year & Index & Log-scale SE \\
    2016 & 0.6530 & 0.1275 \\ 
    \hline
 \end{tabular}
+\end{table}\begin{table}[ht]
+\centering
+\caption{The annual number of California scorpionfish 
+                                              sampled from the the recreational private 
+                                              mode fleet for lengths. Data from 1980-2003
+                                            were downloaded from RecFIN and from CDFW for
+                                            2004-2016. The number of trips is the number
+                                            of unique ID Codes from 1980-2003 and the 
+                                            number of trips from 2004-2016.} 
+\label{tab:Fleet4_lengthsample}
+\begin{tabular}{rrrr}
+  \hline
+Year & N.measured & N.trips & Mean.length \\ 
+  \hline
+1980 & 132 &  68 & 26.57 \\ 
+  1981 & 191 &  76 & 25.84 \\ 
+  1982 & 199 &  90 & 27.43 \\ 
+  1983 &  63 &  37 & 28.21 \\ 
+  1984 &  81 &  44 & 28.21 \\ 
+  1985 &  76 &  40 & 27.78 \\ 
+  1986 &  34 &  22 & 27.03 \\ 
+  1987 &  42 &  28 & 27.45 \\ 
+  1988 & 177 &  65 & 25.63 \\ 
+  1989 & 136 &  55 & 25.35 \\ 
+  1993 & 112 &  62 & 28.05 \\ 
+  1994 & 136 &  67 & 26.96 \\ 
+  1995 & 102 &  55 & 25.79 \\ 
+  1996 & 101 &  70 & 26.44 \\ 
+  1997 &  90 &  55 & 26.93 \\ 
+  1998 & 116 &  62 & 26.80 \\ 
+  1999 & 312 & 138 & 27.32 \\ 
+  2000 & 142 &  70 & 27.77 \\ 
+  2001 &  96 &  52 & 27.70 \\ 
+  2002 & 178 &  94 & 28.98 \\ 
+  2003 & 148 &  82 & 27.82 \\ 
+  2004 & 286 & 165 & 30.58 \\ 
+  2005 & 297 & 171 & 31.13 \\ 
+  2006 & 663 & 314 & 30.85 \\ 
+  2007 & 412 & 253 & 31.47 \\ 
+  2008 & 356 & 237 & 30.91 \\ 
+  2009 & 471 & 280 & 30.84 \\ 
+  2010 & 241 & 150 & 30.39 \\ 
+  2011 & 244 & 131 & 30.55 \\ 
+  2012 & 158 &  95 & 30.65 \\ 
+  2013 & 226 & 144 & 30.72 \\ 
+  2014 & 153 &  92 & 30.52 \\ 
+  2015 & 106 &  68 & 31.27 \\ 
+  2016 &  89 &  53 & 30.51 \\ 
+   \hline
+\end{tabular}
 \end{table}
 
 \FloatBarrier
@@ -2810,10 +2927,64 @@ All southern CA data & No filter & 6295 \\
   \hline
 Model & Binomial & Lognormal \\ 
   \hline
-Year &  & 2479.6 \\ 
+Year & 3516.2 & 2479.6 \\ 
   Year + Month & 3123.2 & 2488.7 \\ 
   Year + County & 3293.3 & \textbf{2436.3} \\ 
   Year + Month + County & \textbf{3091.8} & 2444.6 \\ 
+   \hline
+\end{tabular}
+\end{table}\begin{table}[ht]
+\centering
+\caption{The annual number of retained California scorpionfish 
+                                              sampled from the the recreational party/charter 
+                                              mode fleet for lengths. Length measurements
+                                            from 1980-1983 and 1993-2016 were downloaded from RecFIN.  
+                                            Length measurements from 1984-1989 were from an onboard
+                                            observer program that measured both retained and discarded
+                                            fish.} 
+\label{tab:Fleet5_lengthsample}
+\begin{tabular}{rrrrl}
+  \hline
+Year & Fish & Trips & Mean length (cm) & Source \\ 
+  \hline
+1975 & 935 & 150 & 26.84 & Collins and Crooke (unpublished) \\ 
+  1976 & 941 & 174 & 27.61 & Collins and Crooke (unpublished) \\ 
+  1977 & 1373 & 194 & 26.04 & Collins and Crooke (unpublished) \\ 
+  1978 & 1729 & 242 & 26.12 & Collins and Crooke (unpublished) \\ 
+  1980 & 212 &  45 & 26.79 & MRFSS \\ 
+  1981 & 187 &  59 & 28.36 & MRFSS \\ 
+  1982 & 277 &  91 & 27.10 & MRFSS \\ 
+  1983 & 318 & 113 & 28.30 & MRFSS \\ 
+  1984 & 472 &  99 & 29.18 & CDFW (unpublished) \\ 
+  1985 & 1089 & 285 & 28.45 & Ally et al. (1991) \\ 
+  1986 & 955 & 266 & 28.02 & Ally et al. (1991) \\ 
+  1987 & 1500 & 241 & 26.89 & Ally et al. (1991) \\ 
+  1988 & 3358 & 289 & 26.81 & CDFW (unpublished) \\ 
+  1989 & 4518 & 326 & 26.30 & CDFW (unpublished) \\ 
+  1993 & 233 &  62 & 28.63 & MRFSS \\ 
+  1994 & 201 &  74 & 27.82 & MRFSS \\ 
+  1995 & 196 &  50 & 27.72 & MRFSS \\ 
+  1996 & 698 &  82 & 25.54 & MRFSS \\ 
+  1997 & 373 &  49 & 25.09 & MRFSS \\ 
+  1998 & 656 &  89 & 28.38 & MRFSS \\ 
+  1999 & 2057 & 136 & 27.10 & MRFSS \\ 
+  2000 & 875 &  87 & 28.73 & MRFSS \\ 
+  2001 & 479 &  79 & 29.82 & MRFSS \\ 
+  2002 & 816 & 102 & 29.12 & MRFSS \\ 
+  2003 & 1026 &  99 & 28.79 & MRFSS \\ 
+  2004 & 1497 & 174 & 28.45 & CRFS \\ 
+  2005 & 1493 & 163 & 28.31 & CRFS \\ 
+  2006 & 3054 & 193 & 28.58 & CRFS \\ 
+  2007 & 4143 & 255 & 28.22 & CRFS \\ 
+  2008 & 4971 & 328 & 28.08 & CRFS \\ 
+  2009 & 4118 & 303 & 28.36 & CRFS \\ 
+  2010 & 4773 & 291 & 28.10 & CRFS \\ 
+  2011 & 2763 & 265 & 28.63 & CRFS \\ 
+  2012 & 3440 &  75 & 28.47 & CRFS \\ 
+  2013 & 3299 & 119 & 28.42 & CRFS \\ 
+  2014 & 2564 &  82 & 28.12 & CRFS \\ 
+  2015 & 1734 & 168 & 28.33 & CRFS \\ 
+  2016 & 1922 & 151 & 28.50 & CRFS \\ 
    \hline
 \end{tabular}
 \end{table}
@@ -2887,6 +3058,42 @@ Year & Index & Log-scale SE \\
    2014 & 0.0387 & 0.0386 \\ 
    2015 & 0.0349 & 0.0349 \\ 
    2016 & 0.0535 & 0.0535 \\ 
+   \hline
+\end{tabular}
+\end{table}\begin{table}[ht]
+\centering
+\caption{The annual number of discarded California scorpionfish 
+                                              sampled from the the recreational party/charter 
+                                              mode fleet for lengths. Length measurements
+                                            from 2003-2016 were provided by CDFW.  
+                                            Length measurements from 1984-1989 were from an onboard
+                                            observer program that measured both retained and discarded
+                                            fish.} 
+\label{tab:Fleet6_lengthsample}
+\begin{tabular}{rrrrl}
+  \hline
+Year & N.measured & N.trips & Mean.length & Source \\ 
+  \hline
+1984 &   6 &   5 & 20.50 & CDFW unpublished \\ 
+  1985 &  55 &  34 & 18.87 & Ally et al. (1991) \\ 
+  1986 &  88 &  30 & 18.26 & Ally et al. (1991) \\ 
+  1987 &  72 &  34 & 19.07 & Ally et al. (1991) \\ 
+  1988 &  70 &  32 & 20.03 & CDFW unpublished \\ 
+  1989 &  11 &  11 & 22.55 & CDFW unpublished \\ 
+  2003 & 121 &  41 & 23.90 & Onboard Observer \\ 
+  2004 &  40 &  13 & 25.53 & Onboard Observer \\ 
+  2005 & 161 &  31 & 25.12 & Onboard Observer \\ 
+  2006 & 222 &  58 & 24.25 & Onboard Observer \\ 
+  2007 & 207 &  32 & 22.95 & Onboard Observer \\ 
+  2008 & 455 &  58 & 22.95 & Onboard Observer \\ 
+  2009 & 396 &  75 & 22.48 & Onboard Observer \\ 
+  2010 & 873 & 111 & 22.83 & Onboard Observer \\ 
+  2011 & 103 &  32 & 18.82 & Onboard Observer \\ 
+  2012 &  62 &  18 & 19.19 & Onboard Observer \\ 
+  2013 & 124 &  31 & 22.44 & Onboard Observer \\ 
+  2014 &  73 &  22 & 23.42 & Onboard Observer \\ 
+  2015 &  19 &  10 & 24.63 & Onboard Observer \\ 
+  2016 &  37 &   8 & 23.70 & Onboard Observer \\ 
    \hline
 \end{tabular}
 \end{table}\begin{table}[ht]
@@ -3152,6 +3359,42 @@ Percentile & Female age at percentile & Male age at percentile \\
   99.00 & 20.20 & 21.70 \\ 
    &  &  \\ 
    &  &  \\ 
+   \hline
+\end{tabular}
+\end{table}\begin{table}[ht]
+\centering
+\caption{Mean age at length (cm) and number of 
+                                                    fish aged by sex for 
+                                                    California scorpionfish from the NWFSC
+                                                      trawl survey.} 
+\label{tab:Fleet8_NWFSCTrawl_meanAatL}
+\begin{tabular}{rrrrr}
+  &  \multicolumn{2}{c}{Female} 
+                                   &  \multicolumn{2}{c}{Male} \\
+ \hline
+Age & Mean  length & Fish & Mean length & Fish \\ 
+  \hline
+  1 & 17.21 &  29 & 16.80 &  46 \\ 
+    2 & 20.47 &  72 & 20.25 &  87 \\ 
+    3 & 24.40 &  45 & 22.06 &  54 \\ 
+    4 & 25.42 &  33 & 22.75 &  44 \\ 
+    5 & 26.32 &  38 & 23.72 &  32 \\ 
+    6 & 27.33 &  18 & 23.00 &  23 \\ 
+    7 & 27.17 &  12 & 24.92 &  26 \\ 
+    8 & 28.53 &  17 & 24.93 &  27 \\ 
+    9 & 29.46 &  13 & 25.48 &  31 \\ 
+   10 & 29.10 &  10 & 25.74 &  23 \\ 
+   11 & 29.21 &  14 & 26.32 &  25 \\ 
+   12 & 32.00 &   4 & 26.29 &  24 \\ 
+   13 & 30.44 &   9 & 26.06 &  17 \\ 
+   14 & 31.25 &   4 & 26.88 &  16 \\ 
+   15 & 29.33 &   3 & 28.07 &  14 \\ 
+   16 &  &  & 28.09 &  11 \\ 
+   17 & 32.75 &   4 & 29.13 &   8 \\ 
+   18 & 36.00 &   3 & 28.25 &   4 \\ 
+   19 & 32.33 &   6 & 28.86 &   7 \\ 
+   20 &  &  & 22.00 &   1 \\ 
+   21 & 37.50 &   2 & 25.00 &   1 \\ 
    \hline
 \end{tabular}
 \end{table}\begin{table}[ht]
@@ -4006,6 +4249,13 @@ standard deviation for both readers.
 \renewcommand{\thepage}{}
 
 \hypertarget{refs}{}
+\hypertarget{ref-Ally1991}{}
+Ally, J., Ono, D., Read, R.B., and Wallace, M. 1991. Status of major
+southern California marine sport fish species with management
+recommendations, based on analyses of catch and size composition data
+colleced on board commercial passenger fishing vessels from 1985 through
+1987. Marine Resouces Division Administrative Report No. 90-2.
+
 \hypertarget{ref-Alverson1964}{}
 Alverson, D.L., Pruter, a T., and Ronholt, L.L. 1964. A Study of
 Demersal Fishes and Fisheries of the Northeastern Pacific Ocean.

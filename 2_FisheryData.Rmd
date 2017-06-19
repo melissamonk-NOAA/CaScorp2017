@@ -255,11 +255,15 @@ at which point the index is relatively flat (Figure \ref{fig:index5_logcpuefit_R
 
 Biological samples from trips retaining California scorpionfish were collected during
 the dockside surveys.  Lengths of California scorpionfish from 1980-2016 for the private
-mode were provided by RecFIN (Ed Hibsch) on November 29, 2016. Length measurements from
-the private mode were provided directly from CDFW for the years 2004-2016 and represent
-the same samples.  TOAD
-
-
+mode were provided by RecFIN by Edward Hibsch (PSMFC) on November 29, 2016. Length measurements 
+from the private mode were provided directly from CDFW for the years 2004-2016 Table
+\ref{tab:Fleet4_lengthsample}.  The number of trips is the number of unique ID_CODEs 
+from RecFIN for 1980-2003.  Starting in 2004 with the CRFS program,
+the number of unique trips sampled in the private boat mode was recorded.  The recreational
+private fleet tends to select larger fish than the recreational party/charter fleet, which
+is one reason the private and party/charter fleets were maintained as two separate fleets in
+the base model.  No length data for discarded fish from the recreational private mode 
+fleet are available.
 
 
 
@@ -312,6 +316,8 @@ dockside index (not used in the stock assessment model) from 1992-1997 (for a
 Stephens-MacCall threshold of 0.1) (Figure \ref{fig:Fleet5_RecPC_dockside_index_compare}).
 
 
+
+
 **MRFSS Party/Charter Boat Dockside Index**
 
 From 1980 to 2003 the MRFSS program sampled landings at dockside (called an “intercept”) 
@@ -346,7 +352,7 @@ model. Coefficients from the Stephens-MacCall analysis (a binomial GLM) are posi
 for species which co-occur with California scorpionfish, and negative for species that 
 are not caught with California scorpionfish.
  
-Data for dockside sampling of 6295 commercial passenger fishing vessel (CPFV) trips 
+Data for dockside sampling of 6,295 commercial passenger fishing vessel (CPFV) trips 
 south of Point Conception by the Marine Recreational Fishery Statistical Survey (MRFSS) 
 were filtered using the Stephens-McCall method to identify trips with catch associated 
 with California scorpionfish and the resulting trips analyzed in a delta-GLM including 
@@ -405,18 +411,26 @@ Catch per angler hour (CPUE; number of fish per angler hour) was modelled using 
 [@Lo1992; @Stefansson1996]. Model selection using Akaike Information Criterion 
 (AIC) and Bayesian Information Criteria (BIC) supported inclusion of year and
 region effects in both the binomial and lognormal components of the index for both 
-the model with false positives from the 0.27 threshold and the 0.10 threshold.  The
-addition of month effects (to allow for seasonal changes in CPUE) did not improve 
-model fit.  The lognormal model was employed as a result of the lower AIC values 
-compared to the binomial model.  The resulting index values for 1989 were anomalously 
-high compared to other years.  In addition, the less stringent filter of 0.10 resulted 
-in a higher relative index than the 0.27 threshold.  Further examination of the number 
-of California scorpionfish per trip by year showed a lower number of trips for this year 
-than others and a lower proportion of low catch trips explaining why exclusion of low 
-catch trips through application of the 0.27 threshold reduced the relative magnitude of the 
-1989 index value relative to other years.  As a result of this anomalous result and the
-low sample size, trips from 1989 were excluded from analysis. 
+the model with false positives from the 0.27 threshold and the 0.10 threshold.  The addition 
+of month effects (to allow for seasonal changes in CPUE) did not improve model fit in the 
+lognormal model, but the full model including month, year and county was supported for the 
+binomial model (Table 2).  The difference in AIC values for the full model compared to the 
+model with only year and county was greater for the binomial model (201.5) favoring the 
+full modal compared to the small difference for the lognormal model favoring the model 
+with only year and county (8.3). As a result, the full model including year, county and 
+month effects was selected for further analysis.  
  
+The resulting index values for 1989 were anomalously high compared to other years.  
+In addition, the less stringent filter of 0.1 resulted in a higher index value than 
+0.27, which was antithetical to the expectation that including trips with fewer 
+positive trips would decrease the CPUE.  Further examination of the number of 
+California scorpionfish per trip by year showed a lower number of trips for this
+year than others and a lower proportion of low catch trips explaining why exclusion 
+of low catch trips through application of the 0.27 index reduced the relative 
+magnitude of the 1989 index value relative to other years.  As a result of this
+anomalous result and the low sample size, trips from 1989 were excluded from analysis.  
+
+
 The percentage of trips that caught California scorpionfish was 20.8% (828/3,968) prior
 to filtering with the Stephens-MacCall method, and 71.0% (828/,1167) with the filter set 
 to 0.27 and 26.7% (828/3,099) with the filter set to 0.10, filtered data set. 
@@ -425,13 +439,14 @@ the data generally met the assumptions of the GLM (Figure \ref{fig:Fleet5_RecPC_
 The resulting index is highly variable for both thresholds,
 with consistent peaks in 1984 and 1998 (Figure \ref{fig:Fleet5_RecPC_dockside_index_compare}). 
 Application of the 0.27 threshold holds the potential of biasing the resulting index values 
-high by excluding false positive trips while including positive trips with equivalent 
-probability of encountering California scorpionfish.  The 0.1 threshold removes a high
-proportion of trips with shelf rockfish species indicative of effort exerted in deeper 
-depths than are commonly occupied by California scorpionfish, while retaining false 
-positive trips with equivalent probabilities of capture to true positives.  The AIC 
-and values informing selection of the lognormal model including year and county 
-effects is provided in Table \ref{tab:Fleet5_RecPC_dockside_aic}.
+high by excluding false positive trips while including positive trips with equivalent probability 
+of encountering California scorpionfish.  The 0.1 threshold removes a high proportion of trips 
+with shelf rockfish species indicative of effort exerted in deeper depths than are commonly 
+occupied by California scorpionfish, while retaining false positive trips with equivalent 
+probabilities of capture to true positives and thus was retained for further analysis.  
+The resulting jackknifed mean index values, standard error, coefficient of variation 
+and confidence intervals for the 0.1 threshold model, excluding 1989, with year, 
+month and county effects are provided in Table \ref{tab:Fleet5_RecPC_dockside_aic}.
  
 The results of the models with each of the thresholds provided similar trends 
 seen in Figure Figure \ref{fig:Fleet5_RecPC_dockside_index_compare} along 
@@ -443,6 +458,40 @@ represents the same sector of the fishery and presumably contains data from the
 some of the same trips, utilizes data for many thousands more trips, and 
 provides data from 1989 to 1992 omitted from the MRFSS data as a result of 
 filtering out 1989 and a lapse of sampling from 1990-1992.
+
+_Party/Charter Dockside Length Measurements_
+
+The retained catch for the recreational party/charter mode has been measured
+ during the dockside interviews since 1980, and also by two different onboard 
+ observer programs in southern California by Collins and Crooke [-@Collins1975] 
+ a combination of unpublished data and a study by Ally et al. [-@Ally1991] from
+ 1984-1989 (Table \ref{tab:Fleet5_lengthsample}). The length measurements from
+  Collins and Crooke [-@Collins1975] are assumed to all be from retained fish. 
+ 
+ 
+ Length measurements for California scorpionfish from 1980-2016 were provided
+ from RecFIN by Edward Hibsch (PSMFC) on November 29, 2016. The number of trips 
+ from 1980-2003 is the number of trips with observer catch of 
+California scorpionfish as outlined in the Supplemental Material ("Identifying Trips
+in RecFIN").  However, the algorithm used to determine the number of trips has
+not been applied to RecFIN data past 2003.  The number of trips for 2004 and 2005,
+was taken as the ratio of the number of interviews (ID_CODE) in RecFIN to the number 
+of known trips for years with complete data.  The number of individual ID_CODEs 
+was reducd reduced by 38% for 2004 and 2005, and gives reasonable sample sizes. 
+From 2004-2016 the number of trips from which the samples were taken is known.  
+
+From 1985-1987 Ally et al. [-@Ally1991] conducted an onboard observer program
+in southern California, and measured both retained and discarded fish.  Additional
+unpublished years (1984, 1988-1999) from this onboard observer sampling program 
+were provided by CDFW (Paulo Serpa).  From 1984-1989, the onboard observer program
+measured 11,892 retained California scorpionfish compared to the 1,981 measurements 
+in RecFIN.  It is almost certain, but cannot be verified, that some of the lengths 
+from the onboard observer program were input in RecFIN.  Therefore, the onboard 
+observer measurements from 1984-1989 are used instead of those from RecFIN for these
+years.
+
+
+
 
 
 **Onboard Observer Party/Charter Boat**
@@ -524,11 +573,16 @@ restricted by depth or closed (Table \ref{tab:Fleet6_RecDD_onboard_index} and Fi
 \ref{fig:Fleet6_index5_logcpuefit_RecDD}).  The relative CPUE of the discards decreases from 
 2006 to 2015.
 
-_Onboard Obsever Discarded Catch Length Composition_
+_Discarded Catch Length Composition_
 
-The Onboard Obsever program only measures discarded fish, as of 2003.  The retained catch is measured
-during the dockside (angler intercept) surveys, and cannot necessarily be matched to a trip
-with the discard lengths prior to 2012.
+As of 2003, Onboard Obsever program has taken length measurements for discarded fish.  
+The retained catch is measured during the dockside (angler intercept) surveys, 
+and cannot necessarily be matched to a trip with the discard lengths prior to 2012.
+Additional discarded length measurements were available from both CDFW unpublished 
+data (1984, 1988-1989) and the Ally et al. [-@Ally1991] onboard observer program from 
+1985-1987.  The sample sizes of measured discarded fish in the 1980s is small.  The mean 
+length of discarded fish is smaller than for years when the length restriction was in 
+place (Table \ref{tab:Fleet6_lengthsample}).
 
 The discard length composition reflects the California scorpionfish seasonal closures 
 from 2002-2005. Anglers encountered and discarded fish greater than the size limit of
@@ -540,14 +594,16 @@ holds true for the lengh compoistion of discarded California scorpionfish in the
 
 _Onboard Obsever Retained Catch Index_
 
-Covariates considered in the full model included *year*, *area* (5 levels), *month* (12 levels), 
+The index fo relative abundance using the retained-only catch from the onboard observer program
+is a separate survey fleet in the base model and has no lenghts associated with it. Covariates 
+considered in the full model included *year*, *area* (5 levels), *month* (12 levels), 
 and *20 m depth bins* (5 levels). All covariates were specified as categorical variables.
 The final model includes A lognormal model was selected by AIC over a gamma model for the positives
 (delta-AIC of 534.9).Model selection for both the lognormal and binomial models retained all covariates (Table 
 \ref{tab:Fleet12_RecPC_onboard_aic}).  The Q-Q plot for the positive catch lognormal model looks
 reasonable (Figure \ref{fig:Fleet12_RecPCOBR_QQ}).  The final index shows a lower CPUE of the retained catch
 from 2002 and 2003 (Table \ref{tab:Fleet12_RecPC_onboard_index} and Figure
-\ref{fig:Fleet12_index5_logcpuefit_RecPCOBR}).  The relative CPUE of the retained catch shwos a decline
+\ref{fig:Fleet12_index5_logcpuefit_RecPCOBR}).  The relative CPUE of the retained catch shows a decline
 from 2007-2015, and an increase in 2016.
 
 
@@ -636,7 +692,9 @@ indicating that there are more males than females in the populations.  The table
 also shows that mean ages and mean lengths for both sexes decreased in recent years. 
 Table \ref{tab:Fleet8_NWFSCTrawl_agepercents} show five percentiles of fish aged by sex, 
 indicating more older males in the population.  All aged data from the survey were 
-used as conditional age-at-length matrix in the assessment model.
+used as conditional age-at-length matrix in the assessment model.  The mean age-at-length
+indicates males and females to have similar growth patterns until around age three, at which
+time, females are larger than males (Table \ref{tab:Fleet8_NWFSCTrawl_meanAatL}).
 
 Total biomass estimates from the survey were analyzed using the VAST program 
 [@Thorson2017].  The Q-Q goodness of fit plot and time series of 

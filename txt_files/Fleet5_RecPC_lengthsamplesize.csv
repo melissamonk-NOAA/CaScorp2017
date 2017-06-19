@@ -1,14 +1,18 @@
 Year,N measured,N trips,Mean length,Source
+1975,935,150,26.84,Collins and Crooke (unpublished)
+1976,941,174,27.61,Collins and Crooke (unpublished)
+1977,1373,194,26.04,Collins and Crooke (unpublished)
+1978,1729,242,26.12,Collins and Crooke (unpublished)
 1980,212,45,26.79,MRFSS
 1981,187,59,28.36,MRFSS
 1982,277,91,27.1,MRFSS
 1983,318,113,28.3,MRFSS
-1984,472,99,29.18,CDFW unpublished
+1984,472,99,29.18,CDFW (unpublished)
 1985,1089,285,28.45,Ally et al. (1991)
 1986,955,266,28.02,Ally et al. (1991)
 1987,1500,241,26.89,Ally et al. (1991)
-1988,3358,289,26.81,CDFW unpublished
-1989,4518,326,26.3,CDFW unpublished
+1988,3358,289,26.81,CDFW (unpublished)
+1989,4518,326,26.3,CDFW (unpublished)
 1993,233,62,28.63,MRFSS
 1994,201,74,27.82,MRFSS
 1995,196,50,27.72,MRFSS

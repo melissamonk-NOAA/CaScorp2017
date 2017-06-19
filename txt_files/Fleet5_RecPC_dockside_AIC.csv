@@ -1,5 +1,5 @@
 Model,Binomial,Lognormal
-Year,,2479.6
+Year,3516.2,2479.6
 Year + Month,3123.2,2488.7
 Year + County,3293.3,\textbf{2436.3}
 Year + Month + County,\textbf{3091.8},2444.6
