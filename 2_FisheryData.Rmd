@@ -463,10 +463,10 @@ _Party/Charter Dockside Length Measurements_
 
 The retained catch for the recreational party/charter mode has been measured
  during the dockside interviews since 1980, and also by two different onboard 
- observer programs in southern California by Collins and Crooke [-@Collins1975] 
+ observer programs in southern California by Collins and Crooke [-@Collins1978] 
  a combination of unpublished data and a study by Ally et al. [-@Ally1991] from
  1984-1989 (Table \ref{tab:Fleet5_lengthsample}). The length measurements from
-  Collins and Crooke [-@Collins1975] are assumed to all be from retained fish. 
+  Collins and Crooke [-@Collins1978] are assumed to all be from retained fish. 
  
  
  Length measurements for California scorpionfish from 1980-2016 were provided
@@ -594,17 +594,18 @@ holds true for the lengh compoistion of discarded California scorpionfish in the
 
 _Onboard Obsever Retained Catch Index_
 
-The index fo relative abundance using the retained-only catch from the onboard observer program
-is a separate survey fleet in the base model and has no lenghts associated with it. Covariates 
-considered in the full model included *year*, *area* (5 levels), *month* (12 levels), 
-and *20 m depth bins* (5 levels). All covariates were specified as categorical variables.
-The final model includes A lognormal model was selected by AIC over a gamma model for the positives
-(delta-AIC of 534.9).Model selection for both the lognormal and binomial models retained all covariates (Table 
-\ref{tab:Fleet12_RecPC_onboard_aic}).  The Q-Q plot for the positive catch lognormal model looks
-reasonable (Figure \ref{fig:Fleet12_RecPCOBR_QQ}).  The final index shows a lower CPUE of the retained catch
-from 2002 and 2003 (Table \ref{tab:Fleet12_RecPC_onboard_index} and Figure
-\ref{fig:Fleet12_index5_logcpuefit_RecPCOBR}).  The relative CPUE of the retained catch shows a decline
-from 2007-2015, and an increase in 2016.
+The index fo relative abundance using the retained-only catch from the onboard observer 
+program is a separate survey fleet in the base model and has no lenghts associated with 
+it. Covariates considered in the full model included *year*, *area* (5 levels), *month* 
+(12 levels), and *20 m depth bins* (5 levels). All covariates were specified as 
+categorical variables. The final model includes A lognormal model was selected by AIC 
+over a gamma model for the positives (delta-AIC of 534.9).Model selection for both the
+lognormal and binomial models retained all covariates (Table \ref{tab:Fleet12_RecPC_onboard_aic}). 
+The Q-Q plot for the positive catch lognormal model looks reasonable 
+(Figure \ref{fig:Fleet12_RecPCOBR_QQ}).  The final index shows a lower CPUE 
+of the retained catch from 2002 and 2003 (Table \ref{tab:Fleet12_RecPC_onboard_index} 
+and Figure \ref{fig:Fleet12_index5_logcpuefit_RecPCOBR}).  The relative CPUE 
+of the retained catch shows a decline from 2007-2015, and an increase in 2016.
 
 
 <!-- ************FISHERY-INDPENDENT DATA*********************************** -->
@@ -613,54 +614,98 @@ from 2007-2015, and an increase in 2016.
 
 **Sanitation Districts Trawl Survey**
 
-Sanitation districts in southern California are required to conduct trawls 
+Sanitation districts that discharge into coastal waters are required to conduct trawls 
 to monitor the demersal fish community in the vacinity of the discharge sites 
-part of their National Pollutant Discharge Elimination System (NPEDES) permits. 
-All sanitation districts in southern California were contacted for trawl data series. 
-The two northernmost districts, Goleta and the City of Oxnard, provided data, but 
-neither have observed California scorpionfish in their trawl surveys.  The four other 
+part of their National Pollutant Discharge Elimination System (NPEDES) permits, issued
+by the Environmental Protection Agency. All sanitation districts holding NPEDES permits
+in southern California were contacted for trawl data. 
+The two northernmost districts, Goleta and the City of Oxnard, provided data (via Aquatic 
+Bioassay & Consulting Laboratories, Inc.), but California scorpionfish have not been 
+encountered in either district's trawl surveys.  The four other 
 sanitation districts, Orange County, City of Los Angeles, Los Angeles County,
-and the City of San Diego all encounter California scorpionfish.  Trawl data from 
-these four sanitation districts were provided.
+and the City of San Diego all encounter California scorpionfish and provided trawl
+data.
 
-Each sanitation district measures every fish encountered, 
+A description of the data provided by each sanitation district is provided. In 
+contrast to the inverse variance weighted index from teh 2005 assessment, trawls from all
+sanitation districts were combined to develop a single index of abundance. 
 
 _Orange County_
-Orange County Sanitation District provided trawl data from 1970-2015 () and the 
-majority of sampling occurred in Quarter 1 and 3 (Jan-March and July-September).
-From 1970-1985 Quarter 2, sampling was based on a 10 minute tow time.  As of 1985 
-Quarter 3 sampling was based upon a towed distance of 450m. Tow time was missing 
+The Orange County Sanitation District provided trawl data from 1970-2015 (Jeff Armstrong,
+ Orange County Sanitation Disrict).  The trawl net is a 7.6 m wide Marinovich, semi-balloon 
+ otter trawl (2.54 cm mesh) with a 0.64 cm mesh cod-end liner.
+Fixed stations are sampled either annually (summer) or semi-annually in the winter 
+and summer, Quarters 1 and 3 (Jan-March and July-September).  From 1970-1985 Quarter 
+2, trawl effor was based on a 10 minute tow time.  As of 1985 
+Quarter 3, trawls were towed a distance of 450 m. Tow time was no available
 for approximately half of the tows from 1985 Quarter 3 to 2016, and was imputed
-based on the mean tow time of the sampling station. Two stations were removed that
-were frequently sampled, but observed very few scorpionfish (.  Eleven stations 
-(T0-T6,T10-T13) with long time series and 1,490 tows were retained the analyses.
+based on the mean tow time of the sampling station. 
+
+Eleven stations (T0-T6,T10-T13) sampled in at least 11 year and with California scorpionfish
+ present in at least 5% of trawls were retained for the analysis (1,490 trawls). 
+ For hauls with fewer than 30 California scorpionfish, each fish was measured to the nearest 
+mm (standard length).  In hauls with more than 30 California scorpionfish, they were tallied 
+by size class (nearest cm).  Six hauls, all from station T3, caught more than 30 California 
+scorpionfish.
  
  
+_City of Los Angeles_
+The City of Los Angeles Sanitation District provided trawl data from 1986-2016 (Craig Campbell,
+Lost Angeles City).  The City of Los Angeles follows the same sampling protocols as the 
+Southern California Bight Regional Monitoring Program trawl survey.  Stations within Los 
+Angeles Harbor were excluded from the dataset. Years with fewer than ten total hauls
+were removed from the analysis (1986, 1987, and 1992), as were station sampled in fewer than 
+ 10 years. Ten stations (A1, A3, C1, C3, C6, C9A, D1T, Z2, Z3, Z4), total 921 hauls, were retained
+ for the index of abundance.
+Tow times were recorded starting in 1999, and assumed to be 10 minutes prior to 1999. Haul depth
+was missing for approximately half of the hauls, and was imputed as the mean depth
+of of other hauls at that station. All California scorpionfish encountered were measured to 
+the nearest cm (standard length).
  
-_City of Los Angeles (Hyperion)_
-The City of Los Angeles Sanitation District provided trawl data from 1986-2016.  
-Years with fewer than ten samples were removed from the analysis (1986, 1987, and 1992).
-Tow times were recorded starting in 1999, and assumed to be 10 minutes prior to 1999.
-Stations sampled at least ten years were retained, which resulted in ten stations 
-(A1, A3, C1, C3, C6, C9A, D1T, Z2, Z3, Z4; 921 hauls) for the analysis.  Haul depth
-was missing for approximately half of the stations, and was imputed as the mean depth
-of of other tows at that station. 
- 
-_Los Angeles County (Palos Verdes)_
-The Sanitation Districts of Los Angeles County provided trawl data from 1972-2016 with
-quarterly sampling.  Stations sampled in fewer than 10 years or at 305m where California
+_Los Angeles County_
+The Sanitation Districts of Los Angeles County provided quarterly trawl data from 1972-2016 
+(Shelly Walther, Sanitation Districts of Los Angeles County) and follow the same sampling 
+protocols as the 
+Southern California Bight Regional Monitoring Program trawl survey 
+Stations sampled in fewer than 10 years or at 305 m where California
 scorpionfish were never observed were removed from the analysis.  Non-standard and 
-special study trawls were also removed, e.g., night trawl study in 1987.  Hauls were
-based on a 10 minute tow time. Twelve stations (stations at 23m, 61m, and 137m for T0,T1,T4,T5)
-containing 1,848 tows were retained after initial filtering.
+special study trawls were also removed, e.g., night trawl study in 1987. 
+Hauls were based on a 10 minute tow time and that is assumed as the effort for all hauls. 
+Twelve stations (stations at 23m, 61m, and 137m for T0,T1,T4,T5), totalling 
+1,848 hauls were retained after initial filtering.  All California scorpionfish encountered
+ were measured to the nearest cm (standard length).
  
 _City of San Diego_
-The City of San Diego Sanitation provided trawl data from 1985-2015.  Stations sampled 
-in at least 15 years were retained for analysis, resulting in 14 stations (SD1-SD14, SD17-21) 
-and a total of 1,180 tows.   A ten minute tow time is assumed for all trawls.  
+The City of San Diego Sanitation District conducts trawls for two permits 
+(Point Loma Ocean Outfall and South Bay Ocean Outfall) and provided data 
+from 1985-2015 (Ami Latker and Robin Gartman, City of San Diego Public Utilities Department).  
+Stations sampled in fewer than 15 years were filtered from the dataset. Fourteen stations from the Point 
+Loma Ocean Outfall (SD1-SD14) and five stations from the South Bay Ocean Outrall were retained (SD17-21), totalling 1,180 hauls. A tow time of 10 minutes is assumed for all trawls.  All California scorpionfish 
+encountered were measured to the nearest cm (standard length).
+
+_Sanitation Districts Index Standardization_
 
 
-fig:Fleet7_comp_lendat_bubflt10mkt2
+_Sanitation Districts Length Composition_
+
+
+Each district measures every fish encountered in the survey.  Orange County Sanitation 
+District was the only program sampling in 1970 and 1971 and encountered a small number 
+of California scorpionfish in those years (Figure \ref{fig:Fleet7_Sanitation_lengthbydistrict}).
+ Los Angeles County has has enountered pulses of large numbers of California scorpionfish in 2002,
+ 2004 and 2005.  Figure \ref{fig:Fleet7_Sanitation_lengthboxplots} shows the distribution of 
+ lengths for Califonria scorpionfish by 25 m depth bins and Sanitation District. The median length 
+ of fish from the City of Los Angeles trawls is smaller than the other two districts.  However, there are
+  only 120 in that depth bin, compared to 1,372 fish in teh 50-74 m depth bin for the City of Los Angeles.
+  
+
+composition data from all surveys was also combined 
+
+The length composition indicates a fairly consistent size range of fish encountered 
+in the trawl surveys, with a handful of smaller fish in 2016 
+(Figure \ref{fig:Fleet7_comp_lendat_bubflt10mkt2}).
+
+
 
 
 **NWFSC Trawl Survey Index**

@@ -82,13 +82,21 @@ obtained directly from CDFW.
 
 \vspace{.5cm}
 **Age Structures**
-Age data were provided from the NWFSC trawl survey from 2005-2016.
-All otoliths collected from the survey were aged
+Age data were provided from the NWFSC trawl survey from 2005-2016, and all of
+the otoliths collected from the survey were aged.  Figures \ref{fig:otolith1} and 
+\ref{fig:otolith2} provide examples of California scorpionfish
+ otoliths from  ... and ... The otoliths were read (including double-reads) 
+ by the Cooperative Ageing Project (CAP) in Newport, Oregon.  
+A total of 879 otoliths were read, and ranged from 0-29 years of age. 
+Fewer thana 1% (8 fish) were aged 22 years or older,
+ and only one age-0 fish was in the sample (Figure \ref{fig:Agelength}).
 
-Length-at-age was initially estimated external to the population dynamics models 
+Sex-specific length-at-age was initially estimated external to the population dynamics models 
 using the von Bertalanffy growth curve [@vonB1938], $L_i = L_{\infty}e^{(-k[t-t_0])}$, 
 where $L_i$ is the length (cm) at age $i$, $t$ is age in years, $k$ is rate of 
 increase in growth, $t_0$ is the intercept, and $L_{\infty}$ is the asymptotic length.  
+The external parameter estimates for females were $L{\infty}=31.613, k = 0.250, t_0 = -2.280$,
+and for males $L{\infty}=27.374, k = 0.233, t_0 = -2.092$ (Figure \ref{fig:vonB_compare}). 
 
 
 
@@ -117,12 +125,22 @@ The weight-length relationship is based on the standard power function:
 $W = \alpha(L^\beta)$ where $W$ is individual weight (kg), $L$ is length (cm), 
 and $\alpha$ and $\beta$ are coefficients used as constants.
 
+Sex-specific weight-length relationships were estimated from the NWFSC trawl 
+survey data.  Length and weight data were available for 340 females and 530 
+males.  The estimated parameters for females are $\alpha = 1.553983e^{-05}$ and
+$\beta = 3.057654$, and for males $\alpha = 1.9104e^{-05}$ and
+$\beta = 2.980548$.  Love et al. [-@Love1987] found males to be heavier at a given 
+length than females, whereas the NWFSC data suggestes the opposite (Figure \ref{fig:Length_weight}).
 
+The original data from Love et al. [-@Love1987] are no longer available (Milton Love, personal 
+communication, UC Santa Barbara) to re-examine the trends.  The weight-length relationships 
+estimated from the NWFSC survey are consistent with the sex-specific growth rates and are 
+used in the assessment model. 
 
 \vspace{.5cm}
 **Maturity And Fecundity**
 
-
+No new information on maturity and fecundity for  California scorpionfish are available. 
 
 \vspace{.5cm}
 **Natural Mortality**
