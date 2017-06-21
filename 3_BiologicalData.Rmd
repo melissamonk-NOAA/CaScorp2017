@@ -23,8 +23,8 @@ re available to the nearest centimeter. All length data for this assessment are 
 TL.  The Sanitation District of Orange county and the VRG gillnet study measured SL 
 to the nearest mm.
  
-To avoid missing length bins (specifically 18, 23, 29cm) in the conversion from SL 
-to TL,  0.5 was first subtracted from each SL and a random uniform number (U[0,1]) 
+To avoid missing length bins (specifically 18, 23, 29 cm) in the conversion from SL 
+to TL,  0.5 was first subtracted from each SL and a random uniform number (U[0, 1]) 
 was added to the SL measurement.  All TL measurements were rounded to the nearest 
 length centimeter length bin.  A comparison of the length distributions
 
@@ -38,7 +38,7 @@ fish sampled.
 Length compositions were provided from the following sources:
 
 \begin{itemize}[noitemsep,nolistsep,topsep=0pt]
-  \item CDFW market category study (\emph{commercial dead fish},1996-2003)    
+  \item CDFW market category study (\emph{commercial dead fish}, 1996-2003)    
   \item CALCOM (\emph{commercial dead fish}, 2013-2016)    
   \item CDFW onboard observer (\emph{recreational charter discards}, 2003-2016)    
   \item Ally onboard observer study (\emph{recreational charter discards}, 1984-1989)  
@@ -56,8 +56,8 @@ Length compositions were provided from the following sources:
     \end{itemize}
  \item Sanitation district trawl surveys (\emph{research}, 1970-2016)      
  \item CSUN/VRG gillnet survey (\emph{research}, 1995-2008)        
- \item Power plant impingement surveys (\emph{research}, 1974-2016) 
- \item Southern California Bight trawl survey (\emph{research}, 1994,1998,2003,2008,2013) 
+ \item Power plant impingement surveys (\emph{research}, 1974-2016)  
+ \item Southern California Bight trawl survey (\emph{research}, 1994, 1998, 2003, 2008, 2013) 
 \end{itemize}
 
 
@@ -107,7 +107,7 @@ scorpionfish otoliths with two age reads (\ref{fig:Fleet8_NWFSCTrawl_ageerror}).
 Age-composition data used in the model were all from the NWFSC trawl survey and 
 were from otoliths reads aged by the Cooperative Ageing Project (CAP) in Newport, 
 Oregon. All of the otolith reads were from Age Reader A, and double reads were read
-by Age Reader 2.  Ageing error was estimated using publicly available software [@Thorson2012].  
+by Age Reader B.  Ageing error was estimated using publicly available software [@Thorson2012].  
 The software setting for bias and standard deviation were the same for both 
 readers, unbiased and curvilinear increase in standard deviation with age, 
 respectively (Figure \ref{fig:Fleet8_NWFSCTrawl_ageerror2}).  Two fish with 
@@ -140,23 +140,56 @@ used in the assessment model.
 \vspace{.5cm}
 **Maturity And Fecundity**
 
-No new information on maturity and fecundity for  California scorpionfish are available. 
+No new information on maturity and fecundity forCalifornia scorpionfish are available 
+since the plucation of the 2005 stock assessment. Few California scorpionfish are mature at 
+age 1, but over 50% are mature at age 2 and most are mature at age 3 [@Love1987]. 
+
+Biological data from California scorpionfish collected from a bi-monthly California halibut 
+cross-shelf survey were provided by Steve Wertz at CDFW.  The data includes length, sex,  
+body weight, and gonad weight from 156 fish, 23 of which were immature.
+
+The proportion mature at length from the survey does not give a good 
+indication of the size at maturity (Table \ref{tab:Maturity}).  The gear used in the survey...
+
+The assessment model assums 
 
 \vspace{.5cm}
 **Natural Mortality**
-Hamel [-@Hamel2015] developed a method for combining meta-analytic approaches to relating the natural mortality rate $M$ to other life-history parameters such as longevity, size, growth rate and reproductive effort, to provide a prior on M. In that same issue of ICESJMS, Then et al. [-@Then2015], provided an updated data set of estimates of $M$ and related life history parameters across a large number of fish species, from which to develop an $M$ estimator for fish species in general. They concluded by recommending $M$ estimates be based on maximum age alone, based on an updated Hoenig non-linear least squares (nls) estimator $M= 4.899*{A_{max}}^{-.916}$. The approach of basing $M$ priors on maximum age alone was one that was already being used for west coast rockfish assessments. However, in fitting the alternative model forms relating $-.916M$ to $A_{max}$, Then et al. [-@Then2015] did not consistently apply their transformation. In particular, in real space, one would expect substantial heteroscedasticity in both the observation and process error associated with the observed relationship of $M$ to $A_{max}$. Therefore, it would be reasonable to fit all models under a log transformation. This was not done.
-Revaluating the data used in Then et al. [-@Then2015] by fitting the one-parameter $A_{max}$ model under a log-log transformation (such that the slope is forced to be -1 in the transformed space (as in Hamel [-@Hamel2015]), the point estimate for $M$ is:
+Hamel [-@Hamel2015] developed a method for combining meta-analytic approaches to 
+relating the natural mortality rate $M$ to other life-history parameters such as 
+longevity, size, growth rate and reproductive effort, to provide a prior on M. In 
+that same issue of ICESJMS, Then et al. [-@Then2015], provided an updated data set 
+of estimates of $M$ and related life history parameters across a large number of fish 
+species, from which to develop an $M$ estimator for fish species in general. They 
+concluded by recommending $M$ estimates be based on maximum age alone, based on an 
+updated Hoenig non-linear least squares (nls) estimator $M= 4.899*{A_{max}}^{-.916}$. 
+The approach of basing $M$ priors on maximum age alone was one that was already 
+being used for west coast rockfish assessments. However, in fitting the alternative 
+model forms relating $-.916M$ to $A_{max}$, Then et al. [-@Then2015] did not 
+consistently apply their transformation. In particular, in real space, one would 
+expect substantial heteroscedasticity in both the observation and process error 
+associated with the observed relationship of $M$ to $A_{max}$. Therefore, it would 
+be reasonable to fit all models under a log transformation. This was not done.
+Revaluating the data used in Then et al. [-@Then2015] by fitting the one-parameter 
+$A_{max}$ model under a log-log transformation (such that the slope is forced to be 
+-1 in the transformed space (as in Hamel [-@Hamel2015]), the point estimate for $M$ is:
 \begin{equation}
 M = \frac{5.4}{A_{max}}
 \end{equation}
  
-The above is also the median of the prior. The prior is defined as a lognormal with mean $ln\frac{5.4}{A_{max}}$  and SE = 0.4384343. Using a maximum age of 21 the point estimate and median of the prior is 0.2545, which is used as a prior for females in the assessment model.
+The above is also the median of the prior. The prior is defined as a lognormal with 
+mean $ln\frac{5.4}{A_{max}}$  and SE = 0.4384343. Using a maximum age of 21 the 
+point estimate and median of the prior is 0.2545, which is used as a prior for 
+females in the assessment model.
 
 
 
 \vspace{.5cm}
 **Sex ratios**
 
+The sex ratio from the aged California scorpionfish for this assessment were 
+approximately 60% males and 40% females.  These fish all came from the NWFSC 
+trawl survey from 2005-2016.
 
 
 ###Environmental Or Ecosystem Data Included In The Assessment

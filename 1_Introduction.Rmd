@@ -41,9 +41,10 @@ mode in which fish migrate to, and aggregate at traditional spawning sites for
 brief periods [@Love1987].  California scorpionfish migrate to deeper waters 
 (120-360 ft)  to spawn during May-August, with peak spawning occurring July. 
 The species is oviparous, producing floating, gelatinous egg masses in which 
-the eggs are embedded in a single layer [@Orton1955]. and it is believed that 
+the eggs are embedded in a single layer [@Orton1955] and it is believed that 
 spawning takes place just before, and perhaps after dawn, in the water column 
-[@Love1987].  Tagging data suggest California scorpionfish return to the same 
+[@Love1987].  The same study tagged California scorpionfish and suggests individuals
+return to the same 
 spawning site, but information is not available on non-spawning season site fidelity. 
  
 Little is known about California scorpionfish larvae. The CalCOFI survey observed 
@@ -94,8 +95,11 @@ from around the Los Angeles region. In general, the majority of the commercial c
 has come from the Los Angeles region, except in the 1960s and 1970s when the majority
 of the catch came from the San Diego region and Mexican waters.
  
-They are most often taken by boat fishermen, but fairly large numbers are caught from 
-piers, jettys, and rocky shorelines.  The CPFV effort has remained relatively constant 
+California scorpionfish is not a major target in the recreational fishery.  They are most 
+often taken by boat fishermen, but fairly large numbers are caught from 
+piers, jettys, and rocky shorelines.  The Commercial Passenger Fishing Vessl (CPFV; also
+referred to as the recreational party/charter or PC mode) effort has remained relatively 
+constant 
 over a long period (1959-1998) [@Dotson2003]. However, there appears to be a shift in 
 effort towards less utilized species, such as California scorpionfish, over the past
 decade [@Dotson2003].  Especially as catch limits for rockfish have become more
@@ -192,13 +196,10 @@ N. latitude to Point Conception, and the southern rockfish and management area
 continuing to be defined as ocean waters from Point Conception to the U.S.-Mexico border.
 
 Cowcod Conservation Areas (CCAs) also were established in 2001 to reduce fishing 
-effort for cowcod rockfish (PFMC [-@PFMC2002], Table 29). These areas were closed to 
+effort in areas with high encounter rates of cowcod rockfish (PFMC [-@PFMC2002], Table 29). These areas were closed to 
 all recreational and commercial fishing for groundfish except for minor 
 nearshore rockfish1 (including California scorpionfish) within waters less 
-than 20 fathoms. In addition, Rockfish Conservation Areas (RCAs) were established 
-in 2003 to allow for the closure of specific area and depth ranges along the West 
-Coast for the purpose of reducing fishing effort for shelf and slope rockfish. 
-The California Rockfish Conservation Area (CRCA) was defined as those ocean waters 
+than 20 fathoms. The California Rockfish Conservation Area (CRCA) was defined as those ocean waters 
 south $40^\circ 10^\prime$ N. latitude to the U.S.-Mexico border with different depth 
 zones specified for the areas north and south of Pt. Reyes ($37^\circ 59.73^\prime$ N. latitude). 
 
@@ -216,7 +217,7 @@ that commercial fishermen landing these nine nearshore species possess a nearsho
 Following adoption of the Nearshore FMP and accompanying regulations by the FGC in 
 fall of 2002, the FGC adopted regulations in November 2002 which established a set 
 of marine reserves around the Channel Islands in Southern California (which became 
-effective April 2003) and adopted a nearshore restricted access program in December 
+effective April 2003).  The FGC also adopted a nearshore restricted access program in December 
 2002 (which included the establishment of a Deeper Nearshore Permit) to be effective 
 starting in the 2003 fishing year.
 

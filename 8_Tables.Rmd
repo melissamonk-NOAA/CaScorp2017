@@ -551,17 +551,18 @@
                                    'Index',
                                    'Log-scale SE')
       
-        colnames(Fleet7_lengthdepth) = c(c('Year',
-                                    'Fish',
-                                    'Trips',
-                                    'Mean length (cm)')
+        colnames(Fleet7_lengthdepth) = c('Year',
+                                         'Fish',
+                                         'Trips',
+                                         'Mean length (cm)')
                                     
        colnames(Fleet7_lengthsample) = c('Program',
                                          '0-24 m',
                                          '25-49 m',
                                          '50-74m',
-                                         '100+ m')
-)
+                                         '100+ m',
+                                         'Total')
+
 
 ```
 

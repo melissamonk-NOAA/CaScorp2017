@@ -187,6 +187,8 @@
 <!-- *************Fleet 9 Gillnet survey FIGURES*************************** --> 
 <!-- ********************************************************************** -->
 
+![Q-Q plot used to validate the goodness of fit of the lognormal model for the CSUN/VRG gillnet survey from 1995-2008. \label{fig:Fleet9_GillnetSurvey_QQ}](Figures/Fleet9_GillnetSurvey_QQ.png)
+
 ![Fit to log index data on log scale for the recreational CSUN/VRG gillnet survey. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:index5_logcpuefit_GillnetSurvey}](r4ss/plots_mod1/index5_logcpuefit_GillnetSurvey.png)
 
 \FloatBarrier
@@ -195,6 +197,8 @@
 <!-- ********************************************************************** -->
 
 ![Fit to log index data on log scale for the recreational Southern California Bight trawl survey. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:index5_logcpuefit_SCBSurvey}](r4ss/plots_mod1/index5_logcpuefit_SCBSurvey.png)
+
+![Length frequency distributions from the Impingement surveys. \label{fig:Fleet9_GillnetSurvey_lendat_bubflt10mkt2}](r4ss/plots_mod1/comp_lendat_bubflt9mkt2.png)
 
 
 <!-- ********************************************************************** -->
@@ -254,7 +258,7 @@
 <!-- ********************************************************************** -->
 
 
-![Cross-section of broken and burned otolith for California scorpionfish showing 11 annuli (photo courtesy Lance Sullivan, NWFSC). \label{fig:otolith1}](Figures/otolith1.pdf)
+![Cross-section of broken and burned California scorpionfish otolith showing.  The green dots indicate the number of increments (photo courtesy Lance Sullivan, NWFSC). \label{fig:otolith1}](Figures/otolith1.pdf)
 
 
 ![California scorpionfish otolith (photo courtesy Lance Sullivan, NWFSC). \label{fig:otolith2}](Figures/otolith2.pdf)

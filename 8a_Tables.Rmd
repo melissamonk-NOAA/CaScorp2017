@@ -16,9 +16,33 @@
 <!-- ******************Maturity and Fecundity TABLES*********************** --> 
 <!-- ********************************************************************** --> 
 
+```{r, eval=TRUE, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+      ##read in maturity data
+        Maturity = read.csv("./txt_files/Maturity.csv")
+
+      colnames(Maturity) = c("Length (cm)",
+                             "Mature females",
+                             "Mature males",
+                             "Immature")
+
+```
+
+```{r, results='asis'}
+    #Maturity
+        Maturity.table = xtable(Maturity,
+                              caption = c("Sample size of mature and immature fish 
+                                          from bimonthly California hablibut cross-shelf 
+                                          trawls from July 1994 to may 1995."),
+                              label='tab:Maturity')
+    
+        
+        print(Maturity.table, 
+              include.rownames=FALSE, 
+              caption.placement="top",
+              sanitize.text.function = function(x){x})
 
 
-
+```
 
 <!-- ********************************************************************** -->
 <!-- **********************Age Structure TABLES**************************** --> 

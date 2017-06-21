@@ -1,5 +1,5 @@
-program,0-24,25-49,50-74,100+
-City of Los Angeles,120,0,1372,0
-Los Angeles County,687,0,5879,450
-Orange County,161,669,2157,48
-City of San Diego,0,404,333,829
+program,0-24,25-49,50-74,100+,Total
+City of Los Angeles,120,0,1372,0,1492
+Los Angeles County,687,0,5879,450,7016
+Orange County,161,669,2157,48,3035
+City of San Diego,0,404,333,829,1566

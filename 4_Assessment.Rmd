@@ -27,7 +27,7 @@ needed.  Although there has been previous research on scorpionfish age and growt
 the available information is not appropriate for stock assessment modeling.] \hfill \\
 
   STAT response: Age data are available from the NWFSC trawl survey from 2005-2016.
-  THere have been no additional studies on growth or maturity for California 
+  There have been no additional studies on growth or maturity for California 
   scorpionfish since the 2005 assessment.
 
 \item[Recommendation 3: Location information for the historic groundfish data 
@@ -36,8 +36,8 @@ California Department of Fish and Game. Putting this information into electronic
 format would greatly improve the ability to assign catches of all species to 
 specific stocks on a trip-by-trip basis.] \hfill \\
 
-  STAT response: The location-sepciic catches referred to above have been
-  key-punched and are available in electornic form from the SWFSC, Santa Cruz.
+  STAT response: The location-specific catches referred to above have been
+  key-punched and are available in electronic form from the SWFSC, Santa Cruz.
 
 \item[Recommendation 4: The SS2 model should be modified to allow for projections 
 of user-specified recruitment at user defined values. It would be most helpful if 
@@ -199,7 +199,6 @@ Table \ref{tab:Sensitivity_model1}
 Intro sentence or two....(Table \ref{tab:Timeseries_mod1}). 
 
 Equilibrium yield at the proxy $F_{MSY}$ harvest rate corresponding to 
-$SPR_{50\%}$ is `r Ref_pts_mod1[15,2]` mt.  Table \ref{tab:Ref_pts_mod1} 
 shows the full suite of estimated reference points for the northern area model 
 and Figure \ref{fig:Yield_all} shows the equilibrium yield curve.
 
