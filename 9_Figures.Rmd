@@ -144,6 +144,9 @@
 
 ![Fit to log index data on log scale for the recreational CPFV onboard oserver discarded catch index. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:index5_logcpuefit_Sanitation}](r4ss/plots_mod1/index5_logcpuefit_Sanitation.png)
 
+![Comparison of standardized indices for each sanitation district independently and with data from all sanitation districts combined. \label{fig:Fleet7_Sanitation_indexcompare}](Figures/Fleet7_Sanitation_indexcompare.png)
+
+
 ![Sample sizes of measured California scorpionfish by sanitation district and year. \label{fig:Fleet7_Sanitation_lengthbydistrict}](Figures/Fleet7_Sanitation_length_source.png)
 
 
@@ -196,7 +199,11 @@
 <!-- *************Fleet 11 Bight trawl survey FIGURES********************** --> 
 <!-- ********************************************************************** -->
 
+![Q-Q plot used to validate the goodness of fit of the lognormal model for the Southern California Bight monitoring program trawl survey. \label{fig:Fleet11_SCBsurvey_QQ}](Figures/Fleet11_SCBsurvey_QQ.png)
+
 ![Fit to log index data on log scale for the recreational Southern California Bight trawl survey. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:index5_logcpuefit_SCBSurvey}](r4ss/plots_mod1/index5_logcpuefit_SCBSurvey.png)
+
+![Length frequency distributions from the Southern California Bight regional monitoring program trawl surveys. \label{fig:Fleet11_SCBsurvey_lendat_bubflt11mkt2}](r4ss/plots_mod1/comp_lendat_bubflt11mkt2.png)
 
 ![Length frequency distributions from the Impingement surveys. \label{fig:Fleet9_GillnetSurvey_lendat_bubflt10mkt2}](r4ss/plots_mod1/comp_lendat_bubflt9mkt2.png)
 

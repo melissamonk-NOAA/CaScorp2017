@@ -1,4 +1,4 @@
 Filter,Description,Positive trawls,Trawls
 All trawls,No filter,158,944
 Depth,Trawls $<$ 98 m (retains 95\% of all data),149,662
-Region,"Exclude trawls in harbors, south of Ventura and islands (few scorpionfish)",129,398
+Region,"Exclude trawls in harbors, north of Ventura and islands (few scorpionfish)",129,\textbf{398}

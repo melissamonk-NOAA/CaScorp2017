@@ -1679,11 +1679,12 @@ analysis were retained. Of these, 5,507 encountered scorpionfish, with
 scorpionfish.
 
 The drift-level effort cannot be parsed out between the retained and
-discarded catch. The effort represents the total angler hours fished by
-the subset of observed anglers for a particular drift, and is the same
-for both the discard-only and retained-only indices. Both of the indices
-derived from this dataset were standardized using a delta modeling
-approach (Lo et al. \protect\hyperlink{ref-Lo1992}{1992}).
+discarded catch.\\
+The effort represents the total angler hours fished by the subset of
+observed anglers for a particular drift, and is the same for both the
+discard-only and retained-only indices. Both of the indices derived from
+this dataset were standardized using a delta modeling approach (Lo et
+al. \protect\hyperlink{ref-Lo1992}{1992}).
 
 \emph{Onboard Obsever Discarded Catch Index}
 
@@ -1828,9 +1829,40 @@ nearest cm (standard length).
 
 \emph{Sanitation Districts Index Standardization}
 
+Trawls from all sanitation districts were combined to standardize the
+index of relative abundance. This is in contract to the 2005 assessment
+that standardized each of the sanitation district indices independently
+and combined them using an inverse variance weighting approach (Maunder
+et al. \protect\hyperlink{ref-Maunder2005}{2005}). One reason for this
+was that the 2005 base model going into the STAR panel was five
+sub-models for the southern California Bight. Taking into consideration
+that the 2017 base model is a one-area model, all of the sanitation
+districts follow the same sampling protocols and the sampling design is
+a fixed station approach, the decision was made to develop a single
+index. The index was standardized using a delta-GLM approach.
+
+The data were filtered for each sanitation district independently. The
+filters applied are described in the sections above and summarized in
+Table \ref{tab:Fleet7_Sanitation_filter}. The covariates considered for
+the lognormal and binomial models were \emph{year} (47 levels),
+\emph{quarter} (4 levels), and \emph{station} (52 levels). A lognormal
+model for the positives was select over a gamma model by a delta AIC of
+619. AIC model select was used for both the lognormal and binomial
+models and all three covariates were selected for both (Table
+\ref{Table:tab:Fleet7_Sanitation_aic}). The standardized index shows a
+large spike in relative CPUE in 1981, bounces around within a range of
+0.1 to 0.25 from 1989 to 2009, and then declines until 2013 (Figure
+\ref{fig:index5_logcpuefit_Sanitation}). The last three years of the
+index show an increase in relative abundance. The final standardized
+index and log-standard error can be found in Table
+\ref{tab:Fleet7_Sanitation_index}. We did explore standardizing the
+indices independently. However, this results in a loss of data, as some
+sanitation district had low sample sizes in some years. The general
+trend in relative CPUE is similar across sanitation districts.
+
 \emph{Sanitation Districts Length Composition}
 
-Each district measures every fish encountered in the survey. Orange
+Each district measures every fish encountered in their survey. Orange
 County Sanitation District was the only program sampling in 1970 and
 1971 and encountered a small number of California scorpionfish in those
 years (Figure \ref{fig:Fleet7_Sanitation_lengthbydistrict}). Los Angeles
@@ -1841,13 +1873,15 @@ lengths for California scorpionfish by 25 m depth bins and Sanitation
 District. The median length of fish from the City of Los Angeles trawls
 is smaller than the other two districts. However, there are only 120 in
 that depth bin, compared to 1,372 fish in the 50-74 m depth bin for the
-City of Los Angeles.
-
-composition data from all surveys was also combined
+City of Los Angeles (Table \ref{tab:Fleet7_lengthdepth}).
 
 The length composition indicates a fairly consistent size range of fish
 encountered in the trawl surveys, with a handful of smaller fish in 2016
-(Figure \ref{fig:Fleet7_comp_lendat_bubflt10mkt2}).
+(Figure \ref{fig:Fleet7_comp_lendat_bubflt10mkt2}). Length measurements
+from all 5,525 hauls of the sanitation districts were combined across
+sanitation districts. The number of California scorpionfish was slowest
+during the first few years of the time series, and also declines
+starting in 2012 (Table \ref{tab:Fleet7_lengthsample}).
 
 \textbf{NWFSC Trawl Survey Index}
 
@@ -1857,7 +1891,8 @@ slope trawl surveys (hereafter referred as NWFSC trawl survey) since
 Additional details on this survey and design are available in the
 abundance and distribution reports by Keller et al.
 (\protect\hyperlink{ref-Keller2008}{2008}). Spatial locations of raw
-catch rates (in log scale) are shown in Figure X1.
+catch rates (in log scale) are shown in Figure
+\ref{fig:Fleet8_NWFSCtrawl_posdepth}.
 
 The proportions of positive catch haul and the raw catch rates of
 positive hauls by depth and latitude are shown in Figure
@@ -1905,21 +1940,97 @@ assessment model are in Table \ref{tab:Fleet8_NWFSCTrawl_index}.
 
 \textbf{CSUN/VRG Gillnet Survey Index}
 
-The CSUN/VRG gillnet survey was conducted from 1995-2008. Sites along
-the coast from Santa Barbara to Newport were consistently sampled for
-the time series, as well as Catalina Island. Gillnet sets from within
-Marina Del Rey and Catalina Harbor were removed from the analysis.
+California State University Northridge with Vantuna Research Group
+(CSUN/VRG) conducted a gillnet survey from 1995-2008 (Daniel Pondela,
+VRG). Sites along the coast from Santa Barbara to Newport were
+consistently sampled for the time series, as well as Catalina Island.
+Gillnet sets from within Marina Del Rey and Catalina Harbor were removed
+from the analysis.
 
 All gillnets were the same length with six-25' panels (150' in
 length).\\
-The majority of samples were collected using a net with 1``'', 1.5``,
-2''" square mesh, each mesh was on 2 panels.
+The standard sampling gillnet had 1``, 1.5'', 2 square mesh, with each
+mesh on two panels. Samples were excluded if they were collected using a
+net other than the standard sampling gear. Other data filters included
+remove months that were not consisently sampled (Table
+\ref{tab:Fleet9_GillnetSurvey_filter}).
 
-Perp/para was whether or not the net was set perpendicular or parallel
-to shore.
+Five covariates were considered in the model standardization,
+\emph{year} (14 levels), \emph{month} (8 levels), \emph{site} (8 levels
+indicating the sampling site location), \emph{float} (2 levels indicate
+if floats were used on the gillnet), and \emph{perp/para} (2 levels
+indicate if the net was set perpendicular or parallel to shore). A
+lognormal was select over a gamma model for the positive encounters by a
+delta AIC of 108.29. Covariates selected via AIC for both the lognormal
+binomial models included \emph{year}, \emph{site}, and \emph{perp/para}
+(Table \ref{tab:Fleet9_GillnetSurvey_aic}, Figure
+\ref{fig:Fleet9_GillnetSurvey_QQ}). The standardized index decreases
+from 1995-1998 and remains flat until through the early 2000's with
+three high years at the end of the time series (Figure
+\ref{fig:index5_logcpuefit_GillnetSurvey}).
 
-\textbf{Southern California Bight 2013 Regional Monitoring Project Trawl
-Survey Index}
+The survey measured (standard length) every California scorpionfish
+encountered, totalling 1,130 fish. The majority of fish encountered were
+between 14 and 33 cm total length, with no strong trends or paterns in
+age classes during the time period (Figure
+\ref{fig:fig:Fleet9_GillnetSurvey_lendat_bubflt10mkt2})
+
+\textbf{Southern California Bight Regional Monitoring Project Trawl
+Survey}
+
+The southern Calfironia Coast Water Research Project
+\href{http://www.sccwrp.org/Homepage.aspx}{SCCWRP} consists of over 60
+agencies in southern California that conduct monitoring of aquatic
+environments. One of the monitoring programs in the Southern California
+Bight (SCB) is a trawl survey conducted every five years. The pilot year
+of the survey was 1994. Data from each of the survey years (1994, 1998,
+2003, 2008, and 2013) were provided by the SCCWRP (Shelly Moore).
+
+In each of the five years of the study, sampling stations were chosen
+via a stratified random sampling design (Bight '98 Steering Committee
+\protect\hyperlink{ref-Bight1998}{1998}). All participating agencies
+follow the same protocols (net is towed 10 minutes at a speed of 1.0
+m/sec) and use the same net (semiballoon otter trawl). All fish and
+invertebrates are identified, counted, batch-weighed, and measured
+(standard length to the nearest cm).
+
+A series of data fiters were applied to the the dataset (Table
+\ref{tab:tab:Fleet11_SCBSurvey_filter}). Only two scorpionfish were
+encountered in hauls deeper than 450 m. Ninety-five percent of the data
+were retained for hauls in shallower than 97 m, which was set as a
+filter. Stations in harbors (2/114 positive hauls), north of Ventura
+(6/190 positive hauls) and the islands (16/117 positive hausl) were
+excluded due to low encounters of California scorpionfish. The final
+dataset included 398 hauls, 129 of which encountered California
+scorpionfish. The unit of effort for this survey is in kg per tow time
+(minutes).
+
+Covariates considered for the delta-GLM model were \emph{year} (5
+levels), \emph{area} (4 regions), and \emph{month} (3 levels;
+July-September). Sampling stations were assigned to one of four regions,
+1) Ventura to Long Beach, 2) Long Beach to Dana Point, 3) Dana Point to
+San Diego, and 4) San Diego to the U.S./Mexico Border. A lognormal model
+was selected over a gamma model for the positives by a delta AIC of 30.
+Depth (20-m depth bins) were considered, but none of the levels were
+significant in a full lognorml or binomial model and was not considered
+further. AIC selection for both the lognormal and binomial models
+selected all covariates for the final model (Table
+\ref{tab:Fleet11_SCBSurvey_aic}). The Q-Q plot used to evaluate the
+goodness-of-fit of the lognormal portion of the model is in Figures
+\ref{fig:Fleet11_SCBsurvey_QQ}.
+
+The standardized index of abundance indicates higher relative CPUE in
+1994 and 2003, with the other three years lower (Figure
+\ref{fig:index5_logcpuefit_SCBSurvey}). The fact that the survey is
+conducted every five years (4 years between the pilot and the 1998
+survey), may preclude drawing any firm conclusions on trends in
+abundance from this data.
+
+The survey measured a total of 427 fish, with the last two years of the
+survey (2008 and 2013) only encountering 25 and 53 California
+scorpionfish, respectively.\\
+However, the smallest fish observed in this survey were in 2013 (Figure
+\ref{fig:Fleet11_SCBsurvey_lendat_bubflt11mkt2}).
 
 \emph{Generating Station Impingement Surveys}
 
@@ -1983,8 +2094,8 @@ proportion of smaller (\textless{}10 cm) fish since 2012 (Figure
 \emph{California Cooperative Oceanic Fisheries Investigations (CalCOFI)
 Survey} UCSD Scripps Institution of Oceanography, CDFG, and the National
 Marine Fisheries Service have carried out a plankton survey on a regular
-basis since 1951 (Moser et al. \protect\hyperlink{ref-Moser1993}{1993}).
-Prior to 1965, \emph{Scorpaena} samples were not speciated.
+basis since 1951 (Moser et al. n.d.). Prior to 1965, \emph{Scorpaena}
+samples were not speciated.
 
 California scorpionfish larvae encounters from CalCOFI surveys were
 provided by Noelle Bowlin (NMFS SWFSC). Only 16 positive bongo tows in
@@ -2148,8 +2259,22 @@ assessment model.
 
 \textbf{Maturity And Fecundity}
 
-No new information on maturity and fecundity for California scorpionfish
-are available.
+No new information on maturity and fecundity forCalifornia scorpionfish
+are available since the plucation of the 2005 stock assessment. Few
+California scorpionfish are mature at age 1, but over 50\% are mature at
+age 2 and most are mature at age 3 (Love et al.
+\protect\hyperlink{ref-Love1987}{1987}).
+
+Biological data from California scorpionfish collected from a bi-monthly
+California halibut cross-shelf survey were provided by Steve Wertz at
+CDFW. The data includes length, sex,\\
+body weight, and gonad weight from 156 fish, 23 of which were immature.
+
+The proportion mature at length from the survey does not give a good
+indication of the size at maturity (Table \ref{tab:Maturity}). The gear
+used in the survey\ldots{}
+
+The assessment model assums
 
 \vspace{.5cm}
 
@@ -2192,6 +2317,10 @@ a maximum age of 21 the point estimate and median of the prior is
 \vspace{.5cm}
 
 \textbf{Sex ratios}
+
+The sex ratio from the aged California scorpionfish for this assessment
+were approximately 60\% males and 40\% females. These fish all came from
+the NWFSC trawl survey from 2005-2016.
 
 \subsubsection{Environmental Or Ecosystem Data Included In The
 Assessment}\label{environmental-or-ecosystem-data-included-in-the-assessment}
@@ -3329,14 +3458,14 @@ Year & Index & Log-scale SE \\
 \centering
 \caption{sdfdsf} 
 \label{tab:Fleet7_lengthdepth}
-\begin{tabular}{lrrrr}
+\begin{tabular}{lrrrrr}
   \hline
-Year & Fish & Trips & Mean length (cm) & NA \\ 
+Year & Fish & Trips & Mean length (cm) & NA & NA \\ 
   \hline
-City of Los Angeles & 120 &   0 & 1372 &   0 \\ 
-  Los Angeles County & 687 &   0 & 5879 & 450 \\ 
-  Orange County & 161 & 669 & 2157 &  48 \\ 
-  City of San Diego &   0 & 404 & 333 & 829 \\ 
+City of Los Angeles & 120 &   0 & 1372 &   0 & 1492 \\ 
+  Los Angeles County & 687 &   0 & 5879 & 450 & 7016 \\ 
+  Orange County & 161 & 669 & 2157 &  48 & 3035 \\ 
+  City of San Diego &   0 & 404 & 333 & 829 & 1566 \\ 
    \hline
 \end{tabular}
 \end{table}\begin{table}[ht]
@@ -3345,7 +3474,7 @@ City of Los Angeles & 120 &   0 & 1372 &   0 \\
 \label{tab:Fleet7_lengthsample}
 \begin{tabular}{rrrrllll}
   \hline
-Program & 0-24 m & 25-49 m & 50-74m & 100+ m & NA & NA & NA \\ 
+Program & 0-24 m & 25-49 m & 50-74m & 100+ m & Total & NA & NA \\ 
   \hline
 1970 &  36 &   5 & 23.80 &  &  &  &  \\ 
   1971 &  23 &   8 & 23.42 &  &  &  &  \\ 
@@ -3657,7 +3786,7 @@ Filter & Criteria & Sample size (no. positive trips) & Sample size (no. of trips
   \hline
 All trawls & No filter & 158 & 944 \\ 
   Depth & Trawls $<$ 98 m (retains 95\% of all data) & 149 & 662 \\ 
-  Region & Exclude trawls in harbors, south of Ventura and islands (few scorpionfish) & 129 & 398 \\ 
+  Region & Exclude trawls in harbors, north of Ventura and islands (few scorpionfish) & 129 & \textbf{398} \\ 
    \hline
 \end{tabular}
 \end{table}\begin{table}[ht]
@@ -3697,6 +3826,42 @@ Year & Index & Log-scale SE & NA & NA \\
 \FloatBarrier
 
 \FloatBarrier
+
+\begin{table}[ht]
+\centering
+\caption{Sample size of mature and immature fish 
+                                          from bimonthly California hablibut cross-shelf 
+                                          trawls from July 1994 to may 1995.} 
+\label{tab:Maturity}
+\begin{tabular}{rrrr}
+  \hline
+Length (cm) & Mature females & Mature males & Immature \\ 
+  \hline
+ 15 &   1 &   1 &   2 \\ 
+   16 &   1 &   1 &   1 \\ 
+   17 &   1 &  &   2 \\ 
+   18 &  &  &   4 \\ 
+   19 &  &   1 &  \\ 
+   20 &  &  &   2 \\ 
+   21 &   3 &   3 &   2 \\ 
+   22 &   2 &   3 &   2 \\ 
+   23 &   7 &   8 &   3 \\ 
+   24 &   1 &   5 &   1 \\ 
+   25 &   9 &   2 &   1 \\ 
+   26 &   9 &   4 &  \\ 
+   27 &   5 &   2 &   1 \\ 
+   28 &   4 &   4 &   1 \\ 
+   29 &   2 &   2 &  \\ 
+   30 &   3 &   4 &   1 \\ 
+   31 &   4 &   4 &  \\ 
+   32 &  10 &   5 &  \\ 
+   33 &   2 &   2 &  \\ 
+   34 &  10 &   1 &  \\ 
+   35 &   5 &  &  \\ 
+   36 &   1 &  &  \\ 
+   \hline
+\end{tabular}
+\end{table}
 
 \FloatBarrier
 
@@ -4239,6 +4404,14 @@ before addition of estimated additional uncertainty parameter.
 
 \begin{figure}[htbp]
 \centering
+\includegraphics{Figures/Fleet7_Sanitation_indexcompare.png}
+\caption{Comparison of standardized indices for each sanitation district
+independently and with data from all sanitation districts combined.
+\label{fig:Fleet7_Sanitation_indexcompare}}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
 \includegraphics{Figures/Fleet7_Sanitation_length_source.png}
 \caption{Sample sizes of measured California scorpionfish by sanitation
 district and year. \label{fig:Fleet7_Sanitation_lengthbydistrict}}
@@ -4333,6 +4506,14 @@ before addition of estimated additional uncertainty parameter.
 
 \begin{figure}[htbp]
 \centering
+\includegraphics{Figures/Fleet9_GillnetSurvey_QQ.png}
+\caption{Q-Q plot used to validate the goodness of fit of the lognormal
+model for the CSUN/VRG gillnet survey from 1995-2008.
+\label{fig:Fleet9_GillnetSurvey_QQ}}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
 \includegraphics{r4ss/plots_mod1/index5_logcpuefit_GillnetSurvey.png}
 \caption{Fit to log index data on log scale for the recreational
 CSUN/VRG gillnet survey. Lines indicate 95\% uncertainty interval around
@@ -4345,12 +4526,35 @@ of estimated additional uncertainty parameter.
 
 \begin{figure}[htbp]
 \centering
+\includegraphics{Figures/Fleet11_SCBsurvey_QQ.png}
+\caption{Q-Q plot used to validate the goodness of fit of the lognormal
+model for the Southern California Bight monitoring program trawl survey.
+\label{fig:Fleet11_SCBsurvey_QQ}}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
 \includegraphics{r4ss/plots_mod1/index5_logcpuefit_SCBSurvey.png}
 \caption{Fit to log index data on log scale for the recreational
 Southern California Bight trawl survey. Lines indicate 95\% uncertainty
 interval around index values. Thicker lines indicate input uncertainty
 before addition of estimated additional uncertainty parameter.
 \label{fig:index5_logcpuefit_SCBSurvey}}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics{r4ss/plots_mod1/comp_lendat_bubflt11mkt2.png}
+\caption{Length frequency distributions from the Southern California
+Bight regional monitoring program trawl surveys.
+\label{fig:Fleet11_SCBsurvey_lendat_bubflt11mkt2}}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics{r4ss/plots_mod1/comp_lendat_bubflt9mkt2.png}
+\caption{Length frequency distributions from the Impingement surveys.
+\label{fig:Fleet9_GillnetSurvey_lendat_bubflt10mkt2}}
 \end{figure}
 
 \begin{figure}[htbp]
@@ -4376,9 +4580,9 @@ fleet. Panels without this designation represent the whole catch.
 \begin{figure}[htbp]
 \centering
 \includegraphics{Figures/otolith1.pdf}
-\caption{Cross-section of broken and burned otolith for California
-scorpionfish showing 11 annuli (photo courtesy Lance Sullivan, NWFSC).
-\label{fig:otolith1}}
+\caption{Cross-section of broken and burned California scorpionfish
+otolith showing. The green dots indicate the number of increments (photo
+courtesy Lance Sullivan, NWFSC). \label{fig:otolith1}}
 \end{figure}
 
 \begin{figure}[htbp]
@@ -4452,6 +4656,10 @@ Institute of Fisheries, University of British Columbia.
 \hypertarget{ref-vonB1938}{}
 Bertalanffy, L. von. 1938. A quantitative theory of organic growth.
 Human Biology \textbf{10}: 181--213.
+
+\hypertarget{ref-Bight1998}{}
+Bight '98 Steering Committee. 1998. Field Operations Manual. Commission
+of Southern California Coastal Water Research Project, Westminster, CA.
 
 \hypertarget{ref-Collins1978}{}
 Collins, R., and Crooke, S. (n.d.). An evaluation of the commercial
@@ -4560,22 +4768,20 @@ database for the California recreational fisheries survey onboard
 observer sampling program, 1999-2011. NOAA-TM-NMFS-SWFSC-529.
 
 \hypertarget{ref-Moser1996}{}
-Moser, H. 1996. Scorpaenidae \emph{Scorpaena guttata}. \emph{In} CalCOFI
-atlas 33: The early stages of the fishes in the califonria current
-region. pp. 788--789.
+Moser, H.G.(. 1996. The early stages of fishes in the California Current
+region. CalCOFI Atlas \textbf{33}.
 
 \hypertarget{ref-Moser1993}{}
-Moser, H., Charter, P., Smith, P., Ambrose, D., Charter, S., Meyer, C.,
-Sandknop, E., and Watson, W. 1993. Distributional atlas of fish larvae
-and eggs in the California current region: taxa with 1000 or more total
-larvae, 1951 through 1984. Atlas No. 31.
+Moser, H.G., Charter, R.L., Smith, P.E., Ambrose, D.A., Charter, S.R.,
+Meyer, C., Sandknop, E.M., and Watson., W. (n.d.). Distributional atlas
+of fish larvae and eggs in the California Current region: taxa with 1000
+or more total larvae, 1951-1984. CalCOFI Atlas \textbf{31}.
 
 \hypertarget{ref-Moser2002}{}
-Moser, H.G., R. L. Charter, Smith, P.E., Ambrose, D.A., Watson, W.,
-Charter, S.R., and Sandknop, E.M. 2002. Atlas 35: Distributional atlas
-of fish larvae and eggs from Manta (surface) samples collected on
-CalCOFI surveys from 1977 to 2000. California Cooperative Oceanic
-Fisheries Investigations.
+Moser, H.G., Charter, R.L., Smith, P.E., Ambrose, D.A., Watson, W.,
+Charter, S.R., and Sandknop, E.M. 2002. Distributional atlas of fish
+larvae and eggs from Manta (surface) samples collected on CalCOFI
+surveys from 1977 to 2000. CalCOFI Atlas \textbf{35}.
 
 \hypertarget{ref-Orton1955}{}
 Orton, G. 1955. Early developmental stages of the California
