@@ -161,8 +161,9 @@ for two-month periods). With the implementation of a federal groundfish restrict
 access program in 1994, allocations of total catch and cumulative limits began 
 to be specifically set for open access (including most of California's commercial 
 fisheries that target California scorpionfish in Southern California) and limited 
-entry fisheries [@PFMC2002; @PFMC2004].  As a result, in the later 1990'ss as commercial 
-landings decreased and recreational harvest became a greater proportion of the 
+entry fisheries (Figure \ref{fig:Com_regs}) [@PFMC2002; @PFMC2004].  As a result, in 
+the later 1990's as commercial landings decreased and recreational harvest became a 
+greater proportion of the 
 available harvest. 
 
 Beginning in 1997, California scorpionfish was managed as part of the Sebastes 

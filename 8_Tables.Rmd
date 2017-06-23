@@ -19,6 +19,7 @@
                                 'Total U.S. Removals',
                                 'Source')
 ```
+
 ```{r, results='asis'}
    Comm_removal.table = xtable(Comm_removal, 
                     caption = c("Commercial removals (mt) from the commercial 
@@ -92,6 +93,7 @@
 
 
 ```
+
 
 
 

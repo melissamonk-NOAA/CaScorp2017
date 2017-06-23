@@ -42,7 +42,7 @@
 <!-- *either read in data to create figure or load in figures from analyst* --> 
 <!-- *******************one example of each here*************************** -->
 
-
+![Commercial fishery regulations pertaining to limited entry (LE) and open access (OA) fisheries in southern California. Blocks with a numeric value indicate the bi-monthly trip limit for both LE and OA fisheries. \label{fig:Com_regs}](Figures/Com_regs.png)
 
 
 

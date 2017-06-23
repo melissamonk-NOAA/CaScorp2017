@@ -621,14 +621,18 @@ colnames(mngmnt) = c('Year',
                      'OFL (mt; ABC prior to 2011)',  
                      'ABC (mt)', 
                      'ACL (mt; OY prior to 2011)', 
+                     'ACT',
                      'Estimated total catch (mt)')
 
 # Create the management performance table
 mngmnt.table = xtable(mngmnt, 
-                      caption=c('Recent trend in total catch and commercial 
-                              landings (mt) relative to the management guidelines. 
-                              Estimated total catch reflect the commercial landings 
-                              plus the model estimated discarded biomass.'), 
+                      caption=c('Recent trend in total catch (mt) relative to the 
+                              harvest specifications. Estimated total catch reflect 
+                              the commercial and recreational removals.  The OFL 
+                                was terms the ABC prior to implementation of the FMP 
+                                Amendment 23 in 2011.  Likewise, the ACL was termed 
+                                OY prior to 2011 and the ABC was redefined o reflect 
+                                the uncertainty in estimating the OFL.'), 
                       label='tab:mnmgt_perform')  
 # Add alignment
 align(mngmnt.table) = c('l',
@@ -636,6 +640,7 @@ align(mngmnt.table) = c('l',
                         '>{\\centering}p{1in}',
                         '>{\\centering}p{1in}',
                         '>{\\centering}p{1in}', 
+                        '>{\\centering}p{1in}',
                         '>{\\centering}p{1in}')  
 
 

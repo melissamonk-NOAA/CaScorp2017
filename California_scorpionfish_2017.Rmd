@@ -74,6 +74,7 @@ link-citations: yes
 ```{r child = "6_RegionalManagement.Rmd"}
 ```
 
+
 ```{r child = "7_ResearchNeeds_Acknowledgements.Rmd"}
 ```
 
@@ -87,6 +88,8 @@ link-citations: yes
 ```{r child = "9_Figures.Rmd"}
 ```
 
+```{r child = "9a_Figures.Rmd"}
+```
 
 \newpage
 
