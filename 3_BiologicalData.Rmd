@@ -138,20 +138,29 @@ estimated from the NWFSC survey are consistent with the sex-specific growth rate
 used in the assessment model. 
 
 \vspace{.5cm}
-**Maturity And Fecundity**
+**Sex Ratio, Maturity, and Fecundity**
 
-No new information on maturity and fecundity forCalifornia scorpionfish are available 
-since the plucation of the 2005 stock assessment. Few California scorpionfish are mature at 
-age 1, but over 50% are mature at age 2 and most are mature at age 3 [@Love1987]. 
+The NWFSC trawl survey is the only study available with raw data on sex ratios by age. Across all ages, the sex ratio from the aged California scorpionfish from the NWFSC trawl 
+survey was 60% males and 40% females. At age-1, 39% of the aged fish were female (29 of 85), but the sex of 10 fish was unknown.  For ages two to five, the percent of female 
+fish ranged from 45-54%, with aged fish older than five dominated by males. The assessment assumed a sex ratio at birth was 1:1.  The NWFSC trawl survey samples a minimum depth of 55 m and no information on sex ratios was available from other surveys.
 
-Biological data from California scorpionfish collected from a bi-monthly California halibut 
-cross-shelf survey were provided by Steve Wertz at CDFW.  The data includes length, sex,  
-body weight, and gonad weight from 156 fish, 23 of which were immature.
+Love et al. [-@Love1987] conducted the only published life history study of California scorpionfish, but did not report information on sex ratios.  Differing numbers of sample sizes (males and females) were used for each part of the study (ex. maturity and length-at-age).  The raw data from this study are no longer available, and we were 
+not able to determine raw samples sizes by sex.
 
-The proportion mature at length from the survey does not give a good 
-indication of the size at maturity (Table \ref{tab:Maturity}).  The gear used in the survey...
+No new data on maturity or fecundity for California scorpionfish are available 
+since the publication of the 2005 stock assessment. Love et al. [-@Love1987] found 
+few California scorpionfish to be mature at age-1, 50% of males were mature at 17 cm TL 
+and over 50% of females were mature by 18 cm TL, or two years of age. All fish were mature 
+by 22 cm TL.   This assessment used size at 50% maturity 
+for females of 18 cm TL, with maurity asmyptotign to 1.0 for larger fish.  
 
-The assessment model assums 
+The 2005 assessment model combined information from estimated linear 
+gonadal somatic index and maturity based on standard length [@Maunder2005].  However, the 
+study used to estimate the GSI, was a halibut targeted study using a mesh size of xxx 
+(Steven Wertz, personal communication, CDFW). This assessment assumed linear relationship for eggs per kilogram.
+
+
+
 
 \vspace{.5cm}
 **Natural Mortality**
@@ -185,11 +194,6 @@ females in the assessment model.
 
 
 \vspace{.5cm}
-**Sex ratios**
-
-The sex ratio from the aged California scorpionfish for this assessment were 
-approximately 60% males and 40% females.  These fish all came from the NWFSC 
-trawl survey from 2005-2016.
 
 
 ###Environmental Or Ecosystem Data Included In The Assessment
