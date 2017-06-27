@@ -55,13 +55,13 @@ library(r4ss)
 # Give the names of the data and control files, for each model
 # Used in the SS_files_linebreaks.R
 mod1_dat =  'scor1.dat'  
-mod2_dat =  'china_central_data.ss'
-mod3_dat =  'china_south_data.ss'
+mod2_dat =  ''
+mod3_dat =  ''
 
 # Control file names 
 mod1_ctrl = 'scor1.ctl' 
-mod2_ctrl = 'china_central_control.ss'
-mod3_ctrl = 'china_south_control.ss'
+mod2_ctrl = ''
+mod3_ctrl = ''
 
 # =============================================================================
 

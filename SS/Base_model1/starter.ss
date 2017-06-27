@@ -10,13 +10,13 @@ scor1.ctl
 1 # write to cumreport.sso (0=no,1=like&timeseries; 2=add survey fits)
 1 # Include prior_like for non-estimated parameters (0,1) 
 1 # Use Soft Boundaries to aid convergence (0,1) (recommended)
-3 # Number of datafiles to produce: 1st is input, 2nd is estimates, 3rd and higher are bootstrap
-6 # Turn off estimation for parameters entering after this phase
-10 # MCeval burn interval
-2 # MCeval thin interval
+0 # Number of datafiles to produce: 1st is input, 2nd is estimates, 3rd and higher are bootstrap
+10 # Turn off estimation for parameters entering after this phase
+1000 # MCeval burn interval
+10 # MCeval thin interval
 0 # jitter initial parm value by this fraction
-1914 # min yr for sdreport outputs (-1 for styr)
-2017 # max yr for sdreport outputs (-1 for endyr; -2 for endyr+Nforecastyrs
+-1 # min yr for sdreport outputs (-1 for styr)
+-2 # max yr for sdreport outputs (-1 for endyr; -2 for endyr+Nforecastyrs
 0 # N individual STD years 
 #vector of year values 
 

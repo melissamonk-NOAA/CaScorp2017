@@ -1,0 +1,306 @@
+Getting header info from:
+   c:\xihe1/SCOR2017/ProfileSensitivity/Weighting/FrancisWeight/Report.sso 
+! Warning, this function tested on SS-V3.21 through SS-V3.3.
+  you are using SS-V3.30. which SHOULD work with this R code.
+Report file time: Tue Jun 27 10:58:15 2017 
+Reading full report file
+Got all columns. To speed code, use ncols=63 in the future.
+Got Report file
+Got Forecast-report file
+Setting minimum biomass threshhold to 0.25
+   based on US west coast assumption associated with biomass target of 0.4.
+   (can replace or override in SS_plots by setting 'minbthresh')
+Got log file. There were NO temporary files were written in this run.
+Got warning file.
+  There were 0 warnings in c:\xihe1/SCOR2017/ProfileSensitivity/Weighting/FrancisWeight/warning.sso 
+Finished reading files
+CompReport file separated by this code as follows (rows = Ncomps*Nbins):
+    9168 rows of length comp data,
+    0 rows of generalized size comp data,
+    0 rows of age comp data,
+    8712 rows of conditional age-at-length data,
+    0 rows of ghost fleet age comp data,
+    0 rows of ghost fleet conditional age-at-length data,
+    0 rows of ghost fleet length comp data,
+    0 rows of mean length at age data,
+    0 rows of mean weight at age data,
+    0 rows of 'TAG1' comp data, and
+    0 rows of 'TAG2' comp data.
+Finished dimensioning
+Got covar file.
+Finished primary run statistics list
+Statistics shown below (to turn off, change input to printstats=FALSE)
+$SS_version
+[1] "SS-V3.30.05.01-opt;_2017_06_21;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_11.6"
+
+$SS_versionshort
+[1] "SS-V3.30"
+
+$SS_versionNumeric
+[1] 3.3
+
+$StartTime
+[1] "StartTime: Tue Jun 27 10:58:15 2017"
+
+$RunTime
+[1] "0 hours, 2 minutes, 27 seconds."
+
+$Files_used
+[1] "Data_File: scor1.dat Control_File: scor1.ctl"
+
+$Nwarnings
+[1] 0
+
+$warnings
+[1] "SS-V3.30.05.01-opt;_2017_06_21;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_11.6"
+[2] "Tue Jun 27 10:58:15 2017"                                                                
+[3] ""                                                                                        
+[4] " N warnings: 0"                                                                          
+[5] "Number_of_active_parameters_on_or_near_bounds: 0"                                        
+
+$likelihoods_used
+                               values lambdas
+TOTAL                1097.50000000000      NA
+Catch                   0.00029438300      NA
+Equil_catch             0.00000000000       1
+Survey                -97.97290000000      NA
+Length_comp           778.95100000000      NA
+Age_comp              404.42800000000      NA
+Recruitment            12.08500000000       1
+Forecast_Recruitment    0.00000000000       1
+Parm_priors             0.00000209709       1
+Parm_softbounds         0.00565094000      NA
+Parm_devs               0.00000000000       1
+Crash_Pen               0.00000000000       1
+
+$likelihoods_by_fleet
+            Label          ALL       ComHL      ComNet    ComTrawl        RecPR        RecPC        RecDD Sanitation NWFSCTrawl GillnetSurvey
+107  Catch_lambda           NA 1.00000e+00 1.00000e+00 1.00000e+00  1.00000e+00  1.00000e+00  1.00000e+00     1.0000    1.00000       1.00000
+108    Catch_like  2.94383e-04 5.24299e-05 5.24285e-05 5.24282e-05  7.01655e-05  5.03209e-05  1.66097e-05     0.0000    0.00000       0.00000
+109   Surv_lambda           NA 0.00000e+00 0.00000e+00 0.00000e+00  1.00000e+00  1.00000e+00  1.00000e+00     1.0000    1.00000       1.00000
+110     Surv_like -9.79729e+01 0.00000e+00 0.00000e+00 0.00000e+00 -2.22752e+01 -2.26907e+01 -1.76180e+01   -15.8024    3.27139      -7.36853
+111 Length_lambda           NA 1.00000e+00 1.00000e+00 1.00000e+00  1.00000e+00  1.00000e+00  1.00000e+00     1.0000    1.00000       1.00000
+112   Length_like  7.78951e+02 1.48502e+01 2.19141e+01 2.13100e+01  1.83711e+02  4.96517e+01  2.87180e+01   204.0070   42.49130      91.17890
+113    Age_lambda           NA 0.00000e+00 0.00000e+00 0.00000e+00  0.00000e+00  0.00000e+00  0.00000e+00     0.0000    1.00000       0.00000
+114      Age_like  4.04428e+02 0.00000e+00 0.00000e+00 0.00000e+00  0.00000e+00  0.00000e+00  0.00000e+00     0.0000  404.42800       0.00000
+    Impingement SCBSurvey RecPCOBR
+107      1.0000   1.00000   1.0000
+108      0.0000   0.00000   0.0000
+109      0.0000   1.00000   1.0000
+110      0.0000  -1.51615 -13.9733
+111      1.0000   1.00000   0.0000
+112     90.9326  30.18640   0.0000
+113      0.0000   0.00000   0.0000
+114      0.0000   0.00000   0.0000
+
+$Parm_devs_detail
+[1] NA
+
+$N_estimated_parameters
+[1] 102
+
+$table_of_phases
+
+-5 -4 -3 -2 -1  1  2  3  4  5  6  7 
+ 2  5 28  8  9  1  6 35 37 11 10  2 
+
+$estimated_non_dev_parameters
+                                        Value Phase      Min   Max        Init Status  Parm_StDev        Gradient  Pr_type Prior Pr_SD       Pr_Like
+L_at_Amin_Fem_GP_1                 13.9229000     2   2.0000 30.00  13.9260000     OK   0.5910620 -0.000004478400 No_prior    NA    NA            NA
+L_at_Amax_Fem_GP_1                 33.4073000     2  30.0000 50.00  33.4088000     OK   0.7707340 -0.000003844430 No_prior    NA    NA            NA
+VonBert_K_Fem_GP_1                  0.2491990     2   0.0500  0.50   0.2491400     OK   0.0263472  0.000003823140 No_prior    NA    NA            NA
+CV_young_Fem_GP_1                   0.1166920     3   0.0200  0.50   0.1165740     OK   0.0234693 -0.000023989100 No_prior    NA    NA            NA
+CV_old_Fem_GP_1                     0.1103860     3   0.0200  0.75   0.1104000     OK   0.0084373 -0.000003349680 No_prior    NA    NA            NA
+NatM_p_1_Mal_GP_1                  -0.2025980     2  -1.0000  1.00  -0.2026640     OK   0.0531176 -0.000014829200   Normal     0    99 0.00000209397
+L_at_Amax_Mal_GP_1                 -0.1699880     2  -3.0000  3.00  -0.1699400     OK   0.0299620 -0.000022559600 No_prior    NA    NA            NA
+VonBert_K_Mal_GP_1                 -0.1984680     2  -3.0000  3.00  -0.1996060     OK   0.2438950 -0.000021986900 No_prior    NA    NA            NA
+CV_young_Mal_GP_1                   0.9701640     3  -3.0000  3.00   0.9714640     OK   0.2164820  0.000028761200 No_prior    NA    NA            NA
+CV_old_Mal_GP_1                    -0.4060910     3  -3.0000  3.00  -0.4067670     OK   0.1856120 -0.000018154000 No_prior    NA    NA            NA
+SR_LN(R0)                           8.0036800     1   0.0000 31.00   8.0031100     OK   0.1547430 -0.000005334220 No_prior    NA    NA            NA
+Q_extraSD_RecPR(4)                  0.0101574     4   0.0001  1.00   0.0101734     OK   0.0196922 -0.000035384800 No_prior    NA    NA            NA
+Q_extraSD_RecPC(5)                  0.2693900     4   0.0001  1.00   0.2693200     OK   0.0475110  0.000039189800 No_prior    NA    NA            NA
+Q_extraSD_RecDD(6)                  0.0819073     4   0.0001  1.00   0.0818163     OK   0.0456773 -0.000039244300 No_prior    NA    NA            NA
+Q_extraSD_Sanitation(7)             0.2237430     4   0.0001  1.00   0.2238020     OK   0.0473042  0.000006645800 No_prior    NA    NA            NA
+Q_extraSD_NWFSCTrawl(8)             0.2497530     4   0.0001  1.00   0.2497510     OK   0.1446200 -0.000017722900 No_prior    NA    NA            NA
+Q_extraSD_GillnetSurvey(9)          0.1228870     4   0.0001  1.00   0.1228490     OK   0.0698487  0.000005215680 No_prior    NA    NA            NA
+Q_extraSD_SCBSurvey(11)             0.1667410     4   0.0001  1.00   0.1667650     OK   0.1417150 -0.000000800803 No_prior    NA    NA            NA
+Q_extraSD_RecPCOBR(12)              0.1406050     4   0.0001  1.00   0.1405960     OK   0.0462162  0.000036886200 No_prior    NA    NA            NA
+SizeSel_P1_ComHL(1)                26.3574000     5  13.0000 44.00  26.3591000     OK   2.0379800  0.000009320770 No_prior    NA    NA            NA
+SizeSel_P3_ComHL(1)                 2.9061800     5  -1.0000 10.00   2.9065000     OK   0.6392220  0.000004252110 No_prior    NA    NA            NA
+SizeSel_P5_ComHL(1)               -15.9655000     5 -25.0000 -1.00 -15.9668000     OK 120.9220000 -0.000010132700 No_prior    NA    NA            NA
+SizeSel_P1_RecPR(4)                41.1424000     5  13.0000 44.00  41.1407000     OK   2.0787600  0.000000629740 No_prior    NA    NA            NA
+SizeSel_P3_RecPR(4)                 4.4896000     5  -1.0000 10.00   4.4893600     OK   0.1668420  0.000014071300 No_prior    NA    NA            NA
+SizeSel_P5_RecPR(4)                -8.3706400     5 -25.0000 -1.00  -8.3708000     OK   0.8084080 -0.000012900500 No_prior    NA    NA            NA
+SizeSel_P1_RecPC(5)                36.7492000     5  13.0000 44.00  36.7461000     OK   1.3904000  0.000039136200 No_prior    NA    NA            NA
+SizeSel_P3_RecPC(5)                 4.4880100     5  -1.0000 10.00   4.4875600     OK   0.1611820 -0.000008310640 No_prior    NA    NA            NA
+SizeSel_P5_RecPC(5)                -8.4709800     5 -25.0000 -1.00  -8.4702900     OK   1.9543700  0.000004252260 No_prior    NA    NA            NA
+SizeSel_P1_RecDD(6)                24.5366000     5  13.0000 44.00  24.5365000     OK   0.0894894  0.000008644140 No_prior    NA    NA            NA
+SizeSel_P2_RecDD(6)               -11.1205000     4 -15.0000 16.00 -11.1333000     OK  58.6138000  0.000033795400 No_prior    NA    NA            NA
+SizeSel_P3_RecDD(6)                 2.8736700     4  -1.0000 10.00   2.8719800     OK   0.6231080  0.000092097300 No_prior    NA    NA            NA
+SizeSel_P4_RecDD(6)                -8.9491200     4 -20.0000  5.00  -8.9516400     OK  72.7513000 -0.000004038500 No_prior    NA    NA            NA
+SizeSel_P5_RecDD(6)                -2.3227500     5 -25.0000  3.00  -2.3209900     OK   0.5992250 -0.000034714100 No_prior    NA    NA            NA
+SizeSel_P6_RecDD(6)                -1.6479100     4  -5.0000 11.00  -1.6481400     OK   0.5086800  0.000025778700 No_prior    NA    NA            NA
+SizeSel_P1_Sanitation(7)           24.5550000     4  13.0000 44.00  24.5574000     OK   0.5869390  0.000008265660 No_prior    NA    NA            NA
+SizeSel_P3_Sanitation(7)            3.3765400     4  -1.0000 10.00   3.3769100     OK   0.1334180  0.000011019700 No_prior    NA    NA            NA
+SizeSel_P5_Sanitation(7)           -4.8525200     4 -25.0000  5.00  -4.8519700     OK   0.6321100 -0.000013716400 No_prior    NA    NA            NA
+SizeSel_P1_NWFSCTrawl(8)           24.1175000     4  13.0000 44.00  24.1223000     OK   2.2053800  0.000010894700 No_prior    NA    NA            NA
+SizeSel_P3_NWFSCTrawl(8)            3.6065800     4  -1.0000 10.00   3.6077300     OK   0.5430830  0.000005454760 No_prior    NA    NA            NA
+SizeSel_P5_NWFSCTrawl(8)          -13.1108000     4 -25.0000  5.00 -13.1088000     OK 159.1990000  0.000009452740 No_prior    NA    NA            NA
+SizeSel_P1_ComHL(1)_BLK1repl_1999  28.4924000     6  13.0000 44.00  28.4920000     OK   0.5557040  0.000007690580 No_prior    NA    NA            NA
+SizeSel_P3_ComHL(1)_BLK1repl_1999   2.0266800     6  -1.0000 10.00   2.0264400     OK   0.2775150  0.000013084800 No_prior    NA    NA            NA
+SizeSel_P1_RecPR(4)_BLK2repl_2000  36.4979000     6  13.0000 44.00  36.4976000     OK   1.0335100 -0.000009878680 No_prior    NA    NA            NA
+SizeSel_P1_RecPR(4)_BLK2repl_2006  35.6808000     6  13.0000 44.00  35.6806000     OK   0.6484270  0.000014508300 No_prior    NA    NA            NA
+SizeSel_P3_RecPR(4)_BLK2repl_2000   3.5891500     6  -1.0000 10.00   3.5891300     OK   0.1682560 -0.000013939900 No_prior    NA    NA            NA
+SizeSel_P3_RecPR(4)_BLK2repl_2006   3.4387800     6  -1.0000 10.00   3.4387600     OK   0.1117620 -0.000003812450 No_prior    NA    NA            NA
+SizeSel_P1_RecPC(5)_BLK2repl_2000  31.9008000     6  13.0000 44.00  31.8998000     OK   1.3596100 -0.000000527311 No_prior    NA    NA            NA
+SizeSel_P1_RecPC(5)_BLK2repl_2006  26.9324000     6  13.0000 44.00  26.9321000     OK   0.4705240  0.000005972340 No_prior    NA    NA            NA
+SizeSel_P3_RecPC(5)_BLK2repl_2000   3.0635700     6  -1.0000 10.00   3.0632900     OK   0.4101630  0.000000265815 No_prior    NA    NA            NA
+SizeSel_P3_RecPC(5)_BLK2repl_2006   1.0971100     6  -1.0000 10.00   1.0968200     OK   0.4112910  0.000030122100 No_prior    NA    NA            NA
+                                  Afterbound
+L_at_Amin_Fem_GP_1                        OK
+L_at_Amax_Fem_GP_1                        OK
+VonBert_K_Fem_GP_1                        OK
+CV_young_Fem_GP_1                         OK
+CV_old_Fem_GP_1                           OK
+NatM_p_1_Mal_GP_1                         OK
+L_at_Amax_Mal_GP_1                        OK
+VonBert_K_Mal_GP_1                        OK
+CV_young_Mal_GP_1                         OK
+CV_old_Mal_GP_1                           OK
+SR_LN(R0)                                 OK
+Q_extraSD_RecPR(4)                        OK
+Q_extraSD_RecPC(5)                        OK
+Q_extraSD_RecDD(6)                        OK
+Q_extraSD_Sanitation(7)                   OK
+Q_extraSD_NWFSCTrawl(8)                   OK
+Q_extraSD_GillnetSurvey(9)                OK
+Q_extraSD_SCBSurvey(11)                   OK
+Q_extraSD_RecPCOBR(12)                    OK
+SizeSel_P1_ComHL(1)                       OK
+SizeSel_P3_ComHL(1)                       OK
+SizeSel_P5_ComHL(1)                       OK
+SizeSel_P1_RecPR(4)                       OK
+SizeSel_P3_RecPR(4)                       OK
+SizeSel_P5_RecPR(4)                       OK
+SizeSel_P1_RecPC(5)                       OK
+SizeSel_P3_RecPC(5)                       OK
+SizeSel_P5_RecPC(5)                       OK
+SizeSel_P1_RecDD(6)                       OK
+SizeSel_P2_RecDD(6)                       OK
+SizeSel_P3_RecDD(6)                       OK
+SizeSel_P4_RecDD(6)                       OK
+SizeSel_P5_RecDD(6)                       OK
+SizeSel_P6_RecDD(6)                       OK
+SizeSel_P1_Sanitation(7)                  OK
+SizeSel_P3_Sanitation(7)                  OK
+SizeSel_P5_Sanitation(7)                  OK
+SizeSel_P1_NWFSCTrawl(8)                  OK
+SizeSel_P3_NWFSCTrawl(8)                  OK
+SizeSel_P5_NWFSCTrawl(8)                  OK
+SizeSel_P1_ComHL(1)_BLK1repl_1999         OK
+SizeSel_P3_ComHL(1)_BLK1repl_1999         OK
+SizeSel_P1_RecPR(4)_BLK2repl_2000         OK
+SizeSel_P1_RecPR(4)_BLK2repl_2006         OK
+SizeSel_P3_RecPR(4)_BLK2repl_2000         OK
+SizeSel_P3_RecPR(4)_BLK2repl_2006         OK
+SizeSel_P1_RecPC(5)_BLK2repl_2000         OK
+SizeSel_P1_RecPC(5)_BLK2repl_2006         OK
+SizeSel_P3_RecPC(5)_BLK2repl_2000         OK
+SizeSel_P3_RecPC(5)_BLK2repl_2006         OK
+
+$log_det_hessian
+[1] 241.815
+
+$maximum_gradient_component
+[1] 9.65328e-05
+
+$parameters_with_highest_gradients
+                        Value     Gradient
+Early_RecrDev_1981  -0.828645 -9.65328e-05
+Main_RecrDev_2000   -0.172293  9.46498e-05
+SizeSel_P3_RecDD(6)  2.873670  9.20973e-05
+Early_RecrDev_1966  -0.157065 -8.49280e-05
+Early_RecrDev_1979  -0.659102 -7.91770e-05
+
+$Length_comp_Eff_N_tuning_check
+     Fleet  N Npos min_inputN mean(inputN*Adj) HarMean(effN) Curr_Var_Adj HarMean(effN)/mean(inputN*Adj) Recommend_Var_Adj     FleetName
+3656     1  6    6      0.001         19.32940       43.8384     0.714757                      2.2679649           1.62104         ComHL
+3657     2  7    7      0.001          4.22271       10.1247     0.127212                      2.3976783          0.305012        ComNet
+3658     3  8    8      0.001         30.42720       52.4781     0.933121                      1.7247101           1.60936      ComTrawl
+3659     4 34   34      0.001         70.70580      108.2400     0.689812                      1.5308504             1.056         RecPR
+3660     5 38   38      0.001         20.63550      104.3000     0.129611                      5.0543965          0.655106         RecPC
+3661     6 18   18      0.001          4.20453       19.2589     0.112958                      4.5805120          0.517403         RecDD
+3662     7 46   46      0.001         33.95420       21.7989     0.283208                      0.6420089          0.181822    Sanitation
+3663     8 14   14      0.001          8.06326       46.4180     0.767930                      5.7567287           4.42076    NWFSCTrawl
+3664     9 14   14      0.001         12.90960       22.9648     0.325062                      1.7788932           0.57825 GillnetSurvey
+3665    10 28   28      0.001          5.99661       27.2620     0.202052                      4.5462353          0.918574   Impingement
+3666    11  5    5      0.001         21.69640       37.2077     0.840946                      1.7149251           1.44216     SCBSurvey
+
+$Age_comp_Eff_N_tuning_check
+     Fleet   N Npos min_inputN mean(inputN*Adj) HarMean(effN) Curr_Var_Adj HarMean(effN)/mean(inputN*Adj) Recommend_Var_Adj  FleetName
+3877     8 198  198      0.001          1.35658        2.2524     0.309095                       1.660352         0.5132064 NWFSCTrawl
+
+$SBzero
+[1] 1144.01
+
+$current_depletion
+[1] 0.5271291
+
+$last_years_SPR
+[1] 0.51998
+
+$SPRratioLabel
+[1] "(1-SPR)/(1-SPR_50%)"
+
+$sigma_R_in
+[1] 0.6
+
+$sigma_R_info
+           period N_devs SD_of_devs Var_of_devs   mean_SE mean_SEsquared sqrt_sum_of_components SD_of_devs_over_sigma_R sqrt_sum_over_sigma_R
+1            Main     31  0.5981379   0.3577690 0.3950163      0.1624612              0.7212699               0.9968966              1.202116
+2      Early+Main     50  0.5918088   0.3502376 0.4279880      0.1899967              0.7350063               0.9863479              1.225011
+3 Early+Main+Late     51  0.5859357   0.3433206 0.4313608      0.1933301              0.7325645               0.9765595              1.220941
+  alternative_sigma_R
+1           0.7212699
+2           0.7350063
+3           0.7325645
+
+$rmse_table
+       ERA  N     RMSE RMSE_over_sigmaR mean_BiasAdj
+3121  main 31 0.588412         0.961745     0.556486
+3122 early 19 0.591714         0.972570     0.334769
+
+$cormessage1
+[1] Range of abs(parameter correlations) is 5.12647e-18 to 0.967251
+
+$cormessage2
+[1] 4 correlations above threshold (cormax=0.95)
+
+$cormessage3
+                                label.i                           label.j      corr
+    1                 CV_young_Mal_GP_1                 CV_young_Fem_GP_1 -0.952350
+    2               SizeSel_P3_ComHL(1)               SizeSel_P1_ComHL(1)  0.967251
+    3               SizeSel_P3_RecPR(4)               SizeSel_P1_RecPR(4)  0.962557
+    4 SizeSel_P3_RecPC(5)_BLK2repl_2000 SizeSel_P1_RecPC(5)_BLK2repl_2000  0.964258
+
+$cormessage7
+[1] "5 uncorrelated parameters below threshold (cormin=0.01)"
+
+$cormessage8
+                       name         max
+52        Late_RecrDev_2016 2.12587e-14
+57  Q_extraSD_NWFSCTrawl(8) 8.52863e-03
+63      SizeSel_P5_ComHL(1) 3.08107e-04
+71      SizeSel_P2_RecDD(6) 5.31876e-03
+81 SizeSel_P5_NWFSCTrawl(8) 1.09924e-03
+
+completed SS_output
+[1] "Francis Weights - len: ComHL: 0.7726 (0.5234-69.2873)"
+[1] "Francis Weights - len: ComNet: 0.9474 (0.6088-5.4151)"
+[1] "Francis Weights - len: ComTrawl: 0.8486 (0.6076-3.1857)"
+[1] "Francis Weights - len: RecPR: 1.1278 (0.7875-1.9365)"
+[1] "Francis Weights - len: RecPC: 0.8679 (0.5583-1.9899)"
+[1] "Francis Weights - len: RecDD: 1.145 (0.863-2.045)"
+[1] "Francis Weights - len: Sanitation: 0.8248 (0.5809-1.3108)"
+[1] "Francis Weights - len: NWFSCTrawl: 0.8488 (0.5519-2.2135)"
+[1] "Francis CAA Weights: NWFSCTrawl: 0.94235 (0.5014-4.31121)"
