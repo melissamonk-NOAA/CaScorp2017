@@ -1,18 +1,36 @@
 
 <!-- ****************************RESEARCH NEEDS**************************** -->
 #Research Needs
+There are a number of areas of research that could improve the understand and the stock 
+assessment for California scorpionfish.  Below are issues identified by the STAT team:
+
 \begin{enumerate}
 
-\item Research need No. 1
+\item \textbf{Natural mortality}: Both female natural mortality and steepness were 
+fixed in the base model.  The collection of age data for older females may improve 
+the ability to estimate female natural mortality in the model.  The NWFSC trawl survey
+was the only available source of age data for this assessment, of which there were a 
+number of age-1 fish and the data were dominated by males.
 
-\item Research need No. 2
+\item \textbf{Steepness}: 
 
-\item Research need No. 3
+\item \textbf{Stock in Mexico}:  No available information on the status of California 
+scorpionfish in Mexico could be found.  A number of emails were sent to researchers 
+in Mexico and none were returned.  It is known that a portion of the stock resides 
+in Mexico and that boat leaving from San Diego target California scorpionfish off 
+the Coronado Islands.  
 
-\item etc.
+
+\item \textbf{Sex ratio}:  The sex ratio in both Love et al. [@Love1987] and samples 
+from the NWFSC trawl survey were skewed towards males. Data on sex ratios from the 
+recreational or commercial fisheries would help in determining the sex ratio of the population.
+
+\item \textbf{Aggregating behavior}: LIttle is known about the aggregating behavior
+of California scorpionfish.  California scorpionfish are known to aggregate in both
+the spawning and non-spawning seasons.  The location and timing of the aggregations
+would aid in modelling the high catch events.
 
 \end{enumerate}
-
 
 
 

@@ -1,6 +1,12 @@
-Status,Model 1,Model 2,Model 3
-Returned to base case,-,-,-
-Found local minimum,-,-,-
-Found better solution,-,-,-
-Error in likelihood,-,-,-
-Total,100,100,100
+Status,Model 1
+Minimum likelihood,1097.5
+Maximum likelihood,1153.34
+Likelihood difference,55.84
+Minimum MGC,1.86353E-06
+Maximum MGC,0.0693689
+Depletion at minimum likelihood percent,52.7128
+Depletion at maximum likelihood percent,77.5495
+Difference in depletion percent,24.8367
+Number of jitters,100
+Prop of runs at mimimum likelihood,0.35
+Proportion of runs at maximum likelihood,0.01
