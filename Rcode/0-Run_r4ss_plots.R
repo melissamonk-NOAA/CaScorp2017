@@ -73,22 +73,16 @@ output.dir = file.path(getwd(), 'r4ss')
 # Once you have your own SS files and want to save these plots
 # Uncomment the /r4SS/ in the .gitignore file
 dir.create(file.path(output.dir,'plots_mod1'))
-dir.create(file.path(output.dir,'plots_mod2'))
-dir.create(file.path(output.dir,'plots_mod3'))
+
 
 
 # BEGIN r4ss===================================================================
 # REMOVE OLD r4SS OUTPUT!!!!! -------------------------------------------------
 # Run this deliberately - it deletes the r4SS output plots files
 do.call(file.remove, list(list.files(file.path(output.dir, 'plots_mod1'),    full.names=TRUE)))
-do.call(file.remove, list(list.files(file.path(output.dir, 'plots_mod2'),    full.names=TRUE)))
-do.call(file.remove, list(list.files(file.path(output.dir, 'plots_mod3'),    full.names=TRUE)))
-do.call(file.remove, list(list.files(file.path(output.dir, 'plots_compare'), full.names=TRUE)))
 
 # Run r4ss for each model - **CHANGE DIRECTORY if necessary**
                mod1 = SS_output(dir = file.path(input.dir,'Base_model1'), forecast=F, covar=T, ncol=1000)
-#if(n_models>1){mod2 = SS_output(dir = file.path(input.dir,'Base_model2'), forecast=T, covar=T, ncol=1000)}
-#if(n_models>2){mod3 = SS_output(dir = file.path(input.dir,'Base_model3'), forecast=T, covar=T, ncol=1000)}
 
 # Save the workspace an image
 save.image('./r4ss/SS_output.RData')
@@ -117,35 +111,6 @@ SS_plots(mod1,
          printfolder = '', 
          dir = out.dir.mod1)
 
-# # Model2
-# if(n_models > 1){
-#   SS_plots(mod2,
-#            png = TRUE,
-#            html = FALSE,
-#            datplot = TRUE,
-#            uncertainty = TRUE,
-#            maxrows = 6, 
-#            maxcols = 6, 
-#            maxrows2 = 4, 
-#            maxcols2 = 4, 
-#            printfolder = '', 
-#            dir = out.dir.mod2)
-# }
-# 
-# # Model3
-# if(n_models > 2){
-#   SS_plots(mod3,
-#            png = TRUE,
-#            html = FALSE,
-#            datplot = TRUE,
-#            uncertainty = TRUE,
-#            maxrows = 6, 
-#            maxcols = 6, 
-#            maxrows2 = 4, 
-#            maxcols2 = 4, 
-#            printfolder = '', 
-#            dir = out.dir.mod3)
-# }
 
 # -----------------------------------------------------------------------------
 

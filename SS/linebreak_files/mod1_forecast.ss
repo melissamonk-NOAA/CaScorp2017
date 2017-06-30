@@ -16,7 +16,7 @@
 #
 1 # Forecast: 0=none; 1=F(SPR); 2=F(MSY) 3=F(Btgt); 4=Ave F (uses first-las
 # t relF yrs); 5=input annual F scalar
-1 # N forecast years 
+12 # N forecast years 
 1 # F scalar (only used for Do_Forecast==5)
 #_Fcast_years:  beg_selex, end_selex, beg_relF, end_relF, beg_recruits, end
 # _recruits  (enter actual year, or values of 0 or -integer to be rel. endy

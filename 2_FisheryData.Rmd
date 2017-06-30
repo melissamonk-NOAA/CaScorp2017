@@ -798,10 +798,10 @@ Figure \ref{fig:Fleet9_GillnetSurvey_QQ}).  The standardized index decreases fro
 1995-1998 and remains flat until through the early 2000's with three high years at the 
 end of the time series (Figure \ref{fig:index5_logcpuefit_GillnetSurvey}).  
 
-The survey measured (standard length) every California scorpionfish encountered, totalling 1,130 fish. 
-The majority of fish encountered were between 14 and 33 cm total length, with no strong 
-trends or paterns in age classes during the time period 
-(Figure \ref{fig:fig:Fleet9_GillnetSurvey_lendat_bubflt10mkt2})
+The survey measured (standard length) every California scorpionfish encountered, totalling 
+1,130 fish. The majority of fish encountered were between 14 and 33 cm total length, with no 
+strong trends or paterns in age classes during the time period 
+(Figure \ref{fig:Fleet9_GillnetSurvey_lendat_bubflt10mkt2})
 
 
 
@@ -821,7 +821,8 @@ random sampling design [@Bight1998].  All participating agencies follow the same
 otter trawl).  All fish and invertebrates are identified, counted, batch-weighed, and 
 measured (standard length to the nearest cm).
 
-A series of data fiters were applied to the the dataset (Table \ref{tab:tab:Fleet11_SCBSurvey_filter}).  Only two scorpionfish were encountered 
+A series of data fiters were applied to the the dataset (Table \ref{tab:Fleet11_SCBSurvey_filter}).  
+Only two scorpionfish were encountered 
 in hauls deeper than 450 m.  Ninety-five percent of the data were retained for 
 hauls in shallower than 97 m, which was set as a filter.  Stations in harbors 
 (2/114 positive hauls), north of Ventura (6/190 positive hauls) and the islands 

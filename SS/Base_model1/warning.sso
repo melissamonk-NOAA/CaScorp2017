@@ -1,5 +1,7 @@
 SS-V3.30.05.01-opt;_2017_06_21;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_11.6
-Tue Jun 27 16:21:01 2017
+Thu Jun 29 11:17:19 2017
 
- N warnings: 0
+ warning: poor convergence in Fmsy, final dy/dy2= -0.0143669
+ Fmsy is >3x of Fspr are you sure?  check for convergence 
+ N warnings: 2
 Number_of_active_parameters_on_or_near_bounds: 0

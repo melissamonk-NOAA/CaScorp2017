@@ -1,5 +1,5 @@
 <!-- ********************************************************************** -->
-<!-- ***********FIGURES 2: Model results ********************************** --> 
+<!-- ***********FIGURES: Model results ********************************** --> 
 <!-- ********************************************************************** -->
 
 
@@ -17,6 +17,12 @@
 <!-- ***********History of modelleing approaches FIGURES******************* --> 
 <!-- ********************************************************************** -->
 
+![Time series of harvest rates by fleet from the 2005 model where the harvest rate for the recreational fleet hit the boundary of 0.9. \label{fig:bridge_harvestrate}](Figures/bridge_harvestrate.png)
+
+![Time series of observed and expected landings by fleet from teh 2005 model.  The model was not able to remove all of the recreational catches startin around 1970. \label{fig:bridge_catch}](Figures/bridge_catch.png)
+
+
+![Comparison of spawning output, total biomass, and recuits from the 2005 model (solid red lines) using SS2, the 2005 model converted to SS3.24z (blue lines), and the base model from this assessment (purple lines). Note: The 2005 assessment was found to have an error, and therefore the time series for the model to SS3.24 will not match perfectly. \label{fig:bridge_timeseries}](Figures/bridge_timeseries.png)
 
 
 

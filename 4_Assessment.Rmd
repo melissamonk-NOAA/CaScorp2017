@@ -71,7 +71,7 @@ user-specified recruitments.] \hfill \\
 
 
 ###Transition To The Current Stock Assessment
-IThe first formal stock assessment for California scorpionfish was conducted in 2005 
+The first formal stock assessment for California scorpionfish was conducted in 2005 
 [@Maunder2005].  The 2005 model conducted in SS2 version 1.18 was first transitioned 
 to SS3.24z as a bridge model, before moving forward to SS3.30.  During the model transition 
 to SS3.24z and error was found in the 2005 model.  The harvest rate was estimated at the 
@@ -83,7 +83,9 @@ fishery selects the largest fish and removes the highest biomass of California
 scorpionfish.  When the harvest rate hit the upper bounds as in the 1970s, there were 
 not enough fish estimated in the population to support the large removals, i.e., stock 
 estimated at 500 mt and the recreational catch was 100 mt. The stock was not productive 
-enough to sustain the observed catch.
+enough to sustain the observed catch. A comparison of time series from the 2005 model, 
+the SS3.24z transition model, and the base model from this assessment are in Figure 
+\ref{fig:bridge_timeseries}
 
 Below, we describe the most important changes made since the last full assessment in 2005 
 and explain rationale for each change.  Some of these items are changes due to structure 
@@ -98,11 +100,17 @@ from the initial length bin to the length given by the L_at_Amin parameter.  Sin
 California scorpionfish are selected in the sanitation district survey data, the change 
 in modeled growth has the potential to affect estimates of recruitment.  We took the 
 following approach in order to mimic the methods of SS2 version 1.8:
-Change Amin from 1 to 0
-Replace initial value of L_at_Amin_Fem_GP_1 with 7.26567 (the Len_begin value for age 
-0 from the SS2.rep file).
-Replace initial value of L_at_Amin_Mal_GP_1 with 0.35366 (= LN(10.3483/7.26567), the 
-log of the ratio of Male to Female length at age 0 from the SS2.rep file)
+ \begin{enumerate}
+ 
+ \item Change Amin from 1 to 0.
+ 
+ \item Replace initial value of length at minimum age for females with 7.26567 (the Length begin value for age 
+ 0 from the SS2.rep file).
+ 
+  \item Replace initial value of length at minimum age for males with 0.35366 (= LN(10.3483/7.26567), the 
+  log of the ratio of Male to Female length at age 0 from the SS2.rep file)
+
+\end{enumerate}
 
 This assessment aggregated the catches from the commercial fish pot fleet with the 
 hook-and-line fleet.  There were no measured California scorpionfish from the fish 
@@ -221,21 +229,6 @@ update, which used SS2 version 1.8 and the 2005 model, was not developed.
 
 Changes in the bridge model from from the SS3.24z model closely matched with the 
 SS2 version 1.8 model to SS3.30.
-
-
-
-###Definition of Fleets and Areas
-We generated data sources for each of the models.  Fleets by model include:
-
-
-**Model Region 1 or remove this line if only one model** 
-
-\emph{Commercial}: The commercial fleets include...   
-
-\emph{Recreational}: The recreational fleets include...
-
-\emph{Research}: Research derived-data include...
-
 
 
 ###Summary of Data for Fleets and Areas

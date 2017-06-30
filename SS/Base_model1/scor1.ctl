@@ -14,7 +14,7 @@
 1 #  number of recruitment settlement assignments 
 0 # unused option
 #GPattern month  area  age (for each settlement assignment)
- 1 7 1 0
+ 1 1 1 0
 #
 #_Cond 0 # N_movement_definitions goes here if Nareas > 1
 #_Cond 1.0 # first age that moves (real age at begin of season, not integer) also cond on do_migration>0
@@ -298,17 +298,17 @@
  #_6=mult_by_size-at-age_N
  #_7=mult_by_generalized_sizecomp
 #_Factor  Fleet  Value
-4 1 0.7147573
-4 2 0.1272119
-4 3 0.9331212
-4 4 0.6898124
-4 5 0.1296112
-4 6 0.1129576
-4 7 0.2832085
-4 8 0.76793
-4 9 0.3250616
-4 10 0.2020518
-4 11 0.8409456
+4 1 0.6644995
+4 2 0.1124822
+4 3 0.9984793
+4 4 0.7276307
+4 5 0.1362879
+4 6 0.1359101
+4 7 0.2663346
+4 8 0.718933
+4 9 0.3286782
+4 10 0.1693565
+4 11 0.7564268
 4 12 1
 5 1 1
 5 2 1
@@ -317,7 +317,7 @@
 5 5 1
 5 6 1
 5 7 1
-5 8 0.3090946
+5 8 0.3248114
 5 9 1
 5 10 1
 5 11 1
