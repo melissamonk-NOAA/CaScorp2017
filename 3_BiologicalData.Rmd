@@ -140,11 +140,19 @@ used in the assessment model.
 \vspace{.5cm}
 **Sex Ratio, Maturity, and Fecundity**
 
-The NWFSC trawl survey is the only study available with raw data on sex ratios by age. Across all ages, the sex ratio from the aged California scorpionfish from the NWFSC trawl 
-survey was 60% males and 40% females. At age-1, 39% of the aged fish were female (29 of 85), but the sex of 10 fish was unknown.  For ages two to five, the percent of female 
-fish ranged from 45-54%, with aged fish older than five dominated by males. The assessment assumed a sex ratio at birth was 1:1.  The NWFSC trawl survey samples a minimum depth of 55 m and no information on sex ratios was available from other surveys.
+The NWFSC trawl survey is the only study available with raw data on sex ratios by age. 
+Across all ages, the sex ratio from the aged California scorpionfish from the NWFSC trawl 
+survey was 60% males and 40% females (Figure \ref{fig:sex_ratio}). At age-1, 39% of the aged 
+fish were female (29 of 85), 
+but the sex of 10 fish was unknown.  For ages two to five, the percent of female 
+fish ranged from 45-54%, with aged fish older than five dominated by males. The assessment 
+assumed a sex ratio at birth was 1:1.  The NWFSC trawl survey samples a minimum depth of 55 m 
+and no information on sex ratios was available from other surveys.
 
-Love et al. [-@Love1987] conducted the only published life history study of California scorpionfish, but did not report information on sex ratios.  Differing numbers of sample sizes (males and females) were used for each part of the study (ex. maturity and length-at-age).  The raw data from this study are no longer available, and we were 
+Love et al. [-@Love1987] conducted the only published life history study of California 
+scorpionfish, but did not report information on sex ratios.  Differing numbers of sample 
+sizes (males and females) were used for each part of the study (ex. maturity and 
+length-at-age).  The raw data from this study are no longer available, and we were 
 not able to determine raw samples sizes by sex.
 
 No new data on maturity or fecundity for California scorpionfish are available 
@@ -156,8 +164,9 @@ for females of 18 cm TL, with maurity asmyptotign to 1.0 for larger fish.
 
 The 2005 assessment model combined information from estimated linear 
 gonadal somatic index and maturity based on standard length [@Maunder2005].  However, the 
-study used to estimate the GSI, was a halibut targeted study using a mesh size of xxx 
-(Steven Wertz, personal communication, CDFW). This assessment assumed linear relationship for eggs per kilogram.
+study used to estimate the GSI, was a halibut targeted trawl study using a mesh size of 10.2 cm 
+(Steven Wertz, personal communication, CDFW). This assessment assumed linear relationship for eggs 
+per kilogram.
 
 
 

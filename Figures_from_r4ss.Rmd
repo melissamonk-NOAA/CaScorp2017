@@ -85,7 +85,7 @@ To reference these figures in the document, use label created for each plot.
   
   
   # Read in the plotInfoTable.csv containining the list of plots created from r4SS
-  plotInfoTable = read.csv(paste0('C:/StockAssessment_template/r4ss/plots_',mod_num,'/plotInfoTable_',mod_num,'_final.csv'))
+  plotInfoTable = read.csv(paste0('P:/SCOR2017/CaScorp2017/r4ss/plots_',mod_num,'/plotInfoTable_',mod_num,'_final.csv'))
   
   # Replace the @ in A@L with AAL and the - in S-R with S_R
   # And get rid of other funny characters
@@ -321,7 +321,7 @@ To reference these figures in the document, use label created for each plot.
 <!-- Age at Length Composition (AALComp) r4ss plots ------------------------ -->
 ```{r, results='asis'}
 #     # Plot all of the timeseries plots
-     for(i in 1:8){ #dim(AALComp_mod1)[1]) {
+     for(i in 4:dim(AALComp_mod1)[1]) {
 #         
 #      # find matches to multi-page plots
       page_test = sapply(multi_page_fig, grepl, AALComp_mod1$label[i])

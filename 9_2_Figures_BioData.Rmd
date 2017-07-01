@@ -1,0 +1,58 @@
+
+<!-- ====================================================================== -->
+<!-- *****************                             ************************ -->
+<!-- *****************START BIOLOGICAL DATA FIGURES************************ --> 
+<!-- *****************                            ************************ -->
+<!-- ====================================================================== -->
+
+
+
+<!-- ********************************************************************** -->
+<!-- ****************Length and Age Composition FIGURES******************** --> 
+<!-- ********************************************************************** -->
+
+
+
+
+
+<!-- ********************************************************************** -->
+<!-- **********************Age structure FIGURES*************************** --> 
+<!-- ********************************************************************** -->
+
+
+
+<!-- ********************************************************************** -->
+<!-- ****************Aging Precision and Bias FIGURES********************** --> 
+<!-- ********************************************************************** -->
+
+
+![Aging precision between two current age readers at the NWFSC.  \label{fig:Fleet8_NWFSCTrawl_ageerror}](Figures/Fleet8_NWFSCTrawl_ageerror.png)
+
+
+![True versus predicted age for two current age readers at the NWFSC from the ageing error software with unbiased reads and curivlinear standard deviation for both readers. \label{fig:Fleet8_NWFSCTrawl_ageerror2}](Figures/Fleet8_NWFSCTrawl_ageerror2.pdf)
+
+
+
+
+<!-- ********************************************************************** -->
+<!-- **********************Weight-Length FIGURES*************************** --> 
+<!-- ********************************************************************** -->
+
+
+![Comparison of the California scorpionfish weight-length curves from Love et al. (1987) and those estimated from the NWFSC trawl survey. \label{fig:Length_weight}](Figures/Length_weight.png)
+
+
+
+
+<!-- ********************************************************************** -->
+<!-- **************Sex Ratio, Maturity, FecundityFIGURES******************* --> 
+<!-- ********************************************************************** -->
+
+
+![Sex ratio by age of the fish aged from the NWFSC trawl survey, yellow=females and blue = males. \label{fig:sex_ratio}](Figures/sex_ratio.png)
+
+<!-- ====================================================================== -->
+<!-- ******************                           ************************* -->
+<!-- ******************END BIOLOGICAL DATA FIGURES************************* --> 
+<!-- ******************                           ************************* -->
+<!-- ====================================================================== -->

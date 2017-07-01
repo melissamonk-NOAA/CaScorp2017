@@ -85,25 +85,24 @@ link-citations: yes
 ```{r child = "8a_Tables.Rmd"}
 ```
 
-```{r child = "9_Figures.Rmd"}
+```{r child = "9_1_Figures_Intro_FishData.Rmd"}
 ```
 
-```{r child = "9a_Figures.Rmd"}
+
+```{r child = "9_2_Figures_BioData.Rmd"}
 ```
+
+
+```{r child = "9_4_Figures_Assessment.Rmd"}
+```
+
+```{r child = "99_Appendices.Rmd"}
+```
+
 
 \newpage
 
 
-
-
-<!-- ====================================================================== -->
-<!-- ***************************SS FILES*********************************** -->
-<!--*****SS APPENDICES INCLUDED AS A CHILD DOCUMENT TO REMOVE CLUTTER****** -->
-<!-- ====================================================================== -->
-
-<!-- Uncomment the following lines to include the appendices - exlude to save runtime -->
-<!--  ```{r child='SS_file_appendices.rmd'}
-``` --> 
 
 <!-- ====================================================================== -->
 <!-- **********REFERENCES - WILL APPEAR AFTER APPENDICES******************* -->

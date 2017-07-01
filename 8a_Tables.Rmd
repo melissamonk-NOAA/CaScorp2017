@@ -24,9 +24,6 @@
 
 
 
-
-
-
 \FloatBarrier
 
 <!-- ====================================================================== -->
@@ -37,6 +34,7 @@
 
 
 <!-- ***********MODEL 1 PARAMETERS***************************************** --> 
+<!-- ***********Estimated adn Fixed Parameters***************************** --> 
 \begin{landscape}
 ```{r, results='asis'}
        # If you use this for more than one model = change mod1 to mod2 or mod3
@@ -116,57 +114,21 @@
 
 \FloatBarrier
 
-\newpage
 
-<!-- ***********Indices of abundance summary table************************* -->
-\begin{landscape}
-```{r, results = 'asis'}
-    Index_summary = read.csv('./txt_files/Index_summary.csv')
-      colnames(Index_summary) = c('Fleet',
-                                  'Years',	
-                                  'Name',
-                                  'Fishery ind.',
-                                  'Filtering',
-                                  'Method',	
-                                  'Endorsed')
-
-   # Index of abundance summary, create table   
-     Index_summary.table = xtable(Index_summary, 
-                                  caption = c('Summary of the biomass/abundance
-                                              time series used in the stock
-                                              assessment.'),
-                                 label = 'tab:Index_summary',
-                                 digits = 0)    
-    # Add alignment  
-      align(Index_summary.table) = c('l',
-                                    '>{\\centering}p{.3in}',
-                                     '>{\\centering}p{1in}',
-                                     '>{\\centering}p{2.5in}',
-                                     '>{\\centering}p{.3in}', 
-                                     '>{\\centering}p{2in}',
-                                     '>{\\centering}p{1.2in}',
-                                     '>{\\centering}p{.5in}')  
-    
-    # Print index summary table
-      print(Index_summary.table, 
-            include.rownames=FALSE, 
-            caption.placement='top',
-            sanitize.text.function = function(x){x})
-```
-\end{landscape}
-<!-- ---------------------------------------------------------------------- -->
-
-\newpage
+<!-- ********************MODEL 1 CONVERGENCE TABLE************************* --> 
 
 <!-- ***********JITTER TABLE*********************************************** --> 
+
 ```{r, results = 'asis'}
     # Replace values in file and read in - values for all models in 1 table  
-      jitter = read.csv('./txt_files/JitterTable.csv')  
+      jitter = read.csv('./txt_files/JitterTable.csv') 
+      colnames(jitter) = c('Description',
+                           'Value')
 
     # Create model 1 jitter table
     jitter.table = xtable(jitter, 
-                          caption = c('Results from 100 jitters from each of 
-                                      the three models.'),
+                          caption = c('Results from 100 jitters from the base 
+                                      case model.'),
                           label = 'tab:jitter')
     
     # Print jitter table (all models)    
@@ -174,63 +136,31 @@
           include.rownames = FALSE, 
           caption.placement = 'top')
 ```
-<!-- ---------------------------------------------------------------------- -->
 
-\FloatBarrier
 
-\newpage
-<!-- ***********MODEL 1 SENSITIVITY TABLE(S)******************************* --> 
+<!-- ***********MODEL 1 Likelihood components******************************* --> 
+
 ```{r, results = 'asis'}
-    
-    # Read in/organize sensitivity file, change column names, caption
-    Sens_model1 = read.csv('./txt_files/Sensitivities_model1.csv')
-    colnames(Sens_model1) = c('Label', 
-                              'Base (Francis weights)', 
-                              'Harmonic mean weights',
-                              'Drop index', 
-                              'Drop ages', 
-                              'Down-weight lengths',
-                              'Free size Age0', 
-                              'Free CV Amin', 
-                              'External growth')
-
-    # Create sensitivities table
-    Sens_model1.table = xtable(Sens_model1, 
-                               caption = c('Sensitivity of the base model 
-                                          to dropping or down-weighting data 
-                                          sources and alternative assumptions 
-                                          about growth.'),
-                               label = 'tab:Sensitivity_model1', digits = 2)    
-  
-    # Add alignment - this uses centered aligment of .6 inches for all columns 2+,
-    # You can change this easily to have variable columns width after you know how many
-    # colunns your final table has
-    align(Sens_model1.table) = c('l','l', rep('>{\\centering}p{.6in}', dim(Sens_model1)[2]-1))
-                    #             '>{\\centering}p{.6in}',
-                    #             '>{\\centering}p{.5in}',
-                    #             '>{\\centering}p{.5in}',
-                    #             '>{\\centering}p{.6in}', 
-                    #             '>{\\centering}p{.5in}',
-                    #             '>{\\centering}p{.6in}',
-                    #             '>{\\centering}p{.6in}',
-                    #             '>{\\centering}p{.6in}')  
-
-    # Print model 1 sensitivity table
-    print(Sens_model1.table, 
-          include.rownames = FALSE,             
-          caption.placement = 'top',
-          floating.environment = 'sidewaystable',
-          scalebox = .9)
-
-```
-<!-- ---------------------------------------------------------------------- -->
-
+       Like_comp = read.csv('./txt_files/Likelihood_components.csv')
+       colnames(Like_comp) = c('Likelihood component',
+                               'Value')
+       
+       Like_comp.table = xtable(Like_comp,
+                                caption = c('Likelihood components from the base model.'),
+                                label = 'tab:like_components')
+       
+    # Print likelihood component table
+      print(Like_comp.table, 
+            include.rownames=FALSE, 
+            caption.placement='top',
+            sanitize.text.function = function(x){x})
+```     
 
 \newpage
+ 
 <!-- ***********MODEL 1 REFERENCE POINTS TIME SERIES TABLE***************** --> 
+
 ```{r}
-   
-    
     # Total biomass, extract and subset
     Bio_all = mod1$timeseries[, c('Yr', 'Bio_all')]
     Bio_allyrs = subset(Bio_all, Yr > (Dat_start_mod1 - 1) & Yr < (LastYR + 1))
@@ -357,6 +287,137 @@
 <!-- ---------------------------------------------------------------------- -->
 
 \FloatBarrier
+
+<!-- ***********MODEL 1 SENSITIVITY TABLE(S)******************************* --> 
+```{r, results = 'asis'}
+    
+    # Read in/organize sensitivity file, change column names, caption
+    Sens_model1 = read.csv('./txt_files/Sensitivities_model1.csv')
+    colnames(Sens_model1) = c('Label', 
+                              'Base (Francis weights)', 
+                              'Harmonic mean weights',
+                              'Drop index', 
+                              'Drop ages', 
+                              'Down-weight lengths',
+                              'Free size Age0', 
+                              'Free CV Amin', 
+                              'External growth')
+
+    # Create sensitivities table
+    Sens_model1.table = xtable(Sens_model1, 
+                               caption = c('Sensitivity of the base model 
+                                          to dropping or down-weighting data 
+                                          sources and alternative assumptions 
+                                          about growth.'),
+                               label = 'tab:Sensitivity_model1', digits = 2)    
+  
+    # Add alignment - this uses centered aligment of .6 inches for all columns 2+,
+    # You can change this easily to have variable columns width after you know how many
+    # colunns your final table has
+    align(Sens_model1.table) = c('l','l', rep('>{\\centering}p{.6in}', dim(Sens_model1)[2]-1))
+
+
+    # Print model 1 sensitivity table
+    print(Sens_model1.table, 
+          include.rownames = FALSE,             
+          caption.placement = 'top',
+          floating.environment = 'sidewaystable',
+          scalebox = .9)
+
+```
+<!-- ---------------------------------------------------------------------- -->
+
+ \FloatBarrier
+
+\newpage
+
+
+
+
+
+
+<!-- ***********Indices of abundance summary table************************* -->
+\begin{landscape}
+```{r, results = 'asis'}
+    Index_summary = read.csv('./txt_files/Index_summary.csv')
+      colnames(Index_summary) = c('Fleet',
+                                  'Years',	
+                                  'Name',
+                                  'Fishery ind.',
+                                  'Filtering',
+                                  'Method',	
+                                  'Endorsed')
+
+   # Index of abundance summary, create table   
+     Index_summary.table = xtable(Index_summary, 
+                                  caption = c('Summary of the biomass/abundance
+                                              time series used in the stock
+                                              assessment.'),
+                                 label = 'tab:Index_summary',
+                                 digits = 0)    
+    # Add alignment  
+      align(Index_summary.table) = c('l',
+                                    '>{\\centering}p{.3in}',
+                                     '>{\\centering}p{1in}',
+                                     '>{\\centering}p{2.5in}',
+                                     '>{\\centering}p{.3in}', 
+                                     '>{\\centering}p{2in}',
+                                     '>{\\centering}p{1.2in}',
+                                     '>{\\centering}p{.5in}')  
+    
+    # Print index summary table
+      print(Index_summary.table, 
+            include.rownames=FALSE, 
+            caption.placement='top',
+            sanitize.text.function = function(x){x})
+```
+\end{landscape}
+<!-- ---------------------------------------------------------------------- -->
+
+\newpage
+
+
+<!-- ***********Likelihood profile table*********************************** -->
+
+```{r, results = 'asis'}
+   Like_profile = read.csv('./txt_files/Profiles.csv')
+   
+# likelihood profiels, create table   
+     Like_profile.table = xtable(Like_profile, 
+                                  caption = c('Summary of the biomass/abundance
+                                              time series used in the stock
+                                              assessment.'),
+                                 label = 'tab:like_profiles')  
+     
+     align = c('cc|ccccc|ccccc|ccccc')
+
+
+
+# Print likelihood profile table
+      print(Like_profile.table, 
+            include.rownames=FALSE, 
+            caption.placement='top',
+            sanitize.text.function = function(x){x})
+
+
+
+
+```
+
+
+
+<!-- ---------------------------------------------------------------------- -->
+
+\FloatBarrier
+
+\newpage
+
+
+
+
+
+
+
 
 <!-- ***********MODEL 1 HARVEST PROJECTIONS TABLE************************** --> 
 \newpage

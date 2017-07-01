@@ -1,0 +1,274 @@
+<!-- ********************************************************************** -->
+<!-- ***********FIGURES: Model results ********************************** --> 
+<!-- ********************************************************************** -->
+
+
+
+
+
+
+
+
+
+
+\FloatBarrier
+
+<!-- ********************************************************************** -->
+<!-- ***********History of modelleing approaches FIGURES******************* --> 
+<!-- ********************************************************************** -->
+
+![Time series of harvest rates by fleet from the 2005 model where the harvest rate for the recreational fleet hit the boundary of 0.9. \label{fig:bridge_harvestrate}](Figures/bridge_harvestrate.png)
+
+![Time series of observed and expected landings by fleet from teh 2005 model.  The model was not able to remove all of the recreational catches startin around 1970. \label{fig:bridge_catch}](Figures/bridge_catch.png)
+
+
+![Comparison of spawning output, total biomass, and recuits from the 2005 model (solid red lines) using SS2, the 2005 model converted to SS3.24z (blue lines), and the base model from this assessment (purple lines). Note: The 2005 assessment was found to have an error, and therefore the time series for the model to SS3.24 will not match perfectly. \label{fig:bridge_timeseries}](Figures/bridge_timeseries.png)
+
+
+
+
+<!-- ********************************************************************** -->
+<!-- ****************STAR PANEL Recommendations FIGURES******************** --> 
+<!-- ********************************************************************** -->
+
+
+
+
+
+<!-- ********************************************************************** -->
+<!-- ****************Model description section FIGURES********************* --> 
+<!-- ********************************************************************** -->
+
+
+
+
+\FloatBarrier
+
+<!-- ====================================================================== -->
+<!-- *********************BASE MODEL FIGURES******************************* -->
+<!-- ====================================================================== -->
+
+<!-- ***********MODEL 1 BASE MODEL FIGURES********************************* --> 
+ 
+![Length comp data, aggregated across time by fleet. Labels 'retained' and 'discard' indicate discarded or retained sampled for each fleet. Panels without this designation represent the whole catch. \label{fig:comp_lendat_aggregated_across_time}](r4ss/plots_mod1/comp_lendat__aggregated_across_time.png)
+
+
+
+
+\FloatBarrier
+
+
+
+![Cross-section of broken and burned California scorpionfish otolith showing.  The green dots indicate the number of increments (photo courtesy Lance Sullivan, NWFSC). \label{fig:otolith1}](Figures/otolith1.pdf)
+
+
+![California scorpionfish otolith (photo courtesy Lance Sullivan, NWFSC). \label{fig:otolith2}](Figures/otolith2.pdf)
+
+![Length at age by sex for California scorpionfish collected from the NWFSC trawl survey. \label{fig:Agelength}](Figures/Age_length_bySex.png)
+
+
+![Fitted (external to SS) von Bertalanffy growth by sex for California scorpionfish collected from the NWFSC trawl survey. \label{fig:vonB_compare}](Figures/vonB_compare.png)
+
+
+\FloatBarrier
+
+![Selectivity at length for all of the fleets in the base model. \label{fig:sel01_multiple_fleets_length1}](r4ss/plots_mod1/sel01_multiple_fleets_length1.png)
+
+
+![Surface plot of Female time-varying selectivity for the commercial hook-and-line fleet, with time blocks from 1916-1998 and 1999-2016. \label{fig:sel03_len_timevary_surf_flt1sex1}](r4ss/plots_mod1/sel03_len_timevary_surf_flt1sex1.png)
+
+
+
+
+![Surface plot of Female time-varying selectivity for the recreational private boat fleet, with time blocks from 1916-2000, 2001-2005, and 2006-2016. \label{fig:sel03_len_timevary_surf_flt4sex1}](r4ss/plots_mod1/sel03_len_timevary_surf_flt4sex1.png)
+
+
+
+![Surface plot of Female time-varying selectivity for the recreational partry/charter retained-only catch fleet, with time blocks from 1916-2000, 2001-2005, and 2006-2016. \label{fig:sel03_len_timevary_surf_flt5sex1}](r4ss/plots_mod1/sel03_len_timevary_surf_flt5sex1.png)
+
+\FloatBarrier
+
+
+![Estimated time-series of recruitment deviations for `r spp` with 95% intervals. \label{fig:recdevs2_withbars}](r4ss/plots_mod1/recdevs2_withbars.png)
+
+
+
+![Estimated time-series of recruitment for `r spp`. \label{fig:ts11_Age-0_recruits_(1000s)_with_95_asymptotic_intervals}](r4ss/plots_mod1/ts11_Age-0_recruits_(1000s)_with_95_asymptotic_intervals.png)
+
+
+![Estimated recruitment (red circles) and the assumed stock-recruit relationship (black line) for `r spp`.  The green line shows the effect of the bias correction for the lognormal distribution. \label{fig:SR_curve2}](r4ss/plots_mod1/SR_curve2.png)
+
+
+<!-- ***********Fits to the data********************************* --> 
+
+![Fit to log index data on log scale for the recreational CPFV logbook retained catches. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:index5_logcpuefit_RecPR}](r4ss/plots_mod1/index5_logcpuefit_RecPR.png)
+
+
+![Fit to log index data on log scale for the recreational CPFV logbook retained catches. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:index5_logcpuefit_RecPC}](r4ss/plots_mod1/index5_logcpuefit_RecPC.png)
+
+![Fit to log index data on log scale for the recreational CPFV onboard oserver discarded catch index. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:Fleet6_index5_logcpuefit_RecDD}](r4ss/plots_mod1/index5_logcpuefit_RecDD.png)
+
+
+![Fit to log index data on log scale for the recreational CPFV onboard oserver retained catch index. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:Fleet12_index5_logcpuefit_RecPCOBR}](r4ss/plots_mod1/index5_logcpuefit_RecPCOBR.png)
+
+
+![Fit to log index data on log scale for the recreational CPFV onboard oserver discarded catch index. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:index5_logcpuefit_Sanitation}](r4ss/plots_mod1/index5_logcpuefit_Sanitation.png)
+
+![Fit to log index data on log scale for the NWFSC trawl survey from the VAST analysis from 2003-2016. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:index5_logcpuefit_NWFSCtrawl}](r4ss/plots_mod1/index5_logcpuefit_NWFSCtrawl.png)
+
+![Fit to log index data on log scale for the recreational CSUN/VRG gillnet survey. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:index5_logcpuefit_GillnetSurvey}](r4ss/plots_mod1/index5_logcpuefit_GillnetSurvey.png)
+
+
+![Fit to log index data on log scale for the recreational Southern California Bight trawl survey. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:index5_logcpuefit_SCBSurvey}](r4ss/plots_mod1/index5_logcpuefit_SCBSurvey.png)
+
+
+
+
+
+![Length compositions aggregated across time by fleet. Labels 'retained' and 'discard' indicate retained or discarded samples for each fleet. Panels without this designation represent the whole catch. \label{fig:comp_lenfit__aggregated_across_time}](r4ss/plots_mod1/comp_lenfit__aggregated_across_time.png)
+
+\FloatBarrier
+
+
+```{r, results='asis'}
+#     # Plot all of the timeseries plots
+     for(i in 4:dim(AALComp_mod1)[1]) {
+#         
+#      # find matches to multi-page plots
+      page_test = sapply(multi_page_fig, grepl, AALComp_mod1$label[i])
+#      
+#      # if the plot is page2+ of a series, add the extra caption
+      if(TRUE %in% page_test) {
+        cat('\n![](', AALComp_mod1[i, path_col], ')', sep='')
+#       
+        cat('\\begin{center} \n
+              Figure continued from previous page \n
+             \\end{center}',sep='')
+#        
+      } else {
+#      
+    cat('\n![', AALComp_mod1[i,caption_col], ' \\label{fig:mod1_', i, '_', AALComp_mod1[i, label_col], '}](', AALComp_mod1[i, path_col], ')\n', sep='')
+ } }
+```
+
+
+
+![Francis data weighting method TA1.8 for conditional age data from the NWFSC trawl survey.  Suggested sample size adjustment(with 95% interval) for conditional age-at-length data from NWFSC trawl is 0.9373 (0.4951-3.7346). For more info, see Francis et al. (2011). \label{fig:comp_condAALdat_data_weighting_TA1.8_condAgeNWFSCTrawl}](r4ss/plots_mod1/comp_condAALdat_data_weighting_TA1.8_condAgeNWFSCTrawl.png)
+ 
+ 
+![Francis data weighting method TA1.8 for length composition data from the Sanitation district surveys.  Suggested sample size adjustment(with 95% interval) for length data from Sanitation surveys is 0.8665 (0.6162-1.3836). For more info, see Francis et al. (2011). \label{fig:comp_lendat_data_weighting_TA1.8_Sanitation}](r4ss/plots_mod1/comp_lendat_data_weighting_TA1.8_Sanitation.png)
+
+
+![Francis data weighting method TA1.8 for length composition data from the Impingement surveys.  Suggested sample size adjustment(with 95% interval) for the length data from the Impingement surveys is 0.9356 (0.7114-1.5026). For more info, see Francis et al. (2011). \label{fig:comp_lendat_data_weighting_TA1.8_Impingement}](r4ss/plots_mod1/comp_lendat_data_weighting_TA1.8_Impingement.png)
+
+
+
+![Francis data weighting method TA1.8 for length composition data from the recreational private boat fleet.  Suggested sample size adjustment(with 95% interval) for the length data from the recreational private boat fleet is 1.0655 (0.7368-1.7486). For more info, see Francis et al. (2011). \label{fig:comp_lendat_data_weighting_TA1.8_RecPR}](r4ss/plots_mod1/comp_lendat_data_weighting_TA1.8_RecPR.png)
+
+
+
+![Francis data weighting method TA1.8 for conditional age data from the recreational party/charter retained-catch fleet.  Suggested sample size adjustment (with 95% interval) for the length data from the recreational party/charter retained-catch fleet is 0.832 (0.5086-1.8822). For more info, see Francis et al. (2011). \label{fig:comp_lendat_data_weighting_TA1.8_RecPC}](r4ss/plots_mod1/comp_lendat_data_weighting_TA1.8_RecPC.png)
+
+
+
+![Francis data weighting method TA1.8 for conditional age data from the recreational discard-catch fleet.  Suggested sample size adjustment (with 95% interval) for the length data from the recreational discard-catch fleet is 0.9793 (0.7467-1.8748). For more info, see Francis et al. (2011). \label{fig:comp_lendat_data_weighting_TA1.8_RecDD}](r4ss/plots_mod1/comp_lendat_data_weighting_TA1.8_RecDD.png)
+
+\FloatBarrier
+
+
+
+<!-- ********************************************************************** -->
+<!-- ****************Uncertainty and Sensitivity FIGURES******************* -->
+<!-- ********************************************************************** -->
+
+<!-- ***********MODEL 1 Uncertainty and Sensitivity FIGURES**************** --> 
+
+\FloatBarrier
+
+
+
+
+
+<!-- ********************************************************************** -->
+<!-- *****************Retrospective analysis FIGURES*********************** -->
+<!-- ********************************************************************** -->
+
+<!-- ***********MODEL 1 Retrospective analysis FIGURE********************** --> 
+
+
+![Retrospective pattern for spawning output. \label{fig:retro_spawnb}](Figures/retro_spawnb.png)
+
+
+\FloatBarrier
+
+
+![Retrospective pattern for estimated recruitment deviations. \label{fig:retro_recdev}](Figures/retro_recdev.png)
+
+fig:retro_recdev
+
+
+
+
+
+
+
+
+<!-- ********************************************************************** -->
+<!-- ******************Likelihood profile FIGURES************************** --> 
+<!-- ********************************************************************** -->
+
+<!-- ***********R0 Likelihood profile FIGURES****************************** --> 
+
+
+  
+![Likelihood profile across R\textsubscript{0} values by fleet. \label{fig:profile_R0_piner}](Figures/profile_R0_piner.png)
+
+
+![Likelihood profile across R\textsubscript{0} values for each data type. \label{fig:profile_R0_like}](Figures/profile_R0_like.png)
+
+![Trajectories of depletion across values of R\textsubscript{0}. \label{fig:profile_R0_depl}](Figures/profile_R0_depl.png)
+
+
+\FloatBarrier
+<!-- ***********h Likelihood profile FIGURES******************************* -->
+
+![Likelihood profile across steepness values by fleet. \label{fig:profile_h_piner}](Figures/profile_h_piner.png)
+
+
+![Likelihood profile across steepness values for each data type. \label{fig:profile_h_like}](Figures/profile_h_like.png)
+
+![Trajectories of depletion across values of steepness. \label{fig:profile_h_depl}](Figures/profile_h_depl.png)
+
+
+<!-- ***********M Likelihood profile FIGURES******************************* -->
+
+![Likelihood profile across female natural mortality values for each data type. \label{fig:profile_m_like}](Figures/profile_m_like.png)
+
+![Likelihood profile across female natural mortality values by fleet. \label{fig:profile_m_piner}](Figures/profile_m_piner.png)
+
+![Trajectories of depletion across values of female natural mortality. \label{fig:profile_m_depl}](Figures/profile_m_depl.png)
+
+
+
+\FloatBarrier
+<!-- ********************************************************************** -->
+<!-- *********************REFERENCE POINTS FIGURES************************* --> 
+<!-- ********************************************************************** -->
+
+<!-- ***********MODEL 1 REFERENCE POINTS FIGURES*************************** --> 
+
+
+![Estimated spawning biomass (mt) with approximate 95% asymptotic intervals. \label{fig:ts7_Spawning_biomass_(mt)_with_95_asymptotic_intervals_intervals}](r4ss/plots_mod1/ts7_Spawning_biomass_(mt)_with_95_asymptotic_intervals_intervals.png)
+
+
+![Estimated spawning depletion with approximate 95% asymptotic intervals. \label{fig:ts9_Spawning_depletion_with_95_asymptotic_intervals_intervals}](r4ss/plots_mod1/ts9_Spawning_depletion_with_95_asymptotic_intervals_intervals.png)
+
+
+
+![Equilibrium yield curve for the base case model. Values are based on the `r Dat_end_mod1` fishery selectivity and with steepness fixed at `r print(mod1$parameters[mod1$parameters$Label == "SR_BH_steep","Value"],2)`. \label{fig:yield1_yield_curve}](r4ss/plots_mod1/yield1_yield_curve.png](r4ss/plots_mod1/yield1_yield_curve.png)
+
+
+\FloatBarrier
+<!-- ********************************************************************** --> 
+<!-- *************************FORECAST FIGURES***************************** --> 
+<!-- ********************************************************************** --> 

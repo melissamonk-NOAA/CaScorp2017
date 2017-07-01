@@ -75,17 +75,17 @@ The first formal stock assessment for California scorpionfish was conducted in 2
 [@Maunder2005].  The 2005 model conducted in SS2 version 1.18 was first transitioned 
 to SS3.24z as a bridge model, before moving forward to SS3.30.  During the model transition 
 to SS3.24z and error was found in the 2005 model.  The harvest rate was estimated at the 
-upper limit of 0.9 and could not remove all of the input catch \ref{fig:bridge_harvestrate}.  
+upper limit of 0.9 and could not remove all of the input catch (Figure \ref{fig:bridge_harvestrate}).  
 The older SS2 output did not include separate columns for the observed (input) catch and 
 dead removals by the model (output), which would have prevented the 2005 STAT team from 
-discovering that the two time series differed \ref{fig:bridge_catch}.  The recreational 
+discovering that the two time series differed (Figure \ref{fig:bridge_catch}).  The recreational 
 fishery selects the largest fish and removes the highest biomass of California 
 scorpionfish.  When the harvest rate hit the upper bounds as in the 1970s, there were 
 not enough fish estimated in the population to support the large removals, i.e., stock 
 estimated at 500 mt and the recreational catch was 100 mt. The stock was not productive 
 enough to sustain the observed catch. A comparison of time series from the 2005 model, 
 the SS3.24z transition model, and the base model from this assessment are in Figure 
-\ref{fig:bridge_timeseries}
+\ref{fig:bridge_timeseries}.
 
 Below, we describe the most important changes made since the last full assessment in 2005 
 and explain rationale for each change.  Some of these items are changes due to structure 
@@ -129,7 +129,7 @@ fish aged from the NWFSC trawl survey.
  CALCOM because landings in CALCOM included catches from Mexican waters. 
 
 The recreational catches differed from the catch history used in the previous assessment. 
-In 2010 a catch reconstruction was completed for California (Ralston et al 2010). Methods 
+In 2010 a catch reconstruction was completed for California [@Ralston2010]. Methods 
 provided were applied in reconstructing the catch of California scorpionfish for this assessment.  
 Both assessments utilized similar data sources including CPFV logbooks and MRFSS data 
 providing catch estimates, with the addition of data from the CRFS program for 2004-2016. 
@@ -481,8 +481,8 @@ log-likelihood did not change nor the parameter estimates.
 \end{description}
 
 <!-- *********************MODEL 1 RESULTS********************************** -->
-##Model 1 
-###Model 1 Base Case Results
+##Base Case Model Results 
+ 
 
 The base model parameter estimates and their approximate asymptotic standard errors 
 are shown in Table \ref{tab:model_params} and the likelihood components are in 
@@ -539,8 +539,8 @@ variability) for all surveys was estimated within the model.  The model estimate
 small added variances for the recreational private mode of 
 `r round(mod1$parameters[mod1$parameters$Label == "Q_extraSD_RecPR(4)", 3], 3)` and 
 the recreational party/charter discard fleet of 
-`r round(mod1$parameters[mod1$parameters$Label == "Q_extraSD_RecDD(6)", 3], 3)`.  
-The estimated added variance was highest for the recreational party/charter retained-catch 
+`r round(mod1$parameters[mod1$parameters$Label == "Q_extraSD_RecDD(6)", 3], 3)`. The 
+estimated added variance was highest for the recreational party/charter retained-catch 
 fleet (`r round(mod1$parameters[mod1$parameters$Label == "Q_extraSD_RecPC(5)", 3], 3)`), 
 the sanitation district survey 
 (`r round(mod1$parameters[mod1$parameters$Label == "Q_extraSD_Sanitation(7)", 3], 3)`), 
@@ -569,7 +569,7 @@ composition, and conditional age-at-length observations from the NWFSC trawl sur
 are all discussed below.  
 
 The fits to the four fishery CPUE and four survey indices are shown in Figures 
-(\ref{fig:index5_logcpuefit_RecPR - \ref{fig:index5_logcpuefit_SCBSurvey}). Extra 
+\ref{fig:index5_logcpuefit_RecPR} - \ref{fig:index5_logcpuefit_SCBSurvey}. Extra 
 standard error was estimated for all eight of the indices.  The indices for the 
 recreational private mode and dead-discard fleets were fit relatively well by the 
 model.  The recreational party/charter retained-catch index was fit moderately well 
@@ -590,7 +590,7 @@ showed peaks in 1994 and 2004, which were not fit by the model.
 Fits to the length data are shown based on the proportions of lengths observed by 
 year and the Pearson residuals-at-length for all fleets.  Detailed fits to the 
 length data by year and fleet are provided in Appendix 
-\ref{appendix-a.-detailed-fit-to-length-composition-data}.  Aggregate fits by fleet 
+\ref{appendix-a.-detailed-fits-to-length-composition-data}.  Aggregate fits by fleet 
 are shown in Figure \ref{fig:comp_lenfit__aggregated_across_time}. Overall, the 
 length composition data for the commercial hook-and-line, commercial trawl, sanitation 
 survey, recreational private, and party/charter fleets all fit well.  The fits to the
@@ -612,8 +612,8 @@ The NWFSC trawl survey lengths were well estimated for males and females in aggr
 by the model. California scorpionfish are not one of the more common species observed 
 in this survey, with sample size all under 10 hauls per year.
 
-The observed and expected conditional age-at-length fits are shown in Figures \ref{fig:comp_condAALfit_Andre_plotsflt8mkt0_page1} - 
-\ref{fig:comp_condAALfit_Andre_plotsflt8mkt0_page4} for the  NWFSC trawl survey observations. 
+The observed and expected conditional age-at-length fits are shown in Figure 
+\ref{fig:mod1_4_comp_condAALfit_Andre_plotsflt8mkt0_page1} for the  NWFSC trawl survey observations. 
 The fits generally match the observations for fish smaller than 30 cm. Some outliers 
 are apparent with large residuals. 
 
@@ -623,12 +623,13 @@ The mean ages from the fishery appear to have declined in recent years which cou
 due to incoming cohorts (Figure \ref{fig:comp_condAALdat_data_weighting_TA1.8_condAgeNWFSCTrawl}).  
 Smaller fish were also observed in the sanitation and impingement surveys in the 
 (Figures \ref{fig:comp_lendat_data_weighting_TA1.8_Sanitation} and \ref{fig:comp_lendat_data_weighting_TA1.8_Impingement}).  The mean length in the 
-recreational private and party/charter fleets increased over time (FIgures \ref{fig:comp_lendat_data_weighting_TA1.8_RecPR} and 
-\ref{fig:comp_lendat_data_weighting_TA1.8_RecPC}). 
+recreational private and party/charter fleets increased over time (Figures \ref{fig:comp_lendat_data_weighting_TA1.8_RecPR} and 
+\ref{fig:comp_lendat_data_weighting_TA1.8_RecPC}). The length composition of the recreational fleet discards was smaller in teh 1980's 
+and hovers around the 10-in minimum size limit in teh 2000's (Figure \ref{fig:comp_lendat_data_weighting_TA1.8_RecDD}).
 
 
 
-### Model 1 Uncertainty and Sensitivity Analyses
+###Uncertainty and Sensitivity Analyses
 A number of sensitivity analyses were conducted, including:
 
 \begin{enumerate}
@@ -655,7 +656,7 @@ Table \ref{tab:Sensitivity_model1}
 
 
 
-### Model 1 Retrospective Analysis
+###Retrospective Analysis
 A 4-year retrospective analysis was conducted by running the model using data 
 only through 2012, 2013, 2014, and 2015, progressively.  The initial population 
 size and estimation of trends in spawning biomass in the retrospective runs were 
@@ -665,7 +666,7 @@ The recruitment deviations in the more recent years shrink towards zero the more
 are removed from the model (Figure \ref{fig:retro_recdev}).
 
 
-### Model 1 Likelihood Profiles
+###Likelihood Profiles
 Likelihood profiles were conducted for $R_0$, steepness, and over natural mortality 
 values separately. These likelihood profiles were conducted by fixing the parameter 
 at specific values and estimated the remaining parameters based on the fixed parameter 
@@ -673,7 +674,7 @@ value.
 
 
 In regards to values of $R_0$, the negative log-likelihood was minimized at approximately 
-log($R_0$) of 8.0 (Table \ref{tab:profile_R0}).  The recreational private mode fishery
+log($R_0$) of 8.0 (Table \ref{tab:like_profiles}).  The recreational private mode fishery
 minimized at a smaller value of $R_0$ whereas the gillnet survey, recreational discard 
 and commercial gillnet fisheries indicated a higher value of $R_0$ (Figure 
 \ref{fig:profile_R0_piner}). The age and recruitment data indicated a higher value of 
@@ -681,9 +682,10 @@ $R_0$ and were minimized at the highest value in the profile (Figure \ref{fig:pr
 Over the range of values of $R_0$, depletion ranged from 0.53-0.70 (Figure \ref{fig:profile_R0_depl}).
 
 For steepness, the negative log-likelihood was essentially flat between values of 
-0.57-0.87 (Figure \ref{fig:profile_h_like} and Table \ref{tab:profile_h_like}).  
+0.57-0.87 (Figure \ref{fig:profile_h_like} and Table \ref{tab:like_profiles}).  
 Likelihood components by data source show that the fishery age data support a low 
-steepness value, but the other data sources higher value for steepness.  The 
+steepness value, but the other data sources higher value for steepness (Figure 
+\ref{fig:profile_h_piner}).  The 
 impingement, sanitation, and recreational private mode fleets support higher 
 values of steepness while the other surveys are relatively uninformative.  The 
 relative depletion for `r spp` changes very little (0.51-0.60) across different
@@ -693,15 +695,15 @@ The negative log-likelihood was minimized at a natural mortality value of 0.38,
 the profile is relatively flat for the priors, index data, and recruitment (Figure
 \ref{fig:profile_m_like}).  The age data likelihood contribution was minimized at
 natural mortality values ranging from 0.035-0.40, and the length data contribution
-was minimized as the largest value of $M$ run, 0.40 (Table \ref{tab:profile_m_like}).
+was minimized as the largest value of $M$ run, 0.40 (Table \ref{tab:like_profiles}).
 The impingement survey was the only fleet for which the likelihood profile over 
-$M$ was not relatively flat (Figure \ref{profile_m_piner})The relative depletion for
+$M$ was not relatively flat (Figure \ref{fig:profile_m_piner})The relative depletion for
 `r spp`  ranged from 0.48-0.80 across alternative values of natural mortality 
 (Figure \ref{fig:profile_m_depl}).
 
 
 
-###Model 1 Reference Points
+###Reference Points
 Reference points were calculated using the estimated selectivities and catch distribution 
 among fleets in the most recent year of the model, (`r LastYR - 1`). Sustainable total 
 yield (landings plus discards) were `r Ref_pts_mod1[15,2]` mt when using an $SPR_{50\%}$ 
@@ -712,22 +714,18 @@ spawning output ($SB_{40\%}$) was `r Ref_pts_mod1[7,2]` millions of eggs.
 The predicted spawning output from the base model shows an initial decline starting in 
 1970, with two year of low spawning biomass in 1976 and 1977.  From the late 1970s 
 to the mid-2000’s the population follows a cyclical pattern (driven by recruitment pulses) 
-and then declines until 
-2015.  The last two years of the model indicate an increase in spawning output. 
-(Figure \ref{fig:xxxx}). Since 2015, the spawning output has been increased due to 
+and then declines until 2015.  The last two years of the model indicate an increase in spawning output. 
+(Figure \ref{fig:ts7_Spawning_biomass_(mt)_with_95_asymptotic_intervals_intervals}). Since 2015, 
+the spawning output has been increased due to 
 lower catches and a high recruitment pulse in 2015. The `r LastYR` spawning output 
 relative to unfished equilibrium spawning output is above the target of 40% of unfished 
 spawning output (Figure \ref{fig:ts9_Spawning_depletion_with_95_asymptotic_intervals_intervals}). 
 The fishing intensity, $(1-SPR)/(1-SPR_{50\%})$, has been well below the management target 
 for the entire time series of the model. 
 
-Table \ref{tab:Ref_pts} shows the full suite of estimated reference points for the base 
+Table \ref{tab:Ref_pts_mod1} shows the full suite of estimated reference points for the base 
 model and Figure \ref{fig:yield1_yield_curve} shows the equilibrium curve based on a 
-steepness value fixed at `r print(mod1$parameters[mod1$parameters$Label == "SR_BH_steep","Value"],2)`.
+steepness value fixed at `r print(mod1$parameters[mod1$parameters$LABEL == "SR_BH_steep","Value"],2)`.
 
-
-Equilibrium yield at the proxy $F_{MSY}$ harvest rate corresponding to 
-shows the full suite of estimated reference points for the northern area model 
-and Figure \ref{fig:Yield_all} shows the equilibrium yield curve.
 
 

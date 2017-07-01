@@ -254,7 +254,7 @@ factor used for the index of abundance (Table \ref{tab:Fleet4_RecPR_dockside_aic
 The Q-Q goodness of fit plot for the lognormal portion of the model shows
 a moderate fit to the data (Figure \ref{fig:Fleet4_RecPR_dockside_QQ}).
 final index indicates a decrease in relative abundance from 2006 to 2010, 
-at which point the index is relatively flat (Figure \ref{fig:index5_logcpuefit_RecPR}). 
+at which point the index is relatively flat (Figure \ref{fig:index4_logcpuedata_RecPR}). 
 
 Biological samples from trips retaining California scorpionfish were collected during
 the dockside surveys.  Lengths of California scorpionfish from 1980-2016 for the private
@@ -314,7 +314,7 @@ with region by 39,180 AIC.  The final model includes *year*, *month*, and *block
 with a log link and effort as an offset (Table \ref{tab:Fleet5_RecPC_CPFVlogbook_aic}).  
 The standardized index shows a cyclic pattern, with period of higher CPUE 
 (late 1980’s to early 1990’s and late 1990s) and has shown a general downward 
-trend since 2008 (Figure \ref{fig:index5_logcpuefit_RecPC}).  An interesting note 
+trend since 2008 (Figure \ref{fig:index4_logcpuedata_RecPC}).  An interesting note 
 is the similarity in standardized CPUE between the CPFV logbook index and the CPFV 
 dockside index (not used in the stock assessment model) from 1992-1997 (for a 
 Stephens-MacCall threshold of 0.1) (Figure \ref{fig:Fleet5_RecPC_dockside_index_compare}).
@@ -573,7 +573,7 @@ variables. A lognormal model for the positives was selected by AIC over a gamma 
 all covariates (Table \ref{tab:Fleet6_RecDD_onboard_aic}).  The Q-Q plot for the positive catch lognormal model looks reasonable (Figure \ref{fig:Fleet6_RecDD_QQ}).  The final 
 index shows a lower CPUE of the discards in 2001 and an increase from 2002-2005 when the California scorpionfish recreational fishery was
 restricted by depth or closed (Table \ref{tab:Fleet6_RecDD_onboard_index} and Figure
-\ref{fig:Fleet6_index5_logcpuefit_RecDD}).  The relative CPUE of the discards decreases from 
+\ref{fig:Fleet6_index4_logcpuedata_RecDD}).  The relative CPUE of the discards decreases from 
 2006 to 2015.
 
 _Discarded Catch Length Composition_
@@ -607,7 +607,7 @@ lognormal and binomial models retained all covariates (Table \ref{tab:Fleet12_Re
 The Q-Q plot for the positive catch lognormal model looks reasonable 
 (Figure \ref{fig:Fleet12_RecPCOBR_QQ}).  The final index shows a lower CPUE 
 of the retained catch from 2002 and 2003 (Table \ref{tab:Fleet12_RecPC_onboard_index} 
-and Figure \ref{fig:Fleet12_index5_logcpuefit_RecPCOBR}).  The relative CPUE 
+and Figure \ref{fig:Fleet12_index4_logcpuedata_RecPCOBR}).  The relative CPUE 
 of the retained catch shows a decline from 2007-2015, and an increase in 2016.
 
 
@@ -693,18 +693,20 @@ relative abundance.  This is in contract to the 2005 assessment that standardize
 each of the sanitation district indices independently and combined them using an 
 inverse variance weighting approach [@Maunder2005].  One reason for this was that the 2005 
 base model going into the STAR panel was five sub-models for the southern California Bight. 
-Taking into consideration that the 2017 base model is a one-area model, all of the sanitation districts follow the same sampling protocols and the sampling 
+Taking into consideration that the 2017 base model is a one-area model, all of the sanitation
+districts follow the same sampling protocols and the sampling 
 design is a fixed station approach, the decision was made to develop a single index.  The 
 index was standardized using a delta-GLM approach.
 
-The data were filtered for each sanitation district independently.  The filters applied are described in the sections above and summarized in Table \ref{tab:Fleet7_Sanitation_filter}. 
+The data were filtered for each sanitation district independently.  The filters applied are 
+described in the sections above and summarized in Table \ref{tab:Fleet7_Sanitation_filter}. 
 The covariates considered for the lognormal and binomial models were *year* (47 levels), 
 *quarter* (4 levels), and *station* (52 levels).  A lognormal model for the positives was 
 select over a gamma model by a delta AIC of 619.  AIC model select was used for both the 
 lognormal and binomial models and all three covariates were selected for both (Table 
-\ref{Table:tab:Fleet7_Sanitation_aic}).   The standardized index shows a large spike in relative 
+\ref{tab:Fleet7_Sanitation_aic}).   The standardized index shows a large spike in relative 
 CPUE in 1981, bounces around within a range of 0.1 to 0.25 from 1989 to 2009, and then declines 
-until 2013 (Figure \ref{fig:index5_logcpuefit_Sanitation}).  The last three years of the index show an increase in relative abundance.  The final standardized index and log-standard error can be 
+until 2013 (Figure \ref{fig:index4_logcpuedata_Sanitation}).  The last three years of the index show an increase in relative abundance.  The final standardized index and log-standard error can be 
 found in Table \ref{tab:Fleet7_Sanitation_index}.  We did explore standardizing the indices 
 independently.  However, this results in a loss of data, as some sanitation district had 
 low sample sizes in some years.  The general trend in relative CPUE is similar across sanitation 
@@ -766,7 +768,7 @@ time, females are larger than males (Table \ref{tab:Fleet8_NWFSCTrawl_meanAatL})
 Total biomass estimates from the survey were analyzed using the VAST program 
 [@Thorson2017].  The Q-Q goodness of fit plot and time series of 
 total biomass estimates are shown in Figures \ref{fig:Fleet8_NWFSCtrawl_QQ} and 
-\ref{fig:index5_logcpuefit_NWFSCtrawl}, respectively.  The Q-Q plots shows generally good 
+\ref{fig:index4_logcpuedata_NWFSCtrawl}, respectively.  The Q-Q plots shows generally good 
 fits and the time series of biomass estimates indicates no significant trend with 
 relatively large uncertainties from the survey.  The final survey index and log 
 standard error used in the assessment model are in Table \ref{tab:Fleet8_NWFSCTrawl_index}.
@@ -796,7 +798,7 @@ delta AIC of 108.29.  Covariates selected via AIC for both the lognormal binomia
 models included *year*, *site*, and *perp/para* (Table \ref{tab:Fleet9_GillnetSurvey_aic},
 Figure \ref{fig:Fleet9_GillnetSurvey_QQ}).  The standardized index decreases from 
 1995-1998 and remains flat until through the early 2000's with three high years at the 
-end of the time series (Figure \ref{fig:index5_logcpuefit_GillnetSurvey}).  
+end of the time series (Figure \ref{fig:index4_logcpuedata_GillnetSurvey}).  
 
 The survey measured (standard length) every California scorpionfish encountered, totalling 
 1,130 fish. The majority of fish encountered were between 14 and 33 cm total length, with no 
@@ -842,7 +844,7 @@ for both the lognormal and binomial models selected all covariates for the final
 of the lognormal portion of the model is in Figures \ref{fig:Fleet11_SCBsurvey_QQ}.
 
 The standardized index of abundance indicates higher relative CPUE in 1994 and 2003, 
-with the other three years lower (Figure \ref{fig:index5_logcpuefit_SCBSurvey}).  The 
+with the other three years lower (Figure \ref{fig:index4_logcpuedata_SCBSurvey}).  The 
 fact that the survey is conducted every five years (4 years between the pilot and 
 the 1998 survey), may preclude drawing any firm conclusions on trends in abundance 
 from this data.  
