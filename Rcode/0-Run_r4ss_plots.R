@@ -82,7 +82,7 @@ dir.create(file.path(output.dir,'plots_mod1'))
 do.call(file.remove, list(list.files(file.path(output.dir, 'plots_mod1'),    full.names=TRUE)))
 
 # Run r4ss for each model - **CHANGE DIRECTORY if necessary**
-               mod1 = SS_output(dir = file.path(input.dir,'Base_model1'), forecast=F, covar=T, ncol=1000)
+               mod1 = SS_output(dir = file.path(input.dir,'Base_model1'), forecast=T, covar=T, ncol=1000)
 
 # Save the workspace an image
 save.image('./r4ss/SS_output.RData')
@@ -120,7 +120,7 @@ source('./Rcode/Parse_r4ss_plotInfoTable.R')
 # -----------------------------------------------------------------------------
 
 # Create the SS files for the appendices
-source('./Rcode/SS_files_linebreaks.R')
+#source('./Rcode/SS_files_linebreaks.R')
 
 # =============================================================================
 # END SECTION 1================================================================

@@ -629,9 +629,9 @@ mngmnt.table = xtable(mngmnt,
                       caption=c('Recent trend in total catch (mt) relative to the 
                               harvest specifications. Estimated total catch reflect 
                               the commercial and recreational removals.  The OFL 
-                                was terms the ABC prior to implementation of the FMP 
+                                was termed the ABC prior to implementation of the FMP 
                                 Amendment 23 in 2011.  Likewise, the ACL was termed 
-                                OY prior to 2011 and the ABC was redefined o reflect 
+                                OY prior to 2011 and the ABC was redefined to reflect 
                                 the uncertainty in estimating the OFL.'), 
                       label='tab:mnmgt_perform')  
 # Add alignment

@@ -20,7 +20,8 @@ behaviors of California scorpionfish.  Marine Applied Research and Exploration (
 observed California scorpionfish aggregations during the spawning season (June 2014) and 
 also in the late fall (November 2012) from video transects in southern California.  The 
 November spawning aggregation was observed at a small rocky feature near La Jolla and the 
-June aggregation  was at a sandy area adjacent to the Farnsworth MPAs.
+June aggregation  was at a sandy area adjacent to the Farnsworth MPAs (Andy Lauerman, MARE, 
+personal communication) .
  
 Males and females show different growth rates, with females growing to a larger size 
 than males, and the sexes exhibit different length-weight relationships [@Love1987]. 
@@ -31,7 +32,8 @@ California scorpionfish feed on a wide variety of mobile prey, including crabs, 
 (e.g., include northern anchovy, spotted cusk-eel), octopi, isopods and shrimp,
 [@Love1987; @Turner1969; @Taylor1963; @Quast1968].  The species is nocturnal, but
 have been observed feeding during the day.  Predation on scorpionfish is believed
-to be low, but one individual was found in the gut of a leopard shark (Love pers comm.).
+to be low, but one individual was found in the gut of a leopard shark (Milton Love,
+personal communication, UC Santa Barbara).
  
 
 
@@ -67,10 +69,8 @@ that could contribute ecosystem-related quantitative information for the assessm
 
 
 ##Fishery Information
-
-
-The hook-and-line fishery fishery off California developed in the late 19th century [@Love2002].  
-The rockfish trawl fishery was established in the early 1940s, when the United 
+The hook-and-line fishery fishery off California developed in the late 19th century 
+[@Love2002]. The rockfish trawl fishery was established in the early 1940s, when the United 
 States became involved in World War II and wartime shortage of red meat created 
 an increased demand for other sources of protein [@Alverson1964; @Harry1961].
 
@@ -78,34 +78,33 @@ California scorpionfish comprise a minor part of the Californian sport and comme
 fisheries [@Love1987].  Historically, California scorpionfish were taken commercially 
 by hook and line and, occasionally, by round haul nets [@Daugherty1949]. Scorpionfish 
 were commonly caught around Santa Catalina Island during the late 19th Century with 
-gillnets [@Jordan1887].  The 1937 Bureau of Commercial Fisheries report noted that 
+gill nets [@Jordan1887].  The 1937 Bureau of Commercial Fisheries report noted that 
 California scorpionfish had been a fairly important commercial species for a long time. 
 The species was targeted by a few fishermen during the summer months, and was also taken 
-as a bycatch in the rockfish fisheries.  By 1949, Bureau of Marine Fisheries reported  
-“[Scorpionfish] will even come to the surface to lights at night” and were also taken 
+as a bycatch in the rockfish fisheries. By 1949, Bureau of Marine Fisheries reported 
+"[Scorpionfish] will even come to the surface to lights at night" and were also taken 
 in round haul nets. At that time, scorpionfish were rarely targeted by fishermen except by a few specialists.
  
 More recently, commercial bottom longlines have been used to target spawning aggregations 
 offshore of Long Beach [@Love1987]. Since the early 1990s, trawl catch has been a substantial 
 component of the commercial catch. Commercial landings have fluctuated substantially 
-over time, which could, in part, be due to changes in targeting and El Niño events 
+over time, which could, in part, be due to changes in targeting and El $\text{Ni\~{n}o}$ events 
 [@Love1987]. A high proportion of the catch landed in California during the 1960s 
 and 1970s was taken from Mexican waters. In recent years, most of the catch has come 
 from around the Los Angeles region. In general, the majority of the commercial catch 
 has come from the Los Angeles region, except in the 1960s and 1970s when the majority
 of the catch came from the San Diego region and Mexican waters.
  
-California scorpionfish is not a major target in the recreational fishery.  They are most 
+California scorpionfish are most 
 often taken by boat fishermen, but fairly large numbers are caught from 
-piers, jettys, and rocky shorelines.  The Commercial Passenger Fishing Vessl (CPFV; also
+piers, jettys, and rocky shorelines in the recreational fishery.  The Commercial Passenger Fishing Vessl (CPFV; also
 referred to as the recreational party/charter or PC mode) effort has remained relatively 
-constant 
-over a long period (1959-1998) [@Dotson2003]. However, there appears to be a shift in 
+constant over a long period (1959-1998) [@Dotson2003]. However, there appears to be a shift in 
 effort towards less utilized species, such as California scorpionfish, over the past
 decade [@Dotson2003].  Especially as catch limits for rockfish have become more
 restricted commercial passenger fishing vessels (CPFV) operators target California 
 scorpionfish spawning aggregations during spring and summer [@Love1987], and also 
-target California scorpionfish in the winter when other fisheries are closed.  
+target California scorpionfish in the winter when other fisheries are closed. 
 California scorpionfish become a target species for day boats during the spawning
 months when spawning aggregations can be located.  There are a small number of 
 boats that specialize in targeting these aggregations.  The spawning aggregations
@@ -116,7 +115,7 @@ during the spawning season, e.g., all mature fish.
 Aggregate mortality has been far below the Annual Catch Limits (ACL) established 
 by the 2005 stock assessment.  The ACL projections from the 2005 assessment 
 assumed that the entire ACL was being taken each year and as a result, the 
-ACL for each subsequent year declined despite under-attainment in reality.  
+ACL for each subsequent year declined despite under-attainment in reality. 
 In addition, in 2014, recreational catch was higher than expected.  As a result, 
 in 2014, the combined recreational and commercial catch exceeded the OFL by 2mt 
 (1%) resulting from assumption that the ACL had been attained.  Subsequently,
@@ -166,11 +165,11 @@ the later 1990's as commercial landings decreased and recreational harvest becam
 greater proportion of the 
 available harvest. 
 
-Beginning in 1997, California scorpionfish was managed as part of the Sebastes 
-complex-south, Other Rockfish category. (\emph{Sebastes} complex-south included the 
-Eureka, Monterey, and Conception areas while Sebastes complex-north included 
+Beginning in 1997, California scorpionfish was managed as part of the *Sebastes* 
+complex-south, Other Rockfish category. *Sebastes* complex-south included the 
+Eureka, Monterey, and Conception areas while *Sebastes* complex-north included 
 the Vancouver and Columbia areas.)  The PFMC's rockfish management structure 
-changed significantly in 2000 with the replacement of the \emph{Sebastes} 
+changed significantly in 2000 with the replacement of the *Sebastes* 
 complex -north and -south areas with Minor Rockfish North (now covering the 
 Vancouver, Columbia, and Eureka areas) and Minor Rockfish South (now Monterey 
 and Conception areas only). The OY for these two groups (which continued to 
@@ -197,12 +196,13 @@ N. latitude to Point Conception, and the southern rockfish and management area
 continuing to be defined as ocean waters from Point Conception to the U.S.-Mexico border.
 
 Cowcod Conservation Areas (CCAs) also were established in 2001 to reduce fishing 
-effort in areas with high encounter rates of cowcod rockfish (PFMC [-@PFMC2002], Table 29). These areas were closed to 
-all recreational and commercial fishing for groundfish except for minor 
-nearshore rockfish1 (including California scorpionfish) within waters less 
-than 20 fathoms. The California Rockfish Conservation Area (CRCA) was defined as those ocean waters 
-south $40^\circ 10^\prime$ N. latitude to the U.S.-Mexico border with different depth 
-zones specified for the areas north and south of Pt. Reyes ($37^\circ 59.73^\prime$ N. latitude). 
+effort in areas with high encounter rates of cowcod rockfish (PFMC [-@PFMC2002], 
+Table 29). These areas were closed to all recreational and commercial fishing for 
+groundfish except for minor nearshore rockfish1 (including California scorpionfish) 
+within waters less than 20 fathoms. The California Rockfish Conservation 
+Area (CRCA) was defined as those ocean waters south $40^\circ 10^\prime$ N. 
+latitude to the U.S.-Mexico border with different depth zones specified for 
+the areas north and south of Pt. Reyes ($37^\circ 59.73^\prime$ N. latitude). 
 
 During the late 1990's and early 2000's, major changes also occurred in the way 
 that California managed its nearshore fishery. The Marine Life Management Act 
@@ -242,11 +242,10 @@ size limits, and bag limits to regulate the recreational fishery and license
 and permit regulations, finfish trap permits, gear restrictions, seasonal 
 and area closures (e.g. the RCAs and CCAs; a closure of Cordell Banks to 
 specific fishing), depth restrictions, trip limits, and minimum size 
-imits to regulate the commercial fishery.
+limits to regulate the commercial fishery.
 
 
 ##Management Performance
-
 Management performance table: (Table \ref{tab:mnmgt_perform})      
 A summary of these values as well as other base case summary results can be found 
 in Table \ref{tab:base_summary}.

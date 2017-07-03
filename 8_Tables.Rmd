@@ -12,11 +12,11 @@
 ```{r, eval=TRUE, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
      Comm_removal = read.csv("./txt_files/Comm_removals.csv")
      colnames(Comm_removal) = c('Year',
-                                'Hook-and-line',
+                                'Hook-and-line (plus pot and other)',
                                 'Trawl',
                                 'Gillnet',
                                 'Mexico',
-                                'Total U.S. Removals',
+                                'Total U.S. Commercial Removals',
                                 'Source')
 ```
 
@@ -553,12 +553,12 @@
                                    'Index',
                                    'Log-scale SE')
       
-        colnames(Fleet7_lengthdepth) = c('Year',
+        colnames(Fleet7_lengthsample) = c('Year',
                                          'Fish',
                                          'Trips',
                                          'Mean length (cm)')
                                     
-       colnames(Fleet7_lengthsample) = c('Program',
+       colnames(Fleet7_lengthdepth) = c('Program',
                                          '0-24 m',
                                          '25-49 m',
                                          '50-74m',
@@ -616,17 +616,21 @@
               include.rownames=FALSE, 
               caption.placement="top",
               sanitize.text.function = function(x){x},
-              scalebox=.9)
+              scalebox=.75)
 
 
   ##Fleet 7 length tables
         
 Fleet7_lengthdepth.table = xtable(Fleet7_lengthdepth,
-                                  caption = c("sdfdsf"),
+                                  caption = c("Number of fish measured by 25 m 
+                                              depth bin and sanitation district "),
                                   label = 'tab:Fleet7_lengthdepth')
 
 Fleet7_lengthsample.table = xtable(Fleet7_lengthsample,
-                                   caption = c("sdf"),
+                                   caption = c("Sample sizes and mean length by
+                                                year fo teh sanitation district 
+                                                trawl surveys, all sanitation 
+                                              district programs combined"),
                                    label = 'tab:Fleet7_lengthsample')
 
 
@@ -638,6 +642,7 @@ print(Fleet7_lengthdepth.table,
 print(Fleet7_lengthsample.table, 
               include.rownames=FALSE, 
               caption.placement="top",
+              scale.box=0.8,
               sanitize.text.function = function(x){x})
 
 ```
@@ -753,7 +758,14 @@ print(Fleet7_lengthsample.table,
                                           shows total numbers of fish aged by sex."),
                               label='tab:Fleet8_NWFSCTrawl_agesummary')
         
-        align(Fleet8_agesummary.table) = c('l','l', rep('>{\\centering}p{.7in}', dim(Fleet8_agesummary)[2]-1))
+        align(Fleet8_agesummary.table) = c('l',
+                                           'l', 
+                                           'c',
+                                           '>{\\centering}p{.7in}',
+                                           '>{\\centering}p{.9in}',
+                                           '|c',
+                                           '>{\\centering}p{.7in}',
+                                           '>{\\centering}p{.9in}')
        
             addtorow <- list()
             addtorow$pos <- list()
@@ -924,7 +936,8 @@ print(Fleet7_lengthsample.table,
 ```{r, results='asis'}
     #Fleet 11 filter
          Fleet11_filter.table = xtable(Fleet11_filter,
-                              caption = c("Recreational private mode dockside data sample 
+                              caption = c("Southern California Bight regional 
+                                          monitoring trawl survey data sample 
                                           sizes at each data filtering step.  
                                           The bold value indicates the final sample size 
                                           used for delta-GLM analysis."),
@@ -944,7 +957,8 @@ print(Fleet7_lengthsample.table,
    #Fleet 11 aic
          Fleet11_aic.table = xtable(Fleet11_aic,
                               caption = c("AIC values for each model in the
-                                          recreational private mode dockside sample 
+                                          Southern California Bight regional 
+                                          monitoring trawl survey sample 
                                           index."),
                               label='tab:Fleet11_SCBSurvey_aic')
         
@@ -956,8 +970,8 @@ print(Fleet7_lengthsample.table,
 
    #Fleet 11 index
          Fleet11_index.table = xtable(Fleet11_index,
-                              caption = c("The recreational private mode 
-                                            dockside sample index."),
+                              caption = c("Southern California Bight regional 
+                                          monitoring trawl survey sample index."),
                               digits=4,
                               label='tab:Fleet11_SCBSurvey_index')
         

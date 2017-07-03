@@ -11,9 +11,12 @@ set at 0.2 mt.  The average research catch from the NWFSC trawl survey averaged 
 mt from 2012-2016, which was used in the forecast.
 
 
-**Model 1 Projections and Decision Table (groundfish only)**
-Table \ref{tab:Forecast_mod1} 
+**Projections and Decision Table**
 
-Table \ref{tab:Decision_table_mod1}
+Forecasts (Table \ref{tab:Forecast_mod1}) and decision tables 
+(Table \ref{tab:Decision_table_mod1}) to be completed 
+during and/or after the STAR panel 
+
+
 
 

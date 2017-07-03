@@ -20,7 +20,7 @@
 
 
 
-
+![Commercial fishery regulations pertaining to limited entry (LE) and open access (OA) fisheries in southern California. Blocks with a numeric value indicate the bi-monthly trip limit for both LE and OA fisheries. \label{fig:Com_regs}](Figures/Com_regs.png)
 
 
 
@@ -34,75 +34,29 @@
 
 
 
-
-\FloatBarrier
-
-<!-- ********************************************************************** --> 
-<!-- ******************Commercial landings FIGURES************************* --> 
-<!-- *either read in data to create figure or load in figures from analyst* --> 
-<!-- *******************one example of each here*************************** -->
-
-![Commercial fishery regulations pertaining to limited entry (LE) and open access (OA) fisheries in southern California. Blocks with a numeric value indicate the bi-monthly trip limit for both LE and OA fisheries. \label{fig:Com_regs}](Figures/Com_regs.png)
-
-
-
-\FloatBarrier
-
-<!-- ********************************************************************** --> 
-<!-- *****************Commercial Discards FIGURES************************** --> 
-<!-- ********************************************************************** -->
-
-
-
-
-
-
-<!-- ********************************************************************** -->
-<!-- ************Recreational Landings and Discards FIGURES**************** --> 
-<!-- ********************************************************************** -->
-
-
-
-
-
-
-
 \FloatBarrier
 
 <!-- ********************************************************************** -->
 <!-- ****************Fleet 4 Rec. PR Index FIGURES************************* -->
 <!-- ********************************************************************** --> 
 
-![A summary of the monthly recreational regulations for California scorpionfish in southern Califoria.  cells with "open" indicate no depth restriction, black cells indicate the fishery is closed, and cells with a number indicate the depth restriction in fathoms, e.g., 20 = retained catch allowed in less than 20 fathoms. *Fishery closed on November 15, 2014. \label{fig:recregs}](Figures/Rec_regs.pdf)
-
 
 ![Species coefficients from the binomial GLM for presence/absence of California scorpionfish in the Marine Recreational Fisheries Statistics Survey (MRFSS) private mode dockside survey data set. Horizontal bars are 95% confidence intervals. \label{fig:Fleet4_RecPR_dockside_SM}](Figures/Fleet4_RecPR_SMcoef.png)
 
 
+![A summary of the monthly recreational regulations for California scorpionfish in southern Califoria.  Cells with "open" indicate no depth restriction, black cells indicate the fishery is closed, and cells with a number indicate the depth restriction in fathoms, e.g., 20 = retained catch allowed in less than 20 fathoms. *Fishery closed on November 15, 2014. \label{fig:recregs}](Figures/Rec_regs.pdf)
 
 ![Boxplots of the raw log CPUE by year for each of the three factors considered in the deltaGLM model, county, month and year. \label{fig:Fleet4_RecPR_dockside_lograwCPUE}](Figures/Fleet4_RecPR_dockside_lograwCPUE.png)
 
-![Standardized index on log scale for the recreational CPFV logbook retained catches. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:index4_logcpuedata_RecPR}](r4ss/plots_mod1/index4_logcpuedata_RecPR.png)
-
+\FloatBarrier 
 
 ![Q-Q plot used to evaluate the fit of the lognmoral (positive encounters) of California scorpionfish from the Marine Recreational Fisheries Statistics Survey (MRFSS) private mode dockside survey data set. \label{fig:Fleet4_RecPR_dockside_QQ}](Figures/Fleet4_RecPR_dockside_QQ.png)
 
 
-
-
-\FloatBarrier
-
-<!-- ********************************************************************** -->
-<!-- ***************Fleet 5 CPFV logbook index FIGURES*********************--> 
-<!-- ********************************************************************** -->
-
-![Species coefficients from the binomial GLM for presence/absence of California scorpionfish in the Marine Recreational Fisheries Statistics Survey (MRFSS) party/charter mode dockside survey data set. Horizontal bars are 95% confidence intervals. \label{fig:Fleet5_RecPC_docksideSM}](Figures/Fleet5_RecPC_dockside_SM.png)
-
-![Q-Q plot used to validate the goodness of fit of the lognormal portion (posirive catch) of the Marine Recreational Fisheries Statistics Survey (MRFSS) party/charter dockside survey, for thresholds of 0.27 (left) and 0.10 (right) from the Stephens-MacCall filter. \label{fig:Fleet5_RecPC_docksideQQ}](Figures/Fleet5_RecPC_dockside_QQ.png)
+![Standardized index on log scale for the recreational CPFV logbook retained catches. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:index4_logcpuedata_RecPR}](r4ss/plots_mod1/index4_logcpuedata_RecPR.png)
 
 \FloatBarrier
 
-![Comparison of standardized indices using two different threshold levels (0.27 and 0.1) from the Stephens-MacCall filtering, and including or excluding the year 1989. \label{fig:Fleet5_RecPC_dockside_index_compare}](Figures/Fleet5_RecPC_dockside_index_compare.png)
 
 \FloatBarrier
 <!-- ********************************************************************** -->
@@ -111,6 +65,21 @@
 
 
 ![Standardized index on the log scale for the recreational CPFV logbook retained catches. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:index4_logcpuedata_RecPC}](r4ss/plots_mod1/index4_logcpuedata_RecPC.png)
+
+\FloatBarrier
+
+![Comparison of standardized indices using two different threshold levels (0.27 and 0.1) from the Stephens-MacCall filtering, and including or excluding the year 1989. \label{fig:Fleet5_RecPC_dockside_index_compare}](Figures/Fleet5_RecPC_dockside_index_compare.png)
+
+\FloatBarrier
+
+<!-- ********************************************************************** -->
+<!-- ***************Fleet 5 MRFSS dockside index FIGURES********************--> 
+<!-- ********************************************************************** -->
+
+![Species coefficients from the binomial GLM for presence/absence of California scorpionfish in the Marine Recreational Fisheries Statistics Survey (MRFSS) party/charter mode dockside survey data set. Horizontal bars are 95% confidence intervals. \label{fig:Fleet5_RecPC_docksideSM}](Figures/Fleet5_RecPC_dockside_SM.png)
+
+![Q-Q plot used to validate the goodness of fit of the lognormal portion (posirive catch) of the Marine Recreational Fisheries Statistics Survey (MRFSS) party/charter dockside survey, for thresholds of 0.27 (left) and 0.10 (right) from the Stephens-MacCall filter. \label{fig:Fleet5_RecPC_docksideQQ}](Figures/Fleet5_RecPC_dockside_QQ.png)
+
 
 
 
@@ -122,11 +91,11 @@
 
 ![Q-Q plot used to validate the goodness of fit of the lognormal model for the CPFV onboard observer discarded only catch. \label{fig:Fleet6_RecDD_QQ}](Figures/Fleet6_RecDD_QQ.png)
 
-![Standardized index on the log scale for the recreational CPFV onboard oserver discarded catch index. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:Fleet6_index4_logcpuedata_RecDD}](r4ss/plots_mod1/index4_logcpuedata_RecDD.png)
+![Standardized index on the log scale for the recreational CPFV onboard observer discarded catch index. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:Fleet6_index4_logcpuedata_RecDD}](r4ss/plots_mod1/index4_logcpuedata_RecDD.png)
 
 
 
-![Length frequency distributions from the sanitation disricts trawl surveys. \label{fig:Fleet6_comp_lendat_bubflt6mkt2}](r4ss/plots_mod1/comp_lendat_bubflt6mkt2.png)
+![Length frequency distributions from the onboard observer discard-only catch. \label{fig:Fleet6_comp_lendat_bubflt6mkt2}](r4ss/plots_mod1/comp_lendat_bubflt6mkt2.png)
 
 
 ![Q-Q plot used to validate the goodness of fit of the lognormal model for the CPFV onboard observer retained only catch. \label{fig:Fleet12_RecPCOBR_QQ}](Figures/Fleet12_RecPCOB_QQ.png)
@@ -137,14 +106,14 @@
 
 
 
-![Standardized index on the log scale for the recreational CPFV onboard oserver retained catch index. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:Fleet12_index4_logcpuedata_RecPCOBR}](r4ss/plots_mod1/index4_logcpuedata_RecPCOBR.png)
+![Standardized index on the log scale for the recreational CPFV onboard observer retained catch index. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:Fleet12_index4_logcpuedata_RecPCOBR}](r4ss/plots_mod1/index4_logcpuedata_RecPCOBR.png)
 
 \FloatBarrier
 <!-- ********************************************************************** -->
 <!-- *************Fleet 7 Sanitation survey FIGURES************************ --> 
 <!-- ********************************************************************** -->
 
-![Standardized index on log scale for the recreational CPFV onboard oserver discarded catch index. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:index4_logcpuedata_Sanitation}](r4ss/plots_mod1/index4_logcpuedata_Sanitation.png)
+![Standardized index on log scale for the sanitation district trawl index. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:index4_logcpuedata_Sanitation}](r4ss/plots_mod1/index4_logcpuedata_Sanitation.png)
 
 ![Comparison of standardized indices for each sanitation district independently and with data from all sanitation districts combined. \label{fig:Fleet7_Sanitation_indexcompare}](Figures/Fleet7_Sanitation_indexcompare.png)
 
@@ -154,6 +123,7 @@
 
 ![Boxplots of measured California scorpionfish from the sanitation district surveys by program and 25 m depth bins. \label{fig:Fleet7_Sanitation_lengthboxplots}](Figures/Fleet7_Sanitation_lengthboxplots.png)
 
+\FloatBarrier
 
 
 ![Length frequency distributions from the sanitation disricts trawl surveys. \label{fig:Fleet7_comp_lendat_bubflt10mkt2}](r4ss/plots_mod1/comp_lendat_bubflt7mkt2_page2.png)
@@ -165,15 +135,18 @@
 <!-- ********************************************************************** -->
 
 
-![Spatial distribution of raw catch rates of Scorpionfish from NWFSC trawl survey between 2003 and 2016.  Depth contour lines of 200m and 600m and the CAC areas are shown.  Note that sizes and colors of circles represent catch rate in log scales (Credit of Rebecca Miller, SWFSC). \label{fig:Fleet8_NWFSCtrawl_map}](Figures/NWFSCtrawl_map.png)
-
-
-
 ![Plots of the proportion of positive tows (top panel) and the raw catch rates of positive tows (bottom panel) by depth zones (25 m interval) for NWFSC trawl survey. \label{fig:Fleet8_NWFSCtrawl_posdepth}](Figures/NWFSCtrawl_posdepth.png)
+
+\FloatBarrier
+
+![Spatial distribution of raw catch rates of Scorpionfish from NWFSC trawl survey between 2003 and 2016.  Depth contour lines of 200m and 600m and the CCA areas are shown.  Note that sizes and colors of circles represent catch rate in log scales (Credit of Rebecca Miller, SWFSC). \label{fig:Fleet8_NWFSCtrawl_map}](Figures/NWFSCtrawl_map.png)
+
+
 
 
 ![Plots of the proportion of positive tows (top panel) and the raw catch rates of positive tows (bottom panel) by latitude zones (0.5 degree interval) for NWFSC trawl survey. \label{fig:Fleet8_NWFSCtrawl_poslat}](Figures/NWFSCtrawl_poslat.png)
 
+\FloatBarrier
 
 ![Comparison box plots of raw length data from NWFSC trawl survey by depth zone and sex. \label{fig:Fleet8_NWFSCtrawl_lengthdepth}](Figures/NWFSCtrawl_lengthdepth.png)
 
@@ -196,6 +169,8 @@
 
 ![Sandardized index on the log scale for the recreational CSUN/VRG gillnet survey. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:index4_logcpuedata_GillnetSurvey}](r4ss/plots_mod1/index4_logcpuedata_GillnetSurvey.png)
 
+![Length frequency distributions from the gill net surveys. \label{fig:Fleet9_GillnetSurvey_lendat_bubflt10mkt2}](r4ss/plots_mod1/comp_lendat_bubflt9mkt2.png)
+
 \FloatBarrier
 <!-- ********************************************************************** -->
 <!-- *************Fleet 11 Bight trawl survey FIGURES********************** --> 
@@ -205,9 +180,10 @@
 
 ![Standardized index on the log scale for the recreational Southern California Bight trawl survey. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:index4_logcpuedata_SCBSurvey}](r4ss/plots_mod1/index4_logcpuedata_SCBSurvey.png)
 
+\FloatBarrier 
+
 ![Length frequency distributions from the Southern California Bight regional monitoring program trawl surveys. \label{fig:Fleet11_SCBsurvey_lendat_bubflt11mkt2}](r4ss/plots_mod1/comp_lendat_bubflt11mkt2.png)
 
-![Length frequency distributions from the Impingement surveys. \label{fig:Fleet9_GillnetSurvey_lendat_bubflt10mkt2}](r4ss/plots_mod1/comp_lendat_bubflt9mkt2.png)
 
 
 <!-- ********************************************************************** -->

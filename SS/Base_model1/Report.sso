@@ -1,11 +1,11 @@
-#V3.30.05.01-opt
-SS-V3.30.05.01-opt;_2017_06_21;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_11.6
-SS-V3.30.05.01-opt;user_support_available_at:NMFS.Stock.Synthesis@noaa.gov
-SS-V3.30.05.01-opt;user_info_available_at:https://vlab.ncep.noaa.gov/group/stock-synthesis
+#V3.30.05.01
+SS-V3.30.05.01-safe;_2017_06_21;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_11.6
+SS-V3.30.05.01-safe;user_support_available_at:NMFS.Stock.Synthesis@noaa.gov
+SS-V3.30.05.01-safe;user_info_available_at:https://vlab.ncep.noaa.gov/group/stock-synthesis
 
-StartTime: Thu Jun 29 11:17:19 2017
-EndTime: Thu Jun 29 11:21:26 2017
-This run took: 0 hours, 4 minutes, 7 seconds.
+StartTime: Mon Jul 03 08:12:56 2017
+EndTime: Mon Jul 03 08:19:35 2017
+This run took: 0 hours, 6 minutes, 39 seconds.
 Data_File: scor1.dat
 Control_File: scor1.ctl
 

@@ -1,6 +1,6 @@
-#V3.30.05.01-opt
-SS-V3.30.05.01-opt;_2017_06_21;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_11.6
-StartTime: Thu Jun 29 11:17:19 2017
+#V3.30.05.01
+SS-V3.30.05.01-safe;_2017_06_21;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_11.6
+StartTime: Mon Jul 03 08:12:56 2017
 
 Data_File: scor1.dat
 Control_File: scor1.ctl

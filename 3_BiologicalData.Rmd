@@ -3,16 +3,15 @@
 <!--************BIOLOGICAL DATA*********************************************-->
 ###Biological Parameters and Data
 
-Conversion factors California scorpionfish do not have a forked tail, therefore total 
+California scorpionfish do not have a forked tail, therefore total 
 length and fork length are equal. Love et al.  [-@Love1987]  provide conversion factors
-between standard length (SL) and total length (TL). $TL = 1.21SL + 1.02$ and $SL = 0.82TL - 0.69$.
+between standard length (SL) and total length (TL): $TL = 1.21SL + 1.02$ and $SL = 0.82TL - 0.69$.
  
 Standard and total lengths of 163 California scorpionfish  were available from a 
 halibut trawl survey in southern California (Steve Wertz, CDFW).  The conversion 
 from SL to TL from these data was estimated at $TL = 1.2225SL + 0.7773$.  
 The conversion originating from the halibut trawl data was used in this assessment 
-due to the fact that the original data from Love et al.  [-@Love1987] are not available.
- 
+due to the fact that the original data from Love et al.  [-@Love1987] are not available. 
 The majority of available length composition data were measured to total length, 
 except for three of the sanitation district trawl surveys, the Southern California
 Bight Regional Monitoring Program trawl survey, and the CSUN/VRG gillnet survey 
@@ -66,18 +65,10 @@ The length composition of all fisheries aggregated across time by fleet is in Fi
 composition data are in the above section for each fleet or survey.
 
 
-
-
-
 *Recreational: California MRFSS And CRFS Length Composition Data*
 Individual fish lengths recorded by MRFSS (1980-2003) and CRFS (2004-2011) samplers were
 downloaded from the RecFIN website (www.recfin.org). CRFS data from 2012-2014 were
 obtained directly from CDFW.
-
-*Commercial: PacFIN*
-
-
-
 
 
 \vspace{.5cm}
@@ -85,12 +76,14 @@ obtained directly from CDFW.
 Age data were provided from the NWFSC trawl survey from 2005-2016, and all of
 the otoliths collected from the survey were aged.  Figures \ref{fig:otolith1} and 
 \ref{fig:otolith2} provide examples of California scorpionfish
- otoliths from  ... and ... The otoliths were read (including double-reads) 
+ otoliths read (including double-reads) 
  by the Cooperative Ageing Project (CAP) in Newport, Oregon.  
 A total of 879 otoliths were read, and ranged from 0-29 years of age. 
 Fewer thana 1% (8 fish) were aged 22 years or older,
  and only one age-0 fish was in the sample (Figure \ref{fig:Agelength}).
 
+Males and females exhibit different growth patterns with females 
+growing to be larger at a smaller age (Figure \ref{fig:Agelength}).
 Sex-specific length-at-age was initially estimated external to the population dynamics models 
 using the von Bertalanffy growth curve [@vonB1938], $L_i = L_{\infty}e^{(-k[t-t_0])}$, 
 where $L_i$ is the length (cm) at age $i$, $t$ is age in years, $k$ is rate of 
@@ -206,6 +199,8 @@ females in the assessment model.
 
 
 ###Environmental Or Ecosystem Data Included In The Assessment
+In this assessment, neither environmental nor ecosystem considerations were explicitly included in the analysis.  This is primarily due to a lack of relevant data and results of analyses (conducted elsewhere) 
+that could contribute ecosystem-related quantitative information for the assessment.
 
 
 

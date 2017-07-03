@@ -2,15 +2,6 @@
 <!-- ***********FIGURES: Model results ********************************** --> 
 <!-- ********************************************************************** -->
 
-
-
-
-
-
-
-
-
-
 \FloatBarrier
 
 <!-- ********************************************************************** -->
@@ -50,7 +41,7 @@
 
 <!-- ***********MODEL 1 BASE MODEL FIGURES********************************* --> 
  
-![Length comp data, aggregated across time by fleet. Labels 'retained' and 'discard' indicate discarded or retained sampled for each fleet. Panels without this designation represent the whole catch. \label{fig:comp_lendat_aggregated_across_time}](r4ss/plots_mod1/comp_lendat__aggregated_across_time.png)
+
 
 
 
@@ -59,15 +50,8 @@
 
 
 
-![Cross-section of broken and burned California scorpionfish otolith showing.  The green dots indicate the number of increments (photo courtesy Lance Sullivan, NWFSC). \label{fig:otolith1}](Figures/otolith1.pdf)
 
 
-![California scorpionfish otolith (photo courtesy Lance Sullivan, NWFSC). \label{fig:otolith2}](Figures/otolith2.pdf)
-
-![Length at age by sex for California scorpionfish collected from the NWFSC trawl survey. \label{fig:Agelength}](Figures/Age_length_bySex.png)
-
-
-![Fitted (external to SS) von Bertalanffy growth by sex for California scorpionfish collected from the NWFSC trawl survey. \label{fig:vonB_compare}](Figures/vonB_compare.png)
 
 
 \FloatBarrier
@@ -106,13 +90,13 @@
 
 ![Fit to log index data on log scale for the recreational CPFV logbook retained catches. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:index5_logcpuefit_RecPC}](r4ss/plots_mod1/index5_logcpuefit_RecPC.png)
 
-![Fit to log index data on log scale for the recreational CPFV onboard oserver discarded catch index. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:Fleet6_index5_logcpuefit_RecDD}](r4ss/plots_mod1/index5_logcpuefit_RecDD.png)
+![Fit to log index data on log scale for the recreational CPFV onboard observer discard catch index. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:Fleet6_index5_logcpuefit_RecDD}](r4ss/plots_mod1/index5_logcpuefit_RecDD.png)
 
 
-![Fit to log index data on log scale for the recreational CPFV onboard oserver retained catch index. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:Fleet12_index5_logcpuefit_RecPCOBR}](r4ss/plots_mod1/index5_logcpuefit_RecPCOBR.png)
+![Fit to log index data on log scale for the recreational CPFV onboard observer retained catch index. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:Fleet12_index5_logcpuefit_RecPCOBR}](r4ss/plots_mod1/index5_logcpuefit_RecPCOBR.png)
 
 
-![Fit to log index data on log scale for the recreational CPFV onboard oserver discarded catch index. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:index5_logcpuefit_Sanitation}](r4ss/plots_mod1/index5_logcpuefit_Sanitation.png)
+![Fit to log index data on log scale for the sanitation district trawl index. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:index5_logcpuefit_Sanitation}](r4ss/plots_mod1/index5_logcpuefit_Sanitation.png)
 
 ![Fit to log index data on log scale for the NWFSC trawl survey from the VAST analysis from 2003-2016. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:index5_logcpuefit_NWFSCtrawl}](r4ss/plots_mod1/index5_logcpuefit_NWFSCtrawl.png)
 
@@ -265,7 +249,7 @@ fig:retro_recdev
 
 
 
-![Equilibrium yield curve for the base case model. Values are based on the `r Dat_end_mod1` fishery selectivity and with steepness fixed at `r print(mod1$parameters[mod1$parameters$Label == "SR_BH_steep","Value"],2)`. \label{fig:yield1_yield_curve}](r4ss/plots_mod1/yield1_yield_curve.png](r4ss/plots_mod1/yield1_yield_curve.png)
+![Equilibrium yield curve for the base case model. Values are based on the `r Dat_end_mod1` fishery selectivity and with steepness fixed at `r print(mod1$parameters[mod1$parameters$Label == "SR_BH_steep","Value"],2)`. \label{fig:yield1_yield_curve}](r4ss/plots_mod1/yield1_yield_curve.png)
 
 
 \FloatBarrier

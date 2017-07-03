@@ -12,7 +12,9 @@ the ability to estimate female natural mortality in the model.  The NWFSC trawl 
 was the only available source of age data for this assessment, of which there were a 
 number of age-1 fish and the data were dominated by males.
 
-\item \textbf{Steepness}: 
+\item \textbf{Steepness}: Califronia scorpionfish has not been fished to a level where information 
+on steepness is available.  A meta-analysis for species with similar breeding strategies to 
+California scorpionfish could be conducted if data are available.
 
 \item \textbf{Stock in Mexico}:  No available information on the status of California 
 scorpionfish in Mexico could be found.  A number of emails were sent to researchers 
@@ -25,7 +27,7 @@ the Coronado Islands.
 from the NWFSC trawl survey were skewed towards males. Data on sex ratios from the 
 recreational or commercial fisheries would help in determining the sex ratio of the population.
 
-\item \textbf{Aggregating behavior}: LIttle is known about the aggregating behavior
+\item \textbf{Aggregating behavior}: Little is known about the aggregating behavior
 of California scorpionfish.  California scorpionfish are known to aggregate in both
 the spawning and non-spawning seasons.  The location and timing of the aggregations
 would aid in modelling the high catch events.
@@ -36,10 +38,7 @@ would aid in modelling the high catch events.
 
 <!-- ***************************ACKNOWLEDGEMENTS*************************** -->
 #Acknowledgments
-Include: STAR panel members and affiliations as well as names and affiliations 
-of persons who contributed data, advice or information but were not part of the 
-assessment team. Not required in draft assessment undergoing review.  We thank Kevin
-Lee for the use of the cover photo for this document.
+To be added.
 
 
 
