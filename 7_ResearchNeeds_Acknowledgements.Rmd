@@ -22,7 +22,6 @@ in Mexico and none were returned.  It is known that a portion of the stock resid
 in Mexico and that boat leaving from San Diego target California scorpionfish off 
 the Coronado Islands.  
 
-
 \item \textbf{Sex ratio}:  The sex ratio in both Love et al. [@Love1987] and samples 
 from the NWFSC trawl survey were skewed towards males. Data on sex ratios from the 
 recreational or commercial fisheries would help in determining the sex ratio of the population.
@@ -31,6 +30,12 @@ recreational or commercial fisheries would help in determining the sex ratio of 
 of California scorpionfish.  California scorpionfish are known to aggregate in both
 the spawning and non-spawning seasons.  The location and timing of the aggregations
 would aid in modelling the high catch events.
+
+\item \textbf{Fecundity/Maturity}: There are currently no estimates of fecundity for California 
+scorpionfish.  Love et al. [@Love1987] has published the only estiamtes of maturity for California 
+scorpionfish, but the original copies of the data are no long available.  Some data on the spatial distribution of the eggs are available from CalCOFI, but were not keypunched to the species level. 
+California scorpionfish mature at a young age, and additional data can help inform the maturity 
+ogive.
 
 \end{enumerate}
 

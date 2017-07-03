@@ -537,11 +537,16 @@ largest fish, and there is no available information on discards from this fleet.
 There is a distinct shift in the selectivity for the retained-catch recreational 
 party/charter fleet, with the onboard observer retained-catch fleet mirrored to 
 the other recreational party/charter fleet.  Prior to the implementation of a 
-10-in minimum size limit the size at maximum selectivity was  36 cm, from 2001-2005 
+10-in minimum size limit the size at maximum selectivity was 36 cm, from 2001-2005 
 it was 31 cm and since 2006 the size at maximum selectivity is at 26 cm (Figure \ref{fig:sel03_len_timevary_surf_flt5sex1}).   The recreational party/charter mode 
 discard-catch dome-shaped selectivity reflects the discarding of small fish due to 
 the size limit and also the discarding of smaller fish prior to the 10-in minimum 
-size limit due to angler preference for larger fish.  
+size limit due to angler preference for larger fish.  The selectivity of the discard 
+fleet does not go to 0, because some larger fish are still discarded, either due to 
+angler preference, bag limits, and/or fishery closure.  The onboard observer data also 
+indicates that there are higher discards when an aggregation of California scorpionfish 
+was found, i.e., hundreds of fish may be caught at a single fishing stop and some are 
+discarded.
 
 All of the survey selectivity curves were asymptotic and none had time blocks. 
 The southern California Bight regional monitoring trawl survey uses the same gear 
