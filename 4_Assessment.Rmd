@@ -259,7 +259,9 @@ The selectivity for the generation station impingement surveys was set to 1.0 fo
 all sizes (SS pattern 0).  As an example, the cooling intake pipes at SONGS are 
 18-foot in diameter and draw in seawater at a rate of hundreds of thousands of 
 gallons per minute.  The water flow once in the generating station is one directional 
-and organisms cannot escape, unless removed via a fish return system. 
+and organisms cannot escape, unless removed via a fish return system. Flow rates for 
+the cooling water intake range from 0.27-1.2 m/s [@EPRI2008; @MBC2007; @MBC2005] and 
+would not allow a fish of any size evade intake cooling pipes.
 
 The length composition data for some years and fleets was small, and may not have 
 been representative of the total catch.  Length composition data were removed from the 
@@ -438,8 +440,24 @@ commercial discards have been negligible and are not included in the base model.
 
 
 ###Alternate Models Considered
-Include: Summary of alternate model configurations that were tried but rejected.
+Due to the error in the 2005 model, the population from the base case of this assessment 
+is larger in scale.  The majority of the alternate models considered were to estimate 
+parameters, such as natural mortality and steepness.
 
+The base model is age structured, but 60% of those ages are from males, and a number of 
+ages were from younger fish.  Models that attempted to estimate female natural mortality 
+were considered.  However, female natural mortality was estimed at 0.38, much too high to 
+be considered a reasonable value.  The age data needed to estimate natural mortality (especially 
+for older fish) is not yet available.  Male natural mortality was estimatable as an offset from 
+female natural mortality. 
+
+Runs of the base case model estimating steepness were also considered, when female natural mortality 
+was fixed. Steepness was estiamted at approximately 0.8.  No data exist to inform this parameter 
+for California scorpfionsh, and the decision was made to fix steepness at the mean of the prior 
+developed from a meta-anaylsis of West Coast groundfish.
+
+Additional models considered and run for sensitivity analyses can be found in the Sensitivity Analysis 
+Section of this document.
 
 ###Convergence
 Model convergence was determined by starting the minimization process from dispersed 

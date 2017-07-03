@@ -351,14 +351,13 @@
 
 \newpage
 
-<!-- ***********Likelihood profile table*********************************** -->
+<!-- ***********Retrospective table*********************************** -->
 \begin{landscape}
 ```{r, results = 'asis'}
-   Like_profile = read.csv('./txt_files/Retrospective.csv')
+   Retro = read.csv('./txt_files/Retrospective.csv')
    
 # likelihood profiels, create table   
-     Retro.table = xtable(Retro, 
-                                  caption = c('Summaries of key assessment outputs 
+     Retro.table = xtable(Retro, caption = c('Summaries of key assessment outputs 
                                               and likelihood values from the retrospective 
                                               analysis.  Note that male 
                                               growth parameters are exponential 

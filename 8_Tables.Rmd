@@ -120,7 +120,8 @@
                                         and private vessels. Removals from man-made and 
                                         beach/bank modes were included in the private mode
                                         removals. Dead discards include all modes. CDFW provided 
-                                        all data. Note: A discard mortality rate of 7\% was applied 
+                                        all data. Note: A discard mortality rate of seven percent 
+                                        was applied 
                                         to the dead discard removals."),
                           label="tab:Rec_removal")
     align(Rec_removal.table) = 'lccccc'

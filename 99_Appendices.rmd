@@ -47,15 +47,3 @@ output:
 
 
 
-<!--********************ADD ADDITIONAL APPENDICES AS NEEDED********************************************-->
-<!--********************cHANGE APPENDIX TITLE AND THE APPENDIX LETTER**********************************-->
-#Appendix E. Appendix Title{-}
-\label{sec:AppendixE}
-\renewcommand{\thepage}{E-\arabic{page}}
-\renewcommand{\thefigure}{E\arabic{figure}}
-\renewcommand{\thetable}{E\arabic{table}}
-\setcounter{page}{1}
-\setcounter{figure}{0}
-\setcounter{table}{0}
-
-Add Appendix text, tables and figuers here.

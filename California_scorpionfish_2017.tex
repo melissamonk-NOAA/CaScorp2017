@@ -103,7 +103,7 @@ Southern California in 2017}
 \usepackage{cmap}                                                 % fix mapping characters to unicode
 \RequirePackage[linewidth = 1]{pdfcomment}                        % pdf comments
 \RequirePackage[l2tabu, orthodox]{nag}                            % checks packages related to the accessibility?
-\usepackage[inline]{showlabels}                                   % show table and figure labels; comment out for final
+%\usepackage[inline]{showlabels}                                   % show table and figure labels; comment out for final
 %\RequirePackage[tagged]{accessibilityMeta}
 
 
@@ -199,8 +199,8 @@ down the Baja peninsula. Catches from Mexico were not included in this
 assessment, and catches from Mexican waters that were landed in the U.S.
 were excluded from the catch histories.
 
-\subsection*{Landings}\label{landings}
-\addcontentsline{toc}{subsection}{Landings}
+\subsection*{Catches}\label{catches}
+\addcontentsline{toc}{subsection}{Catches}
 
 Information on historical landings of California scorpionfish are
 available back to 1916, with the assumption that from 1916 to 1968 all
@@ -231,22 +231,22 @@ period.
 \begin{figure}[htbp]
 \centering
 \includegraphics{California_scorpionfish_2017_files/figure-latex/unnamed-chunk-16-1.pdf}
-\caption{California scorpionfish landings history for the recreational
+\caption{California scorpionfish catch history for the recreational
 fleets. \label{fig:Exec_catch1}}
 \end{figure}
 
 \begin{figure}[htbp]
 \centering
 \includegraphics{California_scorpionfish_2017_files/figure-latex/unnamed-chunk-17-1.pdf}
-\caption{Stacked line plot of California scorpionfish landings history
-for the commercial fleets. \label{fig:Exec_catch2}}
+\caption{Stacked line plot of California scorpionfish catch history for
+the commercial fleets. \label{fig:Exec_catch2}}
 \end{figure}
 
 \begin{figure}[htbp]
 \centering
 \includegraphics{California_scorpionfish_2017_files/figure-latex/unnamed-chunk-18-1.pdf}
-\caption{Stacked line plot of California scorpionfish landings history
-from Pt. Conception to the U.S.-Mexico border and catches from Mexican
+\caption{Stacked line plot of California scorpionfish catch history from
+Pt. Conception to the U.S.-Mexico border and catches from Mexican
 waters. \label{fig:Exec_catch3}}
 \end{figure}
 
@@ -255,7 +255,7 @@ waters. \label{fig:Exec_catch3}}
 \begin{figure}[htbp]
 \centering
 \includegraphics{r4ss/plots_mod1/catch2 landings stacked.png}
-\caption{Landings history of California scorpionfish in the base model.
+\caption{Catch history of California scorpionfish in the base model.
 \label{fig:r4ss_catches}}
 \end{figure}
 
@@ -290,7 +290,7 @@ Year & Rec. Private & Rec. Party/Charter & Rec. Dead Discards & Com. Hook-and-li
 \addcontentsline{toc}{subsection}{Data and Assessment}
 
 California scorpionfish was last assessed in 2005 . This assessment uses
-the newest version of Stock Synthesis (3.30.0.4). The model begins in
+the newest version of Stock Synthesis (3.30.05). The model begins in
 1916, and assumes the stock was at an unfished equilibrium that year.
 
 This a new full assessment for California scorpionfish, which was last
@@ -299,9 +299,9 @@ assessed in 2005 (Maunder et al.
 version 1.18. In this assessment, aspects of the model including
 landings, data, and modelling assumptions were re-evaluated. The
 assessment was conducted using the length- and age-structured modeling
-software Stock Synthesis (version 3.30.0x.xx). The population was
-modeled allowing separate growth and mortality parameters for each sex
-(a two-sex model) from 1916 to 2016, and forecast beyond 2016.
+software Stock Synthesis (version 3.30.05). The population was modeled
+allowing separate growth and mortality parameters for each sex (a
+two-sex model) from 1916 to 2016, and forecast beyond 2016.
 
 All of the data sources for California scorpionfish have been
 re-evaluated for 2016, including the historical fishery catch-per-unit
@@ -597,7 +597,12 @@ Unfished spawning output (mt) & 1361.6 & (968.3-1754.9) \\
 \subsection*{Management Performance}\label{management-performance}
 \addcontentsline{toc}{subsection}{Management Performance}
 
-Management performance table: Table \ref{tab:mnmgt_perform}
+California scorpionfish has been managed as a single-species outside of
+a complex since 2003. The estimated catch of California scorpionfish
+north below the ACL in all years (2007-2017) except for in 2014 when the
+catch exceeded the ACL (and ABC) by 6.8 mt. A summary of these values as
+well as other base case summary results can be found in Table
+\ref{tab:mnmgt_perform}.
 
 \begin{table}[ht]
 \centering
@@ -614,16 +619,16 @@ Management performance table: Table \ref{tab:mnmgt_perform}
   \hline
 Year & OFL (mt; ABC prior to 2011) & ABC (mt) & ACL (mt; OY prior to 2011) & ACT & Estimated total catch (mt) \\ 
   \hline
-\textbf{2007} & 219 &  & 175 &  & - \\ 
-  \textbf{2008} & 219 &  & 175 &  & - \\ 
-  \textbf{2009} & 175 &  & 175 &  & - \\ 
-  \textbf{2010} & 155 &  & 155 &  & - \\ 
-  \textbf{2011} & 141 & 135 & 135 &  & - \\ 
-  \textbf{2012} & 132 & 126 & 126 &  & - \\ 
-  \textbf{2013} & 126 & 120 & 120 &  & - \\ 
-  \textbf{2014} & 122 & 117 & 117 &  & - \\ 
-  \textbf{2015} & 119 & 114 & 114 &  & - \\ 
-  \textbf{2016} & 117 & 111 & 111 &  & - \\ 
+\textbf{2007} & 219 &  & 175 &  & 139.583 \\ 
+  \textbf{2008} & 219 &  & 175 &  & 103.887 \\ 
+  \textbf{2009} & 175 &  & 175 &  & 113.318 \\ 
+  \textbf{2010} & 155 &  & 155 &  & 105.968 \\ 
+  \textbf{2011} & 141 & 135 & 135 &  & 105.215 \\ 
+  \textbf{2012} & 132 & 126 & 126 &  & 120.008 \\ 
+  \textbf{2013} & 126 & 120 & 120 &  & 115.142 \\ 
+  \textbf{2014} & 122 & 117 & 117 &  & 123.822 \\ 
+  \textbf{2015} & 119 & 114 & 114 &  & 83.8908 \\ 
+  \textbf{2016} & 117 & 111 & 111 &  & 74.1613 \\ 
   \textbf{2017} & 289 & 264 & 150 & 110 & - \\ 
   \textbf{2018} & 278 & 254 & 150 & 110 & - \\ 
    \hline
@@ -1296,19 +1301,21 @@ both of which used estimates of catch from logbooks to represent catch
 in the PC mode with the exception of the years after 2011 when effort
 estimates used in CRFS estimates were derived from logbooks.
 
-An under-reporting adjustment reflecting an average 20\% of logs not
-being submitted was applied to all estimates for the PC mode from
-1932-2010. Annual average weights from this mode for retained catch from
-the MRFSS or CRFS estimates for 1980-2010 and average weight from
-1980-1984 was applied to the preceding years. To estimate discard
-mortality for the PC mode, the annual average weight was applied in
-respective years from lengths collected sampling onboard CPFVs by the
-CRFS survey for 2004-2010 were applied to the number of discards from
-the CPFV logbooks and the average weight over this entire period were
-applied to the preceding years for 1995-2003. For the period between
-1980 and 1994, the MRFSS estimates for discards were used to reflect
-discarding due to the paucity of data on the number of discards from PC
-logbooks prior to 1995.
+An under-reporting adjustment reflecting a lack of reporting of 20\% of
+all log books as applied in the previous assessment ( Maunder 2005) was
+confirmed as the approximate level of underreporting in conversation
+with the CRFS program (Connie Ryan, personal communication, CDFW) and
+applied to estimates from the logbooks for 1936 to 2010. Annual average
+weights from this mode for retained catch from the MRFSS or CRFS
+estimates for 1980-2010 and average weight from 1980-1984 was applied to
+the preceding years. To estimate discard mortality for the PC mode, the
+annual average weight was applied in respective years from lengths
+collected sampling onboard CPFVs by the CRFS survey for 2004-2010 were
+applied to the number of discards from the CPFV logbooks and the average
+weight over this entire period were applied to the preceding years for
+1995-2003. For the period between 1980 and 1994, the MRFSS estimates for
+discards were used to reflect discarding due to the paucity of data on
+the number of discards from PC logbooks prior to 1995.
 
 For all other modes, the MRFSS (1980-2003) and CRFS (2004-2017) based
 estimates of retained catch and discard mortality were used. There was a
@@ -1506,9 +1513,9 @@ The standardized index shows a cyclic pattern, with period of higher
 CPUE (late 1980's to early 1990's and late 1990s) and has shown a
 general downward trend since 2008 (Figure
 \ref{fig:index4_logcpuedata_RecPC} and Table
-\ref:tab:Fleet5\_RecPC\_CPFVlogbook\_index\}). An interesting note is
-the similarity in standardized CPUE between the CPFV logbook index and
-the CPFV dockside index (not used in the stock assessment model) from
+\ref{tab:Fleet5_RecPC_CPFVlogbook_index}). An interesting note is the
+similarity in standardized CPUE between the CPFV logbook index and the
+CPFV dockside index (not used in the stock assessment model) from
 1992-1997 (for a Stephens-MacCall threshold of 0.1) (Figure
 \ref{fig:Fleet5_RecPC_dockside_index_compare}).
 
@@ -1926,7 +1933,7 @@ All California scorpionfish encountered were measured to the nearest cm
 provided quarterly trawl data from 1972-2016 (Shelly Walther, Sanitation
 Districts of Los Angeles County) and follow the same sampling protocols
 as the Southern California Bight Regional Monitoring Program trawl
-survey Stations sampled in fewer than 10 years or at 305 m where
+survey stations sampled in fewer than 10 years or at 305 m where
 California scorpionfish were never observed were removed from the
 analysis. Non-standard and special study trawls were also removed, e.g.,
 night trawl study in 1987. Hauls were based on a 10 minute tow time and
@@ -1969,8 +1976,8 @@ model for the positives was select over a gamma model by a delta AIC of
 619. AIC model select was used for both the lognormal and binomial
 models and all three covariates were selected for both (Table
 \ref{tab:Fleet7_Sanitation_aic}). The standardized index shows a large
-spike in relative CPUE in 1981, bounces around within a range of 0.1 to
-0.25 from 1989 to 2009, and then declines until 2013 (Figure
+spike in relative CPUE in 1981, varies within a range of 0.1 to 0.25
+from 1989 to 2009, and then declines until 2013 (Figure
 \ref{fig:index4_logcpuedata_Sanitation}). The last three years of the
 index show an increase in relative abundance. The final standardized
 index and log-standard error can be found in Table
@@ -2319,10 +2326,10 @@ Fewer thana 1\% (8 fish) were aged 22 years or older, and only one age-0
 fish was in the sample (Figure \ref{fig:Agelength}).
 
 Males and females exhibit different growth patterns with females growing
-to be larger at a smaller age (Figure \ref:\{fig:Agelength\}),.
-Sex-specific length-at-age was initially estimated external to the
-population dynamics models using the von Bertalanffy growth curve
-(Bertalanffy \protect\hyperlink{ref-vonB1938}{1938}),
+to be larger at a smaller age (Figure \ref{fig:Agelength}). Sex-specific
+length-at-age was initially estimated external to the population
+dynamics models using the von Bertalanffy growth curve (Bertalanffy
+\protect\hyperlink{ref-vonB1938}{1938}),
 \(L_i = L_{\infty}e^{(-k[t-t_0])}\), where \(L_i\) is the length (cm) at
 age \(i\), \(t\) is age in years, \(k\) is rate of increase in growth,
 \(t_0\) is the intercept, and \(L_{\infty}\) is the asymptotic length.\\
@@ -2454,6 +2461,12 @@ a maximum age of 21 the point estimate and median of the prior is
 
 \subsubsection{Environmental Or Ecosystem Data Included In The
 Assessment}\label{environmental-or-ecosystem-data-included-in-the-assessment}
+
+In this assessment, neither environmental nor ecosystem considerations
+were explicitly included in the analysis. This is primarily due to a
+lack of relevant data and results of analyses (conducted elsewhere) that
+could contribute ecosystem-related quantitative information for the
+assessment.
 
 \subsection{History Of Modeling Approaches Used For This
 Stock}\label{history-of-modeling-approaches-used-for-this-stock}
@@ -2763,7 +2776,22 @@ to 1.0 for all sizes (SS pattern 0). As an example, the cooling intake
 pipes at SONGS are 18-foot in diameter and draw in seawater at a rate of
 hundreds of thousands of gallons per minute. The water flow once in the
 generating station is one directional and organisms cannot escape,
-unless removed via a fish return system.
+unless removed via a fish return system. Flow rates for the cooling
+water intake range from 0.27-1.2 m/s (MBC
+\protect\hyperlink{ref-MBC2005}{2005},
+\protect\hyperlink{ref-MBC2007}{2007}, Electric Power Research Institute
+\protect\hyperlink{ref-EPRI2008}{2008}) and would not allow a fish of
+any size evade intake cooling pipes.
+
+The length composition data for some years and fleets was small, and may
+not have been representative of the total catch. Length composition data
+were removed from the model if less than one trip sampled and fewer than
+20 fish were measured in a given year and fleet. From 1985-1989, two
+surveys measured fish from the recreational party/charter fleet, the
+Ally et al. (Ally et al. \protect\hyperlink{ref-Ally1991}{1991}) onboard
+observer survey and the dockside intercept survey. The number of trips
+and fish sampled by the onboard observer survey was far greater than the
+RecFIN survey and were used in the model.
 
 The time-series of landings begins in 1916 for the commercial fleet and
 in 1929 for the recreational fleet. This captures the inception of the
@@ -2942,15 +2970,16 @@ models considered.
 at the SSC approved steepness prior for rockfish of 0.718. The initial
 recommendation for steepness was to explore the available estimates of
 steepness from Myers et al. (\protect\hyperlink{ref-Myers1999}{1999}).
-Myers (Myers et al. \protect\hyperlink{ref-Myers1999}{1999}) provides
-estimates of steepness for three species in the family Scorpaenidae, of
-which California scorpionfish is a member: chilipepper (\emph{Sebastes
-goodei}), 0.35; Pacific ocean perch (\emph{Sebastes alutus}) 0.43; and
-deepwater redfish (\emph{Sebastes mentella}), 0.47. The estimate of
-steepness for the family was 0.48. Information for steepness is not
-available for California scorpionfish and there is little information
-from related species that could be considered as a good proxy. A value
-of 0.718 (the updated 2017 prior) was assumed for the assessment.
+Myers (Myers, R.A., Bowen, K.G., and Barrowman
+\protect\hyperlink{ref-Myers1999}{1999}) provides estimates of steepness
+for three species in the family Scorpaenidae, of which California
+scorpionfish is a member: chilipepper (\emph{Sebastes goodei}), 0.35;
+Pacific ocean perch (\emph{Sebastes alutus}) 0.43; and deepwater redfish
+(\emph{Sebastes mentella}), 0.47. The estimate of steepness for the
+family was 0.48. Information for steepness is not available for
+California scorpionfish and there is little information from related
+species that could be considered as a good proxy. A value of 0.718 (the
+updated 2017 prior) was assumed for the assessment.
 
 \subsection{Model Selection and
 Evaluation}\label{model-selection-and-evaluation}
@@ -2976,8 +3005,27 @@ base model.
 \subsubsection{Alternate Models
 Considered}\label{alternate-models-considered}
 
-Include: Summary of alternate model configurations that were tried but
-rejected.
+Due to the error in the 2005 model, the population from the base case of
+this assessment is larger in scale. The majority of the alternate models
+considered were to estimate parameters, such as natural mortality and
+steepness.
+
+The base model is age structured, but 60\% of those ages are from males,
+and a number of ages were from younger fish. Models that attempted to
+estimate female natural mortality were considered. However, female
+natural mortality was estimed at 0.38, much too high to be considered a
+reasonable value. The age data needed to estimate natural mortality
+(especially for older fish) is not yet available. Male natural mortality
+was estimatable as an offset from female natural mortality.
+
+Runs of the base case model estimating steepness were also considered,
+when female natural mortality was fixed. Steepness was estiamted at
+approximately 0.8. No data exist to inform this parameter for California
+scorpfionsh, and the decision was made to fix steepness at the mean of
+the prior developed from a meta-anaylsis of West Coast groundfish.
+
+Additional models considered and run for sensitivity analyses can be
+found in the Sensitivity Analysis Section of this document.
 
 \subsubsection{Convergence}\label{convergence}
 
@@ -3019,16 +3067,6 @@ Requests}\label{response-to-the-current-star-panel-requests}
   
     \textbf{STAT Response:} Add after STAR panel.
 
-\item[Request No. 4: Example of a request that may have a list:] \hfill \\
-\begin{itemize}
-\item \textbf{Item No. 1}
-\item \textbf{Item No. 2}
-\item \textbf{Item No. 3, etc.}
-\end{itemize}
-
-    \textbf{Rationale:} Add after STAR panel.
-
-    \textbf{STAT Response:} Continue requests as needed.
 
 
 \end{description}
@@ -3217,30 +3255,62 @@ A number of sensitivity analyses were conducted, including:
 
   \item Data weighting according to the harmonic mean.
   
-  \item Removal of one index at a time
+  \item Removal of the sanitation distric index (axis of uncertainty from the 2005 assessment)
   
-  \item Dome-shaped selectivity for the NWFSC trawl survey and gill net survey
+  \item Dome-shaped selectivity for the NWFSC trawl survey and gill net survey - TBD
   
   \item Estimating natural female mortality
   
-  \item Estimating steepness
+  \item Estimating steepness - TBD
   
-  \item   
-  \item 
+  \item Assume the same fixed natural mortality for males and females
+  
+  \item Remove each index, one at a time - TBD
   
   
 \end{enumerate}
 
-Table \ref{tab:Sensitivity_model1}
+A number of changes were made since the 2005 assessment, and
+sensitivities to the current base model included changing or fixing a
+number of parameters to the same as the 2005 assessment, as well as a
+number of sentivities to modelling choices made in developing the
+current base model (Table \ref{tab:Sensitivity_model1}).
+
+Data weighting is an area of uncertainty for stock assessment and
+research is ongoing to determine the effects of data weighting and the
+most appropriate initial sample sizes for length and age composition
+data. A model run with defauly weighting increased the total likelihood
+by 2,692 and resulted in a final depletion of 0.771. The base model used
+the Stewart sample sizes for the fishery data and number of trips for
+all survey sample sizes. Weighting the data by the harmonic mean
+resulted in a model with a total likelihood between the base model,
+which uses the Francis method for weighting, and the model with default
+weights. The Francis weights in the base model were stable, and did not
+tend to serially decrease (downweight) any of the datasets, which has
+been seen in other assessments.
+
+The sanitation district index was the axis of uncertainty in teh 2005
+assessment. The current assessment has a number of new data sources,
+including new indices, length data, and conditional age-at-length data
+available. Removing the sanitation index and lenght composition data
+from the current base model did not have a large effect on the model.
+Depletion dropped from 0.574 to 0.53, but this is a fairly small change
+compared to the effect on the 2005 model.
+
+The 2005 assessment fixed natural mortality at 0.25 for males and
+females, and steepness at 0.7. A sensitivity of fixing male and female
+natural mortality to 0.257, increased depletion from 0.574 to 0.594, but
+did not have a large overall effect on the model.
 
 \subsubsection{Retrospective Analysis}\label{retrospective-analysis}
 
 A 4-year retrospective analysis was conducted by running the model using
-data only through 2012, 2013, 2014, and 2015, progressively. The initial
-population size and estimation of trends in spawning biomass in the
-retrospective runs were slightly lower than the base model (Figure
-\ref{fig:retro_spawnb}). The initial scale of the spawning population
-was basically unchanged for all of these retrospectives.\\
+data only through 2012, 2013, 2014, and 2015, progressively (Table
+\ref{tab:retro}). The initial population size and estimation of trends
+in spawning biomass in the retrospective runs were slightly lower than
+the base model (Figure \ref{fig:retro_spawnb}). The initial scale of the
+spawning population was basically unchanged for all of these
+retrospectives.\\
 The recruitment deviations in the more recent years shrink towards zero
 the more years are removed from the model (Figure
 \ref{fig:retro_recdev}).
@@ -3332,10 +3402,11 @@ guideline for 2017-2018 was set at 0.2 mt. The average research catch
 from the NWFSC trawl survey averaged 0.077 mt from 2012-2016, which was
 used in the forecast.
 
-\textbf{Model 1 Projections and Decision Table (groundfish only)} Table
-\ref{tab:Forecast_mod1}
+\textbf{Projections and Decision Table}
 
-Table \ref{tab:Decision_table_mod1}
+Forecasts (Table \ref{tab:Forecast_mod1}) and decision tables (Table
+\ref{tab:Decision_table_mod1}) to be completed during and/or after the
+STAR panel
 
 \section{Regional Management
 Considerations}\label{regional-management-considerations}
@@ -3382,7 +3453,9 @@ the ability to estimate female natural mortality in the model.  The NWFSC trawl 
 was the only available source of age data for this assessment, of which there were a 
 number of age-1 fish and the data were dominated by males.
 
-\item \textbf{Steepness}: 
+\item \textbf{Steepness}: Califronia scorpionfish has not been fished to a level where information 
+on steepness is available.  A meta-analysis for species with similar breeding strategies to 
+California scorpionfish could be conducted if data are available.
 
 \item \textbf{Stock in Mexico}:  No available information on the status of California 
 scorpionfish in Mexico could be found.  A number of emails were sent to researchers 
@@ -3404,11 +3477,7 @@ would aid in modelling the high catch events.
 
 \section{Acknowledgments}\label{acknowledgments}
 
-Include: STAR panel members and affiliations as well as names and
-affiliations of persons who contributed data, advice or information but
-were not part of the assessment team. Not required in draft assessment
-undergoing review. We thank Kevin Lee for the use of the cover photo for
-this document.
+To be added.
 
 \newpage
 
@@ -3534,7 +3603,8 @@ Year & Hook-and-line (plus pot and other) & Trawl & Gillnet & Mexico & Total U.S
 \centering
 \caption{The annual number of California scorpionfish 
                                               sampled from the the commercial hook-and-line 
-                                            fleet for lengths.} 
+                                            fleet for lengths. Sample size is calculated 
+                                            using Stewarts method (see text for detail)} 
 \label{tab:ComHL_lengthsample}
 \begin{tabular}{rrrrr}
   \hline
@@ -3557,7 +3627,8 @@ Year & Fish & Trips & Sample size & Mean length (cm) \\
 \centering
 \caption{The annual number of California scorpionfish 
                                               sampled from the the commercial gillnet 
-                                            fleet for lengths.} 
+                                            fleet for lengths. Sample size is calculated 
+                                            using Stewarts method (see text for detail)} 
 \label{tab:ComNet_lengthsample}
 \begin{tabular}{rrrrr}
   \hline
@@ -3578,7 +3649,8 @@ Year & Fish & Trips & Sample size & Mean length (cm) \\
 \centering
 \caption{The annual number of California scorpionfish 
                                               sampled from the the commercial trawl 
-                                            fleet for lengths.} 
+                                            fleet for lengths. Sample size is calculated 
+                                            using Stewarts method (see text for detail)} 
 \label{tab:ComTrawl_lengthsample}
 \begin{tabular}{rrrrr}
   \hline
@@ -3605,7 +3677,8 @@ Year & Fish & Trips & Sample size & Mean length (cm) \\
                                         and private vessels. Removals from man-made and 
                                         beach/bank modes were included in the private mode
                                         removals. Dead discards include all modes. CDFW provided 
-                                        all data. Note: A discard mortality rate of 7% was applied 
+                                        all data. Note: A discard mortality rate of seven percent 
+                                        was applied 
                                         to the dead discard removals.} \\ 
   \hline
 Year & Private & Party/charter & Dead Discard (all modes) & Total Removals \\ 
@@ -4283,7 +4356,7 @@ City of Los Angeles & 120 &   0 & 1372 &   0 & 1492 \\
 \end{table}\begin{table}[ht]
 \centering
 \caption{Sample sizes and mean length by
-                                                year fo teh sanitation district 
+                                                year fo the sanitation district 
                                                 trawl surveys, all sanitation 
                                               district programs combined} 
 \label{tab:Fleet7_lengthsample}
@@ -4347,7 +4420,7 @@ Year & Fish & Trips & Mean length (cm) \\
 \begin{table}[ht]
 \centering
 \caption{Summaries of catch statistics of 
-                                          Califronia scorpionfish by depth zones 
+                                          Califronia scorpionfish by 25 m interval depth zones 
                                           from NWFSC trawl survey between 2003 and 2016.} 
 \label{tab:Fleet8_NWFSCTrawl_catchdepth}
 \begin{tabular}{rrr}
@@ -4937,41 +5010,35 @@ Yr & Total biomass (mt) & Spawning biomass (mt) & Depletion & Age-0 recruits & T
 \scalebox{0.9}{
 \begin{tabular}{l>{\centering}p{.6in}>{\centering}p{.6in}>{\centering}p{.6in}>{\centering}p{.6in}>{\centering}p{.6in}>{\centering}p{.6in}>{\centering}p{.6in}>{\centering}p{.6in}}
   \hline
-Label & Base (Francis weights) & Harmonic mean weights & Drop index & Drop ages & Down-weight lengths & Free size Age0 & Free CV Amin & External growth \\ 
+Label & Base (Francis weights) & Default weights & Harmonic mean weights & Drop sanitation data & Assume equal M & Placeholder1 & Placeholder2 & Placeholder3 \\ 
   \hline
-TOTAL\_like & - & - & - & - & - & - & - & - \\ 
-  Catch\_like & - & - & - & - & - & - & - & - \\ 
-  Equil\_catch\_like & - & - & - & - & - & - & - & - \\ 
-  Survey\_like & - & - & - & - & - & - & - & - \\ 
-  Length\_comp\_like & - & - & - & - & - & - & - & - \\ 
-  Age\_comp\_like & - & - & - & - & - & - & - & - \\ 
-  Parm\_priors\_like & - & - & - & - & - & - & - & - \\ 
-  SSB\_Unfished\_thousand\_mt & - & - & - & - & - & - & - & - \\ 
-  TotBio\_Unfished & - & - & - & - & - & - & - & - \\ 
-  SmryBio\_Unfished & - & - & - & - & - & - & - & - \\ 
-  Recr\_Unfished\_billions & - & - & - & - & - & - & - & - \\ 
-  SSB\_Btgt\_thousand\_mt & - & - & - & - & - & - & - & - \\ 
-  SPR\_Btgt & - & - & - & - & - & - & - & - \\ 
-  Fstd\_Btgt & - & - & - & - & - & - & - & - \\ 
-  TotYield\_Btgt\_thousand\_mt & - & - & - & - & - & - & - & - \\ 
-  SSB\_SPRtgt\_thousand\_mt & - & - & - & - & - & - & - & - \\ 
-  Fstd\_SPRtgt & - & - & - & - & - & - & - & - \\ 
-  TotYield\_SPRtgt\_thousand\_mt & - & - & - & - & - & - & - & - \\ 
-  SSB\_MSY\_thousand\_mt & - & - & - & - & - & - & - & - \\ 
-  SPR\_MSY & - & - & - & - & - & - & - & - \\ 
-  Fstd\_MSY & - & - & - & - & - & - & - & - \\ 
-  TotYield\_MSY\_thousand\_mt & - & - & - & - & - & - & - & - \\ 
-  RetYield\_MSY & - & - & - & - & - & - & - & - \\ 
-  Bratio\_2015 & - & - & - & - & - & - & - & - \\ 
-  F\_2015 & - & - & - & - & - & - & - & - \\ 
-  SPRratio\_2015 & - & - & - & - & - & - & - & - \\ 
-  Recr\_2015 & - & - & - & - & - & - & - & - \\ 
-  Recr\_Virgin\_billions & - & - & - & - & - & - & - & - \\ 
-  L\_at\_Amin\_Fem\_GP\_1 & - & - & - & - & - & - & - & - \\ 
-  L\_at\_Amax\_Fem\_GP\_1 & - & - & - & - & - & - & - & - \\ 
-  VonBert\_K\_Fem\_GP\_1 & - & - & - & - & - & - & - & - \\ 
-  CV\_young\_Fem\_GP\_1 & - & - & - & - & - & - & - & - \\ 
-  CV\_old\_Fem\_GP\_1 & - & - & - & - & - & - & - & - \\ 
+Female natural mortality & 0.26 & 0.26 & 0.26 & 0.26 & 0.26 & - & - & - \\ 
+  Male natural mortality & 0.21 & 0.21 & 0.19 & 0.20 & 0.26 & - & - & - \\ 
+  Steepness & 0.72 & 0.72 & 0.72 & 0.72 & 0.72 & - & - & - \\ 
+  lnR0 & 8.16 & 8.26 & 8.03 & 8.22 & 8.45 & - & - & - \\ 
+  Total Biomass (mt) & 2801.84 & 2870.33 & 2426.03 & 3024.20 & 3144.75 & - & - & - \\ 
+  Depletion & 0.57 & 0.77 & 0.65 & 0.53 & 0.59 & - & - & - \\ 
+  SPR ratio & 0.72 & 0.61 & 0.79 & 0.70 & 0.63 & - & - & - \\ 
+  Female Lmin & 12.47 & 12.33 & 12.37 & 12.74 & 12.01 & - & - & - \\ 
+  Female Lmax & 33.32 & 33.75 & 34.57 & 33.81 & 32.48 & - & - & - \\ 
+  Female K & 0.25 & 0.22 & 0.21 & 0.24 & 0.26 & - & - & - \\ 
+  Male Lmin (offset) & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & - & - & - \\ 
+  Male Lmax (offset) & -0.16 & -0.17 & -0.17 & -0.15 & -0.14 & - & - & - \\ 
+  Male K (offset) & -0.30 & -0.37 & -0.85 & -0.47 & -0.16 & - & - & - \\ 
+  Negative log-likelihood &  &  &  &  &  & - & - & - \\ 
+  No. parameters & 113.00 & 113.00 & 113.00 & 109.00 & 112.00 & - & - & - \\ 
+  TOTAL & 1095.94 & 3787.10 & 2301.37 & 872.09 & 1106.63 & - & - & - \\ 
+  Catch & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & - & - & - \\ 
+  Equililibrium catch & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & - & - & - \\ 
+  Survey & -98.10 & -87.72 & -88.09 & -93.07 & -98.41 & - & - & - \\ 
+  Length composition & 762.60 & 2521.59 & 1683.31 & 536.67 & 764.90 & - & - & - \\ 
+  Age composition & 420.57 & 1320.79 & 683.12 & 419.66 & 429.62 & - & - & - \\ 
+  Recruitment & 10.87 & 32.44 & 23.02 & 8.83 & 10.52 & - & - & - \\ 
+  Forecast Recruitment & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & - & - & - \\ 
+  Parameter priors & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & - & - & - \\ 
+  Parameter softbounds & 0.01 & 0.01 & 0.00 & 0.01 & 0.00 & - & - & - \\ 
+  Parameter devs & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & - & - & - \\ 
+  Crash Pen & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & - & - & - \\ 
    \hline
 \end{tabular}
 }
@@ -5010,9 +5077,61 @@ Fleet & Years & Name & Fishery ind. & Filtering & Method & Endorsed \\
 \begin{landscape}
 \begin{table}[ht]
 \centering
-\caption{Likelihood profiles for initial equilibrium recruitment 
-                                              ,$R_0$ (7200-8800),steepness, $h$, (0.41-0.99), and female
-                                              natural mortality, $M$, (0.2-0.4).} 
+\caption{Summaries of key assessment outputs 
+                                              and likelihood values from the retrospective 
+                                              analysis.  Note that male 
+                                              growth parameters are exponential 
+                                              offsets from female parameters, and 
+                                              depletion and SPR ratio are for the year of 2017.} 
+\label{tab:retro}
+\begin{tabular}{lrrrrr}
+  \hline
+Label & Base & Retro1 & Retro2 & Retro3 & Retro4 \\ 
+  \hline
+Female natural mortality & 0.26 & 0.26 & 0.26 & 0.26 & 0.26 \\ 
+  Male natural mortality & 0.72 & 0.72 & 0.72 & 0.72 & 0.72 \\ 
+  Steepness & 8.16 & 8.08 & 8.06 & 8.03 & 8.07 \\ 
+  lnR0 & 2801.84 & 2583.95 & 2557.25 & 2487.92 & 2638.26 \\ 
+  Total Biomass (mt) & 57.43 & 53.92 & 51.09 & 51.11 & 55.23 \\ 
+  Depletion & 0.72 & 0.84 & 0.96 & 0.96 & 0.96 \\ 
+  SPR ratio & 12.47 & 12.49 & 12.94 & 12.67 & 13.06 \\ 
+  Female Lmin & 33.32 & 33.51 & 33.39 & 33.37 & 33.46 \\ 
+  Female Lmax & 0.25 & 0.24 & 0.24 & 0.24 & 0.23 \\ 
+  Female K & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\ 
+  Male Lmin (offset) & -0.16 & -0.16 & -0.15 & -0.15 & -0.15 \\ 
+  Male Lmax (offset) & -0.30 & -0.30 & -0.44 & -0.42 & -0.57 \\ 
+  Male K (offset) &  &  &  &  &  \\ 
+  Negative log-likelihood & 1095.94 & 1046.89 & 1008.74 & 961.28 & 896.59 \\ 
+  No. parameters & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\ 
+  TOTAL & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\ 
+  Catch & -98.10 & -92.00 & -89.11 & -81.75 & -80.60 \\ 
+  Equililibrium catch & 762.60 & 739.38 & 719.84 & 699.58 & 670.14 \\ 
+  Survey & 420.57 & 389.68 & 369.16 & 335.51 & 299.18 \\ 
+  Length composition & 10.87 & 9.81 & 8.85 & 7.93 & 7.86 \\ 
+  Age composition & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\ 
+  Recruitment & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\ 
+  Forecast Recruitment & 0.01 & 0.01 & 0.01 & 0.01 & 0.01 \\ 
+  Parameter priors & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\ 
+  Parameter softbounds & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\ 
+  Parameter devs &  &  &  &  &  \\ 
+  Crash Pen &  &  &  &  &  \\ 
+   \hline
+\end{tabular}
+\end{table}
+\end{landscape}
+
+\newpage
+
+\begin{landscape}
+\begin{table}[ht]
+\centering
+\caption{Summaries of key assessment outputs 
+                                              and likelihood values from selected 
+                                              likelihood profile runs on virgin 
+                                              recruitment (lnR0).  Note that male 
+                                              growth parameters are exponential 
+                                              offsets from female parameters, and 
+                                              depletion and SPR ratio are for the year of 2017.} 
 \label{tab:like_profiles}
 \begin{tabular}{lrrrrrrrrrrrrrrr}
   \hline
@@ -6016,16 +6135,6 @@ composition data}
 \label{fig:mod1_13_comp_lenfit_flt11mkt2}}
 \end{figure}
 
-\section*{Appendix E. Appendix Title}\label{appendix-e.-appendix-title}
-\addcontentsline{toc}{section}{Appendix E. Appendix Title}
-
-\label{sec:AppendixE} \renewcommand{\thepage}{E-\arabic{page}}
-\renewcommand{\thefigure}{E\arabic{figure}}
-\renewcommand{\thetable}{E\arabic{table}} \setcounter{page}{1}
-\setcounter{figure}{0} \setcounter{table}{0}
-
-Add Appendix text, tables and figuers here.
-
 \newpage
 
 \color{black}
@@ -6071,6 +6180,11 @@ department of fish and game fishery bulletin no. 74.
 Dotson, R., and Charter, R. 2003. Trends in the Southern California
 sport fishery. CalCOFI Report \textbf{44}: 94--106. Available from
 \url{http://calcofi.org/publications/calcofireports/v44/Vol_44_Dotson_Charter.pdf}.
+
+\hypertarget{ref-EPRI2008}{}
+Electric Power Research Institute. 2008. Comprehensive demonstration
+study for Southern California Edison's San Onofre Nuclear Generating
+Station. Prepared for Southern California Edison.
 
 \hypertarget{ref-Eschmeyer1983}{}
 Eschmeyer, W.N., Herald, E., and Hammann, H. 1983. A field guide to
@@ -6142,6 +6256,18 @@ The status of California scorpionfish (\emph{Sorpaena guttata}) off
 southern California in 2004. Pacific Fishery Management Council,
 Portland, OR.
 
+\hypertarget{ref-MBC2005}{}
+MBC. 2005. (MBC Applied Environmental Sciences and Tenera
+Environmental). Huntington Beach Generating Station entrainment and
+impingement study: Final report. Prepared for AES Huntington Beach,
+L.L.C.
+
+\hypertarget{ref-MBC2007}{}
+MBC. 2007. (MBC Applied Environmental Sciences and Tenera
+Environmental). Redondo Beach Generating Station Clean Water Act Section
+316(b) impingement mortality and entrainment characterization study.
+Prepared for AES Redondo Beach L.L.C.
+
 \hypertarget{ref-McAllister1997}{}
 McAllister, M.K., and Ianelli, J.N. 1997. Bayesian stock assessment
 using catch-age data and the sampling - importance resampling algorithm.
@@ -6163,8 +6289,9 @@ database for the California recreational fisheries survey onboard
 observer sampling program, 1999-2011. NOAA-TM-NMFS-SWFSC-529.
 
 \hypertarget{ref-Moser1996}{}
-Moser, H.G.(. 1996. The early stages of fishes in the California Current
-region. CalCOFI Atlas \textbf{33}.
+Moser, H. 1996. Scorpaenidae \emph{Scorpaena guttata}. \emph{In} CalCOFI
+atlas 33: The early stages of the fishes in the califonria current
+region. pp. 788--789.
 
 \hypertarget{ref-Moser1993}{}
 Moser, H.G., Charter, R.L., Smith, P.E., Ambrose, D.A., Charter, S.R.,
@@ -6179,10 +6306,9 @@ larvae and eggs from Manta (surface) samples collected on CalCOFI
 surveys from 1977 to 2000. CalCOFI Atlas \textbf{35}.
 
 \hypertarget{ref-Myers1999}{}
-Myers, R.A., Bowen, K.G., and Barrowman, N.J. 1999. Maximum reproductive
+Myers, R.A., Bowen, K.G., and Barrowman, N. 1999. Maximum reproductive
 rate of fish at low population sizes. Canadian Journal of Fisheries and
-Aquatic Sciences \textbf{56}(12): 2404--2419. doi:
-\href{https://doi.org/10.1139/f99-201}{10.1139/f99-201}.
+Aquatic Sciences \textbf{56}: 2404--2419.
 
 \hypertarget{ref-Orton1955}{}
 Orton, G. 1955. Early developmental stages of the California
