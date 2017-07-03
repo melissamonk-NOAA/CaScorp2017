@@ -1,34 +1,28 @@
-Label,Base,Weight Harmonic Mean,Remove Index,Remove Ages,Down Weight Lengths,Free Size Age0,Free CV Amin,External Growth
-TOTAL_like,-,-,-,-,-,-,-,-
-Catch_like,-,-,-,-,-,-,-,-
-Equil_catch_like,-,-,-,-,-,-,-,-
-Survey_like,-,-,-,-,-,-,-,-
-Length_comp_like,-,-,-,-,-,-,-,-
-Age_comp_like,-,-,-,-,-,-,-,-
-Parm_priors_like,-,-,-,-,-,-,-,-
-SSB_Unfished_thousand_mt,-,-,-,-,-,-,-,-
-TotBio_Unfished,-,-,-,-,-,-,-,-
-SmryBio_Unfished,-,-,-,-,-,-,-,-
-Recr_Unfished_billions,-,-,-,-,-,-,-,-
-SSB_Btgt_thousand_mt,-,-,-,-,-,-,-,-
-SPR_Btgt,-,-,-,-,-,-,-,-
-Fstd_Btgt,-,-,-,-,-,-,-,-
-TotYield_Btgt_thousand_mt,-,-,-,-,-,-,-,-
-SSB_SPRtgt_thousand_mt,-,-,-,-,-,-,-,-
-Fstd_SPRtgt,-,-,-,-,-,-,-,-
-TotYield_SPRtgt_thousand_mt,-,-,-,-,-,-,-,-
-SSB_MSY_thousand_mt,-,-,-,-,-,-,-,-
-SPR_MSY,-,-,-,-,-,-,-,-
-Fstd_MSY,-,-,-,-,-,-,-,-
-TotYield_MSY_thousand_mt,-,-,-,-,-,-,-,-
-RetYield_MSY,-,-,-,-,-,-,-,-
-Bratio_2015,-,-,-,-,-,-,-,-
-F_2015,-,-,-,-,-,-,-,-
-SPRratio_2015,-,-,-,-,-,-,-,-
-Recr_2015,-,-,-,-,-,-,-,-
-Recr_Virgin_billions,-,-,-,-,-,-,-,-
-L_at_Amin_Fem_GP_1,-,-,-,-,-,-,-,-
-L_at_Amax_Fem_GP_1,-,-,-,-,-,-,-,-
-VonBert_K_Fem_GP_1,-,-,-,-,-,-,-,-
-CV_young_Fem_GP_1,-,-,-,-,-,-,-,-
-CV_old_Fem_GP_1,-,-,-,-,-,-,-,-
+Label,Base,Default Weights,Weight Harmonic Mean,Remove Sanitation Index,Same natural mortality male and females,Sensitivity4,Sensitivity5,Sensitivity6
+Female natural mortality,0.257,0.257,0.257,0.257,0.257,-,-,-
+Male natural mortality,0.208,0.215,0.194,0.205,0.257,-,-,-
+Steepness,0.718,0.718,0.718,0.718,0.718,-,-,-
+lnR0,8.162,8.263,8.034,8.22,8.451,-,-,-
+Total Biomass (mt),2801.84,2870.33,2426.03,3024.2,3144.75,-,-,-
+Depletion,0.574,0.771,0.649,0.53,0.594,-,-,-
+SPR ratio,0.718,0.615,0.789,0.704,0.634,-,-,-
+Female Lmin,12.468,12.328,12.371,12.737,12.009,-,-,-
+Female Lmax,33.317,33.752,34.57,33.815,32.477,-,-,-
+Female K,0.25,0.223,0.214,0.242,0.263,-,-,-
+Male Lmin (offset),0,0,0,0,0,-,-,-
+Male Lmax (offset),-0.158,-0.168,-0.168,-0.153,-0.143,-,-,-
+Male K (offset),-0.299,-0.373,-0.85,-0.471,-0.159,-,-,-
+Negative log-likelihood,NA,NA,NA,NA,NA,-,-,-
+No. parameters,113,3787.1,2301.37,109,112,-,-,-
+TOTAL,1095.94,0,0,872.089,1106.63,-,-,-
+Catch,0,0,0,0,0,-,-,-
+Equililibrium catch,0,-87.715,-88.086,0,0,-,-,-
+Survey,-98.1,2521.59,1683.31,-93.073,-98.414,-,-,-
+Length composition,762.595,1320.79,683.118,536.672,764.905,-,-,-
+Age composition,420.571,32.435,23.017,419.659,429.617,-,-,-
+Recruitment,10.867,0,0,8.826,10.516,-,-,-
+Forecast Recruitment,0,0,0,0,0,-,-,-
+Parameter priors,0,0.006,0.005,0,0,-,-,-
+Parameter softbounds,0.006,0,0,0.006,0.005,-,-,-
+Parameter devs,0,0,0,0,0,-,-,-
+Crash Pen,0,,,0,0,-,-,-

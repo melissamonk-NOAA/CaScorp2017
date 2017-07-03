@@ -269,14 +269,14 @@
     # Read in/organize sensitivity file, change column names, caption
     Sens_model1 = read.csv('./txt_files/Sensitivities_model1.csv')
     colnames(Sens_model1) = c('Label', 
-                              'Base (Francis weights)', 
+                              'Base (Francis weights)',
+                              'Default weights',
                               'Harmonic mean weights',
-                              'Drop index', 
-                              'Drop ages', 
-                              'Down-weight lengths',
-                              'Free size Age0', 
-                              'Free CV Amin', 
-                              'External growth')
+                              'Drop sanitation data', 
+                              'Assume equal M', 
+                              'Placeholder1',
+                              'Placeholder2', 
+                              'Placeholder3')
 
     # Create sensitivities table
     Sens_model1.table = xtable(Sens_model1, 

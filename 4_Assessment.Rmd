@@ -626,23 +626,49 @@ A number of sensitivity analyses were conducted, including:
 
   \item Data weighting according to the harmonic mean.
   
-  \item Removal of one index at a time
+  \item Removal of the sanitation distric index (axis of uncertainty from the 2005 assessment)
   
-  \item Dome-shaped selectivity for the NWFSC trawl survey and gill net survey
+  \item Dome-shaped selectivity for the NWFSC trawl survey and gill net survey - TBD
   
   \item Estimating natural female mortality
   
-  \item Estimating steepness
+  \item Estimating steepness - TBD
   
-  \item   
-  \item 
+  \item Assume the same fixed natural mortality for males and females
+  
+  \item Remove each index, one at a time - TBD
   
   
 \end{enumerate}
 
+A number of changes were made since the 2005 assessment, and sensitivities to the current 
+base model included changing or fixing a number of parameters to the same as the 2005 
+assessment, as well as a number of sentivities to modelling choices made in developing the 
+current base model (Table \ref{tab:Sensitivity_model1}).  
+
+Data weighting is an area of uncertainty for stock assessment and research is ongoing to 
+determine the effects of data weighting and the most appropriate initial sample sizes for 
+length and age composition data.  A model run with defauly weighting increased the total 
+likelihood by 2,692 and resulted in a final depletion of 0.771.  The base model used the 
+Stewart sample sizes for the fishery data and number of trips for all survey sample sizes. 
+Weighting the data by the harmonic mean resulted in a model with a total likelihood between 
+the base model, which uses the Francis method for weighting, and the model with default weights. 
+The Francis weights in the base model were stable, and did not tend to serially decrease (downweight) 
+any of the datasets, which has been seen in other assessments.  
+
+The sanitation district index was the axis of uncertainty in teh 2005 assessment.  The current assessment 
+has a number of new data sources, including new indices, length data, and conditional age-at-length data 
+available.  Removing the sanitation index and lenght composition data from the current base model 
+did not have a large effect on the model.  Depletion dropped from 0.574 to 0.53, but this is a fairly 
+small change compared to the effect on the 2005 model.
+
+The 2005 assessment fixed natural mortality at 0.25 for males and females, and 
+steepness at 0.7.  A sensitivity of fixing male and female natural mortality to 0.257, 
+increased depletion from 0.574 to 0.594, but did not have a large overall effect on 
+the model.
 
 
-Table \ref{tab:Sensitivity_model1}
+
 
 
 
