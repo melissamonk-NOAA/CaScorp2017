@@ -261,6 +261,14 @@ all sizes (SS pattern 0).  As an example, the cooling intake pipes at SONGS are
 gallons per minute.  The water flow once in the generating station is one directional 
 and organisms cannot escape, unless removed via a fish return system. 
 
+The length composition data for some years and fleets was small, and may not have 
+been representative of the total catch.  Length composition data were removed from the 
+model if less than one trip sampled and fewer than 20 fish were measured in a given 
+year and fleet.  From 1985-1989, two surveys measured fish from the recreational 
+party/charter fleet, the Ally et al. [@Ally1991] onboard observer survey and the 
+dockside intercept survey.  The number of trips and fish sampled by the onboard 
+observer survey was far greater than the RecFIN survey and were used in the model.
+
 The time-series of landings begins in 1916 for the commercial fleet and in 1929 for 
 the recreational fleet.  This captures the inception of the fishery, so the stock is 
 assumed to be in equilibrium at the beginning of the modeled period.
@@ -431,7 +439,6 @@ commercial discards have been negligible and are not included in the base model.
 
 ###Alternate Models Considered
 Include: Summary of alternate model configurations that were tried but rejected.
-
 
 
 ###Convergence
@@ -669,12 +676,10 @@ the model.
 
 
 
-
-
-
 ###Retrospective Analysis
 A 4-year retrospective analysis was conducted by running the model using data 
-only through 2012, 2013, 2014, and 2015, progressively.  The initial population 
+only through 2012, 2013, 2014, and 2015, progressively (Table \ref{tab:retro}). 
+The initial population 
 size and estimation of trends in spawning biomass in the retrospective runs were 
 slightly lower than the base model (Figure \ref{fig:retro_spawnb}).  The initial 
 scale of the spawning population was basically unchanged for all of these retrospectives.  

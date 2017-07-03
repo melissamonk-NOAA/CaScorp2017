@@ -62,7 +62,8 @@
     ComHL_length.table = xtable(ComHL_length,
                                 caption = c('The annual number of California scorpionfish 
                                               sampled from the the commercial hook-and-line 
-                                            fleet for lengths.'),
+                                            fleet for lengths. Sample size is calculated 
+                                            using Stewart’s method (see text for detail)'),
                                 label='tab:ComHL_lengthsample')
 
       print(ComHL_length.table,
@@ -72,7 +73,8 @@
      ComNet_length.table = xtable(ComNet_length,
                                 caption = c('The annual number of California scorpionfish 
                                               sampled from the the commercial gillnet 
-                                            fleet for lengths.'),
+                                            fleet for lengths. Sample size is calculated 
+                                            using Stewart’s method (see text for detail)'),
                                 label='tab:ComNet_lengthsample')
 
       print(ComNet_length.table,
@@ -84,7 +86,8 @@
       ComTrawl_length.table = xtable(ComTrawl_length,
                                 caption = c('The annual number of California scorpionfish 
                                               sampled from the the commercial trawl 
-                                            fleet for lengths.'),
+                                            fleet for lengths. Sample size is calculated 
+                                            using Stewart’s method (see text for detail)'),
                                 label='tab:ComTrawl_lengthsample')
 
       print(ComTrawl_length.table,
@@ -117,7 +120,7 @@
                                         and private vessels. Removals from man-made and 
                                         beach/bank modes were included in the private mode
                                         removals. Dead discards include all modes. CDFW provided 
-                                        all data. Note: A discard mortality rate of 7% was applied 
+                                        all data. Note: A discard mortality rate of 7\% was applied 
                                         to the dead discard removals."),
                           label="tab:Rec_removal")
     align(Rec_removal.table) = 'lccccc'
@@ -628,7 +631,7 @@ Fleet7_lengthdepth.table = xtable(Fleet7_lengthdepth,
 
 Fleet7_lengthsample.table = xtable(Fleet7_lengthsample,
                                    caption = c("Sample sizes and mean length by
-                                                year fo teh sanitation district 
+                                                year fo the sanitation district 
                                                 trawl surveys, all sanitation 
                                               district programs combined"),
                                    label = 'tab:Fleet7_lengthsample')
@@ -708,7 +711,7 @@ print(Fleet7_lengthsample.table,
     #Fleet 8 catch by depth
         Fleet8_catchdepth.table = xtable(Fleet8_catchdepth,
                               caption = c("Summaries of catch statistics of 
-                                          Califronia scorpionfish by depth zones 
+                                          Califronia scorpionfish by 25 m interval depth zones 
                                           from NWFSC trawl survey between 2003 and 2016."),
                               label='tab:Fleet8_NWFSCTrawl_catchdepth')
     

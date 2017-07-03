@@ -351,7 +351,39 @@
 
 \newpage
 
+<!-- ***********Likelihood profile table*********************************** -->
+\begin{landscape}
+```{r, results = 'asis'}
+   Like_profile = read.csv('./txt_files/Retrospective.csv')
+   
+# likelihood profiels, create table   
+     Retro.table = xtable(Retro, 
+                                  caption = c('Summaries of key assessment outputs 
+                                              and likelihood values from the retrospective 
+                                              analysis.  Note that male 
+                                              growth parameters are exponential 
+                                              offsets from female parameters, and 
+                                              depletion and SPR ratio are for the year of 2017.'),
+                                 label = 'tab:retro')  
+     
+    
 
+
+
+# Print likelihood profile table
+      print(Retro.table, 
+            include.rownames=FALSE, 
+            caption.placement='top',
+            scale.box = .8,
+            sanitize.text.function = function(x){x})
+
+
+
+
+```
+\end{landscape}
+
+\newpage
 <!-- ***********Likelihood profile table*********************************** -->
 \begin{landscape}
 ```{r, results = 'asis'}
@@ -359,9 +391,13 @@
    
 # likelihood profiels, create table   
      Like_profile.table = xtable(Like_profile, 
-                                  caption = c('Likelihood profiles for initial equilibrium recruitment 
-                                              ,$R_0$ (7200-8800),steepness, $h$, (0.41-0.99), and female
-                                              natural mortality, $M$, (0.2-0.4).'),
+                                  caption = c('Summaries of key assessment outputs 
+                                              and likelihood values from selected 
+                                              likelihood profile runs on virgin 
+                                              recruitment (lnR0).  Note that male 
+                                              growth parameters are exponential 
+                                              offsets from female parameters, and 
+                                              depletion and SPR ratio are for the year of 2017.'),
                                  label = 'tab:like_profiles')  
      
      align = c('cc|ccccc|ccccc|ccccc')

@@ -675,7 +675,7 @@ The Sanitation Districts of Los Angeles County provided quarterly trawl data fro
 (Shelly Walther, Sanitation Districts of Los Angeles County) and follow the same sampling 
 protocols as the 
 Southern California Bight Regional Monitoring Program trawl survey 
-Stations sampled in fewer than 10 years or at 305 m where California
+stations sampled in fewer than 10 years or at 305 m where California
 scorpionfish were never observed were removed from the analysis.  Non-standard and 
 special study trawls were also removed, e.g., night trawl study in 1987. 
 Hauls were based on a 10 minute tow time and that is assumed as the effort for all hauls. 
@@ -709,7 +709,7 @@ The covariates considered for the lognormal and binomial models were *year* (47 
 select over a gamma model by a delta AIC of 619.  AIC model select was used for both the 
 lognormal and binomial models and all three covariates were selected for both (Table 
 \ref{tab:Fleet7_Sanitation_aic}).   The standardized index shows a large spike in relative 
-CPUE in 1981, bounces around within a range of 0.1 to 0.25 from 1989 to 2009, and then declines 
+CPUE in 1981, varies within a range of 0.1 to 0.25 from 1989 to 2009, and then declines 
 until 2013 (Figure \ref{fig:index4_logcpuedata_Sanitation}).  The last three years of the index 
 show an increase in relative abundance.  The final standardized index and log-standard error can be 
 found in Table \ref{tab:Fleet7_Sanitation_index}.  We did explore standardizing the indices 

@@ -10,7 +10,7 @@ from Mexico were not included in this assessment, and catches from Mexican water
 were landed in the U.S. were excluded from the catch histories.
 
 
-##Landings{-}
+##Catches{-}
 Information on historical landings of `r spp` are available back to 1916, with the 
 assumption that from 1916 to 1968 all of the commercial landings were caught by 
 hook-and-line (Table \ref{tab:Exec_catch}).  Commercial landings were small during 
@@ -40,26 +40,26 @@ ten months of the year during that period.
 <!-- ***********This depends on how many plots you need******************** -->
 <!-- ***********Also included is the r4SS plot - keep or remove************ -->
 <!-- ***********CATCH FIGURES********************************************** -->
-```{r, fig.cap= paste(spp, 'landings history for the recreational fleets. \\label{fig:Exec_catch1}',sep=' ')}
+```{r, fig.cap= paste(spp, 'catch history for the recreational fleets. \\label{fig:Exec_catch1}',sep=' ')}
     # CSV: './txt_files/Exec_catch_for_figs.csv'
     # Note: you cannot have carriage returns in the R options line
     # Plot washington catches           
     Plot_catch(Catch_df = Exec_region1_catch)
 ```
 
-```{r, fig.cap=paste('Stacked line plot of', spp,' landings history for the commercial fleets. \\label{fig:Exec_catch2}',sep=' ')}
+```{r, fig.cap=paste('Stacked line plot of', spp,' catch history for the commercial fleets. \\label{fig:Exec_catch2}',sep=' ')}
     # Plot Oregon catches
     Plot_catch(Catch_df = Exec_region2_catch)
 ```
 
-```{r, fig.cap=paste('Stacked line plot of', spp, 'landings history from Pt. Conception to the U.S.-Mexico border and catches from Mexican waters. \\label{fig:Exec_catch3}',sep=' ')}
+```{r, fig.cap=paste('Stacked line plot of', spp, 'catch history from Pt. Conception to the U.S.-Mexico border and catches from Mexican waters. \\label{fig:Exec_catch3}',sep=' ')}
      # Plot California catches  
       Plot_catch(Catch_df = Exec_region3_catch)
 ```
 
 \FloatBarrier
 
-![Landings history of `r spp` in the `r mod1_label`. \label{fig:r4ss_catches}](r4ss/plots_mod1/catch2 landings stacked.png)
+![Catch history of `r spp` in the `r mod1_label`. \label{fig:r4ss_catches}](r4ss/plots_mod1/catch2 landings stacked.png)
 
 
 
