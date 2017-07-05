@@ -1,0 +1,149 @@
+---
+title: 'California Scorpionfish 2017 Assessment'
+subtitle: 'Biology and Data'
+author: 
+  - Melissa H Monk$^1$,
+  - Xi He$^1$,
+  - John Budrick$^2$
+institute:
+  - $^1$Southwest Fisheries Science Center
+  - $^2$California Department of Fish and Wildlife
+date: 'STAR Panel   July 24-28, 2017'
+output: 
+  beamer_presentation:
+    theme: "Singapore"
+    toc: true
+    slide_level: 2
+    includes:
+      in_header: presentation_header.tex
+---
+
+```{r global_options, include=FALSE}
+    # set global options for R code chunks: echo=FALSE (don't include source code); 
+    # warning=FALSE (suppress R warnings); message=FALSE (suppress R messages)
+    # eval = TRUE is default
+    knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+
+    library(xtable)
+    # Change options  
+      options(xtable.comment = FALSE)  # turns off xtable comments
+      options(scipen=999)              # turns off scientific notation
+```
+
+```{r}
+    # Read in preamble R code - including required libraries and the SS file(s)
+    source('./Rcode/Preamble.R')
+ 
+    # Read in data/manipulations for executive summary tables and figures
+    # It may take time to edit this file and get it ready for your assessment
+    # Make small changes in this file and then try to compile the document
+    # Commit when you have a success!
+    source('./Rcode/Exec_summary_figs_tables.R')
+```
+
+```{r child = "8_Tables.Rmd", include=FALSE}
+```
+
+```{r child = "8a_Tables.Rmd", include=FALSE}
+```
+
+
+
+# Background
+
+## California scorpionfish *Scorpaena guttata*
+
+* Distributed from central California to Punta Eugenia, Baja Mexico
+* Rarely observed north of Pt. Conception
+* Observed from the intertidal to 600 ft,  preferred depth range from 20-450 ft
+* Demersal, found over both hard and soft bottom
+* Exhibit aggregating behavior (spawning and non-spawning)
+
+
+
+\includegraphics[width=.5\textwidth, right]{cover_photo}
+
+
+# Biology
+## Length-at-age
+
+
+
+## Maturity
+
+## Weight-at-length
+
+## Natural mortality
+
+## Steepness
+
+## Summary of Data used in the 2017 Assessment
+
+
+
+
+# Removals
+##Total Removals 
+
+##Commercial Landings by Fleet
+
+##Recreational Landings by Fleet
+
+ 
+
+# Index Data
+
+ 
+
+## Summary of Indices
+
+- All of the methods used to standardize indices have been endorsed by the SSC
+
+```{r, results = 'asis'}
+    # Years read in as factor - change to shorten.
+      Index_summary$Years = as.character(Index_summary$Years)
+      Index_summary[7,2] = paste0("'94, '98, '03, '08, '13")
+      Index_summary = Index_summary[,c(3,2,4,6)]
+
+    # Print index summary table
+      print(xtable(Index_summary,
+                   align = 'lp{2.5in}p{0.8in}p{.4in}p{2in}'),
+            include.rownames=FALSE,
+            scalebox = 0.7,
+            sanitize.text.function = function(x){x})
+```
+ 
+
+## Recreational Private Boat Index
+
+## Recreational Party/Charter Boat Index (Logbook)
+
+## Recreational Dead Discard Index
+
+## Recreational Party/Charter Retained Catch Index
+
+
+
+
+
+## Sanitation Districts Survey Index
+```{r, results='asis'}
+  print(xtable(Fleet7_lengthdepth),
+                include.rownames=FALSE,
+                scalebox = 0.9,
+                sanitize.text.function = function(x){x})
+```
+## Sanitation Districts Survey Index
+
+## Sanitation Districts Survey Index
+
+## NWFSC Trawl Survey Index
+
+## Gillnet Survey Index
+
+## Southern California Bight Trawl Survey Index
+
+
+
+# Composition Data
+

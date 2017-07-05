@@ -78,6 +78,7 @@ link-citations: yes
 ```{r child = "7_ResearchNeeds_Acknowledgements.Rmd"}
 ```
 
+#Tables
 
 ```{r child = "8_Tables.Rmd"}
 ```
@@ -96,7 +97,7 @@ link-citations: yes
 ```{r child = "9_4_Figures_Assessment.Rmd"}
 ```
 
-```{r child = "99_Appendices.Rmd"}
+```{r child = "9_9_Appendices.Rmd"}
 ```
 
 
