@@ -630,7 +630,8 @@ in southern California were contacted for trawl data.
 The two northernmost districts, Goleta and the City of Oxnard, provided data (via Aquatic 
 Bioassay & Consulting Laboratories, Inc.), but California scorpionfish have not been 
 encountered in either district's trawl surveys.  The four other 
-sanitation districts, Orange County, City of Los Angeles, Los Angeles County, 
+sanitation districts, Orange County, The City of Los Angeles Environmental Monitoring 
+Division (CLAEMD), Los Angeles County, 
 and the City of San Diego all encounter California scorpionfish and provided trawl 
 data.
 
@@ -656,9 +657,9 @@ by size class (nearest cm).  Six hauls, all from station T3, caught more than 30
 scorpionfish.
  
  
-_City of Los Angeles_
-The City of Los Angeles Sanitation District provided trawl data from 1986-2016 (Craig Campbell,
-Lost Angeles City).  The City of Los Angeles follows the same sampling protocols as the 
+_The City of Los Angeles Environmental Monitoring Division (CLAEMD)_
+The CLAEMD provided trawl data from 1986-2016 (Craig Campbell,
+Lost Angeles City).  The CLAEMD follows the same sampling protocols as the 
 Southern California Bight Regional Monitoring Program trawl survey.  Stations within Los 
 Angeles Harbor were excluded from the dataset. Years with fewer than ten total hauls
 were removed from the analysis (1986, 1987, and 1992), as were station sampled in fewer than 
@@ -725,9 +726,9 @@ of California scorpionfish in those years (Figure \ref{fig:Fleet7_Sanitation_len
 Los Angeles County has has encountered pulses of large numbers of California scorpionfish in 2002, 
 2004 and 2005.  Figure \ref{fig:Fleet7_Sanitation_lengthboxplots} shows the distribution of 
 lengths for California scorpionfish by 25 m depth bins and Sanitation District. The median length  
-of fish from the City of Los Angeles trawls is smaller than the other two districts. 
+of fish from the CLAEMD trawls is smaller than the other two districts. 
 However, there are only 120 in that depth bin, compared to 1,372 fish in the 50-74 m depth 
-bin for the City of Los Angeles (Table \ref{tab:Fleet7_lengthdepth}).
+bin for the CLAEMD (Table \ref{tab:Fleet7_lengthdepth}).
   
 The length composition indicates a fairly consistent size range of fish encountered 
 in the trawl surveys, with a handful of smaller fish in 2016 

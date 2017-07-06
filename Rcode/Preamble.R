@@ -138,3 +138,8 @@ label_col = 10
 path_col =  11
 
 
+
+# =============================================================================
+# Read in the Francis weights table from the default weighting 
+Fweights = read.csv('./txt_files/suggested_tuning.csv')
+

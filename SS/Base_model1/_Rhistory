@@ -1,0 +1,512 @@
+maxcols2=5,
+scalebubbles=F,
+areanames="default"
+)
+rm(list=ls(-1))
+# update_r4ss_files()
+# devtools::install_github('r4ss/r4ss')
+# load local r4SS?
+# library(devtools)
+# load local r4SS package w/o installing
+# load_all("C:/XiHe1/RCodes/R4SS/r4ssMay15_2017")
+rm(list=ls(-1))
+library(r4ss)
+RootDir = readLines("c:/xihe1/scor2017/RootDir.txt")
+WD = file.path(RootDir,"SCOR2017/SSModel/SS")
+# sink.to.file <- F
+# if (sink.to.file) sink(file=paste(WD,"R4SSscreenOutput.txt",sep=''))
+with.covar = F		# T: without -nohess; F: with -nohess
+myreplist <- SS_output(dir=WD,covar=with.covar,model="ss")
+# output options: pdf saved in working directory
+# print.to.pdf and print.to.png are mutually exclusive.
+plot.data = T
+print.to.pdf = T
+print.to.png = F
+html.output = F
+png.dir = c("plots")
+# plot 1 to 24
+SS_plots(
+replist=myreplist,
+plot=c(1:24),
+pdf=print.to.pdf,
+png=print.to.png,
+html=html.output,
+printfolder=png.dir,
+scalebins=T,
+uncertainty=with.covar,
+datplot=plot.data,
+maxcols2=5,
+scalebubbles=F,
+areanames="default"
+)
+# rm(list=ls(-1))
+# SSplotIndices1(replist=myreplist, subplots=9, fleets=c(4,5,7,8,9,11), print=T, datplot=T)
+# update_r4ss_files()
+# devtools::install_github('r4ss/r4ss')
+# load local r4SS?
+# library(devtools)
+# load local r4SS package w/o installing
+# load_all("C:/XiHe1/RCodes/R4SS/r4ssMay15_2017")
+rm(list=ls(-1))
+library(r4ss)
+RootDir = readLines("c:/xihe1/scor2017/RootDir.txt")
+WD = file.path(RootDir,"SCOR2017/SSModel/SS")
+# sink.to.file <- F
+# if (sink.to.file) sink(file=paste(WD,"R4SSscreenOutput.txt",sep=''))
+with.covar = F		# T: without -nohess; F: with -nohess
+myreplist <- SS_output(dir=WD,covar=with.covar,model="ss")
+# output options: pdf saved in working directory
+# print.to.pdf and print.to.png are mutually exclusive.
+plot.data = T
+print.to.pdf = T
+print.to.png = F
+html.output = F
+png.dir = c("plots")
+# plot 1 to 24
+SS_plots(
+replist=myreplist,
+plot=c(1:24),
+pdf=print.to.pdf,
+png=print.to.png,
+html=html.output,
+printfolder=png.dir,
+scalebins=T,
+uncertainty=with.covar,
+datplot=plot.data,
+maxcols2=5,
+scalebubbles=F,
+areanames="default"
+)
+# rm(list=ls(-1))
+# SSplotIndices1(replist=myreplist, subplots=9, fleets=c(4,5,7,8,9,11), print=T, datplot=T)
+# update_r4ss_files()
+# devtools::install_github('r4ss/r4ss')
+# load local r4SS?
+# library(devtools)
+# load local r4SS package w/o installing
+# load_all("C:/XiHe1/RCodes/R4SS/r4ssMay15_2017")
+rm(list=ls(-1))
+library(r4ss)
+RootDir = readLines("c:/xihe1/scor2017/RootDir.txt")
+WD = file.path(RootDir,"SCOR2017/SSModel/SS")
+# sink.to.file <- F
+# if (sink.to.file) sink(file=paste(WD,"R4SSscreenOutput.txt",sep=''))
+with.covar = F		# T: without -nohess; F: with -nohess
+myreplist <- SS_output(dir=WD,covar=with.covar,model="ss")
+# output options: pdf saved in working directory
+# print.to.pdf and print.to.png are mutually exclusive.
+plot.data = T
+print.to.pdf = T
+print.to.png = F
+html.output = F
+png.dir = c("plots")
+# plot 1 to 24
+SS_plots(
+replist=myreplist,
+plot=c(1:24),
+pdf=print.to.pdf,
+png=print.to.png,
+html=html.output,
+printfolder=png.dir,
+scalebins=T,
+uncertainty=with.covar,
+datplot=plot.data,
+maxcols2=5,
+scalebubbles=F,
+areanames="default"
+)
+# rm(list=ls(-1))
+# SSplotIndices1(replist=myreplist, subplots=9, fleets=c(4,5,7,8,9,11), print=T, datplot=T)
+# update_r4ss_files()
+# devtools::install_github('r4ss/r4ss')
+# load local r4SS?
+# library(devtools)
+# load local r4SS package w/o installing
+# load_all("C:/XiHe1/RCodes/R4SS/r4ssMay15_2017")
+rm(list=ls(-1))
+library(r4ss)
+RootDir = readLines("c:/xihe1/scor2017/RootDir.txt")
+WD = file.path(RootDir,"SCOR2017/SSModel/SS")
+# sink.to.file <- F
+# if (sink.to.file) sink(file=paste(WD,"R4SSscreenOutput.txt",sep=''))
+with.covar = F		# T: without -nohess; F: with -nohess
+myreplist <- SS_output(dir=WD,covar=with.covar,model="ss")
+# output options: pdf saved in working directory
+# print.to.pdf and print.to.png are mutually exclusive.
+plot.data = T
+print.to.pdf = T
+print.to.png = F
+html.output = F
+png.dir = c("plots")
+# plot 1 to 24
+SS_plots(
+replist=myreplist,
+plot=c(1:24),
+pdf=print.to.pdf,
+png=print.to.png,
+html=html.output,
+printfolder=png.dir,
+scalebins=T,
+uncertainty=with.covar,
+datplot=plot.data,
+maxcols2=5,
+scalebubbles=F,
+areanames="default"
+)
+# rm(list=ls(-1))
+# SSplotIndices1(replist=myreplist, subplots=9, fleets=c(4,5,7,8,9,11), print=T, datplot=T)
+# update_r4ss_files()
+# devtools::install_github('r4ss/r4ss')
+# load local r4SS?
+# library(devtools)
+# load local r4SS package w/o installing
+# load_all("C:/XiHe1/RCodes/R4SS/r4ssMay15_2017")
+rm(list=ls(-1))
+library(r4ss)
+RootDir = readLines("c:/xihe1/scor2017/RootDir.txt")
+WD = file.path(RootDir,"SCOR2017/SSModel/SS")
+# sink.to.file <- F
+# if (sink.to.file) sink(file=paste(WD,"R4SSscreenOutput.txt",sep=''))
+with.covar = F		# T: without -nohess; F: with -nohess
+myreplist <- SS_output(dir=WD,covar=with.covar,model="ss")
+# output options: pdf saved in working directory
+# print.to.pdf and print.to.png are mutually exclusive.
+plot.data = T
+print.to.pdf = T
+print.to.png = F
+html.output = F
+png.dir = c("plots")
+# plot 1 to 24
+SS_plots(
+replist=myreplist,
+plot=c(1:24),
+pdf=print.to.pdf,
+png=print.to.png,
+html=html.output,
+printfolder=png.dir,
+scalebins=T,
+uncertainty=with.covar,
+datplot=plot.data,
+maxcols2=5,
+scalebubbles=F,
+areanames="default"
+)
+# rm(list=ls(-1))
+# SSplotIndices1(replist=myreplist, subplots=9, fleets=c(4,5,7,8,9,11), print=T, datplot=T)
+# update_r4ss_files()
+# devtools::install_github('r4ss/r4ss')
+# load local r4SS?
+# library(devtools)
+# load local r4SS package w/o installing
+# load_all("C:/XiHe1/RCodes/R4SS/r4ssMay15_2017")
+rm(list=ls(-1))
+library(r4ss)
+RootDir = readLines("c:/xihe1/scor2017/RootDir.txt")
+WD = file.path(RootDir,"SCOR2017/SSModel/SS")
+# sink.to.file <- F
+# if (sink.to.file) sink(file=paste(WD,"R4SSscreenOutput.txt",sep=''))
+with.covar = F		# T: without -nohess; F: with -nohess
+myreplist <- SS_output(dir=WD,covar=with.covar,model="ss")
+# output options: pdf saved in working directory
+# print.to.pdf and print.to.png are mutually exclusive.
+plot.data = T
+print.to.pdf = T
+print.to.png = F
+html.output = F
+png.dir = c("plots")
+# plot 1 to 24
+SS_plots(
+replist=myreplist,
+plot=c(1:24),
+pdf=print.to.pdf,
+png=print.to.png,
+html=html.output,
+printfolder=png.dir,
+scalebins=T,
+uncertainty=with.covar,
+datplot=plot.data,
+maxcols2=5,
+scalebubbles=F,
+areanames="default"
+)
+# rm(list=ls(-1))
+# SSplotIndices1(replist=myreplist, subplots=9, fleets=c(4,5,7,8,9,11), print=T, datplot=T)
+# update_r4ss_files()
+# devtools::install_github('r4ss/r4ss')
+# load local r4SS?
+# library(devtools)
+# load local r4SS package w/o installing
+# load_all("C:/XiHe1/RCodes/R4SS/r4ssMay15_2017")
+rm(list=ls(-1))
+library(r4ss)
+RootDir = readLines("c:/xihe1/scor2017/RootDir.txt")
+WD = file.path(RootDir,"SCOR2017/SSModel/SS")
+# sink.to.file <- F
+# if (sink.to.file) sink(file=paste(WD,"R4SSscreenOutput.txt",sep=''))
+with.covar = F		# T: without -nohess; F: with -nohess
+myreplist <- SS_output(dir=WD,covar=with.covar,model="ss")
+# output options: pdf saved in working directory
+# print.to.pdf and print.to.png are mutually exclusive.
+plot.data = T
+print.to.pdf = T
+print.to.png = F
+html.output = F
+png.dir = c("plots")
+# plot 1 to 24
+SS_plots(
+replist=myreplist,
+plot=c(1:24),
+pdf=print.to.pdf,
+png=print.to.png,
+html=html.output,
+printfolder=png.dir,
+scalebins=T,
+uncertainty=with.covar,
+datplot=plot.data,
+maxcols2=5,
+scalebubbles=F,
+areanames="default"
+)
+# rm(list=ls(-1))
+# SSplotIndices1(replist=myreplist, subplots=9, fleets=c(4,5,7,8,9,11), print=T, datplot=T)
+# update_r4ss_files()
+# devtools::install_github('r4ss/r4ss')
+# load local r4SS?
+# library(devtools)
+# load local r4SS package w/o installing
+# load_all("C:/XiHe1/RCodes/R4SS/r4ssMay15_2017")
+rm(list=ls(-1))
+library(r4ss)
+RootDir = readLines("c:/xihe1/scor2017/RootDir.txt")
+WD = file.path(RootDir,"SCOR2017/SSModel/SS")
+# sink.to.file <- F
+# if (sink.to.file) sink(file=paste(WD,"R4SSscreenOutput.txt",sep=''))
+with.covar = T		# T: without -nohess; F: with -nohess
+myreplist <- SS_output(dir=WD,covar=with.covar,model="ss")
+# output options: pdf saved in working directory
+# print.to.pdf and print.to.png are mutually exclusive.
+plot.data = T
+print.to.pdf = T
+print.to.png = F
+html.output = F
+png.dir = c("plots")
+# plot 1 to 24
+SS_plots(
+replist=myreplist,
+plot=c(1:24),
+pdf=print.to.pdf,
+png=print.to.png,
+html=html.output,
+printfolder=png.dir,
+scalebins=T,
+uncertainty=with.covar,
+datplot=plot.data,
+maxcols2=5,
+scalebubbles=F,
+areanames="default"
+)
+# rm(list=ls(-1))
+# update_r4ss_files()
+# devtools::install_github('r4ss/r4ss')
+# load local r4SS?
+# library(devtools)
+# load local r4SS package w/o installing
+# load_all("C:/XiHe1/RCodes/R4SS/r4ssMay15_2017")
+rm(list=ls(-1))
+library(r4ss)
+RootDir = readLines("c:/xihe1/scor2017/RootDir.txt")
+WD = file.path(RootDir,"SCOR2017/SSModel/SS")
+# sink.to.file <- F
+# if (sink.to.file) sink(file=paste(WD,"R4SSscreenOutput.txt",sep=''))
+with.covar = F		# T: without -nohess; F: with -nohess
+myreplist <- SS_output(dir=WD,covar=with.covar,model="ss")
+# output options: pdf saved in working directory
+# print.to.pdf and print.to.png are mutually exclusive.
+plot.data = T
+print.to.pdf = T
+print.to.png = F
+html.output = F
+png.dir = c("plots")
+# plot 1 to 24
+SS_plots(
+replist=myreplist,
+plot=c(1:24),
+pdf=print.to.pdf,
+png=print.to.png,
+html=html.output,
+printfolder=png.dir,
+scalebins=T,
+uncertainty=with.covar,
+datplot=plot.data,
+maxcols2=5,
+scalebubbles=F,
+areanames="default"
+)
+# rm(list=ls(-1))
+# update_r4ss_files()
+# devtools::install_github('r4ss/r4ss')
+# load local r4SS?
+# library(devtools)
+# load local r4SS package w/o installing
+# load_all("C:/XiHe1/RCodes/R4SS/r4ssMay15_2017")
+rm(list=ls(-1))
+library(r4ss)
+RootDir = readLines("c:/xihe1/scor2017/RootDir.txt")
+WD = file.path(RootDir,"SCOR2017/SSModel/SS")
+# sink.to.file <- F
+# if (sink.to.file) sink(file=paste(WD,"R4SSscreenOutput.txt",sep=''))
+with.covar = T		# T: without -nohess; F: with -nohess
+myreplist <- SS_output(dir=WD,covar=with.covar,model="ss")
+# output options: pdf saved in working directory
+# print.to.pdf and print.to.png are mutually exclusive.
+plot.data = T
+print.to.pdf = T
+print.to.png = F
+html.output = F
+png.dir = c("plots")
+# plot 1 to 24
+SS_plots(
+replist=myreplist,
+plot=c(1:24),
+pdf=print.to.pdf,
+png=print.to.png,
+html=html.output,
+printfolder=png.dir,
+scalebins=T,
+uncertainty=with.covar,
+datplot=plot.data,
+maxcols2=5,
+scalebubbles=F,
+areanames="default"
+)
+# rm(list=ls(-1))
+# update_r4ss_files()
+# devtools::install_github('r4ss/r4ss')
+# load local r4SS?
+# library(devtools)
+# load local r4SS package w/o installing
+# load_all("C:/XiHe1/RCodes/R4SS/r4ssMay15_2017")
+rm(list=ls(-1))
+library(r4ss)
+RootDir = readLines("c:/xihe1/scor2017/RootDir.txt")
+WD = file.path(RootDir,"SCOR2017/SSModel/SS")
+# sink.to.file <- F
+# if (sink.to.file) sink(file=paste(WD,"R4SSscreenOutput.txt",sep=''))
+with.covar = T		# T: without -nohess; F: with -nohess
+myreplist <- SS_output(dir=WD,covar=with.covar,model="ss")
+# output options: pdf saved in working directory
+# print.to.pdf and print.to.png are mutually exclusive.
+plot.data = T
+print.to.pdf = T
+print.to.png = F
+html.output = F
+png.dir = c("plots")
+# plot 1 to 24
+SS_plots(
+replist=myreplist,
+plot=c(1:24),
+pdf=print.to.pdf,
+png=print.to.png,
+html=html.output,
+printfolder=png.dir,
+scalebins=T,
+uncertainty=with.covar,
+datplot=plot.data,
+maxcols2=5,
+scalebubbles=F,
+areanames="default"
+)
+# rm(list=ls(-1))
+rm(list=ls(-1))
+q()
+rm(list=ls(-1))
+library('r4ss')
+# library('r4ssXH')
+options(scipen=999)
+SS.Stability.Check <- function (base.dir = NA, temp.dir = NA, n.Stab.check.run = 3,
+SS.cmd = c("ss -nox -nohess"), par.filename = "ss.par",
+nCPU.in.use = 1)
+{
+cur.wd <- getwd()
+dir.create(temp.dir)
+run.dir <- file.path(temp.dir, paste("a", c(1:n.Stab.check.run),
+sep = ""))
+n.Run <- length(run.dir)
+for (i in 1:n.Run) {
+nCPU.in.use <- nCPU.in.use
+if (!file.exists(file.path(run.dir[i])))
+dir.create(file.path(run.dir[i]))
+from.dir <- base.dir
+to.dir <- file.path(run.dir[i])
+copy.all <- file.copy(file.path(from.dir, list.files(from.dir)),
+to.dir, overwrite = TRUE, recursive = TRUE, copy.mode = TRUE)
+}
+for (i in 1:n.Run) {
+cat("Runing SS on directory: Run", i, "\n")
+Sys.sleep(7)
+setwd(run.dir[i])
+if (i == n.Run)
+shell.out <- shell(SS.cmd, intern = TRUE)
+else {
+if (i%%nCPU.in.use != 0)
+shell.out <- shell(SS.cmd, intern = FALSE, wait = FALSE)
+else shell.out <- shell(SS.cmd, intern = TRUE)
+}
+}
+cat("Check Windows Task Manager to make sure all runs are completed!", "\n")
+setwd(base.dir)
+}
+RootDir = readLines("c:/xihe1/scor2017/RootDir.txt")
+WD <- file.path(RootDir,"SCOR2017/SSModel/SS")
+setwd(WD)
+# make sure "# jitter initial parm value by this fraction" set to be > 0, (0.05 is generally ok)
+base.dir <- WD
+temp.dir <- c("c:/temp/temp30")
+n.Stab.check.run <- 100
+run.dirs <- paste0(temp.dir,"/a",1:n.Stab.check.run)
+SS.cmd <- "SS -nox -nohess"
+par.filename <- "ss.par"
+nCPU.in.use <- 6
+getcovar <- F
+SS.Stability.Check(base.dir=base.dir, temp.dir=temp.dir, n.Stab.check.run=n.Stab.check.run, SS.cmd=SS.cmd, par.filename=par.filename, nCPU.in.use=nCPU.in.use)
+#### need to wait for all runs completed!!!!
+#### need to wait for all runs completed!!!!
+run.dirs <- paste0(temp.dir,"/a",1:n.Stab.check.run)
+output.list <- SSgetoutput(dirvec=run.dirs, getcovar=getcovar)
+x <- SSsummarize(output.list)
+out <- data.frame(matrix(data=NA, nrow=n.Stab.check.run, ncol=6))
+out[,1] <- 1:n.Stab.check.run
+out[,2] <- data.frame(t(x$likelihoods[1,][1:n.Stab.check.run]))
+out[,3] <- x$maxgrad
+out[,4] <- data.frame(t(x$pars[x$pars$Label=="SR_LN(R0)",][1:n.Stab.check.run]))
+out[,5] <- data.frame(t(x$pars[x$pars$Label=="SR_BH_steep",][1:n.Stab.check.run]))
+out[,6] <- data.frame(t(x$Bratio[x$Bratio$Label=="Bratio_2017",][1:n.Stab.check.run])*100)
+names(out) <- c("RunNo","Likelihood","MGC", "lnR0", "h", "Depletion")
+write.csv(out,file=file.path(temp.dir,"StabilityOutputSummary0.csv"),row.names=F)
+out1 <- data.frame(matrix(data=NA, nrow=11, ncol=2))
+out1[1,1] <- "MinLike"
+out1[1,2] <- min(out[,2])
+out1[2,1] <- "MaxLike"
+out1[2,2] <- max(out[,2])
+out1[3,1] <- "DiffLike"
+out1[3,2] <- max(out[,2]) - min(out[,2])
+out1[4,1] <- "MinMGC"
+out1[4,2] <- min(out[,3])
+out1[5,1] <- "MaxMGC"
+out1[5,2] <- max(out[,3])
+out1[6,1] <- "DepletionAtMinLikePercent"
+out1[6,2] <- out[out$Likelihood==min(out[,2]),]$Depletion[1]
+out1[7,1] <- "DepletionAtMaxLikePercent"
+out1[7,2] <- out[out$Likelihood==max(out[,2]),]$Depletion[1]
+out1[8,1] <- "DiffDepletionPercent"
+out1[8,2] <- out1[7,2] - out1[6,2]
+out1[9,1] <- "NJitter"
+out1[9,2] <- n.Stab.check.run
+out1[10,1] <- "PropRunAtMinLike"
+out1[10,2] <- nrow(out[out$Likelihood==min(out$Likelihood),]) / nrow(out)
+out1[11,1] <- "PropRunAtMaxLike"
+out1[11,2] <- nrow(out[out$Likelihood==max(out$Likelihood),]) / nrow(out)
+names(out1) <- c("VarLabel","Value")
+write.csv(out1,file=file.path(temp.dir,"StabilityOutputSummary1.csv"),row.names=F)
+rm(list=ls(-1))
+q()

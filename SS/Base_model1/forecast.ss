@@ -24,7 +24,7 @@
 0 #_Forecast loop control #3 (reserved for future bells&whistles) 
 0 #_Forecast loop control #4 (reserved for future bells&whistles) 
 0 #_Forecast loop control #5 (reserved for future bells&whistles) 
-2017  #FirstYear for caps and allocations (should be after years with fixed inputs) 
+2019 #FirstYear for caps and allocations (should be after years with fixed inputs) 
 0 # stddev of log(realized catch/target catch) in forecast (set value>0.0 to cause active impl_error)
 0 # Do West Coast gfish rebuilder output (0/1) 
 2017 # Rebuilder:  first year catch could have been set to zero (Ydecl)(-1 to set to 1999)
@@ -49,6 +49,21 @@
 2 # basis for input Fcast catch: -1=read basis with each obs; 2=dead catch; 3=retained catch; 99=input Hrate(F)
 #enter list of Fcast catches; terminate with line having year=-9999
 #_Yr Seas Fleet Catch(or_F) Basis 
+2017	1	1	31.42508143
+2017	1	2	1.165852334
+2017	1	3	4.909066232
+2017	1	4	6.307385845
+2017	1	5	102.8277219
+2017	1	6	3.364892262
+2017	1	8	0.077
+2018	1	1	31.42508143
+2018	1	2	1.165852334
+2018	1	3	4.909066232
+2018	1	4	6.307385845
+2018	1	5	102.8277219
+2018	1	6	3.364892262
+2018	1	8	0.077
+
 -9999 1 1 0 
 #
 999 # verify end of input 

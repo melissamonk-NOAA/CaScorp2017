@@ -1,28 +1,28 @@
-Label,Base,Default Weights,Weight Harmonic Mean,Remove Sanitation Index,Same natural mortality male and females,Sensitivity4,Sensitivity5,Sensitivity6
-Female natural mortality,0.257,0.257,0.257,0.257,0.257,-,-,-
-Male natural mortality,0.208,0.215,0.194,0.205,0.257,-,-,-
-Steepness,0.718,0.718,0.718,0.718,0.718,-,-,-
-lnR0,8.162,8.263,8.034,8.22,8.451,-,-,-
-Total Biomass (mt),2801.84,2870.33,2426.03,3024.2,3144.75,-,-,-
-Depletion,0.574,0.771,0.649,0.53,0.594,-,-,-
-SPR ratio,0.718,0.615,0.789,0.704,0.634,-,-,-
-Female Lmin,12.468,12.328,12.371,12.737,12.009,-,-,-
-Female Lmax,33.317,33.752,34.57,33.815,32.477,-,-,-
-Female K,0.25,0.223,0.214,0.242,0.263,-,-,-
-Male Lmin (offset),0,0,0,0,0,-,-,-
-Male Lmax (offset),-0.158,-0.168,-0.168,-0.153,-0.143,-,-,-
-Male K (offset),-0.299,-0.373,-0.85,-0.471,-0.159,-,-,-
-Negative log-likelihood,NA,NA,NA,NA,NA,-,-,-
-No. parameters,113,113,113,109,112,-,-,-
-TOTAL,1095.94,3787.1,2301.37,872.089,1106.63,-,-,-
-Catch,0,0,0,0,0,-,-,-
-Equililibrium catch,0,0,0,0,0,-,-,-
-Survey,-98.1,-87.715,-88.086,-93.073,-98.414,-,-,-
-Length composition,762.595,2521.59,1683.31,536.672,764.905,-,-,-
-Age composition,420.571,1320.79,683.118,419.659,429.617,-,-,-
-Recruitment,10.867,32.435,23.017,8.826,10.516,-,-,-
-Forecast Recruitment,0,0,0,0,0,-,-,-
-Parameter priors,0,0,0,0,0,-,-,-
-Parameter softbounds,0.006,0.006,0.005,0.006,0.005,-,-,-
+Label,Base,Default Weights,Weight Harmonic Mean,Remove Sanitation Index,Est. one M,Sensitivity4,Sensitivity5,Sensitivity6
+Female natural mortality,0.257,0.257,0.257,0.257,0.256,-,-,-
+Male natural mortality,0.208,0.215,0.194,0.206,0.718,-,-,-
+Steepness,0.718,0.718,0.718,0.718,8.434,-,-,-
+lnR0,8.16,8.257,8.034,8.088,3110.57,-,-,-
+Total Biomass (mt),2796.86,2856.03,2429.68,2518.67,59.121,-,-,-
+Depletion,0.574,0.765,0.65,0.503,0.641,-,-,-
+SPR ratio,0.719,0.621,0.788,0.832,11.976,-,-,-
+Female Lmin,12.434,12.318,12.321,13.006,32.47,-,-,-
+Female Lmax,33.312,33.766,34.55,34.421,0.264,-,-,-
+Female K,0.25,0.223,0.216,0.213,0,-,-,-
+Male Lmin (offset),0,0,0,0,-0.143,-,-,-
+Male Lmax (offset),-0.159,-0.169,-0.168,-0.154,-0.157,-,-,-
+Male K (offset),-0.295,-0.369,-0.833,-0.768,NA,-,-,-
+Negative log-likelihood,NA,NA,NA,NA,1108.05,-,-,-
+No. parameters,1097.3,3788.31,2302.18,109,0,-,-,-
+TOTAL,0,0,0,899.144,0,-,-,-
+Catch,0,0,0,0,-98.42,-,-,-
+Equililibrium catch,-98.116,-87.709,-87.939,0,765.37,-,-,-
+Survey,763.017,2523.37,1684.19,-93.005,430.553,-,-,-
+Length composition,421.518,1320.36,682.926,550.372,10.54,-,-,-
+Age composition,10.88,32.284,22.995,432.287,0,-,-,-
+Recruitment,0,0,0,9.484,0,-,-,-
+Forecast Recruitment,0,0,0,0,0.005,-,-,-
+Parameter priors,0.006,0.006,0.005,0,0,-,-,-
+Parameter softbounds,0,0,0,0.005,0,-,-,-
 Parameter devs,0,0,0,0,0,-,-,-
 Crash Pen,0,0,0,0,0,-,-,-

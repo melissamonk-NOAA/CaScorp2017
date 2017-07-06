@@ -634,7 +634,7 @@ Fleet7_lengthdepth.table = xtable(Fleet7_lengthdepth,
 
 Fleet7_lengthsample.table = xtable(Fleet7_lengthsample,
                                    caption = c("Sample sizes and mean length by
-                                                year fo the sanitation district 
+                                                year for the sanitation district 
                                                 trawl surveys, all sanitation 
                                               district programs combined"),
                                    label = 'tab:Fleet7_lengthsample')
@@ -648,7 +648,7 @@ print(Fleet7_lengthdepth.table,
 print(Fleet7_lengthsample.table, 
               include.rownames=FALSE, 
               caption.placement="top",
-              scale.box=0.8,
+              scale.box=0.7,
               sanitize.text.function = function(x){x})
 
 ```
