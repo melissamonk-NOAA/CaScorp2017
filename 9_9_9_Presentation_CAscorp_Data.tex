@@ -27,6 +27,15 @@
 \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
 }{}
 \newif\ifbibliography
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight0.8\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
 
 % Prevent slide breaks in the middle of a paragraph:
 \widowpenalties 1 10000
@@ -57,6 +66,60 @@
 \providecommand{\tightlist}{%
 \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{0}
+\usepackage{graphicx}
+%\usepackage{pgf}
+\usepackage{array}
+%\usepackage{booktabs}          %% Used in risk tables
+%\usepackage{multirow}          %% Used in decision tables
+%\usepackage{multicol}          %% Used in the toc
+%\usepackage[T1]{fontenc}  %to use < or > in tables
+%\usepackage[export]{adjustbox}
+\usepackage{tabularx}                                             % table environment providing flexibility
+\usepackage{caption}                                              % for creating captions  
+\usepackage{longtable}                                            % allows tables to span multiple pages
+\usepackage{rotating}                                             % allows for sideways tables
+\usepackage{float}                                                % floating environments; may not need in rmarkdown
+\usepackage{placeins}                                             % keeps floats from moving
+\usepackage{indentfirst}                                          % indents first paragraph of a section
+\usepackage{mdwtab}                                               % continued float multi-page figure
+\usepackage{enumerate}                                            % create lists
+\usepackage{hyperref}                                             % highlight cross references
+%\hypersetup{colorlinks=true, urlcolor=blue, linktoc=page, linkcolor=blue, citecolor=blue} %define referencing colors
+%\usepackage[usenames,dvipsnames]{xcolor}                          % color name options
+%\usepackage[space]{grffile}                                      % spaces in file name path
+%\usepackage{soul}                                                 % highlight text
+\usepackage{enumitem}                                             % numbered lists
+\usepackage{upquote}                                              % produce grave accent in latex
+\usepackage{verbatim}                                             % produces verbatim results
+\usepackage{fancyvrb}                                             % verbatim in a box
+\usepackage{textcomp}                                             % fixes error with packages interfering
+\usepackage{lscape}                                               % rotate pages - to allow for landscape longtables
+\usepackage{cmap}                                                 % fix mapping characters to unicode
+
+\setbeamersize{text margin left=0.1in}
+\setbeamersize{text margin right=0.1in}
+
+\definecolor{pageCol}{rgb}{0.5,0.5,1.0}
+
+\usepackage{tikz}                                                   % used in background
+
+
+\usebackgroundtemplate{
+  \tikz[overlay,remember picture] 
+  \node[opacity=0.3, at=(current page.south east),anchor=south east,inner sep=0pt] {
+    \includegraphics[height=0.5in]{noaalogo.jpg}};
+}
+
+\setbeamertemplate{footline}
+{
+  \begin{beamercolorbox}[wd=.05\paperwidth,ht=0ex,dp=0ex,left]{framenumber in head/foot}%
+    \insertframenumber/\inserttotalframenumber
+    
+  \end{beamercolorbox}%
+}
+\setbeamercolor{footline}{fg=pageCol}
+
+\newcounter{saveenumi}
 
 \title{California Scorpionfish 2017 Assessment}
 \subtitle{Biology and Data}
@@ -73,89 +136,84 @@
 
 \begin{frame}
 
+\FloatBarrier
+
+\FloatBarrier
+
+\FloatBarrier
+\newpage
+
+\FloatBarrier
+
+\FloatBarrier
+
+\FloatBarrier
+
+\FloatBarrier
+
+\FloatBarrier
+
+\FloatBarrier
+
+\FloatBarrier
+
+\FloatBarrier
+
+\FloatBarrier
+
+\begin{landscape}
+
+\end{landscape}
+
+\FloatBarrier
+
+\newpage
+
+\FloatBarrier
+
+\FloatBarrier
+
+\newpage
+
+\begin{landscape}
+
+\end{landscape}
+
+\newpage
+
+\begin{landscape}
+
+\end{landscape}
+
+\newpage
+
+\begin{landscape}
+
+\end{landscape}
+
+\FloatBarrier
+
+\newpage
+
+\newpage
+
+\FloatBarrier
+
 \end{frame}
-
-\section{Tables}\label{tables}
-
-\FloatBarrier
-\newpage
-
-\FloatBarrier
-
-\FloatBarrier
-
-\FloatBarrier
-
-\FloatBarrier
-
-\FloatBarrier
-
-\FloatBarrier
-
-\FloatBarrier
-
-\FloatBarrier
-
-\FloatBarrier
-
-\begin{landscape}
-
-\end{landscape}
-
-\FloatBarrier
-
-\newpage
-
-\FloatBarrier
-
-\FloatBarrier
-
-\newpage
-
-\begin{landscape}
-
-\end{landscape}
-
-\newpage
-
-\begin{landscape}
-
-\end{landscape}
-
-\newpage
-
-\begin{landscape}
-
-\end{landscape}
-
-\FloatBarrier
-
-\newpage
-
-\newpage
-
-\FloatBarrier
 
 \section{Background}\label{background}
 
 \begin{frame}{California scorpionfish \emph{Scorpaena guttata}}
 
-\begin{itemize}
-\tightlist
-\item
-  Distributed from central California to Punta Eugenia, Baja Mexico
-\item
-  Rarely observed north of Pt. Conception
-\item
-  Observed from the intertidal to 600 ft, preferred depth range from
-  20-450 ft
-\item
-  Demersal, found over both hard and soft bottom
-\item
-  Exhibit aggregating behavior (spawning and non-spawning)
+\begin{itemize} 
+ \item[\checkmark] Distributed from central California to Punta Eugenia, Baja Mexico  
+ \item[\checkmark] Rarely observed north of Pt. Conception  
+ \item[\checkmark] Observed from the intertidal to 600 ft,  preferred depth range from 20-450 ft  
+ \item[\checkmark] Demersal, found over both hard and soft bottom  
+ \item[\checkmark] Exhibit aggregating behavior (spawning and non-spawning)  
 \end{itemize}
 
-\includegraphics[width=.5\textwidth, right]{cover_photo}
+\includegraphics[width=.5\textwidth, inner]{cover_photo}
 
 \end{frame}
 
@@ -165,11 +223,25 @@
 
 \end{frame}
 
-\begin{frame}{Maturity}
+\begin{frame}{Maturity and Fecundity}
+
+\begin{itemize}
+\item
+  Only information on maturity from Love et al. (1987)
+\item
+  Found over 50\% of females were mature by 18 cm TL, or two years of
+  age.
+\item
+  All fish were mature by 22 cm TL
+\item
+  No information available on fecundity of California scorpionfish
+\end{itemize}
 
 \end{frame}
 
 \begin{frame}{Weight-at-length}
+
+\includegraphics{Figures/Length_weight.png}
 
 \end{frame}
 

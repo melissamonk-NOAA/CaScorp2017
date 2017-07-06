@@ -13,10 +13,14 @@ output:
   beamer_presentation:
     theme: "Singapore"
     toc: true
+    keep_tex: TRUE
     slide_level: 2
+    fig_caption: FALSE
     includes:
       in_header: presentation_header.tex
 ---
+
+
 
 ```{r global_options, include=FALSE}
     # set global options for R code chunks: echo=FALSE (don't include source code); 
@@ -28,9 +32,7 @@ output:
     # Change options  
       options(xtable.comment = FALSE)  # turns off xtable comments
       options(scipen=999)              # turns off scientific notation
-```
 
-```{r}
     # Read in preamble R code - including required libraries and the SS file(s)
     source('./Rcode/Preamble.R')
  
@@ -48,30 +50,40 @@ output:
 ```
 
 
-
 # Background
 
 ## California scorpionfish *Scorpaena guttata*
 
-* Distributed from central California to Punta Eugenia, Baja Mexico
-* Rarely observed north of Pt. Conception
-* Observed from the intertidal to 600 ft,  preferred depth range from 20-450 ft
-* Demersal, found over both hard and soft bottom
-* Exhibit aggregating behavior (spawning and non-spawning)
+\begin{itemize} 
+ \item[\checkmark] Distributed from central California to Punta Eugenia, Baja Mexico  
+ \item[\checkmark] Rarely observed north of Pt. Conception  
+ \item[\checkmark] Observed from the intertidal to 600 ft,  preferred depth range from 20-450 ft  
+ \item[\checkmark] Demersal, found over both hard and soft bottom  
+ \item[\checkmark] Exhibit aggregating behavior (spawning and non-spawning)  
+\end{itemize}
 
 
-
-\includegraphics[width=.5\textwidth, right]{cover_photo}
-
+\includegraphics[width=.5\textwidth, inner]{cover_photo}
 
 # Biology
+
 ## Length-at-age
 
 
 
-## Maturity
+## Maturity and Fecundity
+
+* Only information on maturity from Love et al. (1987)
+* Found over 50% of females were mature by 18 cm TL, or two years of age. 
+* All fish were mature by 22 cm TL
+
+* No information available on fecundity of California scorpionfish
 
 ## Weight-at-length
+ 
+ 
+ 
+![](Figures/Length_weight.png)
 
 ## Natural mortality
 
