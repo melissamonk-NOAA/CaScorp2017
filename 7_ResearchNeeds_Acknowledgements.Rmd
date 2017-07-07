@@ -12,7 +12,7 @@ the ability to estimate female natural mortality in the model.  The NWFSC trawl 
 was the only available source of age data for this assessment, of which there were a 
 number of age-1 fish and the data were dominated by males.
 
-\item \textbf{Steepness}: Califronia scorpionfish has not been fished to a level where information 
+\item \textbf{Steepness}: California scorpionfish has not been fished to a level where information 
 on steepness is available.  A meta-analysis for species with similar breeding strategies to 
 California scorpionfish could be conducted if data are available.
 

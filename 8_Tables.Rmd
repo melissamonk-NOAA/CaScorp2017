@@ -22,9 +22,9 @@
 
 ```{r, results='asis'}
    Comm_removal.table = xtable(Comm_removal, 
-                    caption = c("Commercial removals (mt) from the commercial 
-                                fisheries. Data sources are the the CDFG Fishery
-                                Bulletins (availabl from California Explores the Ocean)
+                    caption = c("Commercial landings (mt) from the commercial 
+                                fisheries. Data sources are the CDFG Fishery
+                                Bulletins (available from California Explores the Ocean)
                                 and the California Fisheries Information System (CFIS)"),
                     label="tab:CommCatches")
    align(Comm_removal.table) =c('l','c', 
@@ -727,7 +727,7 @@ print(Fleet7_lengthsample.table,
    #Fleet 8 catch by latitude
          Fleet8_catchlat.table = xtable(Fleet8_catchlat,
                               caption = c("Summaries of catch statistics of 
-                                          Calfironia scorpionfish by latitude zones 
+                                          California scorpionfish by latitude zones 
                                           from NWFSC trawl survey between 2003 and 2016."),
                               label='tab:Fleet8_NWFSCTrawl_catchlat')
         

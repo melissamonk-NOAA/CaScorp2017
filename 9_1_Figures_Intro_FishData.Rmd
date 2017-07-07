@@ -44,7 +44,7 @@
 ![Species coefficients from the binomial GLM for presence/absence of California scorpionfish in the Marine Recreational Fisheries Statistics Survey (MRFSS) private mode dockside survey data set. Horizontal bars are 95% confidence intervals. \label{fig:Fleet4_RecPR_dockside_SM}](Figures/Fleet4_RecPR_SMcoef.png)
 
 
-![A summary of the monthly recreational regulations for California scorpionfish in southern Califoria.  Cells with "open" indicate no depth restriction, black cells indicate the fishery is closed, and cells with a number indicate the depth restriction in fathoms, e.g., 20 = retained catch allowed in less than 20 fathoms. *Fishery closed on November 15, 2014. \label{fig:recregs}](Figures/Rec_regs.pdf)
+![A summary of the monthly recreational regulations for California scorpionfish in southern California.  Cells with "open" indicate no depth restriction, black cells indicate the fishery is closed, and cells with a number indicate the depth restriction in fathoms, e.g., 20 = retained catch allowed in less than 20 fathoms. *Fishery closed on November 15, 2014. \label{fig:recregs}](Figures/Rec_regs.pdf)
 
 ![Boxplots of the raw log CPUE by year for each of the three factors considered in the deltaGLM model, county, month and year. \label{fig:Fleet4_RecPR_dockside_lograwCPUE}](Figures/Fleet4_RecPR_dockside_lograwCPUE.png)
 
@@ -139,7 +139,7 @@
 
 \FloatBarrier
 
-![Spatial distribution of raw catch rates of Scorpionfish from NWFSC trawl survey between 2003 and 2016.  Depth contour lines of 200m and 600m and the CCA areas are shown.  Note that sizes and colors of circles represent catch rate in log scales (Credit of Rebecca Miller, SWFSC). \label{fig:Fleet8_NWFSCtrawl_map}](Figures/NWFSCtrawl_map.png)
+![Spatial distribution of raw catch rates of Scorpionfish from NWFSC trawl survey between 2003 and 2016.  Depth contour lines of 200 m and 600 m and the CCA areas are shown.  Note that sizes and colors of circles represent catch rate in log scales (Credit of Rebecca Miller, SWFSC). \label{fig:Fleet8_NWFSCtrawl_map}](Figures/NWFSCtrawl_map.png)
 
 
 
@@ -155,6 +155,10 @@
 ![Length frequency distributions of females (red) and male (blue) from the NWFSC trawl survey between 2003 and 2016. \label{fig:Fleet8_comp_lendat_bubflt8mkt0}](r4ss/plots_mod1/comp_lendat_bubflt8mkt0.png)
 
 ![Q-Q plot used to validate the goodness of fit of the VAST analysis for the NWFSC trawl survey between 2003 and 2016. \label{fig:Fleet8_NWFSCtrawl_QQ}](Figures/NWFSCtrawl_QQ.jpg)
+
+![NWFSC survey index encounter probability Pearson residuals \label{fig:Fleet8_encounter_pearson}](Figures/Fleet8_encounter_pearson.png)
+
+![NWFSC survey index positive catch rate probability Pearson residuals \label{fig:Fleet8_catch_pearson}](Figures/Fleet8_catch_pearson.png)
 
 
 ![Standardized index on the log scale for the NWFSC trawl survey from the VAST analysis from 2003-2016. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:index4_logcpuedata_NWFSCtrawl}](r4ss/plots_mod1/index4_logcpuedata_NWFSCtrawl.png)

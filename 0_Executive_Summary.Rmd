@@ -4,7 +4,7 @@
 ##Stock{-}
 This assessment reports the status of the `r spp` (\emph{`r spp.sci`}) resource 
 in U.S. waters off the coast of southern California (south of Pt. Conception) using data 
-through `r LastYR`. `r spp`are most abundant in the southern California Bight and their 
+through `r LastYR`. `r spp` are most abundant in the southern California Bight and their 
 range extends to Punta Eugena, Mexico, about halfway down the Baja peninsula.  Catches 
 from Mexico were not included in this assessment, and catches from Mexican waters that 
 were landed in the U.S. were excluded from the catch histories.
@@ -24,7 +24,7 @@ The catches from the commercial fleets has been small in the last decade, range 
 
 
 `r spp` is not a major component of the commercial or recreational fisheries in southern California. 
-There is been little discarding of the species in the commercial fisheries and the discard 
+There has been little discarding of the species in the commercial fisheries and the discard 
 mortality rate for the recreational fisheries is estimated to be 7%.  The peak in discards 
 from 2001-2005 was due to the closure of `r spp` fishery between two and 
 ten months of the year during that period.
@@ -79,15 +79,15 @@ ten months of the year during that period.
 
 ##Data and Assessment{-}
 
-`r spp` was last assessed in 2005 . 
-This assessment uses the newest version of Stock Synthesis (3.30.05).  The model 
-begins in `r Dat_start_mod1`, and assumes the stock 
-was at an unfished equilibrium that year.
+
+
 
 This a new full assessment for `r spp`, which was last assessed in 2005 [@Maunder2005] using 
-Stock Synthesis II version 1.18.  In this assessment, aspects of the model including landings,
+Stock Synthesis II version 1.18.  This assessment uses the newest version of Stock Synthesis 
+(3.30.05).  The model begins in `r Dat_start_mod1`, and assumes the stock 
+was at an unfished equilibrium that year.In this assessment, aspects of the model including landings,
 data, and modelling assumptions were re-evaluated. The assessment was conducted using the 
-length- and age-structured modeling software Stock Synthesis (version 3.30.05).  The population 
+length- and age-structured modeling software Stock Synthesis (version 3.30.05.03).  The population 
 was modeled allowing separate growth and mortality parameters for each sex (a two-sex model) 
 from `r Dat_start_mod1` to `r LastYR`, and forecast beyond `r LastYR`.
 
@@ -102,7 +102,7 @@ for each fishery-dependent and -independent data source, including a generating 
 that did not have an associated index of abundance.
 
 The definition of fishing fleets have changed from those in the 2005 assessment.  
-Six fishing fleets were specified within the model: 1) a combined hook-and-line, fish pot, 
+Six fishing fleets were specified within this model: 1) a combined hook-and-line, fish pot, 
 and "other" fishery fleet where only a small fraction of `r spp`, 2) the commercial gill net 
 fleet, 3) the commercial trawl fleet, 4) the recreational party/charter boat fleet (retained 
 catch only), 5) the recreational private boat fleet (retained catch only), and 6) a discard 
@@ -113,7 +113,7 @@ or age composition data for each year and fishery or survey (with conditional ag
 composition data for the NWFSC trawl survey); information on weight-at-length; and 
 estimates of ageing error. Recruitment at "equilibrium spawning 
 output", length-based selectivity of the fisheries and surveys, retention of the fishery, 
-catchability of the surveys, growth, the time-series of spawning output, age and size structure, 
+catchability of the surveys, growth, the time-series of spawning biomass, age and size structure, 
 and current and projected future stock status are outputs of the model. Natural mortality and steepness 
 were fixed in the final model. This was done due to relatively flat likelihood surfaces, such that 
 fixing parameters and then varying them in sensitivity analyses was deemed the best way to 
@@ -141,16 +141,16 @@ uncertainty considered in the model for the `r spp` stock in southern California
 \FloatBarrier
 
 ##Stock Biomass{-}
-The predicted spawning output from the base model generally showed a slight decline prior 
+The predicted spawning biomass from the base model generally showed a slight decline prior 
 to 1965, when information on recruitment variability was available (Figure \ref{fig:Spawnbio_all} 
 and Table \ref{tab:SpawningDeplete_mod1}). A short, but sharp decline occurred between 1965 and
-1985, followed by a period cyclical spawning output and a decline from 2000 to 2015.
+1985, followed by a period cyclical spawning biomass and a decline from 2000 to 2015.
 The stock showed increases in stock size in 2015 due to a combination of strong recruitment and 
-smaller catches in 2015 and 2016.  The `r LastYR` estimated spawning output relative to unfished 
-equilibrium spawning output is above the target of 40% of unfished spawning output at `r Depl_mod1` 
+smaller catches in 2015 and 2016.  The `r LastYR` estimated spawning biomass relative to unfished 
+equilibrium spawning biomass is above the target of 40% of unfished spawning biomass at `r Depl_mod1` 
 (~95% asymptotic interval: $\pm$ `r Depl_mod1_CI`) (Figure \ref{fig:RelDeplete_all}). 
 Approximate confidence intervals based on the 
-asymptotic variance estimates show that the uncertainty in the estimated spawning output is high.
+asymptotic variance estimates show that the uncertainty in the estimated spawning biomass is high.
 
 \FloatBarrier
 
@@ -169,7 +169,7 @@ asymptotic variance estimates show that the uncertainty in the estimated spawnin
 \FloatBarrier
 
 
-![Time series of spawning output trajectory (circles and line: median; light broken lines: 95% credibility intervals) for the base case assessment model.  \label{fig:Spawnbio_all}](`r spawn.file`)
+![Time series of spawning biomass trajectory (circles and line: median; light broken lines: 95% credibility intervals) for the base case assessment model.  \label{fig:Spawnbio_all}](`r spawn.file`)
 
 ![Estimated relative depletion with approximate 95\% asymptotic confidnce intervals (dashed lines) for the base case assessment model. \label{fig:RelDeplete_all}](`r Bratio.file`)
 
@@ -213,9 +213,9 @@ lowest recruitment estimated within the model (in ascending order) occurred in
 
 
 ##Exploitation status{-}
-Harvest rates estimated by the base model for Washington have never exceeded
+Harvest rates estimated by the base model have never exceeded
 management target levels (Table \ref{tab:SPR_Exploit_mod1} and Figure \ref{fig:SPR_all}). 
-Recent harvest rates for `r spp` have been relatively constant for the last decade 
+Recent harvest rates have been relatively constant for the last decade. 
 The estimated relative depletion is currently greater than the 40% unfished spawning 
 output target. Recent exploitation rates on `r spp` were predicted to be significantly 
 below target levels.
@@ -263,15 +263,17 @@ that could contribute ecosystem-related quantitative information for the assessm
 
 This stock assessment estimates that `r spp` in the `r mod1_label` is 
 `r ifelse(Deplete_mod1[nrow(Deplete_mod1),2]-MT>0,"above","below")` the biomass 
-target, and well `r ifelse(Deplete_mod1[nrow(Deplete_mod1),2]-MSST>0,"above","below")` 
-the minimum stock size threshold. The estimated relative depletion level for the base model in `r LastYR` is 
+target($SB_{40\%}$), and well `r ifelse(Deplete_mod1[nrow(Deplete_mod1),2]-MSST>0,"above","below")` 
+the minimum stock size threshold ($SB_{40\%}$). The estimated relative depletion level for the base 
+model in `r LastYR+1` is 
 `r Depl_mod1` (~95% asymptotic interval: $\pm$ `r Depl_mod1_CI`, corresponding 
-to an unfished spawning output of `r paste(Spawn_mod1, fecund_unit,sep=' ')` 
+to an unfished spawning biomass of `r paste(Spawn_mod1, fecund_unit,sep=' ')` 
 (~95% asymptotic interval: `r paste(Spawn_mod1_CI, fecund_unit, sep=' ')`) of 
-spawning output in the base model (Table \ref{tab:Ref_pts_mod1}).  Unfished 
+spawning biomass in the base model (Table \ref{tab:Ref_pts_mod1}).  Unfished 
 age `r min_age` biomass was estimated to be `r Ref_pts_mod1[2,2]` mt in the 
-base case model. The target spawning output based on the biomass target 
-($SB_{40\%}$) is `r paste(Ref_pts_mod1[7,2], fecund_unit,sep=' ')`, which corresponds with an equililbrium yield of `r Ref_pts_mod1[10,2]` mt. Equilibrium yield at the proxy $F_{MSY}$ 
+base case model. The target spawning biomass ($SB_{40\%}$) 
+is `r paste(Ref_pts_mod1[7,2], fecund_unit,sep=' ')`, which corresponds with an 
+equililbrium yield of `r Ref_pts_mod1[10,2]` mt. Equilibrium yield at the proxy $F_{MSY}$ 
 harvest rate corresponding to $SPR_{50\%}$ is `r Ref_pts_mod1[15,2]` mt (Figure \ref{fig:Yield_all}).
 
 
@@ -313,7 +315,7 @@ found in Table \ref{tab:mnmgt_perform}.
 
 
 
-##Unresolved Problems And Major Uncertainties{-}
+##Unresolved Problems and Major Uncertainties{-}
    TBD after STAR panel
 
 \FloatBarrier
@@ -379,7 +381,7 @@ Decision table to be added after the STAR panel (Table \ref{tab:Decision_table_m
 
 \newpage
 
-##Research And Data Needs{-}
+##Research and Data Needs{-}
 We recommend the following research be conducted before the next assessment:
 
 \begin{enumerate}

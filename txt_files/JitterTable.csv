@@ -2,11 +2,11 @@ Status,Model 1
 Minimum likelihood,1097.3
 Maximum likelihood,1111.98
 Likelihood difference,14.68
-Minimum MGC,6.54435E-06
+Minimum MGC,6.54E-06
 Maximum MGC,0.00125729
 Depletion at minimum likelihood percent,57.4112
 Depletion at maximum likelihood percent,82.9926
 Difference in depletion percent,25.5814
 Number of jitters,50
-Prop of runs at mimimum likelihood,0.56
+Proportion of runs at mimimum likelihood,0.56
 Proportion of runs at maximum likelihood,0.02

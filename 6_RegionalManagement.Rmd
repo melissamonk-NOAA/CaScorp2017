@@ -2,7 +2,7 @@
 <!-- **************************REGIONAL MANAGEMENT************************* -->
 #Regional Management Considerations
 While the proportion of the stock residing within U.S. waters is unknown, the 
-assessment provides an adequate geographic representation of portion assessed for
+assessment provides an adequate geographic representation of the portion assessed for
 management purposes.  Collaboration with Mexico in conducting future assessments 
 may be mutually beneficial.  No genetic information is available to inform whether
 separate stocks or population structure pertinent to management exists.  Given the
@@ -13,10 +13,11 @@ in proportion to the regional  distribution of abundance in the area assessed in
 While the species does aggregate during the spawning season making harvest of the 
 stock more efficient during this period, removals have been well within the harvest 
 limits and the stock has not been overfished or subject to overfishing as a whole.  
+
 Routine sampling of commercial and recreational fisheries provides mortality estimates 
 to monitor catch during the course of season to prevent overfishing should effort increase 
 in the future.  Analysis of CPUE of areas known to be spawning aggregations over time
-using data from sampling on board CPFVs and comparison to the trajectory of the population 
+using data from sampling onboard CPFVs and comparison to the trajectory of the population 
 as a whole could provide information in determining whether localized depletion is 
 occurring.  Eggs and larvae are expected to travel substantial distance before settling,
 thus such areas should be repopulated from adjacent areas.  Time/area closures could 

@@ -12,11 +12,9 @@ A description of each data source is below.
 Commercial catches of California scorpionfish (often landed as “sculpin”) are available 
 back to 1916. Landings from 1916 to 1935 are presented in CDFG Fish Bulletin No. 49 
 and Bulletin No. 149 provides tabulated data from 1916 to 1968. Over 99% of the 
-commercial catches of California scorpionfish are from south of Pt. Conception.  
+commercial catches of California scorpionfish are from south of Pt. Conception. 
 Whenever possible, catches from north of Pt. Conception and also caught in Mexico 
-but landed in the U.S. were excluded from the commercial catch histories.
- 
-[California Explores the Ocean](http://library.ucsd.edu/ceo/fishcatchtables/fish-catch-download.html)(CEO) 
+but landed in the U.S. were excluded from the commercial catch histories. [California Explores the Ocean](http://library.ucsd.edu/ceo/fishcatchtables/fish-catch-download.html)(CEO) 
 provides landings data taken from the CDFG Fish Bulletins in electronic form, as well 
 as electronic copies of all CDFG Fish Bulletins. 
  
@@ -68,7 +66,7 @@ with 151 fish measured from 2004-2015, and less than half a metric ton.  Given t
 discard mortality of only 7%, and the small total catches in the recent years, 
 discards from the commercial fleet are not considered in the assessment.
 
-## Commercial Fishery Length And Age Data
+###Commercial Fishery Length And Age Data
 Biological data from commercial fisheries that caught `r spp` were extracted from CALCOM 
 on March 7, 2017. Samples from the hook and line fishery were available from 1999 (1 trip) 
 and 2013-2015 (1 trip per year), and for 1999 (1 trip) and 2006 (2 trips) from the trawl fishery.
@@ -79,9 +77,9 @@ category study described below.
 The CDFW conducted a market study from 1990-2004 in southern California [@Laughlin1998] to
 monitor and summarize local commercial catches.  The ports sampled included San Diego, 
 Santa Barbara/Ventura and Long Beach/San Pedro.  Very few of the samples from Santa 
-Barbara and San Diego (4 samples each from the hook-and-line and trawl fisheries 
-Santa Barbara, and 1 sample from the hook-and-line fishery in San Diego) reported 
-California scorpionfish, and are excluded from the length composition data.  
+Barbara and San Diego (four samples each from the hook-and-line and trawl fisheries 
+Santa Barbara, and one sample from the hook-and-line fishery in San Diego) reported 
+California scorpionfish, and are excluded from the length composition data. 
 Length composition for California scorpionfish are available from the Long Beach 
 samples for the hook-and-line (Table \ref{tab:ComHL_lengthsample}), gillnet 
 (Table \ref{tab:ComNet_lengthsample}), and trawl fisheries (Table \ref{tab:ComTrawl_lengthsample}). 
@@ -117,10 +115,9 @@ the regulatory specifications for 2009-2010 [@PFMC2008].  The MRFSS and CRFS dat
 estimates of mortality for four fishing “modes” including the party/charter Boat, 
 Private/Rental Boat, Man Made (piers and jetties etc.) and Beach and Bank modes. 
  
-While estimates of mortality from the party/charter (PC) boat mode is available from 
-the MRFSS and CRFS surveys for the party/charter Boat mode for 1980-2017, estimates
-from the CRFS data from 2011-2017 and data from CPFV Logbook for 1932-2010 were used
-to represent catch from this mode.  The party/charter Phone Survey was used to estimate
+Estimates of mortality in the party/charter sector were derived from the CPFV 
+Logbook data from 1932-2010 and CRFS from 2011-2017.  The party/charter Phone Survey 
+was used to estimate
 effort used in producing effort estimates for CRFS between 2004 and 2010, which was 
 subject to negative bias due to the low of participation in the survey south of Point
 Conception.   The Coastal County Household Telephone Survey was used to estimate 
@@ -141,11 +138,10 @@ level of underreporting in conversation with the CRFS program
 and applied to estimates from the logbooks for 1936 to 2010. Annual average weights 
 from this mode for retained catch from the MRFSS or CRFS estimates for 1980-2010 and 
 average weight from 1980-1984 was applied to the preceding years.  To estimate 
-discard mortality for the PC mode, the annual average weight was applied in respective 
-years from lengths 
-collected sampling onboard CPFVs by the CRFS survey for 2004-2010 were applied to
-the number of discards from the CPFV logbooks and the average weight over this entire
-period were applied to the preceding years for 1995-2003.  For the period between 
+discard mortality for the PC mode, the annual average weight was applied from lengths 
+collected sampling onboard CPFVs; CRFS survey from 2004-2010.  The annual average weight 
+from was applied to discards reported in CPFV logbooks from 2004-2010 and the overall 
+and the average weight was applied to discards from 1995-2003.  For the period between 
 1980 and 1994, the MRFSS estimates for discards were used to reflect discarding due 
 to the paucity of data on the number of discards from PC logbooks prior to 1995. 
  
@@ -176,9 +172,9 @@ compared to other modes were used to proxy estimates for other modes based on th
 resulting ramped values for the PC mode.  The final time series of landings and discard 
 mortality are in Table \ref{tab:Rec_removal}.
 
-Biological samples from the recreational fleets are desired in the sections below.
+Biological samples from the recreational fleets are described in the sections below.
 
-###Fishery-dependent Data Sources
+###Fishery-Dependent Indices of Abundance
 
 **CRFS Private Boat Dockside Intercept Survey**
 
@@ -236,7 +232,7 @@ all positive California scorpionfish trips retained.  The California scorpionfis
 recreational fishery in the southern management area was closed for eight months 
 in 2004 and nine months in 2005. The majority of records from 2004 and 2005 are 
 from the period when the fishery was closed and were removed from the analysis 
-(Figure \ref{fig:recregs}).  Records from months with the fishery was closed 
+(Figure \ref{fig:recregs}).  Records from months when the fishery was closed 
 from 2006-2016 were also excluded from the index since this index relies on 
 sampler-examined retained catch.  
 
@@ -607,7 +603,7 @@ The index of relative abundance using the retained-only catch from the onboard o
 program is a separate survey fleet in the base model and has no lengths associated with 
 it. Covariates considered in the full model included *year*, *area* (5 levels), *month* 
 (12 levels), and *20 m depth bins* (5 levels). All covariates were specified as 
-categorical variables. The final model includes A lognormal model was selected by AIC 
+categorical variables. A lognormal model was selected by AIC 
 over a gamma model for the positives (delta-AIC of 534.9).Model selection for both the 
 lognormal and binomial models retained all covariates (Table \ref{tab:Fleet12_RecPC_onboard_aic}). 
 The Q-Q plot for the positive catch lognormal model looks reasonable 
@@ -624,24 +620,27 @@ of the retained catch shows a decline from 2007-2015, and an increase in 2016.
 **Sanitation Districts Trawl Survey**
 
 Sanitation districts that discharge into coastal waters are required to conduct trawl surveys to 
-monitor the demersal fish community in the vicinity of the discharge sites as a condition of their National Pollutant Discharge Elimination System (NPEDES) permits, issued 
-by the Environmental Protection Agency. All sanitation districts holding NPEDES permits 
+monitor the demersal fish community in the vicinity of the discharge sites as a condition of their National Pollutant Discharge Elimination System (NPDES) permits, issued 
+by the Environmental Protection Agency. All sanitation districts holding NPDES permits 
 in southern California were contacted for trawl data. 
 The two northernmost districts, Goleta and the City of Oxnard, provided data (via Aquatic 
 Bioassay & Consulting Laboratories, Inc.), but California scorpionfish have not been 
 encountered in either district's trawl surveys.  The four other 
 sanitation districts, Orange County, The City of Los Angeles Environmental Monitoring 
 Division (CLAEMD), Los Angeles County, 
-and the City of San Diego all encounter California scorpionfish and provided trawl 
+and the City of San Diego 
+Public Utilities Department all encounter California scorpionfish and provided trawl 
 data.
 
 A description of the data provided by each sanitation district is provided. In 
 contrast to the inverse variance weighted index from the 2005 assessment, trawls from all
 sanitation districts were combined to develop a single index of abundance. 
 
-_Orange County_
+_Orange County_.
+
 The Orange County Sanitation District provided trawl data from 1970-2015 (Jeff Armstrong,
-Orange County Sanitation District).  The trawl net is a 7.6 m wide Marinovich, semi-balloon  otter trawl (2.54 cm mesh) with a 0.64 cm mesh cod-end liner.
+Orange County Sanitation District).  The trawl net is a 7.6 m wide Marinovich, semi-balloon 
+otter trawl (2.54 cm mesh) with a 0.64 cm mesh cod-end liner.
 Fixed stations are sampled either annually (summer) or semi-annually in the winter 
 and summer, Quarters 1 and 3 (Jan-March and July-September).  From 1970-1985 Quarter 
 2, trawl effort was based on a 10 minute tow time.  As of 1985 
@@ -657,7 +656,8 @@ by size class (nearest cm).  Six hauls, all from station T3, caught more than 30
 scorpionfish.
  
  
-_The City of Los Angeles Environmental Monitoring Division (CLAEMD)_
+_The City of Los Angeles Environmental Monitoring Division (CLAEMD)_.
+
 The CLAEMD provided trawl data from 1986-2016 (Craig Campbell,
 Lost Angeles City).  The CLAEMD follows the same sampling protocols as the 
 Southern California Bight Regional Monitoring Program trawl survey.  Stations within Los 
@@ -671,7 +671,8 @@ was missing for approximately half of the hauls, and was imputed as the mean dep
 of other hauls at that station. All California scorpionfish encountered were measured to 
 the nearest cm (standard length).
  
-_Los Angeles County_
+_Los Angeles County_.
+
 The Sanitation Districts of Los Angeles County provided quarterly trawl data from 1972-2016 
 (Shelly Walther, Sanitation Districts of Los Angeles County) and follow the same sampling 
 protocols as the 
@@ -680,15 +681,33 @@ stations sampled in fewer than 10 years or at 305 m where California
 scorpionfish were never observed were removed from the analysis.  Non-standard and 
 special study trawls were also removed, e.g., night trawl study in 1987. 
 Hauls were based on a 10 minute tow time and that is assumed as the effort for all hauls. 
-Twelve stations (stations at 23m, 61m, and 137m for T0, T1, T4, T5), totaling 
+Twelve stations (stations at 23 m, 61 m, and 137 m for T0, T1, T4, T5), totaling 
 1,848 hauls were retained after initial filtering.  All California scorpionfish encountered
  were measured to the nearest cm (standard length).
  
-_City of San Diego_
-The City of San Diego Sanitation District conducts trawls for two permits 
-(Point Loma Ocean Outfall and South Bay Ocean Outfall) and provided data 
-from 1985-2015 (Ami Latker and Robin Gartman, City of San Diego Public Utilities Department).  
-Stations sampled in fewer than 15 years were filtered from the dataset. Fourteen stations from the Point Loma Ocean Outfall (SD1-SD14) and five stations from the South Bay Ocean Outfall were retained (SD17-21), totaling 1,180 hauls. A tow time of 10 minutes is assumed for all trawls.  All California scorpionfish 
+_City of San Diego_.
+
+The City of San Diego's Ocean Monitoring Program is conducted by Environmental Monitoring 
+& Technical Services Division of the Public Utilities Department (City of San Diego 
+Public Utilities Department). The City of San Diego holds three NPDES that 
+require monitoring of the areas potentially impacted by the discharge of wastewater into the Pacific Ocean 
+via the Point Loma Ocean Outfall and South Bay Ocean Outfall (Timothy Stebbins, personal communication, 
+City of San Diego Public Utilities Department). One permit is for the City’s Point Loma 
+Wastewater Treatment Plant discharge via the Point Loma Ocean Outfall. A second permit is for discharge 
+via the South Bay Ocean Outfall from the City’s South Bay Water Reclamation Plant. The third permit is 
+also for discharge via the South Bay Ocean Outfall, but from the South Bay International Wastewater 
+Treatment Plant operated by the U.S. Section of the International Boundary & Water Commission (USIBWC).  
+Effluent from the two South Bay treatment facilities commingle before discharge to the ocean, so a single 
+monitoring program is conducted by the City and USIBWC to meet those requirements (i.e., the City conducts 
+the joint program under contract to the USIBWC).  For purposes of this assessment, any trawls conducted in 
+Mexican water, were excluded from analyses.
+ 
+The City of San Diego Public Utilities Department provided trawl data from 1985-2015 
+(Ami Latker and Robin Gartman, City of San Diego Public Utilities Department) 
+and follow the same sampling protocols as the Southern California Bight Regional Monitoring Program.
+Stations sampled in fewer than 15 years were filtered from the dataset. Fourteen stations from the Point 
+Loma Ocean Outfall (SD1-SD14) and five stations from the South Bay Ocean Outfall were retained (SD17-21), 
+totaling 1,180 hauls. A tow time of 10 minutes is assumed for all trawls.  All California scorpionfish 
 encountered were measured to the nearest cm (standard length).
 
 _Sanitation Districts Index Standardization_
@@ -762,7 +781,7 @@ years of the survey.  Bubble plots of length frequency distribution by year and
 sex are presented in Figure \ref{fig:Fleet8_comp_lendat_bubflt8mkt0}.
 
 Summaries of age data by year and sex are presented in Table \ref{tab:Fleet8_NWFSCTrawl_agesummary}. 
-There were more males (n = 529) being aged than females (n = 340), presumably 
+There were more males (n = 529) aged than females (n = 340), presumably 
 indicating that there are more males than females in the populations.  The table 
 also shows that mean ages and mean lengths for both sexes decreased in recent years. 
 Table \ref{tab:Fleet8_NWFSCTrawl_agepercents} show five percentiles of fish aged by sex, 
@@ -799,7 +818,7 @@ Five covariates were considered in the model standardization, *year* (14 levels)
 (2 levels indicate if floats were used on the gillnet), 
 and *perp/para* (2 levels indicate if the net was set perpendicular or parallel to 
 shore). A lognormal was select over a gamma model for the positive encounters by a 
-delta AIC of 108.29.  Covariates selected via AIC for both the lognormal binomial 
+delta AIC of 108.29.  Covariates selected via AIC for both the lognormal and binomial 
 models included *year*, *site*, and *perp/para* (Table \ref{tab:Fleet9_GillnetSurvey_aic},
 Figure \ref{fig:Fleet9_GillnetSurvey_QQ}).  The standardized index decreases from 
 1995-1998 and remains flat until through the early 2000's with three high years at the 
@@ -828,7 +847,7 @@ random sampling design [@Bight1998].  All participating agencies follow the same
 otter trawl).  All fish and invertebrates are identified, counted, batch-weighed, and 
 measured (standard length to the nearest cm).
 
-A series of data fiters were applied to the the dataset (Table \ref{tab:Fleet11_SCBSurvey_filter}). 
+A series of data fiters were applied to the dataset (Table \ref{tab:Fleet11_SCBSurvey_filter}). 
 Only two scorpionfish were encountered 
 in hauls deeper than 450 m.  Ninety-five percent of the data were retained for 
 hauls in shallower than 97 m, which was set as a filter.  Stations in harbors 
@@ -885,7 +904,7 @@ a second 24 hours has elapsed.  Any specimens washed off the screens during the
 48 hour study period are retained. The total sample is processed to identify, 
 count, weigh, measure the fish and macroinvertebrates. 
 There is often no information on the water flow collected during the 48 hour period of 
-the normal operations survey.  Most fish enter the the generating station and swim 
+the normal operations survey.  Most fish enter the generating station and swim 
 in the sedimentation basin until either getting exhausted or impinged.  The SONGS
 generating station also has a fish elevator that releases a fraction of the fish
 back to the ocean.

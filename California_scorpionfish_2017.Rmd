@@ -1,5 +1,6 @@
 ---
-title: 'Status of California Scorpionfish (*Scorpaena guttata*) Off Southern California in 2017'
+title: Status of California Scorpionfish (*Scorpaena guttata*) Off Southern California
+  in 2017
 author: ''
 date: ''
 output:
@@ -10,19 +11,16 @@ output:
       before_body: Titlepage.tex
       in_header: header.tex
     keep_tex: yes
-    template: Default_template_modified.tex
     number_sections: yes
+    template: Default_template_modified.tex
     toc: yes
     toc_depth: 4
-  html_document:
-    toc: yes
-  word_document: default
 documentclass: article
 fontsize: 12pt
 geometry: margin=1in
+link-citations: yes
 csl: CJFAS.csl
 bibliography: BibFile.bib
-link-citations: yes
 ---
 ```{r global_options, include=FALSE}
     # set global options for R code chunks: echo=FALSE (don't include source code); 
@@ -44,7 +42,7 @@ link-citations: yes
 \setlength{\parskip}{5mm plus1mm minus1mm}
 \pagebreak
 
-\pagenumbering{arabic}
+
 \setcounter{page}{1}
 \renewcommand{\thefigure}{\alph{figure}}
 \renewcommand{\thetable}{\alph{table}}

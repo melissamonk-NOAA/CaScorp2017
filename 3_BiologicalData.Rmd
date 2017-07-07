@@ -28,11 +28,7 @@ was added to the SL measurement.  All TL measurements were rounded to the neares
 length centimeter length bin.  A comparison of the length distributions
 
 
-**Length And Age Compositions**
-
-Include: Sample size information for length and age composition data by area, 
-year, gear, market category, etc., including both the number of trips and 
-fish sampled.
+**Length and Age Compositions**
 
 Length compositions were provided from the following sources:
 
@@ -65,7 +61,8 @@ The length composition of all fisheries aggregated across time by fleet is in Fi
 composition data are in the above section for each fleet or survey.
 
 
-*Recreational: California MRFSS And CRFS Length Composition Data*
+*Recreational: California MRFSS and CRFS Length Composition Data*
+
 Individual fish lengths recorded by MRFSS (1980-2003) and CRFS (2004-2011) samplers were
 downloaded from the RecFIN website (www.recfin.org). CRFS data from 2012-2014 were
 obtained directly from CDFW.
@@ -73,6 +70,7 @@ obtained directly from CDFW.
 
 \vspace{.5cm}
 **Age Structures**
+
 Age data were provided from the NWFSC trawl survey from 2005-2016, and all of
 the otoliths collected from the survey were aged.  Figures \ref{fig:otolith1} and 
 \ref{fig:otolith2} provide examples of California scorpionfish
@@ -94,7 +92,8 @@ and for males $L{\infty}=27.374, k = 0.233, t_0 = -2.092$ (Figure \ref{fig:vonB_
 
 
 \vspace{.5cm}
-**Aging Precision And Bias**
+**Aging Precision and Bias**
+
 Uncertainty in ageing error was estimated using a collection of 200 California 
 scorpionfish otoliths with two age reads (\ref{fig:Fleet8_NWFSCTrawl_ageerror}).  
 Age-composition data used in the model were all from the NWFSC trawl survey and 
@@ -153,7 +152,7 @@ since the publication of the 2005 stock assessment. Love et al. [-@Love1987] fou
 few California scorpionfish to be mature at age-1, 50% of males were mature at 17 cm TL 
 and over 50% of females were mature by 18 cm TL, or two years of age. All fish were mature 
 by 22 cm TL.   This assessment used size at 50% maturity 
-for females of 18 cm TL, with maurity asmyptotign to 1.0 for larger fish.  
+for females of 18 cm TL, with maurity asmyptoting to 1.0 for larger fish.  
 
 The 2005 assessment model combined information from estimated linear 
 gonadal somatic index and maturity based on standard length [@Maunder2005].  However, the 
@@ -198,7 +197,7 @@ females in the assessment model.
 \vspace{.5cm}
 
 
-###Environmental Or Ecosystem Data Included In The Assessment
+###Environmental or Ecosystem Data Included in the Assessment
 In this assessment, neither environmental nor ecosystem considerations were explicitly included in the analysis.  This is primarily due to a lack of relevant data and results of analyses (conducted elsewhere) 
 that could contribute ecosystem-related quantitative information for the assessment.
 

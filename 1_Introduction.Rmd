@@ -3,8 +3,8 @@
 #Introduction
 
 ##Basic Information and Life History
-California scorpionfish (\emph{Scorpaena guttata}), also known locally as sculpin or 
-spotted scorpionfish, originates from the Greek word for scorpionfishes and \emph{guttata} 
+California scorpionfish (\emph{Scorpaena guttata}), also known as sculpin, originates from
+the Greek word for scorpionfishes and \emph{guttata} 
 is Latin for speckled.  California scorpionfish is a medium-bodied fish and like other
 species in the genus \emph{Scorpaena}, it produces a toxin in its dorsal, anal, and 
 pectoral fin spines, which produces intense, painful wounds [@Love1987]. Scorpionfish 
@@ -81,7 +81,7 @@ were commonly caught around Santa Catalina Island during the late 19th Century w
 gill nets [@Jordan1887].  The 1937 Bureau of Commercial Fisheries report noted that 
 California scorpionfish had been a fairly important commercial species for a long time. 
 The species was targeted by a few fishermen during the summer months, and was also taken 
-as a bycatch in the rockfish fisheries. By 1949, Bureau of Marine Fisheries reported 
+as a bycatch in the rockfish fisheries. By 1949, the Bureau of Marine Fisheries reported 
 "[Scorpionfish] will even come to the surface to lights at night" and were also taken 
 in round haul nets. At that time, scorpionfish were rarely targeted by fishermen except by a few specialists.
  
@@ -129,7 +129,7 @@ attainment been in place in 2014.  Thus the stock has not been subject
 to overfishing since the original assessment or 
 been in an overfished condition historically and is considered healthy.  
 The season restriction in the recreational fishery remained in place as 
-a precautionary measure until the full assessment is completed to better 
+a precautionary measure until the full assessment was completed to better 
 inform the current status of the stock, catch limits and regulations given 
 the perspective provided.
 
@@ -198,7 +198,7 @@ continuing to be defined as ocean waters from Point Conception to the U.S.-Mexic
 Cowcod Conservation Areas (CCAs) also were established in 2001 to reduce fishing 
 effort in areas with high encounter rates of cowcod rockfish (PFMC [-@PFMC2002], 
 Table 29). These areas were closed to all recreational and commercial fishing for 
-groundfish except for minor nearshore rockfish1 (including California scorpionfish) 
+groundfish except for minor nearshore rockfish (including California scorpionfish) 
 within waters less than 20 fathoms. The California Rockfish Conservation 
 Area (CRCA) was defined as those ocean waters south $40^\circ 10^\prime$ N. 
 latitude to the U.S.-Mexico border with different depth zones specified for 
@@ -217,7 +217,7 @@ that commercial fishermen landing these nine nearshore species possess a nearsho
 
 Following adoption of the Nearshore FMP and accompanying regulations by the FGC in 
 fall of 2002, the FGC adopted regulations in November 2002 which established a set 
-of marine reserves around the Channel Islands in Southern California (which became 
+of marine reserves around the Channel Islands in southern California (which became 
 effective April 2003).  The FGC also adopted a nearshore restricted access program in December 
 2002 (which included the establishment of a Deeper Nearshore Permit) to be effective 
 starting in the 2003 fishing year.
@@ -251,7 +251,7 @@ A summary of these values as well as other base case summary results can be foun
 in Table \ref{tab:base_summary}.
 
 
-##Fisheries off Mexico
+##Fisheries Off Mexico
 The California scorpionfish’s range extends into to Abreojos, Baja California.  
 The species is also found in the northern Gulf of California and Guadalupe 
 Island.  No formal stock assessments have been conducted for California 

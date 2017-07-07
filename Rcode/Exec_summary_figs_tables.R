@@ -36,7 +36,7 @@ colnames(Exec_catch) = c('Year',
                          'Com trawl',
                          'Com gillnet',
                          'North of Pt. Conception',
-                         'South of Pt. conception',
+                         'South of Pt. Conception',
                          'Mexico')
     
 # Split catch by regions -retaning the columns for each -you'll have to edit
@@ -99,24 +99,13 @@ align(Exec_catch.table) = c('l', 'l',
 
   
 # =============================================================================
-# Spawning output and Depletion -----------------------------------------------
+# spawning biomass and Depletion -----------------------------------------------
 
-# Retreive data on spawning output and depletion
-for (model in 1:n_models) {
-    if (model==1) {
+# Retreive data on spawning biomass and depletion
+
      mod=mod1
      mod_area='mod1'
-    } else {
-    
-    if (model==2) {
-     mod=mod2
-     mod_area='mod2'
-    } else {
-      
-     mod=mod3
-     mod_area='mod3'
-    }}
-          
+  
   # Extract biomass/output  
   SpawningB = mod$derived_quants[grep('SPB', mod$derived_quants$Label), ]
   SpawningB = SpawningB[c(-1, -2), ]
@@ -146,7 +135,7 @@ for (model in 1:n_models) {
   SpawningBtab = subset(SpawningByrs, select = c('YEAR', 'Value', 'CI'))
       
   # Assign column names
-  colnames(SpawningBtab) = c('Year', paste('Spawning Output (', fecund_unit,')', 
+  colnames(SpawningBtab) = c('Year', paste('Spawning biomass (', fecund_unit,')', 
                                            sep=''), '~ 95% confidence interval')
   
   
@@ -179,11 +168,11 @@ for (model in 1:n_models) {
   
   colnames(Depletiontab) = c('Estimated depletion', '~ 95% confidence interval')
     
-  # Bind the spawning output and depletion data together 
+  # Bind the spawning biomass and depletion data together 
   Spawn_Deplete = cbind(SpawningBtab, Depletiontab)
  
   colnames(Spawn_Deplete) = c('Year', 
-                              paste('Spawning Output (', fecund_unit, ')', sep = ''), 
+                              paste('Spawning biomass (', fecund_unit, ')', sep = ''), 
                               '~ 95% confidence interval',
                               'Estimated depletion',
                               '~ 95% confidence interval')
@@ -206,7 +195,6 @@ for (model in 1:n_models) {
   assign(paste('Spawn_',mod_area,'_CI',sep=''), 
          paste(SpawnB[nrow(SpawnB), 7], '-', SpawnB[nrow(SpawnB), 8], sep=''))
 
-} # end model for loop for spawning biomass and depletion
 
 
 # =============================================================================
@@ -215,7 +203,7 @@ for (model in 1:n_models) {
 # Model 1 table ---------------------------------------------------------------
 Spawn_Deplete_mod1.table = xtable(SpawnDepletemod1, 
                            caption = c(paste('Recent trend in beginning of the 
-                                      year spawning output and depletion for
+                                      year spawning biomass and depletion for
                                       the ', mod1_label, ' for ', spp, '.',sep='')), 
                            label='tab:SpawningDeplete_mod1',digits=3)  
 
@@ -226,56 +214,16 @@ align(Spawn_Deplete_mod1.table) = c('l', 'l',
                                     '>{\\centering}p{1in}', 
                                     '>{\\centering}p{1.2in}')  
 
-# Model 2 table ---------------------------------------------------------------
-if (n_models >= 2) {
-  Spawn_Deplete_mod2.table = xtable(SpawnDepletemod2, 
-                                    caption=c(paste('Recent trend in 
-                                             beginning of the year spawning output
-                                             and depletion for the ', mod2_label,
-                                             ' for ', spp,'.',sep='')), 
-                                    label='tab:SpawningDeplete_mod2', digits = 3)     
 
- # Add alignment 
-  align(Spawn_Deplete_mod2.table) = c('l', 'l',
-                                    '>{\\centering}p{1.3in}', 
-                                    '>{\\centering}p{1.2in}',
-                                    '>{\\centering}p{1in}',
-                                    '>{\\centering}p{1.2in}')  
-} # end n_models>=2
-
-# Model 3 table ---------------------------------------------------------------
-if (n_models == 3) {
-  Spawn_Deplete_mod3.table = xtable(SpawnDepletemod3, 
-                                    caption=c(paste('Recent trend in beginning of
-                                              the year spawning output and                                           
-                                              depletion for the ', mod3_label, 
-                                              ' for ', spp, '.', sep='')), 
-                                    label='tab:SpawningDeplete_mod3',digits=3)     
-
- # Add alignment  
-  align(Spawn_Deplete_mod3.table) = c('l', 'l', 
-                                    '>{\\centering}p{1.3in}',
-                                    '>{\\centering}p{1.2in}', 
-                                    '>{\\centering}p{1in}',
-                                    '>{\\centering}p{1.2in}')  
-} # end n_models==3
 
 # =============================================================================
 # Recruitment =================================================================
 
 # Extract recruitment values
-for (model in 1:n_models) {
-  if (model==1) {
+
    mod=mod1
    mod_area='mod1'
-  } else {
-  if (model==2) {
-   mod=mod2
-   mod_area='mod2'
-  } else {
-   mod=mod3
-   mod_area='mod3'
- }}
+ 
         
   # Pull out recuitment  
   Recruit = mod$derived_quants[grep('Recr',mod$derived_quants$Label),]
@@ -314,7 +262,6 @@ for (model in 1:n_models) {
   
   assign(paste('Recruittab_',mod_area,sep=''), Recruittab)
 
-} # end model loop for recruitment
 
 
 # -----------------------------------------------------------------------------
@@ -331,49 +278,15 @@ align(Recruit_mod1.table) = c('l',
                               '>{\\centering}p{1.6in}',
                               '>{\\centering}p{1.3in}')
         
-# Model 2
-if (n_models >= 2) {
-Recruit_mod2.table = xtable(Recruittab_mod2, 
-                            caption=c(paste('Recent recruitment for the ',
-                                      mod2_label,'.',sep='')),
-                            label='tab:Recruit_mod2', digits = 2) 
-
-align(Recruit_mod2.table) = c('l',
-                              '>{\\centering}p{.8in}',
-                              '>{\\centering}p{1.6in}',
-                              '>{\\centering}p{1.3in}')
-}
-
-
-# Model 3
-if (n_models == 3) {
-Recruit_mod3.table = xtable(Recruittab_mod3, 
-                            caption=c(paste('Recent recruitment for the ', 
-                                      mod3_label,'.',sep='')), 
-                            label = 'tab:Recruit_mod3', digits = 2)  
-align(Recruit_mod3.table) = c('l',
-                              '>{\\centering}p{.8in}',
-                              '>{\\centering}p{1.6in}',
-                              '>{\\centering}p{1.3in}')
-}
 
 # =============================================================================
 # Exploitation data -----------------------------------------------------------
 
 # Extract exploitation values
-for (model in 1:n_models) {
-  if (model == 1) {
+
     mod = mod1
     mod_area = 'mod1'
-  } else {
-  if (model == 2){
-    mod = mod2
-    mod_area = 'mod2'
-  } else {
-    mod = mod3
-    mod_area = 'mod3'
- }}  
-      
+
   # Extract exploitation and SPR ratio values from r4SS output
   Exploit = mod$derived_quants[grep('F',mod$derived_quants$Label),]
   Exploit = Exploit[c(-1,-2),]
@@ -422,7 +335,6 @@ for (model in 1:n_models) {
       
   assign(paste('SPRratio_Exploit_', mod_area, sep=''), cbind(SPRratiotab, Exploittab))
 
-} # end for loop for SPR ratio and exploitation
 
 # =============================================================================
 # Create the three tables for SPR Ratio and Exploitation
@@ -442,66 +354,26 @@ align(SPRratio_Exploit_mod1.table) = c('l','l',
                                        '>{\\centering}p{1in}',
                                        '>{\\centering}p{1.2in}') 
      
-# Model 2
-if (n_models >= 2) {
-SPRratio_Exploit_mod2.table = xtable(SPRratio_Exploit_mod2, 
-                              caption=c(paste('Recent trend in spawning potential 
-                                        ratio and exploitation for ', spp, ' in the ', 
-                                        mod2_label, '. Fishing intensity is (1-SPR) 
-                                        divided by 50\\% (the SPR target) and exploitation 
-                                        is F divided by F\\textsubscript{SPR}.', sep='')), 
-                              label='tab:SPR_Exploit_mod2')  
-        
-align(SPRratio_Exploit_mod2.table) = c('l','l',
-                                       '>{\\centering}p{1in}',
-                                       '>{\\centering}p{1.2in}',
-                                       '>{\\centering}p{1in}',
-                                       '>{\\centering}p{1.2in}') 
-}
 
 
-# Model 3
-if (n_models == 3) {
-SPRratio_Exploit_mod3.table = xtable(SPRratio_Exploit_mod3, 
-                              caption=c(paste('Recent trend in spawning potential 
-                                        ratio and exploitation for ', spp, ' in the ', 
-                                        mod3_label,'.  Fishing intensity is (1-SPR) 
-                                        divided by 50\\% (the SPR target) and exploitation 
-                                        is F divided by F\\textsubscript{SPR}.',sep='')), 
-                              label='tab:SPR_Exploit_mod3')  
-        
-align(SPRratio_Exploit_mod3.table) = c('l','l',
-                                       '>{\\centering}p{1in}',
-                                       '>{\\centering}p{1.2in}',
-                                       '>{\\centering}p{1in}',
-                                       '>{\\centering}p{1.2in}') 
-}
+
 
 # =============================================================================
 # Reference points ------------------------------------------------------------
 
 # Extract reference points table data
-for (model in 1:n_models) {
- if (model == 1){
+
    mod = mod1
    mod_area = 'mod1'
-  } else {
-  if(model == 2) {
-   mod = mod2
-   mod_area = 'mod2'
-  } else {
-   mod = mod3
-   mod_area = 'mod3'
- }}
-      
+  
 
   # Rbind all of the data for the big summary reference table  
   Ref_pts = rbind (
   SSB_Unfished    = mod$derived_quants[grep('SSB_U', mod$derived_quants$Label), ],
   TotBio_Unfished = mod$derived_quants[grep('TotBio', mod$derived_quants$Label), ],
   Recr_Unfished   = mod$derived_quants[grep('Recr_Un', mod$derived_quants$Label), ],
-  SPB_lastyr      = mod$derived_quants[grep(paste0('SPB_', LastYR), mod$derived_quants$Label), ],
-  Depletion_lastyr= mod$derived_quants[grep(paste0('Bratio_', LastYR), mod$derived_quants$Label), ],
+  SPB_lastyr      = mod$derived_quants[grep(paste0('SPB_', LastYR+1), mod$derived_quants$Label), ],
+  Depletion_lastyr= mod$derived_quants[grep(paste0('Bratio_', LastYR+1), mod$derived_quants$Label), ],
   Refpt_sB        = c(NA, NA, NA),
   SSB_Btgt        = mod$derived_quants[grep('SSB_Btgt', mod$derived_quants$Label), ],
   SPR_Btgt        = mod$derived_quants[grep('SPR_Btgt', mod$derived_quants$Label), ],
@@ -535,23 +407,23 @@ for (model in 1:n_models) {
   
   Ref_pts$CI1      = paste('(', Ref_pts$lowerCI1, '-', Ref_pts$upperCI1, ')', sep='')
         
-  Quantity = c(paste('Unfished spawning output (', fecund_unit, ')', sep = ''),
+  Quantity = c(paste('Unfished spawning biomass (', fecund_unit, ')', sep = ''),
                      paste('Unfished age ', min_age, ' biomass (mt)', sep = ''),
                     'Unfished recruitment (R0, thousands)',
-                     paste('Spawning output', '(', LastYR, ' ', fecund_unit, ')', sep = ''),
-                     paste('Depletion (', LastYR,')',sep=''),
+                     paste('Spawning biomass', '(', LastYR + 1, ' ', fecund_unit, ')', sep = ''),
+                     paste('Depletion (', LastYR + 1,')',sep=''),
                     '\\textbf{$\\text{Reference points based on } \\mathbf{SB_{40\\%}}$}',
-                    'Proxy spawning output ($B_{40\\%}$)',
+                    'Proxy spawning biomass ($B_{40\\%}$)',
                     'SPR resulting in $B_{40\\%}$ ($SPR_{B40\\%}$)',
                     'Exploitation rate resulting in $B_{40\\%}$',
                     'Yield with $SPR_{B40\\%}$ at $B_{40\\%}$ (mt)',
                     '\\textbf{\\textit{Reference points based on SPR proxy for MSY}}',
-                    'Spawning output',
+                    'Spawning biomass',
                     '$SPR_{proxy}$',
                     'Exploitation rate corresponding to $SPR_{proxy}$',
                     'Yield with $SPR_{proxy}$ at $SB_{SPR}$ (mt)',
                     '\\textbf{\\textit{Reference points based on estimated MSY values}}',
-                    'Spawning output at $MSY$ ($SB_{MSY}$)',
+                    'Spawning biomass at $MSY$ ($SB_{MSY}$)',
                     '$SPR_{MSY}$',
                     'Exploitation rate at $MSY$',
                     '$MSY$ (mt) ')
@@ -563,7 +435,7 @@ for (model in 1:n_models) {
                         '\\textbf{\\~95\\%  Confidence Interval}')
   assign(paste('Ref_pts_', mod_area, sep = ''), Ref_pts)
 
-} # end for loop for n models for reference points table
+
 
 # =============================================================================
 # Create reference point table(s)----------------------------------------------
@@ -581,33 +453,6 @@ align(Ref_pts_mod1.table) = c('l',
                               '>{\\centering}p{1.4in}')  
 
 
-# Model 2
-if (n_models >= 2) {
-Ref_pts_mod2.table = xtable(Ref_pts_mod2, 
-                            caption=c(paste('Summary of reference points 
-                                      and management quantities for the base case ', 
-                                      mod2_label, '.', sep = '')),  
-                            label='tab:Ref_pts_mod2') 
-# Add alignment      
-align(Ref_pts_mod2.table) = c('l',
-                              '>{\\raggedright}p{4.1in}',
-                              '>{\\centering}p{.65in}',
-                              '>{\\centering}p{1.4in}')  
-}
-
-# Model 3
-if (n_models == 3) {
-Ref_pts_mod3.table = xtable(Ref_pts_mod3, 
-                            caption=c(paste('Summary of reference points 
-                                      and management quantities for the base 
-                                      case ', mod3_label, '.',sep='')), 
-                            label='tab:Ref_pts_mod3')  
-# Add alignment      
-align(Ref_pts_mod3.table) = c('l',
-                              '>{\\raggedright}p{4.1in}',
-                              '>{\\centering}p{.65in}',
-                              '>{\\centering}p{1.4in}')  
-}
 
 # =============================================================================
 # Management performance ------------------------------------------------------
@@ -647,9 +492,7 @@ align(mngmnt.table) = c('l',
 # =============================================================================
 # OFL projection --------------------------------------------------------------
 
-
 #For 1 model:
-if (n_models == 1) {
 # Extract OFLs for next 10 years for each model
       OFL_mod1 = mod1$derived_quants[grep('OFL',mod1$derived_quants$Label),]
       OFL_mod1 = OFL_mod1[, 2]    
@@ -665,57 +508,9 @@ if (n_models == 1) {
       OFL.table = xtable(OFL, caption=c('Projections of potential OFL (mt) for 
                                         each model, using the base model forecast.'),
                   label = 'tab:OFL_projection')
-}
 
-# For 2 models:
-      if (n_models == 2) {
-        # Extract predicted OFLs for each model
-        OFL_mod1 = mod1$derived_quants[grep('OFL',mod1$derived_quants$Label),]
-        OFL_mod1 = OFL_mod1[, 2]
-        
-        OFL_mod2 = mod2$derived_quants[grep('OFL',mod2$derived_quants$Label),]
-        OFL_mod2 = OFL_mod2[, 2]
-        
-        # Turn into a dataframe and get the total
-        OFL = as.data.frame(cbind(OFL_mod1, OFL_mod2))
-        OFL$Total = rowSums(OFL)
-        OFL$Year=seq(Project_firstyr,Project_lastyr,1)
-        OFL$Year = as.factor(OFL$Year)
-        OFL = OFL[,c(4,1,2,3)]
-        colnames(OFL) = c('Year','Model 1','Model 2','Total') 
-        
-        # Create the table
-        OFL.table = xtable(OFL, caption=c('Projections of potential OFL (mt) for each model, using the base model forecast.'),
-                           label = 'tab:OFL_projection')     
-}           
-      
-      
-#For 3 models:
-if (n_models == 3) {
-      # Extract OFLs for next 10 years for each model
-      OFL_mod1 = mod1$derived_quants[grep('OFL',mod1$derived_quants$Label),]
-      OFL_mod1 = OFL_mod1[, 2]
-      
-      OFL_mod2 = mod2$derived_quants[grep('OFL',mod2$derived_quants$Label),]
-      OFL_mod2 = OFL_mod2[, 2]
-      
-      OFL_mod3 = mod3$derived_quants[grep('OFL',mod3$derived_quants$Label),]
-      OFL_mod3 = OFL_mod3[, 2]
-      
-      #Turn into a dataframe and get the total
-      OFL = as.data.frame(cbind(OFL_mod1, OFL_mod2, OFL_mod3))
-      OFL$Total = rowSums(OFL)
-      OFL$Year=seq(Project_firstyr,Project_lastyr,1)
-      OFL$Year = as.factor(OFL$Year)
-      OFL = OFL[,c(5,1,2,3,4)]
-      colnames(OFL) = c('Year','North','Central','South','Total') 
-      
-      # Create the table
-      OFL.table = xtable(OFL, caption=c('Projections of potential OFL (mt) for 
-                                        each model, using the base model forecast.'),
-                         label = 'tab:OFL_projection')     
-      
-}      
+
+
 
 # =============================================================================
 # Decision Table(s) -----------------------------------------------------------
@@ -727,11 +522,11 @@ if (n_models == 3) {
        colnames(decision_mod1) = c('', 
                                    'Year',  
                                    'Catch',	
-                                   'Spawning Output',	
+                                   'Spawning biomass',	
                                    'Depletion', 
-                                   'Spawning Output',	
+                                   'Spawning biomass',	
                                    'Depletion',	
-                                   'Spawning Output',	
+                                   'Spawning biomass',	
                                    'Depletion')
       
        decision_mod1.table = xtable(decision_mod1, 
@@ -761,107 +556,6 @@ if (n_models == 3) {
                                &  \\multicolumn{2}{c}{High M 0.09} \\\\\n')
         
   
-# Model 2
-if (n_models >= 2) {
-    # Read in decision table file 
-    decision_mod2 = read.csv('./txt_files/DecisionTable_mod2.csv')
-         colnames(decision_mod2) = c('', 
-                                     'Year',  
-                                     'Catch',  
-                                     'Spawning Output',	
-                                     'Depletion',
-                                     'Spawning Output',	
-                                     'Depletion',	
-                                     'Spawning Output',	
-                                     'Depletion')
-  
-     decision_mod2.table = xtable(decision_mod2, 
-                                  caption=c(paste('Summary of 10-year projections 
-                                                  beginning in ', LastYR+2,' for 
-                                                  alternate states of nature based 
-                                                  on an axis of uncertainty for the ',
-                                                  mod2_label,'.  Columns range over low, 
-                                                  mid, and high states of nature, and rows 
-                                                  range over different assumptions of catch 
-                                                  levels. An entry of "--" indicates that the 
-                                                  stock is driven to very low abundance under the
-                                                  particular scenario.', sep='')), 
-                                      label='tab:Decision_table_mod2')
-  
-    # Assign alignment and add the header columns
-    align(decision_mod2.table) = c('l',
-                                   'l|',
-                                   'c',
-                                   'c|',
-                                   '>{\\centering}p{.7in}',
-                                   'c|',
-                                   '>{\\centering}p{.7in}',
-                                   'c|',
-                                   '>{\\centering}p{.7in}',
-                                   'c') 
-    # Add additional header
-    addtorow <- list()
-    addtorow$pos <- list()
-    addtorow$pos[[1]] <- -1
-    addtorow$pos[[2]] <- -1
-    addtorow$command <- c( ' \\multicolumn{3}{c}{} &  \\multicolumn{2}{c}{} 
-                          &  \\multicolumn{2}{c}{\\textbf{States of nature}} 
-                          &   \\multicolumn{2}{c}{} \\\\\n', 
-                          ' \\multicolumn{3}{c}{}  &  \\multicolumn{2}{c}{Low M 0.05} 
-                          &  \\multicolumn{2}{c}{Base M 0.07} 
-                          &   \\multicolumn{2}{c}{High M 0.09} \\\\\n')
-}   
-    
-# Model 3
-if (n_models == 3) {
-  # Read in decision table file
-  decision_mod3 = read.csv('./txt_files/DecisionTable_mod3.csv')
-      colnames(decision_mod3) = c('', 
-                                  'Year',  
-                                  'Catch',  
-                                  'Spawning Output',	
-                                  'Depletion',
-                                  'Spawning Output',	
-                                  'Depletion',	
-                                  'Spawning Output',	
-                                  'Depletion')
-      
-      decision_mod3.table = xtable(decision_mod3, 
-                                   caption = c(paste('Summary of 10-year projections 
-                                                     beginning in ', LastYR+2, ' for 
-                                                     alternate states of nature based 
-                                                     on an axis of uncertainty for the ', 
-                                                     mod3_label,'.  Columns range over low, 
-                                                     mid, and high states of nature, and rows \
-                                                     range over different assumptions of catch 
-                                                     levels. An entry of "--" indicates that the 
-                                                     stock is driven to very low abundance under the
-                                                     particular scenario.',sep='')), 
-                                    label='tab:Decision_table_mod3')
-  
-    # Assign alignment and add the header columns
-    align(decision_mod3.table) = c('l',
-                                   'l|',
-                                   'c',
-                                   'c|',
-                                   '>{\\centering}p{.7in}',
-                                   'c|',
-                                   '>{\\centering}p{.7in}',
-                                   'c|',
-                                   '>{\\centering}p{.7in}','c') 
-    # Add extra colulmn headers    
-    addtorow <- list()
-    addtorow$pos <- list()
-    addtorow$pos[[1]] <- -1
-    addtorow$pos[[2]] <- -1
-    addtorow$command <- c( ' \\multicolumn{3}{c}{} &  \\multicolumn{2}{c}{} 
-                           &  \\multicolumn{2}{c}{\\textbf{States of nature}} 
-                           &   \\multicolumn{2}{c}{} \\\\\n', 
-                           ' \\multicolumn{3}{c}{}  &  \\multicolumn{2}{c}{Low M 0.05} 
-                           &  \\multicolumn{2}{c}{Base M 0.07} 
-                           &   \\multicolumn{2}{c}{High M 0.09} \\\\\n')
-}
-
 
 # =============================================================================
 # Base case summary table -----------------------------------------------------
@@ -903,65 +597,12 @@ mngmt = mngmt[,-1]
                        SpawnDeplete_mod1,
                        Recruittab_mod1)
     
-# Model 2
-if (n_models >= 2) {
-  # SPR ratio and exploitation
-  SPRratio_Exploit_mod2 = SPRratio_Exploit_mod2[2:nrow(SPRratio_Exploit_mod2),c(2,4)]
-  SPRratio_Exploit_mod2[,c(1,2)] = round(SPRratio_Exploit_mod2[,c(1,2)],2)
-  #SPRratio_Exploit_mod2 = SPRratio_Exploit_mod2[-dim(SPRratio_Exploit_mod2)[1],]
-  SPRratio_Exploit_mod2 = rbind(SPRratio_Exploit_mod2,blanks)
-  rownames(SPRratio_Exploit_mod2)[10]='Lastyear'
 
-  # Age 5+ biomass 
-  Age5biomass_mod2 = mod2$timeseries[,c('Yr','Bio_smry')]
-  Age5biomassyrs_mod2 = subset(Age5biomass_mod2, Yr>=(FirstYR) & Yr<=(LastYR))
-  Age5biomassyrs_mod2 = Age5biomassyrs_mod2[,2]
-  Age5biomassyrs_mod2 = round(Age5biomassyrs_mod2,2)
-  
-  # Spawning biomass and depltion
-  SpawnDeplete_mod2 = SpawnDeplete_mod2[,c(2:5)]
-  SpawnDeplete_mod2[,1] = round(SpawnDeplete_mod2[,1],0)
-  SpawnDeplete_mod2[,3] = round(SpawnDeplete_mod2[,3],2)
-  
-  # Recruitment 
-  Recruittab_mod2 = Recruittab_mod2[,c(2,3)]
-  
-  # BIND ALL DATA TOGETHER
-  mod2_summary = cbind(SPRratio_Exploit_mod2,Age5biomassyrs_mod2,SpawnDeplete_mod2,Recruittab_mod2)
-}
-  
-# Model 3
-if (n_models == 3) {
-  # SPR ratio and exploitation
-  SPRratio_Exploit_mod3 = SPRratio_Exploit_mod3[2:nrow(SPRratio_Exploit_mod3),c(2,4)]
-  SPRratio_Exploit_mod3[,c(1,2)] = round(SPRratio_Exploit_mod3[,c(1,2)],2)
-  #SPRratio_Exploit_mod3 = SPRratio_Exploit_mod3[-dim(SPRratio_Exploit_mod3)[1],]
-  SPRratio_Exploit_mod3 = rbind(SPRratio_Exploit_mod3,blanks)
-  rownames(SPRratio_Exploit_mod3)[10]='Lastyear'
-  
-  # Age 5+ biomass 
-  Age5biomass_mod3 = mod3$timeseries[,c('Yr','Bio_smry')]
-  Age5biomassyrs_mod3 = subset(Age5biomass_mod3, Yr>=(FirstYR) & Yr<=(LastYR))
-  Age5biomassyrs_mod3 = Age5biomassyrs_mod3[,2]
-  Age5biomassyrs_mod3 = round(Age5biomassyrs_mod3,2)
-  
-  # Spawning biomass and depltion 
-  SpawnDeplete_mod3 = SpawnDeplete_mod3[,c(2:5)]
-  SpawnDeplete_mod3[,1] = round(SpawnDeplete_mod3[,1],0)
-  SpawnDeplete_mod3[,3] = round(SpawnDeplete_mod3[,3],2)
-  
-  # Recruitment 
-  Recruittab_mod3 = Recruittab_mod3[,c(2,3)]
-  
-# BIND ALL DATA TOGETHER
-mod3_summary = cbind(SPRratio_Exploit_mod3,Age5biomassyrs_mod3,SpawnDeplete_mod3,Recruittab_mod3)
-}
 
 # -----------------------------------------------------------------------------    
 # CREATE TABLES BASED ON HOW MANY MODELS AND MANAGEMENT AREAS YOU HAVE
   
 # ONE MODEL
-if (n_models == 1) {
   # Bind data from all three models together
   base_summary1 = as.data.frame(cbind(mngmt,mod1_summary))
 
@@ -975,7 +616,7 @@ if (n_models == 1) {
                        '(1-$SPR$)(1-$SPR_{50\\%}$)',
                        'Exploitation rate',
                        paste('Age ',min_age,' biomass (mt)',sep=''),
-                       'Spawning Output',
+                       'Spawning biomass',
                        '~95\\% CI',
                        'Depletion',
                        '~95\\% CI',
@@ -1001,145 +642,6 @@ if (n_models == 1) {
                                 '>{\\centering}p{1.1in}',
                                 '>{\\centering}p{1.1in}',
                                 '>{\\centering}p{1.1in}')
-}
-  # TWO MODELS
-if (n_models == 2) {
-  # Bind data from all three models together
-  base_summary1 = as.data.frame(cbind(mngmt,mod1_summary, mod2_summary))
-  
-  
-  # Transpose the dataframe to create the table and create data labels  
-  base_summary = as.data.frame(t(base_summary1))
-  base_summary$names=c('Landings (mt)',
-                       'Total Est. Catch (mt)',
-                       'OFL (mt)', 
-                       'ACL (mt)',
-                       
-                       '(1-$SPR$)(1-$SPR_{50\\%}$)',
-                       'Exploitation rate',
-                       paste('Age ',min_age,' biomass (mt)',sep=''),
-                       'Spawning Output',
-                       '~95\\% CI',
-                       'Depletion',
-                       '~95\\% CI',
-                       'Recruits',
-                       '~95\\% CI',
-                       
-                       '(1-$SPR$)(1-$SPR_{50\\%}$)',
-                       'Exploitation rate',
-                       paste('Age ',min_age,' biomass (mt)',sep=''),
-                       'Spawning Output',
-                       '~95\\% CI',
-                       'Depletion',
-                       '~95\\% CI',
-                       'Recruits',
-                       '~95\\% CI')
-  
-  base_summary$region = c('','','','',
-                          'Model 1','Base Case','','','','','','','',
-                          'Model 2','Base Case','','','','','','','' )
-  
-  base_summary = base_summary[,c(ncol(base_summary),
-                                 (ncol(base_summary)-1),
-                                1:(ncol(base_summary)-2))]
-  
-  colnames(base_summary) = c('Model Region','Quantity',seq(FirstYR+1,LastYR+1))
-  
-  # # Create the table
-  base_summary.table = xtable(base_summary, caption=c(paste(spp,' base case results summary.',sep='')),
-                              label='tab:base_summary',digits=0)
-  # # Add alignment   
-  align(base_summary.table) = c('l',
-                                'r',
-                                'r',
-                                '>{\\centering}p{1.1in}',
-                                '>{\\centering}p{1.1in}',
-                                '>{\\centering}p{1.1in}',
-                                '>{\\centering}p{1.1in}',
-                                '>{\\centering}p{1.1in}',
-                                '>{\\centering}p{1.1in}',
-                                '>{\\centering}p{1.1in}',
-                                '>{\\centering}p{1.1in}',
-                                '>{\\centering}p{1.1in}',
-                                '>{\\centering}p{1.1in}')
-}
-#THREE MODELS 
-if (n_models == 3) {
-# Bind data from all three models together
-base_summary1 = as.data.frame(cbind(mngmt, mod1_summary, mod2_summary, mod3_summary))
-    
-    
-# Transpose the dataframe to create the table and create data labels  
-base_summary = as.data.frame(t(base_summary1))
-
-base_summary$names=c('Landings (mt)',
-                     'Total Est. Catch (mt)',
-                     'OFL (mt)', 
-                     'ACL (mt)',
-                     
-                     '(1-$SPR$)(1-$SPR_{50\\%}$)',
-                     'Exploitation rate',
-                     paste('Age ',min_age,' biomass (mt)',sep=''),
-                     'Spawning Output',
-                     '~95\\% CI',
-                     'Depletion',
-                     '~95\\% CI',
-                     'Recruits',
-                     '~95\\% CI',
-                     
-                     '(1-$SPR$)(1-$SPR_{50\\%}$)',
-                     'Exploitation rate',
-                     paste('Age ',min_age,' biomass (mt)',sep=''),
-                     'Spawning Output',
-                     '~95\\% CI',
-                     'Depletion',
-                     '~95\\% CI',
-                     'Recruits',
-                     '~95\\% CI',
-                     
-                     '(1-$SPR$)(1-$SPR_{50\\%}$)',
-                     'Exploitation rate',
-                     paste('Age ',min_age,' biomass (mt)',sep=''),
-                     'Spawning Output',
-                     '~95\\% CI',
-                     'Depletion',
-                     '~95\\% CI',
-                     'Recruits',
-                     '~95\\% CI')
-
-base_summary$region = c('','','','',
-                        'Model 1','Base Case','','','','','','','',
-                        'Model 2','Base Case','','','','','','','',
-                        'Model 3','Base Case','','','','','','','')
-
-base_summary = base_summary[,c(ncol(base_summary),
-                              (ncol(base_summary)-1),
-                              1:(ncol(base_summary)-2))]
-
-colnames(base_summary) = c('Model Region','Quantity',seq(FirstYR+1,LastYR+1))
-
-
-
-# Create the table
-base_summary.table = xtable(base_summary, caption=c('Base case results summary.'), 
-                                  label='tab:base_summary',digits=0) 
-# Add alignment   
-align(base_summary.table) = c('l',
-                              'r',
-                              'r', 
-                              '>{\\centering}p{1.1in}', 
-                              '>{\\centering}p{1.1in}', 
-                              '>{\\centering}p{1.1in}', 
-                              '>{\\centering}p{1.1in}', 
-                              '>{\\centering}p{1.1in}', 
-                              '>{\\centering}p{1.1in}', 
-                              '>{\\centering}p{1.1in}', 
-                              '>{\\centering}p{1.1in}', 
-                              '>{\\centering}p{1.1in}', 
-                              '>{\\centering}p{1.1in}')  
-
-}
-  
   
   
   

@@ -482,7 +482,7 @@
                                         Depletionyrs$Value))
     # Add column names
     colnames(Forecast_mod1)=c('Yr',
-                           'OFL contriubtion (mt)',
+                           'OFL contribution (mt)',
                            'ACL landings (mt)',
                            'Age 5+ biomass (mt)',
                            'Spawning Biomass (mt)',
