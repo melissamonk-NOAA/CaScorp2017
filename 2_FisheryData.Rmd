@@ -791,8 +791,10 @@ indicates males and females to have similar growth patterns until around age thr
 time, females are larger than males (Table \ref{tab:Fleet8_NWFSCTrawl_meanAatL}).
 
 Total biomass estimates from the survey were analyzed using the VAST program 
-[@Thorson2017].  The Q-Q goodness of fit plot and time series of 
-total biomass estimates are shown in Figures \ref{fig:Fleet8_NWFSCtrawl_QQ} and 
+[@Thorson2017].  The Q-Q goodness of fit plot, maps of the Pearson residuals for encounter 
+probability and positive catch rates, and time series of 
+total biomass estimates are shown in Figures \ref{fig:Fleet8_NWFSCtrawl_QQ}, 
+\ref{:fig:Fleet8_encounter_pearson}, \ref{fig:Fleet8_catch_pearson}, and
 \ref{fig:index4_logcpuedata_NWFSCtrawl}, respectively.  The Q-Q plots shows generally good 
 fits and the time series of biomass estimates indicates no significant trend with 
 relatively large uncertainties from the survey.  The final survey index and log 

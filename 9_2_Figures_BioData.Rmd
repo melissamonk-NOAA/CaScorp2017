@@ -49,9 +49,9 @@
 <!-- **************Sex Ratio, Maturity, FecundityFIGURES******************* --> 
 <!-- ********************************************************************** -->
 
-
+<!--
 ![Percent of males and females by age of the fish aged from the NWFSC trawl survey, yellow=females and blue = males. \label{fig:sex_ratio}](Figures/sex_ratio.png)
-
+-->
 <!-- ====================================================================== -->
 <!-- ******************                           ************************* -->
 <!-- ******************END BIOLOGICAL DATA FIGURES************************* --> 

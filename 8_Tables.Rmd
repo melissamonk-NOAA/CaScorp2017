@@ -989,5 +989,18 @@ print(Fleet7_lengthsample.table,
 ```
 
 
+<!-- ********************************************************************** -->
+<!-- ***************Ages by sex TABLES************************************* -->
+<!-- ********************************************************************** -->
 
+```{r, results='asis'}
+      Age_by_sex = read.csv('./txt_files/Age_by_sex.csv')
 
+      sex_ratio.table = xtable(Age_by_sex,
+                          caption = c("Number of fish by sex and age from the NWFSC trawl survey"),
+                             label = 'tab:sex_ratio')
+
+      print(sex_ratio.table, 
+              include.rownames=FALSE, 
+              caption.placement="top")
+```

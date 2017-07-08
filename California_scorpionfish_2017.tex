@@ -829,12 +829,12 @@ assessment:
 \subsection{Basic Information and Life
 History}\label{basic-information-and-life-history}
 
-California scorpionfish (\emph{Scorpaena guttata}), also known locally
-as sculpin or spotted scorpionfish, originates from the Greek word for
-scorpionfishes and \emph{guttata} is Latin for speckled. California
-scorpionfish is a medium-bodied fish and like other species in the genus
-\emph{Scorpaena}, it produces a toxin in its dorsal, anal, and pectoral
-fin spines, which produces intense, painful wounds (Love et al.
+California scorpionfish (\emph{Scorpaena guttata}), also known as
+sculpin, originates from the Greek word for scorpionfishes and
+\emph{guttata} is Latin for speckled. California scorpionfish is a
+medium-bodied fish and like other species in the genus \emph{Scorpaena},
+it produces a toxin in its dorsal, anal, and pectoral fin spines, which
+produces intense, painful wounds (Love et al.
 \protect\hyperlink{ref-Love1987}{1987}). Scorpionfish are very resistant
 to hooking mortality and have shown survival under extreme conditions.
 
@@ -2090,8 +2090,10 @@ females are larger than males (Table
 
 Total biomass estimates from the survey were analyzed using the VAST
 program (Thorson and Barnett \protect\hyperlink{ref-Thorson2017}{2017}).
-The Q-Q goodness of fit plot and time series of total biomass estimates
-are shown in Figures \ref{fig:Fleet8_NWFSCtrawl_QQ} and
+The Q-Q goodness of fit plot, maps of the Pearson residuals for
+encounter probability and positive catch rates, and time series of total
+biomass estimates are shown in Figures \ref{fig:Fleet8_NWFSCtrawl_QQ},
+\ref{:fig:Fleet8_encounter_pearson}, \ref{fig:Fleet8_catch_pearson}, and
 \ref{fig:index4_logcpuedata_NWFSCtrawl}, respectively. The Q-Q plots
 shows generally good fits and the time series of biomass estimates
 indicates no significant trend with relatively large uncertainties from
@@ -2421,7 +2423,7 @@ assessment model.
 The NWFSC trawl survey is the only study available with raw data on sex
 ratios by age. Across all ages, the sex ratio from the aged California
 scorpionfish from the NWFSC trawl survey was 60\% males and 40\% females
-(Figure \ref{fig:sex_ratio}). At age-1, 39\% of the aged fish were
+(Figure \ref{tab:sex_ratio}). At age-1, 39\% of the aged fish were
 female (29 of 85), but the sex of 10 fish was unknown. For ages two to
 five, the percent of female fish ranged from 45-54\%, with aged fish
 older than five dominated by males. The assessment assumed a sex ratio
@@ -4757,6 +4759,46 @@ Year & Index & Log-scale SE \\
 \end{tabular}
 \end{table}
 
+\begin{table}[ht]
+\centering
+\caption{Number of fish by sex and age from the NWFSC trawl survey} 
+\label{tab:sex_ratio}
+\begin{tabular}{lrrrrl}
+  \hline
+Age & Female & Male & Unknown & Total & X \\ 
+  \hline
+0 &   0 &   0 &   1 &   1 &  \\ 
+  1 &  29 &  46 &  10 &  85 &  \\ 
+  2 &  72 &  86 &   2 & 160 &  \\ 
+  3 &  45 &  52 &   1 &  98 &  \\ 
+  4 &  33 &  44 &   0 &  77 &  \\ 
+  5 &  38 &  32 &   0 &  70 &  \\ 
+  6 &  18 &  23 &   0 &  41 &  \\ 
+  7 &  12 &  25 &   0 &  37 &  \\ 
+  8 &  18 &  29 &   0 &  47 &  \\ 
+  9 &  13 &  31 &   0 &  44 &  \\ 
+  10 &  11 &  24 &   0 &  35 &  \\ 
+  11 &  14 &  25 &   0 &  39 &  \\ 
+  12 &   4 &  25 &   0 &  29 &  \\ 
+  13 &   9 &  17 &   0 &  26 &  \\ 
+  14 &   4 &  17 &   0 &  21 &  \\ 
+  15 &   3 &  15 &   0 &  18 &  \\ 
+  16 &   0 &  11 &   0 &  11 &  \\ 
+  17 &   4 &   8 &   0 &  12 &  \\ 
+  18 &   3 &   4 &   0 &   7 &  \\ 
+  19 &   6 &   7 &   0 &  13 &  \\ 
+  20 &   0 &   1 &   0 &   1 &  \\ 
+  21+ &   4 &   7 &   0 &  11 &  \\ 
+  22 &   1 &   1 &   0 &   2 &  \\ 
+  23 &   0 &   1 &   0 &   1 &  \\ 
+  24 &   0 &   1 &   0 &   1 &  \\ 
+  25 &   0 &   1 &   0 &   1 &  \\ 
+  26 &   0 &   2 &   0 &   2 &  \\ 
+  29 &   1 &   0 &   0 &   1 &  \\ 
+   \hline
+\end{tabular}
+\end{table}
+
 \FloatBarrier
 
 \begin{table}[ht]
@@ -5713,14 +5755,6 @@ standard deviation for both readers.
 \caption{Comparison of the California scorpionfish weight-length curves
 from Love et al. (1987) and those estimated from the NWFSC trawl survey.
 The latter is used in this assessment. \label{fig:Length_weight}}
-\end{figure}
-
-\begin{figure}[htbp]
-\centering
-\includegraphics{Figures/sex_ratio.png}
-\caption{Percent of males and females by age of the fish aged from the
-NWFSC trawl survey, yellow=females and blue = males.
-\label{fig:sex_ratio}}
 \end{figure}
 
 \FloatBarrier

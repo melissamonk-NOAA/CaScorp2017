@@ -156,10 +156,12 @@
 
 ![Q-Q plot used to validate the goodness of fit of the VAST analysis for the NWFSC trawl survey between 2003 and 2016. \label{fig:Fleet8_NWFSCtrawl_QQ}](Figures/NWFSCtrawl_QQ.jpg)
 
+
+<!--
 ![NWFSC survey index encounter probability Pearson residuals \label{fig:Fleet8_encounter_pearson}](Figures/Fleet8_encounter_pearson.png)
 
 ![NWFSC survey index positive catch rate probability Pearson residuals \label{fig:Fleet8_catch_pearson}](Figures/Fleet8_catch_pearson.png)
-
+-->
 
 ![Standardized index on the log scale for the NWFSC trawl survey from the VAST analysis from 2003-2016. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:index4_logcpuedata_NWFSCtrawl}](r4ss/plots_mod1/index4_logcpuedata_NWFSCtrawl.png)
 
