@@ -50,7 +50,7 @@
 
 \FloatBarrier 
 
-![Q-Q plot used to evaluate the fit of the lognmoral (positive encounters) of California scorpionfish from the Marine Recreational Fisheries Statistics Survey (MRFSS) private mode dockside survey data set. \label{fig:Fleet4_RecPR_dockside_QQ}](Figures/Fleet4_RecPR_dockside_QQ.png)
+![Q-Q plot used to evaluate the fit of the lognormal (positive encounters) of California scorpionfish from the Marine Recreational Fisheries Statistics Survey (MRFSS) private mode dockside survey data set. \label{fig:Fleet4_RecPR_dockside_QQ}](Figures/Fleet4_RecPR_dockside_QQ.png)
 
 
 ![Standardized index on log scale for the recreational CPFV logbook retained catches. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:index4_logcpuedata_RecPR}](r4ss/plots_mod1/index4_logcpuedata_RecPR.png)
@@ -78,7 +78,7 @@
 
 ![Species coefficients from the binomial GLM for presence/absence of California scorpionfish in the Marine Recreational Fisheries Statistics Survey (MRFSS) party/charter mode dockside survey data set. Horizontal bars are 95% confidence intervals. \label{fig:Fleet5_RecPC_docksideSM}](Figures/Fleet5_RecPC_dockside_SM.png)
 
-![Q-Q plot used to validate the goodness of fit of the lognormal portion (posirive catch) of the Marine Recreational Fisheries Statistics Survey (MRFSS) party/charter dockside survey, for thresholds of 0.27 (left) and 0.10 (right) from the Stephens-MacCall filter. \label{fig:Fleet5_RecPC_docksideQQ}](Figures/Fleet5_RecPC_dockside_QQ.png)
+![Q-Q plot used to validate the goodness of fit of the lognormal portion (positive catch) of the Marine Recreational Fisheries Statistics Survey (MRFSS) party/charter dockside survey, for thresholds of 0.27 (left) and 0.10 (right) from the Stephens-MacCall filter. \label{fig:Fleet5_RecPC_docksideQQ}](Figures/Fleet5_RecPC_dockside_QQ.png)
 
 
 
@@ -113,20 +113,25 @@
 <!-- *************Fleet 7 Sanitation survey FIGURES************************ --> 
 <!-- ********************************************************************** -->
 
-![Standardized index on log scale for the sanitation district trawl index. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:index4_logcpuedata_Sanitation}](r4ss/plots_mod1/index4_logcpuedata_Sanitation.png)
 
-![Comparison of standardized indices for each sanitation district independently and with data from all sanitation districts combined. \label{fig:Fleet7_Sanitation_indexcompare}](Figures/Fleet7_Sanitation_indexcompare.png)
+![Map of stations sampled in at least 5 years by the Sanitation Districts of Los Angeles County (magenta) and the City of Los Angeles Environmental Monitoring Division (blue) \label{fig:Fleet7_sanitation_map2}](Figures/Fleet7_sanitation_map2.pdf)
+
+![Map of stations sampled in at least 5 years by the Orange County Sanitation District (green) and the City of San Diego Public Utilities Ocean Monitoring Program (blue) \label{fig:Fleet7_sanitation_map1}](Figures/Fleet7_sanitation_map1.pdf)
+
+![Standardized index on log scale for the Publicly Owned Treatment Works programs trawl index. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:index4_logcpuedata_Sanitation}](r4ss/plots_mod1/index4_logcpuedata_Sanitation.png)
+
+![Comparison of standardized indices for each Publicly Owned Treatment Works monitoring program independently and with data from all Publicly Owned Treatment Works programs combined. \label{fig:Fleet7_Sanitation_indexcompare}](Figures/Fleet7_Sanitation_indexcompare.png)
 
 
-![Sample sizes of measured California scorpionfish by sanitation district and year. \label{fig:Fleet7_Sanitation_lengthbydistrict}](Figures/Fleet7_Sanitation_length_source.png)
+![Sample sizes of measured California scorpionfish by Publicly Owned Treatment Works monitoring program and year. \label{fig:Fleet7_Sanitation_lengthbydistrict}](Figures/Fleet7_Sanitation_length_source.png)
 
 
-![Boxplots of measured California scorpionfish from the sanitation district surveys by program and 25 m depth bins. \label{fig:Fleet7_Sanitation_lengthboxplots}](Figures/Fleet7_Sanitation_lengthboxplots.png)
+![Boxplots of measured California scorpionfish from the Publicly Owned Treatment Works monitoring surveys by program and 25 m depth bins. \label{fig:Fleet7_Sanitation_lengthboxplots}](Figures/Fleet7_Sanitation_lengthboxplots.png)
 
 \FloatBarrier
 
 
-![Length frequency distributions from the sanitation disricts trawl surveys. \label{fig:Fleet7_comp_lendat_bubflt10mkt2}](r4ss/plots_mod1/comp_lendat_bubflt7mkt2_page2.png)
+![Length frequency distributions from the Publicly Owned Treatment Works monitoring trawl surveys. \label{fig:Fleet7_comp_lendat_bubflt10mkt2}](r4ss/plots_mod1/comp_lendat_bubflt7mkt2_page2.png)
 
 
 \FloatBarrier
@@ -157,11 +162,11 @@
 ![Q-Q plot used to validate the goodness of fit of the VAST analysis for the NWFSC trawl survey between 2003 and 2016. \label{fig:Fleet8_NWFSCtrawl_QQ}](Figures/NWFSCtrawl_QQ.jpg)
 
 
-<!--
+
 ![NWFSC survey index encounter probability Pearson residuals \label{fig:Fleet8_encounter_pearson}](Figures/Fleet8_encounter_pearson.png)
 
-![NWFSC survey index positive catch rate probability Pearson residuals \label{fig:Fleet8_catch_pearson}](Figures/Fleet8_catch_pearson.png)
--->
+![NWFSC survey index positive catch rate probability Pearson residuals \label{fig:Fleet8_catchrate_pearson}](Figures/Fleet8_catchrate_pearson.png)
+
 
 ![Standardized index on the log scale for the NWFSC trawl survey from the VAST analysis from 2003-2016. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:index4_logcpuedata_NWFSCtrawl}](r4ss/plots_mod1/index4_logcpuedata_NWFSCtrawl.png)
 
@@ -173,7 +178,7 @@
 
 ![Q-Q plot used to validate the goodness of fit of the lognormal model for the CSUN/VRG gillnet survey from 1995-2008. \label{fig:Fleet9_GillnetSurvey_QQ}](Figures/Fleet9_GillnetSurvey_QQ.png)
 
-![Sandardized index on the log scale for the recreational CSUN/VRG gillnet survey. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:index4_logcpuedata_GillnetSurvey}](r4ss/plots_mod1/index4_logcpuedata_GillnetSurvey.png)
+![Standardized index on the log scale for the recreational CSUN/VRG gillnet survey. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:index4_logcpuedata_GillnetSurvey}](r4ss/plots_mod1/index4_logcpuedata_GillnetSurvey.png)
 
 ![Length frequency distributions from the gill net surveys. \label{fig:Fleet9_GillnetSurvey_lendat_bubflt10mkt2}](r4ss/plots_mod1/comp_lendat_bubflt9mkt2.png)
 
@@ -181,6 +186,10 @@
 <!-- ********************************************************************** -->
 <!-- *************Fleet 11 Bight trawl survey FIGURES********************** --> 
 <!-- ********************************************************************** -->
+
+
+![Map of the stations from the Southern California Coastal Water Research Project regional monitoring trawl survey from 1994, 1998, 2003, 2008, and 2013.  Stations used in the index of abundance are colored magenta. \label{Fleet11_SCBSurvey_map}](Figures/Fleet11_SCBSurvey_map.pdf)
+
 
 ![Q-Q plot used to validate the goodness of fit of the lognormal model for the Southern California Bight monitoring program trawl survey. \label{fig:Fleet11_SCBsurvey_QQ}](Figures/Fleet11_SCBsurvey_QQ.png)
 

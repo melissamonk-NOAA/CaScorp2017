@@ -4,8 +4,8 @@
 
 ##Basic Information and Life History
 California scorpionfish (\emph{Scorpaena guttata}), also known as sculpin, originates from
-the Greek word for scorpionfishes and \emph{guttata} 
-is Latin for speckled.  California scorpionfish is a medium-bodied fish and like other
+the Greek word for scorpionfishes and \emph{guttata} is Latin for speckled. 
+California scorpionfish is a medium-bodied fish and like other
 species in the genus \emph{Scorpaena}, it produces a toxin in its dorsal, anal, and 
 pectoral fin spines, which produces intense, painful wounds [@Love1987]. Scorpionfish 
 are very resistant to hooking mortality and have shown survival under extreme conditions. 
@@ -20,7 +20,7 @@ behaviors of California scorpionfish.  Marine Applied Research and Exploration (
 observed California scorpionfish aggregations during the spawning season (June 2014) and 
 also in the late fall (November 2012) from video transects in southern California.  The 
 November spawning aggregation was observed at a small rocky feature near La Jolla and the 
-June aggregation  was at a sandy area adjacent to the Farnsworth MPAs (Andy Lauerman, MARE, 
+June aggregation  was at a sandy area adjacent to the Farnsworth MPAs (Andy Lauermann, MARE, 
 personal communication) .
  
 Males and females show different growth rates, with females growing to a larger size 
@@ -45,11 +45,13 @@ brief periods [@Love1987].  California scorpionfish migrate to deeper waters
 The species is oviparous, producing floating, gelatinous egg masses in which 
 the eggs are embedded in a single layer [@Orton1955] and it is believed that 
 spawning takes place just before, and perhaps after dawn, in the water column 
-[@Love1987].  The same study tagged California scorpionfish and suggests individuals
-return to the same 
+[@Love1987].  Love et al. [-@Love1987] tagged California scorpionfish and 
+recaptures suggested individuals return to the same 
 spawning site, but information is not available on non-spawning season site fidelity. 
  
-Little is known about California scorpionfish larvae. The CalCOFI survey observed 
+California scorpionfish have been observed in the California Cooperative Oceanic Fisheries 
+Investigations (CalCOFI) survey, the zooplankton and ichthyoplankton survey 
+of the California Current System.  The CalCOFI survey observed 
 463 California scorpionfish larvae from 1977-2000, with the majority at station 
 close to Oxnard (east of the Channel Islands) [@Moser2002]. Higher densities of 
 larvae have been observed in the CalCOFI stations throughout Baja, peaking south 
@@ -69,7 +71,7 @@ that could contribute ecosystem-related quantitative information for the assessm
 
 
 ##Fishery Information
-The hook-and-line fishery fishery off California developed in the late 19th century 
+The hook-and-line fishery off California developed in the late 19th century 
 [@Love2002]. The rockfish trawl fishery was established in the early 1940s, when the United 
 States became involved in World War II and wartime shortage of red meat created 
 an increased demand for other sources of protein [@Alverson1964; @Harry1961].
@@ -95,9 +97,9 @@ from around the Los Angeles region. In general, the majority of the commercial c
 has come from the Los Angeles region, except in the 1960s and 1970s when the majority
 of the catch came from the San Diego region and Mexican waters.
  
-California scorpionfish are most 
-often taken by boat fishermen, but fairly large numbers are caught from 
-piers, jettys, and rocky shorelines in the recreational fishery.  The Commercial Passenger Fishing Vessl (CPFV; also
+California scorpionfish are most often taken by boat fishermen, but fairly large numbers 
+are caught from piers, jettys, and rocky shorelines in the recreational fishery.  The 
+Commercial Passenger Fishing Vessel (CPFV; also
 referred to as the recreational party/charter or PC mode) effort has remained relatively 
 constant over a long period (1959-1998) [@Dotson2003]. However, there appears to be a shift in 
 effort towards less utilized species, such as California scorpionfish, over the past
@@ -148,8 +150,8 @@ with all genera and species of the family Scorpaenidae, into a federal rockfish
 classification and managed as part of "Remaining Rockfish" under the larger 
 heading of "Other Rockfish" (PFMC [-@PFMC2004; -@PFMC2002], Tables 31-39). 
 
-The ABCs provided by the PFMC's Groundfish Management Team (GMT) in the 1980's 
-were based on an analysis of commercial landings from the 1960's and 1970's. 
+The ABCs provided by the PFMC's Groundfish Management Team (GMT) in the 1980s 
+were based on an analysis of commercial landings from the 1960s and 1970s. 
 For this analysis, most of the rockfishes were lumped into one large group. 
 This analysis indicated that the landings for rockfish in the Monterey-Conception 
 area were at or near ABC levels [@PFMC1993]. To keep landings within these 
@@ -161,7 +163,7 @@ access program in 1994, allocations of total catch and cumulative limits began
 to be specifically set for open access (including most of California's commercial 
 fisheries that target California scorpionfish in Southern California) and limited 
 entry fisheries (Figure \ref{fig:Com_regs}) [@PFMC2002; @PFMC2004].  As a result, in 
-the later 1990's as commercial landings decreased and recreational harvest became a 
+the later 1990s as commercial landings decreased and recreational harvest became a 
 greater proportion of the 
 available harvest. 
 
@@ -204,7 +206,7 @@ Area (CRCA) was defined as those ocean waters south $40^\circ 10^\prime$ N.
 latitude to the U.S.-Mexico border with different depth zones specified for 
 the areas north and south of Pt. Reyes ($37^\circ 59.73^\prime$ N. latitude). 
 
-During the late 1990's and early 2000's, major changes also occurred in the way 
+During the late 1990s and early 2000s, major changes also occurred in the way 
 that California managed its nearshore fishery. The Marine Life Management Act 
 (MLMA), which was passed in 1998 by the California Legislature and enacted in 
 1999, required that the FGC adopt an FMP for nearshore finfish. It also gave 
@@ -252,8 +254,8 @@ in Table \ref{tab:base_summary}.
 
 
 ##Fisheries Off Mexico
-The California scorpionfish’s range extends into to Abreojos, Baja California.  
-The species is also found in the northern Gulf of California and Guadalupe 
+The California scorpionfish’s range extends into to Punta Abreojos, Baja California 
+Sur, Mexico.  The species is also found in the northern Gulf of California and Guadalupe 
 Island.  No formal stock assessments have been conducted for California 
 scorpionfish in Mexican waters.  
 

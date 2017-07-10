@@ -30,7 +30,7 @@
 ![Aging precision between two current age readers at the NWFSC.  Numbers in the bubbles are the sample sizes of otoliths cross-read. \label{fig:Fleet8_NWFSCTrawl_ageerror}](Figures/Fleet8_NWFSCTrawl_ageerror.png)
 
 
-![True versus predicted age for two current age readers at the NWFSC from the ageing error software with unbiased reads and curivlinear standard deviation for both readers. \label{fig:Fleet8_NWFSCTrawl_ageerror2}](Figures/Fleet8_NWFSCTrawl_ageerror2.pdf)
+![True versus predicted age for two current age readers at the NWFSC from the ageing error software with unbiased reads and curvilinear standard deviation for both readers. \label{fig:Fleet8_NWFSCTrawl_ageerror2}](Figures/Fleet8_NWFSCTrawl_ageerror2.pdf)
 
 
 

@@ -13,7 +13,7 @@
 ![Time series of observed and expected landings by fleet from the 2005 model.  The model was not able to remove all of the recreational catches starting around 1970. \label{fig:bridge_catch}](Figures/bridge_catch.png)
 
 
-![Comparison of spawning output, total biomass, and recuits from the 2005 model (solid red lines) using SS2, the 2005 model converted to SS3.24z (blue lines), and the base model from this assessment (purple lines). Note: The 2005 assessment was found to have an error, and therefore the time series for the model to SS3.24 will not match perfectly. \label{fig:bridge_timeseries}](Figures/bridge_timeseries.png)
+![Comparison of spawning output, total biomass, and recruits from the 2005 model (solid red lines) using SS2, the 2005 model converted to SS3.24z (blue lines), and the base model from this assessment (purple lines). Note: The 2005 assessment was found to have an error, and therefore the time series for the model to SS3.24 will not match perfectly. \label{fig:bridge_timeseries}](Figures/bridge_timeseries.png)
 
 
 
@@ -137,13 +137,13 @@
 
 
 
-![Francis data weighting method TA1.8 for conditional age data from the NWFSC trawl survey.  Suggested sample size adjustment(with 95% interval) for conditional age-at-length data from NWFSC trawl is 0.9373 (0.4951-3.7346). For more info, see Francis et al. (2011). \label{fig:comp_condAALdat_data_weighting_TA1.8_condAgeNWFSCTrawl}](r4ss/plots_mod1/comp_condAALdat_data_weighting_TA1.8_condAgeNWFSCTrawl.png)
+![Francis data weighting method TA1.8 for conditional age data from the NWFSC trawl survey.  Suggested sample size adjustment (with 95% interval) for conditional age-at-length data from NWFSC trawl is 0.9373 (0.4951-3.7346). For more info, see Francis et al. (2011). \label{fig:comp_condAALdat_data_weighting_TA1.8_condAgeNWFSCTrawl}](r4ss/plots_mod1/comp_condAALdat_data_weighting_TA1.8_condAgeNWFSCTrawl.png)
  
  
-![Francis data weighting method TA1.8 for length composition data from the Sanitation district surveys.  Suggested sample size adjustment(with 95% interval) for length data from Sanitation surveys is 0.8665 (0.6162-1.3836). For more info, see Francis et al. (2011). \label{fig:comp_lendat_data_weighting_TA1.8_Sanitation}](r4ss/plots_mod1/comp_lendat_data_weighting_TA1.8_Sanitation.png)
+![Francis data weighting method TA1.8 for length composition data from the Sanitation district surveys.  Suggested sample size adjustment (with 95% interval) for length data from Sanitation surveys is 0.8665 (0.6162-1.3836). For more info, see Francis et al. (2011). \label{fig:comp_lendat_data_weighting_TA1.8_Sanitation}](r4ss/plots_mod1/comp_lendat_data_weighting_TA1.8_Sanitation.png)
 
 
-![Francis data weighting method TA1.8 for length composition data from the Impingement surveys.  Suggested sample size adjustment(with 95% interval) for the length data from the Impingement surveys is 0.9356 (0.7114-1.5026). For more info, see Francis et al. (2011). \label{fig:comp_lendat_data_weighting_TA1.8_Impingement}](r4ss/plots_mod1/comp_lendat_data_weighting_TA1.8_Impingement.png)
+![Francis data weighting method TA1.8 for length composition data from the Impingement surveys.  Suggested sample size adjustment (with 95% interval) for the length data from the Impingement surveys is 0.9356 (0.7114-1.5026). For more info, see Francis et al. (2011). \label{fig:comp_lendat_data_weighting_TA1.8_Impingement}](r4ss/plots_mod1/comp_lendat_data_weighting_TA1.8_Impingement.png)
 
 
 
@@ -188,7 +188,6 @@
 
 ![Retrospective pattern for estimated recruitment deviations. \label{fig:retro_recdev}](Figures/retro_recdev.png)
 
-fig:retro_recdev
 
 
 
@@ -249,7 +248,7 @@ fig:retro_recdev
 
 
 
-![Equilibrium yield curve for the base case model. Values are based on the `r Dat_end_mod1` fishery selectivity and with steepness fixed at `r print(mod1$parameters[mod1$parameters$Label == "SR_BH_steep","Value"],2)`. \label{fig:yield1_yield_curve}](r4ss/plots_mod1/yield1_yield_curve.png)
+![Equilibrium yield curve for the base case model. Values are based on the `r Dat_end_mod1` fishery selectivity and with steepness fixed at 0.718. \label{fig:yield1_yield_curve}](r4ss/plots_mod1/yield1_yield_curve.png)
 
 
 \FloatBarrier

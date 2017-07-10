@@ -17,8 +17,8 @@ except for three of the sanitation district trawl surveys, the Southern Californ
 Bight Regional Monitoring Program trawl survey, and the CSUN/VRG gillnet survey 
 (gillnet survey).  Maunder et al. [-@Maunder2005] converted all data to standard 
 length due to clumping of data when length data are only available to the nearest 
-centimeter. However, the same is true for the conversion from TL to SL when data a
-re available to the nearest centimeter. All length data for this assessment are in
+centimeter. However, the same is true for the conversion from TL to SL when data 
+were available to the nearest centimeter. All length data for this assessment are in
 TL.  The Sanitation District of Orange county and the VRG gillnet study measured SL 
 to the nearest mm.
  
@@ -77,7 +77,7 @@ the otoliths collected from the survey were aged.  Figures \ref{fig:otolith1} an
  otoliths read (including double-reads) 
  by the Cooperative Ageing Project (CAP) in Newport, Oregon.  
 A total of 879 otoliths were read, and ranged from 0-29 years of age. 
-Fewer thana 1% (8 fish) were aged 22 years or older,
+Fewer than 1% (8 fish) were aged 22 years or older,
  and only one age-0 fish was in the sample (Figure \ref{fig:Agelength}).
 
 Males and females exhibit different growth patterns with females 
@@ -103,7 +103,7 @@ by Age Reader B.  Ageing error was estimated using publicly available software [
 The software setting for bias and standard deviation were the same for both 
 readers, unbiased and curvilinear increase in standard deviation with age, 
 respectively (Figure \ref{fig:Fleet8_NWFSCTrawl_ageerror2}).  Two fish with 
-estimated age greater than 21 (plus group age) were exluded from the ageing error 
+estimated age greater than 21 (plus group age) were excluded from the ageing error 
 estimation. The resulting estimate indicated a standard deviation in age readings 
 increasing from 0.001 years to a standard deviation of 1.79 years at age 22.
 
@@ -122,7 +122,7 @@ survey data.  Length and weight data were available for 340 females and 530
 males.  The estimated parameters for females are $\alpha = 1.553983e^{-05}$ and
 $\beta = 3.057654$, and for males $\alpha = 1.9104e^{-05}$ and
 $\beta = 2.980548$.  Love et al. [-@Love1987] found males to be heavier at a given 
-length than females, whereas the NWFSC data suggestes the opposite (Figure \ref{fig:Length_weight}).
+length than females, whereas the NWFSC data suggests the opposite (Figure \ref{fig:Length_weight}).
 
 The original data from Love et al. [-@Love1987] are no longer available (Milton Love, personal 
 communication, UC Santa Barbara) to re-examine the trends.  The weight-length relationships 
@@ -152,7 +152,7 @@ since the publication of the 2005 stock assessment. Love et al. [-@Love1987] fou
 few California scorpionfish to be mature at age-1, 50% of males were mature at 17 cm TL 
 and over 50% of females were mature by 18 cm TL, or two years of age. All fish were mature 
 by 22 cm TL.   This assessment used size at 50% maturity 
-for females of 18 cm TL, with maurity asmyptoting to 1.0 for larger fish.  
+for females of 18 cm TL, with maturity asymptoting to 1.0 for larger fish.  
 
 The 2005 assessment model combined information from estimated linear 
 gonadal somatic index and maturity based on standard length [@Maunder2005].  However, the 

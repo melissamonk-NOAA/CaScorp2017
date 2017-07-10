@@ -89,7 +89,7 @@ and explain rationale for each change.  Some of these items are changes due to s
 changes with Stock Synthesis, and some denote parameters chosen for options that were not
 available in SS2 (version 1.18).
 
-Changes in the bridge model from from SS2 version 1.8 to SS3.24z and SS3.30.03.05.
+Changes in the bridge model from SS2 version 1.8 to SS3.24z and SS3.30.03.05 include:
 
 The way growth is modeled for age-0 fish has changed.  More recent versions of Stock Synthesis 
 model length-at-age for fish below the first reference age (Amin) as linearly increasing 
@@ -222,7 +222,7 @@ fixed value for younger fish in the 2005 assessment of 0.25.
 Due to the fact that the 2005 model was erroneous, a bridge from the 2014 catch 
 update, which used SS2 version 1.8 and the 2005 model, was not developed.
 
-Changes in the bridge model from from the SS3.24z model closely matched with the 
+Changes in the bridge model from the SS3.24z model closely matched with the 
 SS2 version 1.8 model to SS3.30.
 
 
@@ -392,7 +392,7 @@ which are new to SS 3.30.  Sensitivities were performed to each of the thirteen
 advanced options for recruitment, e.g., early recruitment deviation start year, 
 early recruitment deviation phase, years with bias adjustments, and maximum bias 
 adjustment.  The final base model sets the first year of recruitment deviations just 
-prior to when length compoisition are available.
+prior to when length composition are available.
 
 Several models were also investigated where steepness was either estimated, fixed at 
 the prior, or at an alternate value.    
@@ -442,15 +442,15 @@ parameters, such as natural mortality and steepness.
 
 The base model is age structured, but 60% of those ages are from males, and a number of 
 ages were from younger fish.  Models that attempted to estimate female natural mortality 
-were considered.  However, female natural mortality was estimed at 0.38, much too high to 
+were considered.  However, female natural mortality was estimated at 0.38, much too high to 
 be considered a reasonable value.  The age data needed to estimate natural mortality (especially 
-for older fish) is not yet available.  Male natural mortality was estimatable as an offset from 
+for older fish) is not yet available.  Male natural mortality was estimable as an offset from 
 female natural mortality. 
 
 Runs of the base case model estimating steepness were also considered, when female natural mortality 
-was fixed. Steepness was estiamted at approximately 0.8.  No data exist to inform this parameter 
-for California scorpfionsh, and the decision was made to fix steepness at the mean of the prior 
-developed from a meta-anaylsis of West Coast groundfish.
+was fixed. Steepness was estimated at approximately 0.8.  No data exist to inform this parameter 
+for California scorpionfish, and the decision was made to fix steepness at the mean of the prior 
+developed from a meta-analysis of West Coast groundfish.
 
 Additional models considered and run for sensitivity analyses can be found in the Sensitivity Analysis 
 Section of this document.
@@ -460,7 +460,7 @@ Model convergence was determined by starting the minimization process from dispe
 values of the maximum likelihood estimates to determine if the model found a better 
 minimum. Jitter is a SS option that generates random starting values from a normal 
 distribution logistically transformed into each parameter’s range [@Methot2015]. This 
-was repeated 100 times and the minimum was reached in 45% of the runs  (Table \ref{tab:jitter}).  
+was repeated 100 times and the minimum was reached in 56% of the runs  (Table \ref{tab:jitter}).  
 The model did not experience convergence issues, e.g., final gradient was below 0.0001,
 when reasonable starting values were used and there were no difficulties in inverting 
 the Hessian to obtain estimates of variability.  We did sensitivity runs for 
@@ -490,7 +490,6 @@ log-likelihood did not change nor the parameter estimates.
     \textbf{STAT Response:} Add after STAR panel.
 
 
-
 \end{description}
 
 <!-- *********************MODEL 1 RESULTS********************************** -->
@@ -511,10 +510,10 @@ mortality was fixed at 0.2547 for females, and estimated as 0.2078 for males.
 ###Parameter Estimates
 The base model produces reasonable estimates of growth parameters, for both males and 
 females (Figure \ref{fig:vonB_compare}).  The von Bertalanffy growth coefficient $k$ 
-for females was estimated close to the external estimate, 0.2496 externally and 0.2494 
+for females was estimated close to the external estimate, 0.2496 externally and 0.2503 
 within SS.  For males, the von Bertalanffy $k$ parameter was estimated at 0.2325 externally 
-and 0.2234 within SS.  The female estimated $L_{inf} was 33.46 and 27.538 for males.  
-Females grow faster than male and reach a maximum size greater than the males.  
+and 0.1864 within SS.  The female estimated $L_{inf} was 33.312 and 28.4207 for males.  
+Females grow faster than males and reach a maximum size greater than the males.  
 
 Selectivity curves were estimated for the fishery and survey fleets.  The estimated 
 selectivities for all fleets within the model are shown in Figure 
@@ -595,7 +594,7 @@ observer retained-only catch index was fit well by the model except for the two
 lowest years, 2003 and 2015.   
 
 The sanitation district index was fit well by the model, except for the highest four 
-years from 1979-1982, where the fit is estimated lower than the the added uncertainty.  
+years from 1979-1982, where the fit is estimated lower than the added uncertainty.  
 The NWFSC trawl survey index is flat and fit well by the model, except for in 2013, 
 the highest year in the index, with also high uncertainty.  The gillnet survey was 
 not well fit by the model and did not capture the trend observed in the standardized 
@@ -640,8 +639,8 @@ due to incoming cohorts (Figure \ref{fig:comp_condAALdat_data_weighting_TA1.8_co
 Smaller fish were also observed in the sanitation and impingement surveys in the 
 (Figures \ref{fig:comp_lendat_data_weighting_TA1.8_Sanitation} and \ref{fig:comp_lendat_data_weighting_TA1.8_Impingement}).  The mean length in the 
 recreational private and party/charter fleets increased over time (Figures \ref{fig:comp_lendat_data_weighting_TA1.8_RecPR} and 
-\ref{fig:comp_lendat_data_weighting_TA1.8_RecPC}). The length composition of the recreational fleet discards was smaller in teh 1980's 
-and hovers around the 10-in minimum size limit in the 2000's (Figure \ref{fig:comp_lendat_data_weighting_TA1.8_RecDD}).
+\ref{fig:comp_lendat_data_weighting_TA1.8_RecPC}). The length composition of the recreational fleet discards was smaller in the 1980s 
+and hovers around the 10-in minimum size limit in the 2000s (Figure \ref{fig:comp_lendat_data_weighting_TA1.8_RecDD}).
 
 
 
@@ -658,11 +657,11 @@ A number of sensitivity analyses were conducted, including:
   
   \item Estimating natural female mortality
   
-  \item Estimating steepness - TBD
+  \item Estimating steepness
   
   \item Assume the same fixed natural mortality for males and females
   
-  \item Remove each index, one at a time - TBD
+  \item Remove each index, one at a time
   
   
 \end{enumerate}
@@ -674,7 +673,7 @@ current base model (Table \ref{tab:Sensitivity_model1}).
 
 Data weighting is an area of uncertainty for stock assessment and research is ongoing to 
 determine the effects of data weighting and the most appropriate initial sample sizes for 
-length and age composition data.  A model run with defauly weighting increased the total 
+length and age composition data.  A model run with default weighting increased the total 
 likelihood by 2,692 and resulted in a final depletion of 0.771.  The base model used the 
 Stewart sample sizes for the fishery data and number of trips for all survey sample sizes. 
 Weighting the data by the harmonic mean resulted in a model with a total likelihood between 
@@ -759,7 +758,7 @@ level ($SB_{40\%}$) was `r Ref_pts_mod1[7,2]` mt.
 
 The predicted spawning biomass from the base model shows an initial decline starting in 
 1970, with two year of low spawning biomass in 1976 and 1977.  From the late 1970s 
-to the mid-2000’s the population follows a cyclical pattern (driven by recruitment pulses) 
+to the mid-2000s the population follows a cyclical pattern (driven by recruitment pulses) 
 and then declines until 2015.  The last two years of the model indicate an increase in spawning biomass. 
 (Figure \ref{fig:ts7_Spawning_biomass_(mt)_with_95_asymptotic_intervals_intervals}). Since 2015, 
 the spawning biomass has been increased due to 

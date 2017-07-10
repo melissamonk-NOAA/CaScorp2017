@@ -2,7 +2,7 @@
 #Harvest Projections and Decision Tables
 The forecasts of stock abundance and yield were developed using the final base model.
 The total catches in 2017 and 2018 are set to the PFMC adopted California scorpionfish 
-ACLs (Table \ref{tab:tab:mnmgt_perform).  CDFW allocated 75% of the ACL to the recreational 
+ACLs (Table \ref{tab:mnmgt_perform).  CDFW allocated 75% of the ACL to the recreational 
 fisheries and 25% to the commercial fisheries.  The catches were divided among the fleets
 within each the commercial and recreational fisheries by taking the ratio of the average 
 catches from 2012-2016. The average of 2012-2016 catch by fleet was used to distribute 

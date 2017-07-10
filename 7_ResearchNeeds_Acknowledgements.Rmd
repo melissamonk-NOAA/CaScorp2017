@@ -1,7 +1,7 @@
 
 <!-- ****************************RESEARCH NEEDS**************************** -->
 #Research Needs
-There are a number of areas of research that could improve the understand and the stock 
+There are a number of areas of research that could improve the stock 
 assessment for California scorpionfish.  Below are issues identified by the STAT team:
 
 \begin{enumerate}

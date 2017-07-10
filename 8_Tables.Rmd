@@ -578,7 +578,8 @@
     #Fleet 7 filter
          Fleet7_filter.table = xtable(Fleet7_filter,
                               caption = c("The trawl sample sizes for each
-                                          sanitation district at each data filtering step.  
+                                          Publicly Owned Treatment Works 
+                                          trawl survey data at each data filtering step.  
                                           The bold value indicates the final sample size 
                                           used for delta-GLM analysis."),
                               label='tab:Fleet7_Sanitation_filter')
@@ -600,7 +601,7 @@
    #Fleet 7 aic
          Fleet7_aic.table = xtable(Fleet7_aic,
                               caption = c("AIC values for each model in the
-                                         sanitation districts trawl sample 
+                                         Publicly Owned Treatment Works trawl sample 
                                           index."),
                               label='tab:Fleet7_Sanitation_aic')
         
@@ -612,7 +613,7 @@
 
    #Fleet 7 index
          Fleet7_index.table = xtable(Fleet7_index,
-                              caption = c("The sanitation districts 
+                              caption = c("The Publicly Owned Treatment Works 
                                            trawl sample index."),
                               digits=4,
                               label='tab:Fleet7_Sanitation_index')
@@ -629,14 +630,14 @@
         
 Fleet7_lengthdepth.table = xtable(Fleet7_lengthdepth,
                                   caption = c("Number of fish measured by 25 m 
-                                              depth bin and sanitation district "),
+                                              depth bin and Publicly Owned Treatment Works program."),
                                   label = 'tab:Fleet7_lengthdepth')
 
 Fleet7_lengthsample.table = xtable(Fleet7_lengthsample,
                                    caption = c("Sample sizes and mean length by
-                                                year for the sanitation district 
-                                                trawl surveys, all sanitation 
-                                              district programs combined"),
+                                                year for the Publicly Owned Treatment Works 
+                                                trawl surveys, all Publicly Owned Treatment Works
+                                               programs combined"),
                                    label = 'tab:Fleet7_lengthsample')
 
 

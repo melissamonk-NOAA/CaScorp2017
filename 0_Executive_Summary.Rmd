@@ -17,7 +17,7 @@ hook-and-line (Table \ref{tab:Exec_catch}).  Commercial landings were small duri
 the years of World War II, ranging between `r min(round(Tot.catch.df[Tot.catch.df[,1] >= 1939 & Tot.catch.df[,1] <= 1945,2],0))` to `r max(round(Tot.catch.df[Tot.catch.df[,1] >= 1939 & Tot.catch.df[,1] <= 1945,2],0))` metric  tons (mt) per year.
 The recreational fleets began ramping up in the 1960s and have dominated the catch since then
 (Figures \ref{fig:Exec_catch1}-\ref{fig:Exec_catch3}).  The party/charter fleet has been 
-the major component of the recreational sector since the early 2000's.
+the major component of the recreational sector since the early 2000s.
 
 The catches from the commercial fleets has been small in the last decade, range from 1.19 to 4.54 mt per year (Figure \ref{fig:r4ss_catches}). Since 2000, annual total landings of `r spp` have ranged between 
 `r paste0( min(round(Tot.catch.df[Tot.catch.df[,1] > 2000 & Tot.catch.df[,1] <= Dat_end_mod1,2],0)), '-', max(round(Tot.catch.df[Tot.catch.df[,1] > 2000 & Tot.catch.df[,1] <= Dat_end_mod1,2],0)) )` mt, with landings in `r Dat_end_mod1` totaling `r round(Tot.catch.df[Tot.catch.df[,1] == Dat_end_mod1,2],0)` mt.
@@ -85,7 +85,7 @@ ten months of the year during that period.
 This a new full assessment for `r spp`, which was last assessed in 2005 [@Maunder2005] using 
 Stock Synthesis II version 1.18.  This assessment uses the newest version of Stock Synthesis 
 (3.30.05).  The model begins in `r Dat_start_mod1`, and assumes the stock 
-was at an unfished equilibrium that year.In this assessment, aspects of the model including landings,
+was at an unfished equilibrium that year. In this assessment, aspects of the model including landings,
 data, and modelling assumptions were re-evaluated. The assessment was conducted using the 
 length- and age-structured modeling software Stock Synthesis (version 3.30.05.03).  The population 
 was modeled allowing separate growth and mortality parameters for each sex (a two-sex model) 
@@ -273,7 +273,7 @@ spawning biomass in the base model (Table \ref{tab:Ref_pts_mod1}).  Unfished
 age `r min_age` biomass was estimated to be `r Ref_pts_mod1[2,2]` mt in the 
 base case model. The target spawning biomass ($SB_{40\%}$) 
 is `r paste(Ref_pts_mod1[7,2], fecund_unit,sep=' ')`, which corresponds with an 
-equililbrium yield of `r Ref_pts_mod1[10,2]` mt. Equilibrium yield at the proxy $F_{MSY}$ 
+equilibrium yield of `r Ref_pts_mod1[10,2]` mt. Equilibrium yield at the proxy $F_{MSY}$ 
 harvest rate corresponding to $SPR_{50\%}$ is `r Ref_pts_mod1[15,2]` mt (Figure \ref{fig:Yield_all}).
 
 
