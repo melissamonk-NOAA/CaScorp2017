@@ -13,7 +13,7 @@ from SL to TL from these data was estimated at $TL = 1.2225SL + 0.7773$.
 The conversion originating from the halibut trawl data was used in this assessment 
 due to the fact that the original data from Love et al.  [-@Love1987] are not available. 
 The majority of available length composition data were measured to total length, 
-except for three of the sanitation district trawl surveys, the Southern California
+except for the POTW trawl surveys, the Southern California
 Bight Regional Monitoring Program trawl survey, and the CSUN/VRG gillnet survey 
 (gillnet survey).  Maunder et al. [-@Maunder2005] converted all data to standard 
 length due to clumping of data when length data are only available to the nearest 

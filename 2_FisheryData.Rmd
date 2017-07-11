@@ -607,7 +607,8 @@ model and associated plots) that discharge into coastal waters are required to c
 trawl surveys to 
 monitor the demersal fish community in the vicinity of the discharge sites as a condition of the  
 National Pollutant Discharge Elimination System (NPDES) permits, issued 
-by the Environmental Protection Agency. All POTWs holding NPDES permits 
+by the Environmental Protection Agency if the discharge is to federal waters, and the State Water 
+Resources Control Board if discharge is into state waters. All POTWs holding NPDES permits 
 in southern California were contacted for trawl data. 
 The two northernmost districts, Goleta and the City of Oxnard, provided data (via Aquatic 
 Bioassay & Consulting Laboratories, Inc.), but California scorpionfish have not been 
@@ -618,19 +619,23 @@ and the City of San Diego Public Utilities Department all encounter California s
 and provided trawl 
 data (Figures \ref{fig:Fleet7_sanitation_map2} and \ref{fig:Fleet7_sanitation_map1}).
 
-A description of the data provided by each sanitation district is provided. In 
+
+All of the POTWs sample using the same protocols and gear as the Southern California Bight 
+Regional Monitoring Program. The trawl net is a 7.6 m wide Marinovich, semi-balloon 
+otter trawl (2.54 cm mesh) with a 0.64 cm mesh cod-end liner.
+
+A description of the data provided by each POTW is provided. In 
 contrast to the inverse variance weighted index from the 2005 assessment, trawls from all
 POTWs were combined to develop a single index of abundance. 
 
 _Orange County_.
 
 The Orange County Sanitation District provided trawl data from 1970-2015 (Jeff Armstrong,
-Orange County Sanitation District).  The trawl net is a 7.6 m wide Marinovich, semi-balloon 
-otter trawl (2.54 cm mesh) with a 0.64 cm mesh cod-end liner.
-Fixed stations are sampled either annually (summer) or semi-annually in the winter 
+Orange County Sanitation District).  Fixed stations are sampled either annually (summer) or 
+semi-annually in the winter 
 and summer, Quarters 1 and 3 (Jan-March and July-September).  From 1970-1985 Quarter 
 2, trawl effort was based on a 10 minute tow time.  As of 1985 
-Quarter 3, trawls were towed a distance of 450 m. Tow time was no available
+Quarter 3, trawls were towed a distance of 450 m. Tow time was not available
 for approximately half of the tows from 1985 Quarter 3 to 2016, and was imputed
 based on the mean tow time of the sampling station. 
 
@@ -639,7 +644,8 @@ present in at least 5% of trawls were retained for the analysis (1,490 trawls).
 For hauls with fewer than 30 California scorpionfish, each fish was measured to the nearest 
 mm (standard length).  In hauls with more than 30 California scorpionfish, they were tallied 
 by size class (nearest cm).  Six hauls, all from station T3, caught more than 30 California 
-scorpionfish.
+scorpionfish.  From these six hauls, 30 California scorpionfish were measured to the nearest mm, 
+and the remainder were binned to cm size classes.
  
  
 _The City of Los Angeles Environmental Monitoring Division (CLAEMD)_.
@@ -662,7 +668,7 @@ _Sanitation Districts of Los Angeles County_.
 The Sanitation Districts of Los Angeles County provided quarterly trawl data from 1972-2016 
 (Shelly Walther, Sanitation Districts of Los Angeles County) and follow the same sampling 
 protocols as the 
-Southern California Bight Regional Monitoring Program trawl survey 
+Southern California Bight Regional Monitoring Program. Trawl survey 
 stations sampled in fewer than 10 years or at 305 m where California
 scorpionfish were never observed were removed from the analysis.  Non-standard and 
 special study trawls were also removed, e.g., night trawl study in 1987. 
@@ -732,8 +738,8 @@ Los Angeles County has encountered pulses of large numbers of California scorpio
 2004 and 2005.  Figure \ref{fig:Fleet7_Sanitation_lengthboxplots} shows the distribution of 
 lengths for California scorpionfish by 25 m depth bins and Sanitation District. The median length  
 of fish from the CLAEMD trawls is smaller than the other two districts. 
-However, there are only 120 in that depth bin, compared to 1,372 fish in the 50-74 m depth 
-bin for the CLAEMD (Table \ref{tab:Fleet7_lengthdepth}).
+However, there are only 120 fish encountered in that depth range, compared to 1,372 fish encountered in 
+the 50-74 m depth range (Table \ref{tab:Fleet7_lengthdepth}).
   
 The length composition indicates a fairly consistent size range of fish encountered 
 in the trawl surveys, with a handful of smaller fish in 2016 
@@ -822,8 +828,9 @@ strong trends or patterns in age classes during the time period
 
 **Southern California Bight Regional Monitoring Project Trawl Survey**
 
-The southern California Coast Water Research Project [SCCWRP](http://www.sccwrp.org/Homepage.aspx) consists of
-over 60 agencies in southern California that conduct monitoring of aquatic 
+The southern California Coast Water Research Project [SCCWRP](http://www.sccwrp.org/Homepage.aspx) 
+works to bring together over 60 agencies in southern California, including all of the aforementioned 
+POTWs, that conduct monitoring of aquatic 
 environments. One of the monitoring programs in the Southern California Bight (SCB)
 is a trawl survey conducted every five years.  The pilot year of the survey was 1994.
 Data from each of the survey years (1994, 1998, 2003, 2008, and 2013) were provided by 

@@ -6,11 +6,11 @@
 ###History of Modeling Approaches Used for this Stock
 California scorpionfish was first assessed in 2005 [@Maunder2005] using SS2 (version 1.18). 
 The 2005 model was a one-area model for the population south of Pt. Conception to 
-the U.S.-Mexico border. The assessment was sensitive to the inclusion of the sanitation 
-district index of abundance and the STAT team provided reference points for a model that 
-included the sanitation index and one excluding it.  The stock was found to be at 80% 
-of unfished levels for the model with the sanitation index and 58% for the model without 
-the sanitation index.  The 2015 catch-only projections used the same version of SS2 as the 2005 assessment model.  
+the U.S.-Mexico border. The assessment was sensitive to the inclusion of the POTW trawl survey 
+index of abundance and the STAT team provided reference points for a model that 
+included the POTW trawl survey index and one excluding it.  The stock was found to be at 80% 
+of unfished levels for the model with the POTW trawl survey index and 58% for the model without 
+the POTW trawl survey index.  The 2015 catch-only projections used the same version of SS2 as the 2005 assessment model.  
 The 2005 model assumed removals equivalent to the ACL in all years from 2004-2016.  The 
 2015 model included catch estimates from 2004-2014, and the ACLs for 2015 and 2016 were 
 assumed to be attained.  Maunder et al. [-@Maunder2005] assumed no discard mortality, 
@@ -22,14 +22,15 @@ estimate of discards to provide an estimate of discard mortality for the recreat
 
 \begin{description}[style=unboxed]
 
-  \item[Recommendation 1: The sanitation surveys conducted to track the impact 
+  \item[Recommendation 1: The [POTW trawl surveys (referred to as sanitation district 
+  surveys in teh 2005 assessment)] conducted to track the impact 
   of sewage outfall provided a fishery independent index of abundance for 
   scorpionfish. This data source should be more fully explored for other 
   nearshore species of recreational or commercial interest. Methods should 
   be developed to produce a more statistically rigorous index from the 
   separate surveys.] \hfill \\
 
-   STAT response: Data from all sanitation districts in southern California 
+   STAT response: Data from all large POTWs in southern California 
    were obtained for this assessment.  All of the data were pooled across
    surveys to develop one index of abundance using the delta-GLM method
 
@@ -94,7 +95,7 @@ Changes in the bridge model from SS2 version 1.8 to SS3.24z and SS3.30.03.05 inc
 The way growth is modeled for age-0 fish has changed.  More recent versions of Stock Synthesis 
 model length-at-age for fish below the first reference age (Amin) as linearly increasing 
 from the initial length bin to the length given by the L_at_Amin parameter.  Since small 
-California scorpionfish are selected in the sanitation district survey data, the change 
+California scorpionfish are selected in the POTW trawl survey data, the change 
 in modeled growth has the potential to affect estimates of recruitment.  We took the 
 following approach in order to mimic the methods of SS2 version 1.8:
  \begin{enumerate}
@@ -170,7 +171,7 @@ Selectivity in this model is assumed to be length-based and is modeled as double
 for all fleets that were also in the previous assessment. This assessment mirrors the 
 selectivity for the trawl and gillnet commercial fisheries to the commercial 
 hook-and-line fishery.  The 2005 assessment included two surveys, the CPFV logbook 
-and sanitation district surveys.  The length composition measurement for the CPFV 
+and POTW trawl surveys.  The length composition measurement for the CPFV 
 logbook survey are from the dockside intercept surveys in RecFIN and were updated to 
 double normal selectivity in this model.
 
@@ -184,10 +185,10 @@ regulations have remained fairly consistent.
 
 The 2005 assessment considered six candidate indices of abundance (fishery-dependent: 
 CPFV logbook, CDFW monthly block summaries, RecFIN dockside intercept survey, trawl 
-logbook; fishery-independent: sanitation survey, CalCOFI, but only included two in the 
-final model (CPFV logbook and sanitation district surveys).  The sanitation district 
-survey ended up being the basis for the decision table in the 2005 assessment, with 
-more weight given to the model without the sanitation district survey.  All 
+logbook; fishery-independent: POTW trawl survey, CalCOFI, but only included two in the 
+final model (CPFV logbook and POTW trawl surveys).  The POTW trawl 
+surveys ended up being the basis for the decision table in the 2005 assessment, with 
+more weight given to the model without the POTW trawl survey.  All 
 indices were re-evaluated and updated through 2016 for this assessment.  As in the 
 2005 assessment, we did not consider the CaCOFI index, CDFW monthly block summaries, 
 or the trawl survey for the current model.  The current model includes four 
@@ -201,7 +202,7 @@ and is used here as both retained-only and discard-only indices.  The CPFV logbo
 was updated and reevaluated from the 2005 assessment.
 
 The fishery-independent indices are all new for this assessment, except for the 
-sanitation districts trawl surveys.  
+POTW trawl surveys.  
 
 Maturity was changed for this assessment.  The Love et al. [-@Love1987] study is 
 the only study that estimated the maturity ogive.  The CDFW cross-shelf halibut 
@@ -239,7 +240,7 @@ one for the dead discards from the recreational party/charter boat and private b
 combined.
 
 *Research*: There are six sources of fishery-independent data available for California 
-scorpionfish, including the sanitation district trawl surveys, NWFSC trawl survey, 
+scorpionfish, including the POTW trawl surveys, NWFSC trawl survey, 
 the CSUN/VRG gillnet survey, the generating stations surveys, Southern California 
 Bight regional monitoring trawl survey, and the recreational party/charter onboard 
 observer retained-only catch data.
@@ -545,7 +546,7 @@ discarded.
 
 All of the survey selectivity curves were asymptotic and none had time blocks. 
 The Southern California Bight regional monitoring trawl survey uses the same gear 
-as the sanitation district trawls survey. All of the three trawl surveys reach full 
+as the POTW trawl surveys. All of the three trawl surveys reach full 
 selectivity around 24 cm. The selectivity for the gillnet survey is mirrored to the 
 trawl survey because small 1”-2” mesh sizes were used.  
 
@@ -557,7 +558,7 @@ the recreational party/charter discard fleet of
 `r round(mod1$parameters[mod1$parameters$Label == "Q_extraSD_RecDD(6)", 3], 3)`. The 
 estimated added variance was highest for the recreational party/charter retained-catch 
 fleet (`r round(mod1$parameters[mod1$parameters$Label == "Q_extraSD_RecPC(5)", 3], 3)`), 
-the sanitation district survey 
+the POTW trawl survey 
 (`r round(mod1$parameters[mod1$parameters$Label == "Q_extraSD_Sanitation(7)", 3], 3)`), 
 and the NWFSC trawl survey 
 (`r round(mod1$parameters[mod1$parameters$Label == "Q_extraSD_NWFSCTrawl(8)", 3], 3)`).  
@@ -593,7 +594,7 @@ in parts of the time series, but did not capture the increases observed in the l
 observer retained-only catch index was fit well by the model except for the two 
 lowest years, 2003 and 2015.   
 
-The sanitation district index was fit well by the model, except for the highest four 
+The POTW trawl survey index was fit well by the model, except for the highest four 
 years from 1979-1982, where the fit is estimated lower than the added uncertainty.  
 The NWFSC trawl survey index is flat and fit well by the model, except for in 2013, 
 the highest year in the index, with also high uncertainty.  The gillnet survey was 
@@ -607,7 +608,7 @@ year and the Pearson residuals-at-length for all fleets.  Detailed fits to the
 length data by year and fleet are provided in Appendix 
 \ref{appendix-a.-detailed-fits-to-length-composition-data}.  Aggregate fits by fleet 
 are shown in Figure \ref{fig:comp_lenfit__aggregated_across_time}. Overall, the 
-length composition data for the commercial hook-and-line, commercial trawl, sanitation 
+length composition data for the commercial hook-and-line, commercial trawl, POTW trawl 
 survey, recreational private, and party/charter fleets all fit well.  The fits to the
 recreational discard fleet by year were variable, and were worse in years with small 
 sample sizes; however, the aggregate fit is reasonable.  The sample sizes by year for 
@@ -636,7 +637,7 @@ The age data were also weighted according to Francis weighting which adjust the 
 given to a data set based on the fit to the mean age by year. 
 The mean ages from the fishery appear to have declined in recent years which could be 
 due to incoming cohorts (Figure \ref{fig:comp_condAALdat_data_weighting_TA1.8_condAgeNWFSCTrawl}).  
-Smaller fish were also observed in the sanitation and impingement surveys in the 
+Smaller fish were also observed in the POTW trawl and impingement surveys in the 
 (Figures \ref{fig:comp_lendat_data_weighting_TA1.8_Sanitation} and \ref{fig:comp_lendat_data_weighting_TA1.8_Impingement}).  The mean length in the 
 recreational private and party/charter fleets increased over time (Figures \ref{fig:comp_lendat_data_weighting_TA1.8_RecPR} and 
 \ref{fig:comp_lendat_data_weighting_TA1.8_RecPC}). The length composition of the recreational fleet discards was smaller in the 1980s 
@@ -651,7 +652,7 @@ A number of sensitivity analyses were conducted, including:
 
   \item Data weighting according to the harmonic mean.
   
-  \item Removal of the sanitation distric index (axis of uncertainty from the 2005 assessment)
+  \item Removal of the POTW trawl survey index (axis of uncertainty from the 2005 assessment)
   
   \item Dome-shaped selectivity for the NWFSC trawl survey and gillnet survey - TBD
   
@@ -681,11 +682,11 @@ the base model, which uses the Francis method for weighting, and the model with 
 The Francis weights in the base model were stable, and did not tend to serially decrease (downweight) 
 any of the datasets, which has been seen in other assessments.  
 
-The sanitation district index was the axis of uncertainty in the 2005 assessment.  
-The stock was estimated to be at 80% depletion in 2005 with the sanitation district 
+The POTW trawl survey index was the axis of uncertainty in the 2005 assessment.  
+The stock was estimated to be at 80% depletion in 2005 with the POTW trawl survey 
 index and at 58% without the index. The current assessment 
 has a number of new data sources, including new indices, length data, and conditional age-at-length data 
-available.  Removing the sanitation index and length composition data from the current base model 
+available.  Removing the POTW trawl survey index and length composition data from the current base model 
 did not have a large effect on the model.  Depletion dropped from 0.574 to 0.53, but this is a fairly 
 small change compared to the effect on the 2005 model.
 
@@ -731,7 +732,7 @@ For steepness, the negative log-likelihood was essentially flat between values o
 Likelihood components by data source show that the fishery age data support a low 
 steepness value, but the other data sources higher value for steepness (Figure 
 \ref{fig:profile_h_like}).  The 
-impingement, sanitation, and recreational private mode fleets support higher 
+impingement, POTW trawl survey, and recreational private mode fleets support higher 
 values of steepness while the other surveys are relatively uninformative.  The 
 relative depletion for `r spp` changes very little (0.51-0.60) across different
 assumed values of steepness (Figure \ref{fig:profile_h_depl}).
