@@ -167,6 +167,16 @@
 
 <!-- ***********MODEL 1 Uncertainty and Sensitivity FIGURES**************** --> 
 
+![Sensitivity of the spawning biomass to estimating the same natural mortality for males and females and estimating steepness, as compared to the pre-STAR base model, which has fixed female natural mortality and steepness. \label{fig:sensitivity_spawnbio}](Figures/sensitivity_spawnbio.png)
+
+![Sensitivity of the spawning biomass to dropping one data source at a time as compared to the pre-STAR base model. \label{fig:sensitivity1_spawnbio}](Figures/sensitivity1_spawnbio.png)
+
+
+![Sensitivity of the spawning biomass to dropping the impingement length composition and either fixing female natural mortality, estimating the same natural mortality for males and females, or estimating the same natural mortality for males and females and estimating steepness, as compared to the pre-STAR base model, which has fixed female natural mortality. \label{fig:sensitivity2_spawnbio}](Figures/sensitivity2_spawnbio.png)
+
+
+
+
 \FloatBarrier
 
 

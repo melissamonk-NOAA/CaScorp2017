@@ -134,7 +134,7 @@ used in the assessment model.
 
 The NWFSC trawl survey is the only study available with raw data on sex ratios by age. 
 Across all ages, the sex ratio from the aged California scorpionfish from the NWFSC trawl 
-survey was 60% males and 40% females (Figure \ref{tab:sex_ratio}). At age-1, 39% of the aged 
+survey was 60% males and 40% females (Table \ref{tab:sex_ratio}). At age-1, 39% of the aged 
 fish were female (29 of 85), 
 but the sex of 10 fish was unknown.  For ages two to five, the percent of female 
 fish ranged from 45-54%, with aged fish older than five dominated by males. The assessment 

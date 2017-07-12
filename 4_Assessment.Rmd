@@ -283,7 +283,7 @@ Electronic SS model files including the data, control, starter, and forecast fil
 found on the [PFMC ftp site](ftp://ftp.pcouncil.org/pub/GF_STAR3_2017_Blue_Deacon_CAScorp/).
 
 ###Modeling Software
-The STAT team used Stock Synthesis 3 version 3.30.0.4 by Dr. Richard Methot at 
+The STAT team used Stock Synthesis 3 version 3.30.05.03 by Dr. Richard Methot at 
 the NWFSC. This most recent version was used, since it included 
 improvements and corrections to older versions.  The r4SS package 
 (GitHub release number v1.27.0) was used to post-processing output data from Stock
@@ -315,7 +315,10 @@ natural mortality was fixed at the median of the prior, 0.257 for an assumed
 maximum age of 21.  An uninformative prior was used for the male offset natural 
 mortality, which was estimated.
 
-The prior for steepness (*h*) assumes a beta distribution with parameters based on an update for the Thorson-Dorn rockfish prior (Dorn, M. and Thorson, J., pers. comm.), which was endorsed by the Science and Statistical Committee in 2017.  The prior is a beta distribution with $mu$=0.718 and $sigma$=0.158.  Steepness is fixed in the base model at the mean of the prior. The priors were applied in sensitivity analyses where these parameters were estimated.
+The prior for steepness (*h*) assumes a beta distribution with parameters based on an update for the 
+Thorson-Dorn rockfish prior (Dorn, M. and Thorson, J., pers. comm.), which was endorsed by the Science 
+and Statistical Committee in 2017.  The prior is a beta distribution with $mu$=0.718 and $sigma$=0.158.  
+Steepness is fixed in the base model at the mean of the prior. The priors were applied in sensitivity analyses where these parameters were estimated.
 
 
 
@@ -330,7 +333,7 @@ model.  The survey catchability parameters are calculated analytically (set as
 scaling factors) such that the estimate is median unbiased, which is comparable to 
 the way q is treated in most groundfish assessments.  
 
-The base model has a total of 102 estimated parameters in the following categories:
+The base model has a total of 113 estimated parameters in the following categories:
 
 \begin{itemize}
   \item Equilibrium recruitment ($R_0$) and 54 recruitment deviations,
@@ -389,7 +392,7 @@ for older fish was set to the same as for younger fish.  This model uses one par
 for natural mortality for each sex.
 
 Much time was also spent tuning the advanced recruitment bias adjustment options, 
-which are new to SS 3.30.  Sensitivities were performed to each of the thirteen 
+which were new as of SS 3.24.  Sensitivities were performed to each of the thirteen 
 advanced options for recruitment, e.g., early recruitment deviation start year, 
 early recruitment deviation phase, years with bias adjustments, and maximum bias 
 adjustment.  The final base model sets the first year of recruitment deviations just 
@@ -656,13 +659,13 @@ A number of sensitivity analyses were conducted, including:
   
   \item Dome-shaped selectivity for the NWFSC trawl survey and gillnet survey - TBD
   
-  \item Estimating natural female mortality
+  \item Estimating female natural mortality
   
   \item Estimating steepness
   
   \item Assume the same fixed natural mortality for males and females
   
-  \item Remove each index, one at a time
+  \item Drop data sources, one at a time
   
   
 \end{enumerate}
@@ -670,7 +673,7 @@ A number of sensitivity analyses were conducted, including:
 A number of changes were made since the 2005 assessment, and sensitivities to the current 
 base model included changing or fixing a number of parameters to the same as the 2005 
 assessment, as well as a number of sentivities to modelling choices made in developing the 
-current base model (Table \ref{tab:Sensitivity_model1}).  
+current base model (Tables \ref{tab:Sensitivity_model1} and \ref{tab:Sensitivity_model1_1}).  
 
 Data weighting is an area of uncertainty for stock assessment and research is ongoing to 
 determine the effects of data weighting and the most appropriate initial sample sizes for 
@@ -693,7 +696,22 @@ small change compared to the effect on the 2005 model.
 The 2005 assessment fixed natural mortality at 0.25 for males and females, and 
 steepness at 0.7.  A sensitivity of fixing male and female natural mortality to 0.257, 
 increased depletion from 0.574 to 0.594, but did not have a large overall effect on 
-the model.
+the model.  A sensitivity was also run estimating a single natural mortality rate (0.252) 
+and steepness (0.88) Figure \ref{fig:sensitivity_spawnbio}.  
+
+Sensitivity of the base model to each of the data sources was also explored (Figures 
+\ref{fig:sensitivity2_spawnbio} and \ref{fig:sensitivity2_spawnbio}).  The time series 
+of spawning biomass was most sensitive to the impingement survey lenght composition.  
+Without the impingement length composition, the relative time series is the same, but the 
+total biomass is almost double the base model. However, dropping the impingement index 
+and estimating a single natural mortality rate for both sexes reduces the total biomass 
+towards the base model.  Natural moratlity is also reasonably estimated at 0.19.  In the 
+sensitivity run where both natural mortality (0.19,same for males and females) and steepness (0.88)
+were estimated produces both a reasonable estimate for natural mortality and a value of steepness 
+that was high, but not estimated at the parameter bound.
+
+and dropping the recreational party/charter 
+index decreases the stock size, whic is the major fishery for this species.
 
 
 

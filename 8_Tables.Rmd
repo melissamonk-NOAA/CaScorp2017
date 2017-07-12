@@ -66,8 +66,9 @@
                                               sampled from the the commercial hook-and-line 
                                             fleet for lengths. Sample size is calculated 
                                             using Stewart’s method (see text for detail)'),
-                                label='tab:ComHL_lengthsample')
-
+                                label='tab:ComHL_lengthsample',
+                                digits=c(0,0,0,0,2,0))
+cat('\\vspace{2in}')
       print(ComHL_length.table,
             include.rownames=FALSE,      
             caption.placement="top")
@@ -77,8 +78,10 @@
                                               sampled from the the commercial gillnet 
                                             fleet for lengths. Sample size is calculated 
                                             using Stewart’s method (see text for detail)'),
-                                label='tab:ComNet_lengthsample')
-
+                                label='tab:ComNet_lengthsample',
+                                digits=c(0,0,0,0,2,0))
+cat('\\vspace{2in}')
+     
       print(ComNet_length.table,
             include.rownames=FALSE,      
             caption.placement="top")
@@ -90,7 +93,9 @@
                                               sampled from the the commercial trawl 
                                             fleet for lengths. Sample size is calculated 
                                             using Stewart’s method (see text for detail)'),
-                                label='tab:ComTrawl_lengthsample')
+                                label='tab:ComTrawl_lengthsample',
+                                digits=c(0,0,0,0,2,0))
+cat('\\vspace{2in}')
 
       print(ComTrawl_length.table,
             include.rownames=FALSE,      
@@ -127,7 +132,8 @@
                                         to the dead discard removals."),
                           label="tab:Rec_removal")
     align(Rec_removal.table) = 'lccccc'
-  
+
+cat('\\vspace{2in}')      
     print(Rec_removal.table,include.rownames=FALSE, 
           caption.placement="top",tabular.environment="longtable",align=TRUE,     
                     floating=FALSE, add.to.row = list(pos = list(0),command = "\\hline \\endhead "))
@@ -174,7 +180,8 @@
                                           sizes at each data filtering step.  
                                           The bold value indicates the final sample size 
                                           used for delta-GLM analysis."),
-                              label='tab:Fleet4_RecPR_dockside_filter')
+                              label='tab:Fleet4_RecPR_dockside_filter',
+                              digits=0)
         
         align(Fleet4_filter.table) = c('l',
                                   '>{\\raggedright}p{1.5in}',
@@ -192,9 +199,10 @@
                               caption = c("AIC values for each model in the
                                           recreational private mode dockside sample 
                                           index."),
-                              label='tab:Fleet4_RecPR_dockside_aic')
+                              label='tab:Fleet4_RecPR_dockside_aic',
+                              digits=0)
         
-        
+cat('\\vspace{2in}')        
         print(Fleet4_aic.table, 
               include.rownames=FALSE, 
               caption.placement="top",
@@ -290,7 +298,7 @@
                                             logbook sample index."),
                               label='tab:Fleet5_RecPC_CPFVlogbook_index')
         
-        
+ cat('\\vspace{2in}')       
         print(Fleet5_index.table, 
               include.rownames=FALSE,
               caption.placement="top",
@@ -342,6 +350,7 @@
               caption.placement="top",
               sanitize.text.function = function(x){x})
 
+        cat('\\vspace{2in}')
    #Fleet 5 aic
          Fleet5a_aic.table = xtable(Fleet5a_aic,
                               caption = c("AIC values for each model in the
@@ -367,7 +376,8 @@
                                             Length measurements from 1984-1989 were from an onboard
                                             observer program that measured both retained and discarded
                                             fish.'),
-                                label='tab:Fleet5_lengthsample')
+                                label='tab:Fleet5_lengthsample',
+                                digits=0)
 
       print(Fleet5_length.table,
             include.rownames=FALSE,      
@@ -414,7 +424,7 @@
                                    'Index',
                                    'Log-scale SE')
         
-        colnames(Fleet5_length) = c('Year',
+        colnames(Fleet6_length) = c('Year',
                                     'Fish',
                                     'Trips',
                                     'Mean length (cm)',
@@ -491,7 +501,8 @@
                                             Length measurements from 1984-1989 were from an onboard
                                             observer program that measured both retained and discarded
                                             fish.'),
-                                label='tab:Fleet6_lengthsample')
+                                label='tab:Fleet6_lengthsample',
+                                digits=0)
 
       print(Fleet6_length.table,
             include.rownames=FALSE,      
@@ -501,7 +512,7 @@
                
   #Fleet 12 aic
          Fleet12_aic.table = xtable(Fleet12_aic,
-                              caption = c("AIC values for each model in the
+                              caption = c("The AIC values for each model in the
                                           The recreational CPFV onboard 
                                           observer retained-only catch 
                                           index."),
@@ -521,7 +532,7 @@
                               digits=4,
                               label='tab:Fleet12_RecPC_onboard_index')
         
-        
+ cat('\\vspace{2in}')       
         print(Fleet12_index.table, 
               include.rownames=FALSE, 
               caption.placement="top",
@@ -562,7 +573,7 @@
         colnames(Fleet7_lengthsample) = c('Year',
                                          'Fish',
                                          'Trips',
-                                         'Mean length (cm)')
+                                         'Mean length')
                                     
        colnames(Fleet7_lengthdepth) = c('Program',
                                          '0-24 m',
@@ -592,7 +603,7 @@
                                   '>{\\raggedright}p{.6in}',
                                   '>{\\raggedright}p{.8in}',
                                   '>{\\raggedright}p{.6in}')          
-        
+ cat('\\vspace{2in}')       
         print(Fleet7_filter.table, 
               include.rownames=FALSE, 
               caption.placement="top",
@@ -605,7 +616,7 @@
                                           index."),
                               label='tab:Fleet7_Sanitation_aic')
         
-        
+cat('\\vspace{2in}')        
         print(Fleet7_aic.table, 
               include.rownames=FALSE, 
               caption.placement="top",
@@ -618,7 +629,7 @@
                               digits=4,
                               label='tab:Fleet7_Sanitation_index')
         
-        
+ cat('\\vspace{2in}')       
         print(Fleet7_index.table, 
               include.rownames=FALSE, 
               caption.placement="top",
@@ -634,23 +645,27 @@ Fleet7_lengthdepth.table = xtable(Fleet7_lengthdepth,
                                   label = 'tab:Fleet7_lengthdepth')
 
 Fleet7_lengthsample.table = xtable(Fleet7_lengthsample,
-                                   caption = c("Sample sizes and mean length by
+                                   caption = c("Sample sizes and mean length (cm) by
                                                 year for the Publicly Owned Treatment Works 
                                                 trawl surveys, all Publicly Owned Treatment Works
                                                programs combined"),
-                                   label = 'tab:Fleet7_lengthsample')
+                                   label = 'tab:Fleet7_lengthsample',
+                                   digits=0)
 
 
 print(Fleet7_lengthdepth.table, 
               include.rownames=FALSE, 
               caption.placement="top",
               sanitize.text.function = function(x){x})
-      
+```
+
+\newpage
+
+```{r, results='asis'}
 print(Fleet7_lengthsample.table, 
               include.rownames=FALSE, 
               caption.placement="top",
-              scale.box=0.7,
-              sanitize.text.function = function(x){x})
+              scalebox=0.9)
 
 ```
 
@@ -671,7 +686,7 @@ print(Fleet7_lengthsample.table,
         Fleet8_meanAatL = read.csv("./txt_files/NWFSCTrawl_MeanLatA.csv")
         
         
-        colnames(Fleet8_catchdepth) = c('Depth zone (m)',
+        colnames(Fleet8_catchdepth) = c('Depth zone',
                                         'Total catch (kg)',
                                         'Raw CPUE (kg/ha)')
         
@@ -732,7 +747,9 @@ print(Fleet7_lengthsample.table,
                                           from NWFSC trawl survey between 2003 and 2016."),
                               label='tab:Fleet8_NWFSCTrawl_catchlat')
         
-        
+cat('\\vspace{2in}')
+         
+                 
         print(Fleet8_catchlat.table, 
               include.rownames=FALSE, 
               caption.placement="top",
@@ -763,7 +780,8 @@ print(Fleet7_lengthsample.table,
                                           year and sex from NWFSC trawl survey 
                                           between 2005 and 2016.  The last raw
                                           shows total numbers of fish aged by sex."),
-                              label='tab:Fleet8_NWFSCTrawl_agesummary')
+                              label='tab:Fleet8_NWFSCTrawl_agesummary',
+                              digits=0)
         
         align(Fleet8_agesummary.table) = c('l',
                                            'l', 
@@ -795,7 +813,8 @@ print(Fleet7_lengthsample.table,
                               caption = c("Ages at five percentiles by sex from 
                                           NWFSC trawl survey between 2005 and 2016, 
                                           indicating more older males in the population."),
-                              label='tab:Fleet8_NWFSCTrawl_agepercents')
+                              label='tab:Fleet8_NWFSCTrawl_agepercents',
+                              digits=0)
         
         
         print(Fleet8_agepercents.table, 
@@ -810,7 +829,8 @@ print(Fleet7_lengthsample.table,
                                                     fish aged by sex for 
                                                     California scorpionfish from the NWFSC
                                                       trawl survey.'),
-                                label='tab:Fleet8_NWFSCTrawl_meanAatL')
+                                label='tab:Fleet8_NWFSCTrawl_meanAatL',
+                                digits=0)
         
             addtorow <- list()
             addtorow$pos <- list()
@@ -881,7 +901,7 @@ print(Fleet7_lengthsample.table,
                                   '>{\\raggedright}p{2.6in}',
                                   '>{\\raggedright}p{1in}',
                                   '>{\\raggedright}p{1in}')          
-        
+ cat('\\vspace{2in}')       
         print(Fleet9_filter.table, 
               include.rownames=FALSE, 
               caption.placement="top",
@@ -894,7 +914,7 @@ print(Fleet7_lengthsample.table,
                                           index."),
                               label='tab:Fleet9_GillnetSurvey_aic')
         
-        
+cat('\\vspace{2in}')        
         print(Fleet9_aic.table, 
               include.rownames=FALSE, 
               caption.placement="top",
@@ -907,7 +927,7 @@ print(Fleet7_lengthsample.table,
                               digits=4,
                               label='tab:Fleet9_GillnetSurvey_index')
         
-        
+cat('\\vspace{2in}')        
         print(Fleet9_index.table, 
               include.rownames=FALSE, 
               caption.placement="top",
@@ -955,7 +975,7 @@ print(Fleet7_lengthsample.table,
                                   '>{\\raggedright}p{2.6in}',
                                   '>{\\raggedright}p{1in}',
                                   '>{\\raggedright}p{1in}')          
-        
+cat('\\vspace{2in}')        
         print(Fleet11_filter.table, 
               include.rownames=FALSE, 
               caption.placement="top",
