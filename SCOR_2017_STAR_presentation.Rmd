@@ -1,6 +1,5 @@
 ---
-title: 'California Scorpionfish 2017 Assessment'
-subtitle: 'Biology and Data'
+title: 'California Scorpionfish 2017 Stock Assessment'
 author: 
   - Melissa H Monk$^1$,
   - Xi He$^1$,
@@ -8,7 +7,7 @@ author:
 institute:
   - $^1$Southwest Fisheries Science Center
   - $^2$California Department of Fish and Wildlife
-date: 'STAR Panel   July 24-28, 2017'
+date: 'STAR Panel meeing  July 24-28, 2017'
 output: 
   beamer_presentation:
     theme: 'Singapore'
@@ -29,7 +28,7 @@ classoption:
     # warning=FALSE (suppress R warnings); message=FALSE (suppress R messages)
     # eval = TRUE is default
     knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
-
+    library(knitr)
     library(xtable)
     # Change options  
       options(xtable.comment = FALSE)  # turns off xtable comments
@@ -43,33 +42,52 @@ classoption:
     # Make small changes in this file and then try to compile the document
     # Commit when you have a success!
     source('./Rcode/Exec_summary_figs_tables.R')
-```
-
-```{r child = "8_Tables.Rmd", include=FALSE}
-```
-
-```{r child = "8a_Tables.Rmd", include=FALSE}
+      
+    cat(knit_child(text=readLines('8_Tables.Rmd')), sep = '\n')
+    cat(knit_child(text=readLines('8a_Tables.Rmd')), sep = '\n')
 ```
 
 
-#Background
+
+#Background and Biology
 
 ###California scorpionfish (*Scorpaena guttata*)
 
 
 \begin{itemize} 
- \item[\checkmark] Distributed from central California to Punta Eugenia, Baja California Sur, Mexico 
- \item[\checkmark] Rarely observed north of Pt. Conception  
- \item[\checkmark] Observed from the intertidal to 600 ft,  preferred depth range from 20-450 ft  
- \item[\checkmark] Demersal, found over both hard and soft bottom  
- \item[\checkmark] Exhibit aggregating behavior (spawning and non-spawning)  
+ \item[\checkmark] Most common species of *Scorpaena* on the U.S. West Coast, more species in Mexico
+ \item[\checkmark] Venomous dorsal, anal and pelvic spines
+ \item[\checkmark] Demersal, found over both hard and soft bottom (prefer *new* structure)
+ \item[\checkmark] Exhibit aggregating behavior (spawning and non-spawning aggregations)  
 \end{itemize}
 
 \centering
 \includegraphics[width=.5\textwidth]{cover_photo}
 
 
-#Biology
+###Distribution
+
+
+\begin{itemize} 
+ \item[\checkmark] Distributed from central California to Punta Eugenia, Baja California Sur, Mexico 
+ \item[\checkmark] Rarely observed north of Pt. Conception  
+ \item[\checkmark] Observed from the intertidal to 600 ft,  prefer 20-450 ft  
+\end{itemize}
+
+###Early Life History (*Scorpaena guttata*)
+
+\begin{itemize} 
+\item[\checkmark] Migration to spawning grounds, exhibit explosive breeding behavior just before dawn
+\item[\checkmark] External fertilization, females produce hollow gelatenous single-layer floating egg matrix
+\item[\checkmark] Eggs hatch after about 5 days
+\item[\checkmark] Juveniles settle at less than 2cm 
+\end{itemize}
+
+\centering
+\includegraphics[width=.5\textwidth]{Figures/baby_scorp}
+
+\footnotetext{Line drawning from CalCOFI Atlas 33, pg. 789 Figure 26}
+
 ##Length-at-age
 ###Length-at-age
 
@@ -82,11 +100,13 @@ classoption:
   \begincol{.48\textwidth}
 
 ![](Figures/vonB_compare.png)
+  
   \endcol
 \endcols
 
 
 ###Length-at-age
+
 \begincols
   \begincol{.4\textwidth}
   
@@ -97,8 +117,8 @@ classoption:
   
 ![Length frequency distributions of females (red) and male (blue) from the NWFSC trawl survey between 2003 and 2016. \label{fig:Fleet8_comp_lendat_bubflt8mkt0}](r4ss/plots_mod1/comp_lendat_bubflt8mkt0.png)
 
-  \endcol
- \begincol{.48\textwidth}
+ \endcol
+\endcols
  
 ##Maturity and Fecundity
 
@@ -139,11 +159,15 @@ classoption:
 ##Total Removals 
 
 
-![](California_scorpionfish2017_files/unnamed-chunk-16-1.pdf)
+![](California_scorpionfish_2017_files/figure-latex/unnamed-chunk-16-1.pdf)
 
-![](California_scorpionfish2017_files/unnamed-chunk-17-1.pdf)
+##Total Removals 
 
-![](California_scorpionfish2017_files/unnamed-chunk-18-1.pdf)
+![](California_scorpionfish_2017_files/figure-latex/unnamed-chunk-17-1.pdf)
+
+##Total Removals 
+
+![](California_scorpionfish_2017_files/figure-latex/unnamed-chunk-18-1.pdf)
 
 ##Commercial Landings by Fleet
 
