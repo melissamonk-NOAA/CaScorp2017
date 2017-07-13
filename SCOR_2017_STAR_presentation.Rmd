@@ -11,13 +11,15 @@ institute:
 date: 'STAR Panel   July 24-28, 2017'
 output: 
   beamer_presentation:
-    theme: "Singapore"
+    theme: 'Singapore'
     toc: true
     keep_tex: TRUE
-    slide_level: 2
     fig_caption: FALSE
+    slide_level: 3
     includes:
       in_header: presentation_header.tex
+classoption:
+  - compress
 ---
 
 
@@ -50,28 +52,55 @@ output:
 ```
 
 
-# Background
+#Background
 
-## California scorpionfish *Scorpaena guttata*
+###California scorpionfish (*Scorpaena guttata*)
+
 
 \begin{itemize} 
- \item[\checkmark] Distributed from central California to Punta Eugenia, Baja Mexico  
+ \item[\checkmark] Distributed from central California to Punta Eugenia, Baja California Sur, Mexico 
  \item[\checkmark] Rarely observed north of Pt. Conception  
  \item[\checkmark] Observed from the intertidal to 600 ft,  preferred depth range from 20-450 ft  
  \item[\checkmark] Demersal, found over both hard and soft bottom  
  \item[\checkmark] Exhibit aggregating behavior (spawning and non-spawning)  
 \end{itemize}
 
-
-\includegraphics[width=.5\textwidth, inner]{cover_photo}
-
-# Biology
-
-## Length-at-age
+\centering
+\includegraphics[width=.5\textwidth]{cover_photo}
 
 
+#Biology
+##Length-at-age
+###Length-at-age
 
-## Maturity and Fecundity
+\begincols
+  \begincol{.4\textwidth}
+  
+  \includegraphics[trim={0 0 0 2cm}, totalheight=0.65\textheight]{Figures/Age_length_bySex.png}
+
+  \endcol
+  \begincol{.48\textwidth}
+
+![](Figures/vonB_compare.png)
+  \endcol
+\endcols
+
+
+###Length-at-age
+\begincols
+  \begincol{.4\textwidth}
+  
+![Comparison box plots of raw length data from NWFSC trawl survey by depth zone and sex. \label{fig:Fleet8_NWFSCtrawl_lengthdepth}](Figures/NWFSCtrawl_lengthdepth.png)
+
+\endcol
+\begincol{.48\textwidth}
+  
+![Length frequency distributions of females (red) and male (blue) from the NWFSC trawl survey between 2003 and 2016. \label{fig:Fleet8_comp_lendat_bubflt8mkt0}](r4ss/plots_mod1/comp_lendat_bubflt8mkt0.png)
+
+  \endcol
+ \begincol{.48\textwidth}
+ 
+##Maturity and Fecundity
 
 * Only information on maturity from Love et al. (1987)
 * Found over 50% of females were mature by 18 cm TL, or two years of age. 
@@ -79,35 +108,57 @@ output:
 
 * No information available on fecundity of California scorpionfish
 
-## Weight-at-length
+
+##Weight-at-length
  
+ ![Comparison of the California scorpionfish weight-length curves from Love et al. (1987) and those estimated from the NWFSC trawl survey.  The latter is used in this assessment. \label{fig:Length_weight}](Figures/Length_weight.png)
  
- 
-![](Figures/Length_weight.png)
 
-## Natural mortality
+##Natural mortality
 
-## Steepness
-
-## Summary of Data used in the 2017 Assessment
-
-
+* Prior based on maximum age of 21
+* Lognormal distribution with a median of 0.2715
+* Base model fixes female natural mortality ($M$)
+* Male $M$ estiamted as offset from female $M$
+* Sensitivities explore estimating $M$
 
 
-# Removals
+##Steepness: Density-Dependent Recruitment Compensation
+
+* Predictive distribution for Pacific rockfish meta-analysis
+* Preior mediant in 2017 for steepness ($h$) = 0.718
+
+
+![](Figures/h_prior.png)
+
+
+
+
+#Removals
+
 ##Total Removals 
 
+
+![](California_scorpionfish2017_files/unnamed-chunk-16-1.pdf)
+
+![](California_scorpionfish2017_files/unnamed-chunk-17-1.pdf)
+
+![](California_scorpionfish2017_files/unnamed-chunk-18-1.pdf)
+
 ##Commercial Landings by Fleet
+
+
+
 
 ##Recreational Landings by Fleet
 
  
 
-# Index Data
+#Index Data
 
  
 
-## Summary of Indices
+##Summary of Data Sources
 
 - All of the methods used to standardize indices have been endorsed by the SSC
 
@@ -126,36 +177,43 @@ output:
 ```
  
 
-## Recreational Private Boat Index
+##Recreational Private Boat Index
 
-## Recreational Party/Charter Boat Index (Logbook)
+##Recreational Party/Charter Boat Index (Logbook)
 
-## Recreational Dead Discard Index
+##Recreational Dead Discard Index
 
-## Recreational Party/Charter Retained Catch Index
-
-
+##Recreational Party/Charter Retained Catch Index
 
 
 
-## Sanitation Districts Survey Index
+
+
+##Sanitation Districts Survey Index
 ```{r, results='asis'}
   print(xtable(Fleet7_lengthdepth),
                 include.rownames=FALSE,
                 scalebox = 0.9,
                 sanitize.text.function = function(x){x})
 ```
-## Sanitation Districts Survey Index
+##Sanitation Districts Survey Index
 
-## Sanitation Districts Survey Index
+##Sanitation Districts Survey Index
 
-## NWFSC Trawl Survey Index
+##NWFSC Trawl Survey Index
 
-## Gillnet Survey Index
+##Gillnet Survey Index
 
-## Southern California Bight Trawl Survey Index
+##Southern California Bight Trawl Survey Index
 
 
 
-# Composition Data
+#Composition Data
+
+##Dat1
+
+
+
+
+##Summary of Data used in the 2017 Assessment
 

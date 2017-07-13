@@ -1,11 +1,5 @@
 \usepackage{graphicx}
-%\usepackage{pgf}
 \usepackage{array}
-%\usepackage{booktabs}          %% Used in risk tables
-%\usepackage{multirow}          %% Used in decision tables
-%\usepackage{multicol}          %% Used in the toc
-%\usepackage[T1]{fontenc}  %to use < or > in tables
-%\usepackage[export]{adjustbox}
 \usepackage{tabularx}                                             % table environment providing flexibility
 \usepackage{caption}                                              % for creating captions  
 \usepackage{longtable}                                            % allows tables to span multiple pages
@@ -16,17 +10,14 @@
 \usepackage{mdwtab}                                               % continued float multi-page figure
 \usepackage{enumerate}                                            % create lists
 \usepackage{hyperref}                                             % highlight cross references
-%\hypersetup{colorlinks=true, urlcolor=blue, linktoc=page, linkcolor=blue, citecolor=blue} %define referencing colors
-%\usepackage[usenames,dvipsnames]{xcolor}                          % color name options
-%\usepackage[space]{grffile}                                      % spaces in file name path
-%\usepackage{soul}                                                 % highlight text
 \usepackage{enumitem}                                             % numbered lists
 \usepackage{upquote}                                              % produce grave accent in latex
 \usepackage{verbatim}                                             % produces verbatim results
 \usepackage{fancyvrb}                                             % verbatim in a box
 \usepackage{textcomp}                                             % fixes error with packages interfering
-\usepackage{lscape}                                               % rotate pages - to allow for landscape longtables
 \usepackage{cmap}                                                 % fix mapping characters to unicode
+\usepackage{appendixnumberbeamer}
+\usepackage{lscape}
 
 \setbeamersize{text margin left=0.1in}
 \setbeamersize{text margin right=0.1in}
@@ -51,5 +42,13 @@
 }
 \setbeamercolor{footline}{fg=pageCol}
 
+
 \newcounter{saveenumi}
 
+
+
+%To get two columns
+\def\begincols{\begin{columns}}
+\def\begincol{\begin{column}}
+\def\endcol{\end{column}}
+\def\endcols{\end{columns}}
