@@ -64,17 +64,7 @@ classoption:
 \centering
 \includegraphics[width=.5\textwidth]{cover_photo}
 
-
-###Distribution
-
-
-\begin{itemize} 
- \item[\checkmark] Distributed from central California to Punta Eugenia, Baja California Sur, Mexico 
- \item[\checkmark] Rarely observed north of Pt. Conception  
- \item[\checkmark] Observed from the intertidal to 600 ft,  prefer 20-450 ft  
-\end{itemize}
-
-###Early Life History (*Scorpaena guttata*)
+###Early Life History
 
 \begin{itemize} 
 \item[\checkmark] Migration to spawning grounds, exhibit explosive breeding behavior just before dawn
@@ -87,6 +77,23 @@ classoption:
 \includegraphics[width=.5\textwidth]{Figures/baby_scorp}
 
 \footnotetext{Line drawning from CalCOFI Atlas 33, pg. 789 Figure 26}
+
+
+
+###Distribution
+
+\begin{itemize} 
+ \item[\checkmark] Distributed from central California to Punta Eugenia, Baja California Sur, Mexico 
+ \item[\checkmark] Rarely observed north of Pt. Conception  
+ \item[\checkmark] Observed from the intertidal to 600 ft,  prefer 20-450 ft  
+ \item[\checkmark] Proportion of the stock in Mexican waters unknown
+\end{itemize}
+
+###Distribution
+
+![](Figures/boundary_map)
+
+
 
 ##Length-at-age
 ###Length-at-age
