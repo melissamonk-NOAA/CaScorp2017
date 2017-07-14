@@ -1,0 +1,30 @@
+\beamer@endinputifotherversion {3.26pt}
+\beamer@sectionintoc {1}{Background and Biology}{4}{0}{1}
+\beamer@sectionintoc {2}{2005 Stock Assessment}{10}{0}{2}
+\beamer@subsectionintoc {2}{1}{Length-at-age}{14}{0}{2}
+\beamer@subsectionintoc {2}{2}{Maturity and Fecundity}{17}{0}{2}
+\beamer@subsectionintoc {2}{3}{Weight-at-length}{18}{0}{2}
+\beamer@subsectionintoc {2}{4}{Natural mortality}{19}{0}{2}
+\beamer@subsectionintoc {2}{5}{Steepness: Density-Dependent Recruitment Compensation}{20}{0}{2}
+\beamer@sectionintoc {3}{Removals}{21}{0}{3}
+\beamer@subsectionintoc {3}{1}{Total Removals}{22}{0}{3}
+\beamer@subsectionintoc {3}{2}{Total Removals}{23}{0}{3}
+\beamer@subsectionintoc {3}{3}{Total Removals}{24}{0}{3}
+\beamer@subsectionintoc {3}{4}{Commercial Landings by Fleet}{25}{0}{3}
+\beamer@subsectionintoc {3}{5}{Recreational Landings by Fleet}{26}{0}{3}
+\beamer@sectionintoc {4}{Index Data}{27}{0}{4}
+\beamer@subsectionintoc {4}{1}{Summary of Data Sources}{28}{0}{4}
+\beamer@subsectionintoc {4}{2}{Recreational Private Boat Index}{29}{0}{4}
+\beamer@subsectionintoc {4}{3}{Recreational Party/Charter Boat Index (Logbook)}{30}{0}{4}
+\beamer@subsectionintoc {4}{4}{Recreational Dead Discard Index}{31}{0}{4}
+\beamer@subsectionintoc {4}{5}{Recreational Party/Charter Retained Catch Index}{32}{0}{4}
+\beamer@subsectionintoc {4}{6}{Sanitation Districts Survey Index}{33}{0}{4}
+\beamer@subsectionintoc {4}{7}{Sanitation Districts Survey Index}{34}{0}{4}
+\beamer@subsectionintoc {4}{8}{Sanitation Districts Survey Index}{35}{0}{4}
+\beamer@subsectionintoc {4}{9}{NWFSC Trawl Survey Index}{36}{0}{4}
+\beamer@subsectionintoc {4}{10}{Gillnet Survey Index}{37}{0}{4}
+\beamer@subsectionintoc {4}{11}{Southern California Bight Trawl Survey Index}{38}{0}{4}
+\beamer@sectionintoc {5}{Composition Data}{39}{0}{5}
+\beamer@subsectionintoc {5}{1}{Dat1}{40}{0}{5}
+\beamer@subsectionintoc {5}{2}{Summary of Data used in the 2017 Assessment}{41}{0}{5}
+\beamer@sectionintoc {6}{Transition to the 2017 assessment}{42}{0}{6}

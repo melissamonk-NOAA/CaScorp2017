@@ -22,7 +22,6 @@ classoption:
 ---
 
 
-
 ```{r global_options, include=FALSE}
     # set global options for R code chunks: echo=FALSE (don't include source code); 
     # warning=FALSE (suppress R warnings); message=FALSE (suppress R messages)
@@ -47,18 +46,18 @@ classoption:
     cat(knit_child(text=readLines('8a_Tables.Rmd')), sep = '\n')
 ```
 
-
-
-#Background and Biology
+<!--------------------------------------------------------------------------------->
+#Background
+<!--------------------------------------------------------------------------------->
 
 ###California scorpionfish (*Scorpaena guttata*)
 
 
 \begin{itemize} 
- \item[\checkmark] Most common species of *Scorpaena* on the U.S. West Coast, more species in Mexico
- \item[\checkmark] Venomous dorsal, anal and pelvic spines
- \item[\checkmark] Demersal, found over both hard and soft bottom (prefer *new* structure)
- \item[\checkmark] Exhibit aggregating behavior (spawning and non-spawning aggregations)  
+ \item[$\circ$] Most common species of \emph{Scorpaena} on the U.S. West Coast, more species in Mexico
+ \item[$\circ$] Venomous dorsal, anal and pelvic spines
+ \item[$\circ$] Demersal, found over both hard and soft bottom (prefer \emph{new} structure)
+ \item[$\circ$] Exhibit aggregating behavior (spawning and non-spawning aggregations)  
 \end{itemize}
 
 \centering
@@ -67,10 +66,10 @@ classoption:
 ###Early Life History
 
 \begin{itemize} 
-\item[\checkmark] Migration to spawning grounds, exhibit explosive breeding behavior just before dawn
-\item[\checkmark] External fertilization, females produce hollow gelatenous single-layer floating egg matrix
-\item[\checkmark] Eggs hatch after about 5 days
-\item[\checkmark] Juveniles settle at less than 2cm 
+\item[$\circ$] Migration to spawning grounds, exhibit explosive breeding behavior just before dawn
+\item[$\circ$] External fertilization, females produce hollow gelatenous single-layer floating egg matrix
+\item[$\circ$] Eggs hatch after about 5 days
+\item[$\circ$] Juveniles settle at less than 2cm 
 \end{itemize}
 
 \centering
@@ -79,19 +78,73 @@ classoption:
 \footnotetext{Line drawning from CalCOFI Atlas 33, pg. 789 Figure 26}
 
 
-
 ###Distribution
 
 \begin{itemize} 
- \item[\checkmark] Distributed from central California to Punta Eugenia, Baja California Sur, Mexico 
- \item[\checkmark] Rarely observed north of Pt. Conception  
- \item[\checkmark] Observed from the intertidal to 600 ft,  prefer 20-450 ft  
- \item[\checkmark] Proportion of the stock in Mexican waters unknown
+ \item[$\circ$] Distributed from central California to Punta Eugenia, Baja California Sur, Mexico 
+ \item[$\circ$] Rarely observed north of Pt. Conception  
+ \item[$\circ$] Observed from the intertidal to 600 ft,  prefer 20-450 ft  
+ \item[$\circ$] Proportion of the stock in Mexican waters unknown
 \end{itemize}
 
 ###Distribution
 
-![](Figures/boundary_map)
+
+###Stock Assessment Boundary
+\centering
+![](Figures/assess_region_map.png)
+
+
+###2005 Stock Assessment
+
+\begin{itemize}
+\item[$\circ$] Stock first assessed in 2005
+\item[$\circ$] South of Pt. Conception
+\item[$\circ$] $M$ fixed at 0.25
+\item[$\circ$] $h$ 0.7
+\end{itemize}
+
+![](Figures/2005_bio_depl.png)
+
+
+###2005 Stock Assessment
+
+\begin{itemize}
+\item[$\circ$] Transitioning from the 2005 assessment, an error was found
+\item[$\circ$] Harvest rate hit the bounds for the recreational fleet
+\item[$\circ$] Not all of the recreational catch was removed
+\item[$\circ$] Input vs. estimated catch was not standard output in SS v.1.8
+\end{itemize}
+
+
+\begincols
+  \begincol{.4\textwidth}
+  
+  ![](Figures/bridge_harvestrate.png)
+  
+  \endcol
+  \begincol{.48\textwidth}
+   
+  ![](Figures/bridge_catch.png)
+  
+  \endcol
+\endcols
+
+
+###2005 Stock Assessment
+
+![](Figures/bridge_timeseries.png)
+
+
+###2017 Stock Assessment
+
+\begin{itemize}
+\item[$\circ$] One area south of Pt. Conception (all catches from Mexican waters excluded as in 2005)
+\end{itemize}
+
+
+
+
 
 
 
@@ -128,13 +181,12 @@ classoption:
 \endcols
  
 ##Maturity and Fecundity
-
-* Only information on maturity from Love et al. (1987)
-* Found over 50% of females were mature by 18 cm TL, or two years of age. 
-* All fish were mature by 22 cm TL
-
-* No information available on fecundity of California scorpionfish
-
+\begin{itemize}
+\item[$\circ$] Only information on maturity from Love et al. (1987)
+\item[$\circ$] Found over 50\% of females were mature by 18 cm TL, or two years of age. 
+\item[$\circ$] All fish were mature by 22 cm TL
+\item[$\circ$] No information available on fecundity of California scorpionfish
+\end{itemize}
 
 ##Weight-at-length
  
@@ -142,31 +194,33 @@ classoption:
  
 
 ##Natural mortality
-
-* Prior based on maximum age of 21
-* Lognormal distribution with a median of 0.2715
-* Base model fixes female natural mortality ($M$)
-* Male $M$ estiamted as offset from female $M$
-* Sensitivities explore estimating $M$
-
+\begin{itemize}
+\item[$\circ$] Prior based on maximum age of 21
+\item[$\circ$] Lognormal distribution with a median of 0.2715
+\item[$\circ$] Base model fixes female natural mortality ($M$)
+\item[$\circ$] Male $M$ estiamted as offset from female $M$
+\item[$\circ$] Sensitivities explore estimating $M$
+\end{itemize}
 
 ##Steepness: Density-Dependent Recruitment Compensation
-
-* Predictive distribution for Pacific rockfish meta-analysis
-* Preior mediant in 2017 for steepness ($h$) = 0.718
-
+\begin{itemize}
+\item[$\circ$] Predictive distribution for Pacific rockfish meta-analysis
+\item[$\circ$] Preior mediant in 2017 for steepness ($h$) = 0.718
+\end{itemize}
 
 ![](Figures/h_prior.png)
 
 
 
-
+<!--------------------------------------------------------------------------------->
 #Removals
+<!--------------------------------------------------------------------------------->
 
 ##Total Removals 
 
+\centering
+\includegraphics{California_scorpionfish_2017_files/figure-latex/unnamed-chunk-16-1.pdf}
 
-![](California_scorpionfish_2017_files/figure-latex/unnamed-chunk-16-1.pdf)
 
 ##Total Removals 
 
@@ -184,9 +238,9 @@ classoption:
 ##Recreational Landings by Fleet
 
  
-
+<!--------------------------------------------------------------------------------->
 #Index Data
-
+<!--------------------------------------------------------------------------------->
  
 
 ##Summary of Data Sources
@@ -238,8 +292,9 @@ classoption:
 ##Southern California Bight Trawl Survey Index
 
 
-
+<!--------------------------------------------------------------------------------->
 #Composition Data
+<!--------------------------------------------------------------------------------->
 
 ##Dat1
 
@@ -248,3 +303,23 @@ classoption:
 
 ##Summary of Data used in the 2017 Assessment
 
+![Summary of data sources used in the `r mod1_label`. \label{fig:data_plot}](r4ss/plots_mod1/data_plot.png)
+
+
+
+<!--------------------------------------------------------------------------------->
+#2017 assessment
+<!--------------------------------------------------------------------------------->
+
+
+<!--------------------------------------------------------------------------------->
+#Uncertainty and Sensitivities
+<!--------------------------------------------------------------------------------->
+
+
+<!--------------------------------------------------------------------------------->
+#Additional slides
+<!--------------------------------------------------------------------------------->
+
+```{r child = "9_9_Appendices.Rmd"}
+```
