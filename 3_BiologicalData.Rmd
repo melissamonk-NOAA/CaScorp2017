@@ -19,7 +19,7 @@ Bight Regional Monitoring Program trawl survey, and the CSUN/VRG gillnet survey
 length due to clumping of data when length data are only available to the nearest 
 centimeter. However, the same is true for the conversion from TL to SL when data 
 were available to the nearest centimeter. All length data for this assessment are in
-TL.  The Sanitation District of Orange county and the VRG gillnet study measured SL 
+TL.  The Orange County Sanitation District and the VRG gillnet study measured SL 
 to the nearest mm.
  
 To avoid missing length bins (specifically 18, 23, 29 cm) in the conversion from SL 
@@ -49,7 +49,7 @@ Length compositions were provided from the following sources:
       \item MRFSS (1980-2003)      
       \item CRFS (2004-2016)  
     \end{itemize}
- \item Sanitation district trawl surveys (\emph{research}, 1970-2016)      
+ \item POTW trawl surveys (\emph{research}, 1970-2016)      
  \item CSUN/VRG gillnet survey (\emph{research}, 1995-2008)        
  \item Power plant impingement surveys (\emph{research}, 1974-2016)  
  \item Southern California Bight trawl survey (\emph{research}, 1994, 1998, 2003, 2008, 2013) 

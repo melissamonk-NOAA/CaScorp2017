@@ -49,7 +49,7 @@ classoption:
 <!--------------------------------------------------------------------------------->
 #Background
 <!--------------------------------------------------------------------------------->
-
+##Background
 ###California scorpionfish (*Scorpaena guttata*)
 
 
@@ -140,13 +140,156 @@ classoption:
 
 \begin{itemize}
 \item[$\circ$] One area south of Pt. Conception (all catches from Mexican waters excluded as in 2005)
+\item[$\circ$] Steepness fixed at 0.718
+\item[$\circ$] Sex-specific $M$ fixed for females, male $M$ estimated as offset
+\item[$\circ$] Re-evaluated fleet definition
+\item[$\circ$] Ages now available from the NWFSC trawl survey
+\end{itemize}
+
+
+<!--------------------------------------------------------------------------------->
+#Catch
+<!--------------------------------------------------------------------------------->
+###Catches by Fleet
+\centering
+![Catch history of `r spp` in the `r mod1_label`. \label{fig:r4ss_catches}](r4ss/plots_mod1/catch2 landings stacked.png)
+
+###U.S. and Mexico Catch 
+![](California_scorpionfish_2017_files/figure-latex/unnamed-chunk-18-1.pdf)
+
+###Recreational Catch
+\begincols
+  \begincol{.4\textwidth}
+
+\begin{itemize}
+\item[$\circ$] 2005 assessment used number of fish for recreational catches
+\item[$\circ$] Cannot compare with biomass
+\item[$\circ$] 2017 assessment also accounts for discards
+\end{itemize}
+
+\endcol
+  \begincol{.48\textwidth}
+![](California_scorpionfish_2017_files/figure-latex/unnamed-chunk-16-1.pdf)
+  \endcol
+\endcols
+
+###Recreational Catch
+
+
+
+
+###Commercial Catch
+\begincols
+  \begincol{.4\textwidth}
+ \begin{itemize}
+  \item[$\circ$] Historical catches same as the 2005 assessment
+  \item[$\circ$] California Fisheries Information System landings data used to update catches from 2005-2016 
+  \item[$\circ$] Discards assumed neglible
+\end{itemize}
+   \endcol
+  \begincol{.48\textwidth}
+![](California_scorpionfish_2017_files/figure-latex/unnamed-chunk-17-1.pdf)
+  \endcol
+\endcols
+
+
+
+###Commercial Catch
+
+
+
+
+
+<!--------------------------------------------------------------------------------->
+#Indices of Abundance
+<!--------------------------------------------------------------------------------->
+ 
+###Summary of Data Sources
+
+- All of the methods used to standardize indices have been endorsed by the SSC
+
+```{r, results = 'asis'}
+    # Years read in as factor - change to shorten.
+      Index_summary$Years = as.character(Index_summary$Years)
+      Index_summary[7,2] = paste0("'94, '98, '03, '08, '13")
+      Index_summary = Index_summary[,c(3,2,4,6)]
+
+    # Print index summary table
+      print(xtable(Index_summary,
+                   align = 'lp{2.5in}p{0.8in}p{.4in}p{2in}'),
+            include.rownames=FALSE,
+            scalebox = 0.7,
+            sanitize.text.function = function(x){x})
+```
+ 
+
+###Recreational Private Boat Index
+
+###Recreational Party/Charter Boat Index (Logbook)
+
+###Recreational Dead Discard Index
+
+###Recreational Party/Charter Retained Catch Index
+
+
+
+
+###Sanitation Districts Survey Index
+```{r, results='asis'}
+  print(xtable(Fleet7_lengthdepth),
+                include.rownames=FALSE,
+                scalebox = 0.9,
+                sanitize.text.function = function(x){x})
+```
+###Sanitation Districts Survey Index
+
+###Sanitation Districts Survey Index
+
+###NWFSC Trawl Survey Index
+
+###Gillnet Survey Index
+
+###Southern California Bight Trawl Survey Index
+
+
+<!--------------------------------------------------------------------------------->
+#Composition Data
+<!--------------------------------------------------------------------------------->
+##Composition Data
+###Length compositions were provided from the following sources:
+
+\begin{itemize}[noitemsep,nolistsep,topsep=0pt]
+  \item CDFW market category study (\emph{commercial dead fish}, 1996-2003)    
+  \item CALCOM (\emph{commercial dead fish}, 2013-2016)    
+  \item CDFW onboard observer (\emph{recreational charter discards}, 2003-2016)    
+  \item Ally onboard observer study (\emph{recreational charter discards}, 1984-1989)  
+  \item California recreational sources combined (\emph{recreational charter retained catch})     
+    \begin{itemize}[noitemsep,nolistsep]
+      \item CDFW and Ally onboard observer surveys (1984-1989)     
+      \item Collins and Crooke onboard observer surveys (1975-1978)     
+      \item MRFSS (1980-2003) and CRFS (2004-2014)
+    \end{itemize}
+ \item California recreational sources combined (\emph{private mode retained catch})      
+    \begin{itemize}[noitemsep,nolistsep]   
+      \item MRFSS (1980-2003) and CRFS (2004-2016)  
+    \end{itemize}
+ \item POTW trawl surveys (\emph{research}, 1970-2016)      
+ \item CSUN/VRG gillnet survey (\emph{research}, 1995-2008)        
+ \item Power plant impingement surveys (\emph{research}, 1974-2016)  
+ \item Southern California Bight trawl survey (\emph{research}, 1994, 1998, 2003, 2008, 2013) 
 \end{itemize}
 
 
 
+###Summary of Data used in the 2017 Assessment
+
+![Summary of data sources used in the `r mod1_label`. \label{fig:data_plot}](r4ss/plots_mod1/data_plot.png)
 
 
 
+<!--------------------------------------------------------------------------------->
+#2017 assessment
+<!--------------------------------------------------------------------------------->
 
 ##Length-at-age
 ###Length-at-age
@@ -209,117 +352,24 @@ classoption:
 \end{itemize}
 
 ![](Figures/h_prior.png)
-
-
-
-<!--------------------------------------------------------------------------------->
-#Removals
-<!--------------------------------------------------------------------------------->
-
-##Total Removals 
-
-\centering
-\includegraphics{California_scorpionfish_2017_files/figure-latex/unnamed-chunk-16-1.pdf}
-
-
-##Total Removals 
-
-![](California_scorpionfish_2017_files/figure-latex/unnamed-chunk-17-1.pdf)
-
-##Total Removals 
-
-![](California_scorpionfish_2017_files/figure-latex/unnamed-chunk-18-1.pdf)
-
-##Commercial Landings by Fleet
-
-
-
-
-##Recreational Landings by Fleet
-
- 
-<!--------------------------------------------------------------------------------->
-#Index Data
-<!--------------------------------------------------------------------------------->
- 
-
-##Summary of Data Sources
-
-- All of the methods used to standardize indices have been endorsed by the SSC
-
-```{r, results = 'asis'}
-    # Years read in as factor - change to shorten.
-      Index_summary$Years = as.character(Index_summary$Years)
-      Index_summary[7,2] = paste0("'94, '98, '03, '08, '13")
-      Index_summary = Index_summary[,c(3,2,4,6)]
-
-    # Print index summary table
-      print(xtable(Index_summary,
-                   align = 'lp{2.5in}p{0.8in}p{.4in}p{2in}'),
-            include.rownames=FALSE,
-            scalebox = 0.7,
-            sanitize.text.function = function(x){x})
-```
- 
-
-##Recreational Private Boat Index
-
-##Recreational Party/Charter Boat Index (Logbook)
-
-##Recreational Dead Discard Index
-
-##Recreational Party/Charter Retained Catch Index
-
-
-
-
-
-##Sanitation Districts Survey Index
-```{r, results='asis'}
-  print(xtable(Fleet7_lengthdepth),
-                include.rownames=FALSE,
-                scalebox = 0.9,
-                sanitize.text.function = function(x){x})
-```
-##Sanitation Districts Survey Index
-
-##Sanitation Districts Survey Index
-
-##NWFSC Trawl Survey Index
-
-##Gillnet Survey Index
-
-##Southern California Bight Trawl Survey Index
-
-
-<!--------------------------------------------------------------------------------->
-#Composition Data
-<!--------------------------------------------------------------------------------->
-
-##Dat1
-
-
-
-
-##Summary of Data used in the 2017 Assessment
-
-![Summary of data sources used in the `r mod1_label`. \label{fig:data_plot}](r4ss/plots_mod1/data_plot.png)
-
-
-
-<!--------------------------------------------------------------------------------->
-#2017 assessment
-<!--------------------------------------------------------------------------------->
-
-
 <!--------------------------------------------------------------------------------->
 #Uncertainty and Sensitivities
 <!--------------------------------------------------------------------------------->
 
 
 <!--------------------------------------------------------------------------------->
-#Additional slides
+#Appendix
 <!--------------------------------------------------------------------------------->
 
-```{r child = "9_9_Appendices.Rmd"}
+<!-- Length Composition (LenComp) r4ss plots ------------------------------- -->
+```{r, results='asis'}
+ ##subset to just the plots of length comp fits
+  len_plots = LenComp_mod1[grep("lenfit_flt",LenComp_mod1$file),]
+    # Plot all of the length comp plots
+      for(i in 1:dim(len_plots)[1]) { 
+        cat('\\begin{frame}{Length composition}')
+        cat('\\includegraphics{', len_plots[i, path_col], '}', sep='')
+        cat('\\end{frame}')
+ }
 ```
+

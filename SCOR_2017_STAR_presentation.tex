@@ -72,23 +72,22 @@
 \usepackage{caption}                                              % for creating captions  
 \usepackage{longtable}                                            % allows tables to span multiple pages
 \usepackage{rotating}                                             % allows for sideways tables
-\usepackage{float}                                                % floating environments; may not need in rmarkdown
-\usepackage{placeins}                                             % keeps floats from moving
-\usepackage{indentfirst}                                          % indents first paragraph of a section
-\usepackage{mdwtab}                                               % continued float multi-page figure
+%\usepackage{float}                                                % floating environments; may not need in rmarkdown
+%\usepackage{placeins}                                             % keeps floats from moving
+%\usepackage{indentfirst}                                          % indents first paragraph of a section
+%\usepackage{mdwtab}                                               % continued float multi-page figure
 \usepackage{enumerate}                                            % create lists
 \usepackage{hyperref}                                             % highlight cross references
 \usepackage{enumitem}                                             % numbered lists
-\usepackage{upquote}                                              % produce grave accent in latex
+%\usepackage{upquote}                                              % produce grave accent in latex
 \usepackage{verbatim}                                             % produces verbatim results
 \usepackage{fancyvrb}                                             % verbatim in a box
-\usepackage{textcomp}                                             % fixes error with packages interfering
-\usepackage{cmap}                                                 % fix mapping characters to unicode
-\usepackage{appendixnumberbeamer}
+%\usepackage{textcomp}                                             % fixes error with packages interfering
+%\usepackage{cmap}                                                 % fix mapping characters to unicode
 \usepackage{lscape}
 
-\setbeamersize{text margin left=0.1in}
-\setbeamersize{text margin right=0.1in}
+\setbeamersize{text margin left=0.2in}
+\setbeamersize{text margin right=0.2in}
 
 \definecolor{pageCol}{rgb}{0.5,0.5,1.0}
 
@@ -122,6 +121,11 @@
 \def\endcol{\end{column}}
 \def\endcols{\end{columns}}
 
+
+%Remove section and subsection slides
+\AtBeginSubsection{}
+\AtBeginSection{}
+
 \title{California Scorpionfish 2017 Stock Assessment}
 \author{Melissa H Monk\(^1\), \and Xi He\(^1\), \and John Budrick\(^2\)}
 \institute{\(^1\)Southwest Fisheries Science Center \and \(^2\)California Department of Fish and Wildlife}
@@ -139,6 +143,8 @@
 \end{frame}
 
 \section{Background}\label{background}
+
+\subsection{Background}\label{background-1}
 
 \begin{frame}{California scorpionfish (\emph{Scorpaena guttata})}
 
@@ -239,9 +245,201 @@
 
 \begin{itemize}
 \item[$\circ$] One area south of Pt. Conception (all catches from Mexican waters excluded as in 2005)
+\item[$\circ$] Steepness fixed at 0.718
+\item[$\circ$] Sex-specific $M$ fixed for females, male $M$ estimated as offset
+\item[$\circ$] Re-evaluated fleet definition
+\item[$\circ$] Ages now available from the NWFSC trawl survey
 \end{itemize}
 
 \end{frame}
+
+\section{Catch}\label{catch}
+
+\begin{frame}{Catches by Fleet}
+
+\centering
+\includegraphics{r4ss/plots_mod1/catch2 landings stacked.png}
+
+\end{frame}
+
+\begin{frame}{U.S. and Mexico Catch}
+
+\includegraphics{California_scorpionfish_2017_files/figure-latex/unnamed-chunk-18-1.pdf}
+
+\end{frame}
+
+\begin{frame}{Recreational Catch}
+
+\begincols
+ \begincol{.4\textwidth}
+
+\begin{itemize}
+\item[$\circ$] 2005 assessment used number of fish for recreational catches
+\item[$\circ$] Cannot compare with biomass
+\item[$\circ$] 2017 assessment also accounts for discards
+\end{itemize}
+
+\endcol
+ \begincol{.48\textwidth}
+\includegraphics{California_scorpionfish_2017_files/figure-latex/unnamed-chunk-16-1.pdf}
+\endcol
+\endcols
+
+\end{frame}
+
+\begin{frame}{Recreational Catch}
+
+\end{frame}
+
+\begin{frame}{Commercial Catch}
+
+\begincols
+ \begincol{.4\textwidth}
+
+\begin{itemize}
+  \item[$\circ$] Historical catches same as the 2005 assessment
+  \item[$\circ$] California Fisheries Information System landings data used to update catches from 2005-2016 
+  \item[$\circ$] Discards assumed neglible
+\end{itemize}
+
+\endcol
+ \begincol{.48\textwidth}
+\includegraphics{California_scorpionfish_2017_files/figure-latex/unnamed-chunk-17-1.pdf}
+\endcol
+\endcols
+
+\end{frame}
+
+\begin{frame}{Commercial Catch}
+
+\end{frame}
+
+\section{Indices of Abundance}\label{indices-of-abundance}
+
+\begin{frame}{Summary of Data Sources}
+
+\begin{itemize}
+\tightlist
+\item
+  All of the methods used to standardize indices have been endorsed by
+  the SSC
+\end{itemize}
+
+\begin{table}[ht]
+\centering
+\scalebox{0.7}{
+\begin{tabular}{p{2.5in}p{0.8in}p{.4in}p{2in}}
+  \hline
+Name & Years & Fishery ind. & Method \\ 
+  \hline
+Recreational PR dockside CPUE & 2004-2016 & No & delta-GLM (bin-lognormal) \\ 
+  CPFV logbook CPUE & 1980-2016 & No & negative binomial \\ 
+  Onboard observer discard catch CPUE & 2002-2016 & No & delta-GLM (bin-lognormal) \\ 
+  Sanitation district CPUE & 1970-2016 & Yes & delta-GLM (bin-lognormal) \\ 
+  NWFSC trawl survey CPUE & 2003-2016 & Yes & VAST \\ 
+  CSUN/VRG Gillnet survey CPUE & 1995-2008 & Yes & delta-GLM (bin-lognormal) \\ 
+  Southern Califrnia Bight trawl survey CPUE & '94, '98, '03, '08, '13 & Yes & delta-GLM (bin-lognormal) \\ 
+  Onboard observer retained catch CPUE & 2002-2016 & No & delta-GLM (bin-lognormal) \\ 
+   \hline
+\end{tabular}
+}
+\end{table}
+
+\end{frame}
+
+\begin{frame}{Recreational Private Boat Index}
+
+\end{frame}
+
+\begin{frame}{Recreational Party/Charter Boat Index (Logbook)}
+
+\end{frame}
+
+\begin{frame}{Recreational Dead Discard Index}
+
+\end{frame}
+
+\begin{frame}{Recreational Party/Charter Retained Catch Index}
+
+\end{frame}
+
+\begin{frame}{Sanitation Districts Survey Index}
+
+\begin{table}[ht]
+\centering
+\scalebox{0.9}{
+\begin{tabular}{lrrrrr}
+  \hline
+Program & 0-24 m & 25-49 m & 50-74m & 100+ m & Total \\ 
+  \hline
+City of Los Angeles & 120 &   0 & 1372 &   0 & 1492 \\ 
+  Los Angeles County & 687 &   0 & 5879 & 450 & 7016 \\ 
+  Orange County & 161 & 669 & 2157 &  48 & 3035 \\ 
+  City of San Diego &   0 & 404 & 333 & 829 & 1566 \\ 
+   \hline
+\end{tabular}
+}
+\end{table}
+
+\end{frame}
+
+\begin{frame}{Sanitation Districts Survey Index}
+
+\end{frame}
+
+\begin{frame}{Sanitation Districts Survey Index}
+
+\end{frame}
+
+\begin{frame}{NWFSC Trawl Survey Index}
+
+\end{frame}
+
+\begin{frame}{Gillnet Survey Index}
+
+\end{frame}
+
+\begin{frame}{Southern California Bight Trawl Survey Index}
+
+\end{frame}
+
+\section{Composition Data}\label{composition-data}
+
+\subsection{Composition Data}\label{composition-data-1}
+
+\begin{frame}{Length compositions were provided from the following
+sources:}
+
+\begin{itemize}[noitemsep,nolistsep,topsep=0pt]
+  \item CDFW market category study (\emph{commercial dead fish}, 1996-2003)    
+  \item CALCOM (\emph{commercial dead fish}, 2013-2016)    
+  \item CDFW onboard observer (\emph{recreational charter discards}, 2003-2016)    
+  \item Ally onboard observer study (\emph{recreational charter discards}, 1984-1989)  
+  \item California recreational sources combined (\emph{recreational charter retained catch})     
+    \begin{itemize}[noitemsep,nolistsep]
+      \item CDFW and Ally onboard observer surveys (1984-1989)     
+      \item Collins and Crooke onboard observer surveys (1975-1978)     
+      \item MRFSS (1980-2003) and CRFS (2004-2014)
+    \end{itemize}
+ \item California recreational sources combined (\emph{private mode retained catch})      
+    \begin{itemize}[noitemsep,nolistsep]   
+      \item MRFSS (1980-2003) and CRFS (2004-2016)  
+    \end{itemize}
+ \item POTW trawl surveys (\emph{research}, 1970-2016)      
+ \item CSUN/VRG gillnet survey (\emph{research}, 1995-2008)        
+ \item Power plant impingement surveys (\emph{research}, 1974-2016)  
+ \item Southern California Bight trawl survey (\emph{research}, 1994, 1998, 2003, 2008, 2013) 
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Summary of Data used in the 2017 Assessment}
+
+\includegraphics{r4ss/plots_mod1/data_plot.png}
+
+\end{frame}
+
+\section{2017 assessment}\label{assessment}
 
 \subsection{Length-at-age}\label{length-at-age}
 
@@ -310,169 +508,34 @@ Compensation}\label{steepness-density-dependent-recruitment-compensation}
 \item[$\circ$] Preior mediant in 2017 for steepness ($h$) = 0.718
 \end{itemize}
 
-\includegraphics{Figures/h_prior.png}
+\includegraphics{Figures/h_prior.png} \#Uncertainty and Sensitivities
 
-\section{Removals}\label{removals}
+\section{Appendix}\label{appendix}
 
-\subsection{Total Removals}\label{total-removals}
+\begin{frame}{Length composition}\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt1mkt2.png}\end{frame}
 
-\centering
-\includegraphics{California_scorpionfish_2017_files/figure-latex/unnamed-chunk-16-1.pdf}
+\begin{frame}{Length composition}\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt2mkt2.png}\end{frame}
 
-\subsection{Total Removals}\label{total-removals-1}
+\begin{frame}{Length composition}\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt3mkt2.png}\end{frame}
 
-\includegraphics{California_scorpionfish_2017_files/figure-latex/unnamed-chunk-17-1.pdf}
+\begin{frame}{Length composition}\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt4mkt2.png}\end{frame}
 
-\subsection{Total Removals}\label{total-removals-2}
+\begin{frame}{Length composition}\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt5mkt2_page1.png}\end{frame}
 
-\includegraphics{California_scorpionfish_2017_files/figure-latex/unnamed-chunk-18-1.pdf}
+\begin{frame}{Length composition}\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt5mkt2_page2.png}\end{frame}
 
-\subsection{Commercial Landings by
-Fleet}\label{commercial-landings-by-fleet}
+\begin{frame}{Length composition}\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt6mkt2.png}\end{frame}
 
-\subsection{Recreational Landings by
-Fleet}\label{recreational-landings-by-fleet}
+\begin{frame}{Length composition}\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt7mkt2_page1.png}\end{frame}
 
-\section{Index Data}\label{index-data}
+\begin{frame}{Length composition}\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt7mkt2_page2.png}\end{frame}
 
-\subsection{Summary of Data Sources}\label{summary-of-data-sources}
+\begin{frame}{Length composition}\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt8mkt0.png}\end{frame}
 
-\begin{itemize}
-\tightlist
-\item
-  All of the methods used to standardize indices have been endorsed by
-  the SSC
-\end{itemize}
+\begin{frame}{Length composition}\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt9mkt2.png}\end{frame}
 
-\begin{table}[ht]
-\centering
-\scalebox{0.7}{
-\begin{tabular}{p{2.5in}p{0.8in}p{.4in}p{2in}}
-  \hline
-Name & Years & Fishery ind. & Method \\ 
-  \hline
-Recreational PR dockside CPUE & 2004-2016 & No & delta-GLM (bin-lognormal) \\ 
-  CPFV logbook CPUE & 1980-2016 & No & negative binomial \\ 
-  Onboard observer discard catch CPUE & 2002-2016 & No & delta-GLM (bin-lognormal) \\ 
-  Sanitation district CPUE & 1970-2016 & Yes & delta-GLM (bin-lognormal) \\ 
-  NWFSC trawl survey CPUE & 2003-2016 & Yes & VAST \\ 
-  CSUN/VRG Gillnet survey CPUE & 1995-2008 & Yes & delta-GLM (bin-lognormal) \\ 
-  Southern Califrnia Bight trawl survey CPUE & '94, '98, '03, '08, '13 & Yes & delta-GLM (bin-lognormal) \\ 
-  Onboard observer retained catch CPUE & 2002-2016 & No & delta-GLM (bin-lognormal) \\ 
-   \hline
-\end{tabular}
-}
-\end{table}
+\begin{frame}{Length composition}\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt10mkt2.png}\end{frame}
 
-\subsection{Recreational Private Boat
-Index}\label{recreational-private-boat-index}
-
-\subsection{Recreational Party/Charter Boat Index
-(Logbook)}\label{recreational-partycharter-boat-index-logbook}
-
-\subsection{Recreational Dead Discard
-Index}\label{recreational-dead-discard-index}
-
-\subsection{Recreational Party/Charter Retained Catch
-Index}\label{recreational-partycharter-retained-catch-index}
-
-\subsection{Sanitation Districts Survey
-Index}\label{sanitation-districts-survey-index}
-
-\begin{table}[ht]
-\centering
-\scalebox{0.9}{
-\begin{tabular}{lrrrrr}
-  \hline
-Program & 0-24 m & 25-49 m & 50-74m & 100+ m & Total \\ 
-  \hline
-City of Los Angeles & 120 &   0 & 1372 &   0 & 1492 \\ 
-  Los Angeles County & 687 &   0 & 5879 & 450 & 7016 \\ 
-  Orange County & 161 & 669 & 2157 &  48 & 3035 \\ 
-  City of San Diego &   0 & 404 & 333 & 829 & 1566 \\ 
-   \hline
-\end{tabular}
-}
-\end{table}
-
-\subsection{Sanitation Districts Survey
-Index}\label{sanitation-districts-survey-index-1}
-
-\subsection{Sanitation Districts Survey
-Index}\label{sanitation-districts-survey-index-2}
-
-\subsection{NWFSC Trawl Survey Index}\label{nwfsc-trawl-survey-index}
-
-\subsection{Gillnet Survey Index}\label{gillnet-survey-index}
-
-\subsection{Southern California Bight Trawl Survey
-Index}\label{southern-california-bight-trawl-survey-index}
-
-\section{Composition Data}\label{composition-data}
-
-\subsection{Dat1}\label{dat1}
-
-\subsection{Summary of Data used in the 2017
-Assessment}\label{summary-of-data-used-in-the-2017-assessment}
-
-\includegraphics{r4ss/plots_mod1/data_plot.png}
-
-\section{2017 assessment}\label{assessment}
-
-\section{Uncertainty and
-Sensitivities}\label{uncertainty-and-sensitivities}
-
-\section{Additional slides}\label{additional-slides}
-
-\FloatBarrier
-\newpage
-
-\section*{Appendix A. Detailed fits to length composition
-data}\label{appendix-a.-detailed-fits-to-length-composition-data}
-\addcontentsline{toc}{section}{Appendix A. Detailed fits to length
-composition data}
-
-\renewcommand{\thepage}{A-\arabic{page}}
-\renewcommand{\thefigure}{A\arabic{figure}}
-
-\setcounter{page}{1}
-
-\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt1mkt2.png}
-
-\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt2mkt2.png}
-
-\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt3mkt2.png}
-
-\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt4mkt2.png}
-
-\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt5mkt2_page1.png}
-
-\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt5mkt2_page2.png}
-
-\begin{center} 
-
-              Figure continued from previous page 
-
-             \end{center}
-
-\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt6mkt2.png}
-
-\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt7mkt2_page1.png}
-
-\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt7mkt2_page2.png}
-
-\begin{center} 
-
-              Figure continued from previous page 
-
-             \end{center}
-
-\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt8mkt0.png}
-
-\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt9mkt2.png}
-
-\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt10mkt2.png}
-
-\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt11mkt2.png}
+\begin{frame}{Length composition}\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt11mkt2.png}\end{frame}
 
 \end{document}
