@@ -1,6 +1,6 @@
 Model,Binomial,Lognormal
-~Year,19619.56,9177.115
-~Year + Reef,18677.11,9177.115
-~ Year + Depth,19374.02,8860.893
-~Year + Depth + Reef,18392.13,8778.47
-~Year + Month + Reef + Depth,\textbf{18318.92},\textbf{8769.844}
+~Year,19619,9177
+~Year + Reef,18677,9177
+~ Year + Depth,19374,8860
+~Year + Depth + Reef,18392,8778
+~Year + Month + Reef + Depth,\textbf{18318},\textbf{8769}

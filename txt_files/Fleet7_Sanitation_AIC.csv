@@ -1,5 +1,5 @@
 Model,Binomial,Lognormal
-~Year,7330.73,6748.7
-~Year + Quarter,7179.5,6642.7
-~Year + Station,6321.6,6372.8
-~Year + Station + Quarter,\textbf{6130.94},\textbf{6252.71}
+~Year,7330,6748
+~Year + Quarter,7179,6642
+~Year + Station,6321,6372
+~Year + Station + Quarter,\textbf{6130},\textbf{6252}
