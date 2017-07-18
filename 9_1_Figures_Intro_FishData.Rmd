@@ -118,7 +118,7 @@
 
 ![Map of stations sampled in at least 5 years by the Orange County Sanitation District (green) and the City of San Diego Public Utilities Ocean Monitoring Program (blue) \label{fig:Fleet7_sanitation_map1}](Figures/Fleet7_sanitation_map1.pdf)
 
-![Standardized index on log scale for the Publicly Owned Treatment Works programs trawl index. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:index4_logcpuedata_Sanitation}](r4ss/plots_mod1/index4_logcpuedata_Sanitation.png)
+![Standardized index on log scale for the Publicly Owned Treatment Works monitoring programs trawl index. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:index4_logcpuedata_Sanitation}](r4ss/plots_mod1/index4_logcpuedata_Sanitation.png)
 
 ![Comparison of standardized indices for each Publicly Owned Treatment Works monitoring program independently and with data from all Publicly Owned Treatment Works programs combined. \label{fig:Fleet7_Sanitation_indexcompare}](Figures/Fleet7_Sanitation_indexcompare.png)
 

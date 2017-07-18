@@ -1,4 +1,4 @@
-\documentclass[ignorenonframetext,compress]{beamer}
+\documentclass[ignorenonframetext,]{beamer}
 \setbeamertemplate{caption}[numbered]
 \setbeamertemplate{caption label separator}{: }
 \setbeamercolor{caption name}{fg=normal text.fg}
@@ -123,7 +123,7 @@
 
 
 %Remove section and subsection slides
-%\AtBeginSubsection{}
+\AtBeginSubsection{}
 \AtBeginSection{}
 
 \title{California Scorpionfish 2017 Stock Assessment}
@@ -143,8 +143,6 @@
 \end{frame}
 
 \section{Background}\label{background}
-
-\subsection{Background}\label{background-1}
 
 \begin{frame}{California scorpionfish (\emph{Scorpaena guttata})}
 
@@ -187,14 +185,14 @@
 
 \end{frame}
 
-\begin{frame}{Distribution}
+\begin{frame}{Distribution and Stock Assessment Boundary}
 
-\end{frame}
-
-\begin{frame}{Stock Assessment Boundary}
-
-\centering
-\includegraphics{Figures/assess_region_map.png}
+\begincols
+ \begincol{.5\textwidth} \includegraphics{Figures/Distribution_map.png}
+\endcol
+ \begincol{.5\textwidth} \includegraphics{Figures/assess_region_map.png}
+\endcol
+\endcols
 
 \end{frame}
 
@@ -281,8 +279,6 @@ Pre-STAR Base Model
 
 \section{Catch}\label{catch}
 
-\subsection{Catch}\label{catch-1}
-
 \begin{frame}{Catches by Fleet}
 
 \centering
@@ -337,9 +333,9 @@ Pre-STAR Base Model
 
 \end{frame}
 
-\section{Indices of Abundance}\label{indices-of-abundance}
+\section{Indices}\label{indices}
 
-\begin{frame}{Summary of Data Sources}
+\begin{frame}{Indices of Abundance}
 
 \includegraphics{r4ss/plots_mod1/data_plot.png}
 
@@ -376,27 +372,9 @@ Recreational PR dockside CPUE & 2004-2016 & No & delta-GLM (bin-lognormal) \\
 
 \end{frame}
 
-\subsection{Fishery-Dependent Abundance
-Indices}\label{fishery-dependent-abundance-indices}
+\begin{frame}{Indices of Abundance}
 
-\begin{frame}{Fishery-Dependent Abundance Indices}
-
-\begin{itemize}
-\item[$\bullet$] CDFW dockside intercept survey of retained catch
-\begin{itemize}
-\item[$\circ$] Private/rental fleet
-\item[$\circ$] Party/charter fleet (developed and not used in base model)
-\end{itemize}
-\item[$\bullet$] Commercial Passenger Fishing Vessel (CPFV) logbooks 
-\item[$\bullet$] CDFW onbord observer survey of the CPFV fleet
-\begin{itemize}
-\item[$\cdot$] Developed separate indices for retained and discarded catch 
-\end{itemize}
-\end{itemize}
-
-\end{frame}
-
-\begin{frame}{Indices of Abundance: Delta-GLM Approach}
+\textbf{Delta-GLM Approach}
 
 \begin{itemize}
 \item[$\bullet$] Approach used for all indices excpet the NWFSC trawl survey and the CPFV logbook 
@@ -474,11 +452,29 @@ Model & Binomial & Lognormal \\
 
 \begin{frame}{Recreational Dockside Private Boat Index}
 
-\includegraphics{Figures/Fleet4_RecPR_SMcoef.png}
+\begincols
+ \begincol{.5\textwidth}
+
+\begin{itemize}
+\item[$\bullet$] Positive indicators: treefish, barred sandbass, ocean whitefish, cabezon
+\item[$\bullet$] Negative indicators: yellowtail amberjack, bat rays, white croaker, white seabass
+\item[$\bullet$] Similar indicator species as in the MRFSS party/charter analysis
+\end{itemize}
+
+\endcol
+ \begincol{.5\textwidth}
+
+\centering
+\includegraphics[height=8cm]{Figures/Fleet4_RecPR_SMcoef.png}
+
+\endcol
+\endcols
 
 \end{frame}
 
-\begin{frame}{Recreational Dockside Private Boat Index: Results}
+\begin{frame}{Recreational Dockside Private Boat Index}
+
+\textbf{Results}
 
 \centering
 \includegraphics{r4ss/plots_mod1/index4_logcpuedata_RecPR.png}
@@ -518,15 +514,17 @@ All CA data & No filter & 1,164,662 \\
 
 \end{frame}
 
-\begin{frame}{Recreational CPFV Logbook Index: Results}
+\begin{frame}{Recreational CPFV Logbook Index}
+
+\textbf{Results}
 
 \begincols
- \begincol{.3\textwidth}
+ \begincol{.4\textwidth}
 
 \begin{table}[ht]
 \centering
 \scalebox{0.6}{
-\begin{tabular}{p{1.8in}p{1.5in}}
+\begin{tabular}{p{1.6in}p{1.5in}}
   \hline
 Model & Negative Binomial \\ 
   \hline
@@ -540,7 +538,7 @@ Year & 1918470 \\
 \end{table}
 
 \endcol
- \begincol{.7\textwidth}
+ \begincol{.6\textwidth}
 
 \includegraphics{r4ss/plots_mod1/index4_logcpuedata_RecPC.png} \endcol
 \endcols
@@ -579,7 +577,7 @@ Year & 1918470 \\
 \textbf{Effort}: Angler hours
 
 \begincols
- \begincol{.6\textwidth}
+ \begincol{.4\textwidth}
 
 \begin{itemize}
   \item[$\bullet$] Drift-level catch data collection onboard CPFVs
@@ -588,7 +586,7 @@ Year & 1918470 \\
   \end{itemize}
 
 \endcol
- \begincol{.4\textwidth}
+ \begincol{.6\textwidth}
 
 \begin{table}[ht]
 \centering
@@ -615,7 +613,7 @@ Initial SQL filtering &  & 6,475 & 59,192 \\
 
 \end{frame}
 
-\begin{frame}{Recreational Onboard Retained Catch}
+\begin{frame}{Recreational Onboard Indices}
 
 \vspace{1cm}
 
@@ -668,23 +666,21 @@ Model & Binomial & Lognormal \\
 
 \end{frame}
 
-\begin{frame}{Recreational Onboard Indices: Results}
+\begin{frame}{Recreational Onboard Indices}
 
-Discard catch index (left) and retained catch index (right) \begincols
- \begincol{.5\textwidth}
+\begincols
+ \begincol{.5\textwidth} Discard catch index (left)
 \includegraphics{r4ss/plots_mod1/index4_logcpuedata_RecDD.png}
 
 \endcol
- \begincol{.5\textwidth}
-
+ \begincol{.5\textwidth} Retained catch index (right)
 \includegraphics{r4ss/plots_mod1/index4_logcpuedata_RecPCOBR.png}
 \endcol
 \endcols
 
 \end{frame}
 
-\subsection{Fishery-Independent Abundance
-Indices}\label{fishery-independent-abundance-indices}
+\begin{frame}{Fishery-Independent Abundance Indices}
 
 \begin{itemize}
 \item[$\bullet$] Publicly Owned Treatment Works (POTW) Monitoring Index
@@ -694,10 +690,46 @@ Indices}\label{fishery-independent-abundance-indices}
 \item[$\bullet$] Southern California Bight Regional Monitoring Survey (Bight survey)
 \end{itemize}
 
+\end{frame}
+
+\begin{frame}{Publicly Owned Treatment Works Survey Index}
+
+\begin{itemize}
+\item[$\bullet$] Publicly Owned Treatment Works (POTWs) are required to have permits to discharge into state or federal waters
+\item[$\bullet$] Six southern California POTWs conduct trawls to monitoring fish populations (Goleta and City of Oxnard do not observer California scorpionfish)
+\begin{itemize}
+\item[$\circ$] Each POTW follows standardized trawl methods
+\item[$\circ$] Fixed station design, sample spring and fall, or more frequently
+\item[$\circ$] All fish encountered are measured, standard length
+\end{itemize}
+\item[$\bullet$]  Four POTWs observed California scorpionfish
+\begin{itemize}
+\item[$\circ$] Orange County Sanitation District (1970-2016)
+\item[$\circ$] City of Los Angeles Environmental Monitoring Division (1988-2016)
+\item[$\circ$] Sanitation Districts of Los Angeles County (1972-2016)
+\item[$\circ$] City of San Diego Public Utilities Department (1985-2016)
+\end{itemize}
+\end{itemize}
+
+\end{frame}
+
 \begin{frame}{POTW Survey Index}
 
-\textbf{Sample}: California MRFSS and CRFS ; \textbf{Years}: 1980-2003;
-\textbf{Effort}: Angler hours
+\begincols
+ \begincol{.5\textwidth} \centering
+\includegraphics{Figures/Fleet7_sanitation_map2.pdf} \endcol
+ \begincol{.5\textwidth} \centering
+\includegraphics{Figures/Fleet7_sanitation_map1.pdf} \endcol
+\endcols
+
+\end{frame}
+
+\begin{frame}{Publicly Owned Treatment Works Survey Index}
+
+\textbf{Sample}: Four POTWs ; \textbf{Years}: 1970-2016;
+\textbf{Effort}: Tow time
+
+Number of California scorpionfish encountered by POTW and 25 m depth bin
 
 \begin{table}[ht]
 \centering
@@ -717,28 +749,137 @@ City of Los Angeles & 120 &   0 & 1372 &   0 & 1492 \\
 
 \end{frame}
 
-\begin{frame}{POTW Survey Index}
+\begin{frame}{Publicly Owned Treatment Works Survey Index}
+
+\textbf{Results}
 
 \begincols
- \begincol{.5\textwidth} \centering
-\includegraphics{Figures/Fleet7_sanitation_map2.pdf} \endcol
- \begincol{.5\textwidth} \centering
-\includegraphics{Figures/Fleet7_sanitation_map1.pdf} \endcol
-\endcols
-
-\end{frame}
-
-\begin{frame}{POTW Survey Index: Results}
-
-\begincols
- \begincol{.5\textwidth}
+ \begincol{.4\textwidth}
 \includegraphics{r4ss/plots_mod1/index4_logcpuedata_Sanitation.png}
 \endcol
- \begincol{.5\textwidth}
+ \begincol{.6\textwidth}
 \includegraphics{Figures/Fleet7_Sanitation_indexcompare.png}
 
 \endcol
 \endcols
+
+\end{frame}
+
+\begin{frame}{Gillnet Survey Index}
+
+\textbf{Sample}: CSUN/VRG survey ; \textbf{Years}: 1995-2008;
+\textbf{Effort}: Soak time
+
+\begincols
+ \begincol{.6\textwidth}
+
+\begin{table}[ht]
+\centering
+\scalebox{0.5}{
+\begin{tabular}{p{1.4in}p{2in}p{.6in}p{.6in}}
+  \hline
+Filter & Criteria & Pos. trips & Trips \\ 
+  \hline
+Entire dataset &  & 325 & 3,558 \\ 
+  General data filters & Samples with  no net failures & 269 & 3,515 \\ 
+  Net type & Samples using a net type 1", 1.5" and 2" mesh & 269 & 2,815 \\ 
+  Sites & Sites frequently sampled & 266 & 2,170 \\ 
+  Month & Months sampled consistently (April, June, August, October) & 259 & 2,019 \\ 
+   \hline
+\end{tabular}
+}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\scalebox{0.5}{
+\begin{tabular}{p{3in}p{.6in}p{.6in}}
+  \hline
+Model & Binomial & Lognormal \\ 
+  \hline
+~Year + month + site + perp\_para + floats & 1983 & 1008 \\ 
+  ~Year + site + perp\_para  + floats & 2000 & 1004 \\ 
+   Year + month  + perp\_para + floats & 2349 & 1264 \\ 
+  ~Year  + site +  perp\_para & \textbf{2010} & \textbf{1004} \\ 
+   \hline
+\end{tabular}
+}
+\end{table}
+
+\endcol
+ \begincol{.4\textwidth}
+
+\includegraphics[height=5cm]{Figures/Fleet9_GillnetSurvey_QQ.png}
+
+\endcol
+\endcols
+
+\end{frame}
+
+\begin{frame}{Gillnet Survey Index}
+
+\includegraphics{r4ss/plots_mod1/index4_logcpuedata_GillnetSurvey.png}
+
+\end{frame}
+
+\begin{frame}{Southern California Bight Trawl Survey Index}
+
+\textbf{Sample}: Bight Trawl Survey ; \textbf{Years}: 1994, 1998, 2003,
+2008, 2013; \textbf{Effort}: Tow time
+
+\includegraphics[height=7cm]{Figures/Fleet11_SCBSurvey_map.pdf}
+
+\end{frame}
+
+\begin{frame}{Southern California Bight Trawl Survey Index}
+
+\begincols
+ \begincol{.6\textwidth}
+
+\begin{table}[ht]
+\centering
+\scalebox{0.5}{
+\begin{tabular}{p{.8in}p{2in}p{.6in}p{.6in}}
+  \hline
+Filter & Criteria & Pos. trips & Trips \\ 
+  \hline
+All trawls & No filter & 158 & 944 \\ 
+  Depth & Trawls $<$ 98 m (retains 95\% of all data) & 149 & 662 \\ 
+  Region & Exclude trawls in harbors, north of Ventura and islands (few scorpionfish) & 129 & \textbf{398} \\ 
+   \hline
+\end{tabular}
+}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\scalebox{0.5}{
+\begin{tabular}{p{2in}p{.6in}p{.6in}}
+  \hline
+Model & Binomial & Lognormal \\ 
+  \hline
+~Year & 494.73 & 339.56 \\ 
+  ~Year + Region & 490.24 & 343.16 \\ 
+  ~ Year + Month & 493.02 & 336.68 \\ 
+  ~ Year + Month + Region & \textbf{486.55} & \textbf{337.87} \\ 
+   \hline
+\end{tabular}
+}
+\end{table}
+
+\endcol
+ \begincol{.4\textwidth}
+
+\includegraphics[height=4cm]{Figures/Fleet11_SCBsurvey_QQ.png} \endcol
+\endcols
+
+\end{frame}
+
+\begin{frame}{Southern California Bight Trawl Survey Index}
+
+\textbf{Results}\\
+\centering
+\includegraphics{r4ss/plots_mod1/index4_logcpuedata_SCBSurvey.png}
 
 \end{frame}
 
@@ -768,59 +909,78 @@ Geostatistical approach Vector Autoregressive Spatio-Temporal model
 \textbf{Sample}: California MRFSS and CRFS ; \textbf{Years}: 1980-2003;
 \textbf{Effort}: Angler hours
 
-\end{frame}
-
-\begin{frame}{NWFSC Trawl Survey Index}
+\includegraphics[height=.7\textheight]{Figures/NWFSCtrawl_map.png}
 
 \end{frame}
 
 \begin{frame}{NWFSC Trawl Survey Index}
 
-\end{frame}
+Proportion of positive tows and raw catch rate by depth (left) and
+latitude (right) \begincols
+ \begincol{.5\textwidth} \centering
+\includegraphics{Figures/NWFSCtrawl_posdepth.png}
 
-\begin{frame}{NWFSC Trawl Survey Index: Results}
+\endcol
+ \begincol{.5\textwidth}
 
-\end{frame}
+\includegraphics{Figures/NWFSCtrawl_poslat.png}
 
-\begin{frame}{Gillnet Survey Index}
-
-\textbf{Sample}: California MRFSS and CRFS ; \textbf{Years}: 1980-2003;
-\textbf{Effort}: Angler hours
-
-\includegraphics{Figures/Fleet9_GillnetSurvey_QQ.png}
-
-\end{frame}
-
-\begin{frame}{Gillnet Survey Index: Results}
-
-\includegraphics{r4ss/plots_mod1/index4_logcpuedata_GillnetSurvey.png}
+\endcol
+\endcols
 
 \end{frame}
 
-\begin{frame}{Southern California Bight Trawl Survey Index}
+\begin{frame}{NWFSC Trawl Survey Index}
 
-\textbf{Sample}: California MRFSS and CRFS ; \textbf{Years}: 1980-2003;
-\textbf{Effort}: Angler hours
+Comparison of length data by sex and depth (left) and latitude (right)
+\begincols
+ \begincol{.5\textwidth}
+\includegraphics{Figures/NWFSCtrawl_lengthdepth.png}
 
-\includegraphics{Figures/Fleet11_SCBSurvey_map.pdf}
+\endcol
+ \begincol{.5\textwidth}
 
-\end{frame}
+\includegraphics{Figures/NWFSCtrawl_lengthlat.png}
 
-\begin{frame}{Southern California Bight Trawl Survey Index}
-
-\includegraphics{Figures/Fleet11_SCBsurvey_QQ.png}
-
-\end{frame}
-
-\begin{frame}{Southern California Bight Trawl Survey Index: Results}
-
-\includegraphics{r4ss/plots_mod1/index4_logcpuedata_SCBSurvey.png}
+\endcol
+\endcols
 
 \end{frame}
 
-\section{Composition Data}\label{composition-data}
+\begin{frame}{NWFSC Trawl Survey Index}
 
-\subsection{Composition Data}\label{composition-data-1}
+\begincols
+ \begincol{.5\textwidth}
+
+\begin{itemize}
+\item[$\bullet$] Text here
+\item[$\bullet$] Text here
+\item[$\bullet$] Text here
+\end{itemize}
+
+\endcol
+ \begincol{.5\textwidth}
+\includegraphics[height=4cm]{Figures/NWFSCtrawl_QQ.jpg}
+
+\endcol
+\endcols
+
+\end{frame}
+
+\begin{frame}{NWFSC Trawl Survey Index}
+
+\textbf{Comparison with the GLMM}
+
+\end{frame}
+
+\begin{frame}{NWFSC Trawl Survey Index}
+
+\centering
+\includegraphics{r4ss/plots_mod1/index4_logcpuedata_NWFSCtrawl.png}
+
+\end{frame}
+
+\section{Composition}\label{composition}
 
 \begin{frame}{Length compositions were provided from the following
 sources:}
@@ -849,11 +1009,17 @@ sources:}
 \begin{frame}{Commercial fishery length composition}
 
 \begincols
- \begincol{.5\textwidth}
-\includegraphics{r4ss/plots_mod1/comp_lendat_bubflt1mkt2.png}
-\includegraphics{r4ss/plots_mod1/comp_lendat_bubflt2mkt2.png} \endcol
- \begincol{.5\textwidth}
-\includegraphics{r4ss/plots_mod1/comp_lendat_bubflt3mkt2.png} \endcol
+ \begincol{.5\textwidth} \centering
+ Commercial hook-and-line
+\includegraphics[height=3cm]{r4ss/plots_mod1/comp_lendat_bubflt1mkt2.png}
+
+Commercial gillnet
+\includegraphics[height=3cm]{r4ss/plots_mod1/comp_lendat_bubflt2mkt2.png}
+\endcol
+ \begincol{.5\textwidth} \centering
+ Commercial trawl
+\includegraphics[height=4cm]{r4ss/plots_mod1/comp_lendat_bubflt3mkt2.png}
+\endcol
 \endcols
 
 \end{frame}
@@ -861,12 +1027,17 @@ sources:}
 \begin{frame}{Recreational fishery length composition}
 
 \begincols
- \begincol{.5\textwidth}
-\includegraphics{r4ss/plots_mod1/comp_lendat_bubflt4mkt2.png}
-\includegraphics{r4ss/plots_mod1/comp_lendat_bubflt5mkt2_page2.png}
+ \begincol{.5\textwidth} Recreational private fleet
+\includegraphics[height=3cm]{r4ss/plots_mod1/comp_lendat_bubflt4mkt2.png}
+
+Recreational party/charter fleet
+\includegraphics[height=3cm]{r4ss/plots_mod1/comp_lendat_bubflt5mkt2_page2.png}
 \endcol
- \begincol{.5\textwidth}
-\includegraphics{r4ss/plots_mod1/comp_lendat_bubflt6mkt2.png} \endcol
+ \begincol{.5\textwidth} \centering
+
+Recreational dead discards
+\includegraphics[height=4cm]{r4ss/plots_mod1/comp_lendat_bubflt6mkt2.png}
+\endcol
 \endcols
 
 \end{frame}
@@ -874,30 +1045,60 @@ sources:}
 \begin{frame}{Research length composition}
 
 \begincols
- \begincol{.5\textwidth}
-\includegraphics{r4ss/plots_mod1/comp_lendat_bubflt7mkt2_page2.png}
-\includegraphics{r4ss/plots_mod1/comp_lendat_bubflt9mkt2.png} \endcol
- \begincol{.5\textwidth}
-\includegraphics{r4ss/plots_mod1/comp_lendat_bubflt10mkt2.png}
-\includegraphics{r4ss/plots_mod1/comp_lendat_bubflt11mkt2.png} \endcol
+ \begincol{.5\textwidth} POTW survey
+\includegraphics[height=3cm]{r4ss/plots_mod1/comp_lendat_bubflt7mkt2_page2.png}
+
+Gillnet survey
+\includegraphics[height=3cm]{r4ss/plots_mod1/comp_lendat_bubflt9mkt2.png}
+\endcol
+ \begincol{.5\textwidth} Impingement survey
+\includegraphics[height=3cm]{r4ss/plots_mod1/comp_lendat_bubflt10mkt2.png}
+
+Bight trawl survey
+\includegraphics[height=3cm]{r4ss/plots_mod1/comp_lendat_bubflt11mkt2.png}
+\endcol
 \endcols
 
 \end{frame}
 
-\begin{frame}{Research length and age composition}
+\begin{frame}{NWFSC length and age composition}
 
 \begincols
  \begincol{.5\textwidth}
-\includegraphics{r4ss/plots_mod1/comp_lendat_bubflt8mkt0.png} \endcol
+\includegraphics[height=.5\textheight]{r4ss/plots_mod1/comp_condAALdat_bubflt8mkt0_page1.png}
+\endcol
  \begincol{.5\textwidth}
-\includegraphics{r4ss/plots_mod1/comp_condAALdat_bubflt8mkt0_page1.png}
-\includegraphics{r4ss/plots_mod1/comp_condAALdat_bubflt8mkt0_page2.png}
+\includegraphics[height=.5\textheight]{r4ss/plots_mod1/comp_condAALdat_bubflt8mkt0_page2.png}
 \endcol
 \endcols
- \#2017 assessment \#\#2017 assessment \#\#\#Summary of Data used in the
-2017 Assessment
 
-\includegraphics{r4ss/plots_mod1/data_plot.png}
+\end{frame}
+
+\section{Biological}\label{biological}
+
+\begin{frame}{Length data}
+
+\begin{itemize}
+\item[$\bullet$] 2005 assessment used standard length
+\item[$\bullet$] Impingement, POTW, and Bight surveys measure standard length
+\item[$\bullet$] 2017 assessment uses total length (conversion based on a CDFW halibut trawl study;measured both SL and TL)
+\item[$\bullet$] To avoid gaps in TL length bins, TL = SL - 0.5 + U[0,1] 
+\end{itemize}
+
+\includegraphics[height=.5\textheight]{Figures/SL_to_TL_compare.png}
+
+\end{frame}
+
+\begin{frame}{Length data}
+
+POTW lengths \begincols
+ \begincol{.5\textwidth}
+\includegraphics[height=.5\textheight]{Figures/Fleet7_Sanitation_lengthboxplots.png}
+\endcol
+ \begincol{.5\textwidth}
+\includegraphics[height=.5\textheight]{Figures/Fleet7_Sanitation_length_source.png}\\
+\endcol
+\endcols
 
 \end{frame}
 
@@ -905,14 +1106,9 @@ sources:}
 
 \begincols
  \begincol{.4\textwidth}
-
 \includegraphics[trim={0 0 0 2cm}, totalheight=0.65\textheight]{Figures/Age_length_bySex.png}
-
 \endcol
- \begincol{.48\textwidth}
-
-\includegraphics{Figures/vonB_compare.png}
-
+ \begincol{.48\textwidth} \includegraphics{Figures/vonB_compare.png}
 \endcol
 \endcols
 
@@ -922,20 +1118,17 @@ sources:}
 
 \begincols
  \begincol{.4\textwidth}
-
-\includegraphics{Figures/NWFSCtrawl_lengthdepth.png}
-
-\endcol
+\includegraphics{Figures/NWFSCtrawl_lengthdepth.png} \endcol
 \begincol{.48\textwidth}
-
-\includegraphics{r4ss/plots_mod1/comp_lendat_bubflt8mkt0.png}
-
-\endcol
+\includegraphics{r4ss/plots_mod1/comp_lendat_bubflt8mkt0.png} \endcol
 \endcols
 
 \end{frame}
 
-\subsection{Maturity and Fecundity}\label{maturity-and-fecundity}
+\begin{frame}{Maturity and Fecundity}
+
+\begincols
+ \begincol{.5\textwidth}
 
 \begin{itemize}
 \item[$\bullet$] Only information on maturity from Love et al. (1987)
@@ -944,11 +1137,34 @@ sources:}
 \item[$\bullet$] No information available on fecundity of California scorpionfish
 \end{itemize}
 
-\subsection{Weight-at-length}\label{weight-at-length}
+\endcol
+ \begincol{.5\textwidth}
+\includegraphics[height=5cm]{r4ss/plots_mod1/bio6_maturity.png} \endcol
+\endcols
 
-\includegraphics{Figures/Length_weight.png}
+\end{frame}
 
-\subsection{Natural mortality}\label{natural-mortality}
+\begin{frame}{Ageing Error}
+
+\begincols
+ \begincol{.5\textwidth}
+\includegraphics[height=6cm]{Figures/otolith1.pdf} \endcol
+ \begincol{.5\textwidth}
+
+\includegraphics[height=6cm]{Figures/Fleet8_NWFSCTrawl_ageerror.png}\\
+\endcol
+\endcols
+
+\end{frame}
+
+\begin{frame}{Weight-at-length}
+
+\centering
+ \includegraphics{Figures/Length_weight.png}
+
+\end{frame}
+
+\begin{frame}{Natural mortality}
 
 \begin{itemize}
 \item[$\bullet$] Prior based on maximum age of 21
@@ -958,51 +1174,298 @@ sources:}
 \item[$\bullet$] Sensitivities explore estimating $M$
 \end{itemize}
 
-\subsection{Steepness: Density-Dependent Recruitment
-Compensation}\label{steepness-density-dependent-recruitment-compensation}
+\end{frame}
+
+\begin{frame}{Steepness: Density-Dependent Recruitment Compensation}
 
 \begin{itemize}
 \item[$\bullet$] Predictive distribution for Pacific rockfish meta-analysis
 \item[$\bullet$] Preior mediant in 2017 for steepness ($h$) = 0.718
 \end{itemize}
 
-\includegraphics{Figures/h_prior.png} \#Uncertainty and Sensitivities
-\#\#Uncertainty and Sensitivities
+\centering
+\includegraphics[height=6cm]{Figures/h_prior.png}
+
+\end{frame}
+
+\section{Model}\label{model}
+
+\begin{frame}{Model Specifications}
+
+\begin{itemize}
+\item[$\bullet$] Stock Synthesis version 3.30.05.04
+\item[$\bullet$] Model starts in 1916, unfished equilibrium catch prior to that
+\item[$\bullet$] sex-specific growth and mortality with female $M$ fixed at 0.2174
+\item[$\bullet$] Steepness fixed at 0.718 (from meta-analysis)
+\item[$\bullet$] Recruitment deviations estimated
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Selectivity}
+
+\begin{itemize}
+\item[$\bullet$] Time blocks
+\begin{itemize}
+\item[$\circ$] Commercial fleet: 1916-1999 and 2000-2016 (10-in. minimum size limit as of 2000)
+\item[$\circ$] Recreational fleets: 1916-2000 (few regulations), 2001-2005 (fishery closures), 2006-2016 (consistent regulations)
+\end{itemize}
+\item[$\bullet$] Double normal except for the impingement survey (Selectivity = 1.0 for all ages)
+\item[$\bullet$] Fisheries selectivity parameters estimated for commercial hook-and-line, receational private, recreational party/charter, and recreational discard fleets
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Selectivity}
+
+\begin{itemize}
+\item[$\bullet$] Commercial gillnet and trawl fleets mirrored to the commercial hook-and-line fleet
+\item[$\bullet$] Recreational CPFV onboard observer retained catch mirrored to the recreational party/charter fleet selecitivty (same boats)
+\item[$\bullet$] Survey selectivity parameters estimated for the POTW and NWFSC trawl surveys
+\item[$\bullet$] The gillnet survey and Bight trawl survey mirrored to the POTW selectivity 
+\end{itemize}
+
+\centering
+\includegraphics[height=4cm]{r4ss/plots_mod1/sel01_multiple_fleets_length1.png}
+
+\end{frame}
+
+\begin{frame}{Selectivity}
+
+\begincols
+ \begincol{.5\textwidth}
+\includegraphics[height=4cm]{r4ss/plots_mod1/sel03_len_timevary_surf_flt1sex1.png}
+
+\includegraphics[height=4cm]{r4ss/plots_mod1/sel03_len_timevary_surf_flt4sex1.png}
+\endcol
+ \begincol{.5\textwidth}
+
+\includegraphics[height=4cm]{r4ss/plots_mod1/sel03_len_timevary_surf_flt5sex1.png}\\
+\includegraphics[height=4cm]{r4ss/plots_mod1/sel09_len_flt6sex1.png}\\
+\endcol
+\endcols
+
+\end{frame}
+
+\begin{frame}{Gear selectivity}
+
+\begincols
+ \begincol{.5\textwidth}
+\includegraphics[height=4cm]{r4ss/plots_mod1/sel09_len_flt7sex1.png}
+
+\endcol
+ \begincol{.5\textwidth}
+\includegraphics[height=4cm]{r4ss/plots_mod1/sel09_len_flt8sex1.png}
+\endcol
+\endcols
+
+\end{frame}
+
+\begin{frame}{Data Weighting}
+
+\begin{itemize}
+\item[$\bullet$] Extra SD estimated for indices
+\item[$\bullet$] Francis weighting applied to length and age data
+\item[$\bullet$] Conducted sensitivities to no weighting and harmonic means
+\end{itemize}
+
+\begincols
+ \begincol{.5\textwidth}
+\includegraphics[height=4cm]{Figures/Data_weighting_spawnb.png} \endcol
+ \begincol{.5\textwidth}
+\includegraphics[height=4cm]{Figures/Data_weighting_Bratio.png} \endcol
+\endcols
+
+\end{frame}
+
+\begin{frame}{Convergence}
+
+\begin{itemize}
+\item[$\bullet$] Confirmed that the Hessian was positive definite
+\item[$\bullet$] Final gradient is $<$0.0001
+\item[$\bullet$] Performed 50 trials using a 'jitter' to assess the model's ability to recover similar likelihood esimates when initialized from dispersed starting points
+\item[$\bullet$] The maximum difference in the likelihood from the jitter runs was 14.68 and 56\% of runs were at the minimum likelihood
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Pre-STAR Base Model Output}
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{rrrlrl}
+  \hline
+ & Year & Spawning biomass (mt) & \~{} 95\% confidence interval & Estimated depletion & \~{} 95\% confidence interval \\ 
+  \hline
+SPB\_2008 & 2008 & 963.57 & (555.81-1371.32) & 0.70 & (0.572-0.837) \\ 
+  SPB\_2009 & 2009 & 927.07 & (539.76-1314.38) & 0.68 & (0.554-0.802) \\ 
+  SPB\_2010 & 2010 & 878.16 & (513.26-1243.07) & 0.64 & (0.526-0.758) \\ 
+  SPB\_2011 & 2011 & 841.15 & (494.98-1187.31) & 0.61 & (0.508-0.722) \\ 
+  SPB\_2012 & 2012 & 814.87 & (483.41-1146.34) & 0.60 & (0.495-0.696) \\ 
+  SPB\_2013 & 2013 & 765.85 & (451.39-1080.3) & 0.56 & (0.465-0.655) \\ 
+  SPB\_2014 & 2014 & 693.82 & (401.18-986.46) & 0.51 & (0.417-0.598) \\ 
+  SPB\_2015 & 2015 & 644.49 & (362.67-926.31) & 0.47 & (0.382-0.561) \\ 
+  SPB\_2016 & 2016 & 681.67 & (382.78-980.56) & 0.50 & (0.399-0.597) \\ 
+  SPB\_2017 & 2017 & 785.33 & (439.85-1130.8) & 0.57 & (0.455-0.694) \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+\end{frame}
+
+\begin{frame}{Pre-STAR Base Model Output}
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{rlrrrrl}
+  \hline
+ & Year & OFL (mt; ABC prior to 2011) & ABC (mt) & ACL (mt; OY prior to 2011) & ACT & Estimated total catch (mt) \\ 
+  \hline
+1 & $\backslash$textbf\{2007\} & 219 &  & 175 &  & 139.583 \\ 
+  2 & $\backslash$textbf\{2008\} & 219 &  & 175 &  & 103.887 \\ 
+  3 & $\backslash$textbf\{2009\} & 175 &  & 175 &  & 113.318 \\ 
+  4 & $\backslash$textbf\{2010\} & 155 &  & 155 &  & 105.968 \\ 
+  5 & $\backslash$textbf\{2011\} & 141 & 135 & 135 &  & 105.215 \\ 
+  6 & $\backslash$textbf\{2012\} & 132 & 126 & 126 &  & 120.008 \\ 
+  7 & $\backslash$textbf\{2013\} & 126 & 120 & 120 &  & 115.142 \\ 
+  8 & $\backslash$textbf\{2014\} & 122 & 117 & 117 &  & 123.822 \\ 
+  9 & $\backslash$textbf\{2015\} & 119 & 114 & 114 &  & 83.8908 \\ 
+  10 & $\backslash$textbf\{2016\} & 117 & 111 & 111 &  & 74.1613 \\ 
+  11 & $\backslash$textbf\{2017\} & 289 & 264 & 150 & 110 & - \\ 
+  12 & $\backslash$textbf\{2018\} & 278 & 254 & 150 & 110 & - \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+\end{frame}
+
+\begin{frame}{Pre-STAR Base Model Output}
+
+Switch to browser for r4SS output
+
+\end{frame}
+
+\section{Uncertainty}\label{uncertainty}
 
 \begin{frame}{Retrospective analysis}
+
+\begincols
+ \begincol{.5\textwidth}
+\includegraphics[height=5cm]{Figures/retro_recdev.png} \endcol
+ \begincol{.5\textwidth}
+\includegraphics[height=5cm]{Figures/retro_spawnb.png} \endcol
+\endcols
+
+\end{frame}
+
+\begin{frame}{Likelihood profiles - natural mortality}
+
+\begincols
+ \begincol{.5\textwidth}
+\includegraphics[height=5cm]{Figures/profile_m_depl.png} \endcol
+ \begincol{.5\textwidth}
+\includegraphics[height=5cm]{Figures/profile_m_like.png}\\
+\endcol
+\endcols
+
+\end{frame}
+
+\begin{frame}{Likelihood profiles - steepness}
+
+\begincols
+ \begincol{.5\textwidth}
+\includegraphics[height=5cm]{Figures/profile_h_depl.png} \endcol
+ \begincol{.5\textwidth}
+\includegraphics[height=5cm]{Figures/profile_h_like.png}\\
+\endcol
+\endcols
+
+\end{frame}
+
+\begin{frame}{Likelihood profiles - \(lnR_0\)}
+
+\begincols
+ \begincol{.5\textwidth}
+\includegraphics[height=5cm]{Figures/profile_R0_depl.png} \endcol
+ \begincol{.5\textwidth}
+\includegraphics[height=5cm]{Figures/profile_R0_like.png}\\
+\endcol
+\endcols
 
 \end{frame}
 
 \begin{frame}{Sensitivities}
 
+\begincols
+ \begincol{.5\textwidth}
+\includegraphics[height=5cm]{Figures/sensitivity_spawnbio.png} \endcol
+ \begincol{.5\textwidth}
+\includegraphics[height=5cm]{Figures/sensitivity1_spawnbio.png}\\
+\endcol
+\endcols
+
+\end{frame}
+
+\begin{frame}{Sensitivities}
+
+\begincols
+ \begincol{.5\textwidth}
+\includegraphics[height=5cm]{Figures/sensitivity2_spawnbio.png} \endcol
+ \begincol{.5\textwidth}
+
+\endcol
+\endcols
+
 \end{frame}
 
 \section{Appendix}\label{appendix}
 
-\begin{frame}{Length composition}\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt1mkt2.png}\end{frame}
+\begin{frame}{Length composition fits}\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt1mkt2.png}\end{frame}
 
-\begin{frame}{Length composition}\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt2mkt2.png}\end{frame}
+\begin{frame}{Length composition fits}\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt2mkt2.png}\end{frame}
 
-\begin{frame}{Length composition}\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt3mkt2.png}\end{frame}
+\begin{frame}{Length composition fits}\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt3mkt2.png}\end{frame}
 
-\begin{frame}{Length composition}\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt4mkt2.png}\end{frame}
+\begin{frame}{Length composition fits}\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt4mkt2.png}\end{frame}
 
-\begin{frame}{Length composition}\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt5mkt2_page1.png}\end{frame}
+\begin{frame}{Length composition fits}\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt5mkt2_page1.png}\end{frame}
 
-\begin{frame}{Length composition}\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt5mkt2_page2.png}\end{frame}
+\begin{frame}{Length composition fits}\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt5mkt2_page2.png}\end{frame}
 
-\begin{frame}{Length composition}\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt6mkt2.png}\end{frame}
+\begin{frame}{Length composition fits}\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt6mkt2.png}\end{frame}
 
-\begin{frame}{Length composition}\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt7mkt2_page1.png}\end{frame}
+\begin{frame}{Length composition fits}\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt7mkt2_page1.png}\end{frame}
 
-\begin{frame}{Length composition}\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt7mkt2_page2.png}\end{frame}
+\begin{frame}{Length composition fits}\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt7mkt2_page2.png}\end{frame}
 
-\begin{frame}{Length composition}\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt8mkt0.png}\end{frame}
+\begin{frame}{Length composition fits}\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt8mkt0.png}\end{frame}
 
-\begin{frame}{Length composition}\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt9mkt2.png}\end{frame}
+\begin{frame}{Length composition fits}\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt9mkt2.png}\end{frame}
 
-\begin{frame}{Length composition}\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt10mkt2.png}\end{frame}
+\begin{frame}{Length composition fits}\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt10mkt2.png}\end{frame}
 
-\begin{frame}{Length composition}\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt11mkt2.png}\end{frame}
+\begin{frame}{Length composition fits}\includegraphics{./r4ss/plots_mod1/comp_lenfit_flt11mkt2.png}\end{frame}
+
+\begin{frame}{Hull method (Onboard observer index)}
+
+\includegraphics{Figures/hull_method.png}
+
+\end{frame}
+
+\begin{frame}{VAST diagnostics}
+
+\begincols
+ \begincol{.5\textwidth}
+
+\includegraphics{Figures/Fleet8_encounter_pearson.png}
+
+\endcol
+ \begincol{.5\textwidth}
+
+\includegraphics{Figures/Fleet8_catchrate_pearson.png}\\
+\endcol
+\endcols
+
+\end{frame}
 
 \end{document}
