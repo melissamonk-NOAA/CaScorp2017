@@ -164,7 +164,7 @@
 \item[$\bullet$] Migration to spawning grounds, exhibit explosive breeding behavior just before dawn
 \item[$\bullet$] External fertilization, females produce hollow gelatenous single-layer floating egg matrix
 \item[$\bullet$] Eggs hatch after about 5 days
-\item[$\bullet$] Juveniles settle at less than 2cm 
+\item[$\bullet$] Juveniles settle at less than 2 cm 
 \end{itemize}
 
 \centering
@@ -189,6 +189,7 @@
 
 \begincols
  \begincol{.5\textwidth} \includegraphics{Figures/Distribution_map.png}
+
 \endcol
  \begincol{.5\textwidth} \includegraphics{Figures/assess_region_map.png}
 \endcol
@@ -283,6 +284,11 @@ Pre-STAR Base Model
 
 \centering
 \includegraphics{r4ss/plots_mod1/catch2 landings stacked.png}
+\#\#Regulations \begincols
+ \begincol{.4\textwidth} \includegraphics{Figures/Com_regs.png} \endcol
+ \begincol{.55\textwidth} \includegraphics{Figures/Rec_regs.pdf}\\
+\endcol
+\endcols
 
 \end{frame}
 
@@ -307,7 +313,7 @@ Pre-STAR Base Model
 \end{itemize}
 
 \endcol
- \begincol{.55\textwidth}
+ \begincol{.6\textwidth}
 \includegraphics[totalheight=0.65\textheight]{California_scorpionfish_2017_files/figure-latex/unnamed-chunk-16-1.pdf}\\
 \endcol
 \endcols
@@ -363,7 +369,7 @@ Recreational PR dockside CPUE & 2004-2016 & No & delta-GLM (bin-lognormal) \\
   Sanitation district CPUE & 1970-2016 & Yes & delta-GLM (bin-lognormal) \\ 
   NWFSC trawl survey CPUE & 2003-2016 & Yes & VAST \\ 
   CSUN/VRG Gillnet survey CPUE & 1995-2008 & Yes & delta-GLM (bin-lognormal) \\ 
-  Southern Califrnia Bight trawl survey CPUE & '94, '98, '03, '08, '13 & Yes & delta-GLM (bin-lognormal) \\ 
+  Southern California Bight trawl survey CPUE & '94, '98, '03, '08, '13 & Yes & delta-GLM (bin-lognormal) \\ 
   Onboard observer retained catch CPUE & 2002-2016 & No & delta-GLM (bin-lognormal) \\ 
    \hline
 \end{tabular}
@@ -380,7 +386,7 @@ Recreational PR dockside CPUE & 2004-2016 & No & delta-GLM (bin-lognormal) \\
 \item[$\bullet$] Approach used for all indices excpet the NWFSC trawl survey and the CPFV logbook 
 \item[$\bullet$] Two-part model
 \begin{itemize}
-\item[$\circ$] Binomial fir to the presence-absence data
+\item[$\circ$] Binomial for to the presence-absence data
 \item[$\circ$] Lognormal of Gamma fit to positives
 \end{itemize}
 \item[$\bullet$] General approach 
@@ -499,7 +505,7 @@ All CA data & No filter & 1,164,662 \\
   Year & Remove 2017, remaining years 1980-2016 & 929,781 \\ 
   Region & Remove trips north of Pt. Conception and in Mexico & 568,222 \\ 
   Fish encountered & Remove trips reporting number of retained fish greater than in the 99\% quantile ($>$325 fish) & 564,433 \\ 
-  Target species & Remove trips targeting sharkes, striped bass, sturgeon, tun, misc. bay, and potluck & 558,872 \\ 
+  Target species & Remove trips targeting sharkes, striped bass, sturgeon, tuna, misc. bay, and potluck & 558,872 \\ 
   Single-species trips & Filter trips reporting catches of only species and that one species in $<$100 trips & 558,833 \\ 
   Offshore trips & Remove trips catching yellowtail, tunas, and dolphinfish that were not designated as offshore trips & 475,492 \\ 
   Vessel & Remove trips by vessels that had fewer than 10 trips catching scorpionfish & 466,023 \\ 
@@ -558,6 +564,7 @@ Year & 1918470 \\
 \item[$\bullet$] No MRFSS sampling from 1990-1992
 \item[$\bullet$] Index sensitive to Stephens-MacCall threshold
 \item[$\bullet$] Dockside index estimate for 1989 is high and anomolous
+\item[$\bullet$] Data redundant with the CPFV logbook index
 \item[$\bullet$] 1989 estimate lower if a higher threshold is used
 \end{itemize}
 
@@ -573,7 +580,7 @@ Year & 1918470 \\
 
 \begin{frame}{Recreational Onboard Indices}
 
-\textbf{Sample}: Drift-level catch ; \textbf{Years}: 1999-2016;
+\textbf{Sample}: Drift-level catch \textbf{Years}: 1999-2016
 \textbf{Effort}: Angler hours
 
 \begincols
@@ -726,8 +733,8 @@ Model & Binomial & Lognormal \\
 
 \begin{frame}{Publicly Owned Treatment Works Survey Index}
 
-\textbf{Sample}: Four POTWs ; \textbf{Years}: 1970-2016;
-\textbf{Effort}: Tow time
+\textbf{Sample}: Four POTWs \textbf{Years}: 1970-2016 \textbf{Effort}:
+Tow time
 
 Number of California scorpionfish encountered by POTW and 25 m depth bin
 
@@ -767,7 +774,7 @@ City of Los Angeles & 120 &   0 & 1372 &   0 & 1492 \\
 
 \begin{frame}{Gillnet Survey Index}
 
-\textbf{Sample}: CSUN/VRG survey ; \textbf{Years}: 1995-2008;
+\textbf{Sample}: CSUN/VRG survey \textbf{Years}: 1995-2008
 \textbf{Effort}: Soak time
 
 \begincols
@@ -824,8 +831,8 @@ Model & Binomial & Lognormal \\
 
 \begin{frame}{Southern California Bight Trawl Survey Index}
 
-\textbf{Sample}: Bight Trawl Survey ; \textbf{Years}: 1994, 1998, 2003,
-2008, 2013; \textbf{Effort}: Tow time
+\textbf{Sample}: Bight Trawl Survey \textbf{Years}: 1994, 1998, 2003,
+2008, 2013 \textbf{Effort}: Tow time
 
 \includegraphics[height=7cm]{Figures/Fleet11_SCBSurvey_map.pdf}
 
@@ -885,7 +892,8 @@ Model & Binomial & Lognormal \\
 
 \begin{frame}{NWFSC Trawl Survey Index}
 
-Geostatistical approach Vector Autoregressive Spatio-Temporal model
+Geostatistical approach Vector Autoregressive Spatio-Temporal (VAST)
+model
 
 \begin{itemize}
 \item[$\bullet$] Uses delta-GLMM framework
@@ -896,7 +904,7 @@ Geostatistical approach Vector Autoregressive Spatio-Temporal model
 \item[$\bullet$] Geostatistical approach
 \begin{itemize}
 \item[$\circ$] Divides survey area into fine-scale grids
-\item[$\circ$] Assumes that nearby grids have mroe similar fish density than those further away
+\item[$\circ$] Assumes that nearby grids have more similar fish density than those further away
 \item[$\circ$] Smooths density estimates over the landscape
 \item[$\circ$] Reduces uncertainty in the estimates
 \end{itemize}
@@ -906,7 +914,7 @@ Geostatistical approach Vector Autoregressive Spatio-Temporal model
 
 \begin{frame}{NWFSC Trawl Survey Index}
 
-\textbf{Sample}: California MRFSS and CRFS ; \textbf{Years}: 1980-2003;
+\textbf{Sample}: California MRFSS and CRFS \textbf{Years}: 1980-2003
 \textbf{Effort}: Angler hours
 
 \includegraphics[height=.7\textheight]{Figures/NWFSCtrawl_map.png}
@@ -1063,7 +1071,7 @@ Bight trawl survey
 
 \begin{frame}{NWFSC length and age composition}
 
-\begincols
+Note: females in red and males in blue \begincols
  \begincol{.5\textwidth}
 \includegraphics[height=.5\textheight]{r4ss/plots_mod1/comp_condAALdat_bubflt8mkt0_page1.png}
 \endcol
@@ -1081,7 +1089,7 @@ Bight trawl survey
 \begin{itemize}
 \item[$\bullet$] 2005 assessment used standard length
 \item[$\bullet$] Impingement, POTW, and Bight surveys measure standard length
-\item[$\bullet$] 2017 assessment uses total length (conversion based on a CDFW halibut trawl study;measured both SL and TL)
+\item[$\bullet$] 2017 assessment uses total length (conversion based on a CDFW halibut trawl study; measured both SL and TL)
 \item[$\bullet$] To avoid gaps in TL length bins, TL = SL - 0.5 + U[0,1] 
 \end{itemize}
 
@@ -1092,11 +1100,10 @@ Bight trawl survey
 \begin{frame}{Length data}
 
 POTW lengths \begincols
- \begincol{.5\textwidth}
-\includegraphics[height=.5\textheight]{Figures/Fleet7_Sanitation_lengthboxplots.png}
-\endcol
- \begincol{.5\textwidth}
-\includegraphics[height=.5\textheight]{Figures/Fleet7_Sanitation_length_source.png}\\
+ \begincol{.4\textwidth}
+\includegraphics{Figures/Fleet7_Sanitation_lengthboxplots.png} \endcol
+ \begincol{.6\textwidth}
+\includegraphics{Figures/Fleet7_Sanitation_length_source.png}\\
 \endcol
 \endcols
 
@@ -1157,6 +1164,12 @@ POTW lengths \begincols
 
 \end{frame}
 
+\begin{frame}{Ageing Error}
+
+\includegraphics{Figures/Fleet8_NWFSCTrawl_ageerror2.pdf}
+
+\end{frame}
+
 \begin{frame}{Weight-at-length}
 
 \centering
@@ -1167,10 +1180,10 @@ POTW lengths \begincols
 \begin{frame}{Natural mortality}
 
 \begin{itemize}
-\item[$\bullet$] Prior based on maximum age of 21
-\item[$\bullet$] Lognormal distribution with a median of 0.2715
+\item[$\bullet$] Prior based on maximum age of 21 (maximum observed age was 27, but fish older than 21 were rare in the available ages)
+\item[$\bullet$] Lognormal distribution with a median of 0.2715 (Hamel/Then prior)
 \item[$\bullet$] Base model fixes female natural mortality ($M$)
-\item[$\bullet$] Male $M$ estiamted as offset from female $M$
+\item[$\bullet$] Male $M$ estimated as offset from female $M$
 \item[$\bullet$] Sensitivities explore estimating $M$
 \end{itemize}
 
@@ -1180,7 +1193,7 @@ POTW lengths \begincols
 
 \begin{itemize}
 \item[$\bullet$] Predictive distribution for Pacific rockfish meta-analysis
-\item[$\bullet$] Preior mediant in 2017 for steepness ($h$) = 0.718
+\item[$\bullet$] Prior median in 2017 for steepness ($h$) = 0.718
 \end{itemize}
 
 \centering
@@ -1195,8 +1208,10 @@ POTW lengths \begincols
 \begin{itemize}
 \item[$\bullet$] Stock Synthesis version 3.30.05.04
 \item[$\bullet$] Model starts in 1916, unfished equilibrium catch prior to that
-\item[$\bullet$] sex-specific growth and mortality with female $M$ fixed at 0.2174
+\item[$\bullet$] Sex-specific growth and mortality with female $M$ fixed at 0.2174
 \item[$\bullet$] Steepness fixed at 0.718 (from meta-analysis)
+\item[$\bullet$] Maximum age of 21
+\item[$\bullet$] One cm length bins
 \item[$\bullet$] Recruitment deviations estimated
 \end{itemize}
 
@@ -1220,7 +1235,7 @@ POTW lengths \begincols
 
 \begin{itemize}
 \item[$\bullet$] Commercial gillnet and trawl fleets mirrored to the commercial hook-and-line fleet
-\item[$\bullet$] Recreational CPFV onboard observer retained catch mirrored to the recreational party/charter fleet selecitivty (same boats)
+\item[$\bullet$] Recreational CPFV onboard observer retained catch mirrored to the recreational party/charter fleet selectivity (same boats)
 \item[$\bullet$] Survey selectivity parameters estimated for the POTW and NWFSC trawl surveys
 \item[$\bullet$] The gillnet survey and Bight trawl survey mirrored to the POTW selectivity 
 \end{itemize}
@@ -1247,7 +1262,7 @@ POTW lengths \begincols
 
 \end{frame}
 
-\begin{frame}{Gear selectivity}
+\begin{frame}{Gear Selectivity}
 
 \begincols
  \begincol{.5\textwidth}
@@ -1293,22 +1308,24 @@ POTW lengths \begincols
 
 \begin{table}[ht]
 \centering
-\begin{tabular}{rrrlrl}
+\scalebox{0.8}{
+\begin{tabular}{lp{1in}p{1.2in}p{1in}p{1.2in}}
   \hline
- & Year & Spawning biomass (mt) & \~{} 95\% confidence interval & Estimated depletion & \~{} 95\% confidence interval \\ 
+Year & Spawning biomass (mt) & \~{} 95\% confidence interval & Estimated depletion & \~{} 95\% confidence interval \\ 
   \hline
-SPB\_2008 & 2008 & 963.57 & (555.81-1371.32) & 0.70 & (0.572-0.837) \\ 
-  SPB\_2009 & 2009 & 927.07 & (539.76-1314.38) & 0.68 & (0.554-0.802) \\ 
-  SPB\_2010 & 2010 & 878.16 & (513.26-1243.07) & 0.64 & (0.526-0.758) \\ 
-  SPB\_2011 & 2011 & 841.15 & (494.98-1187.31) & 0.61 & (0.508-0.722) \\ 
-  SPB\_2012 & 2012 & 814.87 & (483.41-1146.34) & 0.60 & (0.495-0.696) \\ 
-  SPB\_2013 & 2013 & 765.85 & (451.39-1080.3) & 0.56 & (0.465-0.655) \\ 
-  SPB\_2014 & 2014 & 693.82 & (401.18-986.46) & 0.51 & (0.417-0.598) \\ 
-  SPB\_2015 & 2015 & 644.49 & (362.67-926.31) & 0.47 & (0.382-0.561) \\ 
-  SPB\_2016 & 2016 & 681.67 & (382.78-980.56) & 0.50 & (0.399-0.597) \\ 
-  SPB\_2017 & 2017 & 785.33 & (439.85-1130.8) & 0.57 & (0.455-0.694) \\ 
+2008 & 963.57 & (555.81-1371.32) & 0.70 & (0.572-0.837) \\ 
+  2009 & 927.07 & (539.76-1314.38) & 0.68 & (0.554-0.802) \\ 
+  2010 & 878.16 & (513.26-1243.07) & 0.64 & (0.526-0.758) \\ 
+  2011 & 841.15 & (494.98-1187.31) & 0.61 & (0.508-0.722) \\ 
+  2012 & 814.87 & (483.41-1146.34) & 0.60 & (0.495-0.696) \\ 
+  2013 & 765.85 & (451.39-1080.3) & 0.56 & (0.465-0.655) \\ 
+  2014 & 693.82 & (401.18-986.46) & 0.51 & (0.417-0.598) \\ 
+  2015 & 644.49 & (362.67-926.31) & 0.47 & (0.382-0.561) \\ 
+  2016 & 681.67 & (382.78-980.56) & 0.50 & (0.399-0.597) \\ 
+  2017 & 785.33 & (439.85-1130.8) & 0.57 & (0.455-0.694) \\ 
    \hline
 \end{tabular}
+}
 \end{table}
 
 \end{frame}
@@ -1317,24 +1334,26 @@ SPB\_2008 & 2008 & 963.57 & (555.81-1371.32) & 0.70 & (0.572-0.837) \\
 
 \begin{table}[ht]
 \centering
-\begin{tabular}{rlrrrrl}
+\scalebox{0.8}{
+\begin{tabular}{p{.9in}p{.9in}p{.9in}p{.9in}p{.9in}p{.9in}}
   \hline
- & Year & OFL (mt; ABC prior to 2011) & ABC (mt) & ACL (mt; OY prior to 2011) & ACT & Estimated total catch (mt) \\ 
+Year & OFL (mt; ABC prior to 2011) & ABC (mt) & ACL (mt; OY prior to 2011) & ACT & Estimated total catch (mt) \\ 
   \hline
-1 & $\backslash$textbf\{2007\} & 219 &  & 175 &  & 139.583 \\ 
-  2 & $\backslash$textbf\{2008\} & 219 &  & 175 &  & 103.887 \\ 
-  3 & $\backslash$textbf\{2009\} & 175 &  & 175 &  & 113.318 \\ 
-  4 & $\backslash$textbf\{2010\} & 155 &  & 155 &  & 105.968 \\ 
-  5 & $\backslash$textbf\{2011\} & 141 & 135 & 135 &  & 105.215 \\ 
-  6 & $\backslash$textbf\{2012\} & 132 & 126 & 126 &  & 120.008 \\ 
-  7 & $\backslash$textbf\{2013\} & 126 & 120 & 120 &  & 115.142 \\ 
-  8 & $\backslash$textbf\{2014\} & 122 & 117 & 117 &  & 123.822 \\ 
-  9 & $\backslash$textbf\{2015\} & 119 & 114 & 114 &  & 83.8908 \\ 
-  10 & $\backslash$textbf\{2016\} & 117 & 111 & 111 &  & 74.1613 \\ 
-  11 & $\backslash$textbf\{2017\} & 289 & 264 & 150 & 110 & - \\ 
-  12 & $\backslash$textbf\{2018\} & 278 & 254 & 150 & 110 & - \\ 
+\textbf{2007} & 219 &  & 175 &  & 139.583 \\ 
+  \textbf{2008} & 219 &  & 175 &  & 103.887 \\ 
+  \textbf{2009} & 175 &  & 175 &  & 113.318 \\ 
+  \textbf{2010} & 155 &  & 155 &  & 105.968 \\ 
+  \textbf{2011} & 141 & 135 & 135 &  & 105.215 \\ 
+  \textbf{2012} & 132 & 126 & 126 &  & 120.008 \\ 
+  \textbf{2013} & 126 & 120 & 120 &  & 115.142 \\ 
+  \textbf{2014} & 122 & 117 & 117 &  & 123.822 \\ 
+  \textbf{2015} & 119 & 114 & 114 &  & 83.8908 \\ 
+  \textbf{2016} & 117 & 111 & 111 &  & 74.1613 \\ 
+  \textbf{2017} & 289 & 264 & 150 & 110 & - \\ 
+  \textbf{2018} & 278 & 254 & 150 & 110 & - \\ 
    \hline
 \end{tabular}
+}
 \end{table}
 
 \end{frame}
@@ -1347,8 +1366,9 @@ Switch to browser for r4SS output
 
 \section{Uncertainty}\label{uncertainty}
 
-\begin{frame}{Retrospective analysis}
+\begin{frame}{Retrospective Analysis}
 
+Retro1 = Remove one year; Retro2 = Remove last two years; etc.
 \begincols
  \begincol{.5\textwidth}
 \includegraphics[height=5cm]{Figures/retro_recdev.png} \endcol
@@ -1358,7 +1378,7 @@ Switch to browser for r4SS output
 
 \end{frame}
 
-\begin{frame}{Likelihood profiles - natural mortality}
+\begin{frame}{Likelihood Profiles - natural mortality}
 
 \begincols
  \begincol{.5\textwidth}
@@ -1370,7 +1390,7 @@ Switch to browser for r4SS output
 
 \end{frame}
 
-\begin{frame}{Likelihood profiles - steepness}
+\begin{frame}{Likelihood Profiles - steepness}
 
 \begincols
  \begincol{.5\textwidth}
@@ -1382,7 +1402,7 @@ Switch to browser for r4SS output
 
 \end{frame}
 
-\begin{frame}{Likelihood profiles - \(lnR_0\)}
+\begin{frame}{Likelihood Profiles - \(lnR_0\)}
 
 \begincols
  \begincol{.5\textwidth}
