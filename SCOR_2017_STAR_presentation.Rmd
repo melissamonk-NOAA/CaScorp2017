@@ -919,6 +919,24 @@ POTW lengths
 \item[$\bullet$] Sensitivities explore estimating $M$
 \end{itemize}
 
+##Natural mortality
+\begincols
+  \begincol{.5\textwidth}
+  Base model - fixed female $M$, male $M$ estimated as offset ($lnR_0$ = 8.16, depl. = 0.574, female $M$ = 0.25714, male $M$ = 0.2077)
+  
+\includegraphics[height=6cm]{r4ss/plots_mod1/ts7_Spawning_biomass_(mt)_with_95_asymptotic_intervals_intervals.png} 
+  \endcol
+  \begincol{.5\textwidth}
+  Base model with one $M$ estimated ($lnR_0$ = 8.54, depl. = 0.595, $M$ = 0.266)
+  
+\includegraphics{Figures/SpawnB_BaseOneM.png}  
+  \endcol
+\endcols
+
+
+
+
+
 ##Steepness: Density-Dependent Recruitment Compensation
 \begin{itemize}
 \item[$\bullet$] Predictive distribution for Pacific rockfish meta-analysis
