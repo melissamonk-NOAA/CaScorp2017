@@ -1282,16 +1282,16 @@ Sensitivities to Likelihood Components and Model Specification
   len_plots = LenComp_mod1[grep("lenfit_flt",LenComp_mod1$file),]
     # Plot all of the length comp plots
       for(i in 1:dim(len_plots)[1]) { 
-        cat('\\begin{frame}{Length composition fits}')
+        cat('\\begin{frame}{Length Composition Fits}')
         cat('\\includegraphics{', len_plots[i, path_col], '}', sep='')
         cat('\\end{frame}')
  }
 ```
 
-##Hull method (Onboard observer index)
+##Hull Method (Onboard observer index)
 \includegraphics{Figures/hull_method.png}
 
-##VAST diagnostics
+##VAST Diagnostics
 \begincols
   \begincol{.5\textwidth}
   
