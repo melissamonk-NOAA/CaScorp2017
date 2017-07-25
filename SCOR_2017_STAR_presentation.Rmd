@@ -172,6 +172,7 @@ Pre-STAR Base Model
 \item[$\bullet$] Re-evaluated fleet definitions
 \item[$\bullet$] Ages now available from the NWFSC trawl survey
 \item[$\bullet$] New indices and length compositions available
+\item[$\bullet$] Newest version of SS allows specification of the minimmum sample size
 \end{itemize}
 
 
@@ -181,17 +182,30 @@ Pre-STAR Base Model
 ##Catches by Fleet
 \centering
 ![Catch history of `r spp` in the `r mod1_label`. \label{fig:r4ss_catches}](r4ss/plots_mod1/catch2 landings stacked.png)
+
 ##Regulations
-\textbf{1999}: 10-in min. size limit
-\begincols
+  \textbf{Recreational} 
+  \begin{itemize}
+  \item[\textbf{2000}] 10-in min. size limit, 3 hooks and 1 line   
+  \item[\textbf{2001}] 2 hooks and 1 line, Cowcod conservation area  
+  \item[\textbf{2002}] Various season length restrictions  
+  \item[\textbf{2003}] 20-30 fm depth restriction in 2003, otherwise post-2001 unrestricted or 50 or 60 fm, 5 fish bag limit  
+  \end{itemize}
+  
+\textbf{Commercial}  
+    \begin{itemize}
+  \item[\textbf{1999}] 10-in min. size limit, Nearshore fishery permit with restricted access at 1100 permits
+  \item[\textbf{3003}]  Nearshore fishery permit with restricted access at 200 permits
+  \end{itemize}
+
+##Regulations - depth and closures
+Commercial (left) and Recreational (right)
+  \begincols
   \begincol{.4\textwidth}
    \includegraphics{Figures/Com_regs.png}
 \endcol
-  \begincol{.55\textwidth}
-  \textbf{2000}: 3 hooks and 1 line
-  \textbf{2001}: 2 hooks and 1 line
-  \textbf{2004-2005}: Fishery closures
-    \includegraphics{Figures/Rec_regs.pdf}  
+  \begincol{.6\textwidth}
+     \includegraphics{Figures/Rec_regs.pdf}  
     \endcol
 \endcols
 
@@ -782,7 +796,7 @@ Commercial gillnet
 \endcols
 
 
-##Recreational fishery length composition
+##Recreational fishery Length Composition
 \begincols
   \begincol{.5\textwidth}
   Recreational private fleet
@@ -799,7 +813,7 @@ Recreational party/charter fleet
   \endcol
 \endcols
 
-##Research length composition
+##Research Length Composition
 
 \begincols
   \begincol{.5\textwidth}
@@ -818,7 +832,7 @@ Bight trawl survey
   \endcol
 \endcols
 
-##NWFSC length and age composition
+##NWFSC Length and Age Composition
 Note: females in red and males in blue
 \begincols
   \begincol{.5\textwidth}
@@ -854,7 +868,7 @@ POTW lengths
 \endcols
 
 
-##Length-at-age
+##Length-at-Age
 
 \begincols
   \begincol{.4\textwidth}
@@ -866,7 +880,7 @@ POTW lengths
 \endcols
 
 
-##Length-at-age
+##Length-at-Age
 
 \begincols
   \begincol{.4\textwidth}
@@ -910,12 +924,12 @@ POTW lengths
 
 
 
-##Weight-at-length
+##Weight-at-Length
 \centering
  ![Comparison of the California scorpionfish weight-length curves from Love et al. (1987) and those estimated from the NWFSC trawl survey.  The latter is used in this assessment. \label{fig:Length_weight}](Figures/Length_weight.png)
  
 
-##Natural mortality
+##Natural Mortality
 \begin{itemize}
 \item[$\bullet$] Prior based on maximum age of 21 (maximum observed age was 27, but fish older than 21 were rare in the available ages)
 \item[$\bullet$] Lognormal distribution with a median of 0.25714 (Hamel/Then prior)
@@ -924,7 +938,7 @@ POTW lengths
 \item[$\bullet$] Sensitivities explore estimating $M$
 \end{itemize}
 
-##Natural mortality
+##Natural Mortality
 \begincols
   \begincol{.5\textwidth}
   Base model - fixed female $M$, male $M$ estimated as offset ($lnR_0$ = 8.16, depl. = 0.574, female $M$ = 0.25714, male $M$ = 0.2077)
@@ -959,8 +973,14 @@ POTW lengths
 \begin{itemize}
 \item[$\bullet$] Stock Synthesis version 3.30.05.04
 \item[$\bullet$] Model starts in 1916, unfished equilibrium catch prior to that
-\item[$\bullet$] Sex-specific growth and mortality with female $M$ fixed at 0.2174
+\item[$\bullet$] Sex-specific growth and mortality with female $M$ fixed at 0.2571 (prior) and male $M$ offset is estimated at -0.2134 (male $M$ = 0.2077)
+\begin{itemize}
+\item[$\circ$] $M$ fixed at 0.25 for both sexes in 2005 assessment
+\end{itemize}
 \item[$\bullet$] Steepness fixed at 0.718 (from meta-analysis)
+\begin{itemize}
+\item[$\circ$] $h$ fixed at 0.7 in 2005 assessment
+\end{itemize}
 \item[$\bullet$] Maximum age of 21
 \item[$\bullet$] One cm length bins
 \item[$\bullet$] Recruitment deviations estimated
@@ -1039,6 +1059,83 @@ POTW lengths
 \item[$\bullet$] The maximum difference in the likelihood from the jitter runs was 14.68 and 56\% of runs were at the minimum likelihood
 \end{itemize}
 
+##Pre-STAR Base Model Output (page 1)
+```{r results='asis'}
+    mod_params1 = mod_params[1:24,-1]
+
+  colnames(mod_params1) = c( 'Parameter',
+                             'Value',
+                             'Phase',
+                             'Bounds',
+                             'Status',
+                             'SD',
+                             'Prior (Exp.Val, SD)')
+  
+  print(xtable(mod_params1,
+               align='lp{1.9in}p{.6in}p{.6in}p{.9in}p{.4in}p{.4in}p{2in}',
+        digits=c(0,0,3,0,3,0,3,0)),
+        scalebox=.5,
+        include.rownames = FALSE)
+```
+
+
+##Pre-STAR Base Model Output (page 2)
+```{r results='asis'}
+    mod_params1 = mod_params[25:50,-1]
+
+  colnames(mod_params1) = c( 'Parameter',
+                             'Value',
+                             'Phase',
+                             'Bounds',
+                             'Status',
+                             'SD',
+                             'Prior (Exp.Val, SD)')
+  
+  print(xtable(mod_params1,
+               align='lp{1.9in}p{.6in}p{.6in}p{.9in}p{.4in}p{.4in}p{2in}',
+        digits=c(0,0,3,0,3,0,3,0)),
+        scalebox=.5,
+        include.rownames = FALSE)
+```
+
+##Pre-STAR Base Model Output (page 3)
+```{r results='asis'}
+    mod_params1 = mod_params[51:75,-1]
+
+  colnames(mod_params1) = c( 'Parameter',
+                             'Value',
+                             'Phase',
+                             'Bounds',
+                             'Status',
+                             'SD',
+                             'Prior (Exp.Val, SD)')
+  
+  print(xtable(mod_params1,
+               align='lp{1.9in}p{.6in}p{.6in}p{.9in}p{.4in}p{.4in}p{2.1in}',
+               digits=c(0,0,3,0,3,0,3,0)),
+        scalebox=.5,
+        include.rownames = FALSE)
+```
+
+
+##Pre-STAR Base Model Output (page 4)
+```{r results='asis'}
+    mod_params1 = mod_params[75:100,-1]
+
+  colnames(mod_params1) = c( 'Parameter',
+                             'Value',
+                             'Phase',
+                             'Bounds',
+                             'Status',
+                             'SD',
+                             'Prior (Exp.Val, SD)')
+  
+  print(xtable(mod_params1,
+               align='lp{2.5in}p{.6in}p{.6in}p{.9in}p{.4in}p{.4in}p{.4in}',
+               digits=c(0,0,3,0,3,0,3,0)),
+        scalebox=.5,
+        include.rownames = FALSE)
+```
 
 
 ##Pre-STAR Base Model Output
@@ -1081,7 +1178,7 @@ Retro1 = Remove one year; Retro2 = Remove last two years; etc.
 \endcols
 
 
-##Likelihood Profiles - natural mortality
+##Likelihood Profiles - Natural Mortality
 \begincols
   \begincol{.5\textwidth}
 \includegraphics[height=5cm]{Figures/profile_m_depl.png}
@@ -1092,7 +1189,7 @@ Retro1 = Remove one year; Retro2 = Remove last two years; etc.
 \endcols
 
 
-##Likelihood Profiles - steepness
+##Likelihood Profiles - Steepness
 \begincols
   \begincol{.5\textwidth}
 \includegraphics[height=5cm]{Figures/profile_h_depl.png}

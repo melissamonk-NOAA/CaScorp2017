@@ -274,6 +274,7 @@ Pre-STAR Base Model
 \item[$\bullet$] Re-evaluated fleet definitions
 \item[$\bullet$] Ages now available from the NWFSC trawl survey
 \item[$\bullet$] New indices and length compositions available
+\item[$\bullet$] Newest version of SS allows specification of the minimmum sample size
 \end{itemize}
 
 \end{frame}
@@ -284,11 +285,34 @@ Pre-STAR Base Model
 
 \centering
 \includegraphics{r4ss/plots_mod1/catch2 landings stacked.png}
-\#\#Regulations \textbf{1999}: 10-in min. size limit \begincols
+
+\end{frame}
+
+\begin{frame}{Regulations}
+
+\textbf{Recreational}
+
+\begin{itemize}
+  \item[\textbf{2000}] 10-in min. size limit, 3 hooks and 1 line   
+  \item[\textbf{2001}] 2 hooks and 1 line, Cowcod conservation area  
+  \item[\textbf{2002}] Various season length restrictions  
+  \item[\textbf{2003}] 20-30 fm depth restriction in 2003, otherwise post-2001 unrestricted or 50 or 60 fm, 5 fish bag limit  
+  \end{itemize}
+
+\textbf{Commercial}\\
+
+\begin{itemize}
+  \item[\textbf{1999}] 10-in min. size limit, Nearshore fishery permit with restricted access at 1100 permits
+  \item[\textbf{3003}]  Nearshore fishery permit with restricted access at 200 permits
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Regulations - depth and closures}
+
+Commercial (left) and Recreational (right) \begincols
  \begincol{.4\textwidth} \includegraphics{Figures/Com_regs.png} \endcol
- \begincol{.55\textwidth} \textbf{2000}: 3 hooks and 1 line
-\textbf{2001}: 2 hooks and 1 line \textbf{2004-2005}: Fishery closures
-\includegraphics{Figures/Rec_regs.pdf}\\
+ \begincol{.6\textwidth} \includegraphics{Figures/Rec_regs.pdf}\\
 \endcol
 \endcols
 
@@ -1034,7 +1058,7 @@ Commercial gillnet
 
 \end{frame}
 
-\begin{frame}{Recreational fishery length composition}
+\begin{frame}{Recreational fishery Length Composition}
 
 \begincols
  \begincol{.5\textwidth} Recreational private fleet
@@ -1052,7 +1076,7 @@ Recreational dead discards
 
 \end{frame}
 
-\begin{frame}{Research length composition}
+\begin{frame}{Research Length Composition}
 
 \begincols
  \begincol{.5\textwidth} POTW survey
@@ -1071,7 +1095,7 @@ Bight trawl survey
 
 \end{frame}
 
-\begin{frame}{NWFSC length and age composition}
+\begin{frame}{NWFSC Length and Age Composition}
 
 Note: females in red and males in blue \begincols
  \begincol{.5\textwidth}
@@ -1111,7 +1135,7 @@ POTW lengths \begincols
 
 \end{frame}
 
-\begin{frame}{Length-at-age}
+\begin{frame}{Length-at-Age}
 
 \begincols
  \begincol{.4\textwidth}
@@ -1123,7 +1147,7 @@ POTW lengths \begincols
 
 \end{frame}
 
-\begin{frame}{Length-at-age}
+\begin{frame}{Length-at-Age}
 
 \begincols
  \begincol{.4\textwidth}
@@ -1172,14 +1196,14 @@ POTW lengths \begincols
 
 \end{frame}
 
-\begin{frame}{Weight-at-length}
+\begin{frame}{Weight-at-Length}
 
 \centering
  \includegraphics{Figures/Length_weight.png}
 
 \end{frame}
 
-\begin{frame}{Natural mortality}
+\begin{frame}{Natural Mortality}
 
 \begin{itemize}
 \item[$\bullet$] Prior based on maximum age of 21 (maximum observed age was 27, but fish older than 21 were rare in the available ages)
@@ -1191,7 +1215,7 @@ POTW lengths \begincols
 
 \end{frame}
 
-\begin{frame}{Natural mortality}
+\begin{frame}{Natural Mortality}
 
 \begincols
  \begincol{.5\textwidth} Base model - fixed female \(M\), male \(M\)
@@ -1228,8 +1252,14 @@ estimated as offset (\(lnR_0\) = 8.16, depl. = 0.574, female \(M\) =
 \begin{itemize}
 \item[$\bullet$] Stock Synthesis version 3.30.05.04
 \item[$\bullet$] Model starts in 1916, unfished equilibrium catch prior to that
-\item[$\bullet$] Sex-specific growth and mortality with female $M$ fixed at 0.2174
+\item[$\bullet$] Sex-specific growth and mortality with female $M$ fixed at 0.2571 (prior) and male $M$ offset is estimated at -0.2134 (male $M$ = 0.2077)
+\begin{itemize}
+\item[$\circ$] $M$ fixed at 0.25 for both sexes in 2005 assessment
+\end{itemize}
 \item[$\bullet$] Steepness fixed at 0.718 (from meta-analysis)
+\begin{itemize}
+\item[$\circ$] $h$ fixed at 0.7 in 2005 assessment
+\end{itemize}
 \item[$\bullet$] Maximum age of 21
 \item[$\bullet$] One cm length bins
 \item[$\bullet$] Recruitment deviations estimated
@@ -1324,6 +1354,171 @@ estimated as offset (\(lnR_0\) = 8.16, depl. = 0.574, female \(M\) =
 
 \end{frame}
 
+\begin{frame}{Pre-STAR Base Model Output (page 1)}
+
+\begin{table}[ht]
+\centering
+\scalebox{0.5}{
+\begin{tabular}{p{1.9in}p{.6in}p{.6in}p{.9in}p{.4in}p{.4in}p{2in}}
+  \hline
+Parameter & Value & Phase & Bounds & Status & SD & Prior (Exp.Val, SD) \\ 
+  \hline
+NatM\_p\_1\_Fem\_GP\_1 & 0.257 & -3 & (0.01, 1) &  &  & Log\_Norm (-1.3581, 0.438438) \\ 
+  L\_at\_Amin\_Fem\_GP\_1 & 12.434 & 2 & (2, 30) & OK & 0.626 & None \\ 
+  L\_at\_Amax\_Fem\_GP\_1 & 33.312 & 2 & (30, 50) & OK & 0.720 & None \\ 
+  VonBert\_K\_Fem\_GP\_1 & 0.250 & 2 & (0.05, 0.5) & OK & 0.024 & None \\ 
+  CV\_young\_Fem\_GP\_1 & 0.089 & 3 & (0.02, 0.5) & OK & 0.019 & None \\ 
+  CV\_old\_Fem\_GP\_1 & 0.112 & 3 & (0.02, 0.75) & OK & 0.008 & None \\ 
+  Wtlen\_1\_Fem & 0.000 & -3 & (-3, 3) &  &  & None \\ 
+  Wtlen\_2\_Fem & 3.058 & -3 & (2, 4) &  &  & None \\ 
+  Mat50\%\_Fem & 18.000 & -3 & (10, 30) &  &  & None \\ 
+  Mat\_slope\_Fem & -1.200 & -3 & (-3, 3) &  &  & None \\ 
+  Eggs/kg\_inter\_Fem & 1.000 & -3 & (-3, 3) &  &  & None \\ 
+  Eggs/kg\_slope\_wt\_Fem & 0.000 & -3 & (-3, 3) &  &  & None \\ 
+  NatM\_p\_1\_Mal\_GP\_1 & -0.213 & 2 & (-1, 1) & OK & 0.049 & Normal (0, 99) \\ 
+  L\_at\_Amin\_Mal\_GP\_1 & 0.000 & -2 & (-3, 3) &  &  & None \\ 
+  L\_at\_Amax\_Mal\_GP\_1 & -0.159 & 2 & (-3, 3) & OK & 0.026 & None \\ 
+  VonBert\_K\_Mal\_GP\_1 & -0.295 & 2 & (-3, 3) & OK & 0.183 & None \\ 
+  CV\_young\_Mal\_GP\_1 & 1.300 & 3 & (-3, 3) & OK & 0.218 & None \\ 
+  CV\_old\_Mal\_GP\_1 & -0.452 & 3 & (-3, 3) & OK & 0.158 & None \\ 
+  Wtlen\_1\_Mal & 0.000 & -5 & (0, 1) &  &  & None \\ 
+  Wtlen\_2\_Mal & 2.981 & -5 & (2, 4) &  &  & None \\ 
+  CohortGrowDev & 1.000 & -1 & (1, 1) &  &  & None \\ 
+  FracFemale\_GP\_1 & 0.500 & -4 & (0.000001, 0.999999) &  &  & None \\ 
+  SR\_LN(R0) & 8.160 & 1 & (0, 31) & OK & 0.157 & None \\ 
+  SR\_BH\_steep & 0.718 & -2 & (0.21, 0.99) &  &  & Full\_Beta (0.718, 0.158) \\ 
+   \hline
+\end{tabular}
+}
+\end{table}
+
+\end{frame}
+
+\begin{frame}{Pre-STAR Base Model Output (page 2)}
+
+\begin{table}[ht]
+\centering
+\scalebox{0.5}{
+\begin{tabular}{p{1.9in}p{.6in}p{.6in}p{.9in}p{.4in}p{.4in}p{2in}}
+  \hline
+Parameter & Value & Phase & Bounds & Status & SD & Prior (Exp.Val, SD) \\ 
+  \hline
+SR\_sigmaR & 0.600 & -2 & (0, 2) &  &  & None \\ 
+  SR\_regime & 0.000 & -4 & (-5, 5) &  &  & None \\ 
+  SR\_autocorr & 0.000 & -3 & (0, 0.5) &  &  & None \\ 
+  LnQ\_base\_RecPR(4) & -6.775 & -1 & (-15, 15) &  &  & None \\ 
+  Q\_extraSD\_RecPR(4) & 0.013 & 4 & (0.0001, 1) & OK & 0.020 & None \\ 
+  LnQ\_base\_RecPC(5) & -11.223 & -1 & (-15, 15) &  &  & None \\ 
+  Q\_extraSD\_RecPC(5) & 0.267 & 4 & (0.0001, 1) & OK & 0.047 & None \\ 
+  LnQ\_base\_RecDD(6) & -10.894 & -1 & (-15, 15) &  &  & None \\ 
+  Q\_extraSD\_RecDD(6) & 0.078 & 4 & (0.0001, 1) & OK & 0.044 & None \\ 
+  LnQ\_base\_Sanitation(7) & -10.544 & -1 & (-15, 15) &  &  & None \\ 
+  Q\_extraSD\_Sanitation(7) & 0.225 & 4 & (0.0001, 1) & OK & 0.047 & None \\ 
+  LnQ\_base\_NWFSCTrawl(8) & -1.023 & -1 & (-15, 15) &  &  & None \\ 
+  Q\_extraSD\_NWFSCTrawl(8) & 0.250 & 4 & (0.0001, 1) & OK & 0.145 & None \\ 
+  LnQ\_base\_GillnetSurvey(9) & -12.050 & -1 & (-15, 15) &  &  & None \\ 
+  Q\_extraSD\_GillnetSurvey(9) & 0.122 & 4 & (0.0001, 1) & OK & 0.070 & None \\ 
+  LnQ\_base\_SCBSurvey(11) & -11.052 & -1 & (-15, 15) &  &  & None \\ 
+  Q\_extraSD\_SCBSurvey(11) & 0.166 & 4 & (0.0001, 1) & OK & 0.142 & None \\ 
+  LnQ\_base\_RecPCOBR(12) & -10.171 & -1 & (-15, 15) &  &  & None \\ 
+  Q\_extraSD\_RecPCOBR(12) & 0.140 & 4 & (0.0001, 1) & OK & 0.046 & None \\ 
+  SizeSel\_P1\_ComHL(1) & 25.963 & 5 & (13, 44) & OK & 2.868 & None \\ 
+  SizeSel\_P2\_ComHL(1) & 15.000 & -3 & (-10, 16) &  &  & None \\ 
+  SizeSel\_P3\_ComHL(1) & 2.761 & 5 & (-1, 10) & OK & 0.954 & None \\ 
+  SizeSel\_P4\_ComHL(1) & 15.000 & -3 & (-1, 16) &  &  & None \\ 
+  SizeSel\_P5\_ComHL(1) & -15.902 & 5 & (-25, -1) & OK & 121.578 & None \\ 
+  SizeSel\_P6\_ComHL(1) & 10.000 & -3 & (-5, 11) &  &  & None \\ 
+  SizeSel\_P1\_ComNet(2) & 1.000 & -2 & (1, 45) &  &  & None \\ 
+   \hline
+\end{tabular}
+}
+\end{table}
+
+\end{frame}
+
+\begin{frame}{Pre-STAR Base Model Output (page 3)}
+
+\begin{table}[ht]
+\centering
+\scalebox{0.5}{
+\begin{tabular}{p{1.9in}p{.6in}p{.6in}p{.9in}p{.4in}p{.4in}p{2.1in}}
+  \hline
+Parameter & Value & Phase & Bounds & Status & SD & Prior (Exp.Val, SD) \\ 
+  \hline
+SizeSel\_P2\_ComNet(2) & 45.000 & -3 & (1, 45) &  &  & None \\ 
+  SizeSel\_P1\_ComTrawl(3) & 1.000 & -2 & (1, 45) &  &  & None \\ 
+  SizeSel\_P2\_ComTrawl(3) & 45.000 & -3 & (1, 45) &  &  & None \\ 
+  SizeSel\_P1\_RecPR(4) & 41.212 & 5 & (13, 44) & OK & 2.054 & None \\ 
+  SizeSel\_P2\_RecPR(4) & 15.000 & -3 & (-10, 16) &  &  & None \\ 
+  SizeSel\_P3\_RecPR(4) & 4.493 & 5 & (-1, 10) & OK & 0.163 & None \\ 
+  SizeSel\_P4\_RecPR(4) & 15.000 & -3 & (-1, 16) &  &  & None \\ 
+  SizeSel\_P5\_RecPR(4) & -8.340 & 5 & (-25, -1) & OK & 0.784 & None \\ 
+  SizeSel\_P6\_RecPR(4) & 10.000 & -3 & (-5, 11) &  &  & None \\ 
+  SizeSel\_P1\_RecPC(5) & 36.624 & 5 & (13, 44) & OK & 1.358 & None \\ 
+  SizeSel\_P2\_RecPC(5) & 15.000 & -3 & (-10, 16) &  &  & None \\ 
+  SizeSel\_P3\_RecPC(5) & 4.473 & 5 & (-1, 10) & OK & 0.158 & None \\ 
+  SizeSel\_P4\_RecPC(5) & 15.000 & -3 & (-1, 16) &  &  & None \\ 
+  SizeSel\_P5\_RecPC(5) & -8.344 & 5 & (-25, -1) & OK & 1.872 & None \\ 
+  SizeSel\_P6\_RecPC(5) & 10.000 & -3 & (-5, 11) &  &  & None \\ 
+  SizeSel\_P1\_RecDD(6) & 24.530 & 5 & (13, 44) & OK & 0.074 & None \\ 
+  SizeSel\_P2\_RecDD(6) & -11.238 & 4 & (-15, 16) & OK & 57.708 & None \\ 
+  SizeSel\_P3\_RecDD(6) & 2.727 & 4 & (-1, 10) & OK & 0.518 & None \\ 
+  SizeSel\_P4\_RecDD(6) & -9.302 & 4 & (-20, 5) & OK & 65.524 & None \\ 
+  SizeSel\_P5\_RecDD(6) & -2.156 & 5 & (-25, 3) & OK & 0.472 & None \\ 
+  SizeSel\_P6\_RecDD(6) & -1.709 & 4 & (-5, 11) & OK & 0.457 & None \\ 
+  SizeSel\_P1\_Sanitation(7) & 24.627 & 4 & (13, 44) & OK & 0.580 & None \\ 
+  SizeSel\_P2\_Sanitation(7) & 15.000 & -3 & (-10, 16) &  &  & None \\ 
+  SizeSel\_P3\_Sanitation(7) & 3.388 & 4 & (-1, 10) & OK & 0.140 & None \\ 
+  SizeSel\_P4\_Sanitation(7) & 15.000 & -3 & (-1, 16) &  &  & None \\ 
+   \hline
+\end{tabular}
+}
+\end{table}
+
+\end{frame}
+
+\begin{frame}{Pre-STAR Base Model Output (page 4)}
+
+\begin{table}[ht]
+\centering
+\scalebox{0.5}{
+\begin{tabular}{p{2.5in}p{.6in}p{.6in}p{.9in}p{.4in}p{.4in}p{.4in}}
+  \hline
+Parameter & Value & Phase & Bounds & Status & SD & Prior (Exp.Val, SD) \\ 
+  \hline
+SizeSel\_P4\_Sanitation(7) & 15.000 & -3 & (-1, 16) &  &  & None \\ 
+  SizeSel\_P5\_Sanitation(7) & -4.618 & 4 & (-25, 5) & OK & 0.633 & None \\ 
+  SizeSel\_P6\_Sanitation(7) & 10.000 & -3 & (-5, 11) &  &  & None \\ 
+  SizeSel\_P1\_NWFSCTrawl(8) & 24.306 & 4 & (13, 44) & OK & 2.258 & None \\ 
+  SizeSel\_P2\_NWFSCTrawl(8) & 15.000 & -3 & (-10, 16) &  &  & None \\ 
+  SizeSel\_P3\_NWFSCTrawl(8) & 3.652 & 4 & (-1, 10) & OK & 0.558 & None \\ 
+  SizeSel\_P4\_NWFSCTrawl(8) & 15.000 & -3 & (-1, 16) &  &  & None \\ 
+  SizeSel\_P5\_NWFSCTrawl(8) & -12.844 & 4 & (-25, 5) & OK & 166.385 & None \\ 
+  SizeSel\_P6\_NWFSCTrawl(8) & 10.000 & -3 & (-5, 11) &  &  & None \\ 
+  SizeSel\_P1\_GillnetSurvey(9) & 1.000 & -2 & (1, 45) &  &  & None \\ 
+  SizeSel\_P2\_GillnetSurvey(9) & 45.000 & -3 & (1, 45) &  &  & None \\ 
+  SizeSel\_P1\_SCBSurvey(11) & 1.000 & -2 & (1, 45) &  &  & None \\ 
+  SizeSel\_P2\_SCBSurvey(11) & 45.000 & -3 & (1, 45) &  &  & None \\ 
+  SizeSel\_P1\_RecPCOBR(12) & 1.000 & -2 & (1, 45) &  &  & None \\ 
+  SizeSel\_P2\_RecPCOBR(12) & 45.000 & -3 & (1, 45) &  &  & None \\ 
+  SizeSel\_P1\_ComHL(1)\_BLK1repl\_1999 & 28.442 & 6 & (13, 44) & OK & 0.489 & None \\ 
+  SizeSel\_P3\_ComHL(1)\_BLK1repl\_1999 & 2.007 & 6 & (-1, 10) & OK & 0.251 & None \\ 
+  SizeSel\_P1\_RecPR(4)\_BLK2repl\_2000 & 36.584 & 6 & (13, 44) & OK & 1.031 & None \\ 
+  SizeSel\_P1\_RecPR(4)\_BLK2repl\_2006 & 35.815 & 6 & (13, 44) & OK & 0.652 & None \\ 
+  SizeSel\_P3\_RecPR(4)\_BLK2repl\_2000 & 3.602 & 6 & (-1, 10) & OK & 0.165 & None \\ 
+  SizeSel\_P3\_RecPR(4)\_BLK2repl\_2006 & 3.463 & 6 & (-1, 10) & OK & 0.110 & None \\ 
+  SizeSel\_P1\_RecPC(5)\_BLK2repl\_2000 & 31.799 & 6 & (13, 44) & OK & 1.370 & None \\ 
+  SizeSel\_P1\_RecPC(5)\_BLK2repl\_2006 & 26.886 & 6 & (13, 44) & OK & 0.464 & None \\ 
+  SizeSel\_P3\_RecPC(5)\_BLK2repl\_2000 & 3.041 & 6 & (-1, 10) & OK & 0.417 & None \\ 
+  SizeSel\_P3\_RecPC(5)\_BLK2repl\_2006 & 1.066 & 6 & (-1, 10) & OK & 0.412 & None \\ 
+   &  &  &  &  &  &  \\ 
+   \hline
+\end{tabular}
+}
+\end{table}
+
+\end{frame}
+
 \begin{frame}{Pre-STAR Base Model Output}
 
 \begin{table}[ht]
@@ -1398,7 +1593,7 @@ Retro1 = Remove one year; Retro2 = Remove last two years; etc.
 
 \end{frame}
 
-\begin{frame}{Likelihood Profiles - natural mortality}
+\begin{frame}{Likelihood Profiles - Natural Mortality}
 
 \begincols
  \begincol{.5\textwidth}
@@ -1410,7 +1605,7 @@ Retro1 = Remove one year; Retro2 = Remove last two years; etc.
 
 \end{frame}
 
-\begin{frame}{Likelihood Profiles - steepness}
+\begin{frame}{Likelihood Profiles - Steepness}
 
 \begincols
  \begincol{.5\textwidth}
