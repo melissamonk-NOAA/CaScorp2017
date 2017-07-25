@@ -718,11 +718,7 @@ Comparison of length data by sex and depth (left) and latitude (right)
 
 \begincols
   \begincol{.5\textwidth}
-\begin{itemize}
-\item[$\bullet$] Text here
-\item[$\bullet$] Text here
-\item[$\bullet$] Text here
-\end{itemize}
+\includegraphics[height=4cm]{Figures/Fleet8_NWFSCtrawl_CompareVAST.png}
   \endcol
   \begincol{.5\textwidth}
 \includegraphics[height=4cm]{Figures/NWFSCtrawl_QQ.jpg}
@@ -917,9 +913,9 @@ POTW lengths
 ##Natural mortality
 \begin{itemize}
 \item[$\bullet$] Prior based on maximum age of 21 (maximum observed age was 27, but fish older than 21 were rare in the available ages)
-\item[$\bullet$] Lognormal distribution with a median of 0.2715 (Hamel/Then prior)
-\item[$\bullet$] Base model fixes female natural mortality ($M$)
-\item[$\bullet$] Male $M$ estimated as offset from female $M$
+\item[$\bullet$] Lognormal distribution with a median of 0.25714 (Hamel/Then prior)
+\item[$\bullet$] Base model fixes female natural mortality ($M$ = 0.25714)
+\item[$\bullet$] Male $M$ estimated as offset from female (male $M$ = 0.207733)
 \item[$\bullet$] Sensitivities explore estimating $M$
 \end{itemize}
 
@@ -1033,8 +1029,8 @@ POTW lengths
 ##Pre-STAR Base Model Output
 ```{r results = 'asis'}
    print(xtable(mngmnt,
-                align = 'lp{.9in}p{.9in}p{.9in}p{.9in}p{.9in}p{.9in}'), 
-         scalebox=.8,
+                align = 'lp{.8in}p{.8in}p{.8in}p{.8in}p{.8in}p{.8in}'), 
+         scalebox=.7,
          include.rownames=FALSE, 
          sanitize.text.function = function(x){x})  
 ```
