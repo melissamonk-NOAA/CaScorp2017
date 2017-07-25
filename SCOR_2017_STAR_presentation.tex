@@ -284,9 +284,11 @@ Pre-STAR Base Model
 
 \centering
 \includegraphics{r4ss/plots_mod1/catch2 landings stacked.png}
-\#\#Regulations \begincols
+\#\#Regulations \textbf{1999}: 10-in min. size limit \begincols
  \begincol{.4\textwidth} \includegraphics{Figures/Com_regs.png} \endcol
- \begincol{.55\textwidth} \includegraphics{Figures/Rec_regs.pdf}\\
+ \begincol{.55\textwidth} \textbf{2000}: 3 hooks and 1 line
+\textbf{2001}: 2 hooks and 1 line \textbf{2004-2005}: Fishery closures
+\includegraphics{Figures/Rec_regs.pdf}\\
 \endcol
 \endcols
 
@@ -684,6 +686,12 @@ Model & Binomial & Lognormal \\
 \includegraphics{r4ss/plots_mod1/index4_logcpuedata_RecPCOBR.png}
 \endcol
 \endcols
+
+\end{frame}
+
+\begin{frame}{Recreational Onboard Indices}
+
+\includegraphics{Figures/Fleets6_12_index_compare.png}
 
 \end{frame}
 
@@ -1349,7 +1357,7 @@ Year & Spawning biomass (mt) & \~{} 95\% confidence interval & Estimated depleti
 \scalebox{0.7}{
 \begin{tabular}{p{.8in}p{.8in}p{.8in}p{.8in}p{.8in}p{.8in}}
   \hline
-Year & OFL (mt; ABC prior to 2011) & ABC (mt) & ACL (mt; OY prior to 2011) & ACT & Estimated total catch (mt) \\ 
+Year & OFL & ABC & ACL & ACT & Total Catch \\ 
   \hline
 \textbf{2007} & 219 &  & 175 &  & 139.583 \\ 
   \textbf{2008} & 219 &  & 175 &  & 103.887 \\ 
@@ -1428,6 +1436,62 @@ Retro1 = Remove one year; Retro2 = Remove last two years; etc.
 
 \begin{frame}{Sensitivities}
 
+Sensitivities to Likelihood Components and Model Specification
+\begincols
+ \begincol{.5\textwidth} \includegraphics{Figures/Sensitivity_All.pdf}
+\endcol
+ \begincol{.5\textwidth}
+
+\begin{itemize}
+\item Remove fleets, only one index, or length composition only
+\item Sensitivity relative to the base model
+\item Boxes are the 95\% CI from the base model
+\item Metrics
+\begin{itemize}
+\item $SB_0$ Population scale
+\item $SB_{2017}$ Population scale
+\item $SB_{2017}/SB_{0}$ Depletion/Population status
+\item $MSY_{SPR50\%}$ Yield/Productivity/scale
+\end{itemize}
+\end{itemize}
+
+\endcol
+\endcols
+
+\end{frame}
+
+\begin{frame}{Sensitivities - \(SB_0\)}
+
+\includegraphics{Figures/Sensitivity_SB0.pdf}
+
+\end{frame}
+
+\begin{frame}{Sensitivities - \(SB_{2017}\)}
+
+\includegraphics{Figures/Sensitivity_SB2017.pdf}
+
+\end{frame}
+
+\begin{frame}{Sensitivities - Depletion}
+
+\includegraphics{Figures/Sensitivity_depl.pdf}
+
+\end{frame}
+
+\begin{frame}{Sensitivities - Yield at \(SPR_{50\%}\)}
+
+\includegraphics{Figures/Sensitivity_Yield.pdf}
+
+\end{frame}
+
+\begin{frame}{Sensitivities - All}
+
+\includegraphics{Figures/Sensitivity_Yield.pdf}
+
+\end{frame}
+
+\begin{frame}{Sensitivities}
+
 \begincols
  \begincol{.5\textwidth}
 \includegraphics[height=5cm]{Figures/sensitivity_spawnbio.png} \endcol
@@ -1440,13 +1504,7 @@ Retro1 = Remove one year; Retro2 = Remove last two years; etc.
 
 \begin{frame}{Sensitivities}
 
-\begincols
- \begincol{.5\textwidth}
-\includegraphics[height=5cm]{Figures/sensitivity2_spawnbio.png} \endcol
- \begincol{.5\textwidth}
-
-\endcol
-\endcols
+\includegraphics[height=5cm]{Figures/sensitivity2_spawnbio.png}
 
 \end{frame}
 
