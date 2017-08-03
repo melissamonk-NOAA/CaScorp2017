@@ -33,7 +33,8 @@ would aid in modelling the high catch events.
 
 \item \textbf{Fecundity/Maturity}: There are currently no estimates of fecundity for California 
 scorpionfish.  Love et al. [@Love1987] has published the only estiamtes of maturity for California 
-scorpionfish, but the original copies of the data are no long available.  Some data on the spatial distribution of the eggs are available from CalCOFI, but were not keypunched to the species level. 
+scorpionfish, but the original copies of the data are no long available.  Some data on the spatial d
+istribution of the eggs are available from CalCOFI, but were not keypunched to the species level. 
 California scorpionfish mature at a young age, and additional data can help inform the maturity 
 ogive.
 
@@ -43,7 +44,8 @@ ogive.
 
 <!-- ***************************ACKNOWLEDGEMENTS*************************** -->
 #Acknowledgments
-To be added.
+We gratefully acknowledge input and review from the STAR panel including Martin 
+Dorn (Alaska Fisheries Science Center, NMFS, NOAA), Yiota Apostolaki (Independent Consultant), Robin Cook (University of Strathclyde Glasgow), and Owen Hamel (Northwest Fisheries Science Center, NMFS, NOAA).  We also thank John DeVore, Patrick Mirick, and Louie Zimm for consultation during the STAR panel.  Thanks to Patrick McDonald and Lance Sullivan and the team of agers at CAP for reading countless California scorpionfish otoliths and providing results that were critical to the assessment model.  We thank the California Recreational Fisheries Survey programat the California Department of Fish and Wildlife for providing data from the onboard observer program, and angler intercept surveys.  We thank Rebecca Miller for compiling and assisting in analyzing all of the reef and GIS data used for the onboard observer surveys. A special thanks to all of the southern California Publicly Owned Treatment Works and the Southern California Coastal Water Research Project for compiliing and sharing their trawl survey data, and to Eric Miller for providing the generating station impingement data.  Thank you to everyone who answered my countless emails regaring your survey methodologies and datasets.
 
 
 

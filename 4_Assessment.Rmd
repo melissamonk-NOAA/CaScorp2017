@@ -475,11 +475,20 @@ log-likelihood did not change nor the parameter estimates.
 ##Response to the Current STAR Panel Requests
 \begin{description}[style=unboxed]
 
-\item[Request No. 1: Add after STAR panel.] \hfill \\
+\item[Request No. 1: Add time blocks (-1999, 2000-2005, 2006-2017) for the 
+Recreational Dead Discard fleet same as for the Recreational Retained fleets.] \hfill \\
 
-    \textbf{Rationale:} Add after STAR panel.  
+    \textbf{Rationale:} Changes in selectivity of retained fish likely reflect changes in the 
+    retention of discarded fish..  
 
-    \textbf{STAT Response:} Add after STAR panel.
+    \textbf{STAT Response:} The model was run with the 3 requested blocks, or with only 
+    two (-1999 and 2000-2017) and the second block encompassing 6 years has only 3 years of 
+    data (2003-2005) on which to estimate selectivity. The three blocks reflected the changes 
+    in management better (the closed years 2000-2006 show a selectivity reflective of the 
+    retained catch in other years) than two blocks and fit the data better (1 to 2 blocks 
+    change of 8.7 log likelihood units, 2 to 3 blocks change of 5.7 units). Overall, the 
+    total biomass in 2017 changed by less than 0.1% and depletion changed from 0.574 to 
+    0.582 with the addition of the two extra time blocks. 
 
 \item[Request No. 2: Add after STAR panel.] \hfill \\
 
