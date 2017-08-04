@@ -23,7 +23,17 @@
 <!-- ********************************************************************** -->
 
 
+![Selectivity curves for the dead discard fleet with three (left) or tow (right) time blocks. \label{fig:Request1}](Figures/Request1.png)
 
+![Comparison of the reacreational private mode dockside index using three different thresholds for the Stephens-MacCall filter. \label{fig:Request3a}](Figures/Request3a.png)
+
+![Comparisons of the base model using the index developed for the reacreational private mode dockside index using three different thresholds for the Stephens-MacCall filter.\label{fig:Request3b}](Figures/Request3b.png)
+
+![Time series of estimated recruitment deviations from the base model and the CalCOFI sea surface temperature \label{fig:Request8}](Figures/Request8.png)
+
+![Time series of relative spawning biomass (top) and spawning biomass (bottom) from the base model compared to a model with no recruitment deviations and a sigma-r of 0.3. \label{fig:Request9}](Figures/Request9.png)
+
+![Time series ofspawning biomass (top) and  relative spawning biomass (bottom) from the pre-STAR base model (M fixed at 0.257 for females and estimated for males) compared to the STAR panel base model (one M = 0.235), and the two states of nature of natural mortality of 0.165 and 0.2745. \label{fig:Request12}](Figures/Request12.png)
 
 
 <!-- ********************************************************************** -->

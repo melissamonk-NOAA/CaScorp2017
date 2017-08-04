@@ -10,7 +10,7 @@ the U.S.-Mexico border. The assessment was sensitive to the inclusion of the POT
 index of abundance and the STAT team provided reference points for a model that 
 included the POTW trawl survey index and one excluding it.  The stock was found to be at 80% 
 of unfished levels for the model with the POTW trawl survey index and 58% for the model without 
-the POTW trawl survey index.  The 2015 catch-only projections used the same version of SS2 as the 2005 assessment model.  
+the POTW trawl survey index.  The 2015 catch-only projections used the same version of SS2 as the 2005 assessment model. 
 The 2005 model assumed removals equivalent to the ACL in all years from 2004-2016.  The 
 2015 model included catch estimates from 2004-2014, and the ACLs for 2015 and 2016 were 
 assumed to be attained.  Maunder et al. [-@Maunder2005] assumed no discard mortality, 
@@ -22,8 +22,8 @@ estimate of discards to provide an estimate of discard mortality for the recreat
 
 \begin{description}[style=unboxed]
 
-  \item[Recommendation 1: The [POTW trawl surveys (referred to as sanitation district 
-  surveys in teh 2005 assessment)] conducted to track the impact 
+  \item[Recommendation 1: The POTW trawl surveys (referred to as sanitation district 
+  surveys in teh 2005 assessment) conducted to track the impact 
   of sewage outfall provided a fishery independent index of abundance for 
   scorpionfish. This data source should be more fully explored for other 
   nearshore species of recreational or commercial interest. Methods should 
@@ -473,35 +473,220 @@ log-likelihood did not change nor the parameter estimates.
 
 
 ##Response to the Current STAR Panel Requests
-\begin{description}[style=unboxed]
 
-\item[Request No. 1: Add time blocks (-1999, 2000-2005, 2006-2017) for the 
-Recreational Dead Discard fleet same as for the Recreational Retained fleets.] \hfill \\
+\begin{description}
 
-    \textbf{Rationale:} Changes in selectivity of retained fish likely reflect changes in the 
-    retention of discarded fish..  
-
-    \textbf{STAT Response:} The model was run with the 3 requested blocks, or with only 
-    two (-1999 and 2000-2017) and the second block encompassing 6 years has only 3 years of 
-    data (2003-2005) on which to estimate selectivity. The three blocks reflected the changes 
-    in management better (the closed years 2000-2006 show a selectivity reflective of the 
-    retained catch in other years) than two blocks and fit the data better (1 to 2 blocks 
-    change of 8.7 log likelihood units, 2 to 3 blocks change of 5.7 units). Overall, the 
-    total biomass in 2017 changed by less than 0.1% and depletion changed from 0.574 to 
-    0.582 with the addition of the two extra time blocks. 
-
-\item[Request No. 2: Add after STAR panel.] \hfill \\
-
-    \textbf{Rationale:} Add after STAR panel.
-
-    \textbf{STAT Response:} Add after STAR panel.
-
-\item[Request No. 3: Add after STAR panel.] \hfill \\
-
-    \textbf{Rationale:} Add after STAR panel.
+\item[Request No. 1: Add time blocks (1916-1999, 2000-2005, 2006-2017) for the 
+  Recreational Dead Discard fleet same as for the Recreational Retained fleets.] \hfill \\
   
-    \textbf{STAT Response:} Add after STAR panel.
+\textbf{Rationale:} Changes in selectivity of retained fish likely reflect changes 
+in the retention of discarded fish.   
+    
+\textbf{STAT Response:} The model was run with the 3 requested blocks, or with only 
+two (-1999 and 2000-2017) and the second block encompassing 6 years has only 3 years of 
+data (2003-2005) on which to estimate selectivity (Figure \ref{fig:Request1}). The three 
+blocks reflected the changes in management better (the closed years 2000-2006 show a 
+selectivity reflective of the retained catch in other years) than two blocks and fit the data better (1 to 2 blocks 
+change of 8.7 log likelihood units, 2 to 3 blocks change of 5.7 units). Overall, the 
+total biomass in 2017 changed by less than 0.1\% and depletion changed from 0.574 to 
+0.582 with the addition of the two extra time blocks.   
 
+
+\item[Request No. 2: Combine retained and discarded catches in the Recreational index 
+(use the number of CA scorpionfish encountered per angler hour as the CPUE metric).  
+Include retained and discarded catches and length compositions in this new fleet with 
+appropriate weights.  Make the CPFV logbook index a survey.] \hfill \\
+
+
+\textbf{Rationale:} Concern with modeling discards as a separate fleet.  
+
+
+\textbf{STAT Response:} This turned out to be more difficult than the 
+STAR panel anticipated – the "discard fleet includes discard amounts from 
+two fisheries, but only one has composition data associated with it. So while 
+one fleet could combine the retained and discarded in the compositions with 
+appropriate weighting, the other would still only be based on the retained 
+compositions (or "borrow" information from the other fleet). Given the small 
+amounts of dead discard overall and the finding of virtually no impact of Request 
+1 on the model (while fitting the discard compositions better), this request was 
+dropped by the STAR panel.
+    
+
+\item[Request No. 3: Explore the sensitivity of the Recreational Dockside PR mode index 
+to the thresholds in the Stephens-MacCall filtering by halving the false positives 
+and alternatively halving the false negatives.  Retain the true and false positives 
+in each of these runs.] \hfill \\
+
+\textbf{Rationale:} The current thresholds are ad hoc.  
+    
+  
+\textbf{STAT Response:} The original cutoff used for Stephens-MacCall filtering 
+was a rounded value of an 0.17 probability of catching California scorpionfish 
+in a trip. This resulted in something close to 2,300 each of false negatives 
+and false positives. Halving these values was achieved by using probabilities 
+of 0.1407 and 0.2308 respectively. The changes had relatively minor effects 
+on the index, but  moderate effect on the overall stock size, especially for 
+the lower probability which included many more false positives, adding approximately 1600
+points to the CPUE standardization set, which resulted in a model with nearly 
+10\% more spawning biomass (both unfished and current) than the base. However, 
+the overall pattern was unchanged (Figures \ref{fig:Request3a}-\ref{fig:Request3b}). 
+Since it is not clear which set is most 
+appropriate, there was no recommendation arising from this analysis for the 
+current assessment. Rather this highlights the need for more research into 
+this topic.
+
+\item[Request No. 4: Do a sensitivity to the relationship between weight and
+fecundity.  Use a generic rockfish relationship from Dick et al. 2017.] \hfill \\
+
+\textbf{Rationale:} There is a lack of information on this relationship in 
+the assessment and the sensitivity of the model to this relationship needs 
+to be understood.   
+    
+    
+\textbf{STAT Response:} The base models fecundity as proportional to weight. 
+The model was run with this alternative where fecundity is proportional to 
+length to the power 4.043. This model had a slightly lower depletion level 
+(0.531 vs. 0.579, measured in spawning output rather than spawning biomass) 
+and a slightly higher unfished equilibrium biomass estimate (by about 1\%). 
+While more research into this topic is warranted, its effect on the model 
+outcome will likely be moderate.
+
+
+\item[Request No. 5: Evaluate the selectivity for the impingement length compositions 
+by allowing for a normal descending selex pattern.] \hfill \\
+
+\textbf{Rationale:} There is a strong residual pattern with fits to length 
+compositions suggesting an alternative selex pattern for this index. 
+  
+\textbf{STAT Response:} Allowing for a descending selectivity pattern resulted in a 
+reduction in the residual pattern. The run conducted, however, did not estimate the 
+size a t the peak" selectivity (representing here where the start of the downturn 
+would be) and the downward slope was quite steep. Estimating this value resulted in 
+a change from about 20 to 17 cm for this value and better overall fit of the model 
+the length and age composition data (by about 5 log likelihood points apiece vs. 
+the constant selectivity assumption).  The scale of the population increased by 
+approximately 15\% and the 2017 depletion increased to 0.598 (vs. 0.579). The 
+resulting selectivity pattern is close to an inverse logistic with a non-zero 
+lower asymptote.  The STAR panel and STAT agreed that this pattern is more 
+realistic and fits the data better than the model with full selectivity at 
+all ages and sizes, and should be included in the final base model.   
+    
+    
+\item[Request No. 6: Investigate the commercial net length data sources to see if 
+they are representative of the different mesh sizes used.  For a sensitivity analysis, 
+turn off the selex mirroring to the hook-and-line fleet and estimate a fleet-specific selex.  
+An additional sensitivity analysis, remove the length comps. from this fleet and 
+continue to mirror the selex to the hook-and-line fleet.] \hfill \\
+
+\textbf{Rationale:} These lengths do not fit well in the current model.  It is 
+not clear if the length comps. match the temporal changes in allowable mesh sizes. 
+  
+  
+\textbf{STAT Response:} When estimated independently for the commercial net fleet, 
+the selectivity pattern moved far to the right of that for the hook and line fleet. 
+Depletion (0.575 vs 0.579) and stock size decreased slightly with this change, and 
+the fit to length composition data improved by 20 log likelihood points. Since 
+there is relatively little length data from the commercial net fishery, dropping 
+that length data and continuing to mirror selectivity made little change from the 
+base model, but the resulting model does not accurately reflect the apparent 
+selectivity of the net fleet. The STAR panel and STAT agreed that the independently 
+estimated selectivity for the net fleet is more realistic and fits the data better, 
+and should be included in the final base model. Since the peak value parameter 
+hit the upper bound, it should be fixed in the final model.
+    
+    
+\item[Request No. 7: Turn off the mirroring of the gillnet survey to the POTW survey 
+selex and allow the model to estimate a survey-specific selex.] \hfill \\
+
+\textbf{Rationale:} The length comps. do not fit well in the current model. 
+
+\textbf{STAT Response:} The model run following this change did result in a 
+very different selectivity pattern (nearly a straight diagonal line up from 
+zero to the 40 cm), however, the hessian did not converge. Dropping the gillnet 
+data altogether had very little impact on the model. It was agreed to drop this 
+fleet from the final base model, and recommend further investigation of this data 
+for future use.
+    
+    
+\item[Request No. 8: Plot the CalCOFI  sea surface temperature index for Pacific sardine 
+with the estimated CA scorpionfish recruitment deviations.] \hfill \\
+
+\textbf{Rationale:} To investigate the hypothesis of warmer water influencing positive recruitment.  
+    
+  
+\textbf{STAT Response:} The annual CalCOFI sea surface temperature index was correlated 
+with the model estimated recruitment deviations (Figure \ref{fig:Request8}). This helps 
+explain the pattern of 
+alternating periods of positive and negative recruitment deviations in the model. 
+The panel recommends further investigation of possible predictors with the goal of 
+finding a better indicator of California scorpionfish recruitment to be considered 
+for use within a model and for forecasting. 
+    
+    
+\item[Request No. 9: Provide a model run where recruitment deviations are not estimated.  
+Also, provide a model run with a lower sigma-r (0.3).] \hfill \\
+
+\textbf{Rationale:} There is concern that the higher recruitment deviations are not 
+realistic and they sustain the trends we see in stock size regardless of removals.   
+  
+\textbf{STAT Response:} A run with no recruitment deviations resulted in a higher unfished 
+equilibrium biomass, but did not fit the data nearly as well (by over 110 log likelihood units). 
+With half the sigma-r value, the overall scale of the stock did not change from the base, 
+but the variation over time was suppressed somewhat (Figure \ref{fig:Request9}). Since the results of Request 8 
+indicated potential underlying environmental drivers for the recruitment patterns in 
+the base model, it was agreed that the original sigma-r (0.6) was reasonable.  
+    
+    
+\item[Request No. 10: Prepare a new base model that changes July 26 base model as follows:] \hfill \\
+       
+\begin{itemize}
+\item Model the commercial net fishery with its own selex curve with two selex blocks matching 
+the other commercial fisheries.  Peak selex parameter needs to be fixed (not estimated)
+\item Model the impingement data with a descending selex pattern, including estimation of 
+the peak parameter
+\item Drop the Gillnet survey from the model
+\item Fix M for both sexes combined based on a max. age of 23 years (M = 0.235) (determined 
+by averaging the third oldest estimated ages of each sex)
+\item Retune and jitter
+\item Evaluate diagnostics to ensure this is a sound model.
+\end{itemize}
+
+\textbf{Rationale:} These changes were agreed to by the STAT and STAR Panel.
+  
+\textbf{STAT Response:} These changes consitute a new base model. 
+    
+    
+\item[Request No. 11: Building on the new base model, prepare bracketing runs on M 
+that use the 12.5\% (M = 0.164) and 87.5\% (M = 0.335) quantiles of the Hamel prior 
+distribution.] \hfill \\
+
+\textbf{Rationale:} To consider for a decision table. 
+  
+\textbf{STAT Response:} While the low value for M produced a reasonable result, 
+    the high value resulted in an incredibly large biomass. This request was modified below.
+ 
+    
+\item[Request No. 12: For the high state of nature, explore an M such that the ratio of ending 
+SSB in the high state of nature to the base case is equal to that ratio from the base case 
+(M = 0.235) to the low state of nature (M = 0.164).] \hfill \\
+
+
+\textbf{Rationale:} The first exploration of a high state of nature in a potential decision 
+table provided unrealistic results and a narrower range of Ms did not provide adequate contrast between states of nature.
+  
+  
+\textbf{STAT Response:} The high value of M which meets the above criteria was found to be 
+    0.2745. This, along with the low value (M = 0.164) results in a reasonable bracketing of 
+    the uncertainty (Figure \ref{fig:Request12}). 
+
+\item[Request No. 13: Provide a draft decision table with the 3 states of nature assuming the 
+following harvest control rule for a catch stream:  ACL = ABC, $P*$=0.45, sigma = 0.36; 
+ABC buffer = 4.4\% (i.e., ABC is $0.956*OFL$).] \hfill \\
+
+\textbf{Rationale:} This is a reasonable catch stream to demonstrate the outcomes of a 
+    potential decision table.
+  
+\textbf{STAT Response:} See the final decision table for appropriate values.
 
 \end{description}
 
