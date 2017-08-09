@@ -109,8 +109,11 @@
 ![Fit to log index data on log scale for the POTW trawl index. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:index5_logcpuefit_Sanitation}](r4ss/plots_mod1/index5_logcpuefit_Sanitation.png)
 
 ![Fit to log index data on log scale for the NWFSC trawl survey from the VAST analysis from 2003-2016. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:index5_logcpuefit_NWFSCtrawl}](r4ss/plots_mod1/index5_logcpuefit_NWFSCtrawl.png)
-
+<!--
 ![Fit to log index data on log scale for the recreational CSUN/VRG gillnet survey. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:index5_logcpuefit_GillnetSurvey}](r4ss/plots_mod1/index5_logcpuefit_GillnetSurvey.png)
+
+-->
+
 
 
 ![Fit to log index data on log scale for the recreational Southern California Bight trawl survey. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:index5_logcpuefit_SCBSurvey}](r4ss/plots_mod1/index5_logcpuefit_SCBSurvey.png)

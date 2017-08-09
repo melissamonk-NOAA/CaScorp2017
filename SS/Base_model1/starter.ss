@@ -14,7 +14,7 @@ scor1.ctl
 10 # Turn off estimation for parameters entering after this phase
 1000 # MCeval burn interval
 10 # MCeval thin interval
-0 # jitter initial parm value by this fraction
+0.0 # jitter initial parm value by this fraction
 -1 # min yr for sdreport outputs (-1 for styr)
 -2 # max yr for sdreport outputs (-1 for endyr; -2 for endyr+Nforecastyrs
 0 # N individual STD years 

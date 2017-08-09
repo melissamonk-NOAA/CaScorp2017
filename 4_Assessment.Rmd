@@ -536,7 +536,7 @@ current assessment. Rather this highlights the need for more research into
 this topic.
 
 \item[Request No. 4: Do a sensitivity to the relationship between weight and
-fecundity.  Use a generic rockfish relationship from Dick et al. 2017.] \hfill \\
+fecundity.  Use a generic rockfish relationship from Dick et al. [-@Dick2017].] \hfill \\
 
 \textbf{Rationale:} There is a lack of information on this relationship in 
 the assessment and the sensitivity of the model to this relationship needs 

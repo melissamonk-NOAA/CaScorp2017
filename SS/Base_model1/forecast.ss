@@ -18,7 +18,7 @@
 1 # Control rule method (1=catch=f(SSB) west coast; 2=F=f(SSB) ) 
 0.4 # Control rule Biomass level for constant F (as frac of Bzero, e.g. 0.40); (Must be > the no F level below) 
 0.1 # Control rule Biomass level for no F (as frac of Bzero, e.g. 0.10) 
-0.913 # Control rule target as fraction of Flimit (e.g. 0.75) 
+0.956 # Control rule target as fraction of Flimit (e.g. 0.75) 
 3 #_N forecast loops (1=OFL only; 2=ABC; 3=get F from forecast ABC catch with allocations applied)
 3 #_First forecast loop with stochastic recruitment
 0 #_Forecast loop control #3 (reserved for future bells&whistles) 
@@ -49,21 +49,7 @@
 2 # basis for input Fcast catch: -1=read basis with each obs; 2=dead catch; 3=retained catch; 99=input Hrate(F)
 #enter list of Fcast catches; terminate with line having year=-9999
 #_Yr Seas Fleet Catch(or_F) Basis 
-2017	1	1	31.42508143
-2017	1	2	1.165852334
-2017	1	3	4.909066232
-2017	1	4	6.307385845
-2017	1	5	102.8277219
-2017	1	6	3.364892262
-2017	1	8	0.077
-2018	1	1	31.42508143
-2018	1	2	1.165852334
-2018	1	3	4.909066232
-2018	1	4	6.307385845
-2018	1	5	102.8277219
-2018	1	6	3.364892262
-2018	1	8	0.077
-
+#Year	Seas	Fleet	dead(B)	comment
 -9999 1 1 0 
 #
 999 # verify end of input 

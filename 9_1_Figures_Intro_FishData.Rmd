@@ -178,6 +178,7 @@
 
 ![Q-Q plot used to validate the goodness of fit of the lognormal model for the CSUN/VRG gillnet survey from 1995-2008. \label{fig:Fleet9_GillnetSurvey_QQ}](Figures/Fleet9_GillnetSurvey_QQ.png)
 
+<!--
 ![Standardized index on the log scale for the recreational CSUN/VRG gillnet survey. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:index4_logcpuedata_GillnetSurvey}](r4ss/plots_mod1/index4_logcpuedata_GillnetSurvey.png)
 
 ![Length frequency distributions from the gill net surveys. \label{fig:Fleet9_GillnetSurvey_lendat_bubflt10mkt2}](r4ss/plots_mod1/comp_lendat_bubflt9mkt2.png)

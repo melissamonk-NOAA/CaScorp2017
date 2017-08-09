@@ -316,7 +316,35 @@ found in Table \ref{tab:mnmgt_perform}.
 
 
 ##Unresolved Problems and Major Uncertainties{-}
-   TBD after STAR panel
+As in most/all stock assessments, the appropriate value for stock-recruit 
+steepness remains a major uncertainty for California scorpionfish. In this 
+assessment a prior value from a meta-analysis of West Coast rockfish was used. 
+
+Exploration of the southern model during the STAR panel meeting established that 
+the range of uncertainty in current and projected biomass status provided by 
+this bracketing was very similar to the range due to natural mortality, and 
+that natural mortality alone would be used to bracket uncertainty in
+model results for management advice.
+
+
+The time series of recruitment deviations ...
+
+Gillnet survey
+
+Ageing - depth and 
+
+Assessment results for the model is sensitive to natural mortality.  When the 
+natural mortality parameter is estimated by the model, the result is a value 
+of natural mortality that is biologically implausible.  If natural mortality was 
+used as a fixed parameter, the $lnR_0$ was estimated .....
+
+
+The current term of reference for stock assessment require development of a single decision
+table with states of nature ranging along the dominant axis of uncertainty. This presumes
+that uncertainty is consequential only for a single variable or estimated quantity, such as
+natural mortality, steepness, or ending biomass. This approach may fail to capture important
+elements of uncertainty that should be communicated to the Council and its advisory bodies.
+Additional flexibility in the development of decision tables is needed.
 
 \FloatBarrier
 
@@ -384,13 +412,118 @@ Decision table to be added after the STAR panel (Table \ref{tab:Decision_table_m
 ##Research and Data Needs{-}
 We recommend the following research be conducted before the next assessment:
 
+There are a number of areas of research that could improve the stock 
+assessment for California scorpionfish.  Below are issues identified by the STAT team 
+and the STAR panel:
+
 \begin{enumerate}
 
-\item List item No. 1 in the list
+\item \textbf{Natural mortality}: Both natural mortality and steepness were 
+fixed in the base model.  The natural mortality estimate used the assessment 
+was based on maximum age. The collection of age data for older females may improve 
+the ability to estimate female natural mortality in the model.  The NWFSC trawl survey
+was the only available source of age data for this assessment, of which there were a 
+number of age-1 fish and the data were dominated by males.  It may also be possible 
+to evaluate mortality by quantifying predation by major predators of scorpionfish, 
+such as octopus. 
 
-\item List item No. 2 in the list, etc.
+Tagging study to estimate natural mortality for scorpionfish should be 
+considered.  This project could be designed as a cooperative research project 
+with the charter fleet in southern California.
+
+\item \textbf{Steepness}: California scorpionfish has not been fished to a level 
+where information on steepness is available.  A meta-analysis for species 
+with similar breeding strategies to California scorpionfish could be conducted if data are available.  A meta-analysis of steepness should be done for species with the same reproductive strategy as scorpionfish.
+
+
+\item \textbf{Stock south of the U.S. border}:  No available information on the status of California scorpionfish in Mexico could be found.  A number of emails were sent to researchers 
+in Mexico and none were returned.  It is known that a portion of the stock resides 
+in Mexico and that boat leaving from San Diego target California scorpionfish off 
+the Coronado Islands.  
+
+\item \textbf{Sex ratio}:  The sex ratio in both Love et al. [@Love1987] and samples 
+from the NWFSC trawl survey were skewed towards males. Data on sex ratios from the 
+recreational or commercial fisheries would help in determining the sex ratio of the population.
+
+
+\item \textbf{Aggregating behavior}: Aggregative behavior in both spawning and 
+non-spawning seasons of California scorpionfish is not well understood. Studies are 
+needed to evaluate the environmental or ecological conditions that govern this behavior.
+
+
+
+\item \textbf{Fecundity/maturity}: A reproductive biology study of California 
+scorpionfish is needed.There are currently no estimates of fecundity 
+for California scorpionfish.  Love et al. [@Love1987] has published the only 
+estiamtes of maturity for California scorpionfish, but the original copies of 
+the data are no long available.  Some data on the spatial distribution of the 
+eggs are available from CalCOFI, but were not keypunched to the species level. 
+California scorpionfish mature at a young age, and additional data can help 
+inform the maturity ogive.
+
+No studies have been done of the relationship between weight and reproductive 
+output.  California scorpionfish have a different reproductive strategy than rockfish, 
+and seasonal protection of spawning areas may help maintain reproductive capacity 
+of the stock.
+
+\item \textbf{Discard mortality}: Many scorpionfish are discarded at sea. The assessment 
+used estimates of discard mortality of a distantly related species (lingcod) 
+in a different ecological setting [@Karpov2016]. Studies of discard mortality are needed 
+to parametrize the assessment model.
+
+\item \textbf{Environmental covariates}: The relationship between environmental 
+conditions and recruitment for scorpionfish should be further explored. Preliminary 
+exploration using CalCOFI temperature data suggested that a relationship existed, 
+but other time series may correlate more strongly given that scorpionfish are a 
+near-shore species.  Scorpionfish appear to be a relatively hardy and adaptable 
+species and may expand northward in a warming climate.  
+
+
+\item \textbf{Stephens and MacCall filtering}: Ad hoc criteria are used to identify 
+a threshold when applying the Stephens and MacCall method of selecting records for 
+CPUE index development.  Further research is needed to determine whether threshold 
+selection criteria can be optimized.
+
+
+\item \textbf{Discard fleet modeling}: Modeling discard as a separate fleet, as 
+was done for California scorpionfish, is a simple and intuitive approach, but 
+the strengths and weaknesses of this approach are unclear. This method should 
+be compared to the more standard approach of modeling discard with retention 
+curves to ensure the model results are not strongly affected by the method used.
+
+
+\item \textbf{MCMC in Stock Synthesis}: The Markov chain Monte Carlo (MCMC) 
+method implemented in Stock Synthesis is not reliable in many cases.  
+Characterizing uncertainty of the final assessment model is important, and 
+MCMC offers advantages over asymptotic approximations using the Hessian or 
+likelihood profiles. 
+
+\item \textbf{Decision tables}: Several alternative approaches were used this 
+year to construct decision tables and some approaches may be better than others. 
+The stock assessment TOR should outline the various methods that can be used, 
+and provide recommendations if possible on preferred approaches.
+
+
+\item \textbf{POTW trawl surveys}: Additional biological information 
+(sex, otoliths, depth distribution) should be collected for California 
+scorpionfish during the Publicly Owned Treatment Works (POTWs) trawl 
+survey and the Southern California Bight Regional Monitoring Project 
+(SCCWRP) trawl survey.
+
+\item \textbf{Age validation}: An age validation study is needed for 
+California scorpionfish.
+
+
+\item \textbf{CalCOFI}: CalCOFI ichthyoplankton surveys in southern California 
+do not currently identify scorpionfish eggs to species, though it is possible to 
+do this in southern California waters. Species-specific identification of 
+scorpionfish eggs is recommended to develop spawning output index for use in 
+the next stock assessment.
+
+
 
 \end{enumerate}
+
 
 
 
