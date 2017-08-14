@@ -136,7 +136,7 @@ A base model was selected which best captures the central tendency for those sou
 uncertainty considered in the model for the `r spp` stock in southern California 
 (Figure \ref{fig:assess_region_map}).
 
-![Map depicting the boundaries for the base-case model.  \label{fig:assess_region_map}](Figures/assess_region_map.png)
+![Map depicting the distribution of California scorpionfish out to 600 ft.  The stock assessment is bounded at Pt. Conception in the north to the U.S./Mexico border in the south.  \label{fig:assess_region_map}](Figures/assess_region_map.png)
 
 \FloatBarrier
 
@@ -313,31 +313,29 @@ found in Table \ref{tab:mnmgt_perform}.
 <!-- ***********END EXECUTIVE SUMMARY MANAGEMENT PERFORMANCE TABLE********* -->
 
 
-
-
 ##Unresolved Problems and Major Uncertainties{-}
 As in most/all stock assessments, the appropriate value for stock-recruit 
 steepness remains a major uncertainty for California scorpionfish. In this 
 assessment a prior value from a meta-analysis of West Coast rockfish was used. 
 
-Exploration of the southern model during the STAR panel meeting established that 
-the range of uncertainty in current and projected biomass status provided by 
-this bracketing was very similar to the range due to natural mortality, and 
-that natural mortality alone would be used to bracket uncertainty in
-model results for management advice.
-
-
-The time series of recruitment deviations ...
-
-Gillnet survey
-
-Ageing - depth and 
-
-Assessment results for the model is sensitive to natural mortality.  When the 
+Assessment results for the base model are sensitive to natural mortality.  When the 
 natural mortality parameter is estimated by the model, the result is a value 
-of natural mortality that is biologically implausible.  If natural mortality was 
-used as a fixed parameter, the $lnR_0$ was estimated .....
+of female natural mortality that is higher than the STAT believed is biologically plausible. 
+At the high value of female natural mortality also produced a stock with an estimated $lnR_0$ an
+order of magnitude higher than when natural mortality was fixed at the prior.  Additional 
+analyses and studies should be conducted to determine an appropriate prior distribution for 
+California scorpionfish.
 
+The time series of recruitment deviations is driving the trend in abundance in the base model. 
+Initial explorations of mapping the estimated recruitment deviations to the CalCOFI sea surface 
+temperature indicated correlations may be present.  Additional research should be conducted to 
+explore the environmental drivers releated to California scorpionfish recruitment.
+
+The NMFS shelf-slope survey was the only available source of otoliths for California scorpionfish.  
+It it unknown if the age and length distribution of the California scorpionfish deeper than 55 m 
+(survey area) is the similar to that in waters shallower than 55 m.  The majority of California 
+scorpionfish aged were males, and it is unknown if that was driven by the depth distribution, time 
+of sampling, or other factors.
 
 The current term of reference for stock assessment require development of a single decision
 table with states of nature ranging along the dominant axis of uncertainty. This presumes
@@ -352,11 +350,27 @@ Additional flexibility in the development of decision tables is needed.
 
 
 ##Decision Table{-}    
+The forecasts of stock abundance and yield were developed using the final base model, 
+with the forecasted projections of the OFL presented in Table \ref{tab:OFL_projection}. The
+total catches in 2017 and 2018 are set to the PFMC adopted California scorpionfish ACL of 
+150 mt. The total catches in 2017 and 2018 are set to 
+the average annual catch from 2015-2016 and not the ABC or OFL due recent trends in total catch 
+being significantly lower than the OFL and ABC. The exploitation rate for 2019 and beyond is based 
+upon an SPR harvest rate of 50%. The average of 2015-2016 catch by fleet was used to distribute 
+catches in forecasted years. The forecasted projections of the OFL for each model are presented 
+in Table \ref{tab:Decision_table_mod1}. 
 
-The forecasted projections of the OFL for each model are presented in 
-Table \ref{tab:OFL_projection} and will be finalized after the STAR panel.
+Uncertainty in the forecasts is based upon the three states of nature agreed upon at the STAR panel 
+and are based on a low value of $M$, 0.164, the base model value of $M$, 0.235, and 
+a high value, 0.2745. Current medium-term forecasts based on the alternative states of nature 
+project that the stock, under the current control rule as applied to the base model, will decline 
+towards the target stock size Table \ref{tab:Decision_table_mod1}. The current control rule under the 
+low state of nature results in a stock decline into the precautionary zone, while the high state of 
+nature maintains the stock at nearer unfished levels. Removing the high $M$
+catches under the base model $M$ and high $M$ states of nature results in the population going
+remaining at a level of spawning biomass during the projection period, and higher initial values of $lnR_0$.
 
-Decision table to be added after the STAR panel (Table \ref{tab:Decision_table_mod1}).
+
               
 
 
@@ -369,15 +383,12 @@ Decision table to be added after the STAR panel (Table \ref{tab:Decision_table_m
    # Decision table text set up for alternate states of natural mortality, but 
    # the text can be changed in the Decision Table section of the R file, 
    # R_exec_summary_figs_tables.R
-   # Edit text file(s): ./txt_files/DecisionTable_mod1 ,  
-   # ./txt_files/DecisionTable_mod1 , and
-   # ./txt_files/DecisionTable_mod3
+   # Edit text file(s): ./txt_files/DecisionTable_mod1
     # print Model 1 decision table
     print(decision_mod1.table, add.to.row = addtorow, include.rownames = FALSE, 
           caption.placement = 'top', 
           hline.after = c(-1, 0, 10, 20, 30, nrow(decision_mod1.table)), 
           scalebox = .85)
-
 ```
 <!-- ***********END EXECUTIVE SUMMARY OFL AND DECISION TABLES************** -->
 

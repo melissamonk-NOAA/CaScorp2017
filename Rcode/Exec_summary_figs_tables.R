@@ -276,7 +276,7 @@ Recruit_mod1.table = xtable(Recruittab_mod1,
 align(Recruit_mod1.table) = c('l',
                               '>{\\centering}p{.8in}',
                               '>{\\centering}p{1.6in}',
-                              '>{\\centering}p{1.3in}')
+                              '>{\\centering}p{2in}')
         
 
 # =============================================================================
@@ -505,8 +505,7 @@ align(mngmnt.table) = c('l',
       colnames(OFL) = c('Year','OFL') 
 
 # Create the table
-      OFL.table = xtable(OFL, caption=c('Projections of potential OFL (mt) for 
-                                        each model, using the base model forecast.'),
+      OFL.table = xtable(OFL, caption=c('Projections of potential OFL (mt) using the base model forecast.'),
                   label = 'tab:OFL_projection')
 
 
@@ -551,9 +550,9 @@ align(mngmnt.table) = c('l',
         addtorow$command <- c( ' \\multicolumn{3}{c}{}  &  \\multicolumn{2}{c}{} 
                                & \\multicolumn{2}{c}{\\textbf{States of nature}} 
                                & \\multicolumn{2}{c}{} \\\\\n', 
-                               ' \\multicolumn{3}{c}{}  &  \\multicolumn{2}{c}{Low M 0.05} 
-                               & \\multicolumn{2}{c}{Base M 0.07} 
-                               &  \\multicolumn{2}{c}{High M 0.09} \\\\\n')
+                               ' \\multicolumn{3}{c}{}  &  \\multicolumn{2}{c}{Low M 0.164} 
+                               & \\multicolumn{2}{c}{Base M 0.235} 
+                               &  \\multicolumn{2}{c}{High M 0.2745} \\\\\n')
         
   
 

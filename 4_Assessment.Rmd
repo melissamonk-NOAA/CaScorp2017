@@ -692,18 +692,20 @@ ABC buffer = 4.4\% (i.e., ABC is $0.956*OFL$).] \hfill \\
 
 <!-- *********************MODEL 1 RESULTS********************************** -->
 ##Base Case Model Results 
+The following descripion of the model results reflects a base model that 
+incorporates all of the changes made during the STAR pandel (see previous section). 
 The base model parameter estimates and their approximate asymptotic standard errors 
 are shown in Table \ref{tab:model_params} and the likelihood components are in 
 Table \ref{tab:like_components}.  Estimates of derived reference points and 
 approximate 95% asymptotic confidence intervals are shown in Table \ref{tab:Ref_pts_mod1}.  
 Time-series of estimated stock size over time are shown in Table \ref{tab:Timeseries_mod1}.
 
-The base model is sex-specific for all biological parameters. Key productivity parameters 
+The base model is sex-specific for the growth parameters. Key productivity parameters 
 are fixed at measures of central tendency from prior distributions endorsed by the 
 PFMC’s SSC due to the models’ inabilities to estimate reasonable parameter values. 
 Specifically, steepness of the assumed Beverton-Holt stock-recruitment relationship 
 was fixed at 0.718. In the final base models the instantaneous rate of annual natural 
-mortality was fixed at 0.2547 for females, and estimated as 0.2078 for males. 
+mortality was fixed at 0.235 for females and males. 
 
 ###Parameter Estimates
 The base model produces reasonable estimates of growth parameters, for both males and 
@@ -796,7 +798,9 @@ years from 1979-1982, where the fit is estimated lower than the added uncertaint
 The NWFSC trawl survey index is flat and fit well by the model, except for in 2013, 
 the highest year in the index, with also high uncertainty.  The gillnet survey was 
 not well fit by the model and did not capture the trend observed in the standardized 
-index.  The Southern California Bight trawl survey, conducted every 5 years, was 
+index.  The decions was made during the STAR panel to exclude the gillnet survey and 
+associated length data from the base model. The Southern California Bight trawl survey, 
+conducted every 5 years, was 
 also not well fit by the model.  The standardized index from the Bight trawl survey 
 showed peaks in 1994 and 2004, which were not fit by the model.
 
@@ -917,7 +921,6 @@ size and estimation of trends in spawning biomass in the retrospective runs were
 slightly lower than the base model (Figure \ref{fig:retro_spawnb}).  The initial 
 scale of the spawning population was basically unchanged for all of these retrospectives.  
 
-
 The recruitment deviations in the more recent years shrink towards zero the more years 
 are removed from the model (Figure \ref{fig:retro_recdev}).
 
@@ -927,7 +930,6 @@ Likelihood profiles were conducted for $R_0$, steepness, and over natural mortal
 values separately. These likelihood profiles were conducted by fixing the parameter 
 at specific values and estimated the remaining parameters based on the fixed parameter 
 value.
-
 
 In regards to values of $R_0$, the negative log-likelihood was minimized at approximately 
 log($R_0$) of 8.0 (Table \ref{tab:like_profiles}).  The recreational private mode fishery

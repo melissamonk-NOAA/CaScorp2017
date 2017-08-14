@@ -1,21 +1,25 @@
 <!-- **************HARVEST PROJECTIONS AND DECISION TABLE****************** -->
-#Harvest Projections and Decision Tables
-The forecasts of stock abundance and yield were developed using the final base model.
-The total catches in 2017 and 2018 are set to the PFMC adopted California scorpionfish 
-ACLs (Table \ref{tab:mnmgt_perform).  CDFW allocated 75% of the ACL to the recreational 
-fisheries and 25% to the commercial fisheries.  The catches were divided among the fleets
-within each the commercial and recreational fisheries by taking the ratio of the average 
-catches from 2012-2016. The average of 2012-2016 catch by fleet was used to distribute 
-catches in forecasted years.  The research catch harvest guideline for 2017-2018 was 
-set at 0.2 mt.  The average research catch from the NWFSC trawl survey averaged 0.077 
-mt from 2012-2016, which was used in the forecast.
+#Harvest Projections and Decision Tables*
+The forecasts of stock abundance and yield were developed using the final base model, 
+with the forecasted projections of the OFL presented in Table Table \ref{tab:mnmgt_perform. The
+total catches in 2017 and 2018 are set to the PFMC adopted California scorpionfish ACL of 
+150 mt. The total catches in 2017 and 2018 are set to 
+the average annual catch from 2015-2016 and not the ABC or OFL due recent trends in total catch 
+being significantly lower than the OFL and ABC. CDFW also allocated 75% of the ACL to the recreational 
+fisheries and 25% to the commercial fisheries. The exploitation rate for 2019 and beyond is based 
+upon an SPR harvest rate of 50%. The average of 2015-2016 catch by fleet was used to distribute 
+catches in forecasted years. The forecasted projections of the OFL for each model are presented 
+in Table \ref{tab:Decision_table_mod1}. 
 
-
-**Projections and Decision Table**
-
-Forecasts (Table \ref{tab:Forecast_mod1}) and decision tables 
-(Table \ref{tab:Decision_table_mod1}) to be completed 
-during and/or after the STAR panel 
+Uncertainty in the forecasts is based upon the three states of nature agreed upon at the STAR panel 
+and are based on a low value of $M$, 0.164, the base model value of $M$, 0.235, and 
+a high value, 0.2745. Current medium-term forecasts based on the alternative states of nature 
+project that the stock, under the current control rule as applied to the base model, will decline 
+towards the target stock size Table \ref{tab:Decision_table_mod1}. The current control rule under the 
+low state of nature results in a stock decline into the precautionary zone, while the high state of 
+nature maintains the stock at nearer unfished levels. Removing the high $M$
+catches under the base model $M$ and high $M$ states of nature results in the population going
+remaining at a level of spawning biomass during the projection period, and higher initial values of $lnR_0$.
 
 
 
