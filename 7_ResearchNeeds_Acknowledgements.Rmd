@@ -35,7 +35,8 @@ in Mexico and none were returned.  It is known that a portion of the stock resid
 in Mexico and that boat leaving from San Diego target California scorpionfish off 
 the Coronado Islands.  
 
-\item \textbf{Sex ratio}:  The sex ratio in both Love et al. [@Love1987] and samples 
+\item \textbf{Sex ratio}:  The sex ratio in the only published work by Love et al.
+(\protect\hyperlink{ref-Love1987}{1987}) and samples 
 from the NWFSC trawl survey were skewed towards males. Data on sex ratios from the 
 recreational or commercial fisheries would help in determining the sex ratio of the population.
 
@@ -48,9 +49,10 @@ needed to evaluate the environmental or ecological conditions that govern this b
 
 \item \textbf{Fecundity/maturity}: A reproductive biology study of California 
 scorpionfish is needed.There are currently no estimates of fecundity 
-for California scorpionfish.  Love et al. [@Love1987] has published the only 
-estiamtes of maturity for California scorpionfish, but the original copies of 
-the data are no long available.  Some data on the spatial distribution of the 
+for California scorpionfish.  The hard copies of data from the only
+estimates of maturity for California scorpionfish by Love et al. 
+(\protect\hyperlink{ref-Love1987}{1987}) are no longer available.  
+Some data on the spatial distribution of the 
 eggs are available from CalCOFI, but were not keypunched to the species level. 
 California scorpionfish mature at a young age, and additional data can help 
 inform the maturity ogive.
@@ -62,7 +64,8 @@ of the stock.
 
 \item \textbf{Discard mortality}: Many scorpionfish are discarded at sea. The assessment 
 used estimates of discard mortality of a distantly related species (lingcod) 
-in a different ecological setting [@Karpov2016]. Studies of discard mortality are needed 
+in a different ecological setting (Karpov \protect\hyperlink{ref-Karpov1996}{1996}). 
+Studies of discard mortality are needed 
 to parametrize the assessment model.
 
 \item \textbf{Environmental covariates}: The relationship between environmental 

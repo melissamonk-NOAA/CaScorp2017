@@ -16,7 +16,7 @@ assumption that from 1916 to 1968 all of the commercial landings were caught by
 hook-and-line (Table \ref{tab:Exec_catch}).  Commercial landings were small during 
 the years of World War II, ranging between `r min(round(Tot.catch.df[Tot.catch.df[,1] >= 1939 & Tot.catch.df[,1] <= 1945,2],0))` to `r max(round(Tot.catch.df[Tot.catch.df[,1] >= 1939 & Tot.catch.df[,1] <= 1945,2],0))` metric  tons (mt) per year.
 The recreational fleets began ramping up in the 1960s and have dominated the catch since then
-(Figures \ref{fig:Exec_catch1}-\ref{fig:Exec_catch3}).  The party/charter fleet has been 
+(Figures \ref{fig:Exec_catch1}-\ref{fig:Exec_catch2}).  The party/charter fleet has been 
 the major component of the recreational sector since the early 2000s.
 
 The catches from the commercial fleets has been small in the last decade, range from 1.19 to 4.54 mt per year (Figure \ref{fig:r4ss_catches}). Since 2000, annual total landings of `r spp` have ranged between 
@@ -52,9 +52,9 @@ ten months of the year during that period.
     Plot_catch(Catch_df = Exec_region2_catch)
 ```
 
-```{r, fig.cap=paste('Stacked line plot of', spp, 'catch history from Pt. Conception to the U.S.-Mexico border and catches from Mexican waters. \\label{fig:Exec_catch3}',sep=' ')}
+```{r, include=F, fig.cap=paste('Stacked line plot of', spp, 'catch history from Pt. Conception to the U.S.-Mexico border and catches from Mexican waters. \\label{fig:Exec_catch3}',sep=' ')}
      # Plot California catches  
-      Plot_catch(Catch_df = Exec_region3_catch)
+  #    Plot_catch(Catch_df = Exec_region3_catch)
 ```
 
 \FloatBarrier
@@ -94,19 +94,19 @@ from `r Dat_start_mod1` to `r LastYR`, and forecast beyond `r LastYR`.
 All of the data sources for `r spp` have been re-evaluated for `r LastYR`, including the historical 
 fishery catch-per-unit effort time-series. The landings history has been updated and extended back 
 to `r Dat_start_mod1`. Harvest was negligible prior to that year. Survey data from five sources were used 
-to develop indices of abundance: 1) sanitation district trawl surveys, 2) the NWFSC trawl survey, 3) 
+to develop indices of abundance: 1) Publicly Owned Treatment Works (POTW) trawl surveys, 2) the NWFSC trawl survey, 3) 
 a fishery-independent gill net survey, 4) the Southern California Bight regional monitoring program trawl 
 survey, and 5) the onboard observer survey for retained catch. Length and conditional age-at-length 
 compositions were also created 
-for each fishery-dependent and -independent data source, including a generating station impingement survey 
-that did not have an associated index of abundance.
+for each fishery-dependent and -independent data source, including a nuclear power generating station 
+impingement survey that did not have an associated index of abundance.
 
-The definition of fishing fleets have changed from those in the 2005 assessment.  
-Six fishing fleets were specified within this model: 1) a combined hook-and-line, fish pot, 
-and "other" fishery fleet where only a small fraction of `r spp`, 2) the commercial gill net 
+The definition of fishing fleets hs changed from those in the 2005 assessment.  
+Six fishing fleets were specified within this model: 1) a combined commercial hook-and-line, fish pot, 
+and "other gear" fleet, 2) the commercial gill net 
 fleet, 3) the commercial trawl fleet, 4) the recreational party/charter boat fleet (retained 
 catch only), 5) the recreational private boat fleet (retained catch only), and 6) a discard 
-fleet that combined the estimated discards from the recreational party/charter and private boat fleets
+fleet that combined the estimated discards from the recreational party/charter and private boat fleets.
 
 The assessment uses landings data; catch-per-unit-effort and survey indices; length 
 or age composition data for each year and fishery or survey (with conditional age-at-length 
@@ -125,7 +125,7 @@ Estimates of steepness are uncertain partly because of highly variable recruitme
 Uncertainty in natural mortality is common in many fish stock assessments even when 
 length and age data are available. 
 
-A number of sources of uncertainty are explicitly included in this assessment. This 
+A number of sources of uncertainty are now addressed in this assessment. This 
 assessment includes gender differences in growth, an updated length-weight curve, and new 
 conditional length at age data.  One of the largest sources of uncertainty that is not considered 
 in the current model is the proportion of the stock in Mexico and the connectivity between the portion 
@@ -142,13 +142,13 @@ uncertainty considered in the model for the `r spp` stock in southern California
 
 ##Stock Biomass{-}
 The predicted spawning biomass from the base model generally showed a slight decline prior 
-to 1965, when information on recruitment variability was available (Figure \ref{fig:Spawnbio_all} 
+to 1965, when information on recruitment variability became available (Figure \ref{fig:Spawnbio_all} 
 and Table \ref{tab:SpawningDeplete_mod1}). A short, but sharp decline occurred between 1965 and
-1985, followed by a period cyclical spawning biomass and a decline from 2000 to 2015.
+1985, followed by a period cyclical variation in spawning biomass, and then a decline from 2000 to 2015.
 The stock showed increases in stock size in 2015 due to a combination of strong recruitment and 
 smaller catches in 2015 and 2016.  The `r LastYR` estimated spawning biomass relative to unfished 
 equilibrium spawning biomass is above the target of 40% of unfished spawning biomass at `r Depl_mod1` 
-(~95% asymptotic interval: $\pm$ `r Depl_mod1_CI`) (Figure \ref{fig:RelDeplete_all}). 
+(95% asymptotic interval: $\pm$ `r Depl_mod1_CI`) (Figure \ref{fig:RelDeplete_all}). 
 Approximate confidence intervals based on the 
 asymptotic variance estimates show that the uncertainty in the estimated spawning biomass is high.
 
@@ -266,9 +266,9 @@ This stock assessment estimates that `r spp` in the `r mod1_label` is
 target($SB_{40\%}$), and well `r ifelse(Deplete_mod1[nrow(Deplete_mod1),2]-MSST>0,"above","below")` 
 the minimum stock size threshold ($SB_{40\%}$). The estimated relative depletion level for the base 
 model in `r LastYR+1` is 
-`r Depl_mod1` (~95% asymptotic interval: $\pm$ `r Depl_mod1_CI`, corresponding 
+`r Depl_mod1` (95% asymptotic interval: $\pm$ `r Depl_mod1_CI`, corresponding 
 to an unfished spawning biomass of `r paste(Spawn_mod1, fecund_unit,sep=' ')` 
-(~95% asymptotic interval: `r paste(Spawn_mod1_CI, fecund_unit, sep=' ')`) of 
+(95% asymptotic interval: `r paste(Spawn_mod1_CI, fecund_unit, sep=' ')`) of 
 spawning biomass in the base model (Table \ref{tab:Ref_pts_mod1}).  Unfished 
 age `r min_age` biomass was estimated to be `r Ref_pts_mod1[2,2]` mt in the 
 base case model. The target spawning biomass ($SB_{40\%}$) 
@@ -452,7 +452,8 @@ in Mexico and none were returned.  It is known that a portion of the stock resid
 in Mexico and that boat leaving from San Diego target California scorpionfish off 
 the Coronado Islands.  
 
-\item \textbf{Sex ratio}:  The sex ratio in both Love et al. [@Love1987] and samples 
+\item \textbf{Sex ratio}:  The sex ratio in the only published work by Love et al.
+(\protect\hyperlink{ref-Love1987}{1987}) and samples 
 from the NWFSC trawl survey were skewed towards males. Data on sex ratios from the 
 recreational or commercial fisheries would help in determining the sex ratio of the population.
 
@@ -465,9 +466,10 @@ needed to evaluate the environmental or ecological conditions that govern this b
 
 \item \textbf{Fecundity/maturity}: A reproductive biology study of California 
 scorpionfish is needed.There are currently no estimates of fecundity 
-for California scorpionfish.  Love et al. [@Love1987] has published the only 
-estiamtes of maturity for California scorpionfish, but the original copies of 
-the data are no long available.  Some data on the spatial distribution of the 
+for California scorpionfish.  The hard copies of data from the only
+estimates of maturity for California scorpionfish by Love et al. 
+(\protect\hyperlink{ref-Love1987}{1987}) are no longer available.  
+Some data on the spatial distribution of the 
 eggs are available from CalCOFI, but were not keypunched to the species level. 
 California scorpionfish mature at a young age, and additional data can help 
 inform the maturity ogive.
@@ -479,7 +481,8 @@ of the stock.
 
 \item \textbf{Discard mortality}: Many scorpionfish are discarded at sea. The assessment 
 used estimates of discard mortality of a distantly related species (lingcod) 
-in a different ecological setting [@Karpov2016]. Studies of discard mortality are needed 
+in a different ecological setting (Karpov \protect\hyperlink{ref-Karpov1996}{1996}). 
+Studies of discard mortality are needed 
 to parametrize the assessment model.
 
 \item \textbf{Environmental covariates}: The relationship between environmental 

@@ -4,7 +4,7 @@
 
 ##Data
 Data used in the `r spp` assessment are summarized in Figure \ref{fig:data_plot}.  
-A description of each data source is below.
+Descriptions of the data sources are in the following sections.
 
 
 <!-- ************FISHERY-DEPENDENT DATA************************************ -->
@@ -706,15 +706,15 @@ _POTWs Index Standardization_
 
 Trawls from all POTWs were combined to standardize the index of 
 relative abundance.  This is in contrast to the 2005 assessment that standardized 
-each of the sanitation district indices independently and combined them using an 
+each of the POTWs indices independently and combined them using an 
 inverse variance weighting approach [@Maunder2005].  One reason for this was that the 2005 
 base model going into the STAR panel was five sub-models for the southern California Bight. 
-Taking into consideration that the 2017 base model is a one-area model, all of the sanitation
-districts follow the same sampling protocols and the sampling 
+Taking into consideration that the 2017 base model is a one-area model, all of the POTWs 
+follow the same sampling protocols and the sampling 
 design is a fixed station approach, the decision was made to develop a single index.  The 
 index was standardized using a delta-GLM approach.
 
-The data were filtered for each sanitation district independently.  The filters applied are 
+The data were filtered for each POTW independently.  The filters applied are 
 described in the sections above and summarized in Table \ref{tab:Fleet7_Sanitation_filter}. 
 The covariates considered for the lognormal and binomial models were *year* (47 levels), 
 *quarter* (4 levels), and *station* (52 levels).  A lognormal model for the positives was 
@@ -725,9 +725,8 @@ CPUE in 1981, varies within a range of 0.1 to 0.25 from 1989 to 2009, and then d
 until 2013 (Figure \ref{fig:index4_logcpuedata_Sanitation}).  The last three years of the index 
 show an increase in relative abundance.  The final standardized index and log-standard error can be 
 found in Table \ref{tab:Fleet7_Sanitation_index}.  We did explore standardizing the indices 
-independently.  However, this results in a loss of data, as some sanitation district had 
-low sample sizes in some years.  The general trend in relative CPUE is similar across sanitation 
-districts (Figures \ref{fig:Fleet7_Sanitation_indexcompare}). 
+independently.  However, this results in a loss of data, as some POTWs had 
+low sample sizes in some years.  The general trend in relative CPUE is similar across POTWs (Figures \ref{fig:Fleet7_Sanitation_indexcompare}). 
 
 _POTWs Length Composition_
 
@@ -736,9 +735,9 @@ District was the only program sampling in 1970 and 1971 and encountered a small 
 of California scorpionfish in those years (Figure \ref{fig:Fleet7_Sanitation_lengthbydistrict}).
 Los Angeles County has encountered pulses of large numbers of California scorpionfish in 2002, 
 2004 and 2005.  Figure \ref{fig:Fleet7_Sanitation_lengthboxplots} shows the distribution of 
-lengths for California scorpionfish by 25 m depth bins and Sanitation District. The median length  
-of fish from the CLAEMD trawls is smaller than the other two districts. 
-However, there are only 120 fish encountered in that depth range, compared to 1,372 fish encountered in 
+lengths for California scorpionfish by 25 m depth bins and POTW. The median length  
+of fish from the CLAEMD trawls is smaller than the other two POTWs. However, there are 
+only 120 fish encountered in that depth range, compared to 1,372 fish encountered in 
 the 50-74 m depth range (Table \ref{tab:Fleet7_lengthdepth}).
   
 The length composition indicates a fairly consistent size range of fish encountered 

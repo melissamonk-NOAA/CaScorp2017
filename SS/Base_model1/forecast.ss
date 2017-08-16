@@ -50,6 +50,18 @@
 #enter list of Fcast catches; terminate with line having year=-9999
 #_Yr Seas Fleet Catch(or_F) Basis 
 #Year	Seas	Fleet	dead(B)	comment
+2017    1     1    2.26  #sum_for_2017: 79.03
+2017    1     2    0.02                      
+2017    1     3    0.13                      
+2017    1     4    4.01                      
+2017    1     5   69.17                      
+2017    1     6    3.44                      
+2018    1     1    2.26  #sum_for_2018: 79.03
+2018    1     2    0.02                      
+2018    1     3    0.13                      
+2018    1     4    4.01                      
+2018    1     5   69.17                      
+2018    1     6    3.44                                        
 -9999 1 1 0 
 #
 999 # verify end of input 

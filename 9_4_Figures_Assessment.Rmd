@@ -153,25 +153,25 @@
 
 
 
-![Francis data weighting method TA1.8 for conditional age data from the NWFSC trawl survey. Suggested sample size adjustment (with 95% interval) for conditional age-at-length data from NWFSC trawl is `r paste0(Fweights[12,6], ' (',Fweights[12,9],'-', Fweights[12,10],')')`. For more info, see Francis et al. (2011). \label{fig:comp_condAALdat_data_weighting_TA1.8_condAgeNWFSCTrawl}](r4ss/plots_mod1/comp_condAALdat_data_weighting_TA1.8_condAgeNWFSCTrawl.png)
+![Francis data weighting method TA1.8 for conditional age data from the NWFSC trawl survey. Suggested sample size adjustment (with 95% interval) for conditional age-at-length data from NWFSC trawl is `r paste0(Fweights[12,6], ' (',Fweights[12,9],'-', Fweights[12,10],')')`. For more info, see Francis et al. (2011). \label{fig:comp_condAALfit_data_weighting_TA1.8_condAgeNWFSCTrawl}](r4ss/plots_mod1/comp_condAALfit_data_weighting_TA1.8_condAgeNWFSCTrawl.png)
  
  
-![Francis data weighting method TA1.8 for length composition data from the POTW trawl surveys. Suggested sample size adjustment (with 95% interval) for length data from Sanitation surveys is `r paste0(Fweights[7,6], ' (',Fweights[7,9],'-', Fweights[7,10],')')`. For more info, see Francis et al. (2011). \label{fig:comp_lendat_data_weighting_TA1.8_Sanitation}](r4ss/plots_mod1/comp_lendat_data_weighting_TA1.8_Sanitation.png)
+![Francis data weighting method TA1.8 for length composition data from the POTW trawl surveys. Suggested sample size adjustment (with 95% interval) for length data from POTW trawl surveys is `r paste0(Fweights[7,6], ' (',Fweights[7,9],'-', Fweights[7,10],')')`. For more info, see Francis et al. (2011). \label{fig:comp_lenfit_data_weighting_TA1.8_Sanitation}](r4ss/plots_mod1/comp_lenfit_data_weighting_TA1.8_Sanitation.png)
 
 
-![Francis data weighting method TA1.8 for length composition data from the Impingement surveys.  Suggested sample size adjustment (with 95% interval) for the length data from the Impingement surveys is `r paste0(Fweights[10,6], ' (',Fweights[10,9],'-', Fweights[10,10],')')`. For more info, see Francis et al. (2011). \label{fig:comp_lendat_data_weighting_TA1.8_Impingement}](r4ss/plots_mod1/comp_lendat_data_weighting_TA1.8_Impingement.png)
-
-
-
-![Francis data weighting method TA1.8 for length composition data from the recreational private boat fleet.  Suggested sample size adjustment(with 95% interval) for the length data from the recreational private boat fleet is `r paste0(Fweights[4,6], ' (',Fweights[4,9],'-', Fweights[4,10],')')`. For more info, see Francis et al. (2011). \label{fig:comp_lendat_data_weighting_TA1.8_RecPR}](r4ss/plots_mod1/comp_lendat_data_weighting_TA1.8_RecPR.png)
+![Francis data weighting method TA1.8 for length composition data from the Impingement surveys.  Suggested sample size adjustment (with 95% interval) for the length data from the Impingement surveys is `r paste0(Fweights[10,6], ' (',Fweights[10,9],'-', Fweights[10,10],')')`. For more info, see Francis et al. (2011). \label{fig:comp_lenfit_data_weighting_TA1.8_Impingement}](r4ss/plots_mod1/comp_lenfit_data_weighting_TA1.8_Impingement.png)
 
 
 
-![Francis data weighting method TA1.8 for conditional age data from the recreational party/charter retained-catch fleet.  Suggested sample size adjustment (with 95% interval) for the length data from the recreational party/charter retained-catch fleet is `r paste0(Fweights[5,6], ' (',Fweights[5,9],'-', Fweights[5,10],')')`. For more info, see Francis et al. (2011). \label{fig:comp_lendat_data_weighting_TA1.8_RecPC}](r4ss/plots_mod1/comp_lendat_data_weighting_TA1.8_RecPC.png)
+![Francis data weighting method TA1.8 for length composition data from the recreational private boat fleet.  Suggested sample size adjustment(with 95% interval) for the length data from the recreational private boat fleet is `r paste0(Fweights[4,6], ' (',Fweights[4,9],'-', Fweights[4,10],')')`. For more info, see Francis et al. (2011). \label{fig:comp_lenfit_data_weighting_TA1.8_RecPR}](r4ss/plots_mod1/comp_lenfit_data_weighting_TA1.8_RecPR.png)
 
 
 
-![Francis data weighting method TA1.8 for conditional age data from the recreational discard-catch fleet.  Suggested sample size adjustment (with 95% interval) for the length data from the recreational discard-catch fleet is `r paste0(Fweights[6,6], ' (',Fweights[6,9],'-', Fweights[6,10],')')`. For more info, see Francis et al. (2011). \label{fig:comp_lendat_data_weighting_TA1.8_RecDD}](r4ss/plots_mod1/comp_lendat_data_weighting_TA1.8_RecDD.png)
+![Francis data weighting method TA1.8 for conditional age data from the recreational party/charter retained-catch fleet.  Suggested sample size adjustment (with 95% interval) for the length data from the recreational party/charter retained-catch fleet is `r paste0(Fweights[5,6], ' (',Fweights[5,9],'-', Fweights[5,10],')')`. For more info, see Francis et al. (2011). \label{fig:comp_lenfit_data_weighting_TA1.8_RecPC}](r4ss/plots_mod1/comp_lenfit_data_weighting_TA1.8_RecPC.png)
+
+
+
+![Francis data weighting method TA1.8 for conditional age data from the recreational discard-catch fleet.  Suggested sample size adjustment (with 95% interval) for the length data from the recreational discard-catch fleet is `r paste0(Fweights[6,6], ' (',Fweights[6,9],'-', Fweights[6,10],')')`. For more info, see Francis et al. (2011). \label{fig:comp_lenfit_data_weighting_TA1.8_RecDD}](r4ss/plots_mod1/comp_lenfit_data_weighting_TA1.8_RecDD.png)
 
 \FloatBarrier
 
@@ -180,6 +180,10 @@
 <!-- ********************************************************************** -->
 <!-- ****************Uncertainty and Sensitivity FIGURES******************* -->
 <!-- ********************************************************************** -->
+
+
+![Sensitivity of the base model to $SB_0$, $SB_{2017}$, $SB_{2017}/SB_0$, and Yield_{SPR} when likelihood components are removed.  The boxes represent the 95% CIs from the base model.  The CI for $SB_0$ is the same at that for yield and no visible in the figure. \label{fig:Sensitivity_all}](Figures/Sensitivity_all.pdf)
+
 
 <!-- ***********MODEL 1 Uncertainty and Sensitivity FIGURES**************** --> 
 

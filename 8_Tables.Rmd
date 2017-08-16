@@ -202,7 +202,8 @@ cat('\\vspace{2in}')
                               label='tab:Fleet4_RecPR_dockside_aic',
                               digits=0)
         
-cat('\\vspace{2in}')        
+cat('\\vspace{3in}')        
+
         print(Fleet4_aic.table, 
               include.rownames=FALSE, 
               caption.placement="top",
@@ -215,7 +216,8 @@ cat('\\vspace{2in}')
                               digits=4,
                               label='tab:Fleet4_RecPR_dockside_index')
         
-        
+cat('\\vspace{3in}')  
+
         print(Fleet4_index.table, 
               include.rownames=FALSE, 
               caption.placement="top",
@@ -278,6 +280,8 @@ cat('\\vspace{2in}')
               caption.placement="top",
               sanitize.text.function = function(x){x})
 
+        cat('\\newpage')  
+        
    #Fleet 5 aic
          Fleet5_aic.table = xtable(Fleet5_aic,
                               caption = c("AIC values for each model in the

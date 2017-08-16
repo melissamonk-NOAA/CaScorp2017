@@ -136,7 +136,7 @@ align(Exec_catch.table) = c('l', 'l',
       
   # Assign column names
   colnames(SpawningBtab) = c('Year', paste('Spawning biomass (', fecund_unit,')', 
-                                           sep=''), '~ 95% confidence interval')
+                                           sep=''), '95% confidence interval')
   
   
   # Extract Depletion values  
@@ -166,16 +166,16 @@ align(Exec_catch.table) = c('l', 'l',
   
   Depletiontab = subset(Depletionyrs, select=c('Value', 'CI'))
   
-  colnames(Depletiontab) = c('Estimated depletion', '~ 95% confidence interval')
+  colnames(Depletiontab) = c('Estimated depletion', '95% confidence interval')
     
   # Bind the spawning biomass and depletion data together 
   Spawn_Deplete = cbind(SpawningBtab, Depletiontab)
  
   colnames(Spawn_Deplete) = c('Year', 
                               paste('Spawning biomass (', fecund_unit, ')', sep = ''), 
-                              '~ 95% confidence interval',
+                              '95% confidence interval',
                               'Estimated depletion',
-                              '~ 95% confidence interval')
+                              '95% confidence interval')
         
   # Assign a model number to the Spawn_deplete table, if you do cbind within this step
   assign(paste('SpawnDeplete_',mod_area,sep=''), Spawn_Deplete)
@@ -258,7 +258,7 @@ align(Spawn_Deplete_mod1.table) = c('l', 'l',
   
   colnames(Recruittab) = c('Year',
                            paste0('Estimated Recruitment (',Recruit_units,')'),
-                           '~ 95% confidence interval')
+                           '95% confidence interval')
   
   assign(paste('Recruittab_',mod_area,sep=''), Recruittab)
 
@@ -310,7 +310,7 @@ align(Recruit_mod1.table) = c('l',
   
   Exploittab = subset(Exploityrs, select=c('Value', 'CI'))
  
-   colnames(Exploittab) = c('Exploitation rate', '~ 95% confidence interval')
+   colnames(Exploittab) = c('Exploitation rate', '95% confidence interval')
         
         
   # Spawning potential ratio and calculate lower and upper 95% CI  
@@ -331,7 +331,7 @@ align(Recruit_mod1.table) = c('l',
   
   SPRratiotab$Year = as.factor(SPRratiotab$Year)
   
-  colnames(SPRratiotab) = c('Year', 'Fishing intensity', '~ 95% confidence interval')
+  colnames(SPRratiotab) = c('Year', 'Fishing intensity', '95% confidence interval')
       
   assign(paste('SPRratio_Exploit_', mod_area, sep=''), cbind(SPRratiotab, Exploittab))
 

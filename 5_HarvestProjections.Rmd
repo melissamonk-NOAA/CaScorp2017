@@ -1,5 +1,5 @@
 <!-- **************HARVEST PROJECTIONS AND DECISION TABLE****************** -->
-#Harvest Projections and Decision Tables*
+#Harvest Projections and Decision Tables
 The forecasts of stock abundance and yield were developed using the final base model, 
 with the forecasted projections of the OFL presented in Table Table \ref{tab:mnmgt_perform. The
 total catches in 2017 and 2018 are set to the PFMC adopted California scorpionfish ACL of 

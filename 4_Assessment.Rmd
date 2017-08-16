@@ -23,7 +23,7 @@ estimate of discards to provide an estimate of discard mortality for the recreat
 \begin{description}[style=unboxed]
 
   \item[Recommendation 1: The POTW trawl surveys (referred to as sanitation district 
-  surveys in teh 2005 assessment) conducted to track the impact 
+  surveys in the 2005 assessment) conducted to track the impact 
   of sewage outfall provided a fishery independent index of abundance for 
   scorpionfish. This data source should be more fully explored for other 
   nearshore species of recreational or commercial interest. Methods should 
@@ -65,7 +65,12 @@ user-specified recruitments.] \hfill \\
 
 <!-- ************************MODEL DESCRIPTION***************************** -->
 ##Model Description
-
+The mode descriptions in the following sections reflect decisions and modelling 
+choices the STAT team made prior to the STAR panel.  Changes from the pre-STAR 
+base model to the final 
+post-STAR base model are documented in the "Responses to the Current STAR Panel 
+Requests" section.  None of the data changed during the STAR panel, and the figures 
+and tables reflect the post-STAR final base model.
 
 ###Transition to the Current Stock Assessment
 The first formal stock assessment for California scorpionfish was conducted in 2005 
@@ -474,7 +479,7 @@ log-likelihood did not change nor the parameter estimates.
 
 ##Response to the Current STAR Panel Requests
 
-\begin{description}
+\begin{description}[style=sameline]
 
 \item[Request No. 1: Add time blocks (1916-1999, 2000-2005, 2006-2017) for the 
   Recreational Dead Discard fleet same as for the Recreational Retained fleets.] \hfill \\
@@ -837,12 +842,12 @@ are apparent with large residuals.
 The age data were also weighted according to Francis weighting which adjust the weight 
 given to a data set based on the fit to the mean age by year. 
 The mean ages from the fishery appear to have declined in recent years which could be 
-due to incoming cohorts (Figure \ref{fig:comp_condAALdat_data_weighting_TA1.8_condAgeNWFSCTrawl}).  
+due to incoming cohorts (Figure \ref{fig:comp_condAALfit_data_weighting_TA1.8_condAgeNWFSCTrawl}).  
 Smaller fish were also observed in the POTW trawl and impingement surveys in the 
-(Figures \ref{fig:comp_lendat_data_weighting_TA1.8_Sanitation} and \ref{fig:comp_lendat_data_weighting_TA1.8_Impingement}).  The mean length in the 
-recreational private and party/charter fleets increased over time (Figures \ref{fig:comp_lendat_data_weighting_TA1.8_RecPR} and 
-\ref{fig:comp_lendat_data_weighting_TA1.8_RecPC}). The length composition of the recreational fleet discards was smaller in the 1980s 
-and hovers around the 10-in minimum size limit in the 2000s (Figure \ref{fig:comp_lendat_data_weighting_TA1.8_RecDD}).
+(Figures \ref{fig:comp_lenfit_data_weighting_TA1.8_Sanitation} and \ref{fig:comp_lenfit_data_weighting_TA1.8_Impingement}).  The mean length in the 
+recreational private and party/charter fleets increased over time (Figures \ref{fig:comp_lenfit_data_weighting_TA1.8_RecPR} and 
+\ref{fig:comp_lenfit_data_weighting_TA1.8_RecPC}). The length composition of the recreational fleet discards was smaller in the 1980s 
+and hovers around the 10-in minimum size limit in the 2000s (Figure \ref{fig:comp_lenfit_data_weighting_TA1.8_RecDD}).
 
 
 
@@ -871,7 +876,11 @@ A number of sensitivity analyses were conducted, including:
 A number of changes were made since the 2005 assessment, and sensitivities to the current 
 base model included changing or fixing a number of parameters to the same as the 2005 
 assessment, as well as a number of sentivities to modelling choices made in developing the 
-current base model (Tables \ref{tab:Sensitivity_model1} and \ref{tab:Sensitivity_model1_1}).  
+current base model (Tables \ref{tab:Sensitivity_model1} and \ref{tab:Sensitivity_model1_1}). 
+A number of metrics ($SB_0$, $SB_{2017}$, $SB_{2017}/SB_0$, and Yield_{SPR}) relative to the 
+pre-STAR base model are presented in Figure \ref{fig:Sensitivity_all} and show that the 
+impingement length composition data are the data source to which the model is most sensitive.  
+The model is also sensitive to the choice of data weighting.
 
 Data weighting is an area of uncertainty for stock assessment and research is ongoing to 
 determine the effects of data weighting and the most appropriate initial sample sizes for 

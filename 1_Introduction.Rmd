@@ -248,9 +248,11 @@ limits to regulate the commercial fishery.
 
 
 ##Management Performance
-Management performance table: (Table \ref{tab:mnmgt_perform})      
-A summary of these values as well as other base case summary results can be found 
-in Table \ref{tab:base_summary}.
+ `r spp` has been managed as a single-species outside of a complex since 2003. 
+ The estimated catch  of `r spp` north below the ACL in all years (2007-2017) except 
+ for in 2014 when the catch exceeded the ACL (and ABC) by 6.8 mt. A summary of these values 
+ as well as other base case summary results can be
+found in Table \ref{tab:mnmgt_perform}.
 
 
 ##Fisheries Off Mexico
