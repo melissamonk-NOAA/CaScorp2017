@@ -494,18 +494,13 @@ align(mngmnt.table) = c('l',
 
 #For 1 model:
 # Extract OFLs for next 10 years for each model
-      OFL_mod1 = mod1$derived_quants[grep('OFL',mod1$derived_quants$Label),]
-      OFL_mod1 = OFL_mod1[, 2]    
-      
-      #Turn into a dataframe and get the total
-      OFL = as.data.frame(OFL_mod1)
-      OFL$Year=seq(Project_firstyr,Project_lastyr, 1)
-      OFL$Year = as.factor(OFL$Year)
-      OFL = OFL[,c(2, 1)]
-      colnames(OFL) = c('Year','OFL') 
+      OFL_mod1 = read.csv('./txt_files/OFL_projection.csv')
+      colnames(OFL_mod1) = c('Year','OFL') 
 
 # Create the table
-      OFL.table = xtable(OFL, caption=c('Projections of potential OFL (mt) using the base model forecast.'),
+      OFL.table = xtable(OFL_mod1, caption=c('Projections of potential OFL (mt) using the base model 
+                                        forecast and assuming a total catch of 150 mt in 2017 and 2018. 
+                                        The control rule target is set to 0.956.'),
                   label = 'tab:OFL_projection')
 
 
