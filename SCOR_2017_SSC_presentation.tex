@@ -158,22 +158,6 @@
 
 \end{frame}
 
-\begin{frame}{Early Life History}
-
-\begin{itemize} 
-\item[$\bullet$] Migration to spawning grounds, exhibit explosive breeding behavior just before dawn
-\item[$\bullet$] External fertilization, females produce hollow gelatenous single-layer floating egg matrix
-\item[$\bullet$] Eggs hatch after about 5 days
-\item[$\bullet$] Juveniles settle at less than 2 cm 
-\end{itemize}
-
-\centering
-\includegraphics[width=.5\textwidth]{Figures/baby_scorp}
-
-\footnotetext{Line drawning from CalCOFI Atlas 33, pg. 789 Figure 26}
-
-\end{frame}
-
 \begin{frame}{Distribution and Stock Assessment Boundary}
 
 \begincols
@@ -245,12 +229,12 @@
 Pre-STAR Base Model
 
 \begin{itemize}
-\item[$\bullet$] One area south of Pt. Conception 
+\item[$\bullet$] One area model, south of Pt. Conception 
 \begin{itemize}
 \item[$\circ$] Catches from Mexican waters excluded as in 2005
 \end{itemize}
 \item[$\bullet$] Steepness fixed at 0.718
-\item[$\bullet$] Sex-specific $M$ fixed for females, male $M$ estimated as offset
+\item[$\bullet$] Same $M$ for males and females fixed at 0.235
 \item[$\bullet$] Re-evaluated fleet definitions
 \item[$\bullet$] Ages now available from the NWFSC trawl survey
 \item[$\bullet$] New indices and length compositions available
@@ -259,7 +243,7 @@ Pre-STAR Base Model
 
 \end{frame}
 
-\section{Catch}\label{catch}
+\section{Data}\label{data}
 
 \begin{frame}{Catches by Fleet}
 
@@ -267,49 +251,6 @@ Pre-STAR Base Model
 \includegraphics{r4ss/plots_mod1/catch2 landings stacked.png}
 
 \end{frame}
-
-\begin{frame}{Recreational Catch}
-
-\begincols
- \begincol{.4\textwidth}
-
-\begin{itemize}
-\item[$\bullet$] 2005 assessment used number of fish for recreational catches
-\item[$\bullet$] 2017 assessment includes one recreational discard fleet
-\begin{itemize}
-\item[$\circ$] Discard mortality rate of 7\%
-\item[$\circ$] Discard biomass accounts for  $<$3\% of recreational mortality
-\end{itemize}
-\end{itemize}
-
-\endcol
- \begincol{.6\textwidth}
-\includegraphics[totalheight=0.65\textheight]{California_scorpionfish_2017_files/figure-latex/unnamed-chunk-16-1.pdf}\\
-\endcol
-\endcols
-
-\end{frame}
-
-\begin{frame}{Commercial Catch}
-
-\begincols
- \begincol{.4\textwidth}
-
-\begin{itemize}
-  \item[$\bullet$] Historical catches same as the 2005 assessment
-  \item[$\bullet$] California Fisheries Information System (CFIS) landings data used to update catches from 2005-2016 
-  \item[$\bullet$] Discards assumed neglible
-\end{itemize}
-
-\endcol
- \begincol{.55\textwidth}
-\includegraphics{California_scorpionfish_2017_files/figure-latex/unnamed-chunk-17-1.pdf}
-\endcol
-\endcols
-
-\end{frame}
-
-\section{Indices}\label{indices}
 
 \begin{frame}{Indices of Abundance}
 
@@ -350,83 +291,31 @@ Recreational PR dockside CPUE & 2004-2016 & No & delta-GLM (bin-lognormal) \\
 
 \begin{frame}{Indices of Abundance}
 
-\end{frame}
-
-\section{Composition}\label{composition}
-
-\begin{frame}{Length compositions were provided from the following
-sources:}
+\begincols
+ \begincol{.5\textwidth}
 
 \begin{itemize}
-  \item[$\bullet$] CDFW market category study (\emph{commercial dead fish}, 1996-2003)    
-  \item[$\bullet$] CALCOM (\emph{commercial dead fish}, 2013-2016)    
-  \item[$\bullet$] CDFW onboard observer (\emph{recreational charter discards}, 2003-2016)  
-  \item[$\bullet$] Collins and Crooke onboard observer surveys (1975-1978) 
-  \item[$\bullet$] Ally onboard observer study (\emph{recreational charter kept/discards}, 1984-1989)  
-  \item[$\bullet$] MRFSS (1980-2003) and CRFS (2004-2014) (\emph{private and party/charter, kept})
-  \item[$\bullet$] POTW trawl surveys (\emph{research}, 1970-2016)      
-  \item[$\bullet$] CSUN/VRG gillnet survey (\emph{research}, 1995-2008)        
-  \item[$\bullet$] Power plant impingement surveys (\emph{research}, 1974-2016)  
-  \item[$\bullet$] Southern California Bight trawl survey (\emph{research}, 1994, 1998, 2003, 2008, 2013) 
+\item[$\bullet$] Stephens-MacCall threshold exploration for the dockside recreational charter boat index
+\item[$\bullet$] Index not used in the assessment, charter boat logbook used
 \end{itemize}
+
+\endcol
+ \begincol{.5\textwidth}
+\includegraphics{Figures/Fleet5_RecPC_dockside_index_compare.png}
+\endcol
+\endcols
+
+\end{frame}
+
+\begin{frame}{Indices of Abundance}
+
+\includegraphics{Figures/All_indices.png}
 
 \end{frame}
 
 \begin{frame}{Aggregate length composition}
 
 \includegraphics{r4ss/plots_mod1/comp_lenfit__aggregated_across_time.png}
-
-\end{frame}
-
-\begin{frame}{Commercial fishery length composition}
-
-\begincols
- \begincol{.5\textwidth} \centering
- Commercial hook-and-line
-\includegraphics[height=3cm]{r4ss/plots_mod1/comp_lendat_bubflt1mkt2.png}
-
-Commercial gillnet
-\includegraphics[height=3cm]{r4ss/plots_mod1/comp_lendat_bubflt2mkt2.png}
-\endcol
- \begincol{.5\textwidth} \centering
- Commercial trawl
-\includegraphics[height=4cm]{r4ss/plots_mod1/comp_lendat_bubflt3mkt2.png}
-\endcol
-\endcols
-
-\end{frame}
-
-\begin{frame}{Recreational fishery Length Composition}
-
-\begincols
- \begincol{.5\textwidth} Recreational private fleet
-\includegraphics[height=3cm]{r4ss/plots_mod1/comp_lendat_bubflt4mkt2.png}
-
-Recreational party/charter fleet
-\includegraphics[height=3cm]{r4ss/plots_mod1/comp_lendat_bubflt5mkt2_page2.png}
-\endcol
- \begincol{.5\textwidth} \centering
-
-Recreational dead discards
-\includegraphics[height=4cm]{r4ss/plots_mod1/comp_lendat_bubflt6mkt2.png}
-\endcol
-\endcols
-
-\end{frame}
-
-\begin{frame}{Research Length Composition}
-
-\begincols
- \begincol{.5\textwidth} POTW survey
-\includegraphics[height=3cm]{r4ss/plots_mod1/comp_lendat_bubflt7mkt2_page2.png}
-
-Impingement survey
-\includegraphics[height=3cm]{r4ss/plots_mod1/comp_lendat_bubflt10mkt2.png}
-
-Bight trawl survey
-\includegraphics[height=3cm]{r4ss/plots_mod1/comp_lendat_bubflt11mkt2.png}
-\endcol
-\endcols
 
 \end{frame}
 
@@ -438,33 +327,6 @@ Note: females in red and males in blue \begincols
 \endcol
  \begincol{.5\textwidth}
 \includegraphics[height=.5\textheight]{r4ss/plots_mod1/comp_condAALdat_bubflt8mkt0_page2.png}
-\endcol
-\endcols
-
-\end{frame}
-
-\section{Biological}\label{biological}
-
-\begin{frame}{Length data}
-
-\begin{itemize}
-\item[$\bullet$] 2005 assessment used standard length
-\item[$\bullet$] Impingement, POTW, and Bight surveys measure standard length
-\item[$\bullet$] 2017 assessment uses total length (conversion based on a CDFW halibut trawl study; measured both SL and TL)
-\item[$\bullet$] To avoid gaps in TL length bins, TL = SL - 0.5 + U[0,1] 
-\end{itemize}
-
-\includegraphics[height=.5\textheight]{Figures/SL_to_TL_compare.png}
-
-\end{frame}
-
-\begin{frame}{Length data}
-
-POTW lengths \begincols
- \begincol{.4\textwidth}
-\includegraphics{Figures/Fleet7_Sanitation_lengthboxplots.png} \endcol
- \begincol{.6\textwidth}
-\includegraphics{Figures/Fleet7_Sanitation_length_source.png}\\
 \endcol
 \endcols
 
@@ -482,17 +344,6 @@ POTW lengths \begincols
 
 \end{frame}
 
-\begin{frame}{Length-at-Age}
-
-\begincols
- \begincol{.4\textwidth}
-\includegraphics{Figures/NWFSCtrawl_lengthdepth.png} \endcol
-\begincol{.48\textwidth}
-\includegraphics{r4ss/plots_mod1/comp_lendat_bubflt8mkt0.png} \endcol
-\endcols
-
-\end{frame}
-
 \section{Model}\label{model}
 
 \begin{frame}{Model Specifications}
@@ -500,7 +351,7 @@ POTW lengths \begincols
 \begin{itemize}
 \item[$\bullet$] Stock Synthesis version 3.30.05.04
 \item[$\bullet$] Model starts in 1916, unfished equilibrium catch prior to that
-\item[$\bullet$] Sex-specific growth and mortality with female $M$ fixed at 0.2571 (prior) and male $M$ offset is estimated at -0.2134 (male $M$ = 0.2077)
+\item[$\bullet$] $M$ fixed at 0.235 for both sexes
 \begin{itemize}
 \item[$\circ$] $M$ fixed at 0.25 for both sexes in 2005 assessment
 \end{itemize}
@@ -523,287 +374,136 @@ POTW lengths \begincols
 \item[$\circ$] Commercial fleet: 1916-1999 and 2000-2016 (10-in. minimum size limit as of 2000)
 \item[$\circ$] Recreational fleets: 1916-2000 (few regulations), 2001-2005 (fishery closures), 2006-2016 (consistent regulations)
 \end{itemize}
-\item[$\bullet$] Double normal except for the impingement survey (Selectivity = 1.0 for all ages)
+\item[$\bullet$] Double normal selectivity
 \item[$\bullet$] Fisheries selectivity parameters estimated for commercial hook-and-line, receational private, recreational party/charter, and recreational discard fleets
 \end{itemize}
 
 \end{frame}
 
-\begin{frame}{Selectivity}
-
-\begin{itemize}
-\item[$\bullet$] Commercial gillnet and trawl fleets mirrored to the commercial hook-and-line fleet
-\item[$\bullet$] Recreational CPFV onboard observer retained catch mirrored to the recreational party/charter fleet selectivity (same boats)
-\item[$\bullet$] Survey selectivity parameters estimated for the POTW and NWFSC trawl surveys
-\item[$\bullet$] The gillnet survey and Bight trawl survey mirrored to the POTW selectivity 
-\end{itemize}
+\begin{frame}{Stock Status - Biomass}
 
 \centering
-\includegraphics[height=4cm]{r4ss/plots_mod1/sel01_multiple_fleets_length1.png}
+\includegraphics{r4ss/plots_mod1/ts7_Spawning_biomass_(mt)_with_95_asymptotic_intervals_intervals.png}
 
 \end{frame}
 
-\begin{frame}{Selectivity}
+\begin{frame}{Stock Status - Depletion}
+
+\centering
+\includegraphics{r4ss/plots_mod1/ts9_Spawning_depletion_with_95_asymptotic_intervals_intervals.png}
+
+\end{frame}
+
+\begin{frame}{Stock Status - Recruitment}
+
+\centering
+\includegraphics{r4ss/plots_mod1/ts11_Age-0_recruits_(1000s)_with_95_asymptotic_intervals.png}
+
+\end{frame}
+
+\begin{frame}{Stock Status - Exploitation}
 
 \begincols
  \begincol{.5\textwidth}
-\includegraphics[height=4cm]{r4ss/plots_mod1/sel03_len_timevary_surf_flt1sex1.png}
-
-\includegraphics[height=4cm]{r4ss/plots_mod1/sel03_len_timevary_surf_flt4sex1.png}
-\endcol
+\includegraphics{r4ss/plots_mod1/SPR3_ratiointerval.png} \endcol
  \begincol{.5\textwidth}
-
-\includegraphics[height=4cm]{r4ss/plots_mod1/sel03_len_timevary_surf_flt5sex1.png}\\
-\includegraphics[height=4cm]{r4ss/plots_mod1/sel09_len_flt6sex1.png}\\
-\endcol
+\includegraphics{r4ss/plots_mod1/SPR4_phase.png} \endcol
 \endcols
 
 \end{frame}
 
-\begin{frame}{Gear Selectivity}
+\begin{frame}{Stock Status - Eq. Yield}
 
-\begincols
- \begincol{.5\textwidth}
-\includegraphics[height=4cm]{r4ss/plots_mod1/sel09_len_flt7sex1.png}
-
-\endcol
- \begincol{.5\textwidth}
-\includegraphics[height=4cm]{r4ss/plots_mod1/sel09_len_flt8sex1.png}
-\endcol
-\endcols
-
-\end{frame}
-
-\begin{frame}{Data Weighting}
-
-\begin{itemize}
-\item[$\bullet$] Extra SD estimated for indices
-\item[$\bullet$] Francis weighting applied to length and age data
-\item[$\bullet$] Conducted sensitivities to no weighting and harmonic means
-\end{itemize}
-
-\begincols
- \begincol{.5\textwidth}
-\includegraphics[height=4cm]{Figures/Data_weighting_spawnb.png} \endcol
- \begincol{.5\textwidth}
-\includegraphics[height=4cm]{Figures/Data_weighting_Bratio.png} \endcol
-\endcols
-
-\end{frame}
-
-\begin{frame}{Base Model Output (page 1)}
-
-\begin{table}[ht]
 \centering
-\scalebox{0.5}{
-\begin{tabular}{p{1.9in}p{.6in}p{.6in}p{.9in}p{.4in}p{.4in}p{2in}}
-  \hline
-Parameter & Value & Phase & Bounds & Status & SD & Prior (Exp.Val, SD) \\ 
-  \hline
-NatM\_p\_1\_Fem\_GP\_1 & 0.235 & -3 & (0.01, 1) &  &  & Log\_Norm (-1.3581, 0.438438) \\ 
-  L\_at\_Amin\_Fem\_GP\_1 & 11.925 & 2 & (2, 30) & OK & 0.675 & None \\ 
-  L\_at\_Amax\_Fem\_GP\_1 & 31.886 & 2 & (30, 50) & OK & 0.680 & None \\ 
-  VonBert\_K\_Fem\_GP\_1 & 0.292 & 2 & (0.05, 0.5) & OK & 0.030 & None \\ 
-  CV\_young\_Fem\_GP\_1 & 0.088 & 3 & (0.02, 0.5) & OK & 0.020 & None \\ 
-  CV\_old\_Fem\_GP\_1 & 0.119 & 3 & (0.02, 0.75) & OK & 0.007 & None \\ 
-  Wtlen\_1\_Fem & 0.000 & -3 & (-3, 3) &  &  & None \\ 
-  Wtlen\_2\_Fem & 3.058 & -3 & (2, 4) &  &  & None \\ 
-  Mat50\%\_Fem & 18.000 & -3 & (10, 30) &  &  & None \\ 
-  Mat\_slope\_Fem & -1.200 & -3 & (-3, 3) &  &  & None \\ 
-  Eggs/kg\_inter\_Fem & 1.000 & -3 & (-3, 3) &  &  & None \\ 
-  Eggs/kg\_slope\_wt\_Fem & 0.000 & -3 & (-3, 3) &  &  & None \\ 
-  NatM\_p\_1\_Mal\_GP\_1 & 0.000 & -2 & (-1, 1) &  &  & Normal (0, 99) \\ 
-  L\_at\_Amin\_Mal\_GP\_1 & 0.000 & -2 & (-3, 3) &  &  & None \\ 
-  L\_at\_Amax\_Mal\_GP\_1 & -0.143 & 2 & (-3, 3) & OK & 0.024 & None \\ 
-  VonBert\_K\_Mal\_GP\_1 & -0.080 & 2 & (-3, 3) & OK & 0.144 & None \\ 
-  CV\_young\_Mal\_GP\_1 & 1.318 & 3 & (-3, 3) & OK & 0.229 & None \\ 
-  CV\_old\_Mal\_GP\_1 & -0.495 & 3 & (-3, 3) & OK & 0.121 & None \\ 
-  Wtlen\_1\_Mal & 0.000 & -5 & (0, 1) &  &  & None \\ 
-  Wtlen\_2\_Mal & 2.981 & -5 & (2, 4) &  &  & None \\ 
-  CohortGrowDev & 1.000 & -1 & (1, 1) &  &  & None \\ 
-  FracFemale\_GP\_1 & 0.500 & -4 & (0.000001, 0.999999) &  &  & None \\ 
-  SR\_LN(R0) & 8.194 & 1 & (0, 31) & OK & 0.155 & None \\ 
-  SR\_BH\_steep & 0.718 & -2 & (0.21, 0.99) &  &  & Full\_Beta (0.718, 0.158) \\ 
-   \hline
-\end{tabular}
-}
-\end{table}
+\includegraphics{r4ss/plots_mod1/yield1_yield_curve.png}
 
 \end{frame}
 
-\begin{frame}{Pre-STAR Base Model Output (page 2)}
-
-\begin{table}[ht]
-\centering
-\scalebox{0.5}{
-\begin{tabular}{p{1.9in}p{.6in}p{.6in}p{.9in}p{.4in}p{.4in}p{2in}}
-  \hline
-Parameter & Value & Phase & Bounds & Status & SD & Prior (Exp.Val, SD) \\ 
-  \hline
-SR\_sigmaR & 0.600 & -2 & (0, 2) &  &  & None \\ 
-  SR\_regime & 0.000 & -4 & (-5, 5) &  &  & None \\ 
-  SR\_autocorr & 0.000 & -3 & (0, 0.5) &  &  & None \\ 
-  LnQ\_base\_RecPR(4) & -6.847 & -1 & (-15, 15) &  &  & None \\ 
-  Q\_extraSD\_RecPR(4) & 0.012 & 4 & (0.0001, 1) & OK & 0.022 & None \\ 
-  LnQ\_base\_RecPC(5) & -11.255 & -1 & (-15, 15) &  &  & None \\ 
-  Q\_extraSD\_RecPC(5) & 0.258 & 4 & (0.0001, 1) & OK & 0.047 & None \\ 
-  LnQ\_base\_RecDD(6) & -10.578 & -1 & (-15, 15) &  &  & None \\ 
-  Q\_extraSD\_RecDD(6) & 0.067 & 4 & (0.0001, 1) & OK & 0.043 & None \\ 
-  LnQ\_base\_Sanitation(7) & -10.614 & -1 & (-15, 15) &  &  & None \\ 
-  Q\_extraSD\_Sanitation(7) & 0.217 & 4 & (0.0001, 1) & OK & 0.047 & None \\ 
-  LnQ\_base\_NWFSCTrawl(8) & -1.086 & -1 & (-15, 15) &  &  & None \\ 
-  Q\_extraSD\_NWFSCTrawl(8) & 0.253 & 4 & (0.0001, 1) & OK & 0.145 & None \\ 
-  LnQ\_base\_SCBSurvey(11) & -11.143 & -1 & (-15, 15) &  &  & None \\ 
-  Q\_extraSD\_SCBSurvey(11) & 0.159 & 4 & (0.0001, 1) & OK & 0.139 & None \\ 
-  LnQ\_base\_RecPCOBR(12) & -10.209 & -1 & (-15, 15) &  &  & None \\ 
-  Q\_extraSD\_RecPCOBR(12) & 0.136 & 4 & (0.0001, 1) & OK & 0.046 & None \\ 
-  SizeSel\_P1\_ComHL(1) & 24.436 & 5 & (13, 44) & OK & 1.166 & None \\ 
-  SizeSel\_P2\_ComHL(1) & 15.000 & -3 & (-10, 16) &  &  & None \\ 
-  SizeSel\_P3\_ComHL(1) & 2.119 & 5 & (-1, 10) & OK & 0.619 & None \\ 
-  SizeSel\_P4\_ComHL(1) & 15.000 & -3 & (-1, 16) &  &  & None \\ 
-  SizeSel\_P5\_ComHL(1) & -15.537 & 5 & (-25, -1) & OK & 128.790 & None \\ 
-  SizeSel\_P6\_ComHL(1) & 10.000 & -3 & (-5, 11) &  &  & None \\ 
-  SizeSel\_P1\_ComNet(2) & 44.000 & -5 & (13, 44) &  &  & None \\ 
-  SizeSel\_P2\_ComNet(2) & 15.000 & -3 & (-10, 16) &  &  & None \\ 
-  SizeSel\_P3\_ComNet(2) & 5.146 & 5 & (-1, 10) & OK & 0.234 & None \\ 
-   \hline
-\end{tabular}
-}
-\end{table}
-
-\end{frame}
-
-\begin{frame}{Pre-STAR Base Model Output (page 3)}
-
-\begin{table}[ht]
-\centering
-\scalebox{0.5}{
-\begin{tabular}{p{1.9in}p{.6in}p{.6in}p{.9in}p{.4in}p{.4in}p{2.1in}}
-  \hline
-Parameter & Value & Phase & Bounds & Status & SD & Prior (Exp.Val, SD) \\ 
-  \hline
-SizeSel\_P4\_ComNet(2) & 15.000 & -3 & (-1, 16) &  &  & None \\ 
-  SizeSel\_P5\_ComNet(2) & -16.400 & 5 & (-25, -1) & OK & 119.734 & None \\ 
-  SizeSel\_P6\_ComNet(2) & 10.000 & -3 & (-5, 11) &  &  & None \\ 
-  SizeSel\_P1\_ComTrawl(3) & 1.000 & -2 & (1, 45) &  &  & None \\ 
-  SizeSel\_P2\_ComTrawl(3) & 45.000 & -3 & (1, 45) &  &  & None \\ 
-  SizeSel\_P1\_RecPR(4) & 42.043 & 5 & (13, 44) & OK & 2.423 & None \\ 
-  SizeSel\_P2\_RecPR(4) & 15.000 & -3 & (-10, 16) &  &  & None \\ 
-  SizeSel\_P3\_RecPR(4) & 4.572 & 5 & (-1, 10) & OK & 0.181 & None \\ 
-  SizeSel\_P4\_RecPR(4) & 15.000 & -3 & (-1, 16) &  &  & None \\ 
-  SizeSel\_P5\_RecPR(4) & -8.075 & 5 & (-25, -1) & OK & 0.792 & None \\ 
-  SizeSel\_P6\_RecPR(4) & 10.000 & -3 & (-5, 11) &  &  & None \\ 
-  SizeSel\_P1\_RecPC(5) & 37.769 & 5 & (13, 44) & OK & 1.567 & None \\ 
-  SizeSel\_P2\_RecPC(5) & 15.000 & -3 & (-10, 16) &  &  & None \\ 
-  SizeSel\_P3\_RecPC(5) & 4.609 & 5 & (-1, 10) & OK & 0.168 & None \\ 
-  SizeSel\_P4\_RecPC(5) & 15.000 & -3 & (-1, 16) &  &  & None \\ 
-  SizeSel\_P5\_RecPC(5) & -8.370 & 5 & (-25, -1) & OK & 2.026 & None \\ 
-  SizeSel\_P6\_RecPC(5) & 10.000 & -3 & (-5, 11) &  &  & None \\ 
-  SizeSel\_P1\_RecDD(6) & 22.469 & 5 & (13, 44) & OK & 0.091 & None \\ 
-  SizeSel\_P2\_RecDD(6) & -11.207 & 4 & (-15, 16) & OK & 57.911 & None \\ 
-  SizeSel\_P3\_RecDD(6) & 3.684 & 4 & (-1, 10) & OK & 0.490 & None \\ 
-  SizeSel\_P4\_RecDD(6) & -10.915 & 4 & (-20, 5) & OK & 48.055 & None \\ 
-  SizeSel\_P5\_RecDD(6) & -2.632 & 5 & (-25, 3) & OK & 0.390 & None \\ 
-  SizeSel\_P6\_RecDD(6) & -2.583 & 4 & (-5, 11) & OK & 0.405 & None \\ 
-  SizeSel\_P1\_Sanitation(7) & 23.678 & 4 & (13, 44) & OK & 0.487 & None \\ 
-  SizeSel\_P2\_Sanitation(7) & 15.000 & -3 & (-10, 16) &  &  & None \\ 
-   \hline
-\end{tabular}
-}
-\end{table}
-
-\end{frame}
-
-\begin{frame}{Pre-STAR Base Model Output (page 4)}
-
-\begin{table}[ht]
-\centering
-\scalebox{0.5}{
-\begin{tabular}{p{2.5in}p{.6in}p{.6in}p{.9in}p{.4in}p{.4in}p{.4in}}
-  \hline
-Parameter & Value & Phase & Bounds & Status & SD & Prior (Exp.Val, SD) \\ 
-  \hline
-SizeSel\_P2\_Sanitation(7) & 15.000 & -3 & (-10, 16) &  &  & None \\ 
-  SizeSel\_P3\_Sanitation(7) & 3.005 & 4 & (-1, 10) & OK & 0.158 & None \\ 
-  SizeSel\_P4\_Sanitation(7) & 15.000 & -3 & (-1, 16) &  &  & None \\ 
-  SizeSel\_P5\_Sanitation(7) & -4.582 & 4 & (-25, 5) & OK & 0.606 & None \\ 
-  SizeSel\_P6\_Sanitation(7) & 10.000 & -3 & (-5, 11) &  &  & None \\ 
-  SizeSel\_P1\_NWFSCTrawl(8) & 23.098 & 4 & (13, 44) & OK & 2.213 & None \\ 
-  SizeSel\_P2\_NWFSCTrawl(8) & 15.000 & -3 & (-10, 16) &  &  & None \\ 
-  SizeSel\_P3\_NWFSCTrawl(8) & 3.443 & 4 & (-1, 10) & OK & 0.616 & None \\ 
-  SizeSel\_P4\_NWFSCTrawl(8) & 15.000 & -3 & (-1, 16) &  &  & None \\ 
-  SizeSel\_P5\_NWFSCTrawl(8) & -12.730 & 4 & (-25, 5) & OK & 169.330 & None \\ 
-  SizeSel\_P6\_NWFSCTrawl(8) & 10.000 & -3 & (-5, 11) &  &  & None \\ 
-  SizeSel\_P1\_GillnetSurvey(9) & 1.000 & -2 & (1, 45) &  &  & None \\ 
-  SizeSel\_P2\_GillnetSurvey(9) & 45.000 & -3 & (1, 45) &  &  & None \\ 
-  SizeSel\_P1\_Impingement(10) & 18.012 & -3 & (13, 44) &  &  & None \\ 
-  SizeSel\_P2\_Impingement(10) & -5.928 & 4 & (-15, 16) & OK & 27.411 & None \\ 
-  SizeSel\_P3\_Impingement(10) & 2.137 & -4 & (-1, 10) &  &  & None \\ 
-  SizeSel\_P4\_Impingement(10) & 2.701 & 4 & (-20, 5) & OK & 1.173 & None \\ 
-  SizeSel\_P5\_Impingement(10) & 8.275 & -3 & (-25, 10) &  &  & None \\ 
-  SizeSel\_P6\_Impingement(10) & -0.611 & 4 & (-5, 11) & OK & 0.476 & None \\ 
-  SizeSel\_P1\_SCBSurvey(11) & 1.000 & -2 & (1, 45) &  &  & None \\ 
-  SizeSel\_P2\_SCBSurvey(11) & 45.000 & -3 & (1, 45) &  &  & None \\ 
-  SizeSel\_P1\_RecPCOBR(12) & 1.000 & -2 & (1, 45) &  &  & None \\ 
-  SizeSel\_P2\_RecPCOBR(12) & 45.000 & -3 & (1, 45) &  &  & None \\ 
-  SizeSel\_P1\_ComHL(1)\_BLK1repl\_1999 & 28.427 & 6 & (13, 44) & OK & 0.583 & None \\ 
-  SizeSel\_P3\_ComHL(1)\_BLK1repl\_1999 & 2.029 & 6 & (-1, 10) & OK & 0.301 & None \\ 
-  SizeSel\_P1\_ComNet(2)\_BLK1repl\_1999 & 44.000 & -6 & (13, 44) &  &  & None \\ 
-   \hline
-\end{tabular}
-}
-\end{table}
-
-\end{frame}
-
-\begin{frame}{Base Model Output}
-
-\begin{table}[ht]
-\centering
-\scalebox{0.8}{
-\begin{tabular}{lp{1in}p{1.2in}p{1in}p{1.2in}}
-  \hline
-Year & Spawning biomass (mt) & 95\% confidence interval & Estimated depletion & 95\% confidence interval \\ 
-  \hline
-2008 & 1144.50 & (654.46-1634.54) & 0.70 & (0.573-0.836) \\ 
-  2009 & 1090.48 & (629.78-1551.18) & 0.67 & (0.55-0.793) \\ 
-  2010 & 1029.33 & (597.2-1461.46) & 0.63 & (0.521-0.746) \\ 
-  2011 & 980.13 & (571.79-1388.47) & 0.60 & (0.5-0.707) \\ 
-  2012 & 943.55 & (553.81-1333.3) & 0.58 & (0.485-0.677) \\ 
-  2013 & 890.08 & (518.85-1261.32) & 0.55 & (0.456-0.64) \\ 
-  2014 & 810.22 & (462.86-1157.59) & 0.50 & (0.41-0.587) \\ 
-  2015 & 746.23 & (412.08-1080.38) & 0.46 & (0.371-0.548) \\ 
-  2016 & 774.81 & (426.28-1123.35) & 0.48 & (0.381-0.572) \\ 
-  2017 & 882.46 & (484.21-1280.71) & 0.54 & (0.43-0.657) \\ 
-   \hline
-\end{tabular}
-}
-\end{table}
-
-\end{frame}
-
-\begin{frame}{Base Model Output}
+\begin{frame}{Reference Points}
 
 \begin{table}[ht]
 \centering
 \scalebox{0.7}{
-\begin{tabular}{p{.8in}p{.8in}p{.8in}p{.8in}p{.8in}p{.8in}}
+\begin{tabular}{lll}
   \hline
-Year & OFL & ABC & ACL & ACT & Total Catch \\ 
+\textbf{Quantity} & \textbf{Estimate} & \textbf{\~95\%  Confidence Interval} \\ 
   \hline
-\textbf{2007} & 219 &  & 175 &  & 139.583 \\ 
-  \textbf{2008} & 219 &  & 175 &  & 103.887 \\ 
-  \textbf{2009} & 175 &  & 175 &  & 113.318 \\ 
-  \textbf{2010} & 155 &  & 155 &  & 105.968 \\ 
-  \textbf{2011} & 141 & 135 & 135 &  & 105.215 \\ 
-  \textbf{2012} & 132 & 126 & 126 &  & 120.008 \\ 
-  \textbf{2013} & 126 & 120 & 120 &  & 115.142 \\ 
-  \textbf{2014} & 122 & 117 & 117 &  & 123.822 \\ 
-  \textbf{2015} & 119 & 114 & 114 &  & 83.8908 \\ 
-  \textbf{2016} & 117 & 111 & 111 &  & 74.1613 \\ 
-  \textbf{2017} & 289 & 264 & 150 & 110 & - \\ 
-  \textbf{2018} & 278 & 254 & 150 & 110 & - \\ 
+Unfished spawning biomass (mt) & 1624.4 & (1156.4-2092.5) \\ 
+  Unfished age 1+ biomass (mt) & 2921.9 & (2052.8-3791.1) \\ 
+  Unfished recruitment ($R_0$) & 3619.8 & (2518.6-4721) \\ 
+  Spawning biomass (2017, mt) & 882.5 & (484.2-1280.7) \\ 
+  Depletion (2017) & 0.5432 & (0.4299-0.6565) \\ 
+  \textbf{$\text{Reference points based on } \mathbf{SB_{40\%}}$} &  &  \\ 
+  Proxy spawning biomass ($B_{40\%}$) & 649.8 & (462.5-837) \\ 
+  SPR resulting in $B_{40\%}$ ($SPR_{B40\%}$) & 0.4589 & (0.4589-0.4589) \\ 
+  Exploitation rate resulting in $B_{40\%}$ & 0.1741 & (0.1601-0.1882) \\ 
+  Yield with $SPR_{B40\%}$ at $B_{40\%}$ (mt) & 247.2 & (168.6-325.9) \\ 
+  \textbf{\textit{Reference points based on SPR proxy for MSY}} &  &  \\ 
+  Spawning biomass & 723.8 & (515.2-932.3) \\ 
+  $SPR_{proxy}$ & 0.5 &  \\ 
+  Exploitation rate corresponding to $SPR_{proxy}$ & 0.1502 & (0.1383-0.1621) \\ 
+  Yield with $SPR_{proxy}$ at $SB_{SPR}$ (mt) & 232.4 & (158.5-306.4) \\ 
+  \textbf{\textit{Reference points based on estimated MSY values}} &  &  \\ 
+  Spawning biomass at $MSY$ ($SB_{MSY}$) & 358.8 & (250.6-467) \\ 
+  $SPR_{MSY}$ & 0.2974 & (0.2857-0.3091) \\ 
+  Exploitation rate at $MSY$ & 0.3236 & (0.2917-0.3554) \\ 
+  $MSY$ (mt)  & 281.3 & (192.2-370.4) \\ 
    \hline
+\end{tabular}
+}
+\end{table}
+
+\end{frame}
+
+\begin{frame}{Decision Table}
+
+\begin{table}[ht]
+\centering
+\scalebox{0.45}{
+\begin{tabular}{l|cc|>{\centering}p{.7in}c|>{\centering}p{.7in}c|>{\centering}p{.7in}c}
+   \multicolumn{3}{c}{}  &  \multicolumn{2}{c}{} 
+                               & \multicolumn{2}{c}{\textbf{States of nature}} 
+                               & \multicolumn{2}{c}{} \\
+  \multicolumn{3}{c}{}  &  \multicolumn{2}{c}{Low M 0.164} 
+                               & \multicolumn{2}{c}{Base M 0.235} 
+                               &  \multicolumn{2}{c}{High M 0.2745} \\
+ \hline
+ & Year & Catch & Spawning biomass & Depletion & Spawning biomass & Depletion & Spawning biomass & Depletion \\ 
+  \hline
+ & 2019 & 150.00 & 587.05 & 0.47 & 1154.73 & 0.71 & 2252.89 & 0.84 \\ 
+   & 2020 & 150.00 & 584.87 & 0.47 & 1174.89 & 0.72 & 2312.02 & 0.86 \\ 
+   & 2021 & 150.00 & 574.64 & 0.46 & 1176.29 & 0.72 & 2331.33 & 0.87 \\ 
+  Constant & 2022 & 150.00 & 561.72 & 0.45 & 1169.09 & 0.72 & 2330.83 & 0.87 \\ 
+  Catch & 2023 & 150.00 & 548.66 & 0.44 & 1158.79 & 0.71 & 2321.64 & 0.86 \\ 
+   & 2024 & 150.00 & 536.43 & 0.43 & 1148.13 & 0.71 & 2309.70 & 0.86 \\ 
+   & 2025 & 150.00 & 525.20 & 0.42 & 1138.24 & 0.70 & 2297.82 & 0.86 \\ 
+   & 2026 & 150.00 & 514.89 & 0.41 & 1129.45 & 0.70 & 2287.10 & 0.85 \\ 
+   & 2027 & 150.00 & 505.35 & 0.40 & 1121.77 & 0.69 & 2277.85 & 0.85 \\ 
+   & 2028 & 150.00 & 496.46 & 0.40 & 1115.12 & 0.69 & 2270.05 & 0.85 \\ 
+   \hline
+ & 2019 & 232.40 & 573.15 & 0.46 & 984.92 & 0.61 & 1779.53 & 0.66 \\ 
+   & 2020 & 232.40 & 588.87 & 0.47 & 955.43 & 0.59 & 1673.88 & 0.62 \\ 
+   & 2021 & 232.40 & 592.42 & 0.47 & 912.16 & 0.56 & 1560.33 & 0.58 \\ 
+  Estimated & 2022 & 232.40 & 588.94 & 0.47 & 869.23 & 0.54 & 1462.95 & 0.54 \\ 
+  MSY & 2023 & 232.40 & 584.63 & 0.47 & 837.51 & 0.52 & 1400.62 & 0.52 \\ 
+   & 2024 & 232.40 & 579.50 & 0.46 & 812.51 & 0.50 & 1353.76 & 0.50 \\ 
+   & 2025 & 232.40 & 575.83 & 0.46 & 796.20 & 0.49 & 1327.05 & 0.49 \\ 
+   & 2026 & 232.40 & 572.04 & 0.46 & 782.22 & 0.48 & 1302.32 & 0.48 \\ 
+   & 2027 & 232.40 & 569.72 & 0.45 & 773.77 & 0.48 & 1290.11 & 0.48 \\ 
+   & 2028 & 232.40 & 567.04 & 0.45 & 765.22 & 0.47 & 1275.09 & 0.47 \\ 
+   \hline
+ & 2019 & 346.30 & 587.05 & 0.47 & 1154.73 & 0.71 & 2252.89 & 0.84 \\ 
+   & 2020 & 333.89 & 479.44 & 0.38 & 1068.32 & 0.66 & 2206.66 & 0.82 \\ 
+   & 2021 & 313.01 & 383.32 & 0.31 & 983.88 & 0.61 & 2142.68 & 0.80 \\ 
+  ACL = ABC & 2022 & 293.00 & 311.34 & 0.25 & 917.22 & 0.56 & 2085.85 & 0.78 \\ 
+   & 2023 & 277.18 & 260.27 & 0.21 & 869.36 & 0.54 & 2042.74 & 0.76 \\ 
+   & 2024 & 265.38 & 221.15 & 0.18 & 835.93 & 0.51 & 2012.49 & 0.75 \\ 
+   & 2025 & 256.64 & 187.64 & 0.15 & 812.37 & 0.50 & 1992.23 & 0.74 \\ 
+   & 2026 & 250.12 & 157.42 & 0.13 & 795.36 & 0.49 & 1979.19 & 0.74 \\ 
+   & 2027 & 245.19 & 129.79 & 0.10 & 782.82 & 0.48 & 1971.20 & 0.73 \\ 
+   & 2028 & 241.44 & 104.22 & 0.08 & 773.46 & 0.48 & 1966.69 & 0.73 \\ 
+   \hline
+\hline
 \end{tabular}
 }
 \end{table}
@@ -812,35 +512,80 @@ Year & OFL & ABC & ACL & ACT & Total Catch \\
 
 \section{Uncertainty}\label{uncertainty}
 
-\begin{frame}{Sensitivities}
+\begin{frame}{Sensitivities - All}
 
-Sensitivities to Likelihood Components and Model Specification
-\begincols
- \begincol{.5\textwidth} \includegraphics{Figures/Sensitivity_All.pdf}
-\endcol
- \begincol{.5\textwidth}
-
-\begin{itemize}
-\item Remove fleets, only one index, or length composition only
-\item Sensitivity relative to the base model
-\item Boxes are the 95\% CI from the base model
-\item Metrics
-\begin{itemize}
-\item $SB_0$ Population scale
-\item $SB_{2017}$ Population scale
-\item $SB_{2017}/SB_{0}$ Depletion/Population status
-\item $MSY_{SPR50\%}$ Yield/Productivity/scale
-\end{itemize}
-\end{itemize}
-
-\endcol
-\endcols
+\includegraphics{Figures/Sensitivity_All.pdf}
 
 \end{frame}
 
-\begin{frame}{Sensitivities - All}
+\begin{frame}{Research and Data Needs}
 
-\includegraphics{Figures/Sensitivity_Yield.pdf}
+\begin{itemize}
+\item[$\bullet$] \textbf{Natural mortality and steepness}: Both natural mortality and steepness were 
+fixed in the base model.  The natural mortality estimate used the assessment 
+was based on maximum age and steepness based on rockfish species meta-analysis.
+
+\item[$\bullet$] \textbf{Stock south of the U.S. border}:  No available information on the status of California scorpionfish in Mexico could be found.
+
+\item[$\bullet$] \textbf{Sex ratio}:  The sex ratio in the only published work by Love et al.
+(\protect\hyperlink{ref-Love1987}{1987}) and samples 
+from the NWFSC trawl survey were skewed towards males.
+
+\item[$\bullet$] \textbf{Aggregating behavior}: Aggregative behavior in both spawning and 
+non-spawning seasons of California scorpionfish is not well understood.
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Research and Data Needs}
+
+\begin{itemize}
+
+\item[$\bullet$] \textbf{Fecundity/maturity}: A reproductive biology study of California 
+scorpionfish is needed.There are currently no estimates of fecundity 
+for California scorpionfish and no studies have been done of the relationship between weight and reproductive 
+output.
+
+\item[$\bullet$] \textbf{Discard mortality}: Many scorpionfish are discarded at sea. The assessment 
+used estimates of discard mortality of a distantly related species (lingcod) 
+in a different ecological setting (Karpov \protect\hyperlink{ref-Karpov1996}{1996}). 
+
+
+\item[$\bullet$] \textbf{Environmental covariates}: The relationship between environmental 
+conditions and recruitment for scorpionfish should be further explored. Preliminary 
+exploration using CalCOFI temperature data suggested that a relationship existed, 
+but other time series may correlate more strongly given that scorpionfish are a 
+near-shore species.
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Research and Data Needs}
+
+\begin{itemize}
+
+\item[$\bullet$] \textbf{Discard fleet modeling}: Modeling discard as a separate fleet, as 
+was done for California scorpionfish, is a simple and intuitive approach, but 
+the strengths and weaknesses of this approach are unclear.
+
+\item[$\bullet$] \textbf{POTW trawl surveys}: Additional biological information 
+(sex, otoliths, depth distribution) should be collected for California 
+scorpionfish during the Publicly Owned Treatment Works (POTWs) trawl 
+survey and the Southern California Bight Regional Monitoring Project 
+(SCCWRP) trawl survey.
+
+\item[$\bullet$] \textbf{Age validation}: An age validation study is needed for 
+California scorpionfish.
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Questions??}
+
+\includegraphics[width=\textwidth]{cover_photo}
 
 \end{frame}
 

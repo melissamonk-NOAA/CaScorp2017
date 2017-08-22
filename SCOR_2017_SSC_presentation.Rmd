@@ -61,19 +61,6 @@ output:
 \centering
 \includegraphics[width=.5\textwidth]{cover_photo}
 
-##Early Life History
-
-\begin{itemize} 
-\item[$\bullet$] Migration to spawning grounds, exhibit explosive breeding behavior just before dawn
-\item[$\bullet$] External fertilization, females produce hollow gelatenous single-layer floating egg matrix
-\item[$\bullet$] Eggs hatch after about 5 days
-\item[$\bullet$] Juveniles settle at less than 2 cm 
-\end{itemize}
-
-\centering
-\includegraphics[width=.5\textwidth]{Figures/baby_scorp}
-
-\footnotetext{Line drawning from CalCOFI Atlas 33, pg. 789 Figure 26}
 
 ##Distribution and Stock Assessment Boundary
 \begincols
@@ -142,12 +129,12 @@ output:
 Pre-STAR Base Model
 
 \begin{itemize}
-\item[$\bullet$] One area south of Pt. Conception 
+\item[$\bullet$] One area model, south of Pt. Conception 
 \begin{itemize}
 \item[$\circ$] Catches from Mexican waters excluded as in 2005
 \end{itemize}
 \item[$\bullet$] Steepness fixed at 0.718
-\item[$\bullet$] Sex-specific $M$ fixed for females, male $M$ estimated as offset
+\item[$\bullet$] Same $M$ for males and females fixed at 0.235
 \item[$\bullet$] Re-evaluated fleet definitions
 \item[$\bullet$] Ages now available from the NWFSC trawl survey
 \item[$\bullet$] New indices and length compositions available
@@ -156,50 +143,12 @@ Pre-STAR Base Model
 
 
 <!--------------------------------------------------------------------------------->
-#Catch
+#Data
 <!--------------------------------------------------------------------------------->
 ##Catches by Fleet
 \centering
 ![Catch history of `r spp` in the `r mod1_label`. \label{fig:r4ss_catches}](r4ss/plots_mod1/catch2 landings stacked.png)
 
-
-##Recreational Catch
-\begincols
-  \begincol{.4\textwidth}
-
-\begin{itemize}
-\item[$\bullet$] 2005 assessment used number of fish for recreational catches
-\item[$\bullet$] 2017 assessment includes one recreational discard fleet
-\begin{itemize}
-\item[$\circ$] Discard mortality rate of 7\%
-\item[$\circ$] Discard biomass accounts for  $<$3\% of recreational mortality
-\end{itemize}
-\end{itemize}
-
-\endcol
-  \begincol{.6\textwidth}
-\includegraphics[totalheight=0.65\textheight]{California_scorpionfish_2017_files/figure-latex/unnamed-chunk-16-1.pdf}  
-  \endcol
-\endcols
-
-##Commercial Catch
-\begincols
-  \begincol{.4\textwidth}
- \begin{itemize}
-  \item[$\bullet$] Historical catches same as the 2005 assessment
-  \item[$\bullet$] California Fisheries Information System (CFIS) landings data used to update catches from 2005-2016 
-  \item[$\bullet$] Discards assumed neglible
-\end{itemize}
-   \endcol
-  \begincol{.55\textwidth}
-![](California_scorpionfish_2017_files/figure-latex/unnamed-chunk-17-1.pdf)
-  \endcol
-\endcols
-
-
-<!--------------------------------------------------------------------------------->
-#Indices
-<!--------------------------------------------------------------------------------->
 ##Indices of Abundance
 ![Summary of data sources used in the `r mod1_label`. \label{fig:data_plot}](r4ss/plots_mod1/data_plot.png)
 
@@ -223,81 +172,25 @@ Pre-STAR Base Model
 
 
 ##Indices of Abundance
-
-
-
-<!--------------------------------------------------------------------------------->
-#Composition
-<!--------------------------------------------------------------------------------->
-##Length compositions were provided from the following sources:
-
-\begin{itemize}
-  \item[$\bullet$] CDFW market category study (\emph{commercial dead fish}, 1996-2003)    
-  \item[$\bullet$] CALCOM (\emph{commercial dead fish}, 2013-2016)    
-  \item[$\bullet$] CDFW onboard observer (\emph{recreational charter discards}, 2003-2016)  
-  \item[$\bullet$] Collins and Crooke onboard observer surveys (1975-1978) 
-  \item[$\bullet$] Ally onboard observer study (\emph{recreational charter kept/discards}, 1984-1989)  
-  \item[$\bullet$] MRFSS (1980-2003) and CRFS (2004-2014) (\emph{private and party/charter, kept})
-  \item[$\bullet$] POTW trawl surveys (\emph{research}, 1970-2016)      
-  \item[$\bullet$] CSUN/VRG gillnet survey (\emph{research}, 1995-2008)        
-  \item[$\bullet$] Power plant impingement surveys (\emph{research}, 1974-2016)  
-  \item[$\bullet$] Southern California Bight trawl survey (\emph{research}, 1994, 1998, 2003, 2008, 2013) 
+\begincols
+  \begincol{.5\textwidth}
+   \begin{itemize}
+\item[$\bullet$] Stephens-MacCall threshold exploration for the dockside recreational charter boat index
+\item[$\bullet$] Index not used in the assessment, charter boat logbook used
 \end{itemize}
+  \endcol
+  \begincol{.5\textwidth}
+![](Figures/Fleet5_RecPC_dockside_index_compare.png)
+   \endcol
+\endcols
+
+
+##Indices of Abundance
+![](Figures/All_indices.png)
+
 
 ##Aggregate length composition
 ![Length compositions aggregated across time by fleet. Labels 'retained' and 'discard' indicate retained or discarded samples for each fleet. Panels without this designation represent the whole catch. \label{fig:comp_lenfit__aggregated_across_time}](r4ss/plots_mod1/comp_lenfit__aggregated_across_time.png)
-
-
-##Commercial fishery length composition
-\begincols
-  \begincol{.5\textwidth}
-  \centering
-  Commercial hook-and-line
-\includegraphics[height=3cm]{r4ss/plots_mod1/comp_lendat_bubflt1mkt2.png}
-
-Commercial gillnet
-\includegraphics[height=3cm]{r4ss/plots_mod1/comp_lendat_bubflt2mkt2.png}
-  \endcol
-  \begincol{.5\textwidth}
-  \centering
-  Commercial trawl
-\includegraphics[height=4cm]{r4ss/plots_mod1/comp_lendat_bubflt3mkt2.png}
-  \endcol
-\endcols
-
-
-##Recreational fishery Length Composition
-\begincols
-  \begincol{.5\textwidth}
-  Recreational private fleet
-\includegraphics[height=3cm]{r4ss/plots_mod1/comp_lendat_bubflt4mkt2.png}
-
-Recreational party/charter fleet
-\includegraphics[height=3cm]{r4ss/plots_mod1/comp_lendat_bubflt5mkt2_page2.png}
-  \endcol
-  \begincol{.5\textwidth}
-  \centering
-  
-  Recreational dead discards
-\includegraphics[height=4cm]{r4ss/plots_mod1/comp_lendat_bubflt6mkt2.png}
-  \endcol
-\endcols
-
-##Research Length Composition
-
-\begincols
-  \begincol{.5\textwidth}
-  POTW survey
-\includegraphics[height=3cm]{r4ss/plots_mod1/comp_lendat_bubflt7mkt2_page2.png}
-
-
-Impingement survey
-\includegraphics[height=3cm]{r4ss/plots_mod1/comp_lendat_bubflt10mkt2.png}
-
-Bight trawl survey
-\includegraphics[height=3cm]{r4ss/plots_mod1/comp_lendat_bubflt11mkt2.png}
-  \endcol
-\endcols
 
 ##NWFSC Length and Age Composition
 Note: females in red and males in blue
@@ -307,30 +200,6 @@ Note: females in red and males in blue
   \endcol
   \begincol{.5\textwidth}
 \includegraphics[height=.5\textheight]{r4ss/plots_mod1/comp_condAALdat_bubflt8mkt0_page2.png}
-  \endcol
-\endcols
-
-<!--------------------------------------------------------------------------------->
-#Biological
-<!--------------------------------------------------------------------------------->
-##Length data
-\begin{itemize}
-\item[$\bullet$] 2005 assessment used standard length
-\item[$\bullet$] Impingement, POTW, and Bight surveys measure standard length
-\item[$\bullet$] 2017 assessment uses total length (conversion based on a CDFW halibut trawl study; measured both SL and TL)
-\item[$\bullet$] To avoid gaps in TL length bins, TL = SL - 0.5 + U[0,1] 
-\end{itemize}
-
-\includegraphics[height=.5\textheight]{Figures/SL_to_TL_compare.png}
-
-##Length data
-POTW lengths
-\begincols
-  \begincol{.4\textwidth}
-\includegraphics{Figures/Fleet7_Sanitation_lengthboxplots.png}
-  \endcol
-  \begincol{.6\textwidth}
-\includegraphics{Figures/Fleet7_Sanitation_length_source.png}  
   \endcol
 \endcols
 
@@ -347,16 +216,6 @@ POTW lengths
 \endcols
 
 
-##Length-at-Age
-
-\begincols
-  \begincol{.4\textwidth}
-  ![Comparison box plots of raw length data from NWFSC trawl survey by depth zone and sex. \label{fig:Fleet8_NWFSCtrawl_lengthdepth}](Figures/NWFSCtrawl_lengthdepth.png)
-\endcol
-\begincol{.48\textwidth}
-  ![Length frequency distributions of females (red) and male (blue) from the NWFSC trawl survey between 2003 and 2016. \label{fig:Fleet8_comp_lendat_bubflt8mkt0}](r4ss/plots_mod1/comp_lendat_bubflt8mkt0.png)
- \endcol
-\endcols
  
 <!--------------------------------------------------------------------------------->
 #Model
@@ -365,7 +224,7 @@ POTW lengths
 \begin{itemize}
 \item[$\bullet$] Stock Synthesis version 3.30.05.04
 \item[$\bullet$] Model starts in 1916, unfished equilibrium catch prior to that
-\item[$\bullet$] Sex-specific growth and mortality with female $M$ fixed at 0.2571 (prior) and male $M$ offset is estimated at -0.2134 (male $M$ = 0.2077)
+\item[$\bullet$] $M$ fixed at 0.235 for both sexes
 \begin{itemize}
 \item[$\circ$] $M$ fixed at 0.25 for both sexes in 2005 assessment
 \end{itemize}
@@ -385,199 +244,140 @@ POTW lengths
 \item[$\circ$] Commercial fleet: 1916-1999 and 2000-2016 (10-in. minimum size limit as of 2000)
 \item[$\circ$] Recreational fleets: 1916-2000 (few regulations), 2001-2005 (fishery closures), 2006-2016 (consistent regulations)
 \end{itemize}
-\item[$\bullet$] Double normal except for the impingement survey (Selectivity = 1.0 for all ages)
+\item[$\bullet$] Double normal selectivity
 \item[$\bullet$] Fisheries selectivity parameters estimated for commercial hook-and-line, receational private, recreational party/charter, and recreational discard fleets
 \end{itemize}
 
-##Selectivity
-\begin{itemize}
-\item[$\bullet$] Commercial gillnet and trawl fleets mirrored to the commercial hook-and-line fleet
-\item[$\bullet$] Recreational CPFV onboard observer retained catch mirrored to the recreational party/charter fleet selectivity (same boats)
-\item[$\bullet$] Survey selectivity parameters estimated for the POTW and NWFSC trawl surveys
-\item[$\bullet$] The gillnet survey and Bight trawl survey mirrored to the POTW selectivity 
-\end{itemize}
+##Stock Status - Biomass
 \centering
-\includegraphics[height=4cm]{r4ss/plots_mod1/sel01_multiple_fleets_length1.png}
+![](r4ss/plots_mod1/ts7_Spawning_biomass_(mt)_with_95_asymptotic_intervals_intervals.png)
 
+##Stock Status - Depletion
+\centering
+![](r4ss/plots_mod1/ts9_Spawning_depletion_with_95_asymptotic_intervals_intervals.png)
 
-##Selectivity
+##Stock Status - Recruitment
+\centering
+![](r4ss/plots_mod1/ts11_Age-0_recruits_(1000s)_with_95_asymptotic_intervals.png)
+
+##Stock Status - Exploitation
 \begincols
   \begincol{.5\textwidth}
-\includegraphics[height=4cm]{r4ss/plots_mod1/sel03_len_timevary_surf_flt1sex1.png}
-
-\includegraphics[height=4cm]{r4ss/plots_mod1/sel03_len_timevary_surf_flt4sex1.png}
+![](r4ss/plots_mod1/SPR3_ratiointerval.png)
   \endcol
   \begincol{.5\textwidth}
-
-\includegraphics[height=4cm]{r4ss/plots_mod1/sel03_len_timevary_surf_flt5sex1.png}  
-\includegraphics[height=4cm]{r4ss/plots_mod1/sel09_len_flt6sex1.png}  
-  \endcol
-\endcols
-
-##Gear Selectivity
-\begincols
-  \begincol{.5\textwidth}
-\includegraphics[height=4cm]{r4ss/plots_mod1/sel09_len_flt7sex1.png}
-
- \endcol
-  \begincol{.5\textwidth}
-\includegraphics[height=4cm]{r4ss/plots_mod1/sel09_len_flt8sex1.png} 
-  \endcol
-\endcols
-
-##Data Weighting
-\begin{itemize}
-\item[$\bullet$] Extra SD estimated for indices
-\item[$\bullet$] Francis weighting applied to length and age data
-\item[$\bullet$] Conducted sensitivities to no weighting and harmonic means
-\end{itemize}
-
-\begincols
-  \begincol{.5\textwidth}
-\includegraphics[height=4cm]{Figures/Data_weighting_spawnb.png}
-  \endcol
-  \begincol{.5\textwidth}
-  \includegraphics[height=4cm]{Figures/Data_weighting_Bratio.png}
+![](r4ss/plots_mod1/SPR4_phase.png)
   \endcol
 \endcols
 
 
 
+##Stock Status - Eq. Yield
+\centering
+![](r4ss/plots_mod1/yield1_yield_curve.png)
 
 
-##Base Model Output (page 1)
-```{r results='asis'}
-    mod_params1 = mod_params[1:24,-1]
 
-  colnames(mod_params1) = c( 'Parameter',
-                             'Value',
-                             'Phase',
-                             'Bounds',
-                             'Status',
-                             'SD',
-                             'Prior (Exp.Val, SD)')
+##Reference Points
+```{r, results='asis'}
+   # Print reference point tables
   
-  print(xtable(mod_params1,
-               align='lp{1.9in}p{.6in}p{.6in}p{.9in}p{.4in}p{.4in}p{2in}',
-        digits=c(0,0,3,0,3,0,3,0)),
-        scalebox=.5,
-        include.rownames = FALSE)
+     print(xtable(Ref_pts_mod1.table), 
+                  include.rownames = FALSE,
+           sanitize.text.function = function(x){x},
+           scalebox=0.7)
+   
 ```
 
 
-##Pre-STAR Base Model Output (page 2)
-```{r results='asis'}
-    mod_params1 = mod_params[25:50,-1]
 
-  colnames(mod_params1) = c( 'Parameter',
-                             'Value',
-                             'Phase',
-                             'Bounds',
-                             'Status',
-                             'SD',
-                             'Prior (Exp.Val, SD)')
-  
-  print(xtable(mod_params1,
-               align='lp{1.9in}p{.6in}p{.6in}p{.9in}p{.4in}p{.4in}p{2in}',
-        digits=c(0,0,3,0,3,0,3,0)),
-        scalebox=.5,
-        include.rownames = FALSE)
+##Decision Table
+```{r, results='asis'}   
+    # print Model 1 decision table
+        addtorow <- list()
+        addtorow$pos <- list()
+        addtorow$pos[[1]] <- -1
+        addtorow$pos[[2]] <- -1
+        addtorow$command <- c( ' \\multicolumn{3}{c}{}  &  \\multicolumn{2}{c}{} 
+                               & \\multicolumn{2}{c}{\\textbf{States of nature}} 
+                               & \\multicolumn{2}{c}{} \\\\\n', 
+                               ' \\multicolumn{3}{c}{}  &  \\multicolumn{2}{c}{Low M 0.164} 
+                               & \\multicolumn{2}{c}{Base M 0.235} 
+                               &  \\multicolumn{2}{c}{High M 0.2745} \\\\\n')
+        
+    print(xtable(decision_mod1.table,
+                 align = c('l','l|','c','c|','>{\\centering}p{.7in}',
+                           'c|','>{\\centering}p{.7in}','c|','>{\\centering}p{.7in}','c')), 
+          add.to.row = addtorow, 
+          include.rownames = FALSE, 
+          hline.after = c(-1, 0, 10, 20, 30, nrow(decision_mod1.table)), 
+          scalebox = .45)
 ```
-
-##Pre-STAR Base Model Output (page 3)
-```{r results='asis'}
-    mod_params1 = mod_params[51:75,-1]
-
-  colnames(mod_params1) = c( 'Parameter',
-                             'Value',
-                             'Phase',
-                             'Bounds',
-                             'Status',
-                             'SD',
-                             'Prior (Exp.Val, SD)')
-  
-  print(xtable(mod_params1,
-               align='lp{1.9in}p{.6in}p{.6in}p{.9in}p{.4in}p{.4in}p{2.1in}',
-               digits=c(0,0,3,0,3,0,3,0)),
-        scalebox=.5,
-        include.rownames = FALSE)
-```
-
-
-##Pre-STAR Base Model Output (page 4)
-```{r results='asis'}
-    mod_params1 = mod_params[75:100,-1]
-
-  colnames(mod_params1) = c( 'Parameter',
-                             'Value',
-                             'Phase',
-                             'Bounds',
-                             'Status',
-                             'SD',
-                             'Prior (Exp.Val, SD)')
-  
-  print(xtable(mod_params1,
-               align='lp{2.5in}p{.6in}p{.6in}p{.9in}p{.4in}p{.4in}p{.4in}',
-               digits=c(0,0,3,0,3,0,3,0)),
-        scalebox=.5,
-        include.rownames = FALSE)
-```
-
-
-##Base Model Output
-```{r results = 'asis'}
-     SpawnDepletemod1_1 = SpawnDepletemod1
-     colnames(SpawnDepletemod1_1) = c('Year','Spawning biomass(mt)','95% CI','Depletion','95% CI')
-     print(xtable(SpawnDepletemod1,
-                  align = 'llp{1in}p{1.2in}p{1in}p{1.2in}'), 
-          include.rownames=FALSE,
-          scalebox=0.8)  
-```
-
-##Base Model Output
-```{r results = 'asis'}
-   mngmnt1 = mngmnt
-   colnames(mngmnt1) = c('Year','OFL','ABC','ACL','ACT','Total Catch')
-   print(xtable(mngmnt1,
-                align = 'lp{.8in}p{.8in}p{.8in}p{.8in}p{.8in}p{.8in}'), 
-         scalebox=.7,
-         include.rownames=FALSE, 
-         sanitize.text.function = function(x){x})  
-```
-
-
 <!--------------------------------------------------------------------------------->
 #Uncertainty
 <!--------------------------------------------------------------------------------->
-##Sensitivities
-Sensitivities to Likelihood Components and Model Specification
-\begincols
-  \begincol{.5\textwidth}
-\includegraphics{Figures/Sensitivity_All.pdf}
-  \endcol
-  \begincol{.5\textwidth}
-\begin{itemize}
-\item Remove fleets, only one index, or length composition only
-\item Sensitivity relative to the base model
-\item Boxes are the 95\% CI from the base model
-\item Metrics
-\begin{itemize}
-\item $SB_0$ Population scale
-\item $SB_{2017}$ Population scale
-\item $SB_{2017}/SB_{0}$ Depletion/Population status
-\item $MSY_{SPR50\%}$ Yield/Productivity/scale
-\end{itemize}
-\end{itemize}
-  \endcol
-\endcols
-
-
-
-
 ##Sensitivities - All
 
-\includegraphics{Figures/Sensitivity_Yield.pdf}
+\includegraphics{Figures/Sensitivity_All.pdf}
+
+##Research and Data Needs
+
+\begin{itemize}
+\item[$\bullet$] \textbf{Natural mortality and steepness}: Both natural mortality and steepness were 
+fixed in the base model.  The natural mortality estimate used the assessment 
+was based on maximum age and steepness based on rockfish species meta-analysis.
+
+\item[$\bullet$] \textbf{Stock south of the U.S. border}:  No available information on the status of California scorpionfish in Mexico could be found.
+
+\item[$\bullet$] \textbf{Sex ratio}:  The sex ratio in the only published work by Love et al.
+(\protect\hyperlink{ref-Love1987}{1987}) and samples 
+from the NWFSC trawl survey were skewed towards males.
+
+\item[$\bullet$] \textbf{Aggregating behavior}: Aggregative behavior in both spawning and 
+non-spawning seasons of California scorpionfish is not well understood.
+
+\end{itemize}
+
+##Research and Data Needs
+\begin{itemize}
+
+\item[$\bullet$] \textbf{Fecundity/maturity}: A reproductive biology study of California 
+scorpionfish is needed.There are currently no estimates of fecundity 
+for California scorpionfish and no studies have been done of the relationship between weight and reproductive 
+output.
+
+\item[$\bullet$] \textbf{Discard mortality}: Many scorpionfish are discarded at sea. The assessment 
+used estimates of discard mortality of a distantly related species (lingcod) 
+in a different ecological setting (Karpov \protect\hyperlink{ref-Karpov1996}{1996}). 
 
 
+\item[$\bullet$] \textbf{Environmental covariates}: The relationship between environmental 
+conditions and recruitment for scorpionfish should be further explored. Preliminary 
+exploration using CalCOFI temperature data suggested that a relationship existed, 
+but other time series may correlate more strongly given that scorpionfish are a 
+near-shore species.
+
+\end{itemize}
 
 
+##Research and Data Needs
+\begin{itemize}
+
+\item[$\bullet$] \textbf{Discard fleet modeling}: Modeling discard as a separate fleet, as 
+was done for California scorpionfish, is a simple and intuitive approach, but 
+the strengths and weaknesses of this approach are unclear.
+
+\item[$\bullet$] \textbf{POTW trawl surveys}: Additional biological information 
+(sex, otoliths, depth distribution) should be collected for California 
+scorpionfish during the Publicly Owned Treatment Works (POTWs) trawl 
+survey and the Southern California Bight Regional Monitoring Project 
+(SCCWRP) trawl survey.
+
+\item[$\bullet$] \textbf{Age validation}: An age validation study is needed for 
+California scorpionfish.
+
+\end{itemize}
+
+
+##Questions??
+\includegraphics[width=\textwidth]{cover_photo}
