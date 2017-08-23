@@ -138,12 +138,6 @@
 \tableofcontents[hideallsubsections]
 \end{frame}
 
-\begin{frame}
-
-\end{frame}
-
-\section{Background}\label{background}
-
 \begin{frame}{California scorpionfish (\emph{Scorpaena guttata})}
 
 \begin{itemize} 
@@ -161,10 +155,11 @@
 \begin{frame}{Distribution and Stock Assessment Boundary}
 
 \begincols
- \begincol{.5\textwidth} \includegraphics{Figures/assess_region_map.png}
+ \begincol{.45\textwidth}
+\includegraphics{Figures/assess_region_map.png}
 
 \endcol
- \begincol{.5\textwidth}
+ \begincol{.55\textwidth}
 
 \begin{itemize} 
  \item[$\bullet$] Distributed from central California to Punta Eugenia, Baja California Sur, Mexico 
@@ -178,13 +173,13 @@
 
 \end{frame}
 
-\begin{frame}{2005 Stock Assessment}
+\begin{frame}{Assessment History}
 
 \begin{itemize}
-\item[$\bullet$] Transitioning from the 2005 assessment, an error was found
-\item[$\bullet$] Harvest rate hit the bounds for the recreational fleet
-\item[$\bullet$] Not all of the recreational catch was removed in the model
+\item[$\bullet$] Firt full assessment in 2005, catch-only update in 2014
+\item[$\bullet$] Not all of the recreational catch was removed in the 2005 model
 \item[$\bullet$] Input vs. estimated catch was not standard output in SS v.1.8
+\item[$\bullet$] Catch-only update also used SS v.1.8
 \end{itemize}
 
 \begincols
@@ -202,50 +197,7 @@
 
 \end{frame}
 
-\begin{frame}{2005 Stock Assessment}
-
-\begincols
- \begincol{.5\textwidth}
-
-\begin{itemize}
-\item[$\bullet$] \textcolor{blue}{2005 assessment, SS v.1.8}
-\item[$\bullet$] \textcolor{red}{2005 model in SS3.24z}
-\item[$\bullet$] \textcolor{violet}{2017 pre-STAR base model, SS3.30.0.05}
-\item[$\bullet$] The two assessments have very similar trends over time, with $B_0$ higher for the 2017 assessment that includes all removals
-\end{itemize}
-
-\endcol
- \begincol{.5\textwidth}
-
-\includegraphics{Figures/bridge_timeseries.png}
-
-\endcol
-\endcols
-
-\end{frame}
-
-\begin{frame}{2017 Stock Assessment}
-
-Pre-STAR Base Model
-
-\begin{itemize}
-\item[$\bullet$] One area model, south of Pt. Conception 
-\begin{itemize}
-\item[$\circ$] Catches from Mexican waters excluded as in 2005
-\end{itemize}
-\item[$\bullet$] Steepness fixed at 0.718
-\item[$\bullet$] Same $M$ for males and females fixed at 0.235
-\item[$\bullet$] Re-evaluated fleet definitions
-\item[$\bullet$] Ages now available from the NWFSC trawl survey
-\item[$\bullet$] New indices and length compositions available
-\item[$\bullet$] Newest version of SS allows specification of the minimmum sample size
-\end{itemize}
-
-\end{frame}
-
-\section{Data}\label{data}
-
-\begin{frame}{Catches by Fleet}
+\begin{frame}{2017 Assessment: Catches by Fleet}
 
 \centering
 \includegraphics{r4ss/plots_mod1/catch2 landings stacked.png}
@@ -307,13 +259,16 @@ Recreational PR dockside CPUE & 2004-2016 & No & delta-GLM (bin-lognormal) \\
 
 \end{frame}
 
-\begin{frame}{Indices of Abundance}
+\begin{frame}{All Indices of Abundance}
 
+The gillnet survey removed from the final model
 \includegraphics{Figures/All_indices.png}
 
 \end{frame}
 
 \begin{frame}{Aggregate length composition}
+
+\centering
 
 \includegraphics{r4ss/plots_mod1/comp_lenfit__aggregated_across_time.png}
 
@@ -344,8 +299,6 @@ Note: females in red and males in blue \begincols
 
 \end{frame}
 
-\section{Model}\label{model}
-
 \begin{frame}{Model Specifications}
 
 \begin{itemize}
@@ -353,13 +306,13 @@ Note: females in red and males in blue \begincols
 \item[$\bullet$] Model starts in 1916, unfished equilibrium catch prior to that
 \item[$\bullet$] $M$ fixed at 0.235 for both sexes
 \begin{itemize}
+\item[$\circ$] Pre-STAR model fixed female $M$ at prior with max. age of 21 (0.25714), male $M$ offset estimated
 \item[$\circ$] $M$ fixed at 0.25 for both sexes in 2005 assessment
 \end{itemize}
 \item[$\bullet$] Steepness fixed at 0.718 (from meta-analysis)
 \begin{itemize}
 \item[$\circ$] $h$ fixed at 0.7 in 2005 assessment
 \end{itemize}
-\item[$\bullet$] Maximum age of 21
 \item[$\bullet$] One cm length bins
 \item[$\bullet$] Recruitment deviations estimated
 \end{itemize}
@@ -374,8 +327,7 @@ Note: females in red and males in blue \begincols
 \item[$\circ$] Commercial fleet: 1916-1999 and 2000-2016 (10-in. minimum size limit as of 2000)
 \item[$\circ$] Recreational fleets: 1916-2000 (few regulations), 2001-2005 (fishery closures), 2006-2016 (consistent regulations)
 \end{itemize}
-\item[$\bullet$] Double normal selectivity
-\item[$\bullet$] Fisheries selectivity parameters estimated for commercial hook-and-line, receational private, recreational party/charter, and recreational discard fleets
+\item[$\bullet$] Double normal selectivity patterns
 \end{itemize}
 
 \end{frame}
@@ -455,6 +407,12 @@ Unfished spawning biomass (mt) & 1624.4 & (1156.4-2092.5) \\
 
 \end{frame}
 
+\begin{frame}{Sensitivities - All}
+
+\includegraphics{Figures/Sensitivity_All.pdf}
+
+\end{frame}
+
 \begin{frame}{Decision Table}
 
 \begin{table}[ht]
@@ -507,14 +465,6 @@ Unfished spawning biomass (mt) & 1624.4 & (1156.4-2092.5) \\
 \end{tabular}
 }
 \end{table}
-
-\end{frame}
-
-\section{Uncertainty}\label{uncertainty}
-
-\begin{frame}{Sensitivities - All}
-
-\includegraphics{Figures/Sensitivity_All.pdf}
 
 \end{frame}
 
@@ -586,6 +536,18 @@ California scorpionfish.
 \begin{frame}{Questions??}
 
 \includegraphics[width=\textwidth]{cover_photo}
+
+\end{frame}
+
+\begin{frame}{Uncertainties Identified by the STAR panel}
+
+\begin{itemize}
+\item[$\bullet$] The stock likely extends south of southern boundary of the assessment at the US/Mexico border.  
+\item[$\bullet$] Maturity estimates used are dated and cannot be reproduced.  No studies have been done of the relationship between fish weight and reproductive output.
+\item[$\bullet$] Ageing samples come only from the NWFSC shelf-slope survey NW slope shelf survey ($\geq 55 m$) and thus does not cover the depth distribution of the stock.  The maximum age from this data set could be biased. 
+\item[$\bullet$] Estimates of discard mortality based of a distantly related species (lingcod) in a different ecological setting.
+\item[$\bullet$] Steepness in the assessment was based on the Thorson prior, which is only strictly appropriate for West Coast rockfish (\emph{Sebastes} spp.). 
+\end{itemize}
 
 \end{frame}
 
