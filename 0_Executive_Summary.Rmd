@@ -101,7 +101,7 @@ compositions were also created
 for each fishery-dependent and -independent data source, including a nuclear power generating station 
 impingement survey that did not have an associated index of abundance.
 
-The definition of fishing fleets hs changed from those in the 2005 assessment.  
+The definition of fishing fleets has changed from those in the 2005 assessment.  
 Six fishing fleets were specified within this model: 1) a combined commercial hook-and-line, fish pot, 
 and "other gear" fleet, 2) the commercial gill net 
 fleet, 3) the commercial trawl fleet, 4) the recreational party/charter boat fleet (retained 
@@ -171,7 +171,7 @@ asymptotic variance estimates show that the uncertainty in the estimated spawnin
 
 ![Time series of spawning biomass trajectory (circles and line: median; light broken lines: 95% credibility intervals) for the base case assessment model.  \label{fig:Spawnbio_all}](`r spawn.file`)
 
-![Estimated relative depletion with approximate 95\% asymptotic confidnce intervals (dashed lines) for the base case assessment model. \label{fig:RelDeplete_all}](`r Bratio.file`)
+![Estimated relative depletion with approximate 95\% asymptotic confidence intervals (dashed lines) for the base case assessment model. \label{fig:RelDeplete_all}](`r Bratio.file`)
 
 <!-- ***********END  EXECUTIVE SUMMARY SPAWNING BIOMASS AND**************** -->
 
@@ -263,8 +263,8 @@ that could contribute ecosystem-related quantitative information for the assessm
 
 This stock assessment estimates that `r spp` in the `r mod1_label` is 
 `r ifelse(Deplete_mod1[nrow(Deplete_mod1),2]-MT>0,"above","below")` the biomass 
-target($SB_{40\%}$), and well `r ifelse(Deplete_mod1[nrow(Deplete_mod1),2]-MSST>0,"above","below")` 
-the minimum stock size threshold ($SB_{40\%}$). The estimated relative depletion level for the base 
+target ($SB_{40\%}$), and well `r ifelse(Deplete_mod1[nrow(Deplete_mod1),2]-MSST>0,"above","below")` 
+the minimum stock size threshold ($SB_{25\%}$). The estimated relative depletion level for the base 
 model in `r LastYR+1` is 
 `r Depl_mod1` (95% asymptotic interval: $\pm$ `r Depl_mod1_CI`, corresponding 
 to an unfished spawning biomass of `r paste(Spawn_mod1, fecund_unit,sep=' ')` 
@@ -329,7 +329,7 @@ California scorpionfish.
 The time series of recruitment deviations is driving the trend in abundance in the base model. 
 Initial explorations of mapping the estimated recruitment deviations to the CalCOFI sea surface 
 temperature indicated correlations may be present.  Additional research should be conducted to 
-explore the environmental drivers releated to California scorpionfish recruitment.
+explore the environmental drivers related to California scorpionfish recruitment.
 
 The NMFS shelf-slope survey was the only available source of otoliths for California scorpionfish.  
 It it unknown if the age and length distribution of the California scorpionfish deeper than 55 m 

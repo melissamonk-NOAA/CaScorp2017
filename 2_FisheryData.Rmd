@@ -329,7 +329,7 @@ From 1980 to 2003 the MRFSS program conducted dockside intercept surveys of recr
 fishing fleet. The program was temporarily suspended 
 from 1990-1992 due to lack of funding. For purposes of this assessment, the MRFSS time
 series was truncated at 1998 due to sampling overlap with the onboard observer program (i.e., 
-the same observer samples the the catch while onboard the vessel and also conducts the dockside 
+the same observer samples the catch while onboard the vessel and also conducts the dockside 
 intercept survey for the same vessel). Each entry in the RecFIN 
 Type 3 database corresponds to a single fish examined by a sampler at a particular 
 survey site. Since only a subset of the catch may be sampled, each record also 

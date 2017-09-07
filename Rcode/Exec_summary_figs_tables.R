@@ -570,7 +570,7 @@ mngmt = mngmt[,-1]
   SPRratio_Exploit_mod1 = rbind(SPRratio_Exploit_mod1,blanks)
   rownames(SPRratio_Exploit_mod1)[10]='Lastyear'
   
-  # Age 5+ biomass
+  # Age 1+ biomass
   Age5biomass_mod1 = mod1$timeseries[,c('Yr','Bio_smry')]
   Age5biomassyrs_mod1 = subset(Age5biomass_mod1, Yr>=(FirstYR) & Yr<=(LastYR))
   Age5biomassyrs_mod1 = Age5biomassyrs_mod1[,2]
@@ -578,8 +578,8 @@ mngmt = mngmt[,-1]
   
   # Spawning biomass and depltion
   SpawnDeplete_mod1 = SpawnDeplete_mod1[,c(2:5)]
-  SpawnDeplete_mod1[,1] = round(SpawnDeplete_mod1[,1],1)
-  SpawnDeplete_mod1[,3] = round(SpawnDeplete_mod1[,3],1)
+  SpawnDeplete_mod1[,1] = round(SpawnDeplete_mod1[,1],3)
+  SpawnDeplete_mod1[,3] = round(SpawnDeplete_mod1[,3],3)
   
   # Recruitment
   Recruittab_mod1 = Recruittab_mod1[,c(2,3)]

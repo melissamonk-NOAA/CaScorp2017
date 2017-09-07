@@ -15,6 +15,9 @@ output:
     template: Default_template_modified.tex
     toc: yes
     toc_depth: 4
+  word_document:
+    toc: yes
+    toc_depth: '4'
 documentclass: article
 fontsize: 12pt
 geometry: margin=1in

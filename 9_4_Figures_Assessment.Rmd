@@ -1,3 +1,8 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 <!-- ********************************************************************** -->
 <!-- ***********FIGURES: Model results ********************************** --> 
 <!-- ********************************************************************** -->
@@ -27,15 +32,17 @@
 
 \vspace{5cm}
 
-![Comparison of the reacreational private mode dockside index using three different thresholds for the Stephens-MacCall filter. \label{fig:Request3a}](Figures/Request3a.png)
+![Comparison of the recreational private mode dockside index using three different thresholds for the Stephens-MacCall filter. \label{fig:Request3a}](Figures/Request3a.png)
 
-![Comparisons of the base model using the index developed for the reacreational private mode dockside index using three different thresholds for the Stephens-MacCall filter.\label{fig:Request3b}](Figures/Request3b.png)
+![Comparisons of the base model using the index developed for the recreational private mode dockside index using three different thresholds for the Stephens-MacCall filter.\label{fig:Request3b}](Figures/Request3b.png)
 
-![Time series of estimated recruitment deviations from the base model and the CalCOFI sea surface temperature \label{fig:Request8}](Figures/Request8.png)
+\newpage
+
+![Time series of estimated recruitment deviations from the base model and the CalCOFI sea surface temperature. \label{fig:Request8}](Figures/Request8.png)
 
 ![Time series of relative spawning biomass (top) and spawning biomass (bottom) from the base model compared to a model with no recruitment deviations and a sigma-r of 0.3. \label{fig:Request9}](Figures/Request9.png){height=90%}
 
-![Time series ofspawning biomass (top) and  relative spawning biomass (bottom) from the pre-STAR base model (M fixed at 0.257 for females and estimated for males) compared to the STAR panel base model (one M = 0.235), and the two states of nature of natural mortality of 0.165 and 0.2745. \label{fig:Request12}](Figures/Request12.png){height=90%}
+![Time series of spawning biomass (top) and  relative spawning biomass (bottom) from the pre-STAR base model (M fixed at 0.257 for females and estimated for males) compared to the STAR panel base model (one M = 0.235), and the two states of nature of natural mortality of 0.165 and 0.2745. \label{fig:Request12}](Figures/Request12.png){height=90%}
 
 
 <!-- ********************************************************************** -->
@@ -80,7 +87,7 @@
 
 
 
-![Surface plot of Female time-varying selectivity for the recreational partry/charter retained-only catch fleet, with time blocks from 1916-2000, 2001-2005, and 2006-2016. \label{fig:sel03_len_timevary_surf_flt5sex1}](r4ss/plots_mod1/sel03_len_timevary_surf_flt5sex1.png)
+![Surface plot of Female time-varying selectivity for the recreational party/charter retained-only catch fleet, with time blocks from 1916-2000, 2001-2005, and 2006-2016. \label{fig:sel03_len_timevary_surf_flt5sex1}](r4ss/plots_mod1/sel03_len_timevary_surf_flt5sex1.png)
 
 \FloatBarrier
 
@@ -163,7 +170,7 @@
 
 
 
-![Francis data weighting method TA1.8 for length composition data from the recreational private boat fleet.  Suggested sample size adjustment(with 95% interval) for the length data from the recreational private boat fleet is `r paste0(Fweights[4,6], ' (',Fweights[4,9],'-', Fweights[4,10],')')`. For more info, see Francis et al. (2011). \label{fig:comp_lenfit_data_weighting_TA1.8_RecPR}](r4ss/plots_mod1/comp_lenfit_data_weighting_TA1.8_RecPR.png)
+![Francis data weighting method TA1.8 for length composition data from the recreational private boat fleet.  Suggested sample size adjustment (with 95% interval) for the length data from the recreational private boat fleet is `r paste0(Fweights[4,6], ' (',Fweights[4,9],'-', Fweights[4,10],')')`. For more info, see Francis et al. (2011). \label{fig:comp_lenfit_data_weighting_TA1.8_RecPR}](r4ss/plots_mod1/comp_lenfit_data_weighting_TA1.8_RecPR.png)
 
 
 
@@ -182,7 +189,7 @@
 <!-- ********************************************************************** -->
 
 
-![Sensitivity of the base model to $SB_0$, $SB_{2017}$, $SB_{2017}/SB_0$, and Yield_{SPR} when likelihood components are removed.  The boxes represent the 95% CIs from the base model.  The CI for $SB_0$ is the same at that for yield and no visible in the figure. \label{fig:Sensitivity_all}](Figures/Sensitivity_all.pdf)
+![Sensitivity of the pre-STAR base model to $SB_0$, $SB_{2017}$, $SB_{2017}/SB_0$, and $Yield_{SPR}$ when likelihood components are removed.  The boxes represent the 95% CIs from the base model.  The CI for $SB_0$ is the same at that for yield and no visible in the figure. \label{fig:Sensitivity_all}](Figures/Sensitivity_all.pdf)
 
 
 <!-- ***********MODEL 1 Uncertainty and Sensitivity FIGURES**************** --> 

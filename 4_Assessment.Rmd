@@ -195,7 +195,7 @@ final model (CPFV logbook and POTW trawl surveys).  The POTW trawl
 surveys ended up being the basis for the decision table in the 2005 assessment, with 
 more weight given to the model without the POTW trawl survey.  All 
 indices were re-evaluated and updated through 2016 for this assessment.  As in the 
-2005 assessment, we did not consider the CaCOFI index, CDFW monthly block summaries, 
+2005 assessment, we did not consider the CalCOFI index, CDFW monthly block summaries, 
 or the trawl survey for the current model.  The current model includes four 
 fishery-dependent indices and four fishery-independent indices.  The RecFIN 
 party/charter mode dockside intercept survey was not available at the trip-level 
@@ -359,7 +359,9 @@ at Amin was set equal to the female estimate.
 
 _Natural Mortality._ Natural mortality is fixed for females at the value provided by the 
 Hamel [@Hamel2015] analysis described above.  Natural mortality for males is estimated 
-as an offset from the fixed female natural mortality.
+as an offset from the fixed female natural mortality in the pre-STAR base model.  Natural 
+mortality parameters for females and males are the same and fixed in the post-STAR base 
+model.
 
 _Selectivity._ Selectivity for all fleets (except the impingement survey) was estimated as 
 double-normal.  The recreational dead discard fleet has a dome-shaped selectivity and all 
@@ -697,8 +699,8 @@ ABC buffer = 4.4\% (i.e., ABC is $0.956*OFL$).] \hfill \\
 
 <!-- *********************MODEL 1 RESULTS********************************** -->
 ##Base Case Model Results 
-The following descripion of the model results reflects a base model that 
-incorporates all of the changes made during the STAR pandel (see previous section). 
+The following description of the model results reflects a base model that 
+incorporates all of the changes made during the STAR panel (see previous section). 
 The base model parameter estimates and their approximate asymptotic standard errors 
 are shown in Table \ref{tab:model_params} and the likelihood components are in 
 Table \ref{tab:like_components}.  Estimates of derived reference points and 
@@ -803,7 +805,7 @@ years from 1979-1982, where the fit is estimated lower than the added uncertaint
 The NWFSC trawl survey index is flat and fit well by the model, except for in 2013, 
 the highest year in the index, with also high uncertainty.  The gillnet survey was 
 not well fit by the model and did not capture the trend observed in the standardized 
-index.  The decions was made during the STAR panel to exclude the gillnet survey and 
+index.  The decision was made during the STAR panel to exclude the gillnet survey and 
 associated length data from the base model. The Southern California Bight trawl survey, 
 conducted every 5 years, was 
 also not well fit by the model.  The standardized index from the Bight trawl survey 
@@ -875,7 +877,7 @@ A number of sensitivity analyses were conducted, including:
 
 A number of changes were made since the 2005 assessment, and sensitivities to the current 
 base model included changing or fixing a number of parameters to the same as the 2005 
-assessment, as well as a number of sentivities to modelling choices made in developing the 
+assessment, as well as a number of sensitivities to modelling choices made in developing the 
 current base model (Tables \ref{tab:Sensitivity_model1} and \ref{tab:Sensitivity_model1_1}). 
 A number of metrics ($SB_0$, $SB_{2017}$, $SB_{2017}/SB_0$, and Yield_{SPR}) relative to the 
 pre-STAR base model are presented in Figure \ref{fig:Sensitivity_all} and show that the 
@@ -908,27 +910,22 @@ and steepness (0.88) Figure \ref{fig:sensitivity_spawnbio}.
 
 Sensitivity of the base model to each of the data sources was also explored (Figures 
 \ref{fig:sensitivity2_spawnbio} and \ref{fig:sensitivity2_spawnbio}).  The time series 
-of spawning biomass was most sensitive to the impingement survey lenght composition.  
+of spawning biomass was most sensitive to the impingement survey length composition. 
 Without the impingement length composition, the relative time series is the same, but the 
 total biomass is almost double the base model. However, dropping the impingement index 
 and estimating a single natural mortality rate for both sexes reduces the total biomass 
-towards the base model.  Natural moratlity is also reasonably estimated at 0.19.  In the 
-sensitivity run where both natural mortality (0.19,same for males and females) and steepness (0.88)
+towards the base model.  Natural mortality is also reasonably estimated at 0.19.  In the 
+sensitivity run where both natural mortality (0.19, same for males and females) and steepness (0.88)
 were estimated produces both a reasonable estimate for natural mortality and a value of steepness 
 that was high, but not estimated at the parameter bound.
-
-and dropping the recreational party/charter 
-index decreases the stock size, whic is the major fishery for this species.
-
 
 
 ###Retrospective Analysis
 A 4-year retrospective analysis was conducted by running the model using data 
 only through 2012, 2013, 2014, and 2015, progressively (Table \ref{tab:retro}). 
-The initial population 
-size and estimation of trends in spawning biomass in the retrospective runs were 
-slightly lower than the base model (Figure \ref{fig:retro_spawnb}).  The initial 
-scale of the spawning population was basically unchanged for all of these retrospectives.  
+The initial population size and estimation of trends in spawning biomass in the 
+retrospective runs were slightly lower than the base model (Figure \ref{fig:retro_spawnb}). 
+The initial scale of the spawning population was basically unchanged for all of these retrospectives.  
 
 The recruitment deviations in the more recent years shrink towards zero the more years 
 are removed from the model (Figure \ref{fig:retro_recdev}).
