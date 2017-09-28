@@ -690,13 +690,17 @@ are set to the PFMC adopted California scorpionfish ACL of 150 mt.
 Uncertainty in the forecasts is based upon the three states of nature
 agreed upon at the STAR panel and are based on a low value of \(M\),
 0.164, the base model value of \(M\), 0.235, and a high value, 0.2745.
-The total catches in 2017 and 2018 are set to the average annual catch
-from 2015-2016 (79.03) and not the ABC or OFL due recent trends in total
-catch being significantly lower than the OFL and ABC. The average of
-2015-2016 catch by fleet was used to distribute catches in forecasted
-years. Current medium-term forecasts based on the alternative states of
-nature project that the stock, under the current control rule as applied
-to the base model, will decline towards the target stock size Table
+The decision table based sigma was larger than the value for a category
+one species of 0.36. Therfore, the sigma was estimated as 0.582 from
+\((ln(BaseSpawnOut2017) - ln(LowSpawnOut2017))/1.15\). The resulting
+buffer, given a \(p^* = 0.45\), was 0.929. The total catches in 2017 and
+2018 are set to the average annual catch from 2015-2016 (79.03) and not
+the ABC or OFL due recent trends in total catch being significantly
+lower than the OFL and ABC. The average of 2015-2016 catch by fleet was
+used to distribute catches in forecasted years. Current medium-term
+forecasts based on the alternative states of nature project that the
+stock, under the current control rule as applied to the base model, will
+decline towards the target stock size Table
 \ref{tab:Decision_table_mod1}. The current control rule under the low
 state of nature results in a stock decline into the precautionary zone,
 while the high state of nature maintains the stock at nearer unfished
@@ -773,16 +777,16 @@ Year & OFL \\
    & 2027 & 232.40 & 263.85 & 0.21 & 905.91 & 0.55 & 2080.12 & 0.77 \\ 
    & 2028 & 232.40 & 235.33 & 0.18 & 887.07 & 0.54 & 2063.54 & 0.76 \\ 
    \hline
- & 2019 & 337.54 & 587.05 & 0.46 & 1154.73 & 0.71 & 2252.89 & 0.84 \\ 
-   & 2020 & 326.93 & 484.01 & 0.38 & 1073.01 & 0.66 & 2211.32 & 0.82 \\ 
-   & 2021 & 307.61 & 390.69 & 0.31 & 991.57 & 0.61 & 2150.33 & 0.80 \\ 
-  ACL = ABC & 2022 & 288.70 & 319.91 & 0.25 & 926.52 & 0.57 & 2095.06 & 0.78 \\ 
-   & 2023 & 273.57 & 269.12 & 0.21 & 879.34 & 0.54 & 2052.58 & 0.76 \\ 
-   & 2024 & 262.19 & 230.16 & 0.18 & 846.15 & 0.52 & 2022.46 & 0.75 \\ 
-   & 2025 & 253.73 & 196.91 & 0.15 & 822.66 & 0.50 & 2002.09 & 0.74 \\ 
-   & 2026 & 247.39 & 166.95 & 0.13 & 805.66 & 0.49 & 1988.84 & 0.74 \\ 
-   & 2027 & 242.60 & 139.55 & 0.11 & 793.12 & 0.48 & 1980.60 & 0.73 \\ 
-   & 2028 & 238.94 & 114.12 & 0.09 & 783.75 & 0.48 & 1975.84 & 0.73 \\ 
+ & 2019 & 337.40 & 587.05 & 0.47 & 1154.73 & 0.71 & 2252.89 & 0.84 \\ 
+   & 2020 & 326.81 & 484.09 & 0.39 & 1073.09 & 0.66 & 2211.40 & 0.82 \\ 
+   & 2021 & 307.52 & 390.83 & 0.31 & 991.72 & 0.61 & 2150.46 & 0.80 \\ 
+  ACL = ABC & 2022 & 288.62 & 320.06 & 0.26 & 926.68 & 0.57 & 2095.21 & 0.78 \\ 
+   & 2023 & 273.50 & 269.27 & 0.21 & 879.51 & 0.54 & 2052.75 & 0.76 \\ 
+   & 2024 & 262.14 & 230.32 & 0.18 & 846.34 & 0.52 & 2022.64 & 0.75 \\ 
+   & 2025 & 253.68 & 197.08 & 0.16 & 822.85 & 0.51 & 2002.27 & 0.75 \\ 
+   & 2026 & 247.35 & 167.13 & 0.13 & 805.86 & 0.50 & 1989.02 & 0.74 \\ 
+   & 2027 & 242.56 & 139.73 & 0.11 & 793.31 & 0.49 & 1980.76 & 0.74 \\ 
+   & 2028 & 238.90 & 114.30 & 0.09 & 783.94 & 0.48 & 1976.01 & 0.74 \\ 
    \hline
 \hline
 \end{tabular}
@@ -5881,16 +5885,16 @@ Yr & OFL contribution (mt) & ACL landings (mt) & Age 5+ biomass (mt) & Spawning 
   \hline
 2017 & 274.712 & 79.030 & 1915.220 & 882.457 & 0.543 \\ 
   2018 & 310.882 & 79.030 & 2090.750 & 1055.040 & 0.649 \\ 
-  2019 & 360.718 & 346.300 & 2223.110 & 1154.730 & 0.711 \\ 
-  2020 & 347.766 & 333.896 & 2107.740 & 1068.250 & 0.658 \\ 
-  2021 & 326.006 & 313.019 & 1992.600 & 983.571 & 0.605 \\ 
-  2022 & 305.170 & 293.006 & 1894.700 & 916.698 & 0.564 \\ 
-  2023 & 288.705 & 277.185 & 1818.230 & 868.621 & 0.535 \\ 
-  2024 & 276.426 & 265.386 & 1760.370 & 834.966 & 0.514 \\ 
-  2025 & 267.336 & 256.649 & 1716.840 & 811.137 & 0.499 \\ 
-  2026 & 260.547 & 250.126 & 1683.920 & 793.852 & 0.489 \\ 
-  2027 & 255.419 & 245.197 & 1658.870 & 781.038 & 0.481 \\ 
-  2028 & 251.510 & 241.442 & 1639.690 & 771.401 & 0.475 \\ 
+  2019 & 360.718 & 337.391 & 2223.110 & 1154.730 & 0.711 \\ 
+  2020 & 349.351 & 326.810 & 2114.540 & 1073.030 & 0.661 \\ 
+  2021 & 328.699 & 307.516 & 2004.000 & 991.437 & 0.610 \\ 
+  2022 & 308.514 & 288.623 & 1908.890 & 926.191 & 0.570 \\ 
+  2023 & 292.375 & 273.507 & 1833.970 & 878.827 & 0.541 \\ 
+  2024 & 280.243 & 262.140 & 1776.960 & 845.442 & 0.520 \\ 
+  2025 & 271.216 & 253.683 & 1733.920 & 821.710 & 0.506 \\ 
+  2026 & 264.456 & 247.349 & 1701.300 & 804.465 & 0.495 \\ 
+  2027 & 259.341 & 242.558 & 1676.440 & 791.670 & 0.487 \\ 
+  2028 & 255.439 & 238.903 & 1657.390 & 782.044 & 0.481 \\ 
    \hline
 \end{tabular}
 \end{table}

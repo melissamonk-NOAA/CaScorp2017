@@ -357,7 +357,9 @@ total catches in 2017 and 2018 are set to the PFMC adopted California scorpionfi
 
 Uncertainty in the forecasts is based upon the three states of nature agreed upon at the STAR panel 
 and are based on a low value of $M$, 0.164, the base model value of $M$, 0.235, and 
-a high value, 0.2745.  The total catches in 2017 and 2018 are set to 
+a high value, 0.2745. The decision table based sigma was larger than the value for a category one species of 0.36. 
+Therfore, the sigma was estimated as 0.582 from $(ln(BaseSpawnOut2017) - ln(LowSpawnOut2017))/1.15$.  The resulting 
+buffer, given a $p^* = 0.45$, was 0.929.  The total catches in 2017 and 2018 are set to 
 the average annual catch from 2015-2016 (79.03) and not the ABC or OFL due recent trends in total catch 
 being significantly lower than the OFL and ABC. The average of 2015-2016 catch by fleet was used to distribute 
 catches in forecasted years. Current medium-term forecasts based on the alternative states of nature 
@@ -366,7 +368,8 @@ towards the target stock size Table \ref{tab:Decision_table_mod1}. The current c
 low state of nature results in a stock decline into the precautionary zone, while the high state of 
 nature maintains the stock at nearer unfished levels. Removing the high $M$
 catches under the base model $M$ and high $M$ states of nature results in the population going
-remaining at a level of spawning biomass during the projection period, and higher initial values of $lnR_0$.
+remaining at a level of spawning biomass during the projection period, and higher initial values of $lnR_0$.  
+
 
 
               

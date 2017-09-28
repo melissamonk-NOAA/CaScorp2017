@@ -1,5 +1,5 @@
 SS-V3.30.05.03-opt;_2017_07_05;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_11.6
-Tue Aug 15 16:02:23 2017
+Wed Sep 27 16:44:40 2017
 
 scor1.dat  datfilename
 scor1.ctl  ctlfilename
@@ -565,7 +565,7 @@ next read 4 values for:  control rule shape(1 or 2), inflection (like 0.40), cut
 1  # echoed HarvestPolicy 
 0.4   # echoed harvest policy inflection 
 0.1   # echoed harvest policy cutoff 
-0.956   # echoed harvest policy scalar 
+0.929   # echoed harvest policy scalar 
 
 # next enter 2 values that control looping through the forecast (see manual), then 3 placeholder values
 # first does F_msy or proxy; 2nd applies control rule; 3rd applies caps and allocations
