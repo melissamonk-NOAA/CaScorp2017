@@ -75,13 +75,13 @@ Age data were provided from the NWFSC trawl survey from 2005-2016, and all of
 the otoliths collected from the survey were aged.  Figures \ref{fig:otolith1} and 
 \ref{fig:otolith2} provide examples of California scorpionfish
  otoliths read (including double-reads) 
- by the Cooperative Ageing Project (CAP) in Newport, Oregon.  
+ by the Cooperative Ageing Project (CAP) in Newport, Oregon. 
 A total of 879 otoliths were read, and ranged from 0-29 years of age. 
 Fewer than 1% (8 fish) were aged 22 years or older,
  and only one age-0 fish was in the sample (Figure \ref{fig:Agelength}).
 
-Males and females exhibit different growth patterns with females 
-growing to be larger at a smaller age (Figure \ref{fig:Agelength}).
+Males and females exhibit different growth patterns, i.e., females 
+grow faster than males (Figure \ref{fig:Agelength}).
 Sex-specific length-at-age was initially estimated external to the population dynamics models 
 using the von Bertalanffy growth curve [@vonB1938], $L_i = L_{\infty}e^{(-k[t-t_0])}$, 
 where $L_i$ is the length (cm) at age $i$, $t$ is age in years, $k$ is rate of 
@@ -188,7 +188,8 @@ M = \frac{5.4}{A_{max}}
 \end{equation}
  
 The above is also the median of the prior. The prior is defined as a lognormal with 
-mean $ln\frac{5.4}{A_{max}}$  and SE = 0.4384343. Using a maximum age of 21 the 
+mean $ln\frac{5.4}{A_{max}}$  and SE = 0.4384343 (Owen Hamel, personal communication, NMFS). 
+Using a maximum age of 21 the 
 point estimate and median of the prior is 0.2545, which is used as a prior for 
 females in the assessment model.
 

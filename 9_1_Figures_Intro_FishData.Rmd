@@ -53,7 +53,7 @@
 ![Q-Q plot used to evaluate the fit of the lognormal (positive encounters) of California scorpionfish from the California Recreational Fisheries Statistics Survey (CRFS) private mode dockside survey data set. \label{fig:Fleet4_RecPR_dockside_QQ}](Figures/Fleet4_RecPR_dockside_QQ.png)
 
 
-![Standardized index on log scale for the recreational CPFV logbook retained catches. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:index4_logcpuedata_RecPR}](r4ss/plots_mod1/index4_logcpuedata_RecPR.png)
+![Standardized index on log scale for the recreational private mode dockside survey data set. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:index4_logcpuedata_RecPR}](r4ss/plots_mod1/index4_logcpuedata_RecPR.png)
 
 \FloatBarrier
 

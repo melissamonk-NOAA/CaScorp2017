@@ -53,7 +53,7 @@ The commercial catch is dominated by the hook-and-line fishery (89% of total cat
 The catch by reported gear types: hook-and-line, fish pot, trawl, gill net, and 
 other can be found in Table \ref{tab:CommCatches}.  Catch taken by fish pot and 
 other gears is added to the hook-and-line catch in the stock assessment (30.6 mt 
-from fish pot and 93.9 mt from other gears). 
+total from fish pot and 93.9 mt total from other gears). 
  
 In the assessment, catch for 1916 to 1968 is taken from the CDFG
 Fish Bulletins. Catch by gear for 1969 to 2004 is taken from CFIS.
@@ -162,8 +162,9 @@ between party/charter and private/rental modes was applied between 1966 and 1979
 in 1965, reflecting the increase in the relative proportion of catch contributed by 
 the private/rental mode with time as more individuals anglers purchased vessels, as recommended 
 in the California Catch Reconstruction [@Ralston2010], and the ratio of 0.10 was assumed
-for all years prior.  The ratio of party/charter estimates to the MM and BB modes was assumed to 
-constant and the average between 1980 and 1989 was applied from 1932 to 1979.  Catch 
+for all years prior.  The ratio of party/charter estimates to the man-made structure (MM) 
+and beach/bank (BB) modes was assumed constant and the average between 1980 and 1989 was applied 
+from 1932 to 1979.  Catch 
 estimates from CPFV logbooks were not available during the World War II era from 1941
 until 1946 and catch was assumed to be zero for all modes during this period.  Estimates
 for retained catch and discarded mortality for 1928 to 3528 were estimated using a
@@ -287,7 +288,7 @@ information on the historical logbook database can be found in Hill and Schneide
  
 The number of anglers on board the vessel and the hours fished are included in 
 the database for all years. Only retained fish are included in the index of abundance 
-the unit of effort is angler hours. A number of data filters were applied to 
+and the unit of effort is angler hours. A number of data filters were applied to 
 the data to account for possible mis-reporting, e.g., trips reporting retained 
 California scorpionfish in top 1% of the data (>325 fish).  Trips fishing outside 
 of California scorpionfish habitat (reported as targeting pelagic species) or trips 
@@ -296,9 +297,9 @@ reporting a block with a minimum depth deeper than 140 m were also filtered out.
 Because California scorpionfish is not a primary target species, boats with fewer 
 than 10 trips retaining California scorpionfish were removed from the analysis. 
 Data were also filtered to only include catches reported from blocks South of Pt. 
-Conception and north of the U.S.-Mexico border (Figure \ref{fig:boundary_map}), 
-and blocks with at least 100 trips retaining California scorpionfish and a total 
-of 500 trips.  A full description of the data filters is in 
+Conception and north of the U.S.-Mexico border (Figure \ref{fig:boundary_map}).  
+For a block to be retained for the analysis, at least 100 trips retaining California scorpionfish and a total 
+of 500 trips must have occured in the block.  A full description of the data filters is in 
 Table \ref{tab:Fleet5_RecPC_CPFVlogbook_filter}. A total of 432,868 trips were
 retained for the index of abundance, 202,937 of which caught California scorpionfish. 
  
@@ -307,7 +308,7 @@ The 60 retained blocks were split into nearshore regions north and south of San 
 and the northern and southern islands, for four regions.  Both a delta model and a 
 negative binomial model were considered for index standardization.  However, due to 
 the large number of records, the traditional jackknife routine to estimate uncertainty 
-was not possible.  
+for the delta model was not possible.  
  
 California scorpionfish were present in 47% of all trips, and standardized
 with a negative binomial model.  Factors considered were  *year*, *month*, and *area* 
@@ -382,14 +383,14 @@ in pursuit of a single target, the targeting of more than one target species can
 in co-occurrence of species in the catch that do not truly co-occur in terms of habitat
 associations informative for an index of abundance. 
  
-Two levels of filtering were applied using the Stephens-MacCall Filter.  The Stephens-MacCall
+Two levels of filtering were applied using the Stephens-MacCall filter.  The Stephens-MacCall
 filtering method identified the probability of occurrence (in this case 0.27) at which 
-the rate of false positives and false negatives for the presence of California scorpionfish.  
-The trips from this criteria for selection was compared to an 
-alternative method including the false positive trips as well as all positive trips
-for California scorpionfish supported by the assumption that if California scorpionfish
-were caught in such trips, they must constitute appropriate habitat justifying their 
-inclusion. In addition, the false positives from a lower probability of occurrence 
+the rate of "false positives" equals "false negatives."  
+The trips selected using this criteria were compared to an 
+alternative method including all the "false positive" trips, regardless of the probability 
+of encountering a California scorpionfish.  This assumes that if California scorpionfish
+were caught, the vessel must have fished in appropriate habitat during the trip. 
+In addition, the false positives from a lower probability of occurrence 
 (0.10) was considered to reflect a less stringent threshold inclusive of more 
 trips including a higher proportion of the false positive trips combined with the 
 positive trips from the entire data set was evaluated for comparison.   
@@ -410,7 +411,7 @@ month effects was selected for further analysis.
  
 The resulting index values for 1989 were anomalously high compared to other years. 
 In addition, the less stringent filter of 0.1 resulted in a higher index value than 
-0.27, which was antithetical to the expectation that including trips with fewer 
+0.27, which was contrary to the expectation that including trips with fewer 
 positive trips would decrease the CPUE.  Further examination of the number of 
 California scorpionfish per trip by year showed a lower number of trips for this
 year than others and a lower proportion of low catch trips explaining why exclusion 
@@ -492,8 +493,7 @@ of the total anglers), and the catch (retained and discarded) by species of the 
  
 CDFW implemented a regulation of three hooks in 2000, which was reduced to (and remains 
 at) two hooks in 2001. CDFW also implemented a 10 inch size limit for California 
-scorpionfish in 2000. The length composition of retained in discarded California 
-scorpionfish (both before and after the minimum size restriction).  Prior to 2001, 
+scorpionfish in 2000.  Prior to 2001, 
 there were no depth restrictions for the southern California recreational fishery. 
 Given these regulation changes, the data from 1999 and 2000 are excluded from the index. 
  
@@ -604,8 +604,8 @@ of the retained catch shows a decline from 2007-2015, and an increase in 2016.
 
 Publicly Owned Treatment Works (POTWs; referred to the sanitation index in the stock assessment 
 model and associated plots) that discharge into coastal waters are required to conduct 
-trawl surveys to 
-monitor the demersal fish community in the vicinity of the discharge sites as a condition of the  
+trawl surveys to monitor the demersal fish community in the vicinity of the discharge sites 
+as a condition of the 
 National Pollutant Discharge Elimination System (NPDES) permits, issued 
 by the Environmental Protection Agency if the discharge is to federal waters, and the State Water 
 Resources Control Board if discharge is into state waters. All POTWs holding NPDES permits 
@@ -744,7 +744,7 @@ The length composition indicates a fairly consistent size range of fish encounte
 in the trawl surveys, with a handful of smaller fish in 2016 
 (Figure \ref{fig:Fleet7_comp_lendat_bubflt10mkt2}).  Length measurements from all 5,525 hauls 
 of the POTWs were combined across POTWs.  The number of California 
-scorpionfish was slowest during the first few years of the time series, and also declines starting
+scorpionfish was lowest during the first few years of the time series, and also declines starting
  in 2012 (Table \ref{tab:Fleet7_lengthsample}).
 
 **NWFSC Trawl Survey Index**
@@ -773,7 +773,7 @@ sex are presented in Figure \ref{fig:Fleet8_comp_lendat_bubflt8mkt0}.
 
 Summaries of age data by year and sex are presented in Table \ref{tab:Fleet8_NWFSCTrawl_agesummary}. 
 There were more males (n = 529) aged than females (n = 340), presumably 
-indicating that there are more males than females in the populations.  The table 
+indicating that there are more males than females in the area surveyed.  The table 
 also shows that mean ages and mean lengths for both sexes decreased in recent years. 
 Table \ref{tab:Fleet8_NWFSCTrawl_agepercents} show five percentiles of fish aged by sex, 
 indicating more older males in the population.  All aged data from the survey were 

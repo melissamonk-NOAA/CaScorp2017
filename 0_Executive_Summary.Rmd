@@ -86,7 +86,7 @@ This a new full assessment for `r spp`, which was last assessed in 2005 [@Maunde
 Stock Synthesis II version 1.18.  This assessment uses the newest version of Stock Synthesis 
 (3.30.05).  The model begins in `r Dat_start_mod1`, and assumes the stock 
 was at an unfished equilibrium that year. In this assessment, aspects of the model including landings,
-data, and modelling assumptions were re-evaluated. The assessment was conducted using the 
+data, and modeling assumptions were re-evaluated. The assessment was conducted using the 
 length- and age-structured modeling software Stock Synthesis (version 3.30.05.03).  The population 
 was modeled allowing separate growth and mortality parameters for each sex (a two-sex model) 
 from `r Dat_start_mod1` to `r LastYR`, and forecast beyond `r LastYR`.
@@ -96,10 +96,10 @@ fishery catch-per-unit effort time-series. The landings history has been updated
 to `r Dat_start_mod1`. Harvest was negligible prior to that year. Survey data from five sources were used 
 to develop indices of abundance: 1) Publicly Owned Treatment Works (POTW) trawl surveys, 2) the NWFSC trawl survey, 3) 
 a fishery-independent gill net survey, 4) the Southern California Bight regional monitoring program trawl 
-survey, and 5) the onboard observer survey for retained catch. Length and conditional age-at-length 
-compositions were also created 
-for each fishery-dependent and -independent data source, including a nuclear power generating station 
-impingement survey that did not have an associated index of abundance.
+survey, and 5) the onboard observer survey for retained catch. Length compositions were also created for 
+each fishery-dependent and -independent data source, including a 
+nuclear power generating station impingement survey that did not have an associated index of abundance. 
+Conditional age-at-length information were available from the NWFSC trawl survey.
 
 The definition of fishing fleets has changed from those in the 2005 assessment.  
 Six fishing fleets were specified within this model: 1) a combined commercial hook-and-line, fish pot, 
@@ -111,10 +111,10 @@ fleet that combined the estimated discards from the recreational party/charter a
 The assessment uses landings data; catch-per-unit-effort and survey indices; length 
 or age composition data for each year and fishery or survey (with conditional age-at-length 
 composition data for the NWFSC trawl survey); information on weight-at-length; and 
-estimates of ageing error. Recruitment at "equilibrium spawning 
+estimates of ageing error. Model outputs include recruitment at "equilibrium spawning 
 output", length-based selectivity of the fisheries and surveys, retention of the fishery, 
 catchability of the surveys, growth, the time-series of spawning biomass, age and size structure, 
-and current and projected future stock status are outputs of the model. Natural mortality and steepness 
+and current and projected future stock status. Natural mortality and steepness 
 were fixed in the final model. This was done due to relatively flat likelihood surfaces, such that 
 fixing parameters and then varying them in sensitivity analyses was deemed the best way to 
 characterize uncertainty.
@@ -331,7 +331,7 @@ Initial explorations of mapping the estimated recruitment deviations to the CalC
 temperature indicated correlations may be present.  Additional research should be conducted to 
 explore the environmental drivers related to California scorpionfish recruitment.
 
-The NMFS shelf-slope survey was the only available source of otoliths for California scorpionfish.  
+The NMFS shelf-slope survey was the only available source of otoliths for California scorpionfish. 
 It it unknown if the age and length distribution of the California scorpionfish deeper than 55 m 
 (survey area) is the similar to that in waters shallower than 55 m.  The majority of California 
 scorpionfish aged were males, and it is unknown if that was driven by the depth distribution, time 
@@ -444,11 +444,12 @@ considered.  This project could be designed as a cooperative research project
 with the charter fleet in southern California.
 
 \item \textbf{Steepness}: California scorpionfish has not been fished to a level 
-where information on steepness is available.  A meta-analysis for species 
-with similar breeding strategies to California scorpionfish could be conducted if data are available.  A meta-analysis of steepness should be done for species with the same reproductive strategy as scorpionfish.
+where information on steepness is available.  A meta-analysis of steepness should be done for 
+species with the same reproductive strategy as scorpionfish.
 
 
-\item \textbf{Stock south of the U.S. border}:  No available information on the status of California scorpionfish in Mexico could be found.  A number of emails were sent to researchers 
+\item \textbf{Stock south of the U.S. border}:  No available information on the status of California 
+scorpionfish in Mexico could be found.  A number of emails were sent to researchers 
 in Mexico and none were returned.  It is known that a portion of the stock resides 
 in Mexico and that boat leaving from San Diego target California scorpionfish off 
 the Coronado Islands.  

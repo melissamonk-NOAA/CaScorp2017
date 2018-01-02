@@ -234,7 +234,8 @@
     # Create the time series table
     Timeseries.table = xtable(Timeseries, 
                               caption = c('Time-series of population estimates 
-                                        from the base-case model.'),
+                                        from the base-case model. Relative exploitation 
+                                        rate is.'),
                               label='tab:Timeseries_mod1',
                               digits = c(0,0,0,0,3,0,0,2,2))   
 
@@ -402,7 +403,11 @@
                                               analysis.  Note that male 
                                               growth parameters are exponential 
                                               offsets from female parameters, and 
-                                              depletion and SPR ratio are for the year of 2017.'),
+                                              depletion and SPR ratio are for the year of 2017. 
+                                              The base model includes all of the data.  Retro1 
+                                             removes the last year of data (2016), Retro2 removes the last 
+                                             two years of data, Retro3 removes three years and Retro4 
+                                             removes four years.'),
                                  label = 'tab:retro')  
      
     

@@ -267,7 +267,7 @@ cat('\\vspace{3in}')
                               caption = c("Recreational CPFV logbook sample 
                                           sizes at each data filtering step.  
                                           The bold value indicates the final sample size 
-                                          used for delta-GLM analysis."),
+                                          used for index analysis."),
                               label='tab:Fleet5_RecPC_CPFVlogbook_filter')
         
         align(Fleet5_filter.table) = c('l',
@@ -470,7 +470,7 @@ cat('\\vspace{3in}')
    #Fleet 6 aic
          Fleet6_aic.table = xtable(Fleet6_aic,
                               caption = c("AIC values for each model in the
-                                          The recreational CPFV onboard 
+                                          recreational CPFV onboard 
                                           observer discard-only catch 
                                           index."),
                               label='tab:Fleet6_RecDD_onboard_aic')
@@ -652,7 +652,7 @@ Fleet7_lengthsample.table = xtable(Fleet7_lengthsample,
                                    caption = c("Sample sizes and mean length (cm) by
                                                 year for the Publicly Owned Treatment Works 
                                                 trawl surveys, all Publicly Owned Treatment Works
-                                               programs combined"),
+                                               programs combined."),
                                    label = 'tab:Fleet7_lengthsample',
                                    digits=0)
 
@@ -719,9 +719,9 @@ print(Fleet7_lengthsample.table,
                                          'Male age at percentile')
         colnames(Fleet8_meanAatL) = c('Age',
                                       'Mean  length',
-                                      'Fish',
+                                      'No. of Fish',
                                       'Mean length',
-                                      'Fish')
+                                      'No. of Fish')
         
         colnames(Fleet8_index) = c('Year',
                                    'Index',
@@ -782,7 +782,7 @@ cat('\\vspace{2in}')
         Fleet8_agesummary.table = xtable(Fleet8_agesummary,
                               caption = c("Summary statistics of age data by
                                           year and sex from NWFSC trawl survey 
-                                          between 2005 and 2016.  The last raw
+                                          between 2005 and 2016.  The last row
                                           shows total numbers of fish aged by sex."),
                               label='tab:Fleet8_NWFSCTrawl_agesummary',
                               digits=0)
@@ -829,7 +829,7 @@ cat('\\vspace{2in}')
         
  #Fleet 8 mean age at length        
       Fleet8_meanAatL.table =  xtable(Fleet8_meanAatL,
-                                      caption = c('Mean age at length (cm) and number of 
+                                      caption = c('Mean age-at-length (cm) and number of 
                                                     fish aged by sex for 
                                                     California scorpionfish from the NWFSC
                                                       trawl survey.'),

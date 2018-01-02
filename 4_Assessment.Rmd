@@ -76,7 +76,7 @@ and tables reflect the post-STAR final base model.
 The first formal stock assessment for California scorpionfish was conducted in 2005 
 [@Maunder2005].  The 2005 model conducted in SS2 version 1.18 was first transitioned 
 to SS3.24z as a bridge model, before moving forward to SS3.30.  During the model transition 
-to SS3.24z and error was found in the 2005 model.  The harvest rate was estimated at the 
+to SS3.24z an error was found in the 2005 model.  The harvest rate was estimated at the 
 upper limit of 0.9 and could not remove all of the input catch (Figure \ref{fig:bridge_harvestrate}).  
 
 The older SS2 output did not include separate columns for the observed (input) catch and 
@@ -108,7 +108,7 @@ following approach in order to mimic the methods of SS2 version 1.8:
  \item Replaced initial value of length at minimum age for females with 7.26567 (the Length begin value for age 
  0 from the SS2.rep file).
  
-  \item Replaced initial value of length at minimum age for males with 0.35366 (= LN(10.3483/7.26567), the 
+  \item Replaced initial offset value of length at minimum age for males with 0.35366 (= LN(10.3483/7.26567), the 
   log of the ratio of Male to Female length at age 0 from the SS2.rep file)
 
 \end{enumerate}
@@ -154,7 +154,7 @@ The bias adjustment for recruitment deviations did not exist in SS2 (version 1.1
 1965-2015 as the range of years with full bias adjustment in SS3.24z to span the time series 
 that was modeled.
 
-Length composition data was updated and sources added for this assessment.  The 2005 assessment 
+Length composition data were updated and sources added for this assessment.  The 2005 assessment 
 used the same source for length compositions for the commercial fisheries, the CDFW market category 
 study.  The length compositions from CALCOM were all from single trips within a year and are not 
 used in the assessment.  The measured fish from RecFIN (dockside intercept surveys) were disaggregated 
@@ -196,12 +196,11 @@ surveys ended up being the basis for the decision table in the 2005 assessment, 
 more weight given to the model without the POTW trawl survey.  All 
 indices were re-evaluated and updated through 2016 for this assessment.  As in the 
 2005 assessment, we did not consider the CalCOFI index, CDFW monthly block summaries, 
-or the trawl survey for the current model.  The current model includes four 
+or the trawl logbook for the current model.  The current model includes four 
 fishery-dependent indices and four fishery-independent indices.  The RecFIN 
 party/charter mode dockside intercept survey was not available at the trip-level 
-in 2005 and it is unclear how the 2005 assessment treated data record entries from 
-RecFIN; however, the RecFIN index was sensitive to the.  The RecFIN private mode 
-index is currently only available at the trip-level for the CRFS sampling period, 
+at the time of the 2005 assessment and it is unclear how the 2005 assessment treated data record entries from 
+RecFIN.  The RecFIN private mode index is currently only available at the trip-level for the CRFS sampling period, 
 2004-2016.  The onboard observer database was also not available for the 2005 assessment 
 and is used here as both retained-only and discard-only indices.  The CPFV logbook data
 was updated and reevaluated from the 2005 assessment.
@@ -377,8 +376,6 @@ from 1984 to 2015.  The base model also included estimated recruitment deviation
 the forecast years, although these 
 have no impact on the model estimates for the current year.
 
-
-A number of alternate model were explored before the final base model was reached.  
 Many variations of the base case model were explored during this analysis. Sensitivities 
 to asymptotic vs. domed selectivity were explored for the appropriate fisheries, e.g. 
 trawl and gillnet fisheries, as well as estimating selectivity and mirroring fleet 
@@ -389,8 +386,7 @@ time block for the commercial fishery, but the length composition data were spar
 This assessment includes discards for the recreational fleet, so time was spent 
 investigating changes in selectivity and the most prudent way to incorporate discards.  
 Length composition of discards from two recreational party/charter onboard observer programs and 
-
-Sensitivities to estimates of female natural mortality were explored by fixing other 
+sensitivities to estimates of female natural mortality were explored by fixing other 
 key parameters, i.e., steepness. Male natural mortality is still reasonably well 
 estimated, but the estimates of $lnR0$ and female $M$ are not well estimated.  The 
 previous assessment fixed female and male $M$, where male $M$ was an offset.  The 
@@ -414,8 +410,8 @@ California scorpionfish are summer spawners and settle at a small size.  However
 potential bug in how  recruits move into the numbers-at-age matrix was discovered 
 (Richard Methot, personal communication, NWFSC).  The final base model sets both the 
 spawning month and settlement month to January, which is the equivalent to the settings 
-available in SS3.24z.Parameters for extra standard deviation were added to all survey 
-indices in the model because they were not exceptionally well fit by the models considered.
+available in SS3.24z. Parameters for extra standard deviation were added to all survey 
+indices in the model because they were not well fit by the models considered.
 
 _Other Fixed Parameters._ The stock-recruitment steepness is fixed at the SSC approved 
 steepness prior for rockfish of 0.718.  The initial recommendation for steepness was 
@@ -475,8 +471,8 @@ was repeated 100 times and the minimum was reached in 56% of the runs  (Table \r
 The model did not experience convergence issues, e.g., final gradient was below 0.0001,
 when reasonable starting values were used and there were no difficulties in inverting 
 the Hessian to obtain estimates of variability.  We did sensitivity runs for 
-convergence by changing the phases for key estimated parameters and the total 
-log-likelihood did not change nor the parameter estimates.
+convergence by changing the phases for key estimated parameters; neither the total 
+log-likelihood nor the parameter estimates changed.
 
 
 ##Response to the Current STAR Panel Requests
@@ -543,16 +539,16 @@ current assessment. Rather this highlights the need for more research into
 this topic.
 
 \item[Request No. 4: Do a sensitivity to the relationship between weight and
-fecundity.  Use a generic rockfish relationship from Dick et al. [-@Dick2017].] \hfill \\
+fecundity.  Use a generic rockfish relationship from Dick et al. (2017)] \hfill \\
 
 \textbf{Rationale:} There is a lack of information on this relationship in 
 the assessment and the sensitivity of the model to this relationship needs 
 to be understood.   
     
     
-\textbf{STAT Response:} The base models fecundity as proportional to weight. 
-The model was run with this alternative where fecundity is proportional to 
-length to the power 4.043. This model had a slightly lower depletion level 
+\textbf{STAT Response:} The base model models fecundity as proportional to weight. 
+The model was run with the alternative where fecundity is proportional to 
+length to the power 4.043 [@Dick2017]. This model had a slightly lower depletion level 
 (0.531 vs. 0.579, measured in spawning output rather than spawning biomass) 
 and a slightly higher unfished equilibrium biomass estimate (by about 1\%). 
 While more research into this topic is warranted, its effect on the model 
@@ -704,7 +700,7 @@ incorporates all of the changes made during the STAR panel (see previous section
 The base model parameter estimates and their approximate asymptotic standard errors 
 are shown in Table \ref{tab:model_params} and the likelihood components are in 
 Table \ref{tab:like_components}.  Estimates of derived reference points and 
-approximate 95% asymptotic confidence intervals are shown in Table \ref{tab:Ref_pts_mod1}.  
+approximate 95% asymptotic confidence intervals are shown in Table \ref{tab:Ref_pts_mod1}.
 Time-series of estimated stock size over time are shown in Table \ref{tab:Timeseries_mod1}.
 
 The base model is sex-specific for the growth parameters. Key productivity parameters 
@@ -719,7 +715,7 @@ The base model produces reasonable estimates of growth parameters, for both male
 females (Figure \ref{fig:vonB_compare}).  The von Bertalanffy growth coefficient $k$ 
 for females was estimated close to the external estimate, 0.2496 externally and 0.2503 
 within SS.  For males, the von Bertalanffy $k$ parameter was estimated at 0.2325 externally 
-and 0.1864 within SS.  The female estimated $L_{inf} was 33.312 and 28.4207 for males.  
+and 0.1864 within SS.  The female estimated $L_{inf}$ was 33.312 and 28.4207 for males.
 Females grow faster than males and reach a maximum size greater than the males.  
 
 Selectivity curves were estimated for the fishery and survey fleets.  The estimated 
@@ -803,8 +799,8 @@ lowest years, 2003 and 2015.
 The POTW trawl survey index was fit well by the model, except for the highest four 
 years from 1979-1982, where the fit is estimated lower than the added uncertainty.  
 The NWFSC trawl survey index is flat and fit well by the model, except for in 2013, 
-the highest year in the index, with also high uncertainty.  The gillnet survey was 
-not well fit by the model and did not capture the trend observed in the standardized 
+the highest year in the index, with also high uncertainty.  The gillnet survey index was 
+not well fit by the model; the model fit did not capture the trend observed in the standardized 
 index.  The decision was made during the STAR panel to exclude the gillnet survey and 
 associated length data from the base model. The Southern California Bight trawl survey, 
 conducted every 5 years, was 
@@ -824,13 +820,13 @@ each of the gillnet, impingement, and Bight trawl surveys were small compared to
 fisheries.  The fit to the data varies by year and does not capture the high proportion 
 of small fish observed in the impingement survey, especially in 2013.
 
- Fits to the aggregated and yearly length composition data from the gillnet fishery 
- are not well fit.  The selectivity for this fishery is mirrored to the commercial 
- hook-and-line fishery and the sample sizes of the number of measured fish and trips
- is small compared to other fleets.  California scorpionfish are also not a target
- species for the gillnet fishery, but are retained most commonly by the seabass 
- and halibut fisheries as bycatch.  The minimum mesh size for the gillnet fishery 
- ranges from 3.5 - 6 inches depending on the year and season.
+Fits to the aggregated and yearly length composition data from the commercial gillnet fishery 
+are not well fit.  The selectivity for this fishery is mirrored to the commercial 
+hook-and-line fishery and the sample sizes of the number of measured fish and trips
+is small compared to other fleets.  California scorpionfish are also not a target
+species for the gillnet fishery, but are retained most commonly by the seabass 
+and halibut fisheries as bycatch.  The minimum mesh size for the gillnet fishery 
+ranges from 3.5 - 6 inches depending on the year and season.
 
 The NWFSC trawl survey lengths were well estimated for males and females in aggregate 
 by the model. California scorpionfish are not one of the more common species observed 
@@ -862,7 +858,7 @@ A number of sensitivity analyses were conducted, including:
   
   \item Removal of the POTW trawl survey index (axis of uncertainty from the 2005 assessment)
   
-  \item Dome-shaped selectivity for the NWFSC trawl survey and gillnet survey - TBD
+  \item Dome-shaped selectivity for the NWFSC trawl survey and gillnet survey
   
   \item Estimating female natural mortality
   
@@ -879,15 +875,14 @@ A number of changes were made since the 2005 assessment, and sensitivities to th
 base model included changing or fixing a number of parameters to the same as the 2005 
 assessment, as well as a number of sensitivities to modelling choices made in developing the 
 current base model (Tables \ref{tab:Sensitivity_model1} and \ref{tab:Sensitivity_model1_1}). 
-A number of metrics ($SB_0$, $SB_{2017}$, $SB_{2017}/SB_0$, and Yield_{SPR}) relative to the 
+A number of metrics ($SB_0$, $SB_{2017}$, $SB_{2017}/SB_0$, and $Yield_{SPR}$) relative to the 
 pre-STAR base model are presented in Figure \ref{fig:Sensitivity_all} and show that the 
-impingement length composition data are the data source to which the model is most sensitive.  
+impingement length composition data are the data source to which the model is most sensitive.
 The model is also sensitive to the choice of data weighting.
 
 Data weighting is an area of uncertainty for stock assessment and research is ongoing to 
 determine the effects of data weighting and the most appropriate initial sample sizes for 
-length and age composition data.  A model run with default weighting increased the total 
-likelihood by 2,692 and resulted in a final depletion of 0.771.  The base model used the 
+length and age composition data.  The base model used the 
 Stewart sample sizes for the fishery data and number of trips for all survey sample sizes. 
 Weighting the data by the harmonic mean resulted in a model with a total likelihood between 
 the base model, which uses the Francis method for weighting, and the model with default weights. 
@@ -961,9 +956,10 @@ The negative log-likelihood was minimized at a natural mortality value of 0.38,
 the profile is relatively flat for the priors, index data, and recruitment (Figure
 \ref{fig:profile_m_like}).  The age data likelihood contribution was minimized at
 natural mortality values ranging from 0.035-0.40, and the length data contribution
-was minimized as the largest value of $M$ run, 0.40 (Table \ref{tab:like_profiles}).
-The impingement survey was the only fleet for which the likelihood profile over 
-$M$ was not relatively flat (Figure \ref{fig:profile_m_piner})The relative depletion for
+was minimized as the largest value of $M$ run, 0.40 (Table \ref{tab:like_profiles}). 
+The virgin biomass was estimated at unreasonable levels (~$2e^{12}$) when $M$ was fixed 
+at 0.33 and greater. The impingement survey was the only fleet for which the likelihood profile over 
+$M$ was not relatively flat (Figure \ref{fig:profile_m_piner}). The relative depletion for
 `r spp`  ranged from 0.48-0.80 across alternative values of natural mortality 
 (Figure \ref{fig:profile_m_depl}).
 
@@ -991,7 +987,7 @@ for the entire time series of the model.
 
 Table \ref{tab:Ref_pts_mod1} shows the full suite of estimated reference points for the base 
 model and Figure \ref{fig:yield1_yield_curve} shows the equilibrium curve based on a 
-steepness value fixed at `r print(mod1$parameters[mod1$parameters$LABEL == "SR_BH_steep","Value"],2)`.
+steepness value fixed at 0.718.
 
 
 
