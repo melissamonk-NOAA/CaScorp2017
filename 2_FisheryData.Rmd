@@ -3,7 +3,7 @@
 #Assessment
 
 ##Data
-Data used in the `r spp` assessment are summarized in Figure \ref{fig:data_plot}.  
+Data used in the `r spp` assessment are summarized in Figure \ref{fig:data_plot}. 
 Descriptions of the data sources are in the following sections.
 
 
@@ -25,7 +25,7 @@ series of bulletins, each bulletin usually providing information for a single ye
 Data by region and month is available for 1926 to 1986.  The Santa Barbara region 
 includes San Luis Obispo, Santa Barbara and Ventura counties.  Catches from this 
 region were included in the catch history and comprised less than 10 mt for the 
-period from 1926-1968 (the period when data at the regional scale are available).  
+period from 1926-1968 (the period when data at the regional scale are available). 
 Catches from Mexico can be separated from the total catch starting in 1931, 
 although the CDFG Bulletins do not report catches originating from Mexican 
 waters available for all years, e.g., 1932-1934.  It is assumed that before 
@@ -49,7 +49,7 @@ Landings reported from a block solely in Mexican waters (blocks >900) were remov
 the catch history.  Landings with reported blocks 877-882 with area in both U.S.
 and Mexican waters were retained in the catch histories.
 
-The commercial catch is dominated by the hook-and-line fishery (89% of total catches).  
+The commercial catch is dominated by the hook-and-line fishery (89% of total catches). 
 The catch by reported gear types: hook-and-line, fish pot, trawl, gill net, and 
 other can be found in Table \ref{tab:CommCatches}.  Catch taken by fish pot and 
 other gears is added to the hook-and-line catch in the stock assessment (30.6 mt 
@@ -251,7 +251,7 @@ The raw CPUE of factors considered in the model by year are shown in Figure
 Model selection procedures selected the covariates *2-month wave* 
 and *county* as important for both the catch occurrence and positive
 catch component models for all data sets, along with the categorical year
-factor used for the index of abundance (Table \ref{tab:Fleet4_RecPR_dockside_aic}).  
+factor used for the index of abundance (Table \ref{tab:Fleet4_RecPR_dockside_aic}). 
 The Q-Q goodness of fit plot for the lognormal portion of the model shows
 a moderate fit to the data (Figure \ref{fig:Fleet4_RecPR_dockside_QQ}).
 The final index indicates a decrease in relative abundance from 2006 to 2010, 
@@ -297,13 +297,13 @@ reporting a block with a minimum depth deeper than 140 m were also filtered out.
 Because California scorpionfish is not a primary target species, boats with fewer 
 than 10 trips retaining California scorpionfish were removed from the analysis. 
 Data were also filtered to only include catches reported from blocks South of Pt. 
-Conception and north of the U.S.-Mexico border (Figure \ref{fig:boundary_map}).  
+Conception and north of the U.S.-Mexico border (Figure \ref{fig:boundary_map}). 
 For a block to be retained for the analysis, at least 100 trips retaining California scorpionfish and a total 
 of 500 trips must have occured in the block.  A full description of the data filters is in 
 Table \ref{tab:Fleet5_RecPC_CPFVlogbook_filter}. A total of 432,868 trips were
 retained for the index of abundance, 202,937 of which caught California scorpionfish. 
  
-Two different area factors were considered for the standardization, block and region.  
+Two different area factors were considered for the standardization, block and region. 
 The 60 retained blocks were split into nearshore regions north and south of San Pedro 
 and the northern and southern islands, for four regions.  Both a delta model and a 
 negative binomial model were considered for index standardization.  However, due to 
@@ -314,7 +314,7 @@ California scorpionfish were present in 47% of all trips, and standardized
 with a negative binomial model.  Factors considered were  *year*, *month*, and *area* 
 (either block or region). A model with blocks and  was selected over a model 
 with region by 39,180 AIC.  The final model includes *year*, *month*, and *block* 
-with a log link and effort as an offset (Table \ref{tab:Fleet5_RecPC_CPFVlogbook_aic}).  
+with a log link and effort as an offset (Table \ref{tab:Fleet5_RecPC_CPFVlogbook_aic}). 
 The standardized index shows a cyclic pattern, with period of higher CPUE 
 (late 1980’s to early 1990’s and late 1990s) and has shown a general downward 
 trend since 2008 (Figure \ref{fig:index4_logcpuedata_RecPC} and 
@@ -385,7 +385,7 @@ associations informative for an index of abundance.
  
 Two levels of filtering were applied using the Stephens-MacCall filter.  The Stephens-MacCall
 filtering method identified the probability of occurrence (in this case 0.27) at which 
-the rate of "false positives" equals "false negatives."  
+the rate of "false positives" equals "false negatives."
 The trips selected using this criteria were compared to an 
 alternative method including all the "false positive" trips, regardless of the probability 
 of encountering a California scorpionfish.  This assumes that if California scorpionfish
@@ -688,7 +688,7 @@ City of San Diego Public Utilities Department). One permit is for the City’s P
 Wastewater Treatment Plant discharge via the Point Loma Ocean Outfall. A second permit is for discharge 
 via the South Bay Ocean Outfall from the City’s South Bay Water Reclamation Plant. The third permit is 
 also for discharge via the South Bay Ocean Outfall, but from the South Bay International Wastewater 
-Treatment Plant operated by the U.S. Section of the International Boundary & Water Commission (USIBWC).  
+Treatment Plant operated by the U.S. Section of the International Boundary & Water Commission (USIBWC). 
 Effluent from the two South Bay treatment facilities commingle before discharge to the ocean, so a single 
 monitoring program is conducted by the City and USIBWC to meet those requirements (i.e., the City conducts 
 the joint program under contract to the USIBWC).  For purposes of this assessment, any trawls conducted in 
@@ -735,7 +735,7 @@ District was the only program sampling in 1970 and 1971 and encountered a small 
 of California scorpionfish in those years (Figure \ref{fig:Fleet7_Sanitation_lengthbydistrict}).
 Los Angeles County has encountered pulses of large numbers of California scorpionfish in 2002, 
 2004 and 2005.  Figure \ref{fig:Fleet7_Sanitation_lengthboxplots} shows the distribution of 
-lengths for California scorpionfish by 25 m depth bins and POTW. The median length  
+lengths for California scorpionfish by 25 m depth bins and POTW. The median length 
 of fish from the CLAEMD trawls is smaller than the other two POTWs. However, there are 
 only 120 fish encountered in that depth range, compared to 1,372 fish encountered in 
 the 50-74 m depth range (Table \ref{tab:Fleet7_lengthdepth}).
@@ -800,7 +800,7 @@ were consistently sampled for the time series, as well as Catalina Island.
 Gillnet sets from within Marina Del Rey and Catalina Harbor were
 removed from the analysis.
   
-All gillnets were the same length with six-25' panels (150' in length).  
+All gillnets were the same length with six-25' panels (150' in length). 
 The standard sampling gillnet had 1", 1.5", 2 square mesh, with each mesh on two panels. 
 Samples were excluded if they were collected using a net other than the standard sampling gear.
 Other data filters included remove months that were not consistently sampled (Table 
@@ -868,7 +868,7 @@ the 1998 survey), may preclude drawing any firm conclusions on trends in abundan
 from this data.  
 
 The survey measured a total of 427 fish, with the last two years of the survey 
-(2008 and 2013) only encountering 25 and 53 California scorpionfish, respectively.  
+(2008 and 2013) only encountering 25 and 53 California scorpionfish, respectively. 
 However, the smallest fish observed in this survey were in 2013 (Figure \ref{fig:Fleet11_SCBsurvey_lendat_bubflt11mkt2}).
 
 

@@ -65,7 +65,7 @@ A map showing the scope of the assessment and depicting boundaries for fisheries
 data collection strata is provided in Figure \ref{fig:boundary_map}.
 
 ##Ecosystem Considerations
-In this assessment, ecosystem considerations were not explicitly included in the analysis.  
+In this assessment, ecosystem considerations were not explicitly included in the analysis. 
 This is primarily due to a lack of relevant data and results of analyses (conducted elsewhere) 
 that could contribute ecosystem-related quantitative information for the assessment.
 
@@ -124,12 +124,12 @@ in 2014, the combined recreational and commercial catch exceeded the OFL by 2mt
 action was taken to decrease the recreational season by four months 
 (September 1 - December 31).  A catch only update of the stock was undertaken 
 in 2015  [@Wallace2015] that imputed the actual catch values since the last 
-assessment, resulting in significant increase in the OFL and ACL.  
-Retrospectively, the catch in 2014 was well below the OFL as well as the 
+assessment, resulting in significant increase in the OFL and ACL. Retrospectively, 
+the catch in 2014 was well below the OFL as well as the 
 ACL that would have been in place had the ACL values from the actual
 attainment been in place in 2014.  Thus the stock has not been subject
 to overfishing since the original assessment or 
-been in an overfished condition historically and is considered healthy.  
+been in an overfished condition historically and is considered healthy. 
 The season restriction in the recreational fishery remained in place as 
 a precautionary measure until the full assessment was completed to better 
 inform the current status of the stock, catch limits and regulations given 

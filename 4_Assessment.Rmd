@@ -321,7 +321,7 @@ mortality, which was estimated.
 
 The prior for steepness (*h*) assumes a beta distribution with parameters based on an update for the 
 Thorson-Dorn rockfish prior (Dorn, M. and Thorson, J., pers. comm.), which was endorsed by the Science 
-and Statistical Committee in 2017.  The prior is a beta distribution with $mu$=0.718 and $sigma$=0.158.  
+and Statistical Committee in 2017.  The prior is a beta distribution with $mu$=0.718 and $sigma$=0.158.
 Steepness is fixed in the base model at the mean of the prior. The priors were applied in sensitivity analyses where these parameters were estimated.
 
 
@@ -384,7 +384,7 @@ recreational fisheries was investigated.  We also considered a model with an add
 time block for the commercial fishery, but the length composition data were sparse.
 
 This assessment includes discards for the recreational fleet, so time was spent 
-investigating changes in selectivity and the most prudent way to incorporate discards.  
+investigating changes in selectivity and the most prudent way to incorporate discards. 
 Length composition of discards from two recreational party/charter onboard observer programs and 
 sensitivities to estimates of female natural mortality were explored by fixing other 
 key parameters, i.e., steepness. Male natural mortality is still reasonably well 
@@ -404,8 +404,8 @@ prior to when length composition are available.
 Several models were also investigated where steepness was either estimated, fixed at 
 the prior, or at an alternate value.    
 
-Sensitivities of the model to the spawning and settlement months were also explored.  
-The base model originally set spawning month to June and settlement month to July.  
+Sensitivities of the model to the spawning and settlement months were also explored.
+The base model originally set spawning month to June and settlement month to July.
 California scorpionfish are summer spawners and settle at a small size.  However, a 
 potential bug in how  recruits move into the numbers-at-age matrix was discovered 
 (Richard Methot, personal communication, NWFSC).  The final base model sets both the 
@@ -467,7 +467,7 @@ Model convergence was determined by starting the minimization process from dispe
 values of the maximum likelihood estimates to determine if the model found a better 
 minimum. Jitter is a SS option that generates random starting values from a normal 
 distribution logistically transformed into each parameter’s range [@Methot2015]. This 
-was repeated 100 times and the minimum was reached in 56% of the runs  (Table \ref{tab:jitter}).  
+was repeated 100 times and the minimum was reached in 56% of the runs  (Table \ref{tab:jitter}).
 The model did not experience convergence issues, e.g., final gradient was below 0.0001,
 when reasonable starting values were used and there were no difficulties in inverting 
 the Hessian to obtain estimates of variability.  We did sensitivity runs for 
@@ -797,7 +797,7 @@ observer retained-only catch index was fit well by the model except for the two
 lowest years, 2003 and 2015.   
 
 The POTW trawl survey index was fit well by the model, except for the highest four 
-years from 1979-1982, where the fit is estimated lower than the added uncertainty.  
+years from 1979-1982, where the fit is estimated lower than the added uncertainty.
 The NWFSC trawl survey index is flat and fit well by the model, except for in 2013, 
 the highest year in the index, with also high uncertainty.  The gillnet survey index was 
 not well fit by the model; the model fit did not capture the trend observed in the standardized 
@@ -889,7 +889,7 @@ the base model, which uses the Francis method for weighting, and the model with 
 The Francis weights in the base model were stable, and did not tend to serially decrease (downweight) 
 any of the datasets, which has been seen in other assessments.  
 
-The POTW trawl survey index was the axis of uncertainty in the 2005 assessment.  
+The POTW trawl survey index was the axis of uncertainty in the 2005 assessment. 
 The stock was estimated to be at 80% depletion in 2005 with the POTW trawl survey 
 index and at 58% without the index. The current assessment 
 has a number of new data sources, including new indices, length data, and conditional age-at-length data 

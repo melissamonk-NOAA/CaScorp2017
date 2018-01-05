@@ -9,7 +9,7 @@ between standard length (SL) and total length (TL): $TL = 1.21SL + 1.02$ and $SL
  
 Standard and total lengths of 163 California scorpionfish  were available from a 
 halibut trawl survey in southern California (Steve Wertz, CDFW).  The conversion 
-from SL to TL from these data was estimated at $TL = 1.2225SL + 0.7773$.  
+from SL to TL from these data was estimated at $TL = 1.2225SL + 0.7773$. 
 The conversion originating from the halibut trawl data was used in this assessment 
 due to the fact that the original data from Love et al.  [-@Love1987] are not available. 
 The majority of available length composition data were measured to total length, 
@@ -85,7 +85,7 @@ grow faster than males (Figure \ref{fig:Agelength}).
 Sex-specific length-at-age was initially estimated external to the population dynamics models 
 using the von Bertalanffy growth curve [@vonB1938], $L_i = L_{\infty}e^{(-k[t-t_0])}$, 
 where $L_i$ is the length (cm) at age $i$, $t$ is age in years, $k$ is rate of 
-increase in growth, $t_0$ is the intercept, and $L_{\infty}$ is the asymptotic length.  
+increase in growth, $t_0$ is the intercept, and $L_{\infty}$ is the asymptotic length.
 The external parameter estimates for females were $L{\infty}=31.613, k = 0.250, t_0 = -2.280$,
 and for males $L{\infty}=27.374, k = 0.233, t_0 = -2.092$ (Figure \ref{fig:vonB_compare}). 
 
@@ -95,11 +95,11 @@ and for males $L{\infty}=27.374, k = 0.233, t_0 = -2.092$ (Figure \ref{fig:vonB_
 **Aging Precision and Bias**
 
 Uncertainty in ageing error was estimated using a collection of 200 California 
-scorpionfish otoliths with two age reads (\ref{fig:Fleet8_NWFSCTrawl_ageerror}).  
+scorpionfish otoliths with two age reads (Figure \ref{fig:Fleet8_NWFSCTrawl_ageerror}). 
 Age-composition data used in the model were all from the NWFSC trawl survey and 
 were from otoliths reads aged by the Cooperative Ageing Project (CAP) in Newport, 
 Oregon. All of the otolith reads were from Age Reader A, and double reads were read
-by Age Reader B.  Ageing error was estimated using publicly available software [@Thorson2012].  
+by Age Reader B.  Ageing error was estimated using publicly available software [@Thorson2012].
 The software setting for bias and standard deviation were the same for both 
 readers, unbiased and curvilinear increase in standard deviation with age, 
 respectively (Figure \ref{fig:Fleet8_NWFSCTrawl_ageerror2}).  Two fish with 

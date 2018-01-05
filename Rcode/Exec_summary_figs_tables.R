@@ -342,7 +342,7 @@ align(Recruit_mod1.table) = c('l',
 # Model 1 
 SPRratio_Exploit_mod1.table = xtable(SPRratio_Exploit_mod1, 
                               caption=c(paste('Recent trend in spawning potential 
-                                        ratio (entered as (1-SPR)/50\\% (the SPR target) 
+                                        ratio (entered as $(1-SPR)/(1-SPR_{50\\%})$) 
                                         and exploitation for ', spp, ' in the ', 
                                         mod1_label,'.', sep='')), 
                               label='tab:SPR_Exploit_mod1')  

@@ -160,25 +160,25 @@ output:
 
 
 
-![Francis data weighting method TA1.8 for conditional age data from the NWFSC trawl survey. Suggested sample size adjustment (with 95% interval) for conditional age-at-length data from NWFSC trawl is `r paste0(Fweights[12,6], ' (',Fweights[12,9],'-', Fweights[12,10],')')`. For more info, see Francis et al. (2011). \label{fig:comp_condAALfit_data_weighting_TA1.8_condAgeNWFSCTrawl}](r4ss/plots_mod1/comp_condAALfit_data_weighting_TA1.8_condAgeNWFSCTrawl.png)
+![Mean age for NWFSC trawl survey with 95% confidence intervals based on current samples sizes. Francis data weighting method TA1.8: thinner intervals (with capped ends) show result of further adjusting sample sizes based on suggested multiplier (with 95% interval) is `r paste0(Fweights[12,6], ' (',Fweights[12,9],'-', Fweights[12,10],')')`. For more info, see Francis et al. (2011). \label{fig:comp_condAALfit_data_weighting_TA1.8_condAgeNWFSCTrawl}](r4ss/plots_mod1/comp_condAALfit_data_weighting_TA1.8_condAgeNWFSCTrawl.png)
  
  
-![Francis data weighting method TA1.8 for length composition data from the POTW trawl surveys. Suggested sample size adjustment (with 95% interval) for length data from POTW trawl surveys is `r paste0(Fweights[7,6], ' (',Fweights[7,9],'-', Fweights[7,10],')')`. For more info, see Francis et al. (2011). \label{fig:comp_lenfit_data_weighting_TA1.8_Sanitation}](r4ss/plots_mod1/comp_lenfit_data_weighting_TA1.8_Sanitation.png)
+![Mean length for the POTW trawl surveys with  95% confidence intervals based on current samples sizes. Francis data weighting method TA1.8: thinner intervals (with capped ends) show result of further adjusting sample sizes based on suggested multiplier (with 95% interval) is `r paste0(Fweights[7,6], ' (',Fweights[7,9],'-', Fweights[7,10],')')`. For more info, see Francis et al. (2011). \label{fig:comp_lenfit_data_weighting_TA1.8_Sanitation}](r4ss/plots_mod1/comp_lenfit_data_weighting_TA1.8_Sanitation.png)
 
 
-![Francis data weighting method TA1.8 for length composition data from the Impingement surveys.  Suggested sample size adjustment (with 95% interval) for the length data from the Impingement surveys is `r paste0(Fweights[10,6], ' (',Fweights[10,9],'-', Fweights[10,10],')')`. For more info, see Francis et al. (2011). \label{fig:comp_lenfit_data_weighting_TA1.8_Impingement}](r4ss/plots_mod1/comp_lenfit_data_weighting_TA1.8_Impingement.png)
-
-
-
-![Francis data weighting method TA1.8 for length composition data from the recreational private boat fleet.  Suggested sample size adjustment (with 95% interval) for the length data from the recreational private boat fleet is `r paste0(Fweights[4,6], ' (',Fweights[4,9],'-', Fweights[4,10],')')`. For more info, see Francis et al. (2011). \label{fig:comp_lenfit_data_weighting_TA1.8_RecPR}](r4ss/plots_mod1/comp_lenfit_data_weighting_TA1.8_RecPR.png)
+![Mean length for the Impingement surveys with  95% confidence intervals based on current samples sizes. Francis data weighting method TA1.8: thinner intervals (with capped ends) show result of further adjusting sample sizes based on suggested multiplier (with 95% interval) is  `r paste0(Fweights[10,6], ' (',Fweights[10,9],'-', Fweights[10,10],')')`. For more info, see Francis et al. (2011). \label{fig:comp_lenfit_data_weighting_TA1.8_Impingement}](r4ss/plots_mod1/comp_lenfit_data_weighting_TA1.8_Impingement.png)
 
 
 
-![Francis data weighting method TA1.8 for conditional age data from the recreational party/charter retained-catch fleet.  Suggested sample size adjustment (with 95% interval) for the length data from the recreational party/charter retained-catch fleet is `r paste0(Fweights[5,6], ' (',Fweights[5,9],'-', Fweights[5,10],')')`. For more info, see Francis et al. (2011). \label{fig:comp_lenfit_data_weighting_TA1.8_RecPC}](r4ss/plots_mod1/comp_lenfit_data_weighting_TA1.8_RecPC.png)
+![Mean length for the recreational private boat fleet with  95% confidence intervals based on current samples sizes. Francis data weighting method TA1.8: thinner intervals (with capped ends) show result of further adjusting sample sizes based on suggested multiplier (with 95% interval) is  `r paste0(Fweights[4,6], ' (',Fweights[4,9],'-', Fweights[4,10],')')`. For more info, see Francis et al. (2011). \label{fig:comp_lenfit_data_weighting_TA1.8_RecPR}](r4ss/plots_mod1/comp_lenfit_data_weighting_TA1.8_RecPR.png)
 
 
 
-![Francis data weighting method TA1.8 for conditional age data from the recreational discard-catch fleet.  Suggested sample size adjustment (with 95% interval) for the length data from the recreational discard-catch fleet is `r paste0(Fweights[6,6], ' (',Fweights[6,9],'-', Fweights[6,10],')')`. For more info, see Francis et al. (2011). \label{fig:comp_lenfit_data_weighting_TA1.8_RecDD}](r4ss/plots_mod1/comp_lenfit_data_weighting_TA1.8_RecDD.png)
+![Mean age for recreational party/charter retained-catch fleet with 95% confidence intervals based on current samples sizes. Francis data weighting method TA1.8: thinner intervals (with capped ends) show result of further adjusting sample sizes based on suggested multiplier (with 95% interval) is `r paste0(Fweights[5,6], ' (',Fweights[5,9],'-', Fweights[5,10],')')`. For more info, see Francis et al. (2011).\label{fig:comp_lenfit_data_weighting_TA1.8_RecPC}](r4ss/plots_mod1/comp_lenfit_data_weighting_TA1.8_RecPC.png)
+
+
+
+![Mean age for recreational discard-catch fleett with 95% confidence intervals based on current samples sizes. Francis data weighting method TA1.8: thinner intervals (with capped ends) show result of further adjusting sample sizes based on suggested multiplier (with 95% interval) is `r paste0(Fweights[6,6], ' (',Fweights[6,9],'-', Fweights[6,10],')')`. For more info, see Francis et al. (2011). \label{fig:comp_lenfit_data_weighting_TA1.8_RecDD}](r4ss/plots_mod1/comp_lenfit_data_weighting_TA1.8_RecDD.png)
 
 \FloatBarrier
 

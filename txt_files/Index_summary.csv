@@ -1,5 +1,5 @@
 Fleet,Years,Name,Fishery independent,Filtering,Method,Endorsed
-4,2004-2016,Recreational PR dockside CPUE,No,"trip, area, regulations, Stephens-MacCall",delta-GLM (bin-lognormal),SSC
+4,2006-2016,Recreational PR dockside CPUE,No,"trip, area, regulations, Stephens-MacCall",delta-GLM (bin-lognormal),SSC
 5,1980-2016,CPFV logbook CPUE,No,"trip, gear, effort, species, depth, sample size",negative binomial,SSC
 6,2002-2016,Onboard observer discard catch CPUE,No,"habitat ,regulations, effort, boats",delta-GLM (bin-lognormal),SSC
 7,1970-2016,Sanitation district CPUE,Yes,"sample size, depth, tow times",delta-GLM (bin-lognormal),SSC

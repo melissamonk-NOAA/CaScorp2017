@@ -101,7 +101,7 @@ each fishery-dependent and -independent data source, including a
 nuclear power generating station impingement survey that did not have an associated index of abundance. 
 Conditional age-at-length information were available from the NWFSC trawl survey.
 
-The definition of fishing fleets has changed from those in the 2005 assessment.  
+The definition of fishing fleets has changed from those in the 2005 assessment. 
 Six fishing fleets were specified within this model: 1) a combined commercial hook-and-line, fish pot, 
 and "other gear" fleet, 2) the commercial gill net 
 fleet, 3) the commercial trawl fleet, 4) the recreational party/charter boat fleet (retained 

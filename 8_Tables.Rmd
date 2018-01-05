@@ -690,7 +690,7 @@ print(Fleet7_lengthsample.table,
         Fleet8_meanAatL = read.csv("./txt_files/NWFSCTrawl_MeanLatA.csv")
         
         
-        colnames(Fleet8_catchdepth) = c('Depth zone',
+        colnames(Fleet8_catchdepth) = c('Depth zone (m)',
                                         'Total catch (kg)',
                                         'Raw CPUE (kg/ha)')
         

@@ -232,10 +232,12 @@
 
 ```{r, results='asis'}
     # Create the time series table
-    Timeseries.table = xtable(Timeseries, 
+    Timeseries1 = Timeseries
+    colnames(Timeseries1)[1] = 'Year'
+    Timeseries.table = xtable(Timeseries1, 
                               caption = c('Time-series of population estimates 
                                         from the base-case model. Relative exploitation 
-                                        rate is.'),
+                                        rate is $(1-SPR)/(1-SPR_{50\\%})$.'),
                               label='tab:Timeseries_mod1',
                               digits = c(0,0,0,0,3,0,0,2,2))   
 
