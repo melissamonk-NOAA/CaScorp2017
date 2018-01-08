@@ -439,7 +439,7 @@ number of age-1 fish and the data were dominated by males.  It may also be possi
 to evaluate mortality by quantifying predation by major predators of scorpionfish, 
 such as octopus. 
 
-Tagging study to estimate natural mortality for scorpionfish should be 
+A tagging study to estimate natural mortality for scorpionfish should be 
 considered.  This project could be designed as a cooperative research project 
 with the charter fleet in southern California.
 

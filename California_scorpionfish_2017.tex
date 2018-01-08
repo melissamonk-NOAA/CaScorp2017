@@ -105,7 +105,8 @@ Southern California in 2017}
 \RequirePackage[l2tabu, orthodox]{nag}                            % checks packages related to the accessibility?
 %\usepackage[inline]{showlabels}                                   % show table and figure labels; comment out for final
 %\RequirePackage[tagged]{accessibilityMeta}
-
+ 
+\usepackage{biblatex}
 
 %\linenumbers                                                      % specify use of line numbers
 
@@ -857,7 +858,7 @@ number of age-1 fish and the data were dominated by males.  It may also be possi
 to evaluate mortality by quantifying predation by major predators of scorpionfish, 
 such as octopus. 
 
-Tagging study to estimate natural mortality for scorpionfish should be 
+A tagging study to estimate natural mortality for scorpionfish should be 
 considered.  This project could be designed as a cooperative research project 
 with the charter fleet in southern California.
 
@@ -1721,13 +1722,12 @@ resulting number of trips remaining in the sampling frame are provided
 in Table \ref{tab:Fleet5_RecPC_dockside_filter}.
 
 Prior to the Stephens-MacCall filter, a total of 3,968 trips were
-retained for the analysis.\\
-Species that composed less than 5\% of the catch were excluded from
-analysis, which included Chub mackerel, Pacific mackerel and barracuda.
-As expected, positive indicators of California scorpionfish trips
-include several species of nearshore rockfish, California sheephead,
-California halibut, Pacific sanddabs and seabasses and
-counter-indicators include several species of deep-water rockfish
+retained for the analysis. Species that composed less than 5\% of the
+catch were excluded from analysis, which included Chub mackerel, Pacific
+mackerel and barracuda. As expected, positive indicators of California
+scorpionfish trips include several species of nearshore rockfish,
+California sheephead, California halibut, Pacific sanddabs and seabasses
+and counter-indicators include several species of deep-water rockfish
 (Figure \ref{fig:Fleet5_RecPC_docksideSM}). While the filter is useful
 in identifying co-occurring or non-occurring species assuming all effort
 was exerted in pursuit of a single target, the targeting of more than
@@ -2877,9 +2877,12 @@ Maturity was changed for this assessment. The Love et al.
 (\protect\hyperlink{ref-Love1987}{1987}) study is the only study that
 estimated the maturity ogive. The CDFW cross-shelf halibut survey used
 in the 2005 assessment to estimate the GSI were not used in this study
-as GSI is an indicator of fecundity. No information on fecundity is
-available for California scorpionfish. This assessment uses the
-assumption that eggs are equivalent to spawning biomass.
+as GSI is not an indicator of fecundity. Fecundity estimates are
+available for a number of rockfish species (Dick et al.
+\protect\hyperlink{ref-Dick2017}{2017}), but there is currently no
+information on fecundity available for California scorpionfish. This
+assessment uses the assumption that eggs are equivalent to spawning
+biomass.
 
 In this assessment, steepness was set at 0.718, the mean of the beta
 prior developed from a meta-analysis of West Coast groundfish and
@@ -2924,11 +2927,11 @@ data.
 
 Stock synthesis has a broad suite of structural options available. Where
 possible, the `default' or most commonly used approaches are applied to
-this stock assessment.\\
-The assessment is sex-specific, including the estimation of separate
-growth curves, and natural mortality. Sex-specific length-weight
-parameters were input as fixed values. The assessment only tracks female
-spawning biomass for use in calculating stock status.
+this stock assessment. The assessment is sex-specific, including the
+estimation of separate growth curves, and natural mortality.
+Sex-specific length-weight parameters were input as fixed values. The
+assessment only tracks female spawning biomass for use in calculating
+stock status.
 
 The selectivity for the generation station impingement surveys was set
 to 1.0 for all sizes (SS pattern 0). As an example, the cooling intake
@@ -2984,7 +2987,7 @@ output data from Stock Synthesis.
 
 Length composition and conditional-age-at-length (CAAL) compositions
 sample sizes for the base model were tuned by the ``Francis method,''
-based on equation TA1.8 in Francis\\
+based on equation TA1.8 in Francis
 (\protect\hyperlink{ref-Francis2011}{2011}), and implemented in the r4ss
 package. This approach involves comparing the residuals in the model's
 expected mean length with respect to the observed mean length and
@@ -3272,7 +3275,7 @@ to be understood.
     
 \textbf{STAT Response:} The base model models fecundity as proportional to weight. 
 The model was run with the alternative where fecundity is proportional to 
-length to the power 4.043 [@Dick2017]. This model had a slightly lower depletion level 
+length to the power 4.043 (Dick et al. 2017). This model had a slightly lower depletion level 
 (0.531 vs. 0.579, measured in spawning output rather than spawning biomass) 
 and a slightly higher unfished equilibrium biomass estimate (by about 1\%). 
 While more research into this topic is warranted, its effect on the model 
@@ -3845,7 +3848,7 @@ number of age-1 fish and the data were dominated by males.  It may also be possi
 to evaluate mortality by quantifying predation by major predators of scorpionfish, 
 such as octopus. 
 
-Tagging study to estimate natural mortality for scorpionfish should be 
+A tagging study to estimate natural mortality for scorpionfish should be 
 considered.  This project could be designed as a cooperative research project 
 with the charter fleet in southern California.
 
@@ -3979,10 +3982,15 @@ survey methodologies and datasets.
 \caption{Commercial landings (mt) from the commercial 
                                 fisheries. Data sources are the CDFG Fishery
                                 Bulletins (available from California Explores the Ocean)
-                                and the California Fisheries Information System (CFIS)} \\ 
+                                and the California Fisheries Information System (CFIS).} \\ 
   \hline
 Year & Hook-and-line (plus pot and other) & Trawl & Gillnet & Mexico & Total U.S. Commercial Removals & Source \\ 
-  \hline \endhead  \hline
+  \hline  \endfirsthead \caption[]{Commercial landings (mt) from the commercial 
+                                fisheries. Data sources are the CDFG Fishery
+                                Bulletins (available from California Explores the Ocean)
+                                and the California Fisheries Information System (CFIS).} \label{tab:CommCatches} \\ \hline Year & Hook-and-line (plus pot and other) & Trawl & Gillnet & Mexico & Total U.S. Commercial Removals & Source \\ \hline  \endhead \hline \multicolumn{6}{l}{\textit{Continues next page}} \ 
+                                 \endfoot
+                                 \endlastfoot \hline
 1916 & 3.64 & 0.00 & 0.00 & 0.00 & 3.64 & CDFG Bulletins \\ 
   1917 & 7.90 & 0.00 & 0.00 & 0.00 & 7.90 & CDFG Bulletins \\ 
   1918 & 12.81 & 0.00 & 0.00 & 0.00 & 12.81 & CDFG Bulletins \\ 
@@ -4086,7 +4094,6 @@ Year & Hook-and-line (plus pot and other) & Trawl & Gillnet & Mexico & Total U.S
   2016 & 2.32 & 0.13 & 0.00 & 0.00 & 2.45 & CFIS \\ 
    \hline
 \hline
-\label{tab:CommCatches}
 \end{longtable}
 
 \FloatBarrier
@@ -4182,7 +4189,15 @@ Year & Fish & Trips & Sample size & Mean length (cm) \\
                                         to the dead discard removals.} \\ 
   \hline
 Year & Private & Party/charter & Dead Discard (all modes) & Total Removals \\ 
-  \hline \endhead  \hline
+  \hline  \endfirsthead \caption[]{Recreational removals (mt) from the party/charter 
+                                        and private vessels. Removals from man-made and 
+                                        beach/bank modes were included in the private mode
+                                        removals. Dead discards include all modes. CDFW provided 
+                                        all data. Note: A discard mortality rate of seven percent 
+                                        was applied 
+                                        to the dead discard removals.} \label{tab:Rec_removal} \\ \hline Year & Private & Party/charter & Dead Discard (all modes) & Total Removals \\ \hline  \endhead \hline \multicolumn{5}{l}{\textit{Continues next page}} \ 
+                                 \endfoot
+                                 \endlastfoot \hline
 1929 & 0.06 & 0.54 & 0.00 & 0.61 \\ 
   1930 & 0.12 & 1.08 & 0.01 & 1.21 \\ 
   1931 & 0.18 & 1.62 & 0.01 & 1.81 \\ 
@@ -4273,8 +4288,9 @@ Year & Private & Party/charter & Dead Discard (all modes) & Total Removals \\
   2016 & 3.86 & 64.56 & 3.29 & 71.71 \\ 
    \hline
 \hline
-\label{tab:Rec_removal}
 \end{longtable}
+
+\newpage
 
 \FloatBarrier
 
@@ -5478,7 +5494,11 @@ TOTAL & 1097.30 \\
                                         rate is $(1-SPR)/(1-SPR_{50\%})$.} \\ 
   \hline
 Year & Total biomass (mt) & Spawning biomass (mt) & Depletion & Age-0 recruits & Total catch (mt) & Relative exploitation rate & SPR \\ 
-  \hline \endhead  \hline
+  \hline  \endfirsthead \caption[]{Time-series of population estimates 
+                                        from the base-case model. Relative exploitation 
+                                        rate is $(1-SPR)/(1-SPR_{50\%})$.} \label{tab:Timeseries_mod1} \\ \hline Year & Total biomass (mt) & Spawning biomass (mt) & Depletion & Age-0 recruits & Total catch (mt) & Relative exploitation rate & SPR \\ \hline  \endhead \hline \multicolumn{5}{l}{\textit{Continues next page}} \ 
+                                 \endfoot
+                                 \endlastfoot \hline
 1916 & 2922 & 1624 & 0.000 & 3620 & 4 & 0.00 & 0.99 \\ 
   1917 & 2919 & 1622 & 0.999 & 3619 & 8 & 0.00 & 0.98 \\ 
   1918 & 2912 & 1618 & 0.996 & 3618 & 13 & 0.00 & 0.97 \\ 
@@ -5583,7 +5603,6 @@ Year & Total biomass (mt) & Spawning biomass (mt) & Depletion & Age-0 recruits &
   2017 & 1915 & 882 & 0.543 & 3344 &  &  &  \\ 
    \hline
 \hline
-\label{tab:Timeseries_mod1}
 \end{longtable}
 
 \FloatBarrier
@@ -6965,6 +6984,11 @@ Unpublished report.
 Daugherty, A. 1949. The commercial fish catch of California for the year
 1947 with an historical review 1916--1947. \emph{In} California
 department of fish and game fishery bulletin no. 74.
+
+\hypertarget{ref-Dick2017}{}
+Dick, E., Beyer, S., Mangel, M., and Ralston, S. 2017. A meta-analysis
+of fecundity in rockfishes (genus \emph{Sebastes}). Fisheries Research
+\textbf{187}: 73--85.
 
 \hypertarget{ref-Dotson2003}{}
 Dotson, R., and Charter, R. 2003. Trends in the Southern California

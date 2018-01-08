@@ -211,9 +211,9 @@ POTW trawl surveys.
 Maturity was changed for this assessment.  The Love et al. [-@Love1987] study is 
 the only study that estimated the maturity ogive.  The CDFW cross-shelf halibut 
 survey used in the 2005 assessment to estimate the GSI were not used in this study 
-as GSI is an indicator of fecundity.  No information on fecundity is available for
-California scorpionfish.  This assessment uses the assumption that eggs are 
-equivalent to spawning biomass.  
+as GSI is not an indicator of fecundity.  Fecundity estimates are available for a number 
+of rockfish species [@Dick2017], but there is currently no information on fecundity 
+available for California scorpionfish.  This assessment uses the assumption that eggs are equivalent to spawning biomass.  
 
 In this assessment, steepness was set at 0.718, the mean of the beta prior developed 
 from a meta-analysis of West Coast groundfish and updated in 2017 (James Thorson, 
@@ -251,7 +251,7 @@ observer retained-only catch data.
 
 ###Other Specifications
 Stock synthesis has a broad suite of structural options available.  Where possible, 
-the ‘default’ or most commonly used approaches are applied to this stock assessment.  
+the ‘default’ or most commonly used approaches are applied to this stock assessment.
 The assessment is sex-specific, including the estimation of separate growth curves, 
 and natural mortality.  Sex-specific length-weight parameters were input as fixed 
 values.  The assessment only tracks female spawning biomass for use in calculating stock status.
@@ -295,7 +295,7 @@ Synthesis.
 
 ###Data Weighting
 Length composition and conditional-age-at-length (CAAL) compositions sample sizes for 
-the base model were tuned by the "Francis method," based on equation TA1.8 in Francis  
+the base model were tuned by the "Francis method," based on equation TA1.8 in Francis 
 [-@Francis2011], and implemented in the r4ss package. This approach involves comparing 
 the residuals in the model’s expected mean length with respect to the observed mean 
 length and associated uncertainty derived from the composition vectors and their 
@@ -548,7 +548,7 @@ to be understood.
     
 \textbf{STAT Response:} The base model models fecundity as proportional to weight. 
 The model was run with the alternative where fecundity is proportional to 
-length to the power 4.043 [@Dick2017]. This model had a slightly lower depletion level 
+length to the power 4.043 (Dick et al. 2017). This model had a slightly lower depletion level 
 (0.531 vs. 0.579, measured in spawning output rather than spawning biomass) 
 and a slightly higher unfished equilibrium biomass estimate (by about 1\%). 
 While more research into this topic is warranted, its effect on the model 

@@ -370,7 +370,7 @@ number of trips remaining in the sampling
 frame are provided in Table \ref{tab:Fleet5_RecPC_dockside_filter}.
 
 
-Prior to the Stephens-MacCall filter, a total of 3,968 trips were retained for the analysis.  
+Prior to the Stephens-MacCall filter, a total of 3,968 trips were retained for the analysis. 
 Species that composed less than 5% 
 of the catch were excluded from analysis, which included Chub mackerel, Pacific 
 mackerel and barracuda.  As expected, positive
