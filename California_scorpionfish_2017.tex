@@ -105,8 +105,7 @@ Southern California in 2017}
 \RequirePackage[l2tabu, orthodox]{nag}                            % checks packages related to the accessibility?
 %\usepackage[inline]{showlabels}                                   % show table and figure labels; comment out for final
 %\RequirePackage[tagged]{accessibilityMeta}
- 
-\usepackage{biblatex}
+
 
 %\linenumbers                                                      % specify use of line numbers
 
@@ -236,14 +235,14 @@ period.
 
 \FloatBarrier
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{California_scorpionfish_2017_files/figure-latex/unnamed-chunk-16-1.pdf}
 \caption{California scorpionfish catch history for the recreational
 fleets. \label{fig:Exec_catch1}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{California_scorpionfish_2017_files/figure-latex/unnamed-chunk-17-1.pdf}
 \caption{Stacked line plot of California scorpionfish catch history for
@@ -252,7 +251,7 @@ the commercial fleets. \label{fig:Exec_catch2}}
 
 \FloatBarrier
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{r4ss/plots_mod1/catch2 landings stacked.png}
 \caption{Catch history of California scorpionfish in the base model.
@@ -357,7 +356,7 @@ those sources of uncertainty considered in the model for the California
 scorpionfish stock in southern California (Figure
 \ref{fig:assess_region_map}).
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/assess_region_map.png}
 \caption{Map depicting the distribution of California scorpionfish out
@@ -381,7 +380,7 @@ increases in stock size in 2015 due to a combination of strong
 recruitment and smaller catches in 2015 and 2016. The 2016 estimated
 spawning biomass relative to unfished equilibrium spawning biomass is
 above the target of 40\% of unfished spawning biomass at 54.3\% (95\%
-asymptotic interval: \(\pm\) 43\%-65.7\%) (Figure
+asymptotic interval: \(\pm\) 41.4\%-67.3\%) (Figure
 \ref{fig:RelDeplete_all}). Approximate confidence intervals based on the
 asymptotic variance estimates show that the uncertainty in the estimated
 spawning biomass is high.
@@ -407,14 +406,14 @@ Year & Spawning biomass (mt) & 95\% confidence interval & Estimated depletion & 
   2014 & 810.223 & (462.86-1157.59) & 0.499 & (0.41-0.587) \\ 
   2015 & 746.227 & (412.08-1080.38) & 0.459 & (0.371-0.548) \\ 
   2016 & 774.813 & (426.28-1123.35) & 0.477 & (0.381-0.572) \\ 
-  2017 & 882.457 & (484.21-1280.71) & 0.543 & (0.43-0.657) \\ 
+  2017 & 882.457 & (472.37-1292.54) & 0.543 & (0.414-0.673) \\ 
    \hline
 \end{tabular}
 \end{table}
 
 \FloatBarrier
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{r4ss/plots_mod1/ts7_Spawning_biomass_(mt)_with_95_asymptotic_intervals_intervals.png}
 \caption{Time series of spawning biomass trajectory (circles and line:
@@ -422,7 +421,7 @@ median; light broken lines: 95\% credibility intervals) for the base
 case assessment model. \label{fig:Spawnbio_all}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{r4ss/plots_mod1/ts9_Spawning_depletion_with_95_asymptotic_intervals_intervals.png}
 \caption{Estimated relative depletion with approximate 95\% asymptotic
@@ -452,21 +451,21 @@ Year & Estimated Recruitment (1,000s) & 95\% confidence interval \\
   \hline
 2008 & 2288.15 & (1198.27 - 4369.33) \\ 
   2009 & 2589.07 & (1388.65 - 4827.18) \\ 
-  2010 & 2483.75 & (1330.55 - 4636.43) \\ 
-  2011 & 1178.81 & (541.36 - 2566.83) \\ 
+  2010 & 2483.76 & (1330.56 - 4636.44) \\ 
+  2011 & 1178.80 & (541.36 - 2566.82) \\ 
   2012 & 1112.10 & (509.72 - 2426.35) \\ 
   2013 & 3747.47 & (2048.29 - 6856.23) \\ 
   2014 & 3529.05 & (1626.81 - 7655.6) \\ 
   2015 & 7585.54 & (3389.96 - 16973.8) \\ 
   2016 & 3268.02 & (1063.03 - 10046.74) \\ 
-  2017 & 3343.81 & (1088.44 - 10272.52) \\ 
+  2017 & 3343.81 & (1087.75 - 10279.03) \\ 
    \hline
 \end{tabular}
 \end{table}
 
 \FloatBarrier
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{r4ss/plots_mod1/ts11_Age-0_recruits_(1000s)_with_95_asymptotic_intervals.png}
 \caption{Time series of estimated California scorpionfish recruitments
@@ -515,7 +514,7 @@ Year & Estimated (1-SPR)/(1-SPR50\%) & 95\% confidence interval & Harvest rate (
 
 \FloatBarrier
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{r4ss/plots_mod1/SPR2_minusSPRseries.png}
 \caption{Estimated spawning potential ratio (SPR) for the base-case
@@ -544,8 +543,8 @@ This stock assessment estimates that California scorpionfish in the base
 model is above the biomass target (\(SB_{40\%}\)), and well above the
 minimum stock size threshold (\(SB_{25\%}\)). The estimated relative
 depletion level for the base model in 2017 is 54.3\% (95\% asymptotic
-interval: \(\pm\) 43\%-65.7\%, corresponding to an unfished spawning
-biomass of 882.457 mt (95\% asymptotic interval: 484.21-1280.71 mt) of
+interval: \(\pm\) 41.4\%-67.3\%, corresponding to an unfished spawning
+biomass of 882.457 mt (95\% asymptotic interval: 472.37-1292.54 mt) of
 spawning biomass in the base model (Table \ref{tab:Ref_pts_mod1}).
 Unfished age 1+ biomass was estimated to be 2921.9 mt in the base case
 model. The target spawning biomass (\(SB_{40\%}\)) is 649.8 mt, which
@@ -568,23 +567,23 @@ the proxy \(F_{MSY}\) harvest rate corresponding to \(SPR_{50\%}\) is
 Unfished spawning biomass (mt) & 1624.4 & (1156.4-2092.5) \\ 
   Unfished age 1+ biomass (mt) & 2921.9 & (2052.8-3791.1) \\ 
   Unfished recruitment ($R_0$) & 3619.8 & (2518.6-4721) \\ 
-  Spawning biomass (2017, mt) & 882.5 & (484.2-1280.7) \\ 
-  Depletion (2017) & 0.5432 & (0.4299-0.6565) \\ 
+  Spawning biomass (2017, mt) & 882.5 & (472.4-1292.5) \\ 
+  Depletion (2017) & 0.5432 & (0.4138-0.6727) \\ 
   \textbf{$\text{Reference points based on } \mathbf{SB_{40\%}}$} &  &  \\ 
-  Proxy spawning biomass ($B_{40\%}$) & 649.8 & (462.5-837) \\ 
+  Proxy spawning biomass ($B_{40\%}$) & 649.8 & (452.1-847.5) \\ 
   SPR resulting in $B_{40\%}$ ($SPR_{B40\%}$) & 0.4589 & (0.4589-0.4589) \\ 
-  Exploitation rate resulting in $B_{40\%}$ & 0.1741 & (0.1601-0.1882) \\ 
-  Yield with $SPR_{B40\%}$ at $B_{40\%}$ (mt) & 247.2 & (168.6-325.9) \\ 
+  Exploitation rate resulting in $B_{40\%}$ & 0.1741 & (0.1604-0.1879) \\ 
+  Yield with $SPR_{B40\%}$ at $B_{40\%}$ (mt) & 247.2 & (171.7-322.7) \\ 
   \textbf{\textit{Reference points based on SPR proxy for MSY}} &  &  \\ 
-  Spawning biomass & 723.8 & (515.2-932.3) \\ 
+  Spawning biomass & 723.8 & (503.6-944) \\ 
   $SPR_{proxy}$ & 0.5 &  \\ 
-  Exploitation rate corresponding to $SPR_{proxy}$ & 0.1502 & (0.1383-0.1621) \\ 
-  Yield with $SPR_{proxy}$ at $SB_{SPR}$ (mt) & 232.4 & (158.5-306.4) \\ 
+  Exploitation rate corresponding to $SPR_{proxy}$ & 0.1502 & (0.139-0.1614) \\ 
+  Yield with $SPR_{proxy}$ at $SB_{SPR}$ (mt) & 232.4 & (161.5-303.3) \\ 
   \textbf{\textit{Reference points based on estimated MSY values}} &  &  \\ 
-  Spawning biomass at $MSY$ ($SB_{MSY}$) & 358.8 & (250.6-467) \\ 
-  $SPR_{MSY}$ & 0.2974 & (0.2857-0.3091) \\ 
-  Exploitation rate at $MSY$ & 0.3236 & (0.2917-0.3554) \\ 
-  $MSY$ (mt)  & 281.3 & (192.2-370.4) \\ 
+  Spawning biomass at $MSY$ ($SB_{MSY}$) & 358.8 & (247.1-470.5) \\ 
+  $SPR_{MSY}$ & 0.2974 & (0.2877-0.3071) \\ 
+  Exploitation rate at $MSY$ & 0.3236 & (0.2863-0.3609) \\ 
+  $MSY$ (mt)  & 281.3 & (195.1-367.6) \\ 
    \hline
 \end{tabular}
 \end{table}
@@ -813,19 +812,19 @@ Exploitation rate & 0.05 & 0.06 & 0.05 & 0.06 & 0.07 & 0.07 & 0.08 & 0.05 & 0.04
   Age 1+ biomass (mt) & 2306.33 & 2156.96 & 2047.95 & 1948.44 & 1869.84 & 1768.52 & 1630.70 & 1556.37 & 1534.81 & 1713.25 \\ 
    \hline
 Spawning biomass & 1144.500 & 1090.480 & 1029.330 &  980.130 &  943.555 &  890.084 &  810.223 &  746.227 &  774.813 &  882.457 \\ 
-  ~95\% CI & (654.46-1634.54) & (629.78-1551.18) & (597.2-1461.46) & (571.79-1388.47) & (553.81-1333.3) & (518.85-1261.32) & (462.86-1157.59) & (412.08-1080.38) & (426.28-1123.35) & (484.21-1280.71) \\ 
+  ~95\% CI & (654.46-1634.54) & (629.78-1551.18) & (597.2-1461.46) & (571.79-1388.47) & (553.81-1333.3) & (518.85-1261.32) & (462.86-1157.59) & (412.08-1080.38) & (426.28-1123.35) & (472.37-1292.54) \\ 
    \hline
 Depletion & 0.705 & 0.671 & 0.634 & 0.603 & 0.581 & 0.548 & 0.499 & 0.459 & 0.477 & 0.543 \\ 
-  ~95\% CI & (0.573-0.836) & (0.55-0.793) & (0.521-0.746) & (0.5-0.707) & (0.485-0.677) & (0.456-0.64) & (0.41-0.587) & (0.371-0.548) & (0.381-0.572) & (0.43-0.657) \\ 
+  ~95\% CI & (0.573-0.836) & (0.55-0.793) & (0.521-0.746) & (0.5-0.707) & (0.485-0.677) & (0.456-0.64) & (0.41-0.587) & (0.371-0.548) & (0.381-0.572) & (0.414-0.673) \\ 
    \hline
-Recruits & 2288.15 & 2589.07 & 2483.75 & 1178.81 & 1112.10 & 3747.47 & 3529.05 & 7585.54 & 3268.02 & 3343.81 \\ 
-  ~95\% CI & (1198.27 - 4369.33) & (1388.65 - 4827.18) & (1330.55 - 4636.43) & (541.36 - 2566.83) & (509.72 - 2426.35) & (2048.29 - 6856.23) & (1626.81 - 7655.6) & (3389.96 - 16973.8) & (1063.03 - 10046.74) & (1088.44 - 10272.52) \\ 
+Recruits & 2288.15 & 2589.07 & 2483.76 & 1178.80 & 1112.10 & 3747.47 & 3529.05 & 7585.54 & 3268.02 & 3343.81 \\ 
+  ~95\% CI & (1198.27 - 4369.33) & (1388.65 - 4827.18) & (1330.56 - 4636.44) & (541.36 - 2566.82) & (509.72 - 2426.35) & (2048.29 - 6856.23) & (1626.81 - 7655.6) & (3389.96 - 16973.8) & (1063.03 - 10046.74) & (1087.75 - 10279.03) \\ 
    \hline
 \end{tabular}
 }
 \end{sidewaystable}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{r4ss/plots_mod1/yield1_yield_curve.png}
 \caption{Equilibrium yield curve for the base case model. Values are
@@ -2466,9 +2465,7 @@ Individual fish lengths recorded by MRFSS (1980-2003) and CRFS
 (www.recfin.org). CRFS data from 2012-2014 were obtained directly from
 CDFW.
 
-\vspace{.5cm}
-
-\textbf{Age Structures}
+\vspace{.5cm} \textbf{Age Structures}
 
 Age data were provided from the NWFSC trawl survey from 2005-2016, and
 all of the otoliths collected from the survey were aged. Figures
@@ -2492,9 +2489,7 @@ The external parameter estimates for females were
 \(L{\infty}=27.374, k = 0.233, t_0 = -2.092\) (Figure
 \ref{fig:vonB_compare}).
 
-\vspace{.5cm}
-
-\textbf{Aging Precision and Bias}
+\vspace{.5cm} \textbf{Aging Precision and Bias}
 
 Uncertainty in ageing error was estimated using a collection of 200
 California scorpionfish otoliths with two age reads (Figure
@@ -2512,9 +2507,7 @@ from the ageing error estimation. The resulting estimate indicated a
 standard deviation in age readings increasing from 0.001 years to a
 standard deviation of 1.79 years at age 22.
 
-\vspace{.5cm}
-
-\textbf{Weight-Length}
+\vspace{.5cm} \textbf{Weight-Length}
 
 The weight-length relationship is based on the standard power function:
 \(W = \alpha(L^\beta)\) where \(W\) is individual weight (kg), \(L\) is
@@ -2537,9 +2530,7 @@ trends. The weight-length relationships estimated from the NWFSC survey
 are consistent with the sex-specific growth rates and are used in the
 assessment model.
 
-\vspace{.5cm}
-
-\textbf{Sex Ratio, Maturity, and Fecundity}
+\vspace{.5cm} \textbf{Sex Ratio, Maturity, and Fecundity}
 
 The NWFSC trawl survey is the only study available with raw data on sex
 ratios by age. Across all ages, the sex ratio from the aged California
@@ -2574,9 +2565,7 @@ to estimate the GSI, was a halibut targeted trawl study using a mesh
 size of 10.2 cm (Steven Wertz, personal communication, CDFW). This
 assessment assumed linear relationship for eggs per kilogram.
 
-\vspace{.5cm}
-
-\textbf{Natural Mortality} Hamel
+\vspace{.5cm} \textbf{Natural Mortality} Hamel
 (\protect\hyperlink{ref-Hamel2015}{2015}) developed a method for
 combining meta-analytic approaches to relating the natural mortality
 rate \(M\) to other life-history parameters such as longevity, size,
@@ -3745,7 +3734,7 @@ Reference points were calculated using the estimated selectivities and
 catch distribution among fleets in the most recent year of the model,
 (2015). Sustainable total yield (landings plus discards) were 232.4 mt
 when using an \(SPR_{50\%}\) reference harvest rate and with a 95\%
-confidence interval of (158.5-306.4) mt based on estimates of
+confidence interval of (161.5-303.3) mt based on estimates of
 uncertainty. The spawning biomass equivalent to 40\% of the unfished
 level (\(SB_{40\%}\)) was 649.8 mt.
 
@@ -4105,7 +4094,7 @@ Year & Hook-and-line (plus pot and other) & Trawl & Gillnet & Mexico & Total U.S
 \caption{The annual number of California scorpionfish 
                                               sampled from the the commercial hook-and-line 
                                             fleet for lengths. Sample size is calculated 
-                                            using Stewarts method (see text for detail)} 
+                                            using Stewart’s method (see text for detail)} 
 \label{tab:ComHL_lengthsample}
 \begin{tabular}{rrrrr}
   \hline
@@ -4124,14 +4113,16 @@ Year & Fish & Trips & Sample size & Mean length (cm) \\
   2015 & 163 & 1 & 7.06 & 29 \\ 
    \hline
 \end{tabular}
-\end{table}\vspace{2in}
+\end{table}
+
+\vspace{2in}
 
 \begin{table}[ht]
 \centering
 \caption{The annual number of California scorpionfish 
                                               sampled from the the commercial gillnet 
                                             fleet for lengths. Sample size is calculated 
-                                            using Stewarts method (see text for detail)} 
+                                            using Stewart’s method (see text for detail)} 
 \label{tab:ComNet_lengthsample}
 \begin{tabular}{rrrrr}
   \hline
@@ -4148,14 +4139,16 @@ Year & Fish & Trips & Sample size & Mean length (cm) \\
   2004 & 33 & 6 & 10.55 & 34 \\ 
    \hline
 \end{tabular}
-\end{table}\vspace{2in}
+\end{table}
+
+\vspace{2in}
 
 \begin{table}[ht]
 \centering
 \caption{The annual number of California scorpionfish 
                                               sampled from the the commercial trawl 
                                             fleet for lengths. Sample size is calculated 
-                                            using Stewarts method (see text for detail)} 
+                                            using Stewart’s method (see text for detail)} 
 \label{tab:ComTrawl_lengthsample}
 \begin{tabular}{rrrrr}
   \hline
@@ -4175,6 +4168,7 @@ Year & Fish & Trips & Sample size & Mean length (cm) \\
 \end{table}
 
 \FloatBarrier
+
 \newpage
 
 \vspace{2in}
@@ -4314,7 +4308,9 @@ Entire dataset &  &  & 108,171 \\
   Stephens-MacCall & Retain all positive trips, plus "False Positives" (trips predicted to be in California scorpionfish habitat, but with no California scorpionfish retained) & 3,056 & \textbf{8,590} \\ 
    \hline
 \end{tabular}
-\end{table}\vspace{3in}
+\end{table}
+
+\vspace{3in}
 
 \begin{table}[ht]
 \centering
@@ -4332,7 +4328,9 @@ Model & Binomial & Lognormal \\
   ~Year + County + Wave & \textbf{5792} & \textbf{8000} \\ 
    \hline
 \end{tabular}
-\end{table}\vspace{3in}
+\end{table}
+
+\vspace{3in}
 
 \begin{table}[ht]
 \centering
@@ -4455,7 +4453,9 @@ Year & 1918470 \\
   Year+ Month + Block & \textbf{1854652} \\ 
    \hline
 \end{tabular}
-\end{table}\vspace{2in}
+\end{table}
+
+\vspace{2in}
 
 \begin{table}[ht]
 \centering
@@ -4532,7 +4532,9 @@ All southern CA data & No filter & 6295 \\
   Year & Removed trips from 1989 due to anomalous results and low sample size  & \textbf{3,099} \\ 
    \hline
 \end{tabular}
-\end{table}\vspace{2in}
+\end{table}
+
+\vspace{2in}
 
 \begin{table}[ht]
 \centering
@@ -4734,7 +4736,9 @@ Model & Binomial & Lognormal \\
   ~Year + Month + Reef + Depth & \textbf{20453} & \textbf{10599} \\ 
    \hline
 \end{tabular}
-\end{table}\vspace{2in}
+\end{table}
+
+\vspace{2in}
 
 \begin{table}[ht]
 \centering
@@ -4793,7 +4797,9 @@ General & Erroneous and missing data, harbors or Mexican waters & 1,496 & 2,321 
   Final data &  & 921 & 1,848 & 1,490 & 998 & \textbf{5,257} \\ 
    \hline
 \end{tabular}
-\end{table}\vspace{2in}
+\end{table}
+
+\vspace{2in}
 
 \begin{table}[ht]
 \centering
@@ -4811,7 +4817,9 @@ Model & Binomial & Lognormal \\
   ~Year + Station + Quarter & \textbf{6130} & \textbf{6252} \\ 
    \hline
 \end{tabular}
-\end{table}\vspace{2in}
+\end{table}
+
+\vspace{2in}
 
 \begin{table}[ht]
 \centering
@@ -4977,7 +4985,9 @@ Depth zone (m) & Total catch (kg) & Raw CPUE (kg/ha) \\
   200-225 & 0.40 & 0.00 \\ 
    \hline
 \end{tabular}
-\end{table}\vspace{2in}
+\end{table}
+
+\vspace{2in}
 
 \begin{table}[ht]
 \centering
@@ -5156,7 +5166,9 @@ Entire dataset &  & 325 & 3,558 \\
   Month & Months sampled consistently (April, June, August, October) & 259 & 2,019 \\ 
    \hline
 \end{tabular}
-\end{table}\vspace{2in}
+\end{table}
+
+\vspace{2in}
 
 \begin{table}[ht]
 \centering
@@ -5174,7 +5186,9 @@ Model & Binomial & Lognormal \\
   ~Year  + site +  perp\_para & \textbf{2010} & \textbf{1004} \\ 
    \hline
 \end{tabular}
-\end{table}\vspace{2in}
+\end{table}
+
+\vspace{2in}
 
 \begin{table}[ht]
 \centering
@@ -5350,21 +5364,21 @@ No. & Parameter & Value & Phase & Bounds & Status & SD & Prior (Exp.Val, SD)  \\
   4 & VonBert\_K\_Fem\_GP\_1 & 0.292 & 2 & (0.05, 0.5) & OK & 0.030 & None \\ 
   5 & CV\_young\_Fem\_GP\_1 & 0.088 & 3 & (0.02, 0.5) & OK & 0.020 & None \\ 
   6 & CV\_old\_Fem\_GP\_1 & 0.119 & 3 & (0.02, 0.75) & OK & 0.007 & None \\ 
-  7 & Wtlen\_1\_Fem & 0.000 & -3 & (-3, 3) &  &  & None \\ 
-  8 & Wtlen\_2\_Fem & 3.058 & -3 & (2, 4) &  &  & None \\ 
-  9 & Mat50\%\_Fem & 18.000 & -3 & (10, 30) &  &  & None \\ 
-  10 & Mat\_slope\_Fem & -1.200 & -3 & (-3, 3) &  &  & None \\ 
-  11 & Eggs/kg\_inter\_Fem & 1.000 & -3 & (-3, 3) &  &  & None \\ 
-  12 & Eggs/kg\_slope\_wt\_Fem & 0.000 & -3 & (-3, 3) &  &  & None \\ 
+  7 & Wtlen\_1\_Fem\_GP\_1 & 0.000 & -3 & (-3, 3) &  &  & None \\ 
+  8 & Wtlen\_2\_Fem\_GP\_1 & 3.058 & -3 & (2, 4) &  &  & None \\ 
+  9 & Mat50\%\_Fem\_GP\_1 & 18.000 & -3 & (10, 30) &  &  & None \\ 
+  10 & Mat\_slope\_Fem\_GP\_1 & -1.200 & -3 & (-3, 3) &  &  & None \\ 
+  11 & Eggs/kg\_inter\_Fem\_GP\_1 & 1.000 & -3 & (-3, 3) &  &  & None \\ 
+  12 & Eggs/kg\_slope\_wt\_Fem\_GP\_1 & 0.000 & -3 & (-3, 3) &  &  & None \\ 
   13 & NatM\_p\_1\_Mal\_GP\_1 & 0.000 & -2 & (-1, 1) &  &  & Normal (0, 99) \\ 
   14 & L\_at\_Amin\_Mal\_GP\_1 & 0.000 & -2 & (-3, 3) &  &  & None \\ 
   15 & L\_at\_Amax\_Mal\_GP\_1 & -0.143 & 2 & (-3, 3) & OK & 0.024 & None \\ 
   16 & VonBert\_K\_Mal\_GP\_1 & -0.080 & 2 & (-3, 3) & OK & 0.144 & None \\ 
   17 & CV\_young\_Mal\_GP\_1 & 1.318 & 3 & (-3, 3) & OK & 0.229 & None \\ 
   18 & CV\_old\_Mal\_GP\_1 & -0.495 & 3 & (-3, 3) & OK & 0.121 & None \\ 
-  19 & Wtlen\_1\_Mal & 0.000 & -5 & (0, 1) &  &  & None \\ 
-  20 & Wtlen\_2\_Mal & 2.981 & -5 & (2, 4) &  &  & None \\ 
-  24 & CohortGrowDev & 1.000 & -1 & (1, 1) &  &  & None \\ 
+  19 & Wtlen\_1\_Mal\_GP\_1 & 0.000 & -5 & (0, 1) &  &  & None \\ 
+  20 & Wtlen\_2\_Mal\_GP\_1 & 2.981 & -5 & (2, 4) &  &  & None \\ 
+  24 & CohortGrowDev & 1.000 & -1 & (0.1, 10) &  &  & None \\ 
   25 & FracFemale\_GP\_1 & 0.500 & -4 & (0.000001, 0.999999) &  &  & None \\ 
   26 & SR\_LN(R0) & 8.194 & 1 & (0, 31) & OK & 0.155 & None \\ 
   27 & SR\_BH\_steep & 0.718 & -2 & (0.21, 0.99) &  &  & Full\_Beta (0.718, 0.158) \\ 
@@ -5385,78 +5399,78 @@ No. & Parameter & Value & Phase & Bounds & Status & SD & Prior (Exp.Val, SD)  \\
   117 & Q\_extraSD\_SCBSurvey(11) & 0.159 & 4 & (0.0001, 1) & OK & 0.139 & None \\ 
   118 & LnQ\_base\_RecPCOBR(12) & -10.209 & -1 & (-15, 15) &  &  & None \\ 
   119 & Q\_extraSD\_RecPCOBR(12) & 0.136 & 4 & (0.0001, 1) & OK & 0.046 & None \\ 
-  120 & SizeSel\_P1\_ComHL(1) & 24.436 & 5 & (13, 44) & OK & 1.166 & None \\ 
-  121 & SizeSel\_P2\_ComHL(1) & 15.000 & -3 & (-10, 16) &  &  & None \\ 
-  122 & SizeSel\_P3\_ComHL(1) & 2.119 & 5 & (-1, 10) & OK & 0.619 & None \\ 
-  123 & SizeSel\_P4\_ComHL(1) & 15.000 & -3 & (-1, 16) &  &  & None \\ 
-  124 & SizeSel\_P5\_ComHL(1) & -15.537 & 5 & (-25, -1) & OK & 128.790 & None \\ 
-  125 & SizeSel\_P6\_ComHL(1) & 10.000 & -3 & (-5, 11) &  &  & None \\ 
-  126 & SizeSel\_P1\_ComNet(2) & 44.000 & -5 & (13, 44) &  &  & None \\ 
-  127 & SizeSel\_P2\_ComNet(2) & 15.000 & -3 & (-10, 16) &  &  & None \\ 
-  128 & SizeSel\_P3\_ComNet(2) & 5.146 & 5 & (-1, 10) & OK & 0.234 & None \\ 
-  129 & SizeSel\_P4\_ComNet(2) & 15.000 & -3 & (-1, 16) &  &  & None \\ 
-  130 & SizeSel\_P5\_ComNet(2) & -16.400 & 5 & (-25, -1) & OK & 119.734 & None \\ 
-  131 & SizeSel\_P6\_ComNet(2) & 10.000 & -3 & (-5, 11) &  &  & None \\ 
+  120 & Size\_DblN\_peak\_ComHL(1) & 24.436 & 5 & (13, 44) & OK & 1.166 & None \\ 
+  121 & Size\_DblN\_top\_logit\_ComHL(1) & 15.000 & -3 & (-10, 16) &  &  & None \\ 
+  122 & Size\_DblN\_ascend\_se\_ComHL(1) & 2.119 & 5 & (-1, 10) & OK & 0.619 & None \\ 
+  123 & Size\_DblN\_descend\_se\_ComHL(1) & 15.000 & -3 & (-1, 16) &  &  & None \\ 
+  124 & Size\_DblN\_start\_logit\_ComHL(1) & -15.537 & 5 & (-25, -1) & OK & 128.793 & None \\ 
+  125 & Size\_DblN\_end\_logit\_ComHL(1) & 10.000 & -3 & (-5, 11) &  &  & None \\ 
+  126 & Size\_DblN\_peak\_ComNet(2) & 44.000 & -5 & (13, 44) &  &  & None \\ 
+  127 & Size\_DblN\_top\_logit\_ComNet(2) & 15.000 & -3 & (-10, 16) &  &  & None \\ 
+  128 & Size\_DblN\_ascend\_se\_ComNet(2) & 5.146 & 5 & (-1, 10) & OK & 0.234 & None \\ 
+  129 & Size\_DblN\_descend\_se\_ComNet(2) & 15.000 & -3 & (-1, 16) &  &  & None \\ 
+  130 & Size\_DblN\_start\_logit\_ComNet(2) & -16.399 & 5 & (-25, -1) & OK & 119.677 & None \\ 
+  131 & Size\_DblN\_end\_logit\_ComNet(2) & 10.000 & -3 & (-5, 11) &  &  & None \\ 
   132 & SizeSel\_P1\_ComTrawl(3) & 1.000 & -2 & (1, 45) &  &  & None \\ 
   133 & SizeSel\_P2\_ComTrawl(3) & 45.000 & -3 & (1, 45) &  &  & None \\ 
-  134 & SizeSel\_P1\_RecPR(4) & 42.043 & 5 & (13, 44) & OK & 2.423 & None \\ 
-  135 & SizeSel\_P2\_RecPR(4) & 15.000 & -3 & (-10, 16) &  &  & None \\ 
-  136 & SizeSel\_P3\_RecPR(4) & 4.572 & 5 & (-1, 10) & OK & 0.181 & None \\ 
-  137 & SizeSel\_P4\_RecPR(4) & 15.000 & -3 & (-1, 16) &  &  & None \\ 
-  138 & SizeSel\_P5\_RecPR(4) & -8.075 & 5 & (-25, -1) & OK & 0.792 & None \\ 
-  139 & SizeSel\_P6\_RecPR(4) & 10.000 & -3 & (-5, 11) &  &  & None \\ 
-  140 & SizeSel\_P1\_RecPC(5) & 37.769 & 5 & (13, 44) & OK & 1.567 & None \\ 
-  141 & SizeSel\_P2\_RecPC(5) & 15.000 & -3 & (-10, 16) &  &  & None \\ 
-  142 & SizeSel\_P3\_RecPC(5) & 4.609 & 5 & (-1, 10) & OK & 0.168 & None \\ 
-  143 & SizeSel\_P4\_RecPC(5) & 15.000 & -3 & (-1, 16) &  &  & None \\ 
-  144 & SizeSel\_P5\_RecPC(5) & -8.370 & 5 & (-25, -1) & OK & 2.026 & None \\ 
-  145 & SizeSel\_P6\_RecPC(5) & 10.000 & -3 & (-5, 11) &  &  & None \\ 
-  146 & SizeSel\_P1\_RecDD(6) & 22.469 & 5 & (13, 44) & OK & 0.091 & None \\ 
-  147 & SizeSel\_P2\_RecDD(6) & -11.207 & 4 & (-15, 16) & OK & 57.911 & None \\ 
-  148 & SizeSel\_P3\_RecDD(6) & 3.684 & 4 & (-1, 10) & OK & 0.490 & None \\ 
-  149 & SizeSel\_P4\_RecDD(6) & -10.915 & 4 & (-20, 5) & OK & 48.055 & None \\ 
-  150 & SizeSel\_P5\_RecDD(6) & -2.632 & 5 & (-25, 3) & OK & 0.390 & None \\ 
-  151 & SizeSel\_P6\_RecDD(6) & -2.583 & 4 & (-5, 11) & OK & 0.405 & None \\ 
-  152 & SizeSel\_P1\_Sanitation(7) & 23.678 & 4 & (13, 44) & OK & 0.487 & None \\ 
-  153 & SizeSel\_P2\_Sanitation(7) & 15.000 & -3 & (-10, 16) &  &  & None \\ 
-  154 & SizeSel\_P3\_Sanitation(7) & 3.005 & 4 & (-1, 10) & OK & 0.158 & None \\ 
-  155 & SizeSel\_P4\_Sanitation(7) & 15.000 & -3 & (-1, 16) &  &  & None \\ 
-  156 & SizeSel\_P5\_Sanitation(7) & -4.582 & 4 & (-25, 5) & OK & 0.606 & None \\ 
-  157 & SizeSel\_P6\_Sanitation(7) & 10.000 & -3 & (-5, 11) &  &  & None \\ 
-  158 & SizeSel\_P1\_NWFSCTrawl(8) & 23.098 & 4 & (13, 44) & OK & 2.213 & None \\ 
-  159 & SizeSel\_P2\_NWFSCTrawl(8) & 15.000 & -3 & (-10, 16) &  &  & None \\ 
-  160 & SizeSel\_P3\_NWFSCTrawl(8) & 3.443 & 4 & (-1, 10) & OK & 0.616 & None \\ 
-  161 & SizeSel\_P4\_NWFSCTrawl(8) & 15.000 & -3 & (-1, 16) &  &  & None \\ 
-  162 & SizeSel\_P5\_NWFSCTrawl(8) & -12.730 & 4 & (-25, 5) & OK & 169.330 & None \\ 
-  163 & SizeSel\_P6\_NWFSCTrawl(8) & 10.000 & -3 & (-5, 11) &  &  & None \\ 
+  134 & Size\_DblN\_peak\_RecPR(4) & 42.043 & 5 & (13, 44) & OK & 2.423 & None \\ 
+  135 & Size\_DblN\_top\_logit\_RecPR(4) & 15.000 & -3 & (-10, 16) &  &  & None \\ 
+  136 & Size\_DblN\_ascend\_se\_RecPR(4) & 4.572 & 5 & (-1, 10) & OK & 0.181 & None \\ 
+  137 & Size\_DblN\_descend\_se\_RecPR(4) & 15.000 & -3 & (-1, 16) &  &  & None \\ 
+  138 & Size\_DblN\_start\_logit\_RecPR(4) & -8.075 & 5 & (-25, -1) & OK & 0.792 & None \\ 
+  139 & Size\_DblN\_end\_logit\_RecPR(4) & 10.000 & -3 & (-5, 11) &  &  & None \\ 
+  140 & Size\_DblN\_peak\_RecPC(5) & 37.769 & 5 & (13, 44) & OK & 1.567 & None \\ 
+  141 & Size\_DblN\_top\_logit\_RecPC(5) & 15.000 & -3 & (-10, 16) &  &  & None \\ 
+  142 & Size\_DblN\_ascend\_se\_RecPC(5) & 4.609 & 5 & (-1, 10) & OK & 0.168 & None \\ 
+  143 & Size\_DblN\_descend\_se\_RecPC(5) & 15.000 & -3 & (-1, 16) &  &  & None \\ 
+  144 & Size\_DblN\_start\_logit\_RecPC(5) & -8.370 & 5 & (-25, -1) & OK & 2.026 & None \\ 
+  145 & Size\_DblN\_end\_logit\_RecPC(5) & 10.000 & -3 & (-5, 11) &  &  & None \\ 
+  146 & Size\_DblN\_peak\_RecDD(6) & 22.469 & 5 & (13, 44) & OK & 0.091 & None \\ 
+  147 & Size\_DblN\_top\_logit\_RecDD(6) & -11.207 & 4 & (-15, 16) & OK & 57.911 & None \\ 
+  148 & Size\_DblN\_ascend\_se\_RecDD(6) & 3.684 & 4 & (-1, 10) & OK & 0.490 & None \\ 
+  149 & Size\_DblN\_descend\_se\_RecDD(6) & -10.915 & 4 & (-20, 5) & OK & 48.080 & None \\ 
+  150 & Size\_DblN\_start\_logit\_RecDD(6) & -2.632 & 5 & (-25, 3) & OK & 0.390 & None \\ 
+  151 & Size\_DblN\_end\_logit\_RecDD(6) & -2.583 & 4 & (-5, 11) & OK & 0.405 & None \\ 
+  152 & Size\_DblN\_peak\_Sanitation(7) & 23.678 & 4 & (13, 44) & OK & 0.487 & None \\ 
+  153 & Size\_DblN\_top\_logit\_Sanitation(7) & 15.000 & -3 & (-10, 16) &  &  & None \\ 
+  154 & Size\_DblN\_ascend\_se\_Sanitation(7) & 3.005 & 4 & (-1, 10) & OK & 0.158 & None \\ 
+  155 & Size\_DblN\_descend\_se\_Sanitation(7) & 15.000 & -3 & (-1, 16) &  &  & None \\ 
+  156 & Size\_DblN\_start\_logit\_Sanitation(7) & -4.582 & 4 & (-25, 5) & OK & 0.606 & None \\ 
+  157 & Size\_DblN\_end\_logit\_Sanitation(7) & 10.000 & -3 & (-5, 11) &  &  & None \\ 
+  158 & Size\_DblN\_peak\_NWFSCTrawl(8) & 23.098 & 4 & (13, 44) & OK & 2.213 & None \\ 
+  159 & Size\_DblN\_top\_logit\_NWFSCTrawl(8) & 15.000 & -3 & (-10, 16) &  &  & None \\ 
+  160 & Size\_DblN\_ascend\_se\_NWFSCTrawl(8) & 3.443 & 4 & (-1, 10) & OK & 0.616 & None \\ 
+  161 & Size\_DblN\_descend\_se\_NWFSCTrawl(8) & 15.000 & -3 & (-1, 16) &  &  & None \\ 
+  162 & Size\_DblN\_start\_logit\_NWFSCTrawl(8) & -12.730 & 4 & (-25, 5) & OK & 169.332 & None \\ 
+  163 & Size\_DblN\_end\_logit\_NWFSCTrawl(8) & 10.000 & -3 & (-5, 11) &  &  & None \\ 
   164 & SizeSel\_P1\_GillnetSurvey(9) & 1.000 & -2 & (1, 45) &  &  & None \\ 
   165 & SizeSel\_P2\_GillnetSurvey(9) & 45.000 & -3 & (1, 45) &  &  & None \\ 
-  166 & SizeSel\_P1\_Impingement(10) & 18.012 & -3 & (13, 44) &  &  & None \\ 
-  167 & SizeSel\_P2\_Impingement(10) & -5.928 & 4 & (-15, 16) & OK & 27.411 & None \\ 
-  168 & SizeSel\_P3\_Impingement(10) & 2.137 & -4 & (-1, 10) &  &  & None \\ 
-  169 & SizeSel\_P4\_Impingement(10) & 2.701 & 4 & (-20, 5) & OK & 1.173 & None \\ 
-  170 & SizeSel\_P5\_Impingement(10) & 8.275 & -3 & (-25, 10) &  &  & None \\ 
-  171 & SizeSel\_P6\_Impingement(10) & -0.611 & 4 & (-5, 11) & OK & 0.476 & None \\ 
+  166 & Size\_DblN\_peak\_Impingement(10) & 18.012 & -3 & (13, 44) &  &  & None \\ 
+  167 & Size\_DblN\_top\_logit\_Impingement(10) & -5.928 & 4 & (-15, 16) & OK & 27.411 & None \\ 
+  168 & Size\_DblN\_ascend\_se\_Impingement(10) & 2.137 & -4 & (-1, 10) &  &  & None \\ 
+  169 & Size\_DblN\_descend\_se\_Impingement(10) & 2.701 & 4 & (-20, 5) & OK & 1.173 & None \\ 
+  170 & Size\_DblN\_start\_logit\_Impingement(10) & 8.275 & -3 & (-25, 10) &  &  & None \\ 
+  171 & Size\_DblN\_end\_logit\_Impingement(10) & -0.611 & 4 & (-5, 11) & OK & 0.476 & None \\ 
   172 & SizeSel\_P1\_SCBSurvey(11) & 1.000 & -2 & (1, 45) &  &  & None \\ 
   173 & SizeSel\_P2\_SCBSurvey(11) & 45.000 & -3 & (1, 45) &  &  & None \\ 
   174 & SizeSel\_P1\_RecPCOBR(12) & 1.000 & -2 & (1, 45) &  &  & None \\ 
   175 & SizeSel\_P2\_RecPCOBR(12) & 45.000 & -3 & (1, 45) &  &  & None \\ 
-  176 & SizeSel\_P1\_ComHL(1)\_BLK1repl\_1999 & 28.427 & 6 & (13, 44) & OK & 0.583 & None \\ 
-  177 & SizeSel\_P3\_ComHL(1)\_BLK1repl\_1999 & 2.029 & 6 & (-1, 10) & OK & 0.301 & None \\ 
-  178 & SizeSel\_P1\_ComNet(2)\_BLK1repl\_1999 & 44.000 & -6 & (13, 44) &  &  & None \\ 
-  179 & SizeSel\_P3\_ComNet(2)\_BLK1repl\_1999 & 4.203 & 6 & (-1, 10) & OK & 0.145 & None \\ 
-  180 & SizeSel\_P1\_RecPR(4)\_BLK2repl\_2000 & 36.672 & 6 & (13, 44) & OK & 1.143 & None \\ 
-  181 & SizeSel\_P1\_RecPR(4)\_BLK2repl\_2006 & 35.765 & 6 & (13, 44) & OK & 0.727 & None \\ 
-  182 & SizeSel\_P3\_RecPR(4)\_BLK2repl\_2000 & 3.616 & 6 & (-1, 10) & OK & 0.183 & None \\ 
-  183 & SizeSel\_P3\_RecPR(4)\_BLK2repl\_2006 & 3.462 & 6 & (-1, 10) & OK & 0.122 & None \\ 
-  184 & SizeSel\_P1\_RecPC(5)\_BLK2repl\_2000 & 32.756 & 6 & (13, 44) & OK & 1.481 & None \\ 
-  185 & SizeSel\_P1\_RecPC(5)\_BLK2repl\_2006 & 26.999 & 6 & (13, 44) & OK & 0.484 & None \\ 
-  186 & SizeSel\_P3\_RecPC(5)\_BLK2repl\_2000 & 3.270 & 6 & (-1, 10) & OK & 0.403 & None \\ 
-  187 & SizeSel\_P3\_RecPC(5)\_BLK2repl\_2006 & 1.161 & 6 & (-1, 10) & OK & 0.410 & None \\ 
-  188 & SizeSel\_P1\_RecDD(6)\_BLK2repl\_2000 & 44.000 & -6 & (13, 44) &  &  & None \\ 
-  189 & SizeSel\_P1\_RecDD(6)\_BLK2repl\_2006 & 24.513 & 6 & (13, 44) & OK & 0.044 & None \\ 
-  190 & SizeSel\_P3\_RecDD(6)\_BLK2repl\_2000 & 5.535 & 6 & (-1, 10) & OK & 0.166 & None \\ 
-  191 & SizeSel\_P3\_RecDD(6)\_BLK2repl\_2006 & 2.154 & 6 & (-1, 10) & OK & 0.312 & None \\ 
+  176 & Size\_DblN\_peak\_ComHL(1)\_BLK1repl\_1999 & 28.427 & 6 & (13, 44) & OK & 0.583 & None \\ 
+  177 & Size\_DblN\_ascend\_se\_ComHL(1)\_BLK1repl\_1999 & 2.029 & 6 & (-1, 10) & OK & 0.301 & None \\ 
+  178 & Size\_DblN\_peak\_ComNet(2)\_BLK1repl\_1999 & 44.000 & -6 & (13, 44) &  &  & None \\ 
+  179 & Size\_DblN\_ascend\_se\_ComNet(2)\_BLK1repl\_1999 & 4.203 & 6 & (-1, 10) & OK & 0.145 & None \\ 
+  180 & Size\_DblN\_peak\_RecPR(4)\_BLK2repl\_2000 & 36.672 & 6 & (13, 44) & OK & 1.143 & None \\ 
+  181 & Size\_DblN\_peak\_RecPR(4)\_BLK2repl\_2006 & 35.765 & 6 & (13, 44) & OK & 0.727 & None \\ 
+  182 & Size\_DblN\_ascend\_se\_RecPR(4)\_BLK2repl\_2000 & 3.616 & 6 & (-1, 10) & OK & 0.183 & None \\ 
+  183 & Size\_DblN\_ascend\_se\_RecPR(4)\_BLK2repl\_2006 & 3.462 & 6 & (-1, 10) & OK & 0.122 & None \\ 
+  184 & Size\_DblN\_peak\_RecPC(5)\_BLK2repl\_2000 & 32.756 & 6 & (13, 44) & OK & 1.481 & None \\ 
+  185 & Size\_DblN\_peak\_RecPC(5)\_BLK2repl\_2006 & 26.999 & 6 & (13, 44) & OK & 0.484 & None \\ 
+  186 & Size\_DblN\_ascend\_se\_RecPC(5)\_BLK2repl\_2000 & 3.270 & 6 & (-1, 10) & OK & 0.403 & None \\ 
+  187 & Size\_DblN\_ascend\_se\_RecPC(5)\_BLK2repl\_2006 & 1.161 & 6 & (-1, 10) & OK & 0.410 & None \\ 
+  188 & Size\_DblN\_peak\_RecDD(6)\_BLK2repl\_2000 & 44.000 & -6 & (13, 44) &  &  & None \\ 
+  189 & Size\_DblN\_peak\_RecDD(6)\_BLK2repl\_2006 & 24.513 & 6 & (13, 44) & OK & 0.044 & None \\ 
+  190 & Size\_DblN\_ascend\_se\_RecDD(6)\_BLK2repl\_2000 & 5.535 & 6 & (-1, 10) & OK & 0.166 & None \\ 
+  191 & Size\_DblN\_ascend\_se\_RecDD(6)\_BLK2repl\_2006 & 2.154 & 6 & (-1, 10) & OK & 0.312 & None \\ 
    \hline
 \hline
 \label{tab:model_params}
@@ -5903,14 +5917,14 @@ Yr & OFL contribution (mt) & ACL landings (mt) & Age 5+ biomass (mt) & Spawning 
 
 \section{Figures}\label{figures}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/boundary_map.png}
 \caption{Map showing the state boundary lines for management of the
 recreational fishing fleets \label{fig:boundary_map}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/Com_regs.png}
 \caption{Commercial fishery regulations pertaining to limited entry (LE)
@@ -5919,7 +5933,7 @@ numeric value indicate the bi-monthly trip limit for both LE and OA
 fisheries. \label{fig:Com_regs}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{r4ss/plots_mod1/data_plot.png}
 \caption{Summary of data sources used in the base model.
@@ -5928,7 +5942,7 @@ fisheries. \label{fig:Com_regs}}
 
 \FloatBarrier
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/Fleet4_RecPR_SMcoef.png}
 \caption{Species coefficients from the binomial GLM for presence/absence
@@ -5938,7 +5952,7 @@ Horizontal bars are 95\% confidence intervals.
 \label{fig:Fleet4_RecPR_dockside_SM}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/Rec_regs.pdf}
 \caption{A summary of the monthly recreational regulations for
@@ -5949,7 +5963,7 @@ fathoms, e.g., 20 = retained catch allowed in less than 20 fathoms.
 *Fishery closed on November 15, 2014. \label{fig:recregs}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/Fleet4_RecPR_dockside_lograwCPUE.png}
 \caption{Boxplots of the raw log CPUE by year for each of the three
@@ -5959,7 +5973,7 @@ factors considered in the deltaGLM model, county, month and year.
 
 \FloatBarrier 
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/Fleet4_RecPR_dockside_QQ.png}
 \caption{Q-Q plot used to evaluate the fit of the lognormal (positive
@@ -5968,7 +5982,7 @@ Fisheries Statistics Survey (CRFS) private mode dockside survey data
 set. \label{fig:Fleet4_RecPR_dockside_QQ}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{r4ss/plots_mod1/index4_logcpuedata_RecPR.png}
 \caption{Standardized index on log scale for the recreational private
@@ -5982,7 +5996,7 @@ addition of estimated additional uncertainty parameter.
 
 \FloatBarrier
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{r4ss/plots_mod1/index4_logcpuedata_RecPC.png}
 \caption{Standardized index on the log scale for the recreational CPFV
@@ -5994,7 +6008,7 @@ addition of estimated additional uncertainty parameter.
 
 \FloatBarrier
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/Fleet5_RecPC_dockside_index_compare.png}
 \caption{Comparison of standardized indices using two different
@@ -6005,7 +6019,7 @@ including or excluding the year 1989.
 
 \FloatBarrier
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/Fleet5_RecPC_dockside_SM.png}
 \caption{Species coefficients from the binomial GLM for presence/absence
@@ -6015,7 +6029,7 @@ Horizontal bars are 95\% confidence intervals.
 \label{fig:Fleet5_RecPC_docksideSM}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/Fleet5_RecPC_dockside_QQ.png}
 \caption{Q-Q plot used to validate the goodness of fit of the lognormal
@@ -6027,7 +6041,7 @@ Survey (MRFSS) party/charter dockside survey, for thresholds of 0.27
 
 \FloatBarrier
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/Fleet6_RecDD_QQ.png}
 \caption{Q-Q plot used to validate the goodness of fit of the lognormal
@@ -6035,7 +6049,7 @@ model for the CPFV onboard observer discarded only catch.
 \label{fig:Fleet6_RecDD_QQ}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{r4ss/plots_mod1/index4_logcpuedata_RecDD.png}
 \caption{Standardized index on the log scale for the recreational CPFV
@@ -6045,14 +6059,14 @@ before addition of estimated additional uncertainty parameter.
 \label{fig:Fleet6_index4_logcpuedata_RecDD}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{r4ss/plots_mod1/comp_lendat_bubflt6mkt2.png}
 \caption{Length frequency distributions from the onboard observer
 discard-only catch. \label{fig:Fleet6_comp_lendat_bubflt6mkt2}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/Fleet12_RecPCOB_QQ.png}
 \caption{Q-Q plot used to validate the goodness of fit of the lognormal
@@ -6060,7 +6074,7 @@ model for the CPFV onboard observer retained only catch.
 \label{fig:Fleet12_RecPCOBR_QQ}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{r4ss/plots_mod1/index4_logcpuedata_RecPCOBR.png}
 \caption{Standardized index on the log scale for the recreational CPFV
@@ -6072,7 +6086,7 @@ before addition of estimated additional uncertainty parameter.
 
 \FloatBarrier
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/Fleet7_sanitation_map2.pdf}
 \caption{Map of stations sampled in at least 5 years by the Sanitation
@@ -6081,7 +6095,7 @@ Environmental Monitoring Division (blue)
 \label{fig:Fleet7_sanitation_map2}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/Fleet7_sanitation_map1.pdf}
 \caption{Map of stations sampled in at least 5 years by the Orange
@@ -6090,7 +6104,7 @@ Utilities Ocean Monitoring Program (blue)
 \label{fig:Fleet7_sanitation_map1}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{r4ss/plots_mod1/index4_logcpuedata_Sanitation.png}
 \caption{Standardized index on log scale for the Publicly Owned
@@ -6100,7 +6114,7 @@ uncertainty before addition of estimated additional uncertainty
 parameter. \label{fig:index4_logcpuedata_Sanitation}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/Fleet7_Sanitation_indexcompare.png}
 \caption{Comparison of standardized indices for each Publicly Owned
@@ -6109,7 +6123,7 @@ Publicly Owned Treatment Works programs combined.
 \label{fig:Fleet7_Sanitation_indexcompare}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/Fleet7_Sanitation_length_source.png}
 \caption{Sample sizes of measured California scorpionfish by Publicly
@@ -6117,7 +6131,7 @@ Owned Treatment Works monitoring program and year.
 \label{fig:Fleet7_Sanitation_lengthbydistrict}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/Fleet7_Sanitation_lengthboxplots.png}
 \caption{Boxplots of measured California scorpionfish from the Publicly
@@ -6127,7 +6141,7 @@ Owned Treatment Works monitoring surveys by program and 25 m depth bins.
 
 \FloatBarrier
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{r4ss/plots_mod1/comp_lendat_bubflt7mkt2_page2.png}
 \caption{Length frequency distributions from the Publicly Owned
@@ -6137,7 +6151,7 @@ Treatment Works monitoring trawl surveys.
 
 \FloatBarrier
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/NWFSCtrawl_posdepth.png}
 \caption{Plots of the proportion of positive tows (top panel) and the
@@ -6148,7 +6162,7 @@ interval) for NWFSC trawl survey.
 
 \FloatBarrier
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/NWFSCtrawl_map.png}
 \caption{Spatial distribution of raw catch rates of Scorpionfish from
@@ -6158,7 +6172,7 @@ circles represent catch rate in log scales (Credit of Rebecca Miller,
 SWFSC). \label{fig:Fleet8_NWFSCtrawl_map}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/NWFSCtrawl_poslat.png}
 \caption{Plots of the proportion of positive tows (top panel) and the
@@ -6169,21 +6183,21 @@ degree interval) for NWFSC trawl survey.
 
 \FloatBarrier
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/NWFSCtrawl_lengthdepth.png}
 \caption{Comparison box plots of raw length data from NWFSC trawl survey
 by depth zone and sex. \label{fig:Fleet8_NWFSCtrawl_lengthdepth}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/NWFSCtrawl_lengthlat.png}
 \caption{Comparison box plots of raw length data from NWFSC trawl survey
 by latitude zone and sex. \label{fig:Fleet8_NWFSCtrawl_lengthlat}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{r4ss/plots_mod1/comp_lendat_bubflt8mkt0.png}
 \caption{Length frequency distributions of females (red) and male (blue)
@@ -6191,7 +6205,7 @@ from the NWFSC trawl survey between 2003 and 2016.
 \label{fig:Fleet8_comp_lendat_bubflt8mkt0}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/NWFSCtrawl_QQ.jpg}
 \caption{Q-Q plot used to validate the goodness of fit of the VAST
@@ -6199,21 +6213,21 @@ analysis for the NWFSC trawl survey between 2003 and 2016.
 \label{fig:Fleet8_NWFSCtrawl_QQ}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics[height=0.95000\textwidth]{Figures/Fleet8_encounter_pearson.png}
 \caption{NWFSC survey index encounter probability Pearson residuals
 \label{fig:Fleet8_encounter_pearson}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics[height=0.95000\textwidth]{Figures/Fleet8_catchrate_pearson.png}
 \caption{NWFSC survey index positive catch rate probability Pearson
 residuals \label{fig:Fleet8_catchrate_pearson}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{r4ss/plots_mod1/index4_logcpuedata_NWFSCtrawl.png}
 \caption{Standardized index on the log scale for the NWFSC trawl survey
@@ -6225,7 +6239,7 @@ before addition of estimated additional uncertainty parameter.
 
 \FloatBarrier
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/Fleet9_GillnetSurvey_QQ.png}
 \caption{Q-Q plot used to validate the goodness of fit of the lognormal
@@ -6233,7 +6247,7 @@ model for the CSUN/VRG gillnet survey from 1995-2008.
 \label{fig:Fleet9_GillnetSurvey_QQ}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{FIgures/index4_logcpuedata_GillnetSurvey.png}
 \caption{Standardized index on the log scale for the recreational
@@ -6243,7 +6257,7 @@ of estimated additional uncertainty parameter.
 \label{fig:index4_logcpuedata_GillnetSurvey}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/comp_lendat_bubflt9mkt2.png}
 \caption{Length frequency distributions from the gill net surveys.
@@ -6252,7 +6266,7 @@ of estimated additional uncertainty parameter.
 
 \FloatBarrier
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/Fleet11_SCBSurvey_map.pdf}
 \caption{Map of the stations from the Southern California Coastal Water
@@ -6261,7 +6275,7 @@ Research Project regional monitoring trawl survey from 1994, 1998, 2003,
 magenta. \label{Fleet11_SCBSurvey_map}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/Fleet11_SCBsurvey_QQ.png}
 \caption{Q-Q plot used to validate the goodness of fit of the lognormal
@@ -6269,7 +6283,7 @@ model for the Southern California Bight monitoring program trawl survey.
 \label{fig:Fleet11_SCBsurvey_QQ}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{r4ss/plots_mod1/index4_logcpuedata_SCBSurvey.png}
 \caption{Standardized index on the log scale for the recreational
@@ -6281,7 +6295,7 @@ before addition of estimated additional uncertainty parameter.
 
 \FloatBarrier 
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{r4ss/plots_mod1/comp_lendat_bubflt11mkt2.png}
 \caption{Length frequency distributions from the Southern California
@@ -6289,7 +6303,7 @@ Bight regional monitoring program trawl surveys.
 \label{fig:Fleet11_SCBsurvey_lendat_bubflt11mkt2}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{r4ss/plots_mod1/comp_lendat_bubflt10mkt2.png}
 \caption{Length frequency distributions from the Impingement surveys.
@@ -6298,7 +6312,7 @@ Bight regional monitoring program trawl surveys.
 
 \FloatBarrier
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{r4ss/plots_mod1/comp_lendat__aggregated_across_time.png}
 \caption{Length comp data, aggregated across time by fleet. Labels
@@ -6307,7 +6321,7 @@ fleet. Panels without this designation represent the whole catch.
 \label{fig:comp_lendat_aggregated_across_time}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/otolith1.pdf}
 \caption{Cross-section of broken and burned California scorpionfish
@@ -6315,7 +6329,7 @@ otolith showing. The green dots indicate the number of increments (photo
 courtesy Lance Sullivan, NWFSC). \label{fig:otolith1}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/otolith2.pdf}
 \caption{California scorpionfish otolith (photo courtesy Lance Sullivan,
@@ -6324,14 +6338,14 @@ NWFSC). \label{fig:otolith2}}
 
 \FloatBarrier
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/Age_length_bySex.png}
 \caption{Length at age by sex for California scorpionfish collected from
 the NWFSC trawl survey. \label{fig:Agelength}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/vonB_compare.png}
 \caption{Fitted (external to SS) von Bertalanffy growth by sex for
@@ -6339,7 +6353,7 @@ California scorpionfish collected from the NWFSC trawl survey.
 \label{fig:vonB_compare}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/Fleet8_NWFSCTrawl_ageerror.png}
 \caption{Aging precision between two current age readers at the NWFSC.
@@ -6347,7 +6361,7 @@ Numbers in the bubbles are the sample sizes of otoliths cross-read.
 \label{fig:Fleet8_NWFSCTrawl_ageerror}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/Fleet8_NWFSCTrawl_ageerror2.pdf}
 \caption{True versus predicted age for two current age readers at the
@@ -6356,7 +6370,7 @@ standard deviation for both readers.
 \label{fig:Fleet8_NWFSCTrawl_ageerror2}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/Length_weight.png}
 \caption{Comparison of the California scorpionfish weight-length curves
@@ -6366,7 +6380,7 @@ The latter is used in this assessment. \label{fig:Length_weight}}
 
 \FloatBarrier
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/bridge_harvestrate.png}
 \caption{Time series of harvest rates by fleet from the 2005 model where
@@ -6374,7 +6388,7 @@ the harvest rate for the recreational fleet hit the boundary of 0.9.
 \label{fig:bridge_harvestrate}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/bridge_catch.png}
 \caption{Time series of observed and expected landings by fleet from the
@@ -6382,7 +6396,7 @@ the harvest rate for the recreational fleet hit the boundary of 0.9.
 catches starting around 1970. \label{fig:bridge_catch}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics[height=0.95000\textwidth]{Figures/bridge_timeseries.png}
 \caption{Comparison of spawning output, total biomass, and recruits from
@@ -6393,7 +6407,7 @@ and therefore the time series for the model to SS3.24 will not match
 perfectly. \label{fig:bridge_timeseries}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/Request1.png}
 \caption{Selectivity curves for the dead discard fleet with three (left)
@@ -6402,7 +6416,7 @@ or two (right) time blocks. \label{fig:Request1}}
 
 \vspace{5cm}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/Request3a.png}
 \caption{Comparison of the recreational private mode dockside index
@@ -6410,7 +6424,7 @@ using three different thresholds for the Stephens-MacCall filter.
 \label{fig:Request3a}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/Request3b.png}
 \caption{Comparisons of the base model using the index developed for the
@@ -6420,14 +6434,14 @@ thresholds for the Stephens-MacCall filter.\label{fig:Request3b}}
 
 \newpage
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/Request8.png}
 \caption{Time series of estimated recruitment deviations from the base
 model and the CalCOFI sea surface temperature. \label{fig:Request8}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics[height=0.90000\textwidth]{Figures/Request9.png}
 \caption{Time series of relative spawning biomass (top) and spawning
@@ -6435,7 +6449,7 @@ biomass (bottom) from the base model compared to a model with no
 recruitment deviations and a sigma-r of 0.3. \label{fig:Request9}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics[height=0.90000\textwidth]{Figures/Request12.png}
 \caption{Time series of spawning biomass (top) and relative spawning
@@ -6451,14 +6465,14 @@ females and estimated for males) compared to the STAR panel base model
 
 \FloatBarrier
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{r4ss/plots_mod1/sel01_multiple_fleets_length1.png}
 \caption{Selectivity at length for all of the fleets in the base model.
 \label{fig:sel01_multiple_fleets_length1}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{r4ss/plots_mod1/sel03_len_timevary_surf_flt1sex1.png}
 \caption{Surface plot of Female time-varying selectivity for the
@@ -6466,7 +6480,7 @@ commercial hook-and-line fleet, with time blocks from 1916-1998 and
 1999-2016. \label{fig:sel03_len_timevary_surf_flt1sex1}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{r4ss/plots_mod1/sel03_len_timevary_surf_flt4sex1.png}
 \caption{Surface plot of Female time-varying selectivity for the
@@ -6474,7 +6488,7 @@ recreational private boat fleet, with time blocks from 1916-2000,
 2001-2005, and 2006-2016. \label{fig:sel03_len_timevary_surf_flt4sex1}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{r4ss/plots_mod1/sel03_len_timevary_surf_flt5sex1.png}
 \caption{Surface plot of Female time-varying selectivity for the
@@ -6485,14 +6499,14 @@ from 1916-2000, 2001-2005, and 2006-2016.
 
 \FloatBarrier
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{r4ss/plots_mod1/recdevs2_withbars.png}
 \caption{Estimated time-series of recruitment deviations for California
 scorpionfish with 95\% intervals. \label{fig:recdevs2_withbars}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{r4ss/plots_mod1/ts11_Age-0_recruits_(1000s)_with_95_asymptotic_intervals.png}
 \caption{Estimated time-series of recruitment for California
@@ -6500,7 +6514,7 @@ scorpionfish.
 \label{fig:ts11_Age-0_recruits_(1000s)_with_95_asymptotic_intervals}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{r4ss/plots_mod1/SR_curve2.png}
 \caption{Estimated recruitment (red circles) and the assumed
@@ -6509,7 +6523,7 @@ green line shows the effect of the bias correction for the lognormal
 distribution. \label{fig:SR_curve2}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{r4ss/plots_mod1/index5_logcpuefit_RecPR.png}
 \caption{Fit to log index data on log scale for the CRFS recreational
@@ -6519,7 +6533,7 @@ of estimated additional uncertainty parameter.
 \label{fig:index5_logcpuefit_RecPR}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{r4ss/plots_mod1/index5_logcpuefit_RecPC.png}
 \caption{Fit to log index data on log scale for the recreational CPFV
@@ -6529,7 +6543,7 @@ addition of estimated additional uncertainty parameter.
 \label{fig:index5_logcpuefit_RecPC}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{r4ss/plots_mod1/index5_logcpuefit_RecDD.png}
 \caption{Fit to log index data on log scale for the recreational CPFV
@@ -6539,7 +6553,7 @@ before addition of estimated additional uncertainty parameter.
 \label{fig:Fleet6_index5_logcpuefit_RecDD}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{r4ss/plots_mod1/index5_logcpuefit_RecPCOBR.png}
 \caption{Fit to log index data on log scale for the recreational CPFV
@@ -6549,7 +6563,7 @@ before addition of estimated additional uncertainty parameter.
 \label{fig:Fleet12_index5_logcpuefit_RecPCOBR}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{r4ss/plots_mod1/index5_logcpuefit_Sanitation.png}
 \caption{Fit to log index data on log scale for the POTW trawl index.
@@ -6558,7 +6572,7 @@ lines indicate input uncertainty before addition of estimated additional
 uncertainty parameter. \label{fig:index5_logcpuefit_Sanitation}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{r4ss/plots_mod1/index5_logcpuefit_NWFSCtrawl.png}
 \caption{Fit to log index data on log scale for the NWFSC trawl survey
@@ -6568,7 +6582,7 @@ before addition of estimated additional uncertainty parameter.
 \label{fig:index5_logcpuefit_NWFSCtrawl}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{r4ss/plots_mod1/index5_logcpuefit_SCBSurvey.png}
 \caption{Fit to log index data on log scale for the recreational
@@ -6578,7 +6592,7 @@ before addition of estimated additional uncertainty parameter.
 \label{fig:index5_logcpuefit_SCBSurvey}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{r4ss/plots_mod1/comp_lenfit__aggregated_across_time.png}
 \caption{Length compositions aggregated across time by fleet. Labels
@@ -6589,7 +6603,7 @@ fleet. Panels without this designation represent the whole catch.
 
 \FloatBarrier
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{./r4ss/plots_mod1/comp_condAALfit_Andre_plotsflt8mkt0_page1.png}
 \caption{Conditional AAL plot, whole catch, NWFSCTrawl (plot 1 of 4)
@@ -6625,7 +6639,7 @@ distribution.
 
              \end{center}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{r4ss/plots_mod1/comp_condAALfit_data_weighting_TA1.8_condAgeNWFSCTrawl.png}
 \caption{Mean age for NWFSC trawl survey with 95\% confidence intervals
@@ -6636,7 +6650,7 @@ sample sizes based on suggested multiplier (with 95\% interval) is
 \label{fig:comp_condAALfit_data_weighting_TA1.8_condAgeNWFSCTrawl}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{r4ss/plots_mod1/comp_lenfit_data_weighting_TA1.8_Sanitation.png}
 \caption{Mean length for the POTW trawl surveys with 95\% confidence
@@ -6647,7 +6661,7 @@ interval) is 0.26669 (0.188917-0.430652). For more info, see Francis et
 al. (2011). \label{fig:comp_lenfit_data_weighting_TA1.8_Sanitation}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{r4ss/plots_mod1/comp_lenfit_data_weighting_TA1.8_Impingement.png}
 \caption{Mean length for the Impingement surveys with 95\% confidence
@@ -6658,7 +6672,7 @@ interval) is 0.169729 (0.128089-0.263479). For more info, see Francis et
 al. (2011). \label{fig:comp_lenfit_data_weighting_TA1.8_Impingement}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{r4ss/plots_mod1/comp_lenfit_data_weighting_TA1.8_RecPR.png}
 \caption{Mean length for the recreational private boat fleet with 95\%
@@ -6670,7 +6684,7 @@ Francis et al. (2011).
 \label{fig:comp_lenfit_data_weighting_TA1.8_RecPR}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{r4ss/plots_mod1/comp_lenfit_data_weighting_TA1.8_RecPC.png}
 \caption{Mean age for recreational party/charter retained-catch fleet
@@ -6682,7 +6696,7 @@ Francis et al.
 (2011).\label{fig:comp_lenfit_data_weighting_TA1.8_RecPC}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{r4ss/plots_mod1/comp_lenfit_data_weighting_TA1.8_RecDD.png}
 \caption{Mean age for recreational discard-catch fleett with 95\%
@@ -6696,7 +6710,7 @@ Francis et al. (2011).
 
 \FloatBarrier
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/Sensitivity_all.pdf}
 \caption{Sensitivity of the pre-STAR base model to \(SB_0\),
@@ -6706,7 +6720,7 @@ model. The CI for \(SB_0\) is the same at that for yield and no visible
 in the figure. \label{fig:Sensitivity_all}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/sensitivity_spawnbio.png}
 \caption{Sensitivity of the spawning biomass to estimating the same
@@ -6715,7 +6729,7 @@ compared to the pre-STAR base model, which has fixed female natural
 mortality and steepness. \label{fig:sensitivity_spawnbio}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/sensitivity1_spawnbio.png}
 \caption{Sensitivity of the spawning biomass to dropping one data source
@@ -6723,7 +6737,7 @@ at a time as compared to the pre-STAR base model.
 \label{fig:sensitivity1_spawnbio}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/sensitivity2_spawnbio.png}
 \caption{Sensitivity of the spawning biomass to dropping the impingement
@@ -6736,7 +6750,7 @@ fixed female natural mortality. \label{fig:sensitivity2_spawnbio}}
 
 \FloatBarrier
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/retro_spawnb.png}
 \caption{Retrospective pattern for spawning output.
@@ -6745,28 +6759,28 @@ fixed female natural mortality. \label{fig:sensitivity2_spawnbio}}
 
 \FloatBarrier
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/retro_recdev.png}
 \caption{Retrospective pattern for estimated recruitment deviations.
 \label{fig:retro_recdev}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/profile_R0_piner.png}
 \caption{Likelihood profile across R\textsubscript{0} values by fleet.
 \label{fig:profile_R0_piner}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/profile_R0_like.png}
 \caption{Likelihood profile across R\textsubscript{0} values for each
 data type. \label{fig:profile_R0_like}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/profile_R0_depl.png}
 \caption{Trajectories of depletion across values of R\textsubscript{0}.
@@ -6775,42 +6789,42 @@ data type. \label{fig:profile_R0_like}}
 
 \FloatBarrier
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/profile_h_piner.png}
 \caption{Likelihood profile across steepness values by fleet.
 \label{fig:profile_h_piner}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/profile_h_like.png}
 \caption{Likelihood profile across steepness values for each data type.
 \label{fig:profile_h_like}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/profile_h_depl.png}
 \caption{Trajectories of depletion across values of steepness.
 \label{fig:profile_h_depl}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/profile_m_like.png}
 \caption{Likelihood profile across female natural mortality values for
 each data type. \label{fig:profile_m_like}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/profile_m_piner.png}
 \caption{Likelihood profile across female natural mortality values by
 fleet. \label{fig:profile_m_piner}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{Figures/profile_m_depl.png}
 \caption{Trajectories of depletion across values of female natural
@@ -6819,7 +6833,7 @@ mortality. \label{fig:profile_m_depl}}
 
 \FloatBarrier
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{r4ss/plots_mod1/ts7_Spawning_biomass_(mt)_with_95_asymptotic_intervals_intervals.png}
 \caption{Estimated spawning biomass (mt) with approximate 95\%
@@ -6827,7 +6841,7 @@ asymptotic intervals.
 \label{fig:ts7_Spawning_biomass_(mt)_with_95_asymptotic_intervals_intervals}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{r4ss/plots_mod1/ts9_Spawning_depletion_with_95_asymptotic_intervals_intervals.png}
 \caption{Estimated spawning depletion with approximate 95\% asymptotic
@@ -6835,7 +6849,7 @@ intervals.
 \label{fig:ts9_Spawning_depletion_with_95_asymptotic_intervals_intervals}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{r4ss/plots_mod1/yield1_yield_curve.png}
 \caption{Equilibrium yield curve for the base case model. Values are
@@ -6858,39 +6872,49 @@ composition data}
 
 \setcounter{page}{1}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{./r4ss/plots_mod1/comp_lenfit_flt1mkt2.png}
-\caption{Length comps, retained, ComHL
+\caption{Length comps, retained, ComHL. `N adj.' is the input sample
+size after data\_weighting adjustment. N eff. is the calculated
+effective sample size used in the McAllister\_Iannelli tuning method.
 \label{fig:mod1_1_comp_lenfit_flt1mkt2}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{./r4ss/plots_mod1/comp_lenfit_flt2mkt2.png}
-\caption{Length comps, retained, ComNet
+\caption{Length comps, retained, ComNet. `N adj.' is the input sample
+size after data\_weighting adjustment. N eff. is the calculated
+effective sample size used in the McAllister\_Iannelli tuning method.
 \label{fig:mod1_2_comp_lenfit_flt2mkt2}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{./r4ss/plots_mod1/comp_lenfit_flt3mkt2.png}
-\caption{Length comps, retained, ComTrawl
+\caption{Length comps, retained, ComTrawl. `N adj.' is the input sample
+size after data\_weighting adjustment. N eff. is the calculated
+effective sample size used in the McAllister\_Iannelli tuning method.
 \label{fig:mod1_3_comp_lenfit_flt3mkt2}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{./r4ss/plots_mod1/comp_lenfit_flt4mkt2.png}
-\caption{Length comps, retained, RecPR
+\caption{Length comps, retained, RecPR. `N adj.' is the input sample
+size after data\_weighting adjustment. N eff. is the calculated
+effective sample size used in the McAllister\_Iannelli tuning method.
 \label{fig:mod1_4_comp_lenfit_flt4mkt2}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{./r4ss/plots_mod1/comp_lenfit_flt5mkt2_page1.png}
-\caption{Length comps, retained, RecPC (plot 1 of 2)
-\label{fig:mod1_5_comp_lenfit_flt5mkt2_page1}}
+\caption{Length comps, retained, RecPC (plot 1 of 2). `N adj.' is the
+input sample size after data\_weighting adjustment. N eff. is the
+calculated effective sample size used in the McAllister\_Iannelli tuning
+method. \label{fig:mod1_5_comp_lenfit_flt5mkt2_page1}}
 \end{figure}
 
 \includegraphics{./r4ss/plots_mod1/comp_lenfit_flt5mkt2_page2.png}
@@ -6901,18 +6925,22 @@ composition data}
 
              \end{center}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{./r4ss/plots_mod1/comp_lenfit_flt6mkt2.png}
-\caption{Length comps, retained, RecDD
+\caption{Length comps, retained, RecDD. `N adj.' is the input sample
+size after data\_weighting adjustment. N eff. is the calculated
+effective sample size used in the McAllister\_Iannelli tuning method.
 \label{fig:mod1_7_comp_lenfit_flt6mkt2}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{./r4ss/plots_mod1/comp_lenfit_flt7mkt2_page1.png}
-\caption{Length comps, retained, Sanitation (plot 1 of 2)
-\label{fig:mod1_8_comp_lenfit_flt7mkt2_page1}}
+\caption{Length comps, retained, Sanitation (plot 1 of 2). `N adj.' is
+the input sample size after data\_weighting adjustment. N eff. is the
+calculated effective sample size used in the McAllister\_Iannelli tuning
+method. \label{fig:mod1_8_comp_lenfit_flt7mkt2_page1}}
 \end{figure}
 
 \includegraphics{./r4ss/plots_mod1/comp_lenfit_flt7mkt2_page2.png}
@@ -6923,24 +6951,30 @@ composition data}
 
              \end{center}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{./r4ss/plots_mod1/comp_lenfit_flt8mkt0.png}
-\caption{Length comps, whole catch, NWFSCTrawl
+\caption{Length comps, whole catch, NWFSCTrawl. `N adj.' is the input
+sample size after data\_weighting adjustment. N eff. is the calculated
+effective sample size used in the McAllister\_Iannelli tuning method.
 \label{fig:mod1_10_comp_lenfit_flt8mkt0}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{./r4ss/plots_mod1/comp_lenfit_flt10mkt2.png}
-\caption{Length comps, retained, Impingement
+\caption{Length comps, retained, Impingement. `N adj.' is the input
+sample size after data\_weighting adjustment. N eff. is the calculated
+effective sample size used in the McAllister\_Iannelli tuning method.
 \label{fig:mod1_11_comp_lenfit_flt10mkt2}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
 \includegraphics{./r4ss/plots_mod1/comp_lenfit_flt11mkt2.png}
-\caption{Length comps, retained, SCBSurvey
+\caption{Length comps, retained, SCBSurvey. `N adj.' is the input sample
+size after data\_weighting adjustment. N eff. is the calculated
+effective sample size used in the McAllister\_Iannelli tuning method.
 \label{fig:mod1_12_comp_lenfit_flt11mkt2}}
 \end{figure}
 

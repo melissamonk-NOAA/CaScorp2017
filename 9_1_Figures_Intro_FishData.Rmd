@@ -5,6 +5,7 @@
 <!-- **************************BEGIN FIGURES******************************* --> 
 <!-- **************************             ******************************* -->
 <!-- ====================================================================== -->
+
 \FloatBarrier
 
 \newpage
@@ -59,6 +60,7 @@
 
 
 \FloatBarrier
+
 <!-- ********************************************************************** -->
 <!-- ***************Fleet 5 CPFV logbook index FIGURES*********************--> 
 <!-- ********************************************************************** -->
@@ -109,6 +111,7 @@
 ![Standardized index on the log scale for the recreational CPFV onboard observer retained catch index. Lines indicate 95% uncertainty interval around index values. Thicker lines indicate input uncertainty before addition of estimated additional uncertainty parameter. \label{fig:Fleet12_index4_logcpuedata_RecPCOBR}](r4ss/plots_mod1/index4_logcpuedata_RecPCOBR.png)
 
 \FloatBarrier
+
 <!-- ********************************************************************** -->
 <!-- *************Fleet 7 Sanitation survey FIGURES************************ --> 
 <!-- ********************************************************************** -->
@@ -135,6 +138,7 @@
 
 
 \FloatBarrier
+
 <!-- ********************************************************************** -->
 <!-- *************Fleet 8 NWFSC Trawl survey FIGURES***)***************** --> 
 <!-- ********************************************************************** -->
@@ -172,6 +176,7 @@
 
 
 \FloatBarrier
+
 <!-- ********************************************************************** -->
 <!-- *************Fleet 9 Gillnet survey FIGURES*************************** --> 
 <!-- ********************************************************************** -->
@@ -184,6 +189,7 @@
 ![Length frequency distributions from the gill net surveys. \label{fig:Fleet9_GillnetSurvey_lendat_bubflt10mkt2}](Figures/comp_lendat_bubflt9mkt2.png)
 
 \FloatBarrier
+
 <!-- ********************************************************************** -->
 <!-- *************Fleet 11 Bight trawl survey FIGURES********************** --> 
 <!-- ********************************************************************** -->

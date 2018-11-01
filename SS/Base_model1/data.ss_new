@@ -1,7 +1,8 @@
-#V3.30.05.03-opt
-#_SS-V3.30.05.03-opt;_2017_07_05;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_11.6
-#_SS-V3.30.05.03-opt;user_support_available_at:NMFS.Stock.Synthesis@noaa.gov
-#_SS-V3.30.05.03-opt;user_info_available_at:https://vlab.ncep.noaa.gov/group/stock-synthesis
-#_Start_time: Wed Sep 27 16:48:43 2017
+#V3.30.13_beta-safe;_2018_10_26;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_12.0
+#Stock Synthesis (SS) is a work of the U.S. Government and is not subject to copyright protection in the United States.
+#Foreign copyrights may apply. See copyright.txt for more information.
+#_user_support_available_at:NMFS.Stock.Synthesis@noaa.gov
+#_user_info_available_at:https://vlab.ncep.noaa.gov/group/stock-synthesis
+#_Start_time: Wed Oct 31 10:40:51 2018
 #_Number_of_datafiles: 0
 ENDDATA
